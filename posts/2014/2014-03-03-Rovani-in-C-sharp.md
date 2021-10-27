@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "Rovani in C&sharp;"
+title: Rovani in C♯
 category: rovani-in-c-sharp
+excerpt: I do not have much to write about. Life is pretty simple in my little
+  slice of the world, maybe even a little boring. However, I need to write.
+date: 2021-10-27T22:13:49.134Z
 ---
 
 I do not have much to write about.
