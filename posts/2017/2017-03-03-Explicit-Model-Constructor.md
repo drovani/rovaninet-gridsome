@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using an Explicit Model Constructor with a JsonInputFormatter
-category: Vigil Journey
+category: vigil-journey
 treeid: Vigil/tree/78af44f69d3ae477314d21ec2f76065f2a95267f
 tags:
 - coremvc

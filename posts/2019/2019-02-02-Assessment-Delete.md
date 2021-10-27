@@ -2,7 +2,7 @@
 layout: post
 title: Adding Delete Functionality
 series: Technical Assessment
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 treeid: techassessment-basic/tree/590d44659fd286391e44d12fbce753963d71328a
 tags:
 - career

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inavord Architecture - A Template for Success
-category: Vigil Journey
+category: vigil-journey
 tags:
 - inavord
 ---

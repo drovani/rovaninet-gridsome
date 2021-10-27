@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Illusions of Queues and Buses
-category: Vigil Journey
+category: vigil-journey
 treeid: Vigil/tree/4bac8bfafb8ed7748b2d1958d98786d7fa07c047
 tags:
 - sql

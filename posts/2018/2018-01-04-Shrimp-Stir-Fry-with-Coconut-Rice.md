@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shrimp Stir-Fry with Coconut Rice
-category: Mise-en-Place
+category: mise-en-place
 tags:
 - onehourmeals
 - weightwatchers

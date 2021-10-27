@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User* Can Create** New Patron***
-category: Vigil Journey
+category: vigil-journey
 treeid: Vigil/tree/cf213ec07134fbc4c7a1c3b58ce2cca027b0d099
 tags:
 - cqrs

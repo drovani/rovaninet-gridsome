@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Divvy Is Delightful
-category: Exactly One Hobby
+category: exactly-one-hobby
 ---
 
 About nine months ago, [Divvy bike](http://divvybikes.com/) sharing program went live in Chicago.  I was thrilled with the concept of it from the initial launch, and was excited to see it quickly expand throughout the city*.  Over the winter, I learned of the [corporate memberships](http://www.divvybikes.com/pricing/corporate-memberships) that they offer.  The simplest of which was a one-time $100 start-up fee, and all employees then received $10 off of annual memberships.
@@ -16,7 +16,7 @@ While riding the bike, I found myself thinking of a niche market of lightweight,
 
 At the end of the day, it was a great ride, and I am very glad that I have an annual membership.  With any luck, I may be able to convince some of my nearby coworkers to also grab the perk, and we can ride to and from work together.
 
--------------------------- 
+--------------------------
 
 Footnote: Chicago is a [very segregated city](http://www.chicagonow.com/chicago-muckrakers/2012/06/segregation-in-chicago-is-a-complex-interplay-between-race-and-income-study/); it is not something to be proud of, but it is the reality.  "Throughout the city" for a white, middle-class resident pretty much just means the Loop, and all neighborhoods north of there.  The west and south side just do not exist in my regular travels in the city.  The city, when rolling out Divvy, [seemed to target these neighborhoods](http://articles.chicagotribune.com/2013-07-10/news/ct-met-divvy-bike-location-20130710_1_bike-sharing-program-divvy-pink-line) the most.  I cannot find anything that points to whether this has changed with the Phase 2 roll outs, or if the trend continues.
 

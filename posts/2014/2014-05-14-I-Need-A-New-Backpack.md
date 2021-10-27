@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Need a New Backpack
-category: Exactly One Hobby
+category: exactly-one-hobby
 ---
 
 It has been almost over ten years since I last bought a backpack[^1], and now I need a new one.  My three primary use cases are while commuting on a Divvy bike, riding on my motorcycle, and generally walking around.  It needs to be comfortable and secure in all three scenarios. Other requirements (in no particular order):
@@ -51,7 +51,7 @@ Some points of interest that I have found in my research.  Osprey's website is t
 
 I will be updating these bags as I get some hands-on time with them, and then I will eventually post about which bag I chose and periodic updates.
 
-[^1]: Initially, the following was the opening paragraph of this post - but I decided in editing that it really had no purpose for a reader coming into this post. But since I wrote it, I decided to leave it here in case someone actually cares **why** I need a new backpack._  
+[^1]: Initially, the following was the opening paragraph of this post - but I decided in editing that it really had no purpose for a reader coming into this post. But since I wrote it, I decided to leave it here in case someone actually cares **why** I need a new backpack._
 The JanSport bag that I have has certainly held up well over the years, and is still in perfectly usable condition.  The model I have is no longer in production, but it is probably most similar to their [Big Student](http://www.jansport.com/shop/en/jansport-us/big-student-tdn7) bag.  The bottom of my backpack is starting to wear a little thin, two of the seams connected to zippers have started to come undone, and shoulder pads have lost all sense of padding.  None of this is particularly damning of the bag, or course.  The bottom is starting to wear a little thin.  If I was not looking for flaws, I probably would not have even noticed.  The seams can easily be mended, but I have been super lazy.  The shoulder strap padding is just fine, except those few occasions that I pack the bag with lots of heavy items.
 
 [^2]: When travelling 60+ mph down the highway, I very much do not want straps flailing all around.

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: My Time at _The Fellowship_
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 tags:
 - career
 - teachablemoments
 - introspective
 ---
 
-The last time I had an introspective post was in my [sign-off to 2017 post]({% post_url 2017/2017-12-31-2017-Year-in-Review %}). As I'm flying from Chicago to Toronto on a work trip, I felt inspired to write another piece. During the summer I came to the realization that I've reached the end of the growth that I can gain at _The Fellowship_, and that it is time for the next phase in my career. Over the last ten years, I have found what I am passionate about and now I need to find the right company with the culture that can support those passions and where we will have a mutually beneficial relationship.  
+The last time I had an introspective post was in my [sign-off to 2017 post]({% post_url 2017/2017-12-31-2017-Year-in-Review %}). As I'm flying from Chicago to Toronto on a work trip, I felt inspired to write another piece. During the summer I came to the realization that I've reached the end of the growth that I can gain at _The Fellowship_, and that it is time for the next phase in my career. Over the last ten years, I have found what I am passionate about and now I need to find the right company with the culture that can support those passions and where we will have a mutually beneficial relationship.
 
 ## The First Four Years at _The Fellowship_
 
@@ -22,7 +22,7 @@ By the time the one-year mark was coming up at the manager level, my career grow
 
 ## One Fateful Week
 
-_The Fellowship_ has had a known problem internally of having a lack of project management on large initiatives. At this point, we were looking to move off of our web services / email marketing platform for a myriad number of reasons. However, there was no obvious department to lead and project manage this multi-phase, cross-department initiative. There were a few high-level discussions about who should take on that role, but the decision was lingering for weeks as various directors and departments demurred that they didn't have the bandwidth to fully take it on. 
+_The Fellowship_ has had a known problem internally of having a lack of project management on large initiatives. At this point, we were looking to move off of our web services / email marketing platform for a myriad number of reasons. However, there was no obvious department to lead and project manage this multi-phase, cross-department initiative. There were a few high-level discussions about who should take on that role, but the decision was lingering for weeks as various directors and departments demurred that they didn't have the bandwidth to fully take it on.
 
 Eventually (from my understanding), the COO laid down a final call for ideas about who should take on the responsibility. When I heard about this, I spent my weekend putting together a comprehensive proposal for a new ```Director of Technology``` position and department that would combine my internal team of developers with the team of developers for our external website. This department's purpose would be to ensure that departments across _The Fellowship_ had the best software tools and training that the organization could afford to help them be the best at their jobs. This would include market research, departmental interviews, handling bids and contracts, vendor management, and user training and support. It would also include project management for these cross-departmental initiatives such as just the one that we were about to engage in. I had outlined a transition plan, a budget, and preliminary measures of success. That Sunday evening and Monday morning, I lobbied hard for my boss, the ```Director of Information Services```, to pitch this proposal to his boss, the ```Global Chief Operating Officer```.
 

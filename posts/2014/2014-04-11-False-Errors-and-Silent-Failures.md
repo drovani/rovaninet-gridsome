@@ -1,7 +1,7 @@
 ---
 layout: post
 title: False Errors Are Better Than Silent Failures
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 ---
 
 In terms of reaction to a request for work, there are several responses. In order from most desirable to least desirable:

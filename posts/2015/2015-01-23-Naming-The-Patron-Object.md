@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Naming the Patron Object
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 ---
 
-> There are only two hard things in Computer Science: cache invalidation and naming things.  
+> There are only two hard things in Computer Science: cache invalidation and naming things.
 > - Phil Karlton
 
 To any seasoned developer, this is entirely too true, and [many](http://www.quora.com/Why-is-naming-things-hard-in-computer-science-and-how-can-it-can-be-made-easier)

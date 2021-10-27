@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Project BQ: This Time For Real"
-category: Exactly One Hobby
+category: exactly-one-hobby
 tags:
 - projectbq
 - N1400

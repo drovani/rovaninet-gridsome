@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's Do the Time Warp Again
-category: Exactly One Hobby
+category: exactly-one-hobby
 ---
 
 Another summer, another marathon season.

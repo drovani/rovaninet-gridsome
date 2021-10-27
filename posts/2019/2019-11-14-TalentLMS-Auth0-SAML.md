@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using SAML 2.0 with Auth0 to Authenticate Users in TalentLMS
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 tags:
 - talentlms
 - auth0
@@ -35,10 +35,10 @@ At the bottom of the page is the `Identity provider (IdP) configuration` section
 
     The Entity ID is:
     {instance}.talentlms.com
-    
+
     The Assertion Consumer Service (ACS) URL is:
     https://{instance}.talentlms.com/simplesaml/module.php/saml/sp/saml2-acs.php/{instance}.talentlms.com
-    
+
     The Single Logout Service URL is:
     https://{instance}.talentlms.com/simplesaml/module.php/saml/sp/saml2-logout.php/{instance}.talentlms.com
 
@@ -173,7 +173,7 @@ And it should look something like this:
 
 ![Auth0 - Customize Sign Up Fields](/images/sso-step7-customize-login-page.png)
 
-Click `Save Changes` and that should be it! 
+Click `Save Changes` and that should be it!
 
 Flip back to the TalentLMS `Check your SSO configuration` page, click the `Log out` button (to clear your Auth0 session), and click the `Log in` button. Once you do so, you should now have four green checkmarks!
 
@@ -214,7 +214,7 @@ Thankfully, the steps are straightforward in how to disable the ability for a us
 At the bottom of the Users settings page in TalentLMS is an innocent looking drop down list with the label of "SSO login screen" with two options: "Login page + IdP login link" and "IdP login page". Since I was just testing things out, I flipped the option to the second of the two, clicked "Save" and promptly locked myself (and everyone else) out of the TalentLMS instance. It required submitting a support ticket to have them revert the setting - quite an embarrassing moment, since I had to go back to the client and have them verify to customer support that this change needed to be made. TalentLMS should really have a modal pop up that says:
 
 > Are you sure? Because if SSO login isn't perfectly working, you're going to screw things up. Also, if you haven't already made a SSO user a "SuperAdmin" you should do that, or you won't be able to get back into the administrative dashboard to fix any SSO settings.
-> 
+>
 > Save Changes? or Revert?
 
 **After** you have everything working with SSO, **and** have an SSO user as a SuperAdmin, **then** you can change the login to be "IdP login page". This will force users directly to Auth0 to authenticate, removing the step of clicking the "Log in with SAML 2.0" link.

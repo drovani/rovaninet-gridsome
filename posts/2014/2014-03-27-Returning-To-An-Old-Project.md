@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Returning To an Old Project
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 ---
 
 > This old code? Sure, I think I can make a quick tweak to it. Let me take a look.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Marathon in Three Parts, Goal Number Two
-category: Exactly One Hobby
+category: exactly-one-hobby
 ---
 
 Everything in threes, but before the third comes the second and after one comes number two. As a logical extension to my first goal of crossing the start line, my second goal is to **cross the finish line**. It sounds like a simple goal, going hand in hand with the motto of "finish what you start." However, a lot can happen in 26 miles and 385 yards.

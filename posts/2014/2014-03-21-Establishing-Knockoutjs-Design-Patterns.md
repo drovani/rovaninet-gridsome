@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Establishing KnockoutJs Design Patterns
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 ---
 
 Now that I have been tinkering with Knockout for about a year, I have finally settled on a host of design patterns that I feel strike a nice balance between rigid consistency and flexible prototyping. I like to have all of my code look very similar. I can look at most code that I have written and know about when I worked on it last. I can usually even look at code that several other developers have touched and see what is mine and what is everyone else's code. Now that I have a team to direct and an expanding code base to maintain, I have realized that I need to document my own code patterns.
@@ -20,7 +20,7 @@ Two days later, as I started to write up the actual rules I had been following, 
 > - Disagreement over standards can cause check-in wars between developers.
 > - Seeing different standards in the same class can be extremely irritating.
 > I'm a big fan of what [Uncle Bob has to say](http://c2.com/cgi/wiki?UncleBobOnCodingStandards) about standards:
-> 
+>
 > 1. Let them evolve during the first few iterations.
 > 1. Let them be team specific instead of company specific.
 > 1. Don't write them down if you can avoid it. Rather, let the code be the way the standards are captured.

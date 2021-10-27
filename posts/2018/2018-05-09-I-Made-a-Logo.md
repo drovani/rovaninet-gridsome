@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Made a Logo
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 tags:
 - svg
 - experiments

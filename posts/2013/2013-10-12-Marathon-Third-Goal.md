@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Marathon in Three Parts, Goal the Third
-category: Exactly One Hobby
+category: exactly-one-hobby
 ---
 
 Three Hours, Five Minutes, Zero Seconds _or less_. For a male, 34 years or younger on race day, 3:05:00 is the qualifying time to register for the Boston Marathon. In all practicality, it will probably take a sub-3 hour marathon to actually [get to run the race](www.baa.org/races/boston-marathon/participant-information/qualifying.aspx). The more I read about the Chicago Marathon, the more I discovered all about the running community, worldwide events, legendary runners, support organizations, fundraising, charity drives, and the Marathon Majors. How wonderful would it be to run a marathon in Chicago, Berlin, Boston, London, New York, and Tokyo! That meant I had to qualify for Boston, which means a sub-3:00:00 marathon. That's not going to happen my first time out, so I'm settling for **sub-4:00:00 finish**.

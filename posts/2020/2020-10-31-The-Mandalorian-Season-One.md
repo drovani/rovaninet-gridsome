@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Season One - A Few Thoughts
-category: Exactly One Hobby
+category: exactly-one-hobby
 series: The Mandalorian
 tags:
 - starwars

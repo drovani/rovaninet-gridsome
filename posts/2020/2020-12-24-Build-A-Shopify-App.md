@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 series: Building a Shopify App
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 excerpt_separator: <!--more-->
 tags:
 - shopify

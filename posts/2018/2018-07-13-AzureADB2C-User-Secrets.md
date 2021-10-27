@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using AzureAD B2C and Visual Studio User Secrets
-category: Vigil Journey
+category: vigil-journey
 treeid: inavord/tree/0100e0ea00e1aabb49a09478098cb4dec8f10e3a
 series: Inavord
 tags:

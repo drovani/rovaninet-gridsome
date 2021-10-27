@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Project BQ: No Easy Runs"
-category: Exactly One Hobby
+category: exactly-one-hobby
 tags:
 - projectbq
 - N1400
@@ -18,16 +18,16 @@ The first three weeks of the <abbr title="Chicago Area Runners Association">CARA
 
 Smart training plans include one or two days of speed work in a week, combined with three or four days of easy runs, in addition to a long run on the weekend. Getting from home to work can be a direct 7.5 mile run, an indirect route (east to the Lakefront Path, then south) of 10.5 miles, or really any distance longer than that. Since most speed workouts are shorter than this, I have to adapt my plans to accommodate the time I have. For example, a workout last week was:
 
-> Warmup (10 minutes or 2 miles)  
-> 2-3 sets (2x 200m + 1x 400m) @ 10k-5k pace  
-> Equal jog recovery  
+> Warmup (10 minutes or 2 miles)
+> 2-3 sets (2x 200m + 1x 400m) @ 10k-5k pace
+> Equal jog recovery
 > Cooldown (10 minutes or 2 miles)
 
 This only adds up to 5-6 miles, which means I need to add a few more miles. Instead of 200m and 400m repeats, I just did 800m repeats.
 
-> Warmup  
-> 3 x 1 mile @ Tempo  
-> 1 minute rest  
+> Warmup
+> 3 x 1 mile @ Tempo
+> 1 minute rest
 > Cooldown
 
 This is workout is probably also only 5-6 miles, so my warm up was much longer and my cooldown was longer.
@@ -38,8 +38,8 @@ To build these workouts, I am using the CARA [Summer Marathon Training Program G
 
 For this upcoming week, my workouts are scheduled to be:
 
-> Tuesday: 4 miles @ Tempo pace (6:25/mile)  
-> Thursday: 6-8 Yasso 800m (3:00/800m)  
+> Tuesday: 4 miles @ Tempo pace (6:25/mile)
+> Thursday: 6-8 Yasso 800m (3:00/800m)
 > Saturday: 13 miles
 
 I'll report back here with an update on how it went.

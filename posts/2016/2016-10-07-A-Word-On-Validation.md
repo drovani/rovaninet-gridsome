@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Word On Validation
-category: Vigil Journey
+category: vigil-journey
 tags:
 - cqrs
 - factory

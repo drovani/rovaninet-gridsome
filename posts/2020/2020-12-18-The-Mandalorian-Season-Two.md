@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Season Two - A Few Rants
-category: Exactly One Hobby
+category: exactly-one-hobby
 series: The Mandalorian
 tags:
 - starwars

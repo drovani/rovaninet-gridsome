@@ -4,7 +4,7 @@ excerpt: After lots of fits and starts with other frameworks, platforms, and
   languages - getting up and running with Gridsome, Tailwind, Netlify CMS (with
   Netlify Identity), and GitHub has been suprisingly easy and delightful.
 date: 2021-10-27
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 tags:
 - writing
 - goals

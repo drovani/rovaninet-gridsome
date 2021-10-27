@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Word On Factory Results and Contracts
-category: Vigil Journey
+category: vigil-journey
 tags:
 - factory
 - codecontracts

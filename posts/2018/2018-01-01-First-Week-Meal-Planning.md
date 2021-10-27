@@ -1,7 +1,7 @@
 ---
 layout: post
 title: January 1-7 Meal Planning
-category: Mise-en-Place
+category: mise-en-place
 tags:
 - experiment
 - weightwatchers

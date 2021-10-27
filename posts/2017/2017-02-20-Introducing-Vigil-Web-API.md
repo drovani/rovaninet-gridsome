@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Vigil Web API
-category: Vigil Journey
+category: vigil-journey
 treeid: Vigil/tree/5936f903b81eb202c63da493e3d0808679843ce1
 tags:
 - webapi
@@ -133,9 +133,9 @@ namespace Vigil.WebApi.Controllers
                 if (context.Patrons.Any(p => p.Id == id))
                 {
                     commandQueue.Publish(
-                        new DeletePatron(User.Identity.Name, DateTime.Now) 
+                        new DeletePatron(User.Identity.Name, DateTime.Now)
                         {
-                            PatronId = id 
+                            PatronId = id
                         }
                     );
                     return Accepted();

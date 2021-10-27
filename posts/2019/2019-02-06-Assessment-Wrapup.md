@@ -2,7 +2,7 @@
 layout: post
 title: Final Notes
 series: Technical Assessment
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 treeid: techassessment-basic/tree/8eca6ef7c2a9295b00e91aecca9268ccf46d9758
 tags:
 - career

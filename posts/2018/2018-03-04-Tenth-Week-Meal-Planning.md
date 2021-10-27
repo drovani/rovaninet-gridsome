@@ -1,7 +1,7 @@
 ---
 layout: post
 title: March 4 - 11 Meal Planning
-category: Mise-en-Place
+category: mise-en-place
 tags:
 - experiment
 - notwhole30

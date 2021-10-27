@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Authenticate Shopify Customers with Auth0
-category: "Rovani in C&sharp;"
+category: rovani-in-c-sharp
 excerpt_separator: <!--more-->
 tags:
   - shopify

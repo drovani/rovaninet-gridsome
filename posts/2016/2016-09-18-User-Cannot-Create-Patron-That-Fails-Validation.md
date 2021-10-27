@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Cannot* Create Patron That Fails Validation**
-category: Vigil Journey
+category: vigil-journey
 tags:
 - cqrs
 - factory
