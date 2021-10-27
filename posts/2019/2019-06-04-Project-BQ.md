@@ -7,6 +7,7 @@ tags:
 - N1400
 - noeasyruns
 excerpt_separator: <!--more-->
+date: 2019-06-04
 ---
 
 [![N1400 for June 4th]({{ site.baseurl }}/images/2019-06-04-n1400.jpg)]({{ site.baseurl}}/Project-BQ)

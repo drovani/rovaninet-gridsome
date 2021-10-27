@@ -5,6 +5,7 @@ category: rovani-in-c-sharp
 tags:
 - svg
 - experiments
+date: 2018-05-09
 ---
 
 Scalar Vector Graphics (SVG) has been one of those many mysteries that I've only vaguely been familiar with. Picking up bits of knowledge here and there, I surmised that an SVG image was a set of instructions for how to draw the picture, as opposed to being a mapping of the color of specific pixels. SVG images, thus, could scale to any level and still be the same image. What I had no clue about, though, was what the XML inside of the SVG element was doing. As with all things, I started with a simple Google search that led me to the [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial) on MDN Web Docs. It is a well written breakdown of how to draw your first SVG image. I highly recommend this, even for those that intend to just use a painting program to spit out the raw SVG. It was a highly illuminating journey.

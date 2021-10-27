@@ -7,6 +7,7 @@ tags:
 - auth0
 - sso
 - saml
+date: 2019-11-14
 ---
 
 Prior to this week, I did not know who [TalentLMS](https://www.talentlms.com/) is, what [SAML](https://wiki.oasis-open.org/security/FrontPage#SAML_V2.0_Standard) does, and how [Auth0](https://auth0.com/) fits into the SSO alphabet soup. However, when a client wants something figured out, that's what I am here to do! After pouring over documentation for both TalentLMS and for Auth0, going down several dead-end paths, and nagging a few of my coworkers to "try it again?", I now successfully (and very delicately) have credentials collected from Auth0 logging a user into TalentLMS.

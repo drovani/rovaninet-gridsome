@@ -2,6 +2,7 @@
 layout: post
 title: Data Layers, and Finding Ways to Reduce Repetition
 category: rovani-in-c-sharp
+date: 2014-04-02
 ---
 
 ![Data Workflow]({{ site.baseurl }}/images/data-layers.png "Data Workflow")

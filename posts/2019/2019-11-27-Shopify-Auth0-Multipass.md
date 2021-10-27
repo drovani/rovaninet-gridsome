@@ -7,6 +7,7 @@ tags:
   - shopify
   - auth0
   - sso
+date: 2019-11-27
 ---
 
 What better way to follow up from the last two posts by combining the concepts. In "This week at BlueBolt", I present my solution for utilizing Auth0 to authenticate a user and then pass them back to Shopify utilizing the Multipass feature.

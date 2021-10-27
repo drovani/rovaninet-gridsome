@@ -8,6 +8,7 @@ tags:
 - opensource
 - azureadb2c
 - usersecrets
+date: 2018-07-13
 ---
 
 Something that I've continuously struggled with in getting projects off the ground is finding a way to handle Authentication. Just the thought of building out a User Portal to handle Contact Information and Password Resets has killed many projects before they've even started. Worrying about how to best store passwords and how to securely log users into the application have halted progress on most of the _Grand Ideas_ that I have had. However, since the Vigil project is something that I am truly excited about, it was time to find a solution that I could quickly piece together for most any project and offload as much of the responsibilities to another party as possible. I found my answer in [AAD B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview).

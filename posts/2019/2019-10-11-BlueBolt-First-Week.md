@@ -5,6 +5,7 @@ category: rovani-in-c-sharp
 excerpt_separator: <!--more-->
 tags:
 - career
+date: 2019-10-11
 ---
 
 {: .centered }

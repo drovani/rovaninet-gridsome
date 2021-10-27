@@ -3,6 +3,7 @@ layout: post
 title: "Commit bccg1aea: Preemptively Structuring the Chaos"
 category: rovani-in-c-sharp
 tags:
+date: 2015-05-13
 ---
 
 I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some practices grow organically, a healthy amount of structure up-front can save a project from technical bankruptcy down the line. The two tools that I use early and often are interfaces and contract classes.

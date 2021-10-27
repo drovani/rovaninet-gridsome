@@ -2,6 +2,7 @@
 layout: post
 title: Another Year In Review - 2020
 category: rovani-in-c-sharp
+date: 2020-12-31
 ---
 
 Another year has come and gone, and it's another year with lofty goals that fell well short of what I had hoped. This seems to be a common theme at the end of each calendar. There's probably a lesson to be learned there, though I doubt I'll carry that into the new year. I have already started thinking about what I want to accomplish in 2021, which makes it tough to look back and see what this last year was. I have found, though, that these posts have become a journal of sorts. I occasionally go back and reread my chronicles from years past, just to remind myself of what it was like. Perhaps sometime in the future, my kids will read through this and see what happened while they were growing up.

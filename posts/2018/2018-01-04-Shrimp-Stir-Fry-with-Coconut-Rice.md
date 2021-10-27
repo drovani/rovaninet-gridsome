@@ -5,6 +5,7 @@ category: mise-en-place
 tags:
 - onehourmeals
 - weightwatchers
+date: 2018-01-04
 ---
 
 A simple dish with a lot of flavor and it doesn't cost too many SmartPoints. Pairs well with a salad. Recipe follows.

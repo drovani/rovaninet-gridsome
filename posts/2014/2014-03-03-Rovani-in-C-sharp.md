@@ -2,6 +2,7 @@
 layout: post
 title: "Rovani in C&sharp;"
 category: rovani-in-c-sharp
+date: 2014-03-03
 ---
 
 I do not have much to write about.

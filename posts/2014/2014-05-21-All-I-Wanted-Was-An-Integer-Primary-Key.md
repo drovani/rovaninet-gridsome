@@ -2,6 +2,7 @@
 layout: post
 title: All I Wanted Was an Integer Primary Key
 category: rovani-in-c-sharp
+date: 2014-05-21
 ---
 
 > The [ASP.NET Identity](http://www.asp.net/identity) system is designed to replace the previous ASP.NET Membership and Simple Membership systems. It includes profile support, OAuth integration, works with OWIN, and is included with the ASP.NET templates shipped with Visual Studio 2013.

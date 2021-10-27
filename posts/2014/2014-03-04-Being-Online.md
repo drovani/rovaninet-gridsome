@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Being Online
+date: 2014-03-04
 ---
 
 I started this post with an idea.  I got as far as the title, then somewhere between that text box and the text area below it, I completely lost what I was going to write.  I just stared at my fingers sitting diligently on the keyboard, waiting for me to give them commands.

@@ -6,6 +6,7 @@ excerpt_separator: <!--more-->
 tags:
 - shopify
 - dotnetcore
+date: 2019-10-22
 ---
 
 Shopify has a feature that allows an external service to automatically log a user into the store from a third-party application. This is commonly used when integrating a Shopify store with a larger website product like Wordpress, DNN, or Drupal. Shopify calls this feature "[Multipass](https://help.shopify.com/en/api/reference/plus/multipass)". Of course, this means for the last two days, all I can hear in my head is "Leeloo Dallas Multipass"; but even worse than having it on repeat (in my head) is that _no one else on the project gets the reference_.

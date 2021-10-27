@@ -4,6 +4,7 @@ title: "Disney's Dopey Challenge"
 category: "exactly-one-hobby"
 tags:
 - marathon
+date: 2016-01-10
 ---
 
 The _Dopy Challenge_ is a four day event at Walt Disney World Resorts.

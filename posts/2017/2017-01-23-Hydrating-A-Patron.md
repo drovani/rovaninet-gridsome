@@ -7,6 +7,7 @@ tags:
 - versionedevent
 - eventsourcing
 - unittests
+date: 2017-01-23
 ---
 
 There are two ways to retrieve the current values associated with an entity. The canonical source is the collection of events that describe how an entity came into existance and then was affected over time. The standard term for this seems to be "hydrating" the entity. Once the current state of the entity is found, it can then be persisted to a different medium for easier access. In the example of a `Patron`, there are few circumstances where the entire history of the entity is needed. Instead, most requests for the information will only be looking for the most current iteration - which is found in a snapshot database. One of the first challenges that I faced when building this initial prototype was proving that my code could rehydrate a `Patron` from only a list of events.

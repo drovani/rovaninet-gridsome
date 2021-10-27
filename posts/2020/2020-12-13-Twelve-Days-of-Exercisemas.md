@@ -2,6 +2,7 @@
 layout: post
 title: 12 Days of Exercisemas
 category: exactly-one-hobby
+date: 2020-12-13
 ---
 
 Unless otherwise noted, each workout is done once-per-hour for twelve hours in a day. For me, I'll be doing this from 7am to 7pm. Much like the song, each exercise is performed on all subsequent days, too.

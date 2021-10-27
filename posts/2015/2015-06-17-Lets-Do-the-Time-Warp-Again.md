@@ -2,6 +2,7 @@
 layout: post
 title: Let's Do the Time Warp Again
 category: exactly-one-hobby
+date: 2015-06-17
 ---
 
 Another summer, another marathon season.

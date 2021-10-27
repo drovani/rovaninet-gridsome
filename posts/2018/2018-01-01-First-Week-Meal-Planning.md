@@ -6,6 +6,7 @@ tags:
 - experiment
 - weightwatchers
 - priorities
+date: 2018-01-01
 ---
 
 As with all new years, this one will start with the best of intentions. My wife is diving into her WeightWatchers eating plan, so I am going to try and do a better job with planning out the weekly meals, weekly shopping, and hopefully allow myself more time to do any of the other myriad things throughout the week that I wish I found time for. It's all about priorities, and for these first few weeks my priorities are going to be meal planning/executing, regular exercise and recovery, and career improvement.

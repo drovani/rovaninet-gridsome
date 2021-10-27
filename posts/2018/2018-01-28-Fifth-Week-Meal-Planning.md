@@ -6,6 +6,7 @@ tags:
 - experiment
 - weightwatchers
 - priorities
+date: 2018-01-28
 ---
 
 I'm watching the Grammy's while trying to meal plan. It's terrible, because the acts go between artists that I don't care about and acts that I sort-of-kind-of want to enjoy. And then there are the performances that demand I stop what I'm doing and pay attention. These are the singers who pour their heart and soul into every word and it shows. Lady Gaga, P!nk, Bruno Mars, K$sha, Patti Lupone &ndash you can't help but be enraptured by their time on the screen. But enough about music, it's time for putting together this week's meal plan.

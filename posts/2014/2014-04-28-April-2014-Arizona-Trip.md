@@ -1,6 +1,7 @@
 ---
 layout: post
 title: April 2014 Arizona Trip
+date: 2014-04-28
 ---
 
 The short version of the trip:

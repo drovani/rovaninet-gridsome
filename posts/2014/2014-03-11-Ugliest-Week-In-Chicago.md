@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Ugliest Week in Chicago
+date: 2014-03-11
 ---
 
 Somewhere between the freshly fallen, pristine snow of winter and the new growth and warmth of spring lies the ugliest week in Chicago.  This week that exposes the filth of the city.

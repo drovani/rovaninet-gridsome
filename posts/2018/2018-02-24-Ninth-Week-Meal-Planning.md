@@ -6,6 +6,7 @@ tags:
 - experiment
 - weightwatchers
 - priorities
+date: 2018-02-24
 ---
 
 Through most of February, we didn't create a meal plan at all. It was terrible and caused a fair amount of stress. It reminded me how much I really dislike the just-got-home-from-work "what do you feel like for dinner" conversation. We end up going out to eat or getting take-out more often, and it just doesn't feel as satisfying. I am making a renewed effort to make time for meal planning each week. This attempt at making it a regular thing will revolve around doing as much of the planning as I can before I go for a run on Saturday mornings. Surprisingly, we don't have anything on the calendar for next week, which means I have a full slate of meals to plan for! The only piece to account for is that I am planning on running home from work on Tuesday - which means I need to do something in the slow cooker for that dinner.

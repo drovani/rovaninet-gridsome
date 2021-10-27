@@ -2,6 +2,7 @@
 layout: post
 title: False Errors Are Better Than Silent Failures
 category: rovani-in-c-sharp
+date: 2014-04-11
 ---
 
 In terms of reaction to a request for work, there are several responses. In order from most desirable to least desirable:

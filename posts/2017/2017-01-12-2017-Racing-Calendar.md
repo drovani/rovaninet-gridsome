@@ -7,6 +7,7 @@ tags:
 - marathon
 - halfmarathon
 - 5k
+date: 2017-01-12
 ---
 
 2016 was a busy year - in total, I ran eight races. While four of them were all in one weekend for [Disney's Dopey Challenge]({% post_url 2016/2016-01-10-Disneys-Dopey-Challenge %}), it was still a lot of early mornings for me. For 2017, I am going to scale things back a bit - which really just means removing the one racing weekend.

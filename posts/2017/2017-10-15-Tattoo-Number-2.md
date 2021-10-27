@@ -3,6 +3,7 @@ layout: post
 title: Tattoo Number Two
 category: Exact One Hobby
 stylesheet: "https://fonts.googleapis.com/css?family=Vollkorn"
+date: 2017-10-15
 ---
 
 It's been far too long since my second child was born, but we finally booked the tattoo appointment. As I did with my first, I got a tattoo with the latitude, longitude, date, and time of his birth. Finding the right font is hard - I wanted something that doesn't completely contrast with the existing tattoo, but was still distinct. Eventually, this is what I ended up putting together.

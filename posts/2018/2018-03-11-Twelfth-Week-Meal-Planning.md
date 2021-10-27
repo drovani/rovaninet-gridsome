@@ -4,6 +4,7 @@ title: March 10 - 20 Meal Planning
 category: mise-en-place
 tags:
 - mealplanning
+date: 2018-03-11
 ---
 
 I just can't seem to manage consistently planning meals for two weeks in a row. This last week, however, was probably my best non-planned out week of meals. Several of the meals were either leftovers of meals or used the uncooked protein from meals from the prior week. For example, I did a pot roast stew on Tuesday night in the slow cooker using the portion of the beef that I didn't use from the Beef Stroganoff. Since we will be on vacation half of next week, I am going to be super ambitious and try to plan out 10 whole days of meals.  However, considering that I am writing this on Monday morning, I might have already made this a losing proposition.

@@ -6,6 +6,7 @@ tags:
 - experiment
 - weightwatchers
 - priorities
+date: 2018-01-21
 ---
 
 After two weeks of solid meal planning, the third week got skipped entirely. Katie worked on Saturday and I was home on MLK, which meant that by the time my weekend was over, I was already thrown well off of a schedule. I never made time to do the meal planning and thus it didn't get done. Let that be the lesson for that weekend &ndash; whatever isn't made a priority doesn't get done. In order to keep these meal planning sessions going, I need to make it a priority. Even if that means it is prioritized over sleep. But here I am at 20:25, already starting to put together this upcoming week's meal plan.

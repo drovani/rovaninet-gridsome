@@ -5,6 +5,7 @@ category: mise-en-place
 tags:
 - experiment
 - recipes
+date: 2018-01-13
 ---
 
 This is an experimental recipe. I tried it once, and then it clearly needed some tweaking. I've made the changes in the recipe below, and if it needs more adjustments after the second time through, I'll come back and update this post.

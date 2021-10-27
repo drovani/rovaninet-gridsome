@@ -6,6 +6,7 @@ tags:
 - career
 - teachablemoments
 - introspective
+date: 2018-10-25
 ---
 
 The last time I had an introspective post was in my [sign-off to 2017 post]({% post_url 2017/2017-12-31-2017-Year-in-Review %}). As I'm flying from Chicago to Toronto on a work trip, I felt inspired to write another piece. During the summer I came to the realization that I've reached the end of the growth that I can gain at _The Fellowship_, and that it is time for the next phase in my career. Over the last ten years, I have found what I am passionate about and now I need to find the right company with the culture that can support those passions and where we will have a mutually beneficial relationship.

@@ -8,6 +8,7 @@ tags:
 - eventsourcing
 - commandhandler
 - eventbus
+date: 2016-10-31
 ---
 
 Just when I thought I was in a good place to carry forward with retrieving a persisted entity and then modifying its values, I started looking intently into the [CQRS Journey](https://msdn.microsoft.com/en-us/library/jj554200.aspx) on MSDN. While reading through their narative, I thought I was really getting to understand how the code was structured. However, once I dug into the source code - well, I was naively mistaken. The notion of having [a Factory]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}) was entirely flawed, as that role of validating and placing Commands on the Event Bus was better suited in the user interface layer (be it a Web Controller, a console library, or some other set of code). I supposed that the Factory could call under "some other set of code"; however, for the purposes of demonstrating the bare minimum needed to declare an action completed, the Factory was adding one too many steps. I realized that the unit test need not create a Factory to then pass a Command to the Bus. Instead, the Unit Test should _assume the command was already on the bus_.

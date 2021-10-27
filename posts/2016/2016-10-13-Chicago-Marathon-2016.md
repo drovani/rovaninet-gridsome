@@ -6,6 +6,7 @@ tags:
 - marathon
 - CARA
 - bostonqualify
+date: 2016-10-13
 ---
 
 For the fourth year in a row, on Columbus Day weekend, I have completed the Bank of America Chicago Marathon. Previous years have culminated in mixed results, both by the clock and in my own experience. 2013's marathon was a disaster in both time and how I felt during the race, but provided me with invaluable experience and a drive to do better. By the time the 2014 Chicago Marathon came around, I had taken up speed training with [Coach Leach](http://coachleach.com/), focussed a little more on my running form, and put together a strong showing at the 2014 F3 Half Marathon. However, during last year's race, I had set unrealistic expectations, especially while trying to run with a sore back. 2015 was not a good year for me, overall - but I was determined to turn things around for 2016.

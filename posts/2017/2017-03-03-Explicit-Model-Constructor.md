@@ -6,6 +6,7 @@ treeid: Vigil/tree/78af44f69d3ae477314d21ec2f76065f2a95267f
 tags:
 - coremvc
 - hastobeabetterway
+date: 2017-03-03
 ---
 
 I may have gone down a long and twisted rabbit hole trying to figure out this problem, but I learned a lot about how model binding along the way, so I consider the whole experiment a productive use of my time, even if I end up ripping it all out in a few weeks. However, since I thought this would be a good idea, I figure others might find a good use for this knowledge. Thus, this is how I am using an explicity constructor when the input is in a `JSON` format and parameter is bound using the request body.

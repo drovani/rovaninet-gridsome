@@ -5,6 +5,7 @@ category: vigil-journey
 tags:
 - factory
 - codecontracts
+date: 2016-09-17
 ---
 
 For simplicity, the `PatronFactory`'s `CreatePatron` method just returned an `IKeyIdentity`. This was a simple interface that requires an `Id` of type `Guid`. When the creation method was always assumed to work correctly, this was fine - I don't have to worry about validation checking, data errors, or anything that might cause a failure. However, in the real world, I need to be aware of these things. As such, the first refactor that I'm going to perform is to change the return type to a multi-purpose class.

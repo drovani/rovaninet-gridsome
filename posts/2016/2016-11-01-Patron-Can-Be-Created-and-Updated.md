@@ -7,6 +7,7 @@ tags:
 - command
 - commandhandler
 - unittests
+date: 2016-11-01
 ---
 
 Now that I have revised my approach for what constitutes [creating and updating entities]({% post_url 2016/2016-10-31-Revisiting-Creating-and-Updating-Entities%}), I am going back to my `Patron` entity to rework the create and update commands. I have already scrapped the `Factory` class and its associated unit tests, and gone forward with code creation.

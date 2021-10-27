@@ -7,6 +7,7 @@ tags:
 - N1400
 - noeasyruns
 excerpt_separator: <!--more-->
+date: 2019-06-22
 ---
 
 [![N1400 for June 11th and 13th]({{ site.baseurl }}/images/2019-06-15-n1400.jpg)]({{ site.baseurl}}/No-Easy-Runs)

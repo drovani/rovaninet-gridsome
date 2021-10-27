@@ -6,6 +6,7 @@ tags:
 - projectbq
 - noeasyruns
 - racereview
+date: 2019-10-14
 ---
 
 All things considered, I am content with my performance at the 42nd running of the Bank of America Chicago Marathon. I had been battling a nasty couch all week, I wasn't able to train as hard as I initially hoped, and the weather was very windy. While I came no where close to hitting my Boston Qualifying time, I did manage to improve on my personal record. Finishing at 03:15:36, it beats my previous best by 01:39. By the time next year's Chicago Marathon comes around, I'll only need to lower my PR by six or seven minutes in order to get through to Boston.

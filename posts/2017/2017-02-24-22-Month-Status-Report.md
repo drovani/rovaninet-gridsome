@@ -7,6 +7,7 @@ excerpt_separator: <!--more-->
 tags:
 - vigiljourney
 - statusreport
+date: 2017-02-24
 ---
 
 As I was writing the [previous post]({% post_url 2017/2017-02-20-Introducing-Vigil-Web-API %}), it came as a shock how far behind my posts on the progress of the Vigil Donor Relationship Management System had gotten. I was going too deep into the code and making too many changes that I didn't pause to write a post about my progress. My posts are 22 commits behind, and there are quite a few changes I've made to the workflow and to the application. As a way to catch up on all the missed posts that I should have written, I am putting this one together as a status report of the project/journey/solution.

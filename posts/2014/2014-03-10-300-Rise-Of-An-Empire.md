@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "300: Rise Of an Empire Of Freedom For Free Greeks"
+date: 2014-03-10
 ---
 
 Take a drink every time someone says "free" or "freedom", and you will be drunk before the battles even begin.

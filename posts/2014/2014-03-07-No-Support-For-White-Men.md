@@ -1,6 +1,7 @@
 ---
 layout: post
 title: No Support For White Men
+date: 2014-03-07
 ---
 
 I am a tall, healthy, heterosexual, white, male, middle-class American. I will earn more money over the course of my career than my female colleagues and my racially minority peers. I will have easier access to credit lines, continuing education, travel prerequisites, political office, housing opportunities, career advancement, and basically anything else that I may want. I am less likely to be arrested on suspicion of a crime, and if I have to wade through the judicial system, I am less likely to be convicted of a crime. Statistically, it is pretty fantastic being me. The game is rigged in my favor, and I have no complaints about it.

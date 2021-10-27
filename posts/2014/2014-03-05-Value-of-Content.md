@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Que Sera, Sera: The Value of Content"
+date: 2014-03-05
 ---
 
 > Content is King  

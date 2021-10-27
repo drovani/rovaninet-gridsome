@@ -7,6 +7,7 @@ tags:
   - auth0
   - sso
   - progressive profiling
+date: 2019-12-24
 ---
 
 After a brief stint working on other projects, it's time for a quick pop back over to Auth0. In my previous post about integrating TalentLMS and Auth0 with SAML 2.0, I describe how to [capture the user's first and last name]({% post_url 2019/2019-11-14-TalentLMS-Auth0-SAML %}) during the registration process. Instead, for this task we are taking the first name and last name capturing out of the user sign up and implementing it as part of what Auth0 calls [Progressive Profiling](https://auth0.com/docs/users/concepts/overview-progressive-profiling). The documentation is both extremely helpful and entirely too specific to be of use. A lot of the complications with this task was been figuring out what the specific implementation that the documents describe is trying to do, and then implementing that process in a simpler or different manner.

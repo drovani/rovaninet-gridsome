@@ -2,6 +2,7 @@
 layout: post
 title: "3:56:58 - 2015 Wisconsin Marathon"
 category: exactly-one-hobby
+date: 2015-05-06
 ---
 
 All of my other marathon posts seem to have the "three parts" theme going, so it probably fits for this writing. On the second of May,

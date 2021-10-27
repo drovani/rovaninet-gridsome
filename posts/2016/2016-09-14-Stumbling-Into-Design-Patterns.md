@@ -9,6 +9,7 @@ tags:
 - repository
 - service
 - ddd
+date: 2016-09-14
 ---
 
 As I have been working on the Vigil project, I have been accidentally stumbling onto various patterns. I will go in search of a way to solve some particular problem, and end up losing several hours while I research some reference the author made about a concept (or, usually, an acronym) at the end of a post as some kind of _a posteriori_. The two largest design patterns that I am most excited about are Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES).

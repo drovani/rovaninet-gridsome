@@ -9,6 +9,7 @@ tags:
 - react
 - azure-storage
 - azure-functions
+date: 2020-12-24
 ---
 
 Shopify has a really good tutorial on [building a Shopify App](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react) using Node.js and React. It includes the initial ```node``` and ```npm``` set-up. The tutorial uses ```ngrok``` to handle allowing communication from Shopify to the local ```node``` server. Then it gives a quick GraphQL primer, uses ```Apollo``` to fetch data, goes through setting up Billing the Shopify store, and listening for webhooks. There is a pretty sizable leap from taking this information and getting a proof-of-concept app running.

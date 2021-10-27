@@ -6,6 +6,7 @@ tags:
 - experiment
 - weightwatchers
 - priorities
+date: 2018-01-07
 ---
 
 The first week of meal planning went well... as well as a first week of any experiment goes. I didn't do a very good job of thinking about all of the sides and ingredients needed to accompany the main protein. Additionally, I didn't account for the time it would take to prep some of the dishes. Since I'll be back at work this next week, prepping food the night before or morning of is going to be key to successfully following the meal plan this week.

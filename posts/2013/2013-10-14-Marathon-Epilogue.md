@@ -2,6 +2,7 @@
 layout: post
 title: A Marathon in Three Parts, Epilogue
 category: exactly-one-hobby
+date: 2013-10-14
 ---
 
 I crossed the start line. I crossed the finish line. [04:41:59](http://results.chicagomarathon.com/2013/?content=detail&fpid=favorites&pid=favorites&idp=999999107FA3090000100997&lang=EN_CAP&event=MAR) elapsed between those two.

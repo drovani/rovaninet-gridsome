@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+date: 2016-08-10
 ---
 
 I am working on migrating my blog from the old hosted Wordpress site that I was using to be hosted by GitHub pages, powered by Jekyll.

@@ -2,6 +2,7 @@
 layout: post
 title: Naming the Patron Object
 category: rovani-in-c-sharp
+date: 2015-01-23
 ---
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.

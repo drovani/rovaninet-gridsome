@@ -2,6 +2,7 @@
 layout: post
 title: Returning To an Old Project
 category: rovani-in-c-sharp
+date: 2014-03-27
 ---
 
 > This old code? Sure, I think I can make a quick tweak to it. Let me take a look.
