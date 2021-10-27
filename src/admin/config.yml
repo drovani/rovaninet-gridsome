@@ -14,7 +14,8 @@ collections:
     label_singular: "Post"
     folder: "posts/"
     create: true
-    slug: "{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}/{{slug}}"
     preview_path: "{{year}}/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
