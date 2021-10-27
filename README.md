@@ -12,3 +12,7 @@
   2. Uninstalled Tailwind `npm uninstall tailwindcss postcss autoprefixer`
   2. Reinstalled with the compatibility build instead `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
   2. Ran a build again to validate that _now_ it is working `npm run build`.
+1. Installed Netlify CMS packages `npm add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark`
+1. Updated the Gridsome config file per instructions ([see file diff]())
+1. Added the `./src/admin/index.html`, `./src/admin/index.js`, and `./src/admin/config.yml` files, [pursuant to the instructions](https://www.netlifycms.org/docs/gridsome/#netlify-cms-setup).
+1. Committed and Pushed to GitHub repo.

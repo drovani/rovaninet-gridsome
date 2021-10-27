@@ -5,8 +5,30 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: [{
-    use: "gridsome-plugin-tailwindcss"
-  }]
-}
+  siteName: "Rovani in C#",
+  plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss",
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "posts/**/*.md",
+        typeName: "Post",
+      },
+    },
+    {
+      use: "gridsome-plugin-netlify-cms",
+      options: {
+        publicPath: "/admin",
+      },
+    },
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+    },
+  },
+};
