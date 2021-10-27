@@ -47,4 +47,4 @@ Additionally, I previously had the Start Date on the Schedule. This also was con
 
 ### Up Next
 
-The next post is going to start to demonstrate how I implemented various parts of the C&sharp; algorithm to generate the dates in a schedule. These collections then are combined to provide for a final list of all dates.
+The next post is going to start to demonstrate how I implemented various parts of the C♯ algorithm to generate the dates in a schedule. These collections then are combined to provide for a final list of all dates.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rovani in C&sharp;"
+title: "Rovani in C♯"
 category: rovani-in-c-sharp
 date: 2014-03-03
 ---
