@@ -2,6 +2,7 @@
 layout: post
 title: A Marathon in Three Parts, The First Goal
 category: exactly-one-hobby
+date: 2013-09-28
 ---
 
 Goals are good, goals are great, goals help keep you straight.
