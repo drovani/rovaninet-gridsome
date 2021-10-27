@@ -1,13 +1,15 @@
 ---
 title: Migrated to Gridsome + NetlifyCMS
+category: rovani-in-c-sharp
 excerpt: After lots of fits and starts with other frameworks, platforms, and
   languages - getting up and running with Gridsome, Tailwind, Netlify CMS (with
   Netlify Identity), and GitHub has been suprisingly easy and delightful.
 date: 2021-10-27
-category: rovani-in-c-sharp
 tags:
-- writing
-- goals
+  - writing
+  - goals
+  - vue
+  - netlify
 ---
 Throughout this process, I have been using [the repo's readme](https://github.com/drovani/rovaninet#readme) file as a notepad for the steps it took to get everything working. Below are the steps as I put it together to get to the point where I could write this post in the Netlify CMS.
 
