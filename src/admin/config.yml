@@ -23,7 +23,7 @@ collections:
         name: "category"
         widget: "select"
         options:
-        - { label: "Rovani in C&sharp;", value: "rovani-in-c-sharp" }
+        - { label: "Rovani in C♯", value: "rovani-in-c-sharp" }
         - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
         - { label: "Mise-en-Place", value: "mise-en-place" }
         - { label: "Vigil Journey", value: "vigil-journey" }
