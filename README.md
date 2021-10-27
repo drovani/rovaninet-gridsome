@@ -20,3 +20,8 @@
 1. Committed and Pushed to GitHub repo.
 1. Added site to Netlify and made some customizations.
 1. Published site and was [surprised that it worked](https://rovaninet.netlify.app/)!
+
+# Migrating from Jekyll website
+
+1. Create a new post in Netlify CMS to figure out where it puts the posts.
+1. Find that it creates `./posts/{{ slug }}.md` and noticed that `./src/admin/config.yml` has that same folder... hmm.

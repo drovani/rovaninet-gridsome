@@ -2,17 +2,33 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
+publish_mode: editorial_workflow
+
 media_folder: "static/uploads"
 public_folder: "/uploads"
+site_url: https://rovaninet.netlify.app
 
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    label_singular: "Post"
+    folder: "posts/"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{year}}/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+        - { label: "Rovani in C&sharp;", value: "rovani-in-c-sharp" }
+        - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
+        - { label: "Mise-en-Place", value: "mise-en-place" }
+        - { label: "Vigil Journey", value: "vigil-journey" }
       - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Tags (comma delimited)"
+        name: "tags"
+        widget: "list"

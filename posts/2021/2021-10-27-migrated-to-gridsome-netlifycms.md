@@ -3,7 +3,11 @@ title: Migrated to Gridsome + NetlifyCMS
 excerpt: After lots of fits and starts with other frameworks, platforms, and
   languages - getting up and running with Gridsome, Tailwind, Netlify CMS (with
   Netlify Identity), and GitHub has been suprisingly easy and delightful.
-date: 2021-10-27T19:53:42.504Z
+date: 2021-10-27
+category: "Rovani in C&sharp;"
+tags:
+- writing
+- goals
 ---
 Throughout this process, I have been using [the repo's readme](https://github.com/drovani/rovaninet#readme) file as a notepad for the steps it took to get everything working. Below are the steps as I put it together to get to the point where I could write this post in the Netlify CMS.
 
@@ -25,5 +29,5 @@ Throughout this process, I have been using [the repo's readme](https://github.co
 1. Added the `./src/admin/index.html`, `./src/admin/index.js`, and `./src/admin/config.yml` files, [pursuant to the instructions](https://www.netlifycms.org/docs/gridsome/#netlify-cms-setup).
 1. Committed and Pushed to GitHub repo.
 1. Added site to Netlify and made some customizations.
-    1. @TODO add details with all of the steps taken inside the Netlify dashboard 
+    1. @TODO add details with all of the steps taken inside the Netlify dashboard
 1. Published site and was [surprised that it worked](https://rovaninet.netlify.app/)!
