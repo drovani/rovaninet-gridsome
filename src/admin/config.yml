@@ -33,3 +33,7 @@ collections:
       - label: "Tags (comma delimited)"
         name: "tags"
         widget: "list"
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
