@@ -27,7 +27,7 @@ collections:
         - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
         - { label: "Mise-en-Place", value: "mise-en-place" }
         - { label: "Vigil Journey", value: "vigil-journey" }
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Tags (comma delimited)"
