@@ -16,7 +16,10 @@
   "devDependencies": {
     "autoprefixer": "^9",
     "gridsome-plugin-tailwindcss": "^4.1.1",
+    "gridsome-plugin-typescript": "^0.4.0",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "ts-loader": "^8",
+    "typescript": "^4.4.4"
   }
 }

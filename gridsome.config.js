@@ -23,6 +23,9 @@ module.exports = {
         publicPath: "/admin",
       },
     },
+    {
+      use: "gridsome-plugin-typescript"
+    }
   ],
   transformers: {
     remark: {
