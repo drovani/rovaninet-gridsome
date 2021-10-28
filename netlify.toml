@@ -1,0 +1,5 @@
+[build]
+  publish = "dist"
+
+[[plugins]]
+  package = "netlify-plugin-gridsome-cache"
