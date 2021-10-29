@@ -20,12 +20,15 @@ Throughout this process, I have been using [the repo's readme](https://github.co
 1. Validated that it is working with `gridsome develop`
 1. Added Tailwind CSS plugin with `yarn add -D gridsome-plugin-tailwindcss tailwindcss@latest`
 1. Created the Tailwind config file with `./node_modules/.bin/tailwind init`
-1. Ran a build to validate that all is still working `npm run build`
+1. Ran a build to validate that all is still working `yarn develop`
     1. Discovered first problem: "Error: PostCSS plugin tailwindcss requires PostCSS 8."
     1. Found the [fix on Tailwind's site](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build)
-    1. Uninstalled Tailwind `yarn remove tailwindcss postcss autoprefixer`
-    1. Reinstalled with the compatibility build instead `yarn add -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
+    1. Uninstalled Tailwind `npm uninstall tailwindcss postcss autoprefixer`
+    1. Reinstalled with the compatibility build instead `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
     1. Ran a build again to validate that _now_ it is working `npm run build`.
+    1. Deleted `package.lock.json`, because Gridsome prefers yarn.
+    1. Ran a build again to validate that _now_ it is working with `yarn develop`.
+
 1. Installed Netlify CMS packages `yarn add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark`
 1. Updated the Gridsome config file [per instructions](https://www.netlifycms.org/docs/gridsome/#create-a-new-gridsome-website).
 1. Added the `./src/admin/index.html`, `./src/admin/index.js`, and `./src/admin/config.yml` files, [pursuant to the instructions](https://www.netlifycms.org/docs/gridsome/#netlify-cms-setup).
@@ -47,3 +50,14 @@ Throughout this process, I have been using [the repo's readme](https://github.co
 1. Since the Jekyll site was deducing the publish date from the filename, I needed to write a script to parse each filename and add a `date: YYYY-MM-DD` entry to the front matter.
 
 1. Added a `view_groups` for Year to the config for a little sugar feature.
+
+# Convert Gridsome to Typescript
+1. Added `gridsome-plugin-typescript` plugin for Gridsome (in `gridsome.config.js`).
+1. Created the `tsconfig.json` file with default options and includes.
+1. Created `./src/vue-shims.d.ts` file with normal Vue export.
+1. Updated the `./src/pages/Index.vue` component by setting `script lang="ts"`.
+1. Ran a build to validate that the Typescript compiler would work.
+    1. Received an error message of `Module build failed (from ./node_modules/ts-loader/index.js): TypeError: loaderContext.getOptions is not a function`.
+    1. Dug around and found that `ts-loader` as of version 9 _also_ requires Webpack v5, but Gridsome isn't compatible with that version, yet.
+    1. Rolled back the `ts-loader` to version 8.3.0 (latest release in the v8 line).
+    1. Ran a build again to validate that now it is working with `yarn develop`
