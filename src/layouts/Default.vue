@@ -6,11 +6,16 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
+        <g-link class="nav__link" to="/mercenarieshelper/">HSMercs Helper</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
         <a class="nav__link" href="/admin">Admin</a>
       </nav>
     </header>
-    <slot/>
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
   </div>
 </template>
 
@@ -22,11 +27,16 @@ query {
 }
 </static-query>
 
+<script lang="ts">
+export default {}
+</script>
+
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
@@ -47,5 +57,12 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-enter {
+  opacity: 0;
 }
 </style>
