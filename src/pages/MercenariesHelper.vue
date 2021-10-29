@@ -14,7 +14,7 @@ export default {
     },
     metaInfo() {
         return {
-            title: this.$page.post.title
+            title: "Heartstone Mercenaries Helpers"
         }
     }
 }
