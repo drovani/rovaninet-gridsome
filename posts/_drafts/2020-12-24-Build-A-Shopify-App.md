@@ -20,8 +20,6 @@ The goal of this is to create a solid starting point, thus lowering the barrier 
 
 <!--more-->
 
-{% include series.html %}
-
 The end result of the application will be a way to manage webhooks. The default UI that Shopify provides is extremely lacking and there are a handful of features that I wish I had while working on other applications. The approach I am looking for includes:
 
 1. Using GitHub Actions, deploy a webhook listener to Azure Functions which simply validates the webhook origin and writes it to a database.
