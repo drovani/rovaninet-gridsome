@@ -14,7 +14,7 @@ export default {
     },
     metaInfo() {
         return {
-            title: "Heartstone Mercenaries Helpers"
+            title: "Hearthstone Mercenaries Helpers"
         }
     }
 }

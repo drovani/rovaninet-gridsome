@@ -1,15 +1,16 @@
 <template>
-    <div class="hsm_character">{{ character.name }}</div>
+    <div>{{ character.name }}</div>
 </template>
 
-<script>
+<script lang="ts">
+
+import Character from "../types/Character";
+
 export default {
     name: "Character",
     data() {
         return {
-            character: {
-                name: "Default Name"
-            }
+            character : Character
         }
     }
 }
