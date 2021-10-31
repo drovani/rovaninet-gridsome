@@ -3,6 +3,7 @@
 
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
+const { nodeModuleNameResolver } = require("typescript");
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
@@ -18,6 +19,14 @@ module.exports = {
       options: {
         path: "posts/**/*.md",
         typeName: "Post",
+        remark: {
+          plugins: [
+            [
+              "gridsome-plugin-remark-shiki",
+              { theme: "nord", skipInline: true },
+            ],
+          ],
+        },
       },
     },
     {

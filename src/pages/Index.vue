@@ -1,8 +1,13 @@
 <template>
   <Layout>
-    <p v-for="post in $page.posts.edges">
-      <g-link :to="post.node.path">{{ post.node.title }}</g-link>
-    </p>
+    <h1 class="text-4xl font-semibold mb-5">
+      Blog Posts
+    </h1>
+    <ul class="list-outside list-disc">
+      <li v-for="post in $page.posts.edges" :key="post.path" class="mt-3">
+      <g-link :to="post.node.path">{{ post.node.title }} - {{ post.node.date }}</g-link>
+      </li>
+    </ul>
     <Pager :info="$page.posts.pageInfo" />
   </Layout>
 </template>
@@ -21,6 +26,7 @@ query Posts ($page: Int) {
       node {
         title
         path
+        date (format: "D MMMM Y")
       }
     }
   }
@@ -33,9 +39,6 @@ import { Pager } from "gridsome";
 export default {
   components: {
     Pager
-  },
-  metaInfo: {
-    title: 'Rovani in C♯'
   }
 }
 </script>
