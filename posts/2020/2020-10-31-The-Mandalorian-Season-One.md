@@ -12,6 +12,8 @@ date: 2020-10-31
 
 I watched season one of _The Mandalorian_ as it was released a year ago. I had **_a lot_** of thoughts on the matter at the time, so going into this second season, I wanted to go back and rewatch the first season. This time, writing down all the highlights that I could remember from the first go around. You'll find that I was fond of this show. There were some entertaining pieces, but overall I found it to basically just be an episodic gunslinger-in-space derivative. There's nothing particularly unique or extraordinary about the show. It's half-decent entertainment, so long as you ignore continuity errors, dry dialog, and lots of tropes. There are spoilers throughout, but I don't care.
 
+| The first in a series of posts on ['My Thoughts on _The Mandalorian_'](/the-mandalorian-series). A new thread after each season!
+
 ## Episode 1: The Gunslinger... er... Mandalorian
 
 - Stop me if you've heard this one before, a gunslinger walks into a bar. The bully patrons pick a fight with him so that we, the audience, can see he's a badass brawler.
@@ -76,7 +78,7 @@ I watched season one of _The Mandalorian_ as it was released a year ago. I had *
 
 ## Episode 6: Am I the Prisoner?
 
-- Mark Boone Jr is always a win (to steal a line from a great YouTube channel)
+- Mark Boone Jr is always a win (to steal a line from a [great YouTube channel](https://www.youtube.com/channel/UCL8h3ri2WN_-IbviBlWtUcQ))
 - Gunslinger meets up with some old pals for one last job, definitely won't be a double-cross towards the end of the episode. Definitely not.
 - The overlord, the muscle, the sassy rogue, emotionless droid, the leader, and the gunslinger. This definitely isn't a troupe.
 - Maybe Mando should put a keypad on that locker.
