@@ -8,6 +8,7 @@ date: 2021-10-27
 tags:
   - vue
   - netlify
+  - gridsome
 ---
 Throughout this process, I have been using [the repo's readme](https://github.com/drovani/rovaninet#readme) file as a notepad for the steps it took to get everything working. Below are the steps as I put it together to get to the point where I could write this post in the Netlify CMS.
 

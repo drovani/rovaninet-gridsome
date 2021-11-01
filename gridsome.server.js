@@ -2,15 +2,34 @@
 // on server-side and add custom data to the GraphQL data layer.
 // Learn more: https://gridsome.org/docs/server-api/
 
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+module.exports = function(api) {
+  api.loadSource(({ getCollection }) => {
+    const posts = getCollection("Post");
+    const now = new Date();
+    posts.data().forEach((node) => {
+      if (new Date(node.date) > now) {
+        if (process.env.NODE_ENV === "production") {
+          posts.removeNode(node.id);
+        } else {
+          node.title = `DRAFT: ${node.title}`;
+        }
+      }
+    });
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+    const tagDescriptions = {
+      gridsome: "Posts about Gridsome, the JAMstack framework for Vue.js.",
+      writing: "I'm not very good at writing, but with enough practice, I hope that I can become passable at writing."
+    };
+
+    const tags = getCollection("Tag");
+    tags.data().forEach((tag) => {
+      if (tagDescriptions[tag.id]) {
+        tag.description = tagDescriptions[tag.id];
+      }
+    });
+  });
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
-}
+  });
+};
