@@ -41,7 +41,8 @@ This was a S.M.A.R.T. goal that I was able to achieve and I feel quite good abou
 One piece that I added in November to try and motivate me to continue running was a "4 Miles Every Day" challenge. I lasted 14 days until I stressed my ankle. Even though cutting it short with an injury soured the experience, I did enjoy having a daily challenge.
 
 > 100 pushups a day, every day, for 100 days, starting today.
-  I GOT THIS.
+>
+> I GOT THIS.
 
 &mdash; David Rovani (@davidrovani) [July 29, 2020](https://twitter.com/davidrovani/status/1288496324493684742?ref_src=twsrc%5Etfw)
 
