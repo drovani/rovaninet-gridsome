@@ -5,11 +5,11 @@ const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
 const { nodeModuleNameResolver } = require("typescript");
 
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
   siteName: "Rovani in C#",
+  siteDescription: "David Rovani's personal blog and sandbox.",
+  siteUrl: "https://rovani.net",
+  titleTemplate: "%s | Rovani in C#",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -23,9 +23,15 @@ module.exports = {
           plugins: [
             [
               "gridsome-plugin-remark-shiki",
-              { theme: "nord", skipInline: true },
+              { theme: "nord", skipInline: true, showLanguage: true, showLineNumbers: true, highlightLines: true },
             ],
-          ],
+          ]
+        },
+        refs: {
+          tags: {
+            typeName: "Tag",
+            create: true,
+          },
         },
       },
     },
@@ -39,6 +45,10 @@ module.exports = {
       use: "gridsome-plugin-typescript",
     },
   ],
+  templates:{
+    Post: '/posts/:year/:title',
+    Tag: '/tag/:id/'
+  },
   css: {
     loaderOptions: {
       postcss: {

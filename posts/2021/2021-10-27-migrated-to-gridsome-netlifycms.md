@@ -6,8 +6,6 @@ excerpt: After lots of fits and starts with other frameworks, platforms, and
   Netlify Identity), and GitHub has been suprisingly easy and delightful.
 date: 2021-10-27
 tags:
-  - writing
-  - goals
   - vue
   - netlify
 ---

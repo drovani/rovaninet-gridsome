@@ -3,13 +3,17 @@ layout: post
 title: Another Year In Review - 2020
 category: rovani-in-c-sharp
 date: 2020-12-31
+tags: [writing, yearinreview]
 ---
 
 Another year has come and gone, and it's another year with lofty goals that fell well short of what I had hoped. This seems to be a common theme at the end of each calendar. There's probably a lesson to be learned there, though I doubt I'll carry that into the new year. I have already started thinking about what I want to accomplish in 2021, which makes it tough to look back and see what this last year was. I have found, though, that these posts have become a journal of sorts. I occasionally go back and reread my chronicles from years past, just to remind myself of what it was like. Perhaps sometime in the future, my kids will read through this and see what happened while they were growing up.
 
 ## Starting the Year With S.M.A.R.T. Goals
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In 2020, I am going to write more, build more, and run more than I did last year. 2019 was a year of sudden changes and setting up 2020 to be a year of tremendous growth. Writing about this year as it happens leads me to my first S.M.A.R.T. goal: tweet every day.</p>&mdash; David Rovani (@davidrovani) <a href="https://twitter.com/davidrovani/status/1212484802668048384?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+>In 2020, I am going to write more, build more, and run more than I did last year. 2019 was a year of sudden changes and setting up 2020 to be a year of tremendous growth. Writing about this year as it happens leads me to my first S.M.A.R.T. goal: tweet every day.
+&mdash; David Rovani (@davidrovani) [January 1, 2020](https://twitter.com/davidrovani/status/1212484802668048384?ref_src=twsrc%5Etfw)
+
+https://twitter.com/davidrovani/status/1212484802668048384
 
 For 2020, I thought I would start the year with some solid goals that I would publicly announce in hopes that it would help hold me to account. What an easy way to review the year than to go through the goals.
 
@@ -33,7 +37,8 @@ This was a S.M.A.R.T. goal that I was able to achieve and I feel quite good abou
 
 One piece that I added in November to try and motivate me to continue running was a "4 Miles Every Day" challenge. I lasted 14 days until I stressed my ankle. Even though cutting it short with an injury soured the experience, I did enjoy having a daily challenge.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">100 pushups a day, every day, for 100 days, starting today. <a href="https://t.co/rj8Gm7JV1u">pic.twitter.com/rj8Gm7JV1u</a></p>&mdash; David Rovani (@davidrovani) <a href="https://twitter.com/davidrovani/status/1288496324493684742?ref_src=twsrc%5Etfw">July 29, 2020</a></blockquote>
+> 100 pushups a day, every day, for 100 days, starting today. ![I GOT THIS.](https://twitter.com/i/status/1288496324493684742)
+  &mdash; David Rovani (@davidrovani) [July 29, 2020](https://twitter.com/davidrovani/status/1288496324493684742?ref_src=twsrc%5Etfw)
 
 This was another mid-year fitness goal that turned out better than I expected but also ended abruptly because of injury. I want to try this again in 2021; I just need to learn better form, I think (and be more careful with [overhead belt sanding](https://twitter.com/davidrovani/status/1301693044794761221)). After 36 days, I had significant improvement in the number of pushups I could do consecutively, and my recovery rate between sets was noticeably improved.
 
