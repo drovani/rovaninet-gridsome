@@ -13,7 +13,7 @@
 # Post Years That Still Need Fixing
 
 - [x] 2021 (2 Posts)
-- [ ] 2020 (5 posts)
+- [x] 2020 (5 posts)
 - [ ] 2019 (12 posts)
 - [ ] 2018 (14 posts)
 - [ ] 2017 (16 posts)

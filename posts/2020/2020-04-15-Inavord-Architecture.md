@@ -7,7 +7,7 @@ tags:
 date: 2020-04-15
 ---
 
-The first quarter of 2020 is over and I have yet to write a single blog post. I have been tinkering away constantly, but with the [change of employment]({% post_url /2019/2019-10-11-BlueBolt-First-Week %}) I haven't really made much progress. Lots of brain power has been spent on what I _want_ to do, but I haven't put together the keyboard time to build anything of substance nor in writing about it. Time to get things pushed along, though.
+The first quarter of 2020 is over and I have yet to write a single blog post. I have been tinkering away constantly, but with the [change of employment](/posts/2019/first-week-at-blue-bolt-solutions/) I haven't really made much progress. Lots of brain power has been spent on what I _want_ to do, but I haven't put together the keyboard time to build anything of substance nor in writing about it. Time to get things pushed along, though.
 
 ## Inavord Architecture
 
