@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patron Can Be Created and Updated (Again)
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/63bbea9d206c6700efe58cb350390aac7a2aaeeb
 tags:
 - command

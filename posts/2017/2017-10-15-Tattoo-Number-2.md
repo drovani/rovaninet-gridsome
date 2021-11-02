@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tattoo Number Two
-category: Exact One Hobby
+category: Exactly One Hobby
 stylesheet: "https://fonts.googleapis.com/css?family=Vollkorn"
 date: 2017-10-15
 ---

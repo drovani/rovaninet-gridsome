@@ -1,14 +1,7 @@
 <template>
   <Layout>
-    <h1 class="text-4xl font-semibold mb-5">
-      Blog Posts
-    </h1>
-    <ul class="list-outside list-disc">
-      <li v-for="post in $page.posts.edges" :key="post.path" class="mt-3">
-      <g-link :to="post.node.path">{{ post.node.title }} - {{ post.node.date }}</g-link> | {{ post.node.timeToRead }} minute read
-      </li>
-    </ul>
-    <Pager :info="$page.posts.pageInfo" />
+    <PageHeader text="Blog Posts"></PageHeader>
+    <PostSnippets :posts="$page.posts.edges" :pageInfo="$page.posts.pageInfo"></PostSnippets>
   </Layout>
 </template>
 
@@ -16,9 +9,13 @@
 query Posts ($page: Int) {
   posts: allPost (perPage: 7, page: $page) @paginate {
     totalCount
-    pageInfo {
-      totalPages
+    pageInfo{
+      perPage
       currentPage
+      totalPages
+      totalItems
+      hasNextPage
+      hasPreviousPage
       isFirst
       isLast
     }
@@ -26,7 +23,9 @@ query Posts ($page: Int) {
       node {
         title
         path
-        date (format: "D MMMM Y")
+        date
+        formattedDate: date (format: "D MMM Y")
+        excerpt
         timeToRead
       }
     }
@@ -36,10 +35,14 @@ query Posts ($page: Int) {
 
 <script>
 import { Pager } from "gridsome";
+import PostSnippets from "~/components/PostSnippets.vue";
+import PageHeader from "~/components/PageHeader.vue";
 
 export default {
   components: {
-    Pager
+    Pager,
+    PostSnippets,
+    PageHeader
   },
   metaInfo: {
     title: "David's Sandbox"

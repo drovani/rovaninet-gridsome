@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Need a New Backpack
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 date: 2014-05-14
 ---
 

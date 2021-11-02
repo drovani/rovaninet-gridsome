@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 22 Month Status Report
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/dc688a9322bb3467b39c8d66a8c8883482e0a6f7
 excerpt_separator: <!--more-->
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 30 Burpees Per Day Challenge
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 tags:
 - ihateburpees
 - runningefficiency

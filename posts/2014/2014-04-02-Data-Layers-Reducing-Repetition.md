@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Layers, and Finding Ways to Reduce Repetition
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2014-04-02
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stumbling Into Design Patterns
-category: rovani-in-c-sharp
+category: Rovani in C♯
 tags:
 - cqrs
 - eventsourcing

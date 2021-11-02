@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mock Controller's User and Url Properties in ASP.NET Core MVC
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/96ccfc6f1e4326a7f2809976ee88c4388a624804
 tags:
 - moq

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hydrating A Patron
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/1b5152bcb40f3e372d13a86cc01685e17813dbf3
 tags:
 - versionedevent

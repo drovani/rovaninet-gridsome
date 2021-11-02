@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Recurring Gifts &mdash; Part 1: Database Schema"
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2015-02-13
 ---
 

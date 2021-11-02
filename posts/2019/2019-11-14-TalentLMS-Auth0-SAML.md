@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using SAML 2.0 with Auth0 to Authenticate Users in TalentLMS
-category: rovani-in-c-sharp
+category: Rovani in C♯
 tags:
 - talentlms
 - auth0

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Vigil Web API
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/5936f903b81eb202c63da493e3d0808679843ce1
 tags:
 - webapi

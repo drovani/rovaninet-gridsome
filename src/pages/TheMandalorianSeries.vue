@@ -19,15 +19,7 @@
         </div>
         <div class="mt-10 px-4 rounded-lg bg-background-secondary">
             <h2 class="mt-2 text-2xl font-bold">Posts by Season</h2>
-            <ol class="mt-6">
-                <li v-for="post in $page.posts.edges" :key="post.id" class="mb-5 text-lg list-none">
-                    <div>
-                        <g-link class="underline" :to="post.node.path">{{ post.node.title }}</g-link>
-                        <span class="float-right">{{ post.node.formattedDate }}</span>
-                    </div>
-                    <p>{{ post.node.excerpt }}...</p>
-                </li>
-            </ol>
+            <PostSnippets :posts="$page.posts.edges"></PostSnippets>
         </div>
     </Layout>
 </template>
@@ -56,9 +48,14 @@ query Posts {
 </page-query>
 
 <script lang="ts">
+import PostSnippets from "~/components/PostSnippets.vue";
+
 export default {
     metaInfo: {
         title: "Thoughts on The Mandalorian"
+    },
+    components: {
+        PostSnippets
     }
 }
 </script>

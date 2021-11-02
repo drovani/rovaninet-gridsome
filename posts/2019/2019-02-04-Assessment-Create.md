@@ -2,7 +2,7 @@
 layout: post
 title: Technical Assessment - Adding Create Functionality
 series: Technical Assessment
-category: rovani-in-c-sharp
+category: Rovani in C♯
 treeid: techassessment-basic/commit/c997a423414c0f3f93e22b08f5f47352f4d8d138
 tags:
 - career

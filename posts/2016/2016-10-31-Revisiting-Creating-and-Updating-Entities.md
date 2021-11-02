@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Revisiting Creating and Updating Entities
-category: vigil-journey
+category: Vigil Journey
 treeid: Vigil/tree/df1b703b2fef0de6c2e78b4e57a9c46637dc097e
 tags:
 - cqrs

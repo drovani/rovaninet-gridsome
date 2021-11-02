@@ -1,7 +1,7 @@
 ---
 layout: post
 title: All I Wanted Was an Integer Primary Key
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2014-05-21
 ---
 

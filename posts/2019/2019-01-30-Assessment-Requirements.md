@@ -2,7 +2,7 @@
 layout: post
 title: Technical Assessment - Requirements and First Pass
 series: Technical Assessment
-category: rovani-in-c-sharp
+category: Rovani in C♯
 treeid: techassessment-basic/tree/528a447383b5ce2037b042138b7f5b2a3ac76476
 tags:
 - career

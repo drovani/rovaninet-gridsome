@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Project BQ: No Easy Runs"
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 tags:
 - projectbq
 - N1400

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "3:56:58 - 2015 Wisconsin Marathon"
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 date: 2015-05-06
 ---
 

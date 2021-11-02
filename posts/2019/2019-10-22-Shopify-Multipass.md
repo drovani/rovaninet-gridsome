@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shopify Multipass in .NET Core 3.0
-category: rovani-in-c-sharp
+category: Rovani in C♯
 excerpt_separator: <!--more-->
 tags:
 - shopify

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Establishing KnockoutJs Design Patterns
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2014-03-21
 ---
 

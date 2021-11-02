@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Another Year In Review - 2020
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2020-12-31
 tags: [writing, yearinreview]
 ---

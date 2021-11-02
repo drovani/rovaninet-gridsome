@@ -6,7 +6,6 @@
       </strong>
       <nav>
         <g-link to="/">Home</g-link>
-        <g-link class="ml-6" to="/mercenarieshelper/">HSMercs Helper</g-link>
         <g-link class="ml-6" to="/about/">About</g-link>
         <a class="ml-6" href="/admin">Admin</a>
       </nav>

@@ -2,7 +2,7 @@
 layout: post
 title: Technical Assessment - Final Notes
 series: Technical Assessment
-category: rovani-in-c-sharp
+category: Rovani in C♯
 treeid: techassessment-basic/tree/8eca6ef7c2a9295b00e91aecca9268ccf46d9758
 tags:
 - career

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Naming the Patron Object
-category: rovani-in-c-sharp
+category: Rovani in C♯
 date: 2015-01-23
 ---
 

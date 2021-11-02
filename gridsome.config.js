@@ -32,6 +32,10 @@ module.exports = {
             typeName: "Tag",
             create: true,
           },
+          category:{
+            typeName: "Category",
+            create: true
+          }
         },
       },
     },
@@ -47,7 +51,8 @@ module.exports = {
   ],
   templates:{
     Post: '/posts/:year/:title',
-    Tag: '/tag/:id/'
+    Tag: '/tag/:id/',
+    Category: '/category/:title/'
   },
   css: {
     loaderOptions: {
@@ -60,7 +65,7 @@ module.exports = {
     remark: {
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      anchorClassName: "icon icon-link",
+      anchorClassName: "icon icon-link"
     },
   },
 };

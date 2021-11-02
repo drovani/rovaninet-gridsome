@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Commit bccg1aea: Preemptively Structuring the Chaos"
-category: rovani-in-c-sharp
+category: Rovani in C♯
 tags:
 date: 2015-05-13
 ---

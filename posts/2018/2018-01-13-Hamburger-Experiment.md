@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamburger and Fries Experiment
-category: mise-en-place
+category: Mise en place
 tags:
 - experiment
 - recipes

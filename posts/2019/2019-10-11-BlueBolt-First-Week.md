@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Week at BlueBolt Solutions
-category: rovani-in-c-sharp
+category: Rovani in C♯
 excerpt_separator: <!--more-->
 tags:
 - career

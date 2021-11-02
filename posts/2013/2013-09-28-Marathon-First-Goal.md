@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Marathon in Three Parts, The First Goal
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 date: 2013-09-28
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2016 Chicago Marathon Wrap-up
-category: "exactly-one-hobby"
+category: "Exactly One Hobby"
 tags:
 - marathon
 - CARA

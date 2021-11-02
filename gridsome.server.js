@@ -5,6 +5,7 @@
 module.exports = function(api) {
   api.loadSource(({ getCollection }) => {
     const posts = getCollection("Post");
+
     const now = new Date();
     posts.data().forEach((node) => {
       if (new Date(node.date) > now) {

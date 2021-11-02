@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2019 Chicago Marathon Race Review
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 tags:
 - projectbq
 - noeasyruns

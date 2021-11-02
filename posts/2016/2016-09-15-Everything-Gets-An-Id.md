@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Everything Gets an Id
-category: vigil-journey
+category: Vigil Journey
 tags:
 - identifier
 date: 2016-09-15

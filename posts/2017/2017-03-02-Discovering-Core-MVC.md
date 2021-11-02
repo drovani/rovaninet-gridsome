@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discoverying MVC - The ASP.NET Core MVC Stack
-category: vigil-journey
+category: Vigil Journey
 tags:
 - coremvc
 date: 2017-03-02

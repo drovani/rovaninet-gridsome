@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Disney's Dopey Challenge"
-category: "exactly-one-hobby"
+category: "Exactly One Hobby"
 tags:
 - marathon
 date: 2016-01-10

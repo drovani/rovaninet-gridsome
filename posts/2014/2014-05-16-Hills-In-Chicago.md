@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hills In Chicago
-category: exactly-one-hobby
+category: "Exactly One Hobby"
 date: 2014-05-16
 ---
 

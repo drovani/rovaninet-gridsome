@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auth0 Progressive Profiling Proof-of-Concept
-category: rovani-in-c-sharp
+category: Rovani in C♯
 excerpt_separator: <!--more-->
 tags:
   - auth0

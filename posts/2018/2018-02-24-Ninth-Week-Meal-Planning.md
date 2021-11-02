@@ -1,7 +1,7 @@
 ---
 layout: post
 title: February 25 - March 4 Meal Planning
-category: mise-en-place
+category: Mise en place
 tags:
 - experiment
 - weightwatchers

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: March 10 - 20 Meal Planning
-category: mise-en-place
+category: Mise en place
 tags:
 - mealplanning
 date: 2018-03-11

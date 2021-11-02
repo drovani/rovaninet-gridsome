@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Time at _The Fellowship_
-category: rovani-in-c-sharp
+category: Rovani in C♯
 tags:
 - career
 - teachablemoments
