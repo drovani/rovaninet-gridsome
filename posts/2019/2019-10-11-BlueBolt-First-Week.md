@@ -1,19 +1,14 @@
 ---
-layout: post
 title: First Week at BlueBolt Solutions
 category: Rovani in C♯
-excerpt_separator: <!--more-->
 tags:
 - career
 date: 2019-10-11
 ---
 
-{: .centered }
 ![BlueBolt Solutions](/images/bluebolt-logo.png)
 
 After nearly 7 years of full-time employment with IFCJ (and five years prior to that of part-time consulting work), I have chosen to move to other opportunities and challenges. This presented itself in the form of an offer from [BlueBolt Solutions](https://blueboltsolutions.com) to join their team as a Senior Solutions Architect. My primary duties will consist of being a technical lead across several projects of varying size, architecting and scaffolding solutions, work with the project managers to ensure timely delivery of the completed project, and mentor junior/mid-level developers as they work on the project.
-
-<!--more-->
 
 ## Day One - Initialization
 
@@ -36,7 +31,7 @@ As I expected, the first day was all about setting up my environment - getting a
 
 ## Day Two - 8:00 Is Early?
 
-I arrived at the building today at 8:00, only to find that it was locked! Thankfully, a deliver driver and an employee of another office in the building were both walking in just before me, and so I was able to walk in behind them. I'll have to find out when the building opens up, and how I can get access before then. Additionally, when I came up to the office, the lights were on and the door was unlocked, but there was no one inside. It's definitely a big change from IFCJ, where people started rolling in at 7:00, and the office was in full business mode by 8:00. I also need to get a key to the office and find out the feasibility of me starting work at 7:00. Will there be awkward moments when I'm leaving at 4:00? I'm sure it'll all work itself out.
+I arrived at the building today at 8:00, only to find that it was locked! Thankfully, a delivery driver and an employee of another office in the building were both walking in just before me, and so I was able to walk in behind them. I'll have to find out when the building opens up, and how I can get access before then. Additionally, when I came up to the office, the lights were on and the door was unlocked, but there was no one inside. It's definitely a big change from IFCJ, where people started rolling in at 7:00, and the office was in full business mode by 8:00. I also need to get a key to the office and find out the feasibility of me starting work at 7:00. Will there be awkward moments when I'm leaving at 4:00? I'm sure it'll all work itself out.
 
 Later in the day, I joked about being all alone in the office. I was given a set of keys, today - which is great. I can now come whenever I need to. I think I'm going to end up really appreciating the quiet in the morning - a chance to really get some dedicated work done.
 

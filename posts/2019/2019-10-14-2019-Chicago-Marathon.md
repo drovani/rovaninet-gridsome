@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 2019 Chicago Marathon Race Review
 category: "Exactly One Hobby"
 tags:
@@ -101,6 +100,4 @@ Wrapping it all up, I am grateful for having set a new personal record. I am gra
 |30K   |02:11:30|02:19:12|02:13:48|02:14:54|02:32:59|02:41:09|
 |35K   |02:36:02|02:42:39|02:40:24|02:41:40|03:05:53|03:07:24|
 |40K   |03:04:00|03:06:54|03:10:43|03:10:02|03:39:00|03:33:01|
-|======|========|========|========|========|========|========|
 |Finish|03:15:36|03:17:15|03:21:56|03:21:43|03:51:48|03:43:29|
-{:.bordered .firstcolumn}
