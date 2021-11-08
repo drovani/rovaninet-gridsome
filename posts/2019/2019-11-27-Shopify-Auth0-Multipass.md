@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Authenticate Shopify Customers with Auth0
 category: Rovani in C♯
-excerpt_separator: <!--more-->
 tags:
   - shopify
   - auth0
@@ -12,24 +10,23 @@ date: 2019-11-27
 
 What better way to follow up from the last two posts by combining the concepts. In "This week at BlueBolt", I present my solution for utilizing Auth0 to authenticate a user and then pass them back to Shopify utilizing the Multipass feature.
 
-<figure>
-    <img src="/images/leeloo-dallas-auth0.jpg" alt="Leeloo Dallas Auth0 Multipass" />
-    <figcaption>
-        <a href="https://www.youtube.com/watch?v=8bF5ft-oOWU">Leeloo Dallas Multi Pass</a> &ndash; <em>The Fifth Element</em> (1997)
-    </figcaption>
-</figure>
+[![Leeloo Dallas Auth0 Multipass](/images/leeloo-dallas-auth0.jpg)](https://www.youtube.com/watch?v=8bF5ft-oOWU)
+
 
 The primary steps involved in this process include:
 
-1. placeholder for table-of-contents
-{:toc}
+1. [Enable Multipass on Shopify account](#enable-multipass-on-shopify-account)
+1. [Create an Auth0 Application](#create-an-auth0-application)
+1. [Add Auth0 rule to create Multipass token and redirect user](#add-auth0-rule-to-create-multipass-token-and-redirect-user)
+1. [Update Shopify Theme with Auth0 Links](#update-shopify-theme-with-auth0-links)
+1. [Add URL Values](#add-url-values)
+1. [Optional: Capture First & Last Name During Signup](#optional-capture-first--last-name-during-signup)
 
 <!--more-->
 
 _This post was updated on 2020-01-31, adding a ```return_to``` URL to redirect the user to after being authenticated by Shopify._
 
 ## Prerequisites
-{:.no_toc}
 
 Similar to how TalentLMS requires an upgraded subscription in order to utilize SSO, Shopify requires a _Shopify Plus_ storefront. As a [Shopify Partner](https://www.shopify.com/partners), you can create development stores to test out any functionality you need to implement on a Plus store.
 
@@ -70,15 +67,59 @@ Now that we have a landing point for the Shopify store to send users to, we need
 
 ![Auth0 - Rules - Create Rule](/images/multipass-step4-auth0-createrule.gif)
 
-Start by creating a new Rule in Auth0, use the `Empty rule` template, give it a descriptive name (like: "Shopify Multipass"), and paste in the following code.
+Start by creating a new Rule in Auth0, use the `Empty rule` template, give it a descriptive name (like: "Shopify Multipass"), and paste in [the following code](https://gist.github.com/drovani/8199b1e0ffa1976c00af6781fcb98fbf#file-auth0-rule-shopify-multipass-js).
 
-{% gist 8199b1e0ffa1976c00af6781fcb98fbf %}
+```js
+function (user, context, callback) {
+  if (context.clientMetadata && context.clientMetadata.shopify_domain && context.clientMetadata.shopify_multipass_secret)
+  {
+    const RULE_NAME = 'shopify-multipasstoken';
+    const CLIENTNAME = context.clientName;
+    console.log(`${RULE_NAME} started by ${CLIENTNAME}`);
+
+    const now = (new Date()).toISOString();
+    let shopifyToken = {
+      email: user.email,
+      created_at: now,
+      identifier: user.user_id,
+      remote_ip: context.request.ip
+    };
+    if (context.request && context.request.query && context.request.query.return_to){
+      shopifyToken.return_to = context.request.query.return_to;
+    }
+
+    if (context.user_metadata)
+    {
+      shopifyToken.first_name = user.user_metadata.given_name;
+      shopifyToken.last_name= user.user_metadata.family_name;
+    }
+
+    const hash = crypto.createHash("sha256").update(context.clientMetadata.shopify_multipass_secret).digest();
+    const encryptionKey = hash.slice(0, 16);
+    const signingKey = hash.slice(16, 32);
+
+    const iv = crypto.randomBytes(16);
+    const cipher = crypto.createCipheriv('aes-128-cbc', encryptionKey, iv);
+    const cipherText = Buffer.concat([iv, cipher.update(JSON.stringify(shopifyToken), 'utf8'), cipher.final()]);
+
+    const signed = crypto.createHmac("SHA256", signingKey).update(cipherText).digest();
+
+    const token = Buffer.concat([cipherText, signed]).toString('base64');
+    const urlToken = token.replace(/\+/g, '-').replace(/\//g, '_');
+
+   context.redirect = {
+     url: `https://${context.clientMetadata.shopify_domain}/account/login/multipass/${urlToken}`
+   };
+  }
+  return callback(null, user, context);
+}
+```
 
 - **Line 2**: since Auth0 runs all rules for all authentications, we want to restrict this to just when the Auth0 Application has declared the `shopify_domain` and `shopify_multipass_seceret` metadata.
 - **Line 4-6**: Some minor logging, just to verify that the rule is being run.
 - **Line 8-14**: Shopify requires at least the `email` and `created_at` data points. For added information, we are also passing an `identifier` (in case multiple Auth0 accounts have the same email address) and `remote_ip` to ensure that this Multipass request can only be used by the same computer that sent the initial login request.
 - **Line 15-17**: If there is a ```return_to``` value in the query string, then add this to the Shopify token.
-- **Line 19-23**: In my [TalentLMS/Auth0 post]({% post_url 2019/2019-11-14-TalentLMS-Auth0-SAML %}), I describe how to grab first/last name when signing up a user. If that is in place, this will also add those data points to the Shopify account.
+- **Line 19-23**: In my [TalentLMS/Auth0 post](/posts/2019/using-saml-2-0-with-auth0-to-authenticate-users-in-talent-lms/), I describe how to grab first/last name when signing up a user. If that is in place, this will also add those data points to the Shopify account.
 - **Line 25-36**: These lines that do the actual encryption were taken from [a repository](https://github.com/beaucoo/multipassify/blob/master/multipassify.js) that I found on GitHub, so thanks go to [Cory Smith](https://github.com/corymsmith) from Calgary, AB for this one.
 - **Line 38-40**: This sets the destination for the authenticated user.
 
@@ -95,7 +136,7 @@ Start by editing the current theme (or whatever theme you want to use to test th
 Open the Login page, typically under **Templates** you will find the `customers/login.liquid` file. Find a good place to add the link; I put it next to the "Create account" link.
 
 ```html
-{% raw %}<a href="{{ settings.auth0_login_url }}">Log in with Auth0</a>{% endraw %}
+<a href="{{ settings.auth0_login_url }}">Log in with Auth0</a>
 ```
 
 ![Shopify - customers/login.liquid](/images/multipass-step6-shopify-loginauth0link.png)
@@ -105,7 +146,7 @@ You may also want to put a link on the registration page, located in the `custom
 Next up is to replace the logout link with the Auth0 logout. There is a logout link on the account page, found in `customers/account.liquid`. If your theme has a logout link anywhere else, that will also need to be replaced with the following:
 
 ```html
-{% raw %}<a href="{{ settings.auth0_logout_url }}">{{ 'layout.customer.log_out' | t }}</a>{% endraw %}
+<a href="{{ settings.auth0_logout_url }}">{{ 'layout.customer.log_out' | t }}</a>
 ```
 
 Finally, we need to [configure the theme settings](https://help.shopify.com/en/themes/development/theme-editor/settings-schema) to allow a user to paste the login and logout urls. Open the `settings_schema.json` file and paste the following snippet to the end of the array. This will provide an admin user the ability to key in the URL value without having to modify the theme templates directly.
@@ -147,7 +188,9 @@ Let's first build the login URL. Go back to Auth0 and copy the `Client ID` for y
 - **shopify-domain**: the domain you want the user sent back to. This must match the **Allowed Callback URLs** initially specified.
 - **return-to-path**: this can either be set as a hardcoded value (like "account") or it can be dynamically replaced with JavaScript on the page. This is helpful if you want to override the login on the Cart page.
 
-`https://{auth0-instance}.auth0.com/authorize?response_type=code&client_id={clientid}&return_to=https://{shopify-domain}/{return-to-path}&scope=SCOPE&state=STATE`
+```
+https://{auth0-instance}.auth0.com/authorize?response_type=code&client_id={clientid}&return_to=https://{shopify-domain}/{return-to-path}&scope=SCOPE&state=STATE
+```
 
 The logout URL looks very similar:
 
@@ -155,7 +198,9 @@ The logout URL looks very similar:
 - **clientid**: the value from Auth0
 - **shopify-domain**: the domain you want the user sent back to. This must match the **Allowed Logout URLs** initially specified.
 
-`https://{auth0-instance}.auth0.com/v2/logout?response_type=code&client_id={clientid}&returnTo=https://{shopify-domain}/account/logout`
+```
+https://{auth0-instance}.auth0.com/v2/logout?response_type=code&client_id={clientid}&returnTo=https://{shopify-domain}/account/logout
+```
 
 Back to the Themes page, now click the `Customize` button, switch to the `Theme settings`, expand the `Auth0 Config` section, and paste the URLs from above.
 
@@ -183,6 +228,5 @@ And it should look something like this:
 Click `Save Changes` and that should be it! Go back to Shopify's login page and you can test it out. To make sure it really works, log yourself out of Shopify, and when logging back in, click the `Log in with Auth0` link you created earlier. You can go through the Sign Up workflow, which should require First name, Last name, Email, and Password.
 
 ## In Production
-{:.no_toc}
 
 Once you are ready to force all users to use Auth0 to login, the ```customers/login.liquid``` template can be completely replaced with a redirect to the ```auth0_login_url```. All links to the login page can be replaced with direct links to the same setting. Also, all logout links need their url to be replaced with the ```auth0_logout_url``` setting.

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using SAML 2.0 with Auth0 to Authenticate Users in TalentLMS
 category: Rovani in C♯
 tags:
@@ -14,13 +13,20 @@ Prior to this week, I did not know who [TalentLMS](https://www.talentlms.com/) i
 
 The primary steps involved in this process include:
 
-1. table-of-contents placeholder
-{:toc toc_levels=1}
+1. [Enable SAML2.0 SSO integration in TalentLMS](#enable-saml20-sso-integration-in-talentlms)
+1. [Create an Auth0 Application](#create-an-auth0-application)
+1. [Map Setting in TalentLMS](#map-setting-in-talentlms)
+1. [Create Auth0 Rule To Define SAML Mapping](#create-auth0-rule-to-define-saml-mapping)
+1. [Capturing First & Last Name](#capturing-first--last-name)
+1. [How to Break TalentLMS](#how-to-break-talentlms)
+    1. [TalentLMS "Username" must match Auth0 "Name"](#talentlms-username-must-match-auth0-name)
+    1. [Don't Switch "SSO login screen" Until Everything Works](#dont-switch-sso-login-screen-until-everything-works)
+    1. [TalentLMS Does Not Permanently Delete Users](#talentlms-does-not-permanently-delete-users)
+1. [Is There a Better Way?](#is-there-a-better-way)
 
 _This post was updated on 2020-01-31, adding information about TalentLMS's ```nameidentifier``` requirements and how to lock down user accounts._
 
 ## Prerequisites
-{:.no_toc}
 
 TalentLMS requires a subscription level of _Basic_ or above to implement Single Sign-On. I could not find any way around this, even temporarily. They don't have any sort of a "developer" plan or other trial period to be able to demonstrate a proof-of-concept. At $159.00 per month, one will need to invest at least that much to make this work. Thankfully, my client had no problem bumping up their subscription tier without even knowing if SSO would work.
 
@@ -117,13 +123,46 @@ Now that everything has been pasted into their respective fields, go ahead and c
 
 There are two pieces still missing: sending the `given_name` and `family_name` fields from Auth0, and capturing those fields during the Sign Up process.
 
-Auth0 stores any additional data that is captured into `user_metadata`, which can be viewed in `Users & Roles -> Users`, select a user, then scroll down to the `Metadata` section. The next step is in our process to add these SAML configuration mappings to pull data from the ```user_metadata```. To do this, we are going to add a new Auth0 rule. Click on `Rules`, `+ Create Rule`, select `</> Empty rule`. Give it a name like "TalentLMS SAML Mappings" and paste the following into the Script section:
+Auth0 stores any additional data that is captured into `user_metadata`, which can be viewed in `Users & Roles -> Users`, select a user, then scroll down to the `Metadata` section. The next step is in our process to add these SAML configuration mappings to pull data from the ```user_metadata```. To do this, we are going to add a new Auth0 rule. Click on `Rules`, `+ Create Rule`, select `</> Empty rule`. Give it a name like "TalentLMS SAML Mappings" and [paste the following](https://gist.github.com/drovani/41b6f9c5acb186e8ca5ef4b4c7321c54#file-auth0-rule-talentlms-samlmapping-js) into the Script section:
 
-{% gist 41b6f9c5acb186e8ca5ef4b4c7321c54 %}
+```js
+function (user, context, callback) {
+
+  if (context.clientID === '{{auth0-application-client-id}}') {
+
+    const RULE_NAME = 'talentlms-samlmappings';
+    const CLIENTNAME = context.clientName;
+    console.log(`${RULE_NAME} started by ${CLIENTNAME}`);
+
+    if (!user.user_metadata.given_name || _.isEmpty(user.user_metadata.given_name) ||
+        !user.user_metadata.family_name || _.isEmpty(user.user_metadata.family_name))
+    {
+        console.log(`${RULE_NAME} Insuffient user_metadata for TalentLMS - given_name: ${user.user_metadata.given_name} family_name: ${user.user_metadata.family_name}`);
+        callback(null, user, context);
+    }
+
+    var auth0Identity = _.find(user.identities, function(u) { return u.provider === 'auth0'; });
+    var alphanumericUserId = auth0Identity.provider + auth0Identity.user_id;
+
+    user.app_metadata = user.app_metadata || {};
+    user.app_metadata.alphanumeric_auth0_user_id = alphanumericUserId;
+
+    context.samlConfiguration.mappings = {
+       "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "app_metadata.alphanumeric_auth0_user_id",
+       "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "email",
+       "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/given_name": "user_metadata.given_name",
+       "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/family_name": "user_metadata.family_name"
+    };
+
+  }
+
+  callback(null, user, context);
+}
+```
 
 - **Line 3**: substitute {{auth0-application-client-id}} with the ```Client ID``` value for this Auth0 application. This ensures the rule only runs for the Auth0 application configured for TalentLMS login.
 - **Line 5-7**: simple logging to validate the rule runs when it is supposed to
-- **Line 9-14**: validate that the first and last names have been captured already, otherwise abort. A subsequent rule can be made to enable _[Progressive Profiling]({% post_url 2019/2019-12-24-Auth0-Simple-Progressing-Profiling %})_
+- **Line 9-14**: validate that the first and last names have been captured already, otherwise abort. A subsequent rule can be made to enable _[Progressive Profiling](/posts/2019/auth0-progressive-profiling-proof-of-concept/)_
 - **Line 16-20**: strip out the pipe in the Auth0 id, assign it to the cached ```user``` object
 - **Line 22-27**: map the fields from the rule's scope of variables to the SAML schema.
 
@@ -227,6 +266,5 @@ In my testing, I would frequently delete a user from both TalentLMS and Auth0 so
 It turns out that TalentLMS only soft-deletes users (even if an Admin clicks the Delete button). If you want to [permanently delete users](https://help.talentlms.com/hc/en-us/articles/360014658253-How-to-delete-users-and-courses-permanently) you need to go through the convoluted process to permanently delete them. Thankfully, the Knowledge Base article was easy to find.
 
 ## Is There a Better Way?
-{:.no_toc}
 
 TalentLMS and Auth0 also support OpenID Connect as an SSO option, so that would also be an option. I don't have a good reason why I went with SAML over OpenID. Maybe someone else can share their experience and we'll see what the advantages for each might be.
