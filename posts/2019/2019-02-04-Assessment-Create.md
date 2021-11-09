@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Technical Assessment - Adding Create Functionality
 series: Technical Assessment
 category: Rovani in C♯
-treeid: techassessment-basic/commit/c997a423414c0f3f93e22b08f5f47352f4d8d138
 tags:
 - career
 - angular
@@ -11,6 +9,8 @@ date: 2019-02-04
 ---
 
 I am starting to make some real progress with this. I have a better idea of how components, service injection, and input binding works in Angular. These are all concepts that I am very familiar with in my extensive use of [Knockout](https://knockoutjs.com/), but anytime one is learning a new framework, there will be a learning curve in figuring out how _this particular framework_ implements various features. Next on the requirements list is the ability to create a new blog post.
+
+> The third in a four-part series of posts on ['An Assessment of a Technical Assessment'](/technical-assessment-series).
 
 ## Creating a Form
 
