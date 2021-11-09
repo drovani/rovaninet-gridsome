@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Commit bccg1aea: Preemptively Structuring the Chaos"
-category: Rovani in C♯
+category: Vigil Journey
 tags:
+- vigil
 date: 2015-05-13
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overall Fitness In 8 Tests
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 date: 2015-07-08
 ---
 

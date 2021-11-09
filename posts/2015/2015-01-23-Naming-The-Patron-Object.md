@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Naming the Patron Object
-category: Rovani in C♯
+category: Vigil Journey
+tags:
+- vigil
 date: 2015-01-23
 ---
 

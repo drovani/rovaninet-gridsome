@@ -1,7 +1,6 @@
 ---
-layout: post
 title: What Does 500 Words Look Like
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 tags:
 - writingexercise
 date: 2017-12-30

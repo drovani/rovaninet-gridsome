@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Divvy Is Delightful
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 date: 2014-04-01
 ---
 

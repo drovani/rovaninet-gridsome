@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exactly One Hobby
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 date: 2014-03-26
 ---
 

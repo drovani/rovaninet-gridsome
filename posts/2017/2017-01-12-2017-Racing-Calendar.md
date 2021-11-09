@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My 2017 Running Calendar
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 tags:
 - CARA
 - marathon

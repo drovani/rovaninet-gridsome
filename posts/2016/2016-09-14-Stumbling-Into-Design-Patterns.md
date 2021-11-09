@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Stumbling Into Design Patterns
-category: Rovani in C♯
+category: Vigil Journey
 tags:
+- vigil
 - cqrs
 - eventsourcing
 - factory

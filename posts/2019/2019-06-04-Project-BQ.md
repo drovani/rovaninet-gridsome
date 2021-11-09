@@ -1,6 +1,6 @@
 ---
 title: "Project BQ: This Time For Real"
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 tags:
 - projectbq
 - N1400

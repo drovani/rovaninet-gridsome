@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's Do the Time Warp Again
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 date: 2015-06-17
 ---
 

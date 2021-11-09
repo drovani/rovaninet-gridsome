@@ -3,6 +3,7 @@ layout: post
 title: A Word On Factory Results and Contracts
 category: Vigil Journey
 tags:
+- vigil
 - factory
 - codecontracts
 date: 2016-09-17

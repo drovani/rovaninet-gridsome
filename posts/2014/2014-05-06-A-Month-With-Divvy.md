@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Month With Divvy
-category: "Exactly One Hobby"
+category: Exactly One Hobby
 date: 2014-05-06
 ---
 

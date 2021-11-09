@@ -4,6 +4,7 @@ title: Revisiting Creating and Updating Entities
 category: Vigil Journey
 treeid: Vigil/tree/df1b703b2fef0de6c2e78b4e57a9c46637dc097e
 tags:
+- vigil
 - cqrs
 - eventsourcing
 - commandhandler
