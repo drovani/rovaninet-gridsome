@@ -6,7 +6,7 @@
 - [ ] Create a Categories list page
 - [ ] [Add some Remark plugins](https://github.com/gridsome/gridsome/issues/61) to allow for custom containers and TOC
 - [ ] Add better styling to the Pager component
-- [ ] Add Twitter Card loading for blockquotes that are links to tweets (https://rovani.net/posts/2020/another-year-in-review-2020/)
+- [ ] Add Twitter Card loading for blockquotes that are links to tweets (https://github.com/drovani/rovaninet/blob/main/posts/2020/2020-12-31-Another-Year-In-Review.md)
 - [ ] Load Tag descriptions from a json file or somewhere other than inside `gridsome.server.js`
 - [ ] Add "Next" and "Previous" links to every blog post
 - [ ] Integrate [Storybook](https://storybook.js.org/) with the site (instructions found [here](https://mannes.tech/gridsome-storybook/))
