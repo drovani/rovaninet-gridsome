@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Using AzureAD B2C and Visual Studio User Secrets
 category: Vigil Journey
-treeid: inavord/tree/0100e0ea00e1aabb49a09478098cb4dec8f10e3a
 series: Inavord
 tags:
 - opensource
@@ -46,9 +44,8 @@ The other significant advancement in my project start-up task list was the abili
 ```
 
 In Visual Studio, it is a simple right-click on the project, and select Manage User Secrets.
-S
+
 ![Visual Studio 2017 Manage User Secrets](/images/vs2017-inavord-manage-user-secrets.png)
-{: .centered }
 
 This will bring up the ```secrets.json``` file for the local computer. There [are caveats](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets) to using this method of storage, namely that it isn't actually secure. These settings are generally stored in plain text on the filesystem. What is key is that they are not stored in a location that might get it pushed into source control.
 
@@ -64,7 +61,6 @@ This will bring up the ```secrets.json``` file for the local computer. There [ar
 The values for these properties are pulled directly from the Azure portal.
 
 ![Azure AD B2C Application Properties](/images/azure-adb2c-application-properties.png)
-{: .centered }
 
 ## Authentication and Secrets
 

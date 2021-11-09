@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Pre-Trip Checklist - Because If I Don't Write It Down...
 category: Checklists
 tags:

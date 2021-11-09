@@ -1,5 +1,4 @@
 ---
-layout: post
 title: January 1-7 Meal Planning
 category: Mise en place
 tags:
@@ -14,29 +13,28 @@ As with all new years, this one will start with the best of intentions. My wife 
 |Day of Week| Breakfast       | AM Snack           | Lunch                  | PM Snack       | Dinner               |
 |-----------|-----------------|--------------------|------------------------|----------------|----------------------|
 |Monday     | _eating out_    |                    | _leftovers_            |                | Stir-fry Chicken     |
-|Tuesday   *| Std. Breakfast  | Yogurt             | [Chicken Salad][1]     | Apple + Pecans | Whole30 Chili        |
+|Tuesday   *| Std. Breakfast  | Yogurt             | [Chicken Salad](http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386)     | Apple + Pecans | Whole30 Chili        |
 |Wednesday  | Std. Breakfast  | Yogurt             | Cheeseburger Tortilla  | Apple + Pecans | ~~Pork Chops + Veggies~~ Subway |
-|Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots | Leftover Chili + Chips | Apple + Pecans | [Stir-fry Shrimp][2] |
+|Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots | Leftover Chili + Chips | Apple + Pecans | [Stir-fry Shrimp](/posts/2018/shrimp-stir-fry-with-coconut-rice/) |
 |Friday     | Std. Breakfast  | Yogurt             | ~~Leftover Pork chop~~ Leftover Shrimp | Apple + Pecans | ~~Salmon~~ Pork Chops + Broccoli |
 |Saturday  *| Katie's Oatmeal |                    | M.Y.O. Pizza           |                | Steak                |
-|Sunday     | Std. Breakfast  |                    | Brunch at [Pinstripes][pin]   |                |                      |
-{: .weekly-planner }
+|Sunday     | Std. Breakfast  |                    | Brunch at [Pinstripes](http://pinstripes.com/northbrook-illinois/bistro-menus/sunday-brunch/) |                |                      |
 
-Breakfast Plans
+## Breakfast Plans
 
 - Standard Breakfast - 3 eggs, 2 pieces of bacon, 75 grams potatoes, 64 grams Brussels sprouts
-- Katie's Oatmeal - 1 serving oatmeal, 1 serving almond milk, 1/2 serving organic peanut butter
+- Katie's Oatmeal - 1 serving oatmeal, 1 serving almond milk, ½ serving organic peanut butter
 
-Snack Plans
+## Snack Plans
 
 - HBO Eggs + Carrots - 2 hard-boiled eggs, peeled and quartered; eight baby carrots
 
-Lunch Plans
+## Lunch Plans
 
-- Cheeseburger Tortilla Pizza - 1/4 lb. ground beef, chopped red onion, shredded cheddar cheese on a tortilla, side of diced tomato, pickles, lettuce, ketchup
+- Cheeseburger Tortilla Pizza - ¼ lb. ground beef, chopped red onion, shredded cheddar cheese on a tortilla, side of diced tomato, pickles, lettuce, ketchup
 - Chicken Salad - chicken breast with celery, Dijon, lemon juice, salt, sour cream, and mayo
 
-Dinner Plans (also, leftovers as lunch)
+## Dinner Plans (also, leftovers as lunch)
 
 - Whole 30 Chili (with Sweet Potato) + Baked Potato
 - Beef Stew + Tortilla Chips
@@ -45,11 +43,11 @@ Dinner Plans (also, leftovers as lunch)
 - Stir-fry chicken breast, bell peppers, onions, celery, shredded carrots with coconut aminos and tahini over cauliflower rice
 - Stir-fry shrimp, bell peppers, onions, celery with paprika and cayenne sauce over coconut rice
 
-Shopping List:
+## Shopping List:
 
 - Container to transport Katie's oatmeal
 
-Costco List:
+### Costco List:
 
 - Bell peppers
 - Broccoli
@@ -62,7 +60,7 @@ Costco List:
 - Rice
 - Tortilla chips
 
-Grocery List:
+### Grocery List:
 
 - Cucumbers
 - Yellow Onion
@@ -80,7 +78,3 @@ Grocery List:
 - Mozzarella
 - Pepperoni
 - Green beans (frozen)
-
-[1]: <http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386>
-[2]: {% post_url 2018/2018-01-04-Shrimp-Stir-Fry-with-Coconut-Rice %}
-[pin]: <http://pinstripes.com/northbrook-illinois/bistro-menus/sunday-brunch/>
