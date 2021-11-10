@@ -10,10 +10,9 @@ tags:
 date: 2016-11-01
 ---
 
-Now that I have revised my approach for what constitutes [creating and updating entities]({% post_url 2016/2016-10-31-Revisiting-Creating-and-Updating-Entities%}), I am going back to my `Patron` entity to rework the create and update commands. I have already scrapped the `Factory` class and its associated unit tests, and gone forward with code creation.
+Now that I have revised my approach for what constitutes [creating and updating entities](/posts/2016/revisiting-creating-and-updating-entities/), I am going back to my `Patron` entity to rework the create and update commands. I have already scrapped the `Factory` class and its associated unit tests, and gone forward with code creation.
 
-
-### Commands for Create and Update Patron
+## Commands for Create and Update Patron
 
 The first major change is that I have moved the Patron Commands into the `Vigil.Patrons` project; at this moment, I am keeping projects confined by domain. Later, I may find this to be in error, but for now it seems to make sense. I am keeping validation on the Command class and the unit tests for the validation scenarios does not need to change at all. The only change that I made was adding the `Id` property implementation for `ICommand`. Since I would like to track every part of the system, it makes sense to have unique identifiers for everything.
 
@@ -72,7 +71,7 @@ namespace Vigil.Patrons.Commands
 }
 ```
 
-### Patron Command Handler
+## Patron Command Handler
 
 Someone else will put a command in a message queue, and some other process will handle pulling that command off of the queue and instantiating the `PatronCommandHandler`. However, once all that work is taken care of (it's all part of the unit test's arrange step), it is time to turn the command into a series of events. While the current examples only show one event fired from the command, there could be many more. However, there are two (probably hard and fast) rules: #1 - there must be exactly one command handler per command (though one handler can handle many different commands), and #2 - every command must fire at least one event (if a command doesn't create an event, what's the point?).
 
@@ -126,7 +125,7 @@ namespace Vigil.Patrons
 }
 ```
 
-### Command Handler Unit Tests
+## Command Handler Unit Tests
 
 The purpose of a unit test for an `ICommandHandler` is to ensure the correct event(s) is/are put on the event bus, and that the command will be persisted through the repository. Later unit tests on the repository itself will determine if the entity was actually persisted, and later tests on the actual implementation of the event bus will determine if anything happens when an event is put on the bus. But for this unit test, the code is just checking to make sure the handler does what is expected.
 

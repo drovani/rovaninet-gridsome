@@ -1,5 +1,4 @@
 ---
-layout: post
 title: User Can Update a Patron
 category: Vigil Journey
 treeid: Vigil/tree/224533ded3cbae7ff65a518e4c0987476275e95f
@@ -11,10 +10,9 @@ tags:
 date: 2016-10-19
 ---
 
-A simple update of an object is as complex as adding a new instance of the object, which means it is both straight forward and laden with all kinds of caveats and unlying processes. As with [creating a new Patron]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}), it is trivial for me to put together a contrived example of code that will technically satisfy the requirements for "User Can Update a Patron". A unit Test will create a new Command that will be validated by the Factory and then passed to the MessageQueue for persistance by some other process.
+A simple update of an object is as complex as adding a new instance of the object, which means it is both straight forward and laden with all kinds of caveats and unlying processes. As with [creating a new Patron](/posts/2016/user-can-create-new-patron/), it is trivial for me to put together a contrived example of code that will technically satisfy the requirements for "User Can Update a Patron". A unit Test will create a new Command that will be validated by the Factory and then passed to the MessageQueue for persistance by some other process.
 
-
-### Command and Tests
+## Command and Tests
 
 There is no surprising code here. The only differences, at this point, between the `CreatePatronCommand` and the `UpdatePatronCommand` is the removal of any fields being required and the addition of an `IKeyIdentity` identifier.
 
@@ -91,7 +89,7 @@ namespace Vigil.MessageQueue.Commands
 }
 ```
 
-### Factory and Added Tests
+## Factory and Added Tests
 
 The factory does not need much more than it already has. Adding the `UpdatePatron` method does show that the validation code between the two methods is the exact same, and so I have refactored that into its own protected method. Otherwise, the only real difference is that the `key` for the `QueueCommand` method comes from the `UpdatePatronCommand` instead of being newly generated.
 

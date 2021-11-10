@@ -14,7 +14,7 @@ date: 2016-09-16
 The first thing that I learned with Dependency Injection is that it encourages a mindset of "I'll figure that out that later." This allows me to put in the bare minimum for what might pass a test, even though I know it will have all kinds of complex integration somewhere down the line. To start this little experiment, I am going to put together a tiny amount of arguably functional code. I will start with the very simple definition of what a User is, what it means to Create an entity, and how a Patron is represented.
 
 
-### <sup>*</sup>"User"
+## *"User"
 
 A "User" in this case is the arbitrary creator of a command and consumer of the factory. For now, the User is the test suite (powered by xUnit).
 
@@ -51,7 +51,7 @@ namespace Vigil.Patrons
 }
 ```
 
-### <sup>**</sup>"Create"
+## **"Create"
 
 At this point, I am going to define Create as issuing the command to _something else_ to instantiate and persist a new representation of the entity.
 
@@ -87,7 +87,7 @@ namespace Vigil.Patrons
 }
 ```
 
-### <sup>***</sup>"Patron"
+## ***"Patron"
 
 A patron, this early in development, is an abstract representation of what should be created - it does not care about persistence or structure.
 
@@ -110,7 +110,7 @@ namespace Vigil.MessageQueue.Commands
 }
 ```
 
-### ICommandQueue Interface
+## ICommandQueue Interface
 
 The most basic, simple interface with the bare minimum for what a message queue would need to implement.
 
@@ -126,7 +126,7 @@ namespace Vigil.MessageQueue
 }
 ```
 
-### ICommand Interface
+## ICommand Interface
 
 This is just a simple way to identify commands and provide a way for future restrictions and contracts, when I need them.
 

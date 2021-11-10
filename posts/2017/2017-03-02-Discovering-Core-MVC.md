@@ -18,7 +18,7 @@ There's a lot of black box magic going on in that diagram. But you know what? It
 
 ## The First Challenge - Explicit Constructor
 
-The Create action for the `BaseController` is simple. It just take an instance of the `CreatePatron` command and publishes is to the `CommandQueue`. This is essentially the same as the unit test that proved that a "[patron can be created]({% post_url 2016/2016-11-01-Patron-Can-Be-Created-and-Updated %})".
+The Create action for the `BaseController` is simple. It just take an instance of the `CreatePatron` command and publishes is to the `CommandQueue`. This is essentially the same as the unit test that proved that a "[patron can be created](/posts/2016/patron-can-be-created-and-updated-again/)".
 
 ```csharp
 [HttpPost]
