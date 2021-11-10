@@ -4,6 +4,7 @@ title: Illusions of Queues and Buses
 category: Vigil Journey
 treeid: Vigil/tree/4bac8bfafb8ed7748b2d1958d98786d7fa07c047
 tags:
+- vigil
 - sql
 - commandqueue
 - eventbus
@@ -13,7 +14,7 @@ date: 2017-01-26
 There are many solutions on the market (including [free](https://github.com/zeromq/netmq) [open](https://github.com/pardahlman/RawRabbit) [source](https://www.rabbitmq.com/dotnet.html)) for creating both message queues and event buses. However, for example purposes - and as a simple _proof of concept_ - I just wanted a simple way to store the contents of a `Command`, run the `CommandHandler`, receive `Event` objects, call the `EventHandler` actions, and save all of the results. Everything runs synchronously and there are no retry policies, topics, or request/reply patterns. It is a simple, nearly useless set of code - but it serves its very specific purpose.
 
 
-### SqlCommandQueue
+## SqlCommandQueue
 
 Calling this a "queue" is a complete misnomer, since there is no actual queuing of the commands. All this does is persist the command to the database, call the command handler, and then declare the command as handled.
 
@@ -71,7 +72,7 @@ namespace Vigil.Sql
 
 A bit of magic happens on lines 28 and 29 &mdash; in order to retrieve an arbitrary object for later consumption, the command needs to be serialized. Additionally, to allow it to be deserialized later, the full AQN of the class should be kept handy. The actual work is done in lines 36 and 37, which get the command handler that has already been globally registered, and then calls the `Handle` method. Since nothing happens asynchronously, the queue is fully able to assume that returning control back to it means the command has been handled. Updating the `HandleOn` property closes that loop.
 
-### SqlEventBus
+## SqlEventBus
 
 Just as the "Command Queue" isn't a queue, the `SqlEventBus` isn't a bus, or a topic, or any kind of fancy messaging. What does it do? It persists the event to storage (a database), gets and calls all of the event handlers, then marks the persisted event as handled. The code looks quite similar to the `SqlCommandQueue`.
 

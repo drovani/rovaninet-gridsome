@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Discoverying MVC - The ASP.NET Core MVC Stack
 category: Vigil Journey
 tags:
@@ -9,7 +8,7 @@ date: 2017-03-02
 
 Now that the Vigil Project has breached into the API layer, I started to learn all kinds of new information about what takes place before the Controller's Action method is called and what happens after that method returns. The MVC framework, especially while using Visual Studio, make it incredibly easy to forget about all of the heavy lifting that the framework does &ndash; long before my code is ever executed. It is only when I wanted to start changing how pieces worked that I really start to see the true depth and breadth of what Microsoft has created. As I begin to discover new pieces of the framework, I felt that the best way to retain this information is to repeat it; and since no one around me wants to hear about all of this, I'll just type it into a blog post.
 
-### Upon First Introduction
+## Upon First Introduction
 
 My first introduction to MVC (through various tutorials) gave me the impression that the full stack looks basically like this:
 
@@ -17,7 +16,7 @@ My first introduction to MVC (through various tutorials) gave me the impression 
 
 There's a lot of black box magic going on in that diagram. But you know what? It doesn't matter. When all I wanted to do was respond to a simple request, then all I had to do was create a `Controller` and an `Action` and then _magic happened_, and I got a functioning application. Do I have any clue about how the data got to the method? Or how the `Controller` was even instantiated in order for _something_ to have an object to call my method? __Nope__! And that's the point.
 
-### The First Challenge - Explicit Constructor
+## The First Challenge - Explicit Constructor
 
 The Create action for the `BaseController` is simple. It just take an instance of the `CreatePatron` command and publishes is to the `CommandQueue`. This is essentially the same as the unit test that proved that a "[patron can be created]({% post_url 2016/2016-11-01-Patron-Can-Be-Created-and-Updated %})".
 
@@ -42,7 +41,7 @@ However, this quickly goes awry the first time I execute the code, because the `
 
 I was wrong.
 
-### What Creates an Instance of My Model
+## What Creates an Instance of My Model
 
 Early in the tutorials I was following, they allude to this magical _Binding Handler_ which takes data from the request and binds it to the model and passes it to the action. I now had an idea of _what_ I was looking for, with the assumption that the Binding Handler is what would create the instance of my model. I also assumed that whatever was doing this work was a result of some default setting.
 
@@ -125,7 +124,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters
 }
 ```
 
-### What Do I Know, Now?
+## What Do I Know, Now?
 
 ![Getting the Input Formatter](/images/mvcpipeline-chooseinputformatter.svg)
 
@@ -135,7 +134,7 @@ Zoomed in - this is the tiny piece that I learned of the whole pipeline. I have 
 
 ![Getting the Input Formatter](/images/mvcpipeline-chooseinputformatter.zoom.svg)
 
-### What Do I Need To Do?
+## What Do I Need To Do?
 
 1. Inherit from `JsonInputFormatter` and override the `ReadRequestBodyAsync` method.
 1. Create a new setup class to inject the new input formatter, implementing `IConfigureOptions<MvcOptions>`.

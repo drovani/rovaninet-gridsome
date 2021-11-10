@@ -8,8 +8,8 @@
             activeLinkClass="underline font-semibold"
             exactActiveLinkClass="text-blue-500"
             firstLabel="newest"
-            prevLabel="previous"
-            nextLabel="next"
+            prevLabel="newer"
+            nextLabel="older"
             lastLabel="oldest"
             class="text-center"
         />
@@ -32,8 +32,8 @@
             activeLinkClass="underline font-semibold"
             exactActiveLinkClass="text-blue-500"
             firstLabel="newest"
-            prevLabel="previous"
-            nextLabel="next"
+            prevLabel="newer"
+            nextLabel="older"
             lastLabel="oldest"
             class="text-center"
         />

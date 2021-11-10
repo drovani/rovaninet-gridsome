@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Hydrating A Patron
 category: Vigil Journey
 treeid: Vigil/tree/1b5152bcb40f3e372d13a86cc01685e17813dbf3
 tags:
+- vigil
 - versionedevent
 - eventsourcing
 - unittests
@@ -16,7 +16,6 @@ Looking into the details of what the process is when hydrating a `Patron`, the b
 
 
 ```csharp
-
 using System;
 using System.Collections.Generic;
 using Vigil.Domain.EventSourcing;
@@ -65,7 +64,6 @@ My initial goal was to create some sort of reflection assembly scanning that wou
 Anyway, each of the events, in creation order, get their appropriate method within the `Patron` object invoked, which updates the properties as appropriate. Unit testing is fairly straightforward.
 
 ```csharp
-
 using System;
 using Vigil.Domain.EventSourcing;
 using Vigil.Patrons.Events;
@@ -208,5 +206,4 @@ namespace Vigil.Patrons
         }
     }
 }
-
 ```

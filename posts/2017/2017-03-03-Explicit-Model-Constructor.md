@@ -4,6 +4,7 @@ title: Using an Explicit Model Constructor with a JsonInputFormatter
 category: Vigil Journey
 treeid: Vigil/tree/78af44f69d3ae477314d21ec2f76065f2a95267f
 tags:
+- vigil
 - coremvc
 - hastobeabetterway
 date: 2017-03-03
@@ -17,7 +18,7 @@ I may have gone down a long and twisted rabbit hole trying to figure out this pr
 public IActionResult Create([FromBody]CreatePatron command)
 ```
 
-An early lesson when writing Actions is that, in Core MVC, the `[FromBody]` attribute is required to use the `JsonInputFormatter`. Setting a new convention for controllers is possible ([instructions on how to](http://www.dotnetcurry.com/aspnet-mvc/1149/convert-aspnet-webapi2-aspnet5-mvc6)), but for now I am going to stick with the tedium of remembering to apply it to every paramter.
+An early lesson when writing Actions is that, in Core MVC, the `[FromBody]` attribute is required to use the `JsonInputFormatter`. Setting a new convention for controllers is possible ([instructions on how to](http://www.dotnetcurry.com/aspnet-mvc/1149/convert-aspnet-webapi2-aspnet5-mvc6)), but for now I am going to stick with the tedium of remembering to apply it to every parameter.
 
 The purpose of this is that I want the `GeneratedBy` and the `GeneratedOn` parameters to be required for every instance of a `Command`. This ensures that it won't be set by the user (either the end user or another user in a consuming change) since the properties' set methods are `protected`.
 
@@ -46,7 +47,7 @@ namespace Vigil.Domain.Messaging
 
 This poses a problem with using the `CreatePatron` command as a parameter. The default [`JsonInputFormatter` class](https://github.com/aspnet/Mvc/blob/dev/src/Microsoft.AspNetCore.Mvc.Formatters.Json/JsonInputFormatter.cs) uses the [`JsonSerializer.Deserialize(JsonTextReader, Type)` method](https://github.com/aspnet/Mvc/blob/dev/src/Microsoft.AspNetCore.Mvc.Formatters.Json/JsonInputFormatter.cs#L149) to create the instance of the model. This method uses the parameterless constructor, which my objects to not have. To solve this problem, I inheritted from the `JsonInputFormatter` (keeping as much functionality as I could) and proceeded from there.
 
-### CommandInputFormatter Constructor
+## CommandInputFormatter Constructor
 
 All of the fields that are passed to the `JsonInputFormatter` constructor are stored as private readonly fields. Therefore, I had to create my own private readonly copies of them to use in the methods that I needed to write.
 
@@ -75,7 +76,7 @@ public class CommandInputFormatter : JsonInputFormatter
 }
 ```
 
-### CommandInputFormatter.CanReadyType
+## CommandInputFormatter.CanReadyType
 
 Since I wanted this formatter to only work for these specific classes, I extended the functionality of the `CanReadType` method to also filter for just models that implement the `Command` abstract base class.
 
@@ -86,7 +87,7 @@ protected override bool CanReadType(Type type)
 }
 ```
 
-### CommandInputFormatter.ReadRequestBodyAsync
+## CommandInputFormatter.ReadRequestBodyAsync
 
 The simplest way for me to change the constructor that `JsonInputFormatter` uses to generate the model would have been if they had isolated that small piece of the `ReadRequestBodyAsync` method into its own protected virtual method. However, since they didn't, I have to override the entire thing. Because ASP.NET Core (including MVC) is all open source, I was able to copy the source code from the original and only replace the parts that I needed to.
 
@@ -174,13 +175,12 @@ public override Task<InputFormatterResult> ReadRequestBodyAsync(InputFormatterCo
 
 There are only two lines that differ between the formatters; I was surprised by how little I had to change.
 
-{: .bordered}
 | `JsonInputFormatter`                                | `CommandInputFormatter`                   |
 |-----------------------------------------------------|-------------------------------------------|
 |object model;                                        |object model = GetModel(context);          |
 |model = jsonSerializer.Deserialize(jsonReader, type);|jsonSerializer.Populate(jsonReader, model);|
 
-### CommandInputFormatter.GetModel
+## CommandInputFormatter.GetModel
 
 Of course, there was a little more that I had to add, but this piece is very specific to my application. This is the block of code that creates the appropriate `Command` object using the explicit constructor.
 
@@ -205,7 +205,7 @@ protected virtual object GetModel(InputFormatterContext context)
 
 I save the compiled expression in the formatter. There might be a better way to cache the results, but I can worry about that optimization later. I would also like to have a better way to pass in the identity of the user generating this command. This works for my testing purposes, but I need a better way to do this in the future. Additionally, it would be better if I could inject the `DateTime.UtcNow` value to be able to explicitly set it and test again in unit tests.
 
-### Include the CommandInputFormatter
+## Include the CommandInputFormatter
 
 I was not expecting this piece to turn into a three step process. In order to add an an input formatter with parameters, it needs to be configured through an `IConfigureOptions<MvcOptions>`, which is added via a `ServiceDescriptor` to the `Services` collection on the `IMvcBuilder` in the `Startup` class. I learned all this by searching through the Github repository. Once I found the path through it all, I just duplicated most of it, adapting it to my use case.
 
