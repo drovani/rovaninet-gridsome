@@ -34,7 +34,7 @@ Throughout this process, I have been using [the repo's readme](https://github.co
 1. Published site and was [surprised that it worked](https://rovaninet.netlify.app/)!
 
 
-# Copying Posts from Jekyll website
+## Copying Posts from Jekyll website
 
 1. Created a new post in Netlify CMS to figure out where it puts the posts.
 1. Found that it creates `./posts/{{ slug }}.md` and noticed that `./src/admin/config.yml` has that same folder... maybe I'm onto something.
