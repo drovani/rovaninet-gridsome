@@ -6,7 +6,7 @@
       </strong>
       <nav>
         <g-link to="/">Home</g-link>
-        <g-link class="ml-6" to="/about/">About</g-link>
+        <g-link class="ml-6" to="/about/">About Me</g-link>
         <a class="ml-6" href="/admin">Admin</a>
       </nav>
     </header>

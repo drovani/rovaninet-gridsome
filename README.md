@@ -2,6 +2,7 @@
 
 # Website Todo List:
 
+- [x] Create [About Me](https://github.com/drovani/rovaninet/blob/main/src/pages/About.vue) page
 - [ ] Add a footer to the website with the usual links.
 - [ ] Create a Categories list page
 - [ ] [Add some Remark plugins](https://github.com/gridsome/gridsome/issues/61) to allow for custom containers and TOC

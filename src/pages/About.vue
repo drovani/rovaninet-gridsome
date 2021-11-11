@@ -1,14 +1,139 @@
 <template>
-  <Layout>
-    <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+  <Layout class="resume">
+    <h1>David Rovani - Résumé</h1>
+
+    <h2>Passions and Motivators</h2>
+    <p>Even before experience, proficiencies, or technical knowledge, I put forward my passions and motivators as the key to understanding why I excel at what I do. I love the thrill of solving difficult conundrums by conceptualizing unique and innovative solutions. I get excited about people who want to learn, grow, and be challenged; I want to be their teacher and mentor. I work hard to find the root causes of a problem, be it a failure of programming, processes, or people; and I stand out in my skills at finding the path toward continued and lasting success. Monotonous or repetitive tasks present their own challenges that motivate me to create automations and expose inefficiencies. Experimenting and exploring with new and creative technologies and products keeps me enthralled with the application development and developer operations space.</p>
+    <p>I have built a reputation among my colleagues of trust and honesty, which affords me incredible leeway to pursue much of what I am passionate about. Throughout my career, I have stretched myself and my positions into greater challenges and areas of operation. I have spent years mentoring, teaching, and cultivating the next generation of developers, while still continuing to grow my own career in search of new opportunities. For these reasons, I think I will be an excellent fit for your organization’s current needs and future expansion.</p>
+
+    <h2>Proficiencies & Technical Knowledge</h2>
+    <ul>
+      <li>SCRUM, Agile, Waterfall project management methodologies</li>
+      <li>Azure DevOps – Boards, Project Planning, Backlog item tracking, Repos, Pipelines, CI/CD</li>
+      <li>Microsoft development environment – C#, MSSQL, .NET Framework, .NET core, Visual Studio, Knockout JS</li>
+      <li>Cloud-First Development - Azure Functions, Cosmos DB, App Services, Storage and Queues, AD B2C Tenants, Key Vault, Application Insights</li>
+      <li>Avid user of OneNote, Trello, LinqPad, Teams, VS Code; frequent user of Slack, Project, Outlook, Word, Excel</li>
+    </ul>
+
+    <p>While I have been exclusively in a Microsoft environment for the last 10+ years professionally, I have started side projects over the years in various other technologies to get an idea of how they approach problems differently. Such projects include using Vue.js, Angular, Ruby on Rails, PHP on Zend framework, and VB on legacy ASP.NET.</p>
+
+    <h2>Experience & Responsibilities</h2>
+
+    <header>
+      <h3>
+        Solution Strategist at
+        <i>The Maze Group</i>
+      </h3>
+      <span>June 2021 to present</span>
+    </header>
+    <aside>The Maze Group is a consulting agency focused on solutions for e-commerce, digital marketing, content strategies, and private equity acquisitions.</aside>
+
+    <header>
+      <h3>
+        Senior Solutions Architect at
+        <i>BlueBolt Solutions</i>
+      </h3>
+      <span>October 2019 to June 2021</span>
+    </header>
+    <aside>BlueBolt Solutions, Inc is a digital consulting agency focused on solutions for e-commerce, search, and content solutions with expertise in Shopify, Episerver, and DNN.</aside>
+
+    <p>Brought on as a general technologist to provide solutions support for projects large and small, I assisted and mentored for work on the UX front-end of projects, back-end architecture, and integrations with other systems.</p>
+    <ul>
+      <li>Provided UX support and created integrations between a new Shopify store and custom fulfillment workflows for a leading publisher of religious books and resources serving 12,000+ products with multiple fulfillment services and product types.</li>
+      <li>Researched and provided detailed instructions for integrating Auth0 with Shopify and TalentLMS.</li>
+    </ul>
+
+    <header>
+      <h3>
+        Director of Information Services at
+        <i>IFCJ</i>
+      </h3>
+      <span>November 2012 to October 2019</span>
+    </header>
+    <aside>The International Fellowship of Christians and Jews (IFCJ) is a global non-profit with offices in Chicago, Toronto, Brazil, South Korea, and Jerusalem providing humanitarian work in the eastern Mediterranean and former Soviet Union regions of the world. With annual revenue of $120m, IFCJ exists in an operational space with needs that reach into enterprise-level solutions, but within a budget designed to maximize stewardship of donors' contributions.</aside>
+    <p>My time at The Fellowship was highlighted by moments of teaching and mentoring my team; growing and adapting the Information Services department to meet the ever changing needs of the company; and the ongoing work of maintaining and enhancing the custom built donor management system (KesherNet).</p>
+    <p>Overseeing a team of 3 application developers, 2 database administrators, and a data hygienist, my role was both manager/mentor for the team and the senior technical resource. The department was responsible for ensuring that the organization has timely access to accurate data that is securely stored yet easily accessible. Information was retrieved from dozens of vendors through file imports, API calls, webhooks, and manual keying. The data was accessed by internal users through KesherNet, through custom reports, and shared with vendors through file exports.</p>
+    <p>KesherNet is a web application written in C# on the ASP.NET and EF frameworks connecting to Microsoft SQL Server databases. It includes modules that handle payment processing (CC, ACH, and PayPal), fully templated receipt printing, weekly/monthly/quarterly (and other odd cadence) scheduled gifts, highly adaptable list segmentations, and many other custom tools that support business processes. I was the lead developer on the initial project to build the application, replacing a vendor’s legacy system that had reached its end-of-life. I continued to be the architect and lead developer while teaching and directing junior staff to take on more responsibilities as they learn and grow.</p>
+    <p>Several later projects used an assortment of technologies and platforms, including Azure Functions, CosmosDb, App Services, and API Management to build a donation API for the publicly facing website; implemented code review and check-in policies and governance; and began creating the architecture of a fully cloud-native, open-source donor management solution to replace the current system.</p>
+    <p>Initial position at IFCJ was as a Senior .NET Developer, then after a year was promoted to .NET Developer Team Lead. Two years later, promoted to Manager of Application Development. Received promotion to Director of Information Services in November 2017.</p>
+
+    <h3>Additional Work Experience</h3>
+
+    <h4>Falkor Group</h4>
+    <p>
+      <i>Application Development Practice Manager</i> (May 2006 - November 2012)
+    </p>
+    <ul>
+      <li>Lead Developer on a three year project to convert a large website from classic ASP to ASP.NET Web Forms to support retail franchises for an international tire corporation with product ordering, event scheduling, and to act as an informational hub between the franchises and corporate.</li>
+      <li>Developer on a project to analyze and document the business processes for a large humanitarian non-profit, and recommend application solutions to transition their donor management software away from a closed-source Windows forms application.</li>
+      <li>Lead Developer on the project to implement the replacement solution for the same large humanitarian non-profit, which included migrating to a new open source platform, and recreating customized business logic in the new system.</li>
+      <li>Lead Developer during ongoing maintenance and enhancement projects, also for the same non-profit.</li>
+      <li>Sole developer creating a small internal website to aid a rental property management company with data storage, replacing a ten-year-old Access database.</li>
+      <li>Created a fully customized internal application for a small community advocacy non-profit on the Chicago south side to manage their client caseload. This replaced an entirely paper-driven workflow with a managed electronic process.</li>
+    </ul>
+    <h4>Best Buy</h4>
+    <p>
+      <i>Geek Squad "Double Agent"</i> (May 2004 - May 2006)
+    </p>
+
+    <ul>
+      <li>On-premise technical support for home and small businesses.</li>
+      <li>Diagnose and solve problems with home networking, Windows computers, and printers; and provide user training.</li>
+      <li>Required a significant amount of in-person customer support and working with both the central dispatch and local Best Buy employees to ensure that customer needs and expectations were always met.</li>
+    </ul>
+    <h2>University of Evansville, class of 2004</h2>
+    <ul>
+      <li>Received both a B.S. in Computer Science and a B.S. in Computer Engineering.</li>
+      <li>Resident Assistant (RA), 2 years</li>
+      <li>Leadership Academy, President</li>
+      <li>Resident Student Association, National Ambassador</li>
+      <li>Student Government Association, Resident Hall Senator</li>
+      <li>Resident Gamers Society, President</li>
+    </ul>
+    <h2>Additional Interests and Activities</h2>
+    <ul>
+      <li>Avid cook, handyman, reader, and runner.</li>
+      <li>Volunteer as marathon pace leader for Chicago Area Runners Association</li>
+      <li>#BQorBust on the Peloton leaderboards.</li>
+      <li>Occasional motorcyclist.</li>
+    </ul>
   </Layout>
 </template>
 
 <script lang="ts">
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'About Me'
   }
 }
 </script>
+
+<style>
+h1 {
+  @apply text-6xl text-center mb-8;
+}
+h2 {
+  @apply text-4xl mb-4 underline italic;
+}
+header {
+  @apply mt-8 mb-4;
+}
+aside {
+  @apply border-2 rounded-md p-2 mx-8;
+}
+h3 {
+  @apply text-3xl;
+}
+h4 {
+  @apply inline;
+}
+h4::after {
+  content: ":";
+}
+p {
+  @apply p-4;
+}
+ul {
+  @apply list-disc list-outside ml-6 mr-2 mt-2 mb-4;
+}
+</style>
