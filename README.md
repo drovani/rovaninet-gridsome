@@ -7,7 +7,8 @@
 - [ ] [Add some Remark plugins](https://github.com/gridsome/gridsome/issues/61) to allow for custom containers and TOC
 - [ ] Add better styling to the Pager component
 - [ ] Add Twitter Card loading for blockquotes that are links to tweets (https://github.com/drovani/rovaninet/blob/main/posts/2020/2020-12-31-Another-Year-In-Review.md)
-- [ ] Small images should be inline (https://github.com/drovani/rovaninet/blob/main/posts/2017/2017-03-28-Azure-Command-Queue.md)
+- [x] Using CSS/Tailwind, make h4 tags inline with the paragraph.
+- [x] Small images should be inline (https://github.com/drovani/rovaninet/blob/main/posts/2017/2017-03-28-Azure-Command-Queue.md)
 - [ ] Load Tag descriptions from a json file or somewhere other than inside `gridsome.server.js`
 - [ ] Add "Next" and "Previous" links to every blog post
 - [ ] Integrate [Storybook](https://storybook.js.org/) with the site (instructions found [here](https://mannes.tech/gridsome-storybook/))
