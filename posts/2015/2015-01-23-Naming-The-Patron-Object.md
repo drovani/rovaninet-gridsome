@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Naming the Patron Object
 category: Vigil Journey
 tags:
@@ -8,7 +7,8 @@ date: 2015-01-23
 ---
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
-> - Phil Karlton
+>
+> -Phil Karlton
 
 To any seasoned developer, this is entirely too true, and [many](http://www.quora.com/Why-is-naming-things-hard-in-computer-science-and-how-can-it-can-be-made-easier)
 [people](http://blog.stackoverflow.com/2009/03/it-stack-overflow-update-naming-is-hard/) have [written](http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard)

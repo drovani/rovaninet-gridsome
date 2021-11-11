@@ -68,7 +68,7 @@ string url = $"https://{store}.myshopify.com/account/login/multipass/{token}";
 
 ![Invalid Multipass Request error](/images/shopify-invalid-multipass-request.png)
 
-The only help that Shopify provides to identify the problem is "Invalid Multipass request" and a `Request ID` at the bottom. However, this is no way to get any details about what the problem is - not even an API call (that I could find) that lets me take the `Request ID` and look at logs on the request. Instead, I had to just keep trying (over and over and over) until I happened to stumble on the right answer &mdash; and then it just worked.
+The only help that Shopify provides to identify the problem is "Invalid Multipass request" and a `Request ID` at the bottom. However, this is no way to get any details about what the problem is - not even an API call (that I could find) that lets me take the `Request ID` and look at logs on the request. Instead, I had to just keep trying (over and over and over) until I happened to stumble on the right answer — and then it just worked.
 
 ## Never Hand-code JSON
 

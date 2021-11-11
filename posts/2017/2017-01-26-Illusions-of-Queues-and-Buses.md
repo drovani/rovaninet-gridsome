@@ -70,7 +70,7 @@ namespace Vigil.Sql
 }
 ```
 
-A bit of magic happens on lines 28 and 29 &mdash; in order to retrieve an arbitrary object for later consumption, the command needs to be serialized. Additionally, to allow it to be deserialized later, the full AQN of the class should be kept handy. The actual work is done in lines 36 and 37, which get the command handler that has already been globally registered, and then calls the `Handle` method. Since nothing happens asynchronously, the queue is fully able to assume that returning control back to it means the command has been handled. Updating the `HandleOn` property closes that loop.
+A bit of magic happens on lines 28 and 29 — in order to retrieve an arbitrary object for later consumption, the command needs to be serialized. Additionally, to allow it to be deserialized later, the full AQN of the class should be kept handy. The actual work is done in lines 36 and 37, which get the command handler that has already been globally registered, and then calls the `Handle` method. Since nothing happens asynchronously, the queue is fully able to assume that returning control back to it means the command has been handled. Updating the `HandleOn` property closes that loop.
 
 ## SqlEventBus
 
@@ -134,4 +134,4 @@ namespace Vigil.Sql
 
 The unit tests are very simple (so simple that I haven't even created them - and probably won't). It would just be a set of tests that verify it is doing exactly what I've told it to do. Since this code is only a demostration, and not meant for any kind of actual use, I'm not bother to fully unit test it. I doubt that this code will survive past the point where I have a real queue and bus living up in Azure.
 
-Two other pieces that I did add, that may be something that carries into an Azure implementation. I created new `Command` and `Event` objects that are just POCO wrappers for the `Vigil.Domain.Command` and `Vigil.Domain.Event` entities that are being persisted. One little handy thing that I did create, solely for debugging, is a `SqlViewerController` that sets up a _/sql/_ route with a way to view all persisted commands, all persisted events, and the ability to test rehydrating a `Patron`. It has been useful to have when I was testing out the `Vigil.WebApi` project &mdash; more on that in another post.
+Two other pieces that I did add, that may be something that carries into an Azure implementation. I created new `Command` and `Event` objects that are just POCO wrappers for the `Vigil.Domain.Command` and `Vigil.Domain.Event` entities that are being persisted. One little handy thing that I did create, solely for debugging, is a `SqlViewerController` that sets up a _/sql/_ route with a way to view all persisted commands, all persisted events, and the ability to test rehydrating a `Patron`. It has been useful to have when I was testing out the `Vigil.WebApi` project — more on that in another post.
