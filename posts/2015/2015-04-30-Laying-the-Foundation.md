@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Laying the Foundation
 category: Vigil Journey
 tags:

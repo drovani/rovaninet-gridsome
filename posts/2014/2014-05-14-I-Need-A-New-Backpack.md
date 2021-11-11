@@ -1,13 +1,13 @@
 ---
-layout: post
 title: I Need a New Backpack
 category: Exactly One Hobby
 date: 2014-05-14
 ---
 
-It has been almost over ten years since I last bought a backpack[^1], and now I need a new one.  My three primary use cases are while commuting on a Divvy bike, riding on my motorcycle, and generally walking around.  It needs to be comfortable and secure in all three scenarios. Other requirements (in no particular order):
+It has been almost over ten years since I last bought a backpack, and now I need a new one.  My three primary use cases are while commuting on a Divvy bike, riding on my motorcycle, and generally walking around.  It needs to be comfortable and secure in all three scenarios. Other requirements (in no particular order):
 
 | Requirements | Nice To Haves |
+|-|-|
 | Padding and ventilation on my back | Separate laptop sleeve/compartment |
 | Enough space to hold 15" laptop | Two separate large compartments |
 | Pocket with partitions for pens, cables and other small stuff | Exterior side pockets for waterbottle |
@@ -30,19 +30,19 @@ After searching around the internet and asking a few friends, I have narrowed it
 - [Timbuk2 Especial Tres](http://www.timbuk2.com/tb2/products/especial-tres-waterproof-cycling-laptop-backpack) - the roll-top of the backpack could be too much of an inconvenience for me.  With a 40.0 liter capacity, it may be too large for what I need.
 - [Timbuk2 Especial Vuelo](http://www.timbuk2.com/especial-vuelo-cycling-laptop-backpack/458-3-2182.html) - the smallest of the Especial line, I think its lack of features and smaller size might not suit my needs.  I want to get a hold of it though, to find out if it is larger than it appears.
 
-#### Late Additions
+## Late Additions
 
 Two different sources suggested that I take a look at Deuter, a company that I had never heard of before.
 
 - [Deuter Futura 28](http://www.deuter.com/us/us/hiking/futura-28-34214-119.html) - A friend went through a similar exercise, settled on this, and has been gracious enough to let me borrow it for a little bit to see how it fits. Unfortunately, it turned out have a frame too high to comfortably wear on a bicycle.
 
-#### Rejects
+## Rejects
 
 While most of these are not inherently bad backpacks, they just do not fit my purpose.
 
 - [Osprey Pixel](http://www.ospreypacks.com/en/product/tech/pixel) - main compartment is too small for my needs.
 
-#### Honorable Mentions
+## Honorable Mentions
 
 There were some bags that I came across that had neat little features that are of no use to me, but I thought I would give them a little credit for creativity.
 
@@ -51,8 +51,3 @@ There were some bags that I came across that had neat little features that are o
 Some points of interest that I have found in my research.  Osprey's website is tolerable, Chrome's is acceptable, and Timbuk2 blows them both out of the water.  For no other reason than each of Timbuk2's bags include a video showing all of the different pockets, which is as close as I can get to touching and feeling the bag without it being in my hands.  Before I went to a store to actually see how they felt on my back, I had ruled out all of the Osprey offerings.  They would are only still on my list because a sales associate at the first place I went to suggested I try the Osprey Quasar bag. Furthermore, all of the sites need to show what the back looks like on tall models.  [5'9' may be average](http://www.cdc.gov/nchs/data/nhsr/nhsr010.pdf), but their consumers are not going to all be average.
 
 I will be updating these bags as I get some hands-on time with them, and then I will eventually post about which bag I chose and periodic updates.
-
-[^1]: Initially, the following was the opening paragraph of this post - but I decided in editing that it really had no purpose for a reader coming into this post. But since I wrote it, I decided to leave it here in case someone actually cares **why** I need a new backpack._
-The JanSport bag that I have has certainly held up well over the years, and is still in perfectly usable condition.  The model I have is no longer in production, but it is probably most similar to their [Big Student](http://www.jansport.com/shop/en/jansport-us/big-student-tdn7) bag.  The bottom of my backpack is starting to wear a little thin, two of the seams connected to zippers have started to come undone, and shoulder pads have lost all sense of padding.  None of this is particularly damning of the bag, or course.  The bottom is starting to wear a little thin.  If I was not looking for flaws, I probably would not have even noticed.  The seams can easily be mended, but I have been super lazy.  The shoulder strap padding is just fine, except those few occasions that I pack the bag with lots of heavy items.
-
-[^2]: When travelling 60+ mph down the highway, I very much do not want straps flailing all around.

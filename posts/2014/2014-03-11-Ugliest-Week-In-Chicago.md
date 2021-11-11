@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Ugliest Week in Chicago
 date: 2014-03-11
 ---

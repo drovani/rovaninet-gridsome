@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Recurring Gifts — Part 1: Database Schema"
 category: Rovani in C♯
 date: 2015-02-13

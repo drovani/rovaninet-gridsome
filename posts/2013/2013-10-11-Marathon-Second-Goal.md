@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Marathon in Three Parts, Goal Number Two
 category: Exactly One Hobby
 date: 2013-10-11

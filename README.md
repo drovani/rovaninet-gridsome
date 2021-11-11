@@ -22,9 +22,9 @@
 - [x] 2018 (14 posts)
 - [x] 2017 (16 posts)
 - [x] 2016 (12 posts)
-- [ ] 2015 (10 posts)
-- [ ] 2014 (19 posts)
-- [ ] 2013 (4 posts)
+- [x] 2015 (10 posts)
+- [x] 2014 (19 posts)
+- [x] 2013 (4 posts)
 
 # Feature Projects for the Site
 

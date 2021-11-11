@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 30 Burpees Per Day Challenge
 category: Exactly One Hobby
 tags:

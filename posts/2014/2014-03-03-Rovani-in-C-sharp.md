@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Rovani in C♯"
 category: Rovani in C♯
 date: 2014-03-03

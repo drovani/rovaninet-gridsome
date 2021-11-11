@@ -1,5 +1,4 @@
 ---
-layout: post
 title: False Errors Are Better Than Silent Failures
 category: Rovani in C♯
 date: 2014-04-11

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Being Online
 date: 2014-03-04
 ---

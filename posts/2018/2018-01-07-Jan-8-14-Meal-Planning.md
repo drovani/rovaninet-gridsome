@@ -1,5 +1,4 @@
 ---
-layout: post
 title: January 8-14 Meal Planning
 category: Mise en place
 tags:

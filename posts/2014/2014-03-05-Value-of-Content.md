@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Que Sera, Sera: The Value of Content"
 date: 2014-03-05
 ---
 
-> Content is King  
+> Content is King
 -Bill Gates
 
 How to people with a full-time job, active social lives, a wife and kid, desire to slaughter digital demons, interest in pop culture, and unhealthy need to stay on top of the news? have any time left over to hack together these wonderfully articulate, annotated, categorized, and sublimely written daily blog posts? I just do not understand it!

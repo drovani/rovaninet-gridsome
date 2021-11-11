@@ -1,5 +1,4 @@
 ---
-layout: post
 title: No Support For White Men
 date: 2014-03-07
 ---

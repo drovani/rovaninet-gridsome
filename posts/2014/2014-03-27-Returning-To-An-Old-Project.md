@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Returning To an Old Project
 category: Rovani in C♯
 date: 2014-03-27

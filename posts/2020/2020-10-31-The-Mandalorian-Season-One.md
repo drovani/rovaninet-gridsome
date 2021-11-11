@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Mandalorian: Season One - A Few Thoughts"
 category: Exactly One Hobby
 series: The Mandalorian

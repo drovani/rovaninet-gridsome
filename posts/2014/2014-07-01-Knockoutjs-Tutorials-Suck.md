@@ -1,5 +1,4 @@
 ---
-layout: post
 title: KnockoutJS Tutorials Suck (But Not As Much As the Documentation)
 category: Rovani in C♯
 date: 2014-07-01

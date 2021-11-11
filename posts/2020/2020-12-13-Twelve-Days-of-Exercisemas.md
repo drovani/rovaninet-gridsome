@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 12 Days of Exercisemas
 category: Exactly One Hobby
 date: 2020-12-13

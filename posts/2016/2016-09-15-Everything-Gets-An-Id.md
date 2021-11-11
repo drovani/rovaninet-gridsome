@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Everything Gets an Id
 category: Vigil Journey
 tags:

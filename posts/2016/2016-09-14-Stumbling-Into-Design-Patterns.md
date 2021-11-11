@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stumbling Into Design Patterns
 category: Vigil Journey
 tags:

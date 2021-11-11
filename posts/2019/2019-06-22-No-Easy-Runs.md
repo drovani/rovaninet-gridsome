@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Project BQ: No Easy Runs"
 category: Exactly One Hobby
 tags:

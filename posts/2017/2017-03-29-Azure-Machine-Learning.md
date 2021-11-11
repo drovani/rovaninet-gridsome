@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Azure Machine Learning - Data Camp
 category: Never Stop Learning
 treeid: Vigil/tree/

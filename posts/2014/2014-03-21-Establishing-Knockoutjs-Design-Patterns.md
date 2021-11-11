@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Establishing KnockoutJs Design Patterns
 category: Rovani in C♯
 date: 2014-03-21
@@ -20,6 +19,7 @@ Two days later, as I started to write up the actual rules I had been following, 
 > - A lack of standards can make your code unreadable.
 > - Disagreement over standards can cause check-in wars between developers.
 > - Seeing different standards in the same class can be extremely irritating.
+>
 > I'm a big fan of what [Uncle Bob has to say](http://c2.com/cgi/wiki?UncleBobOnCodingStandards) about standards:
 >
 > 1. Let them evolve during the first few iterations.
@@ -28,7 +28,6 @@ Two days later, as I started to write up the actual rules I had been following, 
 > 1. Don't legislate good design. (e.g. don't tell people not to use goto)
 > 1. Make sure everyone knows that the standard is about communication, and nothing else.
 > 1. After the first few iterations, get the team together to decide.
-
 
 So much for that idea.
 

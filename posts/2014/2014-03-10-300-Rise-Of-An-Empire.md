@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "300: Rise Of an Empire Of Freedom For Free Greeks"
 date: 2014-03-10
 ---

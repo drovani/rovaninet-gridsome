@@ -1,11 +1,10 @@
 ---
-layout: post
 title: Data Layers, and Finding Ways to Reduce Repetition
 category: Rovani in C♯
 date: 2014-04-02
 ---
 
-![Data Workflow]({{ site.baseurl }}/images/data-layers.png "Data Workflow")
+![Data Workflow](/images/data-layers.png "Data Workflow")
 
 This should be a footnote, but I have always wanted an excuse to use the stencils from the Visio Work Flow Diagram.  They just seem like a fun way to represent something.
 
