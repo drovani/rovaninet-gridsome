@@ -1,10 +1,10 @@
 import Ability from "./Ability";
 import Item from "./Item";
 
-export default class Character {
+export default class Mercenary {
   static AllianceRaces = ["Human", "Night Elf", "Gnome", "Dwarf", "Draenai"];
   static HordeRaces = ["Orc", "Tauren", "Blood Elf", "Troll", "Undead"];
-  static NeutralRace = ["Murloc", "Demon"];
+  static NeutralRace = ["Murloc", "Demon", "Pirate"];
 
   abilities: Ability[] = new Array<Ability>(3);
   equipment: Item[] = new Array<Item>(3);
@@ -12,14 +12,18 @@ export default class Character {
 
   constructor(
     public readonly name: string,
-    public readonly race: string,
-    public readonly role: string
+    public readonly role: string,
+    public readonly race?: string,
   ) {
-    this.faction = Character.AllianceRaces.includes(race)
-      ? "Alliance"
-      : Character.HordeRaces.includes(race)
-      ? "Horde"
-      : "Neutral";
+    if (race === undefined) {
+      this.faction = "Neutral";
+    } else {
+      this.faction = Mercenary.AllianceRaces.includes(race)
+        ? "Alliance"
+        : Mercenary.HordeRaces.includes(race)
+          ? "Horde"
+          : "Neutral";
+    }
   }
 
   addAbility(

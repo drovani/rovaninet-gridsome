@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mx-auto px-5">
+  <div class="container max-w-screen-lg mx-auto">
     <header class="flex justify-between items-center mt-8 mb-12">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
@@ -7,6 +7,7 @@
       <nav>
         <g-link to="/">Home</g-link>
         <g-link class="ml-6" to="/about/">About Me</g-link>
+        <g-link class="ml-6" to="/mercenaries-helper">HS Mercs</g-link>
         <a class="ml-6" href="/admin">Admin</a>
       </nav>
     </header>

@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 h1 {
   @apply text-6xl text-center mb-8;
 }

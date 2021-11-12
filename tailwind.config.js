@@ -19,17 +19,17 @@ module.exports = {
             "blockquote p:last-of-type::after": {
               content: null,
             },
-            "blockquote + figcaption::before":{
-              content: '—',
+            "blockquote + figcaption::before": {
+              content: "—",
             },
             code: {
-              color: 'var(--tw-prose-code)',
-              fontWeight: '900',
+              color: "var(--tw-prose-code)",
+              fontWeight: "900",
             },
-            'code::before': {
+            "code::before": {
               content: null,
             },
-            'code::after': {
+            "code::after": {
               content: null,
             },
           },
@@ -40,5 +40,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 };

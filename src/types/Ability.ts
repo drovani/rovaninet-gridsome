@@ -1,13 +1,5 @@
 export default class Ability {
   tiers: Array<AbilityTier>;
-
-  constructor(public readonly name: string) {
-    this.tiers = new Array<AbilityTier>(5);
-  }
-}
-
-export class AbilityTier {
-  cooldown = 0;
   spell_school?:
     | "Arcane"
     | "Nature"
@@ -33,9 +25,16 @@ export class AbilityTier {
     | "Frost"
     | "Holy"
     | "Any";
+  constructor(public readonly name: string) {
+    this.tiers = new Array<AbilityTier>(5);
+  }
+}
+
+export class AbilityTier {
 
   constructor(
     public readonly description: string,
-    public readonly speed: number
-  ) {}
+    public readonly speed: number,
+    public readonly cooldown: number = 0
+  ) { }
 }
