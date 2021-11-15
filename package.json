@@ -14,7 +14,8 @@
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "moment": "^2.29.1",
-    "netlify-cms": "^2.10.175"
+    "netlify-cms": "^2.10.175",
+    "slug": "^5.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^9",
