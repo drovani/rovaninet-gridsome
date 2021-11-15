@@ -11,11 +11,12 @@
                         @click="highlightMerc(merc.name)"
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
-                    >{{ merc.name }}</li>
+                    >{{ merc.name }}
+                    <span v-if="collection[merc.name]" class="float-right">✔</span></li>
                 </ul>
             </section>
             <section v-if="highlightedMercId" class="object-fill">
-                <MercenaryDetails :mercenary="highlightedMerc" />
+                <MercenaryDetails :mercenary="highlightedMerc" :collected="collection[highlightedMerc.name]" />
             </section>
             <section>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
@@ -29,6 +30,7 @@
 
 <script>
 import mercjson from "~/types/mercenaries.json";
+import colljson from "~/types/collection.json";
 import MercenaryCard from '~/components/MercenaryCard.vue';
 import MercenaryDetails from '~/components/MercenaryDetails.vue';
 
@@ -36,6 +38,7 @@ export default {
     data: function () {
         return {
             mercenaries: mercjson.mercenaries,
+            collection: colljson.mercenaries,
             highlightedMercId: null
         }
     },

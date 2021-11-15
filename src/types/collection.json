@@ -1,0 +1,19 @@
+{
+    "mercenaries": {
+        "Alexstrasza": {
+            "level": 30,
+            "tasksCompleted": 2,
+            "itemEquiped": "Amulet of Swiftness",
+            "abilities": {
+                "Dragon Breath": 2,
+                "Flame Buffet": 2,
+                "Dragonqueen's Gambit": 1
+            },
+            "equipment": {
+                "Alexstrasza's Brooch": 1,
+                "Amulet of Swiftness": 2,
+                "Dragonflight Talisman": 4
+            }
+        }
+    }
+}
