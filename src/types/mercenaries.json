@@ -1,12 +1,10 @@
 {
-    "mercenaries": [
-        {
-            "name": "Alexstrasza",
+    "mercenaries": {
+        "Alexstrasza": {
             "role": "Protector",
             "race": "Dragon",
-            "abilities": [
-                {
-                    "name": "Dragon Breath",
+            "abilities": {
+                "Dragon Breath": {
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -31,8 +29,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Flame Buffet",
+                "Flame Buffet": {
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -62,8 +59,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Dragonqueen's Gambit",
+                "Dragonqueen's Gambit": {
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -93,18 +89,16 @@
                         }
                     ]
                 }
-            ],
-            "equipment": [
-                {
-                    "name": "Dragonflight Talisman",
+            },
+            "equipment": {
+                "Dragonflight Talisman": {
                     "tiers": [
                         {
                             "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
                         }
                     ]
                 },
-                {
-                    "name": "Alextrasza's Brooch",
+                "Alextrasza's Brooch": {
                     "tiers": [
                         {
                             "description": "Dragon Breath deals or restores 2 more."
@@ -120,8 +114,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Amulet of Swiftness",
+                "Amulet of Swiftness": {
                     "tiers": [
                         {
                             "description": "Dragonqueen's Gambit is (1) Speed faster"
@@ -137,15 +130,13 @@
                         }
                     ]
                 }
-            ]
+            }
         },
-        {
-            "name": "Blademaster Samuro",
+        "Blademaster Samuro": {
             "role": "Fighter",
             "race": "Orc",
-            "abilities": [
-                {
-                    "name": "Double Strike",
+            "abilities": {
+                "Double Strike": {
                     "tiers": [
                         {
                             "speed": 4,
@@ -169,8 +160,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Mirror Image",
+                "Mirror Image": {
                     "tiers": [
                         {
                             "speed": 9,
@@ -199,8 +189,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Whirling Blade",
+                "Whirling Blade": {
                     "tiers": [
                         {
                             "speed": 5,
@@ -229,10 +218,9 @@
                         }
                     ]
                 }
-            ],
-            "equipment": [
-                {
-                    "name": "Honed Blade",
+            },
+            "equipment": {
+                "Honed Blade": {
                     "unlock": "Level 30",
                     "tiers": [
                         {
@@ -249,8 +237,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Sash of Illusion",
+                "Sash of Illusion": {
                     "unlock": "Task 7",
                     "tiers": [
                         {
@@ -258,8 +245,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Burning Blade",
+                "Burning Blade": {
                     "unlock": "Task 2",
                     "tiers": [
                         {
@@ -276,15 +262,13 @@
                         }
                     ]
                 }
-            ]
+            }
         },
-        {
-            "name": "Anduin Wrynn",
+        "Anduin Wrynn": {
             "role": "Caster",
             "race": "Human",
-            "abilities": [
-                {
-                    "name": "Penance",
+            "abilities": {
+                "Penance": {
                     "spell_school": "Holy",
                     "tiers": [
                         {
@@ -309,8 +293,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Holy Nova",
+                "Holy Nova": {
                     "spell_school": "Holy",
                     "tiers": [
                         {
@@ -340,8 +323,7 @@
                         }
                     ]
                 },
-                {
-                    "name": "Holy Word: Salvation",
+                "Holy Word: Salvation": {
                     "spell_school": "Holy",
                     "tiers": [
                         {
@@ -371,10 +353,9 @@
                         }
                     ]
                 }
-            ],
-            "equipment": [
-                {
-                    "name": "Harmonic Mallet",
+            },
+            "equipment": {
+                "Harmonic Mallet": {
                     "tiers": [
                         {
                             "description": "Holy Nova deals 2 more damage."
@@ -390,16 +371,14 @@
                         }
                     ]
                 },
-                {
-                    "name": "Robes of Rejuvenation",
+                "Robes of Rejuvenation": {
                     "tiers": [
                         {
                             "description": "Passive: After a friendly Human dies, Refresh Holy Word: Salvation."
                         }
                     ]
                 },
-                {
-                    "name": "Ring of Purity",
+                "Ring of Purity": {
                     "tiers": [
                         {
                             "description": "Passive: Whenever a friendly character is healed, gain +2 Health."
@@ -415,7 +394,7 @@
                         }
                     ]
                 }
-            ]
+            }
         }
-    ]
+    }
 }

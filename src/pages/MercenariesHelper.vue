@@ -6,22 +6,39 @@
                 <h3 class="text-lg underline">Available Mercenaries</h3>
                 <ul>
                     <li
-                        v-for="merc in mercenaries"
-                        :key="merc.name"
-                        @click="highlightMerc(merc.name)"
+                        v-for="(merc, name) in mercenaries"
+                        :key="name"
+                        :mercName="name"
+                        @click="highlightMerc(name)"
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
-                    >{{ merc.name }}
-                    <span v-if="collection[merc.name]" class="float-right">✔</span></li>
+                    >
+                        {{ name }}
+                        <span v-if="collection[name]" class="float-right">✔</span>
+                    </li>
                 </ul>
             </section>
-            <section v-if="highlightedMercId" class="object-fill">
-                <MercenaryDetails :mercenary="highlightedMerc" :collected="collection[highlightedMerc.name]" />
+            <section v-if="highlightedMercName" class="object-fill">
+                <MercenaryDetails
+                    :mercName="highlightedMercName"
+                    :mercenary="highlightedMerc"
+                    :collected="collection[highlightedMercName]"
+                    @decrementAbilityActiveTier="decrementAbilityActiveTier"
+                    @incrementAbilityActiveTier="incrementAbilityActiveTier"
+                    @decrementItemActiveTier="decrementItemActiveTier"
+                    @incrementItemActiveTier="incrementItemActiveTier"
+                />
             </section>
             <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-                gap-1">
-                    <MercenaryCard :mercenary="merc" v-for="merc in mercenaries" :key="merc.name" />
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+                    <MercenaryCard
+                        v-for="(merc, name) in mercenaries"
+                        :key="name"
+                        :mercenary="merc"
+                        :collected="collection[name]"
+                        @decrementAbilityActiveTier="decrementAbilityActiveTier"
+                        @incrementAbilityActiveTier="incrementAbilityActiveTier"
+                    />
                 </div>
             </section>
         </div>
@@ -33,13 +50,15 @@ import mercjson from "~/types/mercenaries.json";
 import colljson from "~/types/collection.json";
 import MercenaryCard from '~/components/MercenaryCard.vue';
 import MercenaryDetails from '~/components/MercenaryDetails.vue';
+const ABILITY_MAX_TIER = 5;
+const ITEM_MAX_TIER = 4;
 
 export default {
     data: function () {
         return {
             mercenaries: mercjson.mercenaries,
             collection: colljson.mercenaries,
-            highlightedMercId: null
+            highlightedMercName: null
         }
     },
     components: {
@@ -53,12 +72,40 @@ export default {
     },
     computed: {
         highlightedMerc() {
-            return this.mercenaries.find(merc => merc.name === this.highlightedMercId);
+            return this.mercenaries[this.highlightedMercName];
         }
     },
     methods: {
-        highlightMerc: function (mercId) {
-            this.highlightedMercId = mercId;
+        highlightMerc: function (mercName) {
+            this.highlightedMercName = mercName;
+        },
+        decrementAbilityActiveTier: function (mercenaryName, abilityName) {
+            if (this.collection[mercenaryName].abilities[abilityName] > ABILITY_MAX_TIER - this.mercenaries[mercenaryName].abilities[abilityName].tiers.length + 1) {
+                this.collection[mercenaryName].abilities[abilityName]--;
+            } else {
+                return false;
+            }
+        },
+        incrementAbilityActiveTier: function (mercenaryName, abilityName) {
+            if (this.collection[mercenaryName].abilities[abilityName] < ABILITY_MAX_TIER) {
+                this.collection[mercenaryName].abilities[abilityName]++;
+            } else {
+                return false;
+            }
+        },
+        decrementItemActiveTier: function (mercenaryName, itemName) {
+            if (this.collection[mercenaryName].equipment[itemName] > ITEM_MAX_TIER - this.mercenaries[mercenaryName].equipment[itemName].tiers.length + 1) {
+                this.collection[mercenaryName].equipment[itemName]--;
+            } else {
+                return false;
+            }
+        },
+        incrementItemActiveTier: function (mercenaryName, itemName) {
+            if (this.collection[mercenaryName].equipment[itemName] < ITEM_MAX_TIER) {
+                this.collection[mercenaryName].equipment[itemName]++;
+            } else {
+                return false;
+            }
         }
     }
 }

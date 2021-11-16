@@ -1,12 +1,14 @@
 <template>
     <div class="ability bg-gray-100 rounded-md p-1 text-sm" :class="spellSchoolLower">
-        <div class="h-20 text-center">{{ ability.name }} {{ activeTier }}</div>
-        <div>
-            <img :src="imagePath" :alt="ability.name" />
+        <div class="h-20 text-center">{{ abilityName }} {{ activeTier }}</div>
+        <div v-if="showDetails">
+            <button @click="$emit('decrementActiveTier')">🔽</button>
+            <button @click="$emit('incrementActiveTier')">🔼</button>
         </div>
+        <div v-if="showDetails">{{ activeTierInfo.description }}</div>
         <div class="grid grid-cols-2 text-center">
-            <div>{{ ability.tiers[this.activeTier - 1].speed }}</div>
-            <div>{{ ability.tiers[this.activeTier - 1].cooldown }}</div>
+            <div>{{ activeTierInfo.speed }}</div>
+            <div>{{ activeTierInfo.cooldown }}</div>
         </div>
         <p class="text-center">{{ ability.spell_school }}</p>
     </div>
@@ -20,14 +22,41 @@ export default {
         activeTier: {
             type: Number,
             default: 1
+        },
+        showDetails: {
+            type: Boolean,
+            default: false
+        },
+        abilityName: {
+            type: String,
+            required: true
+        }
+    },
+    emits: {
+        decrementActiveTier: () => {
+            if (this.activeTier <= 6 - this.ability.tiers.length) {
+                return false;
+            } else {
+                return true;
+            }
+        },
+        incrementActiveTier: () => {
+            if (this.activeTier >= ability.tiers.length) {
+                return false;
+            } else {
+                return true;
+            }
         }
     },
     computed: {
         spellSchoolLower: function () {
             return this.ability.spell_school?.toLowerCase();
         },
-        imagePath: function(){
-            return `/images/mercs/${ slug(this.ability.name) }.png`;
+        imagePath: function () {
+            return `/images/mercs/${slug(this.ability.name)}.png`;
+        },
+        activeTierInfo: function () {
+            return this.ability.tiers[this.activeTier - 1]
         }
     }
 }
