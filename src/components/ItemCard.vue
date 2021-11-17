@@ -1,8 +1,20 @@
 <template>
     <div class="item">
-        <div>{{ itemName }} {{ activeTier }}</div>
-        <div v-if="showDetails">{{ item.tiers[tierIndex].description }}</div>
-        <div>Unlock: {{ item.unlock }}</div>
+        <div class="md:text-center">{{ itemName }} {{ activeTier }}</div>
+        <template v-if="showDetails">
+            <div>Unlock: {{ item.unlock }}</div>
+            <div class="flex justify-center">
+                <button
+                    @click="$emit('decrementActiveTier')"
+                    :class="{ invisible: tierIndex <= 0 }"
+                >🔽</button>
+                <button
+                    @click="$emit('incrementActiveTier')"
+                    :class="{ invisible: tierIndex >= item.tiers.length - 1 }"
+                >🔼</button>
+            </div>
+            <div>{{ activeTierInfo.description }}</div>
+        </template>
     </div>
 </template>
 <script>
@@ -24,7 +36,10 @@ export default {
     },
     computed: {
         tierIndex: function () {
-            return Math.min(this.activeTier - 1, this.item.tiers.length-1);
+            return Math.min(this.activeTier - 1, this.item.tiers.length - 1);
+        },
+        activeTierInfo: function () {
+            return this.item.tiers[this.tierIndex]
         }
     }
 }

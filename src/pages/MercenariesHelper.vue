@@ -1,8 +1,8 @@
 <template>
     <Layout>
         <h1 class="text-4xl text-center mb-8">Hearthstones Mercenaries Helpers</h1>
-        <div class="container grid grid-flow-col gap-3">
-            <section class="whitespace-nowrap row-span-2">
+        <div class="container grid grid-flow-row md:grid-flow-col md:gap-3">
+            <section class="whitespace-nowrap md:row-span-2">
                 <h3 class="text-lg underline">Available Mercenaries</h3>
                 <ul>
                     <li
@@ -23,6 +23,7 @@
                     :mercName="highlightedMercName"
                     :mercenary="highlightedMerc"
                     :collected="collection[highlightedMercName]"
+                    @closeMercDetails="highlightMerc(null)"
                     @decrementAbilityActiveTier="decrementAbilityActiveTier"
                     @incrementAbilityActiveTier="incrementAbilityActiveTier"
                     @decrementItemActiveTier="decrementItemActiveTier"
@@ -30,10 +31,11 @@
                 />
             </section>
             <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
                     <MercenaryCard
                         v-for="(merc, name) in mercenaries"
                         :key="name"
+                        :mercName="name"
                         :mercenary="merc"
                         :collected="collection[name]"
                         @decrementAbilityActiveTier="decrementAbilityActiveTier"

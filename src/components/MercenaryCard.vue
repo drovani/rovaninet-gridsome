@@ -4,7 +4,7 @@
             <h2 class="bg-gray-900 text-white rounded-md">{{ mercName }}</h2>
             <span>{{ mercenary.race }}</span>
         </header>
-        <div class="grid lg:grid-cols-3 grid-cols-1 space-x-2">
+        <div class="grid grid-cols-1 space-y-2 lg:space-y-0 lg:grid-cols-3 lg:space-x-2">
             <AbilityCard
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
@@ -15,7 +15,7 @@
                 @increment="$emit('incrementAbility', mercName, name)"
             />
         </div>
-        <div class="grid lg:grid-cols-3 grid-cols-1 space-x-2">
+        <div class="grid grid-cols-1 space-y-2 lg:space-y-0 lg:grid-cols-3 lg:space-x-2">
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"
@@ -37,9 +37,15 @@ import ItemCard from './ItemCard.vue';
 export default {
     name: "MercenaryCard",
     props: {
-        mercenary: Object,
+        mercenary: {
+            type: Object,
+            required: true
+        },
         collected: Object,
-        mercName: String
+        mercName: {
+            type: String,
+            required: true
+        }
     },
     emits: ['decrementAbility', 'incrementAbility', 'decrementItem', 'incrementItem'],
     components: {

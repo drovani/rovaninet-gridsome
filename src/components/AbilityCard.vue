@@ -1,16 +1,18 @@
 <template>
     <div class="ability bg-gray-100 rounded-md p-1 text-sm" :class="spellSchoolLower">
-        <div class="h-20 text-center">{{ abilityName }} {{ activeTier }}</div>
-        <div v-if="showDetails">
-            <button @click="$emit('decrementActiveTier')">🔽</button>
-            <button @click="$emit('incrementActiveTier')">🔼</button>
-        </div>
-        <div v-if="showDetails">{{ activeTierInfo.description }}</div>
-        <div class="grid grid-cols-2 text-center">
+        <div class="h-15 text-center">{{ abilityName }} {{ activeTier }}</div>
+        <template v-if="showDetails">
+            <div class="flex justify-center">
+                <button @click="$emit('decrementActiveTier')">🔽</button>
+                <button @click="$emit('incrementActiveTier')">🔼</button>
+            </div>
+            <div>{{ activeTierInfo.description }}</div>
+        </template>
+        <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
             <div>{{ activeTierInfo.speed }}</div>
             <div>{{ activeTierInfo.cooldown }}</div>
+            <div class="text-center lg:col-span-2">{{ ability.spell_school }}</div>
         </div>
-        <p class="text-center">{{ ability.spell_school }}</p>
     </div>
 </template>
 <script>
