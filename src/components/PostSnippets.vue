@@ -3,31 +3,27 @@
         <Pager
             v-if="pageInfo"
             :info="pageInfo"
-            :range="10"
-            linkClass="mx-2"
-            activeLinkClass="underline font-semibold"
-            exactActiveLinkClass="text-blue-500"
-            firstLabel="newest"
-            prevLabel="newer"
-            nextLabel="older"
-            lastLabel="oldest"
+            :range="5"
+            linkClass="mx-1 p-1"
+            activeLinkClass="font-semibold"
+            exactActiveLinkClass="text-white bg-gray-900 rounded"
             class="text-center"
         />
         <article v-for="post in posts" class="my-5 text-lg list-none" :key="post.node.id">
-            <h3>
-                <g-link class="underline" :to="post.node.path">{{ post.node.title }}</g-link>
-                <time
-                    pubdate
-                    :datetime="post.node.date"
-                    class="float-right"
-                >{{ post.node.formattedDate }}</time>
-            </h3>
+            <header class="sm:flex sm:items-baseline">
+                <h3 class="underline sm:flex-1">
+                    <g-link :to="post.node.path">{{ post.node.title }}</g-link>
+                </h3>
+                <div class="text-right">
+                    <time class="bg-gray-100 px-2 rounded" pubdate :datetime="post.node.date">{{ post.node.formattedDate }}</time>
+                </div>
+            </header>
             <p>{{ post.node.excerpt }}...</p>
         </article>
         <Pager
             v-if="pageInfo"
             :info="pageInfo"
-            :range="10"
+            :range="5"
             linkClass="mx-2"
             activeLinkClass="underline font-semibold"
             exactActiveLinkClass="text-blue-500"

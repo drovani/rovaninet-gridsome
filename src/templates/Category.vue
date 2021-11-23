@@ -1,8 +1,11 @@
 <template>
-    <Layout>
-        <PageHeader :text="$page.category.title"></PageHeader>
-        <PostSnippets :posts="$page.category.belongsTo.edges" :pageInfo="$page.category.belongsTo.pageInfo"></PostSnippets>
-    </Layout>
+  <Layout>
+    <PageHeader class="text-center">{{ $page.category.title }}</PageHeader>
+    <PostSnippets
+      :posts="$page.category.belongsTo.edges"
+      :pageInfo="$page.category.belongsTo.pageInfo"
+    ></PostSnippets>
+  </Layout>
 </template>
 
 <page-query>
@@ -45,14 +48,14 @@ import PostSnippets from "~/components/PostSnippets.vue"
 import PageHeader from "~/components/PageHeader.vue"
 
 export default {
-    metaInfo(): any {
-        return {
-            title: 'Category: ' + (this as any).$page.category.title
-        }
-    },
-    components:{
-      PostSnippets,
-      PageHeader
+  metaInfo(): any {
+    return {
+      title: 'Category: ' + (this as any).$page.category.title
     }
+  },
+  components: {
+    PostSnippets,
+    PageHeader
+  }
 }
 </script>

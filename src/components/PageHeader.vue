@@ -1,9 +1,8 @@
 <template>
-    <h1 class="text-4xl font-semibold mb-5">{{ text }}</h1>
+    <h1 class="text-4xl font-semibold mb-5">
+        <slot></slot>
+    </h1>
 </template>
 <script lang="ts">
-export default {
-    name: "PageHeader",
-    props: ["text"]
-}
+export default {}
 </script>

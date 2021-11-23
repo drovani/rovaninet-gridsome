@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <PageHeader :text="$page.tag.title"></PageHeader>
+        <PageHeader>{{ $page.tag.title }}</PageHeader>
         <h2 class="pb-2 mb-8 text-lg" v-if="$page.tag.description">{{ $page.tag.description }}</h2>
 
         <PostSnippets :posts="$page.tag.belongsTo.edges"></PostSnippets>
