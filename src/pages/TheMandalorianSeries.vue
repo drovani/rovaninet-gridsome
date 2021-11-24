@@ -6,13 +6,13 @@
                 <span class="italic">The Mandalorian</span>
             </h1>
             <p class="mt-6">
-                After watching season one of
+                After hate-watching season one of
                 <span class="italic">The Mandalorian</span>, I had
                 <span class="italic font-extrabold">a lot</span> of thoughts on the matter at the time.
                 I didn't write any of them down until the second season was about to come out and I decided to go back and list them out.
             </p>
             <p class="mt-6">
-                You'll find that I was fond of this show. There were some entertaining pieces, but overall I found it to be a basic episodic gunslinger-in-space derivative.
+                You'll find that I was mildly fond of this show. There were some entertaining pieces, but overall I found it to be a basic episodic gunslinger-in-space derivative.
                 There's nothing particularly unique or extraordinary about the show. It's half-decent entertainment, so long as you ignore continuity errors, dry dialog, and lots of tropes.
             </p>
             <p class="mt-6">There are spoilers throughout, but I don't care.</p>
