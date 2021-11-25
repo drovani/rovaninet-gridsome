@@ -5,8 +5,8 @@
 - [x] Create [About Me](https://github.com/drovani/rovaninet/blob/main/src/pages/About.vue) page
 - [x] Using CSS/Tailwind, make h4 tags inline with the paragraph.
 - [x] Small images should be inline (https://github.com/drovani/rovaninet/blob/main/posts/2017/2017-03-28-Azure-Command-Queue.md)
-- [ ] Add a footer to the website with the usual links.
-- [ ] Create a Categories list page
+- [x] Add a footer to the website with the usual links.
+- [x] Create a Categories ~~list page~~ selector.
 - [ ] Create Redirect list for old website to new website
 - [ ] Switch DNS records to point to new site!
 

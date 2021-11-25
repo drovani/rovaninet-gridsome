@@ -42,6 +42,29 @@
         <slot />
       </main>
     </transition>
+    <footer class="mt-4 text-4xl space-x-1 text-center sm:space-x-2 md:space-x-4">
+      <a href="/">
+        <app-icon :icon="['fas', 'home']"></app-icon>
+      </a>
+      <a href="https://github.com/drovani">
+        <app-icon :icon="['fab', 'github']"></app-icon>
+      </a>
+      <a href="https://linkedin.com/in/drovani">
+        <app-icon :icon="['fab', 'linkedin']"></app-icon>
+      </a>
+      <a href="https://twitter.com/davidrovani">
+        <app-icon :icon="['fab', 'twitter']"></app-icon>
+      </a>
+      <a href="https://stackoverflow.com/users/28310/drovani">
+        <app-icon :icon="['fab', 'stack-overflow']"></app-icon>
+      </a>
+      <a href="https://dev.to/drovani">
+        <app-icon :icon="['fab', 'dev']"></app-icon>
+      </a>
+      <a href="/about">
+        <app-icon :icon="['fas', 'user-tie']"></app-icon>
+      </a>
+    </footer>
   </div>
 </template>
 

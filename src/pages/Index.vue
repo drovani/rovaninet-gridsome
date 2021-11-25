@@ -2,7 +2,7 @@
   <Layout>
     <div class="sm:flex sm:pr-4">
       <PageHeader class="sm:flex-1">Blog Posts</PageHeader>
-      <select @change="categorySelected" v-model="category" class="border-r border-b rounded-br mb-4 sm:h-8 sm:mr-2 sm:mb-0">
+      <select @change="categorySelected" v-model="category" class="border-r border-b rounded-br mb-4 bg-transparent sm:h-8 sm:mr-2 sm:mb-0">
         <option value selected disabled>All Posts</option>
         <option
           v-for="cat in $static.categories.edges"
