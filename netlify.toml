@@ -3,3 +3,387 @@
 
 [[plugins]]
   package = "netlify-plugin-gridsome-cache"
+
+[[redirects]]
+from = "/Marathon-Epilogue"
+to = "/posts/2013/a-marathon-in-three-parts-epilogue"
+
+[[redirects]]
+from = "/Marathon-First-Goal"
+to = "/posts/2013/a-marathon-in-three-parts-the-first-goal"
+
+[[redirects]]
+from = "/Marathon-Second-Goal"
+to = "/posts/2013/a-marathon-in-three-parts-goal-number-two"
+
+[[redirects]]
+from = "/Marathon-Third-Goal"
+to = "/posts/2013/a-marathon-in-three-parts-goal-the-third"
+
+[[redirects]]
+from = "/300-Rise-Of-An-Empire"
+to = "/posts/2014/300-rise-of-an-empire-of-freedom-for-free-greeks"
+
+[[redirects]]
+from = "/A-Month-With-Divvy"
+to = "/posts/2014/a-month-with-divvy"
+
+[[redirects]]
+from = "/All-I-Wanted-Was-An-Integer-Primary-Key"
+to = "/posts/2014/all-i-wanted-was-an-integer-primary-key"
+
+[[redirects]]
+from = "/April-2014-Arizona-Trip"
+to = "/posts/2014/april-2014-arizona-trip"
+
+[[redirects]]
+from = "/Being-Online"
+to = "/posts/2014/being-online"
+
+[[redirects]]
+from = "/Data-Layers-Reducing-Repetition"
+to = "/posts/2014/data-layers-and-finding-ways-to-reduce-repetition"
+
+[[redirects]]
+from = "/Divvy-Is-Delightful"
+to = "/posts/2014/divvy-is-delightful"
+
+[[redirects]]
+from = "/Establishing-Knockoutjs-Design-Patterns"
+to = "/posts/2014/establishing-knockout-js-design-patterns"
+
+[[redirects]]
+from = "/Exactly-One-Hobby"
+to = "/posts/2014/exactly-one-hobby"
+
+[[redirects]]
+from = "/False-Errors-and-Silent-Failures"
+to = "/posts/2014/false-errors-are-better-than-silent-failures"
+
+[[redirects]]
+from = "/Hills-In-Chicago"
+to = "/posts/2014/hills-in-chicago"
+
+[[redirects]]
+from = "/I-Need-A-New-Backpack"
+to = "/posts/2014/i-need-a-new-backpack"
+
+[[redirects]]
+from = "/Knockoutjs-Tutorials-Suck"
+to = "/posts/2014/knockout-js-tutorials-suck-but-not-as-much-as-the-documentation"
+
+[[redirects]]
+from = "/MS-Stack-Is-Not-Closed-Source"
+to = "/posts/2014/just-because-it-s-on-the-microsoft-stack-doesn-t-mean-it-s-closed-source"
+
+[[redirects]]
+from = "/No-Support-For-White-Men"
+to = "/posts/2014/no-support-for-white-men"
+
+[[redirects]]
+from = "/Returning-To-An-Old-Project"
+to = "/posts/2014/returning-to-an-old-project"
+
+[[redirects]]
+from = "/Rovani-in-C-sharp"
+to = "/posts/2014/rovani-in-c"
+
+[[redirects]]
+from = "/Ugliest-Week-In-Chicago"
+to = "/posts/2014/the-ugliest-week-in-chicago"
+
+[[redirects]]
+from = "/Value-of-Content"
+to = "/posts/2014/que-sera-sera-the-value-of-content"
+
+
+# Not yet verified redirects
+#
+# [[redirects]]
+# from = "/2015-Wisconsin-Marathon"
+# to = "/posts/2015/2015-Wisconsin-Marathon"
+#
+# [[redirects]]
+# from = "/Laying-the-Foundation"
+# to = "/posts/2015/Laying-the-Foundation"
+#
+# [[redirects]]
+# from = "/Lets-Do-the-Time-Warp-Again"
+# to = "/posts/2015/Lets-Do-the-Time-Warp-Again"
+#
+# [[redirects]]
+# from = "/Letting-Users-Get-Ahead-Of-Me"
+# to = "/posts/2015/Letting-Users-Get-Ahead-Of-Me"
+#
+# [[redirects]]
+# from = "/Naming-The-Patron-Object"
+# to = "/posts/2015/Naming-The-Patron-Object"
+#
+# [[redirects]]
+# from = "/Overall-Fitness-In-8-Tests"
+# to = "/posts/2015/Overall-Fitness-In-8-Tests"
+#
+# [[redirects]]
+# from = "/Preemptively-Structuring-the-Chaos"
+# to = "/posts/2015/Preemptively-Structuring-the-Chaos"
+#
+# [[redirects]]
+# from = "/Recurring-Gifts-Database-Schema"
+# to = "/posts/2015/Recurring-Gifts-Database-Schema"
+#
+# [[redirects]]
+# from = "/Vigil-Base-Solution"
+# to = "/posts/2015/Vigil-Base-Solution"
+#
+# [[redirects]]
+# from = "/Vigil-Data-Solution-and-Initial-Projects"
+# to = "/posts/2015/Vigil-Data-Solution-and-Initial-Projects"
+#
+# [[redirects]]
+# from = "/A-Word-On-Factory-Results"
+# to = "/posts/2016/A-Word-On-Factory-Results"
+#
+# [[redirects]]
+# from = "/A-Word-On-Validation"
+# to = "/posts/2016/A-Word-On-Validation"
+#
+# [[redirects]]
+# from = "/Chicago-Marathon-2016"
+# to = "/posts/2016/Chicago-Marathon-2016"
+#
+# [[redirects]]
+# from = "/Disneys-Dopey-Challenge"
+# to = "/posts/2016/Disneys-Dopey-Challenge"
+#
+# [[redirects]]
+# from = "/Everything-Gets-An-Id"
+# to = "/posts/2016/Everything-Gets-An-Id"
+#
+# [[redirects]]
+# from = "/Hello-World"
+# to = "/posts/2016/Hello-World"
+#
+# [[redirects]]
+# from = "/Patron-Can-Be-Created-and-Updated"
+# to = "/posts/2016/Patron-Can-Be-Created-and-Updated"
+#
+# [[redirects]]
+# from = "/Revisiting-Creating-and-Updating-Entities"
+# to = "/posts/2016/Revisiting-Creating-and-Updating-Entities"
+#
+# [[redirects]]
+# from = "/Stumbling-Into-Design-Patterns"
+# to = "/posts/2016/Stumbling-Into-Design-Patterns"
+#
+# [[redirects]]
+# from = "/User-Can-Create-New-Patron"
+# to = "/posts/2016/User-Can-Create-New-Patron"
+#
+# [[redirects]]
+# from = "/User-Can-Update-Patron"
+# to = "/posts/2016/User-Can-Update-Patron"
+#
+# [[redirects]]
+# from = "/User-Cannot-Create-Patron-That-Fails-Validation"
+# to = "/posts/2016/User-Cannot-Create-Patron-That-Fails-Validation"
+#
+# [[redirects]]
+# from = "/2017-Racing-Calendar"
+# to = "/posts/2017/2017-Racing-Calendar"
+#
+# [[redirects]]
+# from = "/2017-Year-in-Review"
+# to = "/posts/2017/2017-Year-in-Review"
+#
+# [[redirects]]
+# from = "/22-Month-Status-Report"
+# to = "/posts/2017/22-Month-Status-Report"
+#
+# [[redirects]]
+# from = "/Azure-Command-Queue"
+# to = "/posts/2017/Azure-Command-Queue"
+#
+# [[redirects]]
+# from = "/Azure-Machine-Learning"
+# to = "/posts/2017/Azure-Machine-Learning"
+#
+# [[redirects]]
+# from = "/Discovering-Core-MVC"
+# to = "/posts/2017/Discovering-Core-MVC"
+#
+# [[redirects]]
+# from = "/Explicit-Model-Constructor"
+# to = "/posts/2017/Explicit-Model-Constructor"
+#
+# [[redirects]]
+# from = "/Hydrating-A-Patron"
+# to = "/posts/2017/Hydrating-A-Patron"
+#
+# [[redirects]]
+# from = "/Illusions-of-Queues-and-Buses"
+# to = "/posts/2017/Illusions-of-Queues-and-Buses"
+#
+# [[redirects]]
+# from = "/Introducing-Vigil-Web-API"
+# to = "/posts/2017/Introducing-Vigil-Web-API"
+#
+# [[redirects]]
+# from = "/Mock-Controller-Url"
+# to = "/posts/2017/Mock-Controller-Url"
+#
+# [[redirects]]
+# from = "/Tattoo-Number-2"
+# to = "/posts/2017/Tattoo-Number-2"
+#
+# [[redirects]]
+# from = "/What-Does-500-Words-Look-Like"
+# to = "/posts/2017/What-Does-500-Words-Look-Like"
+#
+# [[redirects]]
+# from = "/Whole30-Day-0"
+# to = "/posts/2017/Whole30-Day-0"
+#
+# [[redirects]]
+# from = "/Whole30-Day-1"
+# to = "/posts/2017/Whole30-Day-1"
+#
+# [[redirects]]
+# from = "/Whole30-Day-5"
+# to = "/posts/2017/Whole30-Day-5"
+#
+# [[redirects]]
+# from = "/30-Burpees-Challenge"
+# to = "/posts/2018/30-Burpees-Challenge"
+#
+# [[redirects]]
+# from = "/AzureADB2C-User-Secrets"
+# to = "/posts/2018/AzureADB2C-User-Secrets"
+#
+# [[redirects]]
+# from = "/Feb-25-Mar-4-Meal-Planning"
+# to = "/posts/2018/Feb-25-Mar-4-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Hamburger-Experiment"
+# to = "/posts/2018/Hamburger-Experiment"
+#
+# [[redirects]]
+# from = "/I-Made-a-Logo"
+# to = "/posts/2018/I-Made-a-Logo"
+#
+# [[redirects]]
+# from = "/Jan-1-7-Meal-Planning"
+# to = "/posts/2018/Jan-1-7-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Jan-21-27-Meal-Planning"
+# to = "/posts/2018/Jan-21-27-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Jan-29-Feb-4-Meal-Planning"
+# to = "/posts/2018/Jan-29-Feb-4-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Jan-8-14-Meal-Planning"
+# to = "/posts/2018/Jan-8-14-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Mar-10-20-Meal-Planning"
+# to = "/posts/2018/Mar-10-20-Meal-Planning"
+#
+# [[redirects]]
+# from = "/Mar-4-11-Meal-Planning"
+# to = "/posts/2018/Mar-4-11-Meal-Planning"
+#
+# [[redirects]]
+# from = "/My-Time-at-The-Fellowship"
+# to = "/posts/2018/My-Time-at-The-Fellowship"
+#
+# [[redirects]]
+# from = "/Pre-Trip-Checklist"
+# to = "/posts/2018/Pre-Trip-Checklist"
+#
+# [[redirects]]
+# from = "/Shrimp-Stir-Fry-with-Coconut-Rice"
+# to = "/posts/2018/Shrimp-Stir-Fry-with-Coconut-Rice"
+#
+# [[redirects]]
+# from = "/2019-Chicago-Marathon"
+# to = "/posts/2019/2019-Chicago-Marathon"
+#
+# [[redirects]]
+# from = "/Assessment-Create"
+# to = "/posts/2019/Assessment-Create"
+#
+# [[redirects]]
+# from = "/Assessment-Delete"
+# to = "/posts/2019/Assessment-Delete"
+#
+# [[redirects]]
+# from = "/Assessment-Requirements"
+# to = "/posts/2019/Assessment-Requirements"
+#
+# [[redirects]]
+# from = "/Assessment-Wrapup"
+# to = "/posts/2019/Assessment-Wrapup"
+#
+# [[redirects]]
+# from = "/Auth0-Simple-Progressing-Profiling"
+# to = "/posts/2019/Auth0-Simple-Progressing-Profiling"
+#
+# [[redirects]]
+# from = "/BlueBolt-First-Week"
+# to = "/posts/2019/BlueBolt-First-Week"
+#
+# [[redirects]]
+# from = "/No-Easy-Runs"
+# to = "/posts/2019/No-Easy-Runs"
+#
+# [[redirects]]
+# from = "/Project-BQ"
+# to = "/posts/2019/Project-BQ"
+#
+# [[redirects]]
+# from = "/Shopify-Auth0-Multipass"
+# to = "/posts/2019/Shopify-Auth0-Multipass"
+#
+# [[redirects]]
+# from = "/Shopify-Multipass"
+# to = "/posts/2019/Shopify-Multipass"
+#
+# [[redirects]]
+# from = "/TalentLMS-Auth0-SAML"
+# to = "/posts/2019/TalentLMS-Auth0-SAML"
+#
+# [[redirects]]
+# from = "/Another-Year-In-Review"
+# to = "/posts/2020/Another-Year-In-Review"
+#
+# [[redirects]]
+# from = "/Inavord-Architecture"
+# to = "/posts/2020/Inavord-Architecture"
+#
+# [[redirects]]
+# from = "/The-Mandalorian-Season-One"
+# to = "/posts/2020/The-Mandalorian-Season-One"
+#
+# [[redirects]]
+# from = "/The-Mandalorian-Season-Two"
+# to = "/posts/2020/The-Mandalorian-Season-Two"
+#
+# [[redirects]]
+# from = "/Twelve-Days-of-Exercisemas"
+# to = "/posts/2020/Twelve-Days-of-Exercisemas"
+#
+# [[redirects]]
+# from = "/10000-Words-For-2021"
+# to = "/posts/2021/10000-Words-For-2021"
+#
+# [[redirects]]
+# from = "/migrated-to-gridsome-netlifycms"
+# to = "/posts/2021/migrated-to-gridsome-netlifycms"
+#
+# [[redirects]]
+# from = "/Sample-Page-For-Styling"
+# to = "/posts/2021/Sample-Page-For-Styling"
+#
