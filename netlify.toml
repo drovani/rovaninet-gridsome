@@ -96,288 +96,287 @@ to = "/posts/2014/the-ugliest-week-in-chicago"
 from = "/Value-of-Content"
 to = "/posts/2014/que-sera-sera-the-value-of-content"
 
+[[redirects]]
+from = "/2015-Wisconsin-Marathon"
+to = "/posts/2015/3-56-58-2015-wisconsin-marathon/"
+
+[[redirects]]
+from = "/Commit-4b684657/"
+to = "/posts/2015/laying-the-foundation/"
+
+[[redirects]]
+from = "/Lets-Do-the-Time-Warp-Again/"
+to = "/posts/2015/let-s-do-the-time-warp-again/"
+
+[[redirects]]
+from = "/Commit-69a7825e/"
+to = "/posts/2015/letting-users-get-ahead-of-me"
+
+[[redirects]]
+from = "/Naming-The-Patron-Object"
+to = "/posts/2015/naming-the-patron-object/"
+
+[[redirects]]
+from = "/Overall-Fitness-In-8-Tests"
+to = "/posts/2015/overall-fitness-in-8-tests/"
+
+[[redirects]]
+from = "/Commit-bccg1aea/"
+to = "/posts/2015/preemptively-structuring-the-chaos/"
+
+[[redirects]]
+from = "/Recurring-Gifts-Database-Schema"
+to = "/posts/2015/recurring-gifts-part-1-database-schema/"
+
+[[redirects]]
+from = "/Commit-8c41b3dc/"
+to = "/posts/2015/vigil-base-solution"
+
+[[redirects]]
+from = "/Commit-527fabb8/"
+to = "/posts/2015/vigil-data-solution-and-initial-projects/"
+
+[[redirects]]
+from = "/A-Word-On-Factory-Results"
+to = "/posts/2016/a-word-on-factory-results-and-contracts/"
+
+[[redirects]]
+from = "/A-Word-On-Validation"
+to = "/posts/2016/a-word-on-validation/"
+
+[[redirects]]
+from = "/Chicago-Marathon-2016"
+to = "/posts/2016/2016-chicago-marathon-wrap-up/"
+
+[[redirects]]
+from = "/Disneys-Dopey-Challenge"
+to = "/posts/2016/disney-s-dopey-challenge"
+
+[[redirects]]
+from = "/Everything-Gets-An-Id"
+to = "/posts/2016/everything-gets-an-id"
+
+[[redirects]]
+from = "/Hello-World"
+to = "/posts/2016/hello-world/"
+
+[[redirects]]
+from = "/Patron-Can-Be-Created-and-Updated"
+to = "/posts/2016/patron-can-be-created-and-updated-again/"
+
+[[redirects]]
+from = "/Revisiting-Creating-and-Updating-Entities"
+to = "/posts/2016/revisiting-creating-and-updating-entities"
+
+[[redirects]]
+from = "/Stumbling-Into-Design-Patterns"
+to = "/posts/2016/stumbling-into-design-patterns/"
+
+[[redirects]]
+from = "/User-Can-Create-New-Patron"
+to = "/posts/2016/user-can-create-new-patron/"
+
+[[redirects]]
+from = "/User-Can-Update-Patron"
+to = "/posts/2016/user-can-update-a-patron/"
+
+[[redirects]]
+from = "/User-Cannot-Create-Patron-That-Fails-Validation"
+to = "/posts/2016/user-cannot-create-patron-that-fails-validation/"
 
 # Not yet verified redirects
-#
-# [[redirects]]
-# from = "/2015-Wisconsin-Marathon"
-# to = "/posts/2015/2015-Wisconsin-Marathon"
-#
-# [[redirects]]
-# from = "/Laying-the-Foundation"
-# to = "/posts/2015/Laying-the-Foundation"
-#
-# [[redirects]]
-# from = "/Lets-Do-the-Time-Warp-Again"
-# to = "/posts/2015/Lets-Do-the-Time-Warp-Again"
-#
-# [[redirects]]
-# from = "/Letting-Users-Get-Ahead-Of-Me"
-# to = "/posts/2015/Letting-Users-Get-Ahead-Of-Me"
-#
-# [[redirects]]
-# from = "/Naming-The-Patron-Object"
-# to = "/posts/2015/Naming-The-Patron-Object"
-#
-# [[redirects]]
-# from = "/Overall-Fitness-In-8-Tests"
-# to = "/posts/2015/Overall-Fitness-In-8-Tests"
-#
-# [[redirects]]
-# from = "/Preemptively-Structuring-the-Chaos"
-# to = "/posts/2015/Preemptively-Structuring-the-Chaos"
-#
-# [[redirects]]
-# from = "/Recurring-Gifts-Database-Schema"
-# to = "/posts/2015/Recurring-Gifts-Database-Schema"
-#
-# [[redirects]]
-# from = "/Vigil-Base-Solution"
-# to = "/posts/2015/Vigil-Base-Solution"
-#
-# [[redirects]]
-# from = "/Vigil-Data-Solution-and-Initial-Projects"
-# to = "/posts/2015/Vigil-Data-Solution-and-Initial-Projects"
-#
-# [[redirects]]
-# from = "/A-Word-On-Factory-Results"
-# to = "/posts/2016/A-Word-On-Factory-Results"
-#
-# [[redirects]]
-# from = "/A-Word-On-Validation"
-# to = "/posts/2016/A-Word-On-Validation"
-#
-# [[redirects]]
-# from = "/Chicago-Marathon-2016"
-# to = "/posts/2016/Chicago-Marathon-2016"
-#
-# [[redirects]]
-# from = "/Disneys-Dopey-Challenge"
-# to = "/posts/2016/Disneys-Dopey-Challenge"
-#
-# [[redirects]]
-# from = "/Everything-Gets-An-Id"
-# to = "/posts/2016/Everything-Gets-An-Id"
-#
-# [[redirects]]
-# from = "/Hello-World"
-# to = "/posts/2016/Hello-World"
-#
-# [[redirects]]
-# from = "/Patron-Can-Be-Created-and-Updated"
-# to = "/posts/2016/Patron-Can-Be-Created-and-Updated"
-#
-# [[redirects]]
-# from = "/Revisiting-Creating-and-Updating-Entities"
-# to = "/posts/2016/Revisiting-Creating-and-Updating-Entities"
-#
-# [[redirects]]
-# from = "/Stumbling-Into-Design-Patterns"
-# to = "/posts/2016/Stumbling-Into-Design-Patterns"
-#
-# [[redirects]]
-# from = "/User-Can-Create-New-Patron"
-# to = "/posts/2016/User-Can-Create-New-Patron"
-#
-# [[redirects]]
-# from = "/User-Can-Update-Patron"
-# to = "/posts/2016/User-Can-Update-Patron"
-#
-# [[redirects]]
-# from = "/User-Cannot-Create-Patron-That-Fails-Validation"
-# to = "/posts/2016/User-Cannot-Create-Patron-That-Fails-Validation"
-#
+
 # [[redirects]]
 # from = "/2017-Racing-Calendar"
-# to = "/posts/2017/2017-Racing-Calendar"
+# to = "/posts/2017/2017-racing-calendar"
 #
 # [[redirects]]
 # from = "/2017-Year-in-Review"
-# to = "/posts/2017/2017-Year-in-Review"
+# to = "/posts/2017/2017-year-in-review"
 #
 # [[redirects]]
 # from = "/22-Month-Status-Report"
-# to = "/posts/2017/22-Month-Status-Report"
+# to = "/posts/2017/22-month-status-report"
 #
 # [[redirects]]
 # from = "/Azure-Command-Queue"
-# to = "/posts/2017/Azure-Command-Queue"
+# to = "/posts/2017/azure-command-queue"
 #
 # [[redirects]]
 # from = "/Azure-Machine-Learning"
-# to = "/posts/2017/Azure-Machine-Learning"
+# to = "/posts/2017/azure-machine-learning"
 #
 # [[redirects]]
 # from = "/Discovering-Core-MVC"
-# to = "/posts/2017/Discovering-Core-MVC"
+# to = "/posts/2017/discovering-core-mvc"
 #
 # [[redirects]]
 # from = "/Explicit-Model-Constructor"
-# to = "/posts/2017/Explicit-Model-Constructor"
+# to = "/posts/2017/explicit-model-constructor"
 #
 # [[redirects]]
 # from = "/Hydrating-A-Patron"
-# to = "/posts/2017/Hydrating-A-Patron"
+# to = "/posts/2017/hydrating-a-patron"
 #
 # [[redirects]]
 # from = "/Illusions-of-Queues-and-Buses"
-# to = "/posts/2017/Illusions-of-Queues-and-Buses"
+# to = "/posts/2017/illusions-of-queues-and-buses"
 #
 # [[redirects]]
 # from = "/Introducing-Vigil-Web-API"
-# to = "/posts/2017/Introducing-Vigil-Web-API"
+# to = "/posts/2017/introducing-vigil-web-api"
 #
 # [[redirects]]
 # from = "/Mock-Controller-Url"
-# to = "/posts/2017/Mock-Controller-Url"
+# to = "/posts/2017/mock-controller-url"
 #
 # [[redirects]]
 # from = "/Tattoo-Number-2"
-# to = "/posts/2017/Tattoo-Number-2"
+# to = "/posts/2017/tattoo-number-2"
 #
 # [[redirects]]
 # from = "/What-Does-500-Words-Look-Like"
-# to = "/posts/2017/What-Does-500-Words-Look-Like"
+# to = "/posts/2017/what-does-500-words-look-like"
 #
 # [[redirects]]
 # from = "/Whole30-Day-0"
-# to = "/posts/2017/Whole30-Day-0"
+# to = "/posts/2017/whole30-day-0"
 #
 # [[redirects]]
 # from = "/Whole30-Day-1"
-# to = "/posts/2017/Whole30-Day-1"
+# to = "/posts/2017/whole30-day-1"
 #
 # [[redirects]]
 # from = "/Whole30-Day-5"
-# to = "/posts/2017/Whole30-Day-5"
+# to = "/posts/2017/whole30-day-5"
 #
 # [[redirects]]
 # from = "/30-Burpees-Challenge"
-# to = "/posts/2018/30-Burpees-Challenge"
+# to = "/posts/2018/30-burpees-challenge"
 #
 # [[redirects]]
 # from = "/AzureADB2C-User-Secrets"
-# to = "/posts/2018/AzureADB2C-User-Secrets"
+# to = "/posts/2018/azureadb2c-user-secrets"
 #
 # [[redirects]]
 # from = "/Feb-25-Mar-4-Meal-Planning"
-# to = "/posts/2018/Feb-25-Mar-4-Meal-Planning"
+# to = "/posts/2018/feb-25-mar-4-meal-planning"
 #
 # [[redirects]]
 # from = "/Hamburger-Experiment"
-# to = "/posts/2018/Hamburger-Experiment"
+# to = "/posts/2018/hamburger-experiment"
 #
 # [[redirects]]
 # from = "/I-Made-a-Logo"
-# to = "/posts/2018/I-Made-a-Logo"
+# to = "/posts/2018/i-made-a-logo"
 #
 # [[redirects]]
 # from = "/Jan-1-7-Meal-Planning"
-# to = "/posts/2018/Jan-1-7-Meal-Planning"
+# to = "/posts/2018/jan-1-7-meal-planning"
 #
 # [[redirects]]
 # from = "/Jan-21-27-Meal-Planning"
-# to = "/posts/2018/Jan-21-27-Meal-Planning"
+# to = "/posts/2018/jan-21-27-meal-planning"
 #
 # [[redirects]]
 # from = "/Jan-29-Feb-4-Meal-Planning"
-# to = "/posts/2018/Jan-29-Feb-4-Meal-Planning"
+# to = "/posts/2018/jan-29-feb-4-meal-planning"
 #
 # [[redirects]]
 # from = "/Jan-8-14-Meal-Planning"
-# to = "/posts/2018/Jan-8-14-Meal-Planning"
+# to = "/posts/2018/jan-8-14-meal-planning"
 #
 # [[redirects]]
 # from = "/Mar-10-20-Meal-Planning"
-# to = "/posts/2018/Mar-10-20-Meal-Planning"
+# to = "/posts/2018/mar-10-20-meal-planning"
 #
 # [[redirects]]
 # from = "/Mar-4-11-Meal-Planning"
-# to = "/posts/2018/Mar-4-11-Meal-Planning"
+# to = "/posts/2018/mar-4-11-meal-planning"
 #
 # [[redirects]]
 # from = "/My-Time-at-The-Fellowship"
-# to = "/posts/2018/My-Time-at-The-Fellowship"
+# to = "/posts/2018/my-time-at-the-fellowship"
 #
 # [[redirects]]
 # from = "/Pre-Trip-Checklist"
-# to = "/posts/2018/Pre-Trip-Checklist"
+# to = "/posts/2018/pre-trip-checklist"
 #
 # [[redirects]]
 # from = "/Shrimp-Stir-Fry-with-Coconut-Rice"
-# to = "/posts/2018/Shrimp-Stir-Fry-with-Coconut-Rice"
+# to = "/posts/2018/shrimp-stir-fry-with-coconut-rice"
 #
 # [[redirects]]
 # from = "/2019-Chicago-Marathon"
-# to = "/posts/2019/2019-Chicago-Marathon"
+# to = "/posts/2019/2019-chicago-marathon"
 #
 # [[redirects]]
 # from = "/Assessment-Create"
-# to = "/posts/2019/Assessment-Create"
+# to = "/posts/2019/assessment-create"
 #
 # [[redirects]]
 # from = "/Assessment-Delete"
-# to = "/posts/2019/Assessment-Delete"
+# to = "/posts/2019/assessment-delete"
 #
 # [[redirects]]
 # from = "/Assessment-Requirements"
-# to = "/posts/2019/Assessment-Requirements"
+# to = "/posts/2019/assessment-requirements"
 #
 # [[redirects]]
 # from = "/Assessment-Wrapup"
-# to = "/posts/2019/Assessment-Wrapup"
+# to = "/posts/2019/assessment-wrapup"
 #
 # [[redirects]]
 # from = "/Auth0-Simple-Progressing-Profiling"
-# to = "/posts/2019/Auth0-Simple-Progressing-Profiling"
+# to = "/posts/2019/auth0-simple-progressing-profiling"
 #
 # [[redirects]]
 # from = "/BlueBolt-First-Week"
-# to = "/posts/2019/BlueBolt-First-Week"
+# to = "/posts/2019/bluebolt-first-week"
 #
 # [[redirects]]
 # from = "/No-Easy-Runs"
-# to = "/posts/2019/No-Easy-Runs"
+# to = "/posts/2019/no-easy-runs"
 #
 # [[redirects]]
 # from = "/Project-BQ"
-# to = "/posts/2019/Project-BQ"
+# to = "/posts/2019/project-bq"
 #
 # [[redirects]]
 # from = "/Shopify-Auth0-Multipass"
-# to = "/posts/2019/Shopify-Auth0-Multipass"
+# to = "/posts/2019/shopify-auth0-multipass"
 #
 # [[redirects]]
 # from = "/Shopify-Multipass"
-# to = "/posts/2019/Shopify-Multipass"
+# to = "/posts/2019/shopify-multipass"
 #
 # [[redirects]]
 # from = "/TalentLMS-Auth0-SAML"
-# to = "/posts/2019/TalentLMS-Auth0-SAML"
+# to = "/posts/2019/talentlms-auth0-saml"
 #
 # [[redirects]]
 # from = "/Another-Year-In-Review"
-# to = "/posts/2020/Another-Year-In-Review"
+# to = "/posts/2020/another-year-in-review"
 #
 # [[redirects]]
 # from = "/Inavord-Architecture"
-# to = "/posts/2020/Inavord-Architecture"
+# to = "/posts/2020/inavord-architecture"
 #
 # [[redirects]]
 # from = "/The-Mandalorian-Season-One"
-# to = "/posts/2020/The-Mandalorian-Season-One"
+# to = "/posts/2020/the-mandalorian-season-one"
 #
 # [[redirects]]
 # from = "/The-Mandalorian-Season-Two"
-# to = "/posts/2020/The-Mandalorian-Season-Two"
+# to = "/posts/2020/the-mandalorian-season-two"
 #
 # [[redirects]]
 # from = "/Twelve-Days-of-Exercisemas"
-# to = "/posts/2020/Twelve-Days-of-Exercisemas"
+# to = "/posts/2020/twelve-days-of-exercisemas"
 #
 # [[redirects]]
 # from = "/10000-Words-For-2021"
-# to = "/posts/2021/10000-Words-For-2021"
+# to = "/posts/2021/10000-words-for-2021"
 #
 # [[redirects]]
 # from = "/migrated-to-gridsome-netlifycms"
@@ -385,5 +384,4 @@ to = "/posts/2014/que-sera-sera-the-value-of-content"
 #
 # [[redirects]]
 # from = "/Sample-Page-For-Styling"
-# to = "/posts/2021/Sample-Page-For-Styling"
-#
+# to = "/posts/2021/sample-page-for-styling"

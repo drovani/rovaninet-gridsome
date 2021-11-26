@@ -9,7 +9,7 @@
 - [x] Create a Categories ~~list page~~ selector.
 - [ ] Create Redirect list for old website to new website
   - [x] 2013-2014 post redirects
-  - [ ] 2015-2016 post redirects
+  - [x] 2015-2016 post redirects
   - [ ] 2017-2018 post redirects
   - [ ] 2019-2021 post redirects
 - [ ] Switch DNS records to point to new site!
