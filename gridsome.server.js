@@ -3,6 +3,8 @@
 // Learn more: https://gridsome.org/docs/server-api/
 
 module.exports = function(api) {
+
+
   api.loadSource(({ getCollection }) => {
     const posts = getCollection("Post");
 
@@ -17,10 +19,7 @@ module.exports = function(api) {
       }
     });
 
-    const tagDescriptions = {
-      gridsome: "Posts about Gridsome, the JAMstack framework for Vue.js.",
-      writing: "I'm not very good at writing, but with enough practice, I hope that I can become passable at writing."
-    };
+    const tagDescriptions = require("./src/store/tagdescriptions.json");
 
     const tags = getCollection("Tag");
     tags.data().forEach((tag) => {

@@ -48,8 +48,8 @@
 </template>
 
 <script>
-import mercjson from "~/types/mercenaries.json";
-import colljson from "~/types/collection.json";
+import mercjson from "~/store/mercenaries.json";
+import colljson from "~/store/collection.json";
 import MercenaryCard from '~/components/MercenaryCard.vue';
 import MercenaryDetails from '~/components/MercenaryDetails.vue';
 const ABILITY_MAX_TIER = 5;

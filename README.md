@@ -30,9 +30,9 @@
 
 - [ ] Add "Next" and "Previous" links to every blog post
 - [ ] [Add some Remark plugins](https://github.com/gridsome/gridsome/issues/61) to allow for custom containers and TOC
-- [ ] Add better styling to the Pager component
+- [x] Add better styling to the Pager component
 - [ ] Add Twitter Card loading for blockquotes that are links to tweets (https://github.com/drovani/rovaninet/blob/main/posts/2020/2020-12-31-Another-Year-In-Review.md)
-- [ ] Load Tag descriptions from a json file or somewhere other than inside `gridsome.server.js`
+- [x] Load Tag descriptions from a json file or somewhere other than inside `gridsome.server.js`
 - [ ] Integrate [Storybook](https://storybook.js.org/) with the site (instructions found [here](https://mannes.tech/gridsome-storybook/))
 
 # Feature Projects for the Site
@@ -43,5 +43,6 @@
   - [ ] Update collection in response to user clicks
   - [ ] Persist collection to _local storage_ (or somewhere)
   - [ ] Allow for export/import of collection (via json file)
-- [ ] Login Gated Cash Rules Spreadsheet
 - [ ] Starting writing "Rovani's Vue" and "Rovani's *React*ions"
+  - [ ] Build HS Mercs Helper in React.
+- [ ] Login Gated Cash Rules Spreadsheet
