@@ -11,7 +11,7 @@
   - [x] 2013-2014 post redirects
   - [x] 2015-2016 post redirects
   - [x] 2017-2018 post redirects
-  - [ ] 2019-2021 post redirects
+  - [x] 2019-2021 post redirects
 - [ ] Switch DNS records to point to new site!
 
 ## Post Years That Still Need Fixing
