@@ -4,6 +4,7 @@
 [[plugins]]
   package = "netlify-plugin-gridsome-cache"
 
+# 2013 Posts Redirects
 [[redirects]]
 from = "/Marathon-Epilogue"
 to = "/posts/2013/a-marathon-in-three-parts-epilogue"
@@ -20,6 +21,7 @@ to = "/posts/2013/a-marathon-in-three-parts-goal-number-two"
 from = "/Marathon-Third-Goal"
 to = "/posts/2013/a-marathon-in-three-parts-goal-the-third"
 
+# 2014 Posts Redirects
 [[redirects]]
 from = "/300-Rise-Of-An-Empire"
 to = "/posts/2014/300-rise-of-an-empire-of-freedom-for-free-greeks"
@@ -96,6 +98,7 @@ to = "/posts/2014/the-ugliest-week-in-chicago"
 from = "/Value-of-Content"
 to = "/posts/2014/que-sera-sera-the-value-of-content"
 
+# 2015 Posts Redirects
 [[redirects]]
 from = "/2015-Wisconsin-Marathon"
 to = "/posts/2015/3-56-58-2015-wisconsin-marathon/"
@@ -136,6 +139,7 @@ to = "/posts/2015/vigil-base-solution"
 from = "/Commit-527fabb8/"
 to = "/posts/2015/vigil-data-solution-and-initial-projects/"
 
+# 2016 Posts Redirects
 [[redirects]]
 from = "/A-Word-On-Factory-Results"
 to = "/posts/2016/a-word-on-factory-results-and-contracts/"
@@ -184,204 +188,209 @@ to = "/posts/2016/user-can-update-a-patron/"
 from = "/User-Cannot-Create-Patron-That-Fails-Validation"
 to = "/posts/2016/user-cannot-create-patron-that-fails-validation/"
 
-# Not yet verified redirects
+# 2017 Posts Redirects
+[[redirects]]
+from = "/2017-Racing-Calendar"
+to = "/posts/2017/my-2017-running-calendar/"
 
-# [[redirects]]
-# from = "/2017-Racing-Calendar"
-# to = "/posts/2017/2017-racing-calendar"
+[[redirects]]
+from = "/2017-Year-in-Review"
+to = "/posts/2017/2017-year-in-review/"
+
+[[redirects]]
+from = "/22-Month-Status-Report"
+to = "/posts/2017/22-month-status-report/"
+
+[[redirects]]
+from = "/Azure-Command-Queue"
+to = "/posts/2017/vigil-s-azure-command-queue/"
+
+[[redirects]]
+from = "/Azure-Machine-Learning"
+to = "/posts/2017/azure-machine-learning-data-camp/"
+
+[[redirects]]
+from = "/Discovering-Core-MVC"
+to = "/posts/2017/2017/discovering-mvc-the-asp-net-core-mvc-stack/"
+
+[[redirects]]
+from = "/Explicit-Model-Constructor"
+to = "/posts/2017/using-an-explicit-model-constructor-with-a-json-input-formatter/"
+
+[[redirects]]
+from = "/Hydrating-A-Patron"
+to = "/posts/2017/hydrating-a-patron/"
+
+[[redirects]]
+from = "/Illusions-of-Queues-and-Buses"
+to = "/posts/2017/illusions-of-queues-and-buses/"
+
+[[redirects]]
+from = "/Introducing-Vigil-Web-API"
+to = "/posts/2017/introducing-vigil-web-api/"
+
+[[redirects]]
+from = "/Mock-Controller-Url"
+to = "/posts/2017/mock-controller-s-user-and-url-properties-in-asp-net-core-mvc/"
+
+[[redirects]]
+from = "/Tattoo-Number-2"
+to = "/posts/2017/tattoo-number-two/"
+
+[[redirects]]
+from = "/500-Words"
+to = "/posts/2017/what-does-500-words-look-like/"
+
+[[redirects]]
+from = "/Whole30-Day-0"
+to = "/posts/2017/whole30-2017-day-0-buying-the-costco-chicken-farm/"
+
+[[redirects]]
+from = "/Whole30-Day-1"
+to = "/posts/2017/whole30-2017-day-1-take-two/"
+
+[[redirects]]
+from = "/Whole30-Day-5"
+to = "/posts/2017/whole30-2017-day-5-menu-planning-sucks/"
+
+# 2018 Posts Redirects
+[[redirects]]
+from = "/30-Burpees-Challenge/"
+to = "/posts/2018/30-burpees-per-day-challenge/"
+
+[[redirects]]
+from = "/AzureADB2C-User-Secrets/"
+to = "/posts/2018/using-azure-ad-b2-c-and-visual-studio-user-secrets/"
+
+[[redirects]]
+from = "/Ninth-Week-Meal-Planning/"
+to = "/posts/2018/february-25-march-4-meal-planning/"
+
+[[redirects]]
+from = "/Hamburger-Experiment"
+to = "/posts/2018/hamburger-and-fries-experiment/"
+
+[[redirects]]
+from = "/I-Made-a-Logo/"
+to = "/posts/2018/i-made-a-logo/"
+
+[[redirects]]
+from = "/First-Week-Meal-Planning/"
+to = "/posts/2018/january-1-7-meal-planning/"
+
+[[redirects]]
+from = "/Fourth-Week-Meal-Planning/"
+to = "/posts/2018/january-21-27-meal-planning/"
+
+[[redirects]]
+from = "/Fifth-Week-Meal-Planning/"
+to = "/posts/2018/january-29-february-4-meal-planning/"
+
+[[redirects]]
+from = "/Second-Week-Meal-Planning/"
+to = "/posts/2018/january-8-14-meal-planning/"
+
+[[redirects]]
+from = "/Twelfth-Week-Meal-Planning/"
+to = "/posts/Twelfth-Week-Meal-Planning/"
+
+[[redirects]]
+from = "/Tenth-Week-Meal-Planning/"
+to = "/posts/2018/march-4-11-meal-planning/"
+
+[[redirects]]
+from = "/My-Time-at-The-Fellowship/"
+to = "/posts/2018/my-time-at-the-fellowship/"
+
+[[redirects]]
+from = "/Pre-Trip-Checklist"
+to = "/posts/2018/pre-trip-checklist-because-if-i-don-t-write-it-down/"
+
+[[redirects]]
+from = "/Shrimp-Stir-Fry-with-Coconut-Rice"
+to = "/posts/2018/shrimp-stir-fry-with-coconut-rice/"
+
+# Not yet verified redirects
 #
-# [[redirects]]
-# from = "/2017-Year-in-Review"
-# to = "/posts/2017/2017-year-in-review"
+# 2019 Posts Redirects
+#[[redirects]]
+#from = "/2019-Chicago-Marathon"
+#to = "/posts/2019/2019-chicago-marathon"
 #
-# [[redirects]]
-# from = "/22-Month-Status-Report"
-# to = "/posts/2017/22-month-status-report"
+#[[redirects]]
+#from = "/Assessment-Create"
+#to = "/posts/2019/assessment-create"
 #
-# [[redirects]]
-# from = "/Azure-Command-Queue"
-# to = "/posts/2017/azure-command-queue"
+#[[redirects]]
+#from = "/Assessment-Delete"
+#to = "/posts/2019/assessment-delete"
 #
-# [[redirects]]
-# from = "/Azure-Machine-Learning"
-# to = "/posts/2017/azure-machine-learning"
+#[[redirects]]
+#from = "/Assessment-Requirements"
+#to = "/posts/2019/assessment-requirements"
 #
-# [[redirects]]
-# from = "/Discovering-Core-MVC"
-# to = "/posts/2017/discovering-core-mvc"
+#[[redirects]]
+#from = "/Assessment-Wrapup"
+#to = "/posts/2019/assessment-wrapup"
 #
-# [[redirects]]
-# from = "/Explicit-Model-Constructor"
-# to = "/posts/2017/explicit-model-constructor"
+#[[redirects]]
+#from = "/Auth0-Simple-Progressing-Profiling"
+#to = "/posts/2019/auth0-simple-progressing-profiling"
 #
-# [[redirects]]
-# from = "/Hydrating-A-Patron"
-# to = "/posts/2017/hydrating-a-patron"
+#[[redirects]]
+#from = "/BlueBolt-First-Week"
+#to = "/posts/2019/bluebolt-first-week"
 #
-# [[redirects]]
-# from = "/Illusions-of-Queues-and-Buses"
-# to = "/posts/2017/illusions-of-queues-and-buses"
+#[[redirects]]
+#from = "/No-Easy-Runs"
+#to = "/posts/2019/no-easy-runs"
 #
-# [[redirects]]
-# from = "/Introducing-Vigil-Web-API"
-# to = "/posts/2017/introducing-vigil-web-api"
+#[[redirects]]
+#from = "/Project-BQ"
+#to = "/posts/2019/project-bq"
 #
-# [[redirects]]
-# from = "/Mock-Controller-Url"
-# to = "/posts/2017/mock-controller-url"
+#[[redirects]]
+#from = "/Shopify-Auth0-Multipass"
+#to = "/posts/2019/shopify-auth0-multipass"
 #
-# [[redirects]]
-# from = "/Tattoo-Number-2"
-# to = "/posts/2017/tattoo-number-2"
+#[[redirects]]
+#from = "/Shopify-Multipass"
+#to = "/posts/2019/shopify-multipass"
 #
-# [[redirects]]
-# from = "/What-Does-500-Words-Look-Like"
-# to = "/posts/2017/what-does-500-words-look-like"
+#[[redirects]]
+#from = "/TalentLMS-Auth0-SAML"
+#to = "/posts/2019/talentlms-auth0-saml"
 #
-# [[redirects]]
-# from = "/Whole30-Day-0"
-# to = "/posts/2017/whole30-day-0"
+# 2020 Posts Redirects
+#[[redirects]]
+#from = "/Another-Year-In-Review"
+#to = "/posts/2020/another-year-in-review"
 #
-# [[redirects]]
-# from = "/Whole30-Day-1"
-# to = "/posts/2017/whole30-day-1"
+#[[redirects]]
+#from = "/Inavord-Architecture"
+#to = "/posts/2020/inavord-architecture"
 #
-# [[redirects]]
-# from = "/Whole30-Day-5"
-# to = "/posts/2017/whole30-day-5"
+#[[redirects]]
+#from = "/The-Mandalorian-Season-One"
+#to = "/posts/2020/the-mandalorian-season-one"
 #
-# [[redirects]]
-# from = "/30-Burpees-Challenge"
-# to = "/posts/2018/30-burpees-challenge"
+#[[redirects]]
+#from = "/The-Mandalorian-Season-Two"
+#to = "/posts/2020/the-mandalorian-season-two"
 #
-# [[redirects]]
-# from = "/AzureADB2C-User-Secrets"
-# to = "/posts/2018/azureadb2c-user-secrets"
+#[[redirects]]
+#from = "/Twelve-Days-of-Exercisemas"
+#to = "/posts/2020/twelve-days-of-exercisemas"
 #
-# [[redirects]]
-# from = "/Feb-25-Mar-4-Meal-Planning"
-# to = "/posts/2018/feb-25-mar-4-meal-planning"
+# 2021 Posts Redirects
+#[[redirects]]
+#from = "/10000-Words-For-2021"
+#to = "/posts/2021/10000-words-for-2021"
 #
-# [[redirects]]
-# from = "/Hamburger-Experiment"
-# to = "/posts/2018/hamburger-experiment"
+#[[redirects]]
+#from = "/migrated-to-gridsome-netlifycms"
+#to = "/posts/2021/migrated-to-gridsome-netlifycms"
 #
-# [[redirects]]
-# from = "/I-Made-a-Logo"
-# to = "/posts/2018/i-made-a-logo"
-#
-# [[redirects]]
-# from = "/Jan-1-7-Meal-Planning"
-# to = "/posts/2018/jan-1-7-meal-planning"
-#
-# [[redirects]]
-# from = "/Jan-21-27-Meal-Planning"
-# to = "/posts/2018/jan-21-27-meal-planning"
-#
-# [[redirects]]
-# from = "/Jan-29-Feb-4-Meal-Planning"
-# to = "/posts/2018/jan-29-feb-4-meal-planning"
-#
-# [[redirects]]
-# from = "/Jan-8-14-Meal-Planning"
-# to = "/posts/2018/jan-8-14-meal-planning"
-#
-# [[redirects]]
-# from = "/Mar-10-20-Meal-Planning"
-# to = "/posts/2018/mar-10-20-meal-planning"
-#
-# [[redirects]]
-# from = "/Mar-4-11-Meal-Planning"
-# to = "/posts/2018/mar-4-11-meal-planning"
-#
-# [[redirects]]
-# from = "/My-Time-at-The-Fellowship"
-# to = "/posts/2018/my-time-at-the-fellowship"
-#
-# [[redirects]]
-# from = "/Pre-Trip-Checklist"
-# to = "/posts/2018/pre-trip-checklist"
-#
-# [[redirects]]
-# from = "/Shrimp-Stir-Fry-with-Coconut-Rice"
-# to = "/posts/2018/shrimp-stir-fry-with-coconut-rice"
-#
-# [[redirects]]
-# from = "/2019-Chicago-Marathon"
-# to = "/posts/2019/2019-chicago-marathon"
-#
-# [[redirects]]
-# from = "/Assessment-Create"
-# to = "/posts/2019/assessment-create"
-#
-# [[redirects]]
-# from = "/Assessment-Delete"
-# to = "/posts/2019/assessment-delete"
-#
-# [[redirects]]
-# from = "/Assessment-Requirements"
-# to = "/posts/2019/assessment-requirements"
-#
-# [[redirects]]
-# from = "/Assessment-Wrapup"
-# to = "/posts/2019/assessment-wrapup"
-#
-# [[redirects]]
-# from = "/Auth0-Simple-Progressing-Profiling"
-# to = "/posts/2019/auth0-simple-progressing-profiling"
-#
-# [[redirects]]
-# from = "/BlueBolt-First-Week"
-# to = "/posts/2019/bluebolt-first-week"
-#
-# [[redirects]]
-# from = "/No-Easy-Runs"
-# to = "/posts/2019/no-easy-runs"
-#
-# [[redirects]]
-# from = "/Project-BQ"
-# to = "/posts/2019/project-bq"
-#
-# [[redirects]]
-# from = "/Shopify-Auth0-Multipass"
-# to = "/posts/2019/shopify-auth0-multipass"
-#
-# [[redirects]]
-# from = "/Shopify-Multipass"
-# to = "/posts/2019/shopify-multipass"
-#
-# [[redirects]]
-# from = "/TalentLMS-Auth0-SAML"
-# to = "/posts/2019/talentlms-auth0-saml"
-#
-# [[redirects]]
-# from = "/Another-Year-In-Review"
-# to = "/posts/2020/another-year-in-review"
-#
-# [[redirects]]
-# from = "/Inavord-Architecture"
-# to = "/posts/2020/inavord-architecture"
-#
-# [[redirects]]
-# from = "/The-Mandalorian-Season-One"
-# to = "/posts/2020/the-mandalorian-season-one"
-#
-# [[redirects]]
-# from = "/The-Mandalorian-Season-Two"
-# to = "/posts/2020/the-mandalorian-season-two"
-#
-# [[redirects]]
-# from = "/Twelve-Days-of-Exercisemas"
-# to = "/posts/2020/twelve-days-of-exercisemas"
-#
-# [[redirects]]
-# from = "/10000-Words-For-2021"
-# to = "/posts/2021/10000-words-for-2021"
-#
-# [[redirects]]
-# from = "/migrated-to-gridsome-netlifycms"
-# to = "/posts/2021/migrated-to-gridsome-netlifycms"
-#
-# [[redirects]]
-# from = "/Sample-Page-For-Styling"
-# to = "/posts/2021/sample-page-for-styling"
+#[[redirects]]
+#from = "/Sample-Page-For-Styling"
+#to = "/posts/2021/sample-page-for-styling"
