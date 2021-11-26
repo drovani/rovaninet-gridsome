@@ -24,13 +24,9 @@
             v-if="pageInfo"
             :info="pageInfo"
             :range="5"
-            linkClass="mx-2"
-            activeLinkClass="underline font-semibold"
-            exactActiveLinkClass="text-blue-500"
-            firstLabel="newest"
-            prevLabel="newer"
-            nextLabel="older"
-            lastLabel="oldest"
+            linkClass="mx-1 p-1"
+            activeLinkClass="font-semibold"
+            exactActiveLinkClass="text-white bg-gray-900 rounded"
             class="text-center"
         />
     </section>
