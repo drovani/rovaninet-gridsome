@@ -6,7 +6,7 @@ date: 2014-03-21
 
 Now that I have been tinkering with Knockout for about a year, I have finally settled on a host of design patterns that I feel strike a nice balance between rigid consistency and flexible prototyping. I like to have all of my code look very similar. I can look at most code that I have written and know about when I worked on it last. I can usually even look at code that several other developers have touched and see what is mine and what is everyone else's code. Now that I have a team to direct and an expanding code base to maintain, I have realized that I need to document my own code patterns.
 
-[!["It's good to be the king"](http://img.youtube.com/vi/lZKiYgcgBAY/0.jpg)](https://youtu.be/lZKiYgcgBAY "It's good to be the king'")
+[!["It's good to be the king"](/images/good-to-be-king.jpg)](https://youtu.be/lZKiYgcgBAY "It's good to be the king'")
 
 Certainly, my way probably is not the absolute best, but it is what I like and what has worked best for me. Might I change my mind? Absolutely. Probably even before I finish writing this post, I will have changed my mind on several points. However, this is a good place to start.
 
