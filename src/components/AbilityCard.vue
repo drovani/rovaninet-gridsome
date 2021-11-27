@@ -1,12 +1,14 @@
 <template>
     <div class="ability bg-gray-100 rounded-md p-1 text-sm" :class="spellSchoolLower">
-        <div class="h-15 text-center">{{ abilityName }} {{ activeTier }}</div>
+        <div class="h-10 text-center">{{ abilityName }} {{ activeTier }}</div>
         <template v-if="showDetails">
-            <div class="flex justify-center">
-                <button @click="$emit('decrementActiveTier')">🔽</button>
-                <button @click="$emit('incrementActiveTier')">🔼</button>
-            </div>
-            <div>{{ activeTierInfo.description }}</div>
+            <UpDownButtons
+                :showDecrement="tierIndex <= 0"
+                :showIncrement="tierIndex >= ability.tiers.length - 1"
+                @decrement="$emit('decrementActiveTier')"
+                @increment="$emit('incrementActiveTier')"
+            ></UpDownButtons>
+            <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
             <div>{{ activeTierInfo.speed }}</div>
@@ -17,6 +19,7 @@
 </template>
 <script>
 import slug from 'slug';
+import UpDownButtons from '~/components/UpDownButtons.vue';
 
 export default {
     props: {
@@ -38,14 +41,16 @@ export default {
         decrementActiveTier: () => {
             if (this.activeTier <= 6 - this.ability.tiers.length) {
                 return false;
-            } else {
+            }
+            else {
                 return true;
             }
         },
         incrementActiveTier: () => {
             if (this.activeTier >= ability.tiers.length) {
                 return false;
-            } else {
+            }
+            else {
                 return true;
             }
         }
@@ -57,10 +62,14 @@ export default {
         imagePath: function () {
             return `/images/mercs/${slug(this.ability.name)}.png`;
         },
+        tierIndex: function () {
+            return Math.min(this.activeTier - 1, this.ability.tiers.length - 1);
+        },
         activeTierInfo: function () {
-            return this.ability.tiers[this.activeTier - 1]
+            return this.ability.tiers[this.activeTier - 1];
         }
-    }
+    },
+    components: { UpDownButtons }
 }
 </script>
 <style>

@@ -1,8 +1,8 @@
 <template>
     <Layout>
         <h1 class="text-4xl text-center mb-8">Hearthstones Mercenaries Helpers</h1>
-        <div class="container grid grid-flow-row md:grid-flow-col md:gap-3">
-            <section class="whitespace-nowrap md:row-span-2">
+        <div class="container grid grid-flow-row lg:grid-flow-col lg:gap-3">
+            <section class="whitespace-nowrap lg:row-span-2">
                 <h3 class="text-lg underline">Available Mercenaries</h3>
                 <ul>
                     <li
@@ -13,8 +13,10 @@
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
                     >
+                        <span>
+                            <app-icon :class="{ invisible: !collection[name] }" :icon="['fas', 'check']"></app-icon>
+                        </span>
                         {{ name }}
-                        <span v-if="collection[name]" class="float-right">✔</span>
                     </li>
                 </ul>
             </section>
@@ -31,7 +33,7 @@
                 />
             </section>
             <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
                     <MercenaryCard
                         v-for="(merc, name) in mercenaries"
                         :key="name"

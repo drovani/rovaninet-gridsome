@@ -1,23 +1,21 @@
 <template>
     <div class="item">
-        <div class="md:text-center">{{ itemName }} {{ activeTier }}</div>
+        <div class="h-12 text-center">{{ itemName }} {{ activeTier }}</div>
         <template v-if="showDetails">
             <div>Unlock: {{ item.unlock }}</div>
-            <div class="flex justify-center">
-                <button
-                    @click="$emit('decrementActiveTier')"
-                    :class="{ invisible: tierIndex <= 0 }"
-                >🔽</button>
-                <button
-                    @click="$emit('incrementActiveTier')"
-                    :class="{ invisible: tierIndex >= item.tiers.length - 1 }"
-                >🔼</button>
-            </div>
-            <div>{{ activeTierInfo.description }}</div>
+            <UpDownButtons
+                :showDecrement="tierIndex <= 0"
+                :showIncrement="tierIndex >= item.tiers.length - 1"
+                @decrement="$emit('decrementActiveTier')"
+                @increment="$emit('incrementActiveTier')"
+            ></UpDownButtons>
+            <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
         </template>
     </div>
 </template>
 <script>
+import UpDownButtons from '~/components/UpDownButtons.vue';
+
 export default {
     props: {
         itemName: {
@@ -41,6 +39,9 @@ export default {
         activeTierInfo: function () {
             return this.item.tiers[this.tierIndex]
         }
+    },
+    components: {
+        UpDownButtons
     }
 }
 </script>

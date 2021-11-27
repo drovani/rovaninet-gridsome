@@ -4,7 +4,7 @@
             <h2 class="bg-gray-900 text-white rounded-md">{{ mercName }}</h2>
             <span>{{ mercenary.race }}</span>
         </header>
-        <div class="grid grid-cols-1 space-y-2 lg:space-y-0 lg:grid-cols-3 lg:space-x-2">
+        <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
             <AbilityCard
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
@@ -15,7 +15,7 @@
                 @increment="$emit('incrementAbility', mercName, name)"
             />
         </div>
-        <div class="grid grid-cols-1 space-y-2 lg:space-y-0 lg:grid-cols-3 lg:space-x-2">
+        <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"

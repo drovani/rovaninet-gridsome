@@ -9,7 +9,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faHome,
-  faUserTie
+  faUserTie,
+  faArrowCircleUp,
+  faArrowCircleDown,
+  faTimesCircle,
+  faCheck,
+  faCheckDouble
 } from '@fortawesome/free-solid-svg-icons';
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -20,13 +25,16 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import './css/main.css'
 
 const client: ClientApiConstructor = (Vue, { head }) => {
-  library.add(faGithub,
-    faLinkedin,
-    faTwitter,
-    faStackOverflow,
-    faDev,
-    faHome,
-    faUserTie);
+  library.add(
+    faGithub, faLinkedin, faTwitter,
+    faStackOverflow, faDev,
+    faHome, faUserTie,
+    faArrowCircleUp,
+    faArrowCircleDown,
+    faTimesCircle,
+    faCheck,
+    faCheckDouble
+  );
 
   Vue.component('Layout', DefaultLayout);
   Vue.component('AppIcon', FontAwesomeIcon);
