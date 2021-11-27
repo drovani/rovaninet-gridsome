@@ -20,7 +20,7 @@
                     class="bg-gray-300 rounded-full px-2 py-1 mr-4 mb-4 text-gray-700 hover:text-gray-300 hover:bg-gray-700"
                 >{{ tag.title }}</g-link>
             </div>
-            <div class="mt-8 mb-16 prose lg:prose-lg xl:prose-xl" v-html="$page.post.content" />
+            <div class="mt-8 mb-16 min-w-full prose lg:prose-lg xl:prose-xl" v-html="$page.post.content" />
         </article>
     </Layout>
 </template>
