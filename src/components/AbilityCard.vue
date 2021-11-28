@@ -3,11 +3,13 @@
         <div class="h-10 text-center">{{ abilityName }} {{ activeTier }}</div>
         <template v-if="showDetails">
             <UpDownButtons
-                :showDecrement="tierIndex <= 0"
-                :showIncrement="tierIndex >= ability.tiers.length - 1"
+                :showDecrement="tierIndex > 0"
+                :showIncrement="tierIndex < ability.tiers.length - 1"
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
-            ></UpDownButtons>
+            >
+                <div v-if="costToMax > 0">{{ costToMax }}</div>
+            </UpDownButtons>
             <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
@@ -20,6 +22,7 @@
 <script>
 import slug from 'slug';
 import UpDownButtons from '~/components/UpDownButtons.vue';
+const upgradeCosts = [50, 125, 150, 150];
 
 export default {
     props: {
@@ -34,6 +37,10 @@ export default {
         },
         abilityName: {
             type: String,
+            required: true
+        },
+        costToMax: {
+            type: Number,
             required: true
         }
     },
@@ -56,16 +63,16 @@ export default {
         }
     },
     computed: {
-        spellSchoolLower: function () {
+        spellSchoolLower() {
             return this.ability.spell_school?.toLowerCase();
         },
-        imagePath: function () {
+        imagePath() {
             return `/images/mercs/${slug(this.ability.name)}.png`;
         },
-        tierIndex: function () {
-            return Math.min(this.activeTier - 1, this.ability.tiers.length - 1);
+        tierIndex() {
+            return Math.min((this.activeTier ?? 1) - 1, this.ability.tiers.length - 1);
         },
-        activeTierInfo: function () {
+        activeTierInfo() {
             return this.ability.tiers[this.activeTier - 1];
         }
     },

@@ -11,8 +11,9 @@
                 :abilityName="name"
                 :ability="ability"
                 :activeTier="collected && collected.abilities[name]"
-                @decrement="$emit('decrementAbility', mercName, name)"
-                @increment="$emit('incrementAbility', mercName, name)"
+                :costToMax="0"
+                @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
+                @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
             />
         </div>
         <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
@@ -22,8 +23,9 @@
                 :itemName="name"
                 :item="item"
                 :activeTier="collected && collected.equipment[name]"
-                @decrement="$emit('decrementItem', mercName, name)"
-                @increment="$emit('incrementItem', mercName, name)"
+                :costToMax="0"
+                @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
+                @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
             />
         </div>
     </section>
@@ -47,7 +49,6 @@ export default {
             required: true
         }
     },
-    emits: ['decrementAbility', 'incrementAbility', 'decrementItem', 'incrementItem'],
     components: {
         AbilityCard,
         ItemCard

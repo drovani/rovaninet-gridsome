@@ -13,8 +13,15 @@
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
                     >
-                        <span>
-                            <app-icon :class="{ invisible: !collection[name] }" :icon="['fas', 'check']"></app-icon>
+                        <span v-if="loadingCollection">
+                            <app-icon :icon="['fas', 'sync']"></app-icon>
+                        </span>
+                        <span v-else>
+                            <app-icon
+                                v-if="collection[name] ? collection[name].collected : false"
+                                :icon="['fas', 'check']"
+                            ></app-icon>
+                            <app-icon v-else :icon="['fas', 'plus']" @click="addToCollection(name)"></app-icon>
                         </span>
                         {{ name }}
                     </li>
@@ -24,7 +31,7 @@
                 <MercenaryDetails
                     :mercName="highlightedMercName"
                     :mercenary="highlightedMerc"
-                    :collected="collection[highlightedMercName]"
+                    :activeMerc="collection[highlightedMercName]"
                     @closeMercDetails="highlightMerc(null)"
                     @decrementAbilityActiveTier="decrementAbilityActiveTier"
                     @incrementAbilityActiveTier="incrementAbilityActiveTier"
@@ -39,9 +46,11 @@
                         :key="name"
                         :mercName="name"
                         :mercenary="merc"
-                        :collected="collection[name]"
+                        :activeMerc="collection[name]"
                         @decrementAbilityActiveTier="decrementAbilityActiveTier"
                         @incrementAbilityActiveTier="incrementAbilityActiveTier"
+                        @decrementItemActiveTier="decrementItemActiveTier"
+                        @incrementItemActiveTier="incrementItemActiveTier"
                     />
                 </div>
             </section>
@@ -50,21 +59,17 @@
 </template>
 
 <script>
-import mercjson from "~/store/mercenaries.json";
-import colljson from "~/store/collection.json";
+import mercjson from "~/store/modules/mercenaries.json";
+import colljson from "~/store/modules/collection.json";
 import MercenaryCard from '~/components/MercenaryCard.vue';
 import MercenaryDetails from '~/components/MercenaryDetails.vue';
-const ABILITY_MAX_TIER = 5;
-const ITEM_MAX_TIER = 4;
+import { mapState } from 'vuex';
 
 export default {
-    data: function () {
-        return {
-            mercenaries: mercjson.mercenaries,
-            collection: colljson.mercenaries,
-            highlightedMercName: null
-        }
-    },
+    data: () => ({
+        highlightedMercName: null,
+        loadingCollection: false
+    }),
     components: {
         MercenaryCard,
         MercenaryDetails
@@ -77,40 +82,40 @@ export default {
     computed: {
         highlightedMerc() {
             return this.mercenaries[this.highlightedMercName];
-        }
+        },
+        ...mapState({
+            mercenaries: state => state.mercenaries,
+            collection: state => state.collection
+        })
     },
     methods: {
-        highlightMerc: function (mercName) {
+        highlightMerc(mercName) {
             this.highlightedMercName = mercName;
         },
-        decrementAbilityActiveTier: function (mercenaryName, abilityName) {
-            if (this.collection[mercenaryName].abilities[abilityName] > ABILITY_MAX_TIER - this.mercenaries[mercenaryName].abilities[abilityName].tiers.length + 1) {
-                this.collection[mercenaryName].abilities[abilityName]--;
-            } else {
-                return false;
-            }
+        addToCollection(mercName) {
+            this.$store.commit('addToCollection', {
+                name: mercName,
+                collected: true
+            });
         },
-        incrementAbilityActiveTier: function (mercenaryName, abilityName) {
-            if (this.collection[mercenaryName].abilities[abilityName] < ABILITY_MAX_TIER) {
-                this.collection[mercenaryName].abilities[abilityName]++;
-            } else {
-                return false;
-            }
+        decrementAbilityActiveTier(mercenaryName, abilityName) {
+            this.$store.commit('decrementAbility', { mercName: mercenaryName, abilityName: abilityName });
         },
-        decrementItemActiveTier: function (mercenaryName, itemName) {
-            if (this.collection[mercenaryName].equipment[itemName] > ITEM_MAX_TIER - this.mercenaries[mercenaryName].equipment[itemName].tiers.length + 1) {
-                this.collection[mercenaryName].equipment[itemName]--;
-            } else {
-                return false;
-            }
+        incrementAbilityActiveTier(mercenaryName, abilityName) {
+            this.$store.commit('incrementAbility', { mercName: mercenaryName, abilityName: abilityName });
         },
-        incrementItemActiveTier: function (mercenaryName, itemName) {
-            if (this.collection[mercenaryName].equipment[itemName] < ITEM_MAX_TIER) {
-                this.collection[mercenaryName].equipment[itemName]++;
-            } else {
-                return false;
-            }
+        decrementItemActiveTier(mercenaryName, itemName) {
+            this.$store.commit('decrementItem', { mercName: mercenaryName, itemName: itemName });
+        },
+        incrementItemActiveTier(mercenaryName, itemName) {
+            this.$store.commit('incrementItem', { mercName: mercenaryName, itemName: itemName });
         }
+    },
+    async mounted() {
+        this.loadingCollection = true;
+        this.$store.commit('setMercenaries', mercjson.mercenaries);
+        this.$store.commit('setCollection', colljson.mercenaries);
+        this.loadingCollection = false;
     }
 }
 </script>

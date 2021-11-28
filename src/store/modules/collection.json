@@ -1,6 +1,7 @@
 {
     "mercenaries": {
         "Alexstrasza": {
+            "collected": true,
             "level": 30,
             "tasksCompleted": 2,
             "itemEquiped": "Amulet of Swiftness",
