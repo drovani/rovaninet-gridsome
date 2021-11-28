@@ -31,7 +31,7 @@
     </section>
 </template>
 
-<script lang="ts">
+<script>
 
 import AbilityCard from './AbilityCard.vue';
 import ItemCard from './ItemCard.vue';

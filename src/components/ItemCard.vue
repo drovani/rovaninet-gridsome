@@ -2,7 +2,12 @@
     <div class="item">
         <div class="h-12 text-center">{{ itemName }} {{ activeTier || 5 - item.tiers.length }}</div>
         <template v-if="showDetails">
-            <div>Unlock: {{ item.unlock }}</div>
+            <div class="flex">
+                <div class="flex-grow">Unlock: {{ item.unlock }}</div>
+                <div @click="$emit('toggleItemEquipped')">
+                    <app-icon :icon="['fas', 'thumbtack']" :class="{ 'fa-rotate-90': isEquiped }"></app-icon>
+                </div>
+            </div>
             <UpDownButtons
                 :showDecrement="tierIndex > 0"
                 :showIncrement="tierIndex < item.tiers.length - 1"
@@ -17,7 +22,6 @@
 </template>
 <script>
 import UpDownButtons from '~/components/UpDownButtons.vue';
-const upgradeCosts = [100, 150, 175];
 
 export default {
     props: {
@@ -28,6 +32,10 @@ export default {
         item: Object,
         activeTier: {
             type: Number
+        },
+        isEquiped: {
+            type: Boolean,
+            default: false
         },
         costToMax: {
             type: Number,

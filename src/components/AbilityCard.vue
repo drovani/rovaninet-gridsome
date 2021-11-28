@@ -22,7 +22,6 @@
 <script>
 import slug from 'slug';
 import UpDownButtons from '~/components/UpDownButtons.vue';
-const upgradeCosts = [50, 125, 150, 150];
 
 export default {
     props: {

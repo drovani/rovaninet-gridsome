@@ -44,8 +44,10 @@
                 :activeTier="activeMerc && activeMerc.equipment[name]"
                 :costToMax="itemCostToMax(name)"
                 :showDetails="true"
+                :isEquiped="activeMerc && activeMerc.itemEquipped === name"
                 @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
+                @toggleItemEquipped="$emit('toggleItemEquipped', mercName, name)"
             />
         </div>
     </section>

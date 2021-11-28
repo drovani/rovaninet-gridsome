@@ -36,7 +36,7 @@ export default new Vuex.Store({
           collected: merc.collected || false,
           level: 1,
           tasksCompleted: 0,
-          itemEquiped: "",
+          itemEquipped: "",
           abilities: convertMercTiersToCollection(
             state.mercenaries[merc.name].abilities,
             5
@@ -94,6 +94,14 @@ export default new Vuex.Store({
         state.collection[mercName].equipment[itemName]++;
       } else {
         return false;
+      }
+    },
+    toggleItemEquipped(state, { mercName, itemName }) {
+      this.commit("addToCollection", { name: mercName });
+      if (state.collection[mercName].itemEquipped == itemName) {
+        state.collection[mercName].itemEquipped = null;
+      } else {
+        state.collection[mercName].itemEquipped = itemName;
       }
     },
   },

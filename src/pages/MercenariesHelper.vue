@@ -37,6 +37,7 @@
                     @incrementAbilityActiveTier="incrementAbilityActiveTier"
                     @decrementItemActiveTier="decrementItemActiveTier"
                     @incrementItemActiveTier="incrementItemActiveTier"
+                    @toggleItemEquipped="toggleItemEquipped"
                 />
             </section>
             <section>
@@ -109,6 +110,9 @@ export default {
         },
         incrementItemActiveTier(mercenaryName, itemName) {
             this.$store.commit('incrementItem', { mercName: mercenaryName, itemName: itemName });
+        },
+        toggleItemEquipped(mercenaryName, itemName) {
+            this.$store.commit('toggleItemEquipped', { mercName: mercenaryName, itemName: itemName });
         }
     },
     async mounted() {
