@@ -14,7 +14,10 @@ import {
   faArrowCircleDown,
   faTimesCircle,
   faCheck,
-  faCheckDouble
+  faCheckDouble,
+  faSync,
+  faPlus,
+  faThumbtack
 } from '@fortawesome/free-solid-svg-icons';
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -24,7 +27,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import './css/main.css'
 
-const client: ClientApiConstructor = (Vue, { head }) => {
+import store from "~/store/index";
+
+const client: ClientApiConstructor = (Vue, { appOptions, head }) => {
   library.add(
     faGithub, faLinkedin, faTwitter,
     faStackOverflow, faDev,
@@ -33,8 +38,13 @@ const client: ClientApiConstructor = (Vue, { head }) => {
     faArrowCircleDown,
     faTimesCircle,
     faCheck,
-    faCheckDouble
+    faCheckDouble,
+    faSync,
+    faPlus,
+    faThumbtack
   );
+
+  (appOptions as any).store = store;
 
   Vue.component('Layout', DefaultLayout);
   Vue.component('AppIcon', FontAwesomeIcon);

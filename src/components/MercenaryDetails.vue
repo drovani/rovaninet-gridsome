@@ -12,7 +12,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
             <div class="sm:row-span-6">
                 <header class="text-center bg-gray-900 text-white rounded-md flex px-1">
-                    <span v-if="collected">
+                    <span v-if="activeMerc && activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
                     </span>
                     <h2 class="flex-grow">{{ mercName }}</h2>
@@ -21,28 +21,33 @@
                     </button>
                 </header>
                 <div class="text-center">{{ mercenary.race }}</div>
+                <div>Total Cost to Max: {{ abilitiesMaxCost + equipmentMaxCost }}</div>
             </div>
-            <div class="sm:col-span-3 text-center mt-4">Abilities</div>
+            <div class="sm:col-span-3 text-center mt-4">Abilities ({{ abilitiesMaxCost }})</div>
             <AbilityCard
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
                 :abilityName="name"
                 :ability="ability"
-                :activeTier="collected && collected.abilities[name]"
+                :activeTier="activeMerc && activeMerc.abilities[name]"
+                :costToMax="abilityCostToMax(name)"
                 :showDetails="true"
                 @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
             />
-            <div class="sm:col-span-3 text-center mb-4">Equipment</div>
+            <div class="sm:col-span-3 text-center mb-4">Equipment ({{ equipmentMaxCost }})</div>
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"
                 :itemName="name"
                 :item="item"
-                :activeTier="collected && collected.equipment[name]"
+                :activeTier="activeMerc && activeMerc.equipment[name]"
+                :costToMax="itemCostToMax(name)"
                 :showDetails="true"
+                :isEquiped="activeMerc && activeMerc.itemEquipped === name"
                 @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
+                @toggleItemEquipped="$emit('toggleItemEquipped', mercName, name)"
             />
         </div>
     </section>
@@ -52,15 +57,47 @@
 
 import AbilityCard from './AbilityCard.vue';
 import ItemCard from './ItemCard.vue';
+const abilityUpgradeCosts = [50, 125, 150, 150];
+const itemUpgradeCosts = [100, 150, 175];
 
 export default {
     name: "MercenaryDetails",
     props: {
         mercenary: Object,
-        collected: Object,
+        activeMerc: Object,
         mercName: String
     },
     emits: ['closeMercDetails', 'decrementAbilityActiveTier', 'incrementAbilityActiveTier', 'decrementItemActiveTier', 'incrementItemActiveTier'],
+    computed: {
+        abilityCostToMax() {
+            return (abilityName) => {
+                const numTiers = this.mercenary.abilities[abilityName].tiers.length;
+                const currentTier = this.activeMerc?.abilities[abilityName] || (5 - numTiers + 1);
+                if (currentTier >= numTiers) {
+                    return 0;
+                } else {
+                    return abilityUpgradeCosts.slice(-1 * (numTiers - currentTier)).reduce((totalCost, cost) => totalCost + cost, 0);
+                }
+            }
+        },
+        itemCostToMax() {
+            return (itemName) => {
+                const numTiers = this.mercenary.equipment[itemName].tiers.length;
+                const currentTier = this.activeMerc?.equipment[itemName] || (4 - numTiers + 1);
+                if (currentTier >= numTiers) {
+                    return 0;
+                } else {
+                    return itemUpgradeCosts.slice(-1 * (numTiers - currentTier)).reduce((totalCost, cost) => totalCost + cost, 0);
+                }
+            }
+        },
+        abilitiesMaxCost() {
+            return Object.keys(this.mercenary.abilities).reduce((totalCost, abilityName) => totalCost + this.abilityCostToMax(abilityName), 0);
+        },
+        equipmentMaxCost() {
+            return Object.keys(this.mercenary.equipment).reduce((totalCost, itemName) => totalCost + this.itemCostToMax(itemName), 0);
+        }
+    },
     components: {
         AbilityCard,
         ItemCard

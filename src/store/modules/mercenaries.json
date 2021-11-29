@@ -2,9 +2,11 @@
     "mercenaries": {
         "Alexstrasza": {
             "role": "Protector",
+            "rarity": "Legendary",
             "race": "Dragon",
             "abilities": {
                 "Dragon Breath": {
+                    "unlock": 1,
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -30,6 +32,7 @@
                     ]
                 },
                 "Flame Buffet": {
+                    "unlock": 5,
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -60,6 +63,7 @@
                     ]
                 },
                 "Dragonqueen's Gambit": {
+                    "unlock": 15,
                     "spell_school": "Fire",
                     "tiers": [
                         {
@@ -92,6 +96,7 @@
             },
             "equipment": {
                 "Dragonflight Talisman": {
+                    "unlock": "Task 7",
                     "tiers": [
                         {
                             "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
@@ -99,6 +104,7 @@
                     ]
                 },
                 "Alexstrasza's Brooch": {
+                    "unlock": "Task 2",
                     "tiers": [
                         {
                             "description": "Dragon Breath deals or restores 2 more."
@@ -115,6 +121,7 @@
                     ]
                 },
                 "Amulet of Swiftness": {
+                    "unlock": "Level 30",
                     "tiers": [
                         {
                             "description": "Dragonqueen's Gambit is (1) Speed faster"
@@ -130,7 +137,175 @@
                         }
                     ]
                 }
-            }
+            },
+            "tasks": [
+                {
+                    "name": "The Life-Binder",
+                    "description": "Deal 55 damage using Dragon Breath.",
+                    "ability": "Dragon Breath",
+                    "rewards": [
+                        50,
+                        20
+                    ],
+                    "quote": "I am the protector of all life, a solemn charge that carries greater weight than ever."
+                },
+                {
+                    "name": "Firebreathing for Two",
+                    "description": "Deal 240 damage using Flame Buffet.",
+                    "ability": "Flame Buffet",
+                    "rewards": "Alexstrasza's Brooch",
+                    "quote": "Sometimes life must be preserved through more… aggressive means."
+                },
+                {
+                    "name": "The Strong Shall Quake",
+                    "description": "Deal 70 damage using Dragonqueen's Gambit.",
+                    "ability": "Dragonqueen's Gambit",
+                    "rewards": [
+                        50,
+                        25
+                    ],
+                    "quote": "Spread your wings and anything is possible."
+                },
+                {
+                    "name": "Dragon Fury",
+                    "description": "Deal 150 damage.",
+                    "rewards": [
+                        50,
+                        30
+                    ],
+                    "quote": "If I address this, I will be one step closer."
+                },
+                {
+                    "name": "Empower the Aspects",
+                    "description": "Complete a bounty while at level 30.",
+                    "rewards": [
+                        50,
+                        35
+                    ],
+                    "quote": "To safeguard some, I must rein others."
+                },
+                {
+                    "name": "Death Pains Me",
+                    "description": "Destroy 40 minions.",
+                    "rewards": [
+                        50,
+                        40
+                    ],
+                    "quote": "I know I can handle this now."
+                },
+                {
+                    "name": "A Minor Challenge",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "rewards": "Dragonflight Talisman",
+                    "quote": "I fear this one may require more effort."
+                },
+                {
+                    "name": "Power of Resurrection",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "rewards": [
+                        60,
+                        30
+                    ],
+                    "quote": "The Aspects would smile on me for achieving this."
+                },
+                {
+                    "name": "Defender of Life",
+                    "description": "Heal 180 damage.",
+                    "rewards": [
+                        60,
+                        35
+                    ],
+                    "quote": "How much can I do in service of life? The answer is always: everything."
+                },
+                {
+                    "name": "Flames of Life",
+                    "description": "Deal 180 damage using Dragon Breath.",
+                    "ability": "Dragon Breath",
+                    "rewards": [
+                        60,
+                        40
+                    ],
+                    "quote": "There are always more problems for me to solve."
+                },
+                {
+                    "name": "A Dragon's Claws",
+                    "description": "Deal 450 damage.",
+                    "rewards": [
+                        60,
+                        45
+                    ],
+                    "quote": "Sometimes life must be preserved through more… aggressive means."
+                },
+                {
+                    "name": "Two for one",
+                    "description": "Destroy two enemies in one turn using Flame Buffet 15 times.",
+                    "ability": "Flame Buffet",
+                    "rewards": [
+                        60,
+                        50
+                    ],
+                    "quote": "I fear this one may require more effort."
+                },
+                {
+                    "name": "Formidable Opponents",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "rewards": [
+                        70,
+                        50,
+                        50
+                    ],
+                    "quote": "If I address this, I will be one step closer."
+                },
+                {
+                    "name": "They Stood in the Fire",
+                    "description": "Deal 900 damage to adjacent enemies using Flame Buffet.",
+                    "ability": "Flame Buffet",
+                    "rewards": [
+                        70,
+                        75,
+                        50
+                    ],
+                    "quote": "To safeguard some, I must rein others."
+                },
+                {
+                    "name": "The Red Dragonflight",
+                    "description": "Complete 6 Bounties.",
+                    "rewards": [
+                        70,
+                        75,
+                        75
+                    ],
+                    "quote": "I know I can handle this now."
+                },
+                {
+                    "name": "Fire Cleanses",
+                    "description": "Deal 900 damage to Fighters.",
+                    "rewards": [
+                        70,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "Spread your wings and anything is possible."
+                },
+                {
+                    "name": "Their Strength is Mine",
+                    "description": "Destroy 40 enemies using Dragonqueen's Gambit.",
+                    "ability": "Dragonqueen's Gambit",
+                    "rewards": [
+                        75,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "There are always more problems for me to solve."
+                },
+                {
+                    "name": "Flowers in Flame",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "rewards": [
+                        80,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "How much can I do in service"
+                }
+            ]
         },
         "Anduin Wrynn": {
             "role": "Caster",

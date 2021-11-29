@@ -1,9 +1,10 @@
 {
     "mercenaries": {
         "Alexstrasza": {
+            "collected": true,
             "level": 30,
-            "tasksCompleted": 2,
-            "itemEquiped": "Amulet of Swiftness",
+            "tasksCompleted": 4,
+            "itemEquipped": "Amulet of Swiftness",
             "abilities": {
                 "Dragon Breath": 2,
                 "Flame Buffet": 2,

@@ -1,14 +1,21 @@
 <template>
     <div class="item">
-        <div class="h-12 text-center">{{ itemName }} {{ activeTier }}</div>
+        <div class="h-12 text-center">{{ itemName }} {{ activeTier || 5 - item.tiers.length }}</div>
         <template v-if="showDetails">
-            <div>Unlock: {{ item.unlock }}</div>
+            <div class="flex">
+                <div class="flex-grow">Unlock: {{ item.unlock }}</div>
+                <div @click="$emit('toggleItemEquipped')">
+                    <app-icon :icon="['fas', 'thumbtack']" :class="{ 'fa-rotate-90': isEquiped }"></app-icon>
+                </div>
+            </div>
             <UpDownButtons
-                :showDecrement="tierIndex <= 0"
-                :showIncrement="tierIndex >= item.tiers.length - 1"
+                :showDecrement="tierIndex > 0"
+                :showIncrement="tierIndex < item.tiers.length - 1"
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
-            ></UpDownButtons>
+            >
+                <div v-if="costToMax > 0">{{ costToMax }}</div>
+            </UpDownButtons>
             <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
         </template>
     </div>
@@ -24,8 +31,15 @@ export default {
         },
         item: Object,
         activeTier: {
+            type: Number
+        },
+        isEquiped: {
+            type: Boolean,
+            default: false
+        },
+        costToMax: {
             type: Number,
-            default: 1
+            required: true
         },
         showDetails: {
             type: Boolean,
@@ -34,11 +48,11 @@ export default {
     },
     computed: {
         tierIndex: function () {
-            return Math.min(this.activeTier - 1, this.item.tiers.length - 1);
+            return Math.min((this.activeTier ?? 1) - 1, this.item.tiers.length - 1);
         },
         activeTierInfo: function () {
-            return this.item.tiers[this.tierIndex]
-        }
+            return this.item.tiers[this.tierIndex || 0]
+        },
     },
     components: {
         UpDownButtons
