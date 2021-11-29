@@ -4,7 +4,7 @@
         class="p-2 border-2 rounded-md relative inline-block"
     >
         <button
-            class="absolute top-1 right-1 w-6 inline hidden sm:inline"
+            class="absolute top-1 right-1 w-6 hidden sm:inline"
             @click="$emit('closeMercDetails')"
         >
             <app-icon :icon="['fas', 'times-circle']"></app-icon>
