@@ -43,6 +43,8 @@
   - [ ] Update collection in response to user clicks
   - [ ] Persist collection to _local storage_ (or somewhere)
   - [ ] Allow for export/import of collection (via json file)
+  - [ ] Refactor event names to kebab-cased per [Vue.js best practices](https://vuejs.org/v2/guide/components-custom-events.html#Event-Names)
+  - [ ] Implement `.sync` modifer [where appropriate](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier)
 - [ ] Starting writing "Rovani's Vue" and "Rovani's *React*ions"
   - [ ] Build HS Mercs Helper in React.
 - [ ] Login Gated Cash Rules Spreadsheet
