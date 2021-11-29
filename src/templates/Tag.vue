@@ -30,14 +30,14 @@ query Tag ($id: ID!){
 }
 </page-query>
 
-<script lang="ts">
+<script>
 import PostSnippets from "~/components/PostSnippets.vue"
 import PageHeader from "~/components/PageHeader.vue"
 
 export default {
-    metaInfo(): any {
+    metaInfo() {
         return {
-            title: 'Tag: ' + (this as any).$page.tag.title
+            title: 'Tag: ' + this.$page.tag.title
         }
     },
     components: {

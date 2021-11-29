@@ -3,6 +3,6 @@
         <slot></slot>
     </h1>
 </template>
-<script lang="ts">
+<script>
 export default {}
 </script>

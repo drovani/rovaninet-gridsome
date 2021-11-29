@@ -43,14 +43,14 @@ query CategoryWithPostsPaged ($path: String, $page:Int){
 }
 </page-query>
 
-<script lang="ts">
+<script>
 import PostSnippets from "~/components/PostSnippets.vue"
 import PageHeader from "~/components/PageHeader.vue"
 
 export default {
-  metaInfo(): any {
+  metaInfo() {
     return {
-      title: 'Category: ' + (this as any).$page.category.title
+      title: 'Category: ' + this.$page.category.title
     }
   },
   components: {

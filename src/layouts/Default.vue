@@ -76,7 +76,7 @@ query {
 }
 </static-query>
 
-<script lang="ts">
+<script>
 export default {
   data: function () {
     return {

@@ -47,7 +47,7 @@ query Posts {
 }
 </page-query>
 
-<script lang="ts">
+<script>
 import PostSnippets from "~/components/PostSnippets.vue";
 
 export default {
