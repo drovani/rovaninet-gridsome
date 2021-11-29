@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <article>
+        <article class="mb-16 prose lg:prose-lg xl:prose-xl">
             <header>
                 <h1 class="text-4xl font-semibold mb-1">{{ $page.post.title }}</h1>
                 <p class="font-light">
@@ -20,7 +20,19 @@
                     class="bg-gray-300 rounded-full px-2 py-1 mr-4 mb-4 text-gray-700 hover:text-gray-300 hover:bg-gray-700"
                 >{{ tag.title }}</g-link>
             </div>
-            <div class="mt-8 mb-16 min-w-full prose lg:prose-lg xl:prose-xl" v-html="$page.post.content" />
+            <div class="mt-8 mb-4" v-html="$page.post.content" />
+            <footer
+                v-if="$page.post.github_discussion"
+                class="border-t border-b rounded mx-2 px-2 py-2 text-center sm:mx-4 sm:px-4"
+            >
+                Continue the conversation at the GitHub Discussion:
+                <br class="hidden sm:inline-block lg:hidden" />
+                <a
+                    :href="`https://github.com/drovani/rovaninet/discussions/${$page.post.github_discussion}`"
+                    rel="noopener"
+                    target="_blank"
+                >Comments on "{{ $page.post.title }}"</a>
+            </footer>
         </article>
     </Layout>
 </template>
@@ -31,6 +43,7 @@ query Post ($path: String!) {
         title
         date
         formatedDate: date (format: "D MMMM Y")
+        github_discussion
         path
         category {
             title
@@ -46,23 +59,22 @@ query Post ($path: String!) {
 }
 </page-query>
 
-<script lang="ts">
+<script>
 
 export default {
-    metaInfo(): any {
-        const me = (this as any);
+    metaInfo() {
         return {
-            title: me.$page.post.title,
+            title: this.$page.post.title,
             meta: [
                 { key: 'og:type', property: 'og:type', content: 'article' },
-                { key: 'og:title', property: 'og:title', content: me.$page.post.title, },
-                { key: 'description', property: 'description', content: me.$page.post.excerpt },
-                { key: 'og:url', property: 'og:url', content: me.$page.post.path },
-                { key: 'keywords', name: 'keywords', content: me.keywords },
-                { key: 'article:published_time', property: 'article:published_time', content: me.$page.post.date },
-                { name: 'twitter:title', content: me.$page.post.title },
+                { key: 'og:title', property: 'og:title', content: this.$page.post.title, },
+                { key: 'description', property: 'description', content: this.$page.post.excerpt },
+                { key: 'og:url', property: 'og:url', content: this.$page.post.path },
+                { key: 'keywords', name: 'keywords', content: this.keywords },
+                { key: 'article:published_time', property: 'article:published_time', content: this.$page.post.date },
+                { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:card', content: 'summary_large_image' },
-                { name: 'twitter:description', content: me.$page.post.excerpt },
+                { name: 'twitter:description', content: this.$page.post.excerpt },
                 { name: 'twitter:site', content: 'https://rovani.net' },
                 { name: 'twitter:creator', content: 'https://twitter.com/davidrovani' }
             ]

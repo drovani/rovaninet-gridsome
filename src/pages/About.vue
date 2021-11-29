@@ -100,7 +100,7 @@
   </Layout>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   metaInfo: {
     title: 'About Me'

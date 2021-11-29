@@ -32,7 +32,7 @@
     </section>
 </template>
 
-<script lang="ts">
+<script>
 import { Pager } from "gridsome";
 
 export default {

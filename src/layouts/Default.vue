@@ -42,7 +42,7 @@
         <slot />
       </main>
     </transition>
-    <footer class="mt-4 text-4xl space-x-1 text-center sm:space-x-2 md:space-x-4">
+    <footer class="mt-4 pt-2 text-4xl space-x-1 text-center sm:space-x-2 md:space-x-4 border-t rounded-t">
       <a href="/">
         <app-icon :icon="['fas', 'home']"></app-icon>
       </a>
@@ -76,7 +76,7 @@ query {
 }
 </static-query>
 
-<script lang="ts">
+<script>
 export default {
   data: function () {
     return {
