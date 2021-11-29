@@ -13,6 +13,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            maxWidth: null,
             "blockquote p:first-of-type::before": {
               content: null,
             },

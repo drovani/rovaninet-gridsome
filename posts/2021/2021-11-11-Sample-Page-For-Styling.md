@@ -2,6 +2,7 @@
 title: Sample Page For Styling
 category: Rovani in C♯
 date: 2021-11-11
+github_discussion: 7
 tags:
 - writing
 - sample
