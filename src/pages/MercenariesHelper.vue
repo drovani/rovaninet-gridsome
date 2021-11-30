@@ -154,10 +154,12 @@ export default {
         }
     },
     async mounted() {
-        this.loadingCollection = true;
-        this.$store.commit('setMercenaries', mercjson.mercenaries);
-        this.$store.commit('setCollection', colljson.mercenaries);
-        this.loadingCollection = false;
+        if (Object.keys(this.mercenaries).length === 0) {
+            this.$store.commit('setMercenaries', mercjson.mercenaries);
+        }
+        if (Object.keys(this.collection).length === 0) {
+            this.$store.commit('setCollection', colljson.mercenaries);
+        }
     }
 }
 </script>

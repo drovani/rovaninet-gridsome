@@ -1,14 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import VuexPersistance from "vuex-persist";
 
 Vue.use(Vuex);
 
-const convertMercTiersToCollection = function(obj, maxtiers) {
-  return Object.keys(obj).reduce(
+const convertMercTiersToCollection = (obj, maxtiers) =>
+  Object.keys(obj).reduce(
     (o, key) => ({ ...o, [key]: maxtiers - obj[key].tiers.length + 1 }),
     {}
   );
-};
 
 const ABILITY_MAX_TIER = 5;
 const ITEM_MAX_TIER = 4;
@@ -121,4 +121,12 @@ export default new Vuex.Store({
       );
     },
   },
+  plugins: [
+    new VuexPersistance({
+      key: "rovaninet",
+      storage: window.localStorage,
+      reducer: (state) => ({ collection: state.collection }),
+      filter: (mutation) => ["setMercenaries"].indexOf(mutation.type) === -1,
+    }).plugin,
+  ],
 });
