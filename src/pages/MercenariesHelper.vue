@@ -1,9 +1,31 @@
 <template>
     <Layout>
         <h1 class="text-4xl text-center mb-8">Hearthstones Mercenaries Helpers</h1>
+        <div
+            :class="{ hidden: !message }"
+            class="border border-green-800 rounded text-center bg-green-50 mb-8 p-4 relative text-green-900"
+            @click="message = null"
+        >
+            {{ message }}
+            <app-icon class="absolute right-1 top-1" :icon="['fas', 'times-circle']"></app-icon>
+        </div>
         <div class="container grid grid-flow-row lg:grid-flow-col lg:gap-3">
             <section class="whitespace-nowrap lg:row-span-2">
-                <h3 class="text-lg underline">Available Mercenaries</h3>
+                <header class="flex">
+                    <h3 class="text-lg underline flex-grow">Available Mercenaries</h3>
+                    <label class="ml-2 place-self-end block" for="importCollectionInput">
+                        <app-icon :icon="['fas', 'file-import']"></app-icon>
+                        <input
+                            class="hidden"
+                            type="file"
+                            @change="importCollection"
+                            id="importCollectionInput"
+                        />
+                    </label>
+                    <button @click.prevent="exportCollection" class="ml-2 place-self-end">
+                        <app-icon :icon="['fas', 'file-export']"></app-icon>
+                    </button>
+                </header>
                 <ul>
                     <li
                         v-for="(merc, name) in mercenaries"
@@ -69,7 +91,8 @@ import { mapState } from 'vuex';
 export default {
     data: () => ({
         highlightedMercName: null,
-        loadingCollection: false
+        loadingCollection: false,
+        message: ""
     }),
     components: {
         MercenaryCard,
@@ -99,6 +122,21 @@ export default {
                 collected: true
             });
         },
+        exportCollection() {
+            const data = JSON.stringify(this.$store.getters.collected);
+            const blob = new Blob([data], { type: 'text/plain' }),
+                event = document.createEvent('MouseEvents'),
+                a = document.createElement('a');
+            a.download = "collection.json";
+            a.href = window.URL.createObjectURL(blob);
+            a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
+            event.initEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            a.dispatchEvent(event);
+        },
+        importCollection(ev) {
+            this.$store.dispatch('importCollection', { file: ev.target.files[0] });
+            this.message = "Collection Imported";
+        },
         decrementAbilityActiveTier(mercenaryName, abilityName) {
             this.$store.commit('decrementAbility', { mercName: mercenaryName, abilityName: abilityName });
         },
@@ -116,10 +154,12 @@ export default {
         }
     },
     async mounted() {
-        this.loadingCollection = true;
-        this.$store.commit('setMercenaries', mercjson.mercenaries);
-        this.$store.commit('setCollection', colljson.mercenaries);
-        this.loadingCollection = false;
+        if (Object.keys(this.mercenaries).length === 0) {
+            this.$store.commit('setMercenaries', mercjson.mercenaries);
+        }
+        if (Object.keys(this.collection).length === 0) {
+            this.$store.commit('setCollection', colljson.mercenaries);
+        }
     }
 }
 </script>
