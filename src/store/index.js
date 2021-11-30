@@ -105,6 +105,20 @@ export default new Vuex.Store({
       }
     },
   },
-  actions: {},
-  getters: {},
+  actions: {
+    importCollection({ commit }, { file }) {
+      const reader = new FileReader();
+      reader.onload = (e) =>
+        commit("setCollection", JSON.parse(e.target.result));
+      reader.readAsText(file);
+    },
+  },
+  getters: {
+    collected(state) {
+      const asArray = Object.entries(state.collection);
+      return Object.fromEntries(
+        asArray.filter(([key, value]) => value.collected)
+      );
+    },
+  },
 });
