@@ -4,9 +4,9 @@
         <template v-if="showDetails">
             <div class="flex">
                 <div class="flex-grow">Unlock: {{ item.unlock }}</div>
-                <div @click="$emit('toggleItemEquipped')">
+                <button @click.prevent="$emit('toggleItemEquipped')">
                     <app-icon :icon="['fas', 'thumbtack']" :class="{ 'fa-rotate-90': isEquiped }"></app-icon>
-                </div>
+                </button>
             </div>
             <UpDownButtons
                 :showDecrement="tierIndex > 0"

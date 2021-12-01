@@ -4,6 +4,8 @@
             "role": "Protector",
             "rarity": "Legendary",
             "race": "Dragon",
+            "attack": 7,
+            "health": 76,
             "abilities": {
                 "Dragon Breath": {
                     "unlock": 1,
@@ -11,23 +13,23 @@
                     "tiers": [
                         {
                             "speed": 6,
-                            "description": "Deal 4 damage to an enemy, or restore 10 Health to a friendly character."
+                            "description": "Deal {4} damage to an enemy, or restore {10} Health to a friendly character."
                         },
                         {
                             "speed": 6,
-                            "description": "Deal 8 damage to an enemy, or restore 14 Health to a friendly character."
+                            "description": "Deal {8} damage to an enemy, or restore {14} Health to a friendly character."
                         },
                         {
                             "speed": 6,
-                            "description": "Deal 12 damage to an enemy, or restore 18 Health to a friendly character."
+                            "description": "Deal {12} damage to an enemy, or restore {18} Health to a friendly character."
                         },
                         {
                             "speed": 6,
-                            "description": "Deal 13 damage to an enemy, or restore 19 Health to a friendly character."
+                            "description": "Deal {13} damage to an enemy, or restore {19} Health to a friendly character."
                         },
                         {
                             "speed": 6,
-                            "description": "Deal 14 damage to an enemy, or restore 20 Health to a friendly character."
+                            "description": "Deal {14} damage to an enemy, or restore {20} Health to a friendly character."
                         }
                     ]
                 },
@@ -95,45 +97,87 @@
                 }
             },
             "equipment": {
+                "Alexstrasza's Brooch": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Dragon Breath",
+                    "tiers": [
+                        {
+                            "description": "Dragon Breath deals or restores 2 more.",
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": "Dragon Breath deals or restores 3 more.",
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": "Dragon Breath deals or restores 4 more.",
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": "Dragon Breath deals or restores 5 more.",
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
                 "Dragonflight Talisman": {
                     "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Dragonqueen's Gambit",
                     "tiers": [
                         {
                             "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
                         }
                     ]
                 },
-                "Alexstrasza's Brooch": {
-                    "unlock": "Task 2",
-                    "tiers": [
-                        {
-                            "description": "Dragon Breath deals or restores 2 more."
-                        },
-                        {
-                            "description": "Dragon Breath deals or restores 3 more."
-                        },
-                        {
-                            "description": "Dragon Breath deals or restores 4 more."
-                        },
-                        {
-                            "description": "Dragon Breath deals or restores 5 more."
-                        }
-                    ]
-                },
                 "Amulet of Swiftness": {
                     "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Dragonqueen's Gambit",
                     "tiers": [
                         {
-                            "description": "Dragonqueen's Gambit is (1) Speed faster"
+                            "description": "Dragonqueen's Gambit is (1) Speed faster",
+                            "modifier": {
+                                "speed": -1
+                            }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (2) Speed faster"
+                            "description": "Dragonqueen's Gambit is (2) Speed faster",
+                            "modifier": {
+                                "speed": -2
+                            }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (3) Speed faster"
+                            "description": "Dragonqueen's Gambit is (3) Speed faster",
+                            "modifier": {
+                                "speed": -3
+                            }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (4) Speed faster"
+                            "description": "Dragonqueen's Gambit is (4) Speed faster",
+                            "modifier": {
+                                "speed": -4
+                            }
                         }
                     ]
                 }

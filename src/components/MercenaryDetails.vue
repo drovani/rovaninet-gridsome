@@ -10,7 +10,7 @@
             <app-icon :icon="['fas', 'times-circle']"></app-icon>
         </button>
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
-            <div class="sm:row-span-6">
+            <div class="sm:row-span-6 text-xl">
                 <header class="text-center bg-gray-900 text-white rounded-md flex px-1">
                     <span v-if="activeMerc && activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
@@ -20,10 +20,37 @@
                         <app-icon :icon="['fas', 'times-circle']"></app-icon>
                     </button>
                 </header>
-                <div class="text-center">{{ mercenary.race }}</div>
-                <div>Total Cost to Max: {{ abilitiesMaxCost + equipmentMaxCost }}</div>
+                <div class="flex px-1 items-center">
+                    <div
+                        class="attack-value bg-center bg-contain w-12 h-12 text-center pt-3 font-semibold text-white bg-no-repeat"
+                    >{{ mercenaryAttack }}</div>
+                    <div class="flex-grow text-center">{{ mercenary.race }}</div>
+                    <div
+                        class="health-value bg-center bg-contain w-12 h-12 text-center pt-3 font-semibold text-white bg-no-repeat"
+                    >{{ mercenaryHealth }}</div>
+                </div>
+                <div class="text-center">
+                    {{ abilitiesMaxCost + equipmentMaxCost }}
+                    <img
+                        src="/images/mercs/mercenary-coin.png"
+                        class="h-6 inline"
+                    />
+                </div>
             </div>
-            <div class="sm:col-span-3 text-center mt-4">Abilities ({{ abilitiesMaxCost }})</div>
+            <div
+                class="sm:col-span-3 text-center mb-4 text-lg pt-1 pb-2 rounded"
+                :class="{
+                    'bg-red-50': mercenary.role === 'Protector',
+                    'bg-blue-50': mercenary.role === 'Caster',
+                    'bg-green-50': mercenary.role === 'Fighter'
+                }"
+            >
+                Abilities ({{ abilitiesMaxCost }}
+                <img
+                    src="/images/mercs/mercenary-coin.png"
+                    class="h-6 inline"
+                />)
+            </div>
             <AbilityCard
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
@@ -32,10 +59,24 @@
                 :activeTier="activeMerc && activeMerc.abilities[name]"
                 :costToMax="abilityCostToMax(name)"
                 :showDetails="true"
+                :itemEquippedTier="itemEquippedTierForAbility(name)"
                 @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
             />
-            <div class="sm:col-span-3 text-center mb-4">Equipment ({{ equipmentMaxCost }})</div>
+            <div
+                class="sm:col-span-3 text-center mb-4 text-lg pt-1 pb-2 rounded"
+                :class="{
+                    'bg-red-50': mercenary.role === 'Protector',
+                    'bg-blue-50': mercenary.role === 'Caster',
+                    'bg-green-50': mercenary.role === 'Fighter'
+                }"
+            >
+                Equipment ({{ equipmentMaxCost }}
+                <img
+                    src="/images/mercs/mercenary-coin.png"
+                    class="h-6 inline"
+                />)
+            </div>
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"
@@ -91,11 +132,26 @@ export default {
                 }
             }
         },
+        itemEquippedTierForAbility() {
+            return (abilityName) => {
+                if (this.activeMerc?.itemEquipped && this.mercenary.equipment[this.activeMerc.itemEquipped].affects === abilityName) {
+                    const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers;
+                    return tiers[this.activeMerc.equipment[this.activeMerc.itemEquipped] + tiers.length - 5]
+                }
+                return null;
+            }
+        },
         abilitiesMaxCost() {
             return Object.keys(this.mercenary.abilities).reduce((totalCost, abilityName) => totalCost + this.abilityCostToMax(abilityName), 0);
         },
         equipmentMaxCost() {
             return Object.keys(this.mercenary.equipment).reduce((totalCost, itemName) => totalCost + this.itemCostToMax(itemName), 0);
+        },
+        mercenaryAttack() {
+            return this.mercenary.attack + (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 ? 1 : 0)
+        },
+        mercenaryHealth() {
+            return this.mercenary.health + (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 ? 5 : 0)
         }
     },
     components: {

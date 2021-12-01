@@ -167,10 +167,28 @@ export default {
 .protector {
     @apply border-red-400;
 }
+.protector .attack-value {
+    background-image: url("/images/mercs/protector-attack.png");
+}
+.protector .health-value {
+    background-image: url("/images/mercs/protector-health.png");
+}
 .fighter {
     @apply border-green-400;
 }
+.fighter .attack-value {
+    background-image: url("/images/mercs/fighter-attack.png");
+}
+.fighter .health-value {
+    background-image: url("/images/mercs/fighter-health.png");
+}
 .caster {
     @apply border-blue-400;
+}
+.caster .attack-value {
+    background-image: url("/images/mercs/caster-attack.png");
+}
+.caster .health-value {
+    background-image: url("/images/mercs/caster-health.png");
 }
 </style>
