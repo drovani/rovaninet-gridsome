@@ -123,7 +123,7 @@ export default new Vuex.Store({
   },
   plugins: [
     new VuexPersistance({
-      key: "rovaninet",
+      key: "hsmercs",
       storage: window.localStorage,
       reducer: (state) => ({ collection: state.collection }),
       filter: (mutation) => ["setMercenaries"].indexOf(mutation.type) === -1,

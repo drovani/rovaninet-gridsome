@@ -1,5 +1,12 @@
 <template>
-    <div class="ability bg-gray-100 rounded-md p-1 text-sm" :class="spellSchoolLower">
+    <div
+        class="bg-gray-100 rounded-md p-1 text-sm"
+        :class="{
+            'bg-yellow-100': ability.spell_school === 'Holy',
+            'bg-red-100': ability.spell_school === 'Fire',
+            'bg-green-100': ability.spell_school === 'Nature'
+        }"
+    >
         <div class="h-10 text-center">{{ abilityName }} {{ activeTier }}</div>
         <template v-if="showDetails">
             <UpDownButtons
@@ -10,17 +17,16 @@
             >
                 <div v-if="costToMax > 0">{{ costToMax }}</div>
             </UpDownButtons>
-            <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
+            <div class="h-10 sm:h-32">{{ description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
-            <div>{{ activeTierInfo.speed }}</div>
-            <div>{{ activeTierInfo.cooldown }}</div>
+            <div>{{ speed }}</div>
+            <div>{{ cooldown }}</div>
             <div class="text-center lg:col-span-2">{{ ability.spell_school }}</div>
         </div>
     </div>
 </template>
 <script>
-import slug from 'slug';
 import UpDownButtons from '~/components/UpDownButtons.vue';
 
 export default {
@@ -41,6 +47,9 @@ export default {
         costToMax: {
             type: Number,
             required: true
+        },
+        itemEquippedTier: {
+            type: Object
         }
     },
     emits: {
@@ -62,11 +71,29 @@ export default {
         }
     },
     computed: {
-        spellSchoolLower() {
-            return this.ability.spell_school?.toLowerCase();
+        description() {
+            if (this.itemEquippedTier?.modifier?.description) {
+                let desc = this.activeTierInfo.description;
+                const regex = new RegExp(/\{(\d+)\}/, 'g');
+                const matches = [...desc.matchAll(regex)];
+                for (let i = 0; i < matches.length; i++) {
+                    desc = desc.replace(matches[i][0], this.itemEquippedTier.modifier.description[i] + Number(matches[i][1]));
+                }
+                return desc;
+            }
+            return this.activeTierInfo.description.replaceAll('{', '').replaceAll('}', '');
         },
-        imagePath() {
-            return `/images/mercs/${slug(this.ability.name)}.png`;
+        speed() {
+            if (this.itemEquippedTier?.modifier?.speed) {
+                return this.activeTierInfo.speed + this.itemEquippedTier.modifier.speed;
+            }
+            return this.activeTierInfo.speed;
+        },
+        cooldown() {
+            if (this.itemEquippedTier?.modifier?.cooldown) {
+                return this.activeTierInfo.cooldown + this.itemEquippedTier.modifier.cooldown;
+            }
+            return this.activeTierInfo.cooldown;
         },
         tierIndex() {
             return Math.min((this.activeTier ?? 1) - 1, this.ability.tiers.length - 1);
@@ -78,11 +105,3 @@ export default {
     components: { UpDownButtons }
 }
 </script>
-<style>
-div.ability.holy {
-    @apply bg-yellow-100;
-}
-div.ability.fire {
-    @apply bg-red-100;
-}
-</style>
