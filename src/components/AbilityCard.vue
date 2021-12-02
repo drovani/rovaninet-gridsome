@@ -98,7 +98,6 @@ export default {
                 };
                 desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
             }
-            console.debug(this.itemEquippedTier?.modifier?.description);
             if (this.itemEquippedTier?.modifier?.description instanceof Object) {
                 if (this.itemEquippedTier.modifier.description.type === "append") {
                     desc = `${desc} ${this.itemEquippedTier.modifier.description.text}`;
