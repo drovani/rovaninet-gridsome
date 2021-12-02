@@ -149,7 +149,7 @@ export default {
         itemEquippedTierForAbility() {
             return (abilityName) => {
                 if (this.activeMerc?.itemEquipped && this.mercenary.equipment[this.activeMerc.itemEquipped].affects === abilityName) {
-                    const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [];
+                    const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [this.mercenary.equipment[this.activeMerc.itemEquipped]];
                     return tiers[this.activeMerc.equipment[this.activeMerc.itemEquipped] + tiers.length - 5]
                 }
                 return null;

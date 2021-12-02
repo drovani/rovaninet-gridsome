@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-gray-100 rounded-md p-1 text-sm"
+        class="bg-gray-50 rounded-md p-1 text-sm"
         :class="{
             'bg-yellow-100': ability.spell_school === 'Holy',
             'bg-red-100': ability.spell_school === 'Fire',
@@ -23,9 +23,19 @@
             <div class="h-10 sm:h-32">{{ description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
-            <div>{{ speed }}</div>
-            <div>{{ cooldown }}</div>
-            <div class="text-center lg:col-span-2">{{ ability.spell_school }}</div>
+            <div>
+                {{ speed }}
+                <img src="/images/mercs/speed.png" alt="Speed" class="h-4 w-4 inline" />
+            </div>
+            <div :class="{ invisible: cooldown === 0 }">
+                {{ cooldown }}
+                <img
+                    src="/images/mercs/cooldown.png"
+                    alt="Cooldown"
+                    class="h-4 w-4 inline"
+                />
+            </div>
+            <div class="text-center lg:col-span-2 rounded">{{ ability.spell_school }}</div>
         </div>
     </div>
 </template>
@@ -82,11 +92,17 @@ export default {
                         return 0;
                     } else if (this.itemEquippedTier.modifier.description instanceof Array) {
                         return this.itemEquippedTier.modifier.description[i];
-                    } else {
+                    } else if (this.itemEquippedTier.modifier.description instanceof Number) {
                         return this.itemEquippedTier.modifier.description;
                     }
                 };
                 desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
+            }
+            console.debug(this.itemEquippedTier?.modifier?.description);
+            if (this.itemEquippedTier?.modifier?.description instanceof Object) {
+                if (this.itemEquippedTier.modifier.description.type === "append") {
+                    desc = `${desc} ${this.itemEquippedTier.modifier.description.text}`;
+                }
             }
             return desc;
         },

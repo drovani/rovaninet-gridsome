@@ -95,11 +95,17 @@
                 }
             },
             "equipment": {
-              "Dragonflight Talisman": {
+                "Dragonflight Talisman": {
                     "unlock": "Task 7",
                     "position": "middle",
                     "affects": "Dragonqueen's Gambit",
-                    "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
+                    "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt.",
+                    "modifier": {
+                        "description": {
+                            "type": "append",
+                            "text": "Restore that much Health to this Merc."
+                        }
+                    }
                 },
                 "Alexstrasza's Brooch": {
                     "unlock": "Task 2",
