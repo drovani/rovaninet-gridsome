@@ -8,25 +8,23 @@
             <AbilityCard
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
-                :abilityName="name"
                 :ability="ability"
                 :activeTier="collected && collected.abilities[name]"
                 :costToMax="0"
                 @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
-            />
+            >{{ name }}</AbilityCard>
         </div>
         <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"
-                :itemName="name"
                 :item="item"
                 :activeTier="collected && collected.equipment[name]"
                 :costToMax="0"
                 @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
-            />
+            >{{ name }}</ItemCard>
         </div>
     </section>
 </template>

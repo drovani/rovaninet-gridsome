@@ -1,6 +1,9 @@
 <template>
     <div class="item">
-        <div class="h-12 text-center">{{ itemName }} {{ activeTier || 5 - item.tiers.length }}</div>
+        <div class="h-12 text-center">
+            <slot />
+            {{ displayTier }}
+        </div>
         <template v-if="showDetails">
             <div class="flex">
                 <div class="flex-grow">Unlock: {{ item.unlock }}</div>
@@ -10,13 +13,13 @@
             </div>
             <UpDownButtons
                 :showDecrement="tierIndex > 0"
-                :showIncrement="tierIndex < item.tiers.length - 1"
+                :showIncrement="item.tiers !== undefined && tierIndex < item.tiers.length - 1"
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
             >
                 <div v-if="costToMax > 0">{{ costToMax }}</div>
             </UpDownButtons>
-            <div class="h-10 sm:h-32">{{ activeTierInfo.description }}</div>
+            <div class="h-10 sm:h-32">{{ description }}</div>
         </template>
     </div>
 </template>
@@ -25,10 +28,6 @@ import UpDownButtons from '~/components/UpDownButtons.vue';
 
 export default {
     props: {
-        itemName: {
-            type: String,
-            required: true
-        },
         item: Object,
         activeTier: {
             type: Number
@@ -48,11 +47,31 @@ export default {
     },
     computed: {
         tierIndex: function () {
-            return Math.min((this.activeTier ?? 1) - 1, this.item.tiers.length - 1);
+            if (this.item.tiers instanceof Array) {
+                return Math.min((this.activeTier ?? 1) - 1, this.item.tiers.length - 1);
+            } else return null;
         },
-        activeTierInfo: function () {
-            return this.item.tiers[this.tierIndex || 0]
+        activeTierInfo() {
+            return this.item.tiers[this.activeTier - 1];
         },
+        description() {
+            if (this.item.tiers instanceof Array) {
+                let desc = this.item.description;
+                const regex = new RegExp(/\{(\d+)\}/, 'g');
+                const matches = [...this.item.description.matchAll(regex)];
+                for (let i = 0; i < matches.length; i++) {
+                    const baseValue = Number(matches[i][1]);
+                    const tierValue = Number(this.activeTierInfo.description instanceof Array ? this.activeTierInfo.description[i] : this.activeTierInfo.description);
+                    desc = desc.replace(matches[i][0], baseValue + tierValue);
+                }
+                return desc;
+            } else {
+                return this.item.description;
+            }
+        },
+        displayTier() {
+            return this.activeTier || 5 - (this.item.tiers?.length ?? 1);
+        }
     },
     components: {
         UpDownButtons
