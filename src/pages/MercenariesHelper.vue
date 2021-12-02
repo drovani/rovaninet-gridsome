@@ -31,7 +31,7 @@
                         v-for="(merc, name) in mercenaries"
                         :key="name"
                         :mercName="name"
-                        @click="highlightMerc(name)"
+                        @click="activateMerc(name)"
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
                     >
@@ -54,7 +54,7 @@
                     :mercName="highlightedMercName"
                     :mercenary="highlightedMerc"
                     :activeMerc="collection[highlightedMercName]"
-                    @closeMercDetails="highlightMerc(null)"
+                    @closeMercDetails="activateMerc(null)"
                     @decrementAbilityActiveTier="decrementAbilityActiveTier"
                     @incrementAbilityActiveTier="incrementAbilityActiveTier"
                     @decrementItemActiveTier="decrementItemActiveTier"
@@ -113,7 +113,8 @@ export default {
         })
     },
     methods: {
-        highlightMerc(mercName) {
+        activateMerc(mercName) {
+            this.$store.commit('activateMerc', { name: mercName });
             this.highlightedMercName = mercName;
         },
         addToCollection(mercName) {

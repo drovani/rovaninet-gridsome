@@ -26,29 +26,34 @@ export default new Vuex.Store({
     setMercenaries(state, loadedMercenaries) {
       state.mercenaries = loadedMercenaries;
     },
-    addToCollection(state, merc) {
-      if (state.collection[merc.name]) {
-        if (merc.collected !== undefined) {
-          state.collection[merc.name].collected = merc.collected;
+    activateMerc(state, { name }) {
+      if (!state.collection[name]) {
+        state.commit("addToCollection", { name });
+      }
+    },
+    addToCollection(state, { name, collected }) {
+      if (state.collection[name]) {
+        if (collected !== undefined) {
+          state.collection[name].collected = collected;
         }
       } else {
         const newmerc = {
-          collected: merc.collected || false,
+          collected: collected || false,
           level: 1,
           tasksCompleted: 0,
           itemEquipped: "",
           abilities: convertMercTiersToCollection(
-            state.mercenaries[merc.name].abilities,
+            state.mercenaries[name].abilities,
             5
           ),
           equipment: convertMercTiersToCollection(
-            state.mercenaries[merc.name].equipment,
+            state.mercenaries[name].equipment,
             4
           ),
         };
         state.collection = {
           ...state.collection,
-          [merc.name]: newmerc,
+          [name]: newmerc,
         };
       }
     },
