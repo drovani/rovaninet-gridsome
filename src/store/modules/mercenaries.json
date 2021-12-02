@@ -10,100 +10,105 @@
                 "Dragon Breath": {
                     "unlock": 1,
                     "spell_school": "Fire",
+                    "description": "Deal {0} damage to an enemy, or restore {0} Health to a friendly character.",
+                    "speed": 6,
                     "tiers": [
                         {
-                            "speed": 6,
-                            "description": "Deal {4} damage to an enemy, or restore {10} Health to a friendly character."
+                            "description": [
+                                4,
+                                10
+                            ]
                         },
                         {
-                            "speed": 6,
-                            "description": "Deal {8} damage to an enemy, or restore {14} Health to a friendly character."
+                            "description": [
+                                8,
+                                14
+                            ]
                         },
                         {
-                            "speed": 6,
-                            "description": "Deal {12} damage to an enemy, or restore {18} Health to a friendly character."
+                            "description": [
+                                12,
+                                18
+                            ]
                         },
                         {
-                            "speed": 6,
-                            "description": "Deal {13} damage to an enemy, or restore {19} Health to a friendly character."
+                            "description": [
+                                13,
+                                19
+                            ]
                         },
                         {
-                            "speed": 6,
-                            "description": "Deal {14} damage to an enemy, or restore {20} Health to a friendly character."
+                            "description": [
+                                14,
+                                20
+                            ]
                         }
                     ]
                 },
                 "Flame Buffet": {
                     "unlock": 5,
                     "spell_school": "Fire",
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy. If you control another Dragon, also damage its neighbors.",
                     "tiers": [
                         {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 5 damage to an enemy. If you control another Dragon, also damage its neighbors."
+                            "description": 5
                         },
                         {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 10 damage to an enemy. If you control another Dragon, also damage its neighbors."
+                            "description": 10
                         },
                         {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 14 damage to an enemy. If you control another Dragon, also damage its neighbors."
+                            "description": 14
                         },
                         {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 15 damage to an enemy. If you control another Dragon, also damage its neighbors."
+                            "description": 15
                         },
                         {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 16 damage to an enemy. If you control another Dragon, also damage its neighbors."
+                            "description": 16
                         }
                     ]
                 },
                 "Dragonqueen's Gambit": {
                     "unlock": 15,
                     "spell_school": "Fire",
+                    "description": "Deal damage to an enemy equal to their Attack.",
+                    "cooldown": 2,
+                    "speed": 9,
                     "tiers": [
                         {
-                            "speed": 9,
-                            "cooldown": 2,
-                            "description": "Deal damage to an enemy equal to their Attack."
+                            "speed": 0
                         },
                         {
-                            "speed": 8,
-                            "cooldown": 2,
-                            "description": "Deal damage to an enemy equal to their Attack."
+                            "speed": -1
                         },
                         {
-                            "speed": 7,
-                            "cooldown": 2,
-                            "description": "Deal damage to an enemy equal to their Attack."
+                            "speed": -2
                         },
                         {
-                            "speed": 6,
-                            "cooldown": 2,
-                            "description": "Deal damage to an enemy equal to their Attack."
+                            "speed": -3
                         },
                         {
-                            "speed": 5,
-                            "cooldown": 2,
-                            "description": "Deal damage to an enemy equal to their Attack."
+                            "speed": -4
                         }
                     ]
                 }
             },
             "equipment": {
+                "Dragonflight Talisman": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Dragonqueen's Gambit",
+                    "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
+                },
                 "Alexstrasza's Brooch": {
                     "unlock": "Task 2",
                     "position": "left",
                     "affects": "Dragon Breath",
+                    "description": "Dragon Breath deals or restores {0} more.",
                     "tiers": [
                         {
-                            "description": "Dragon Breath deals or restores 2 more.",
+                            "description": 2,
                             "modifier": {
                                 "description": [
                                     2,
@@ -112,7 +117,7 @@
                             }
                         },
                         {
-                            "description": "Dragon Breath deals or restores 3 more.",
+                            "description": 3,
                             "modifier": {
                                 "description": [
                                     3,
@@ -121,7 +126,7 @@
                             }
                         },
                         {
-                            "description": "Dragon Breath deals or restores 4 more.",
+                            "description": 4,
                             "modifier": {
                                 "description": [
                                     4,
@@ -130,7 +135,7 @@
                             }
                         },
                         {
-                            "description": "Dragon Breath deals or restores 5 more.",
+                            "description": 5,
                             "modifier": {
                                 "description": [
                                     5,
@@ -140,41 +145,32 @@
                         }
                     ]
                 },
-                "Dragonflight Talisman": {
-                    "unlock": "Task 7",
-                    "position": "middle",
-                    "affects": "Dragonqueen's Gambit",
-                    "tiers": [
-                        {
-                            "description": "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."
-                        }
-                    ]
-                },
                 "Amulet of Swiftness": {
                     "unlock": "Level 30",
                     "position": "right",
                     "affects": "Dragonqueen's Gambit",
+                    "description": "Dragonqueen's Gambit is ({0}) Speed faster.",
                     "tiers": [
                         {
-                            "description": "Dragonqueen's Gambit is (1) Speed faster",
+                            "description": 1,
                             "modifier": {
                                 "speed": -1
                             }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (2) Speed faster",
+                            "description": 2,
                             "modifier": {
                                 "speed": -2
                             }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (3) Speed faster",
+                            "description": 3,
                             "modifier": {
                                 "speed": -3
                             }
                         },
                         {
-                            "description": "Dragonqueen's Gambit is (4) Speed faster",
+                            "description": 4,
                             "modifier": {
                                 "speed": -4
                             }
@@ -350,402 +346,6 @@
                     "quote": "How much can I do in service"
                 }
             ]
-        },
-        "Anduin Wrynn": {
-            "role": "Caster",
-            "race": "Human",
-            "abilities": {
-                "Penance": {
-                    "spell_school": "Holy",
-                    "tiers": [
-                        {
-                            "speed": 4,
-                            "description": "Deal 4 damage to an enemy. Restore 4 health to a random friendly Human."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 7 damage to an enemy. Restore 8 health to a random friendly Human."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 10 damage to an enemy. Restore 12 health to a random friendly Human."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 11 damage to an enemy. Restore 13 health to a random friendly Human."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 12 damage to an enemy. Restore 14 health to a random friendly Human."
-                        }
-                    ]
-                },
-                "Holy Nova": {
-                    "spell_school": "Holy",
-                    "tiers": [
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 2 damage to all enemies. Restore 4 Health to your characters."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 5 damage to all enemies. Restore 8 Health to your characters."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 8 damage to all enemies. Restore 12 Health to your characters."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 9 damage to all enemies. Restore 13 Health to your characters."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal 10 damage to all enemies. Restore 14 Health to your characters."
-                        }
-                    ]
-                },
-                "Holy Word: Salvation": {
-                    "spell_school": "Holy",
-                    "tiers": [
-                        {
-                            "speed": 3,
-                            "cooldown": 2,
-                            "description": "Your Humans take 2 less damage this turn."
-                        },
-                        {
-                            "speed": 3,
-                            "cooldown": 2,
-                            "description": "Your Humans take 5 less damage this turn."
-                        },
-                        {
-                            "speed": 3,
-                            "cooldown": 2,
-                            "description": "Your Humans take 8 less damage this turn."
-                        },
-                        {
-                            "speed": 3,
-                            "cooldown": 2,
-                            "description": "Your Humans take 9 less damage this turn."
-                        },
-                        {
-                            "speed": 3,
-                            "cooldown": 2,
-                            "description": "Your Humans take 10 less damage this turn."
-                        }
-                    ]
-                }
-            },
-            "equipment": {
-                "Harmonic Mallet": {
-                    "tiers": [
-                        {
-                            "description": "Holy Nova deals 2 more damage."
-                        },
-                        {
-                            "description": "Holy Nova deals 3 more damage."
-                        },
-                        {
-                            "description": "Holy Nova deals 4 more damage."
-                        },
-                        {
-                            "description": "Holy Nova deals 5 more damage."
-                        }
-                    ]
-                },
-                "Robes of Rejuvenation": {
-                    "tiers": [
-                        {
-                            "description": "Passive: After a friendly Human dies, Refresh Holy Word: Salvation."
-                        }
-                    ]
-                },
-                "Ring of Purity": {
-                    "tiers": [
-                        {
-                            "description": "Passive: Whenever a friendly character is healed, gain +2 Health."
-                        },
-                        {
-                            "description": "Passive: Whenever a friendly character is healed, gain +3 Health."
-                        },
-                        {
-                            "description": "Passive: Whenever a friendly character is healed, gain +4 Health."
-                        },
-                        {
-                            "description": "Passive: Whenever a friendly character is healed, gain +5 Health."
-                        }
-                    ]
-                }
-            }
-        },
-        "Antonidas": {
-            "role": "Caster",
-            "race": "Human",
-            "abilities": {
-                "Fireball": {
-                    "spell_school": "Fire",
-                    "tiers": [
-                        {
-                            "speed": 4,
-                            "description": "Deal 4 damage."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 7 damage."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 10 damage."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 11 damage."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Deal 12 damage."
-                        }
-                    ]
-                },
-                "Flamestrike": {
-                    "spell_school": "Fire",
-                    "tiers": [
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Deal 4 damage to all enemies."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Deal 4 damage to all enemies."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Deal 4 damage to all enemies."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Deal 4 damage to all enemies."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Deal 4 damage to all enemies."
-                        }
-                    ]
-                },
-                "Fireball Storm": {
-                    "spell_school": "Fire",
-                    "tiers": [
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Cast Fireball 1 at 1 random enemy. Repeat for each Fire ability you've cast this turn."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Cast Fireball 2 at 1 random enemy. Repeat for each Fire ability you've cast this turn."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Cast Fireball 3 at 1 random enemy. Repeat for each Fire ability you've cast this turn."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Cast Fireball 4 at 1 random enemy. Repeat for each Fire ability you've cast this turn."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Cast Fireball 5 at 1 random enemy. Repeat for each Fire ability you've cast this turn."
-                        }
-                    ]
-                }
-            },
-            "equipment": {
-                "Cindercore Staff": {
-                    "tiers": [
-                        {
-                            "description": "Fireball deals 1 more damage"
-                        },
-                        {
-                            "description": "Fireball deals 2 more damage"
-                        },
-                        {
-                            "description": "Fireball deals 3 more damage"
-                        },
-                        {
-                            "description": "Fireball deals 4 more damage"
-                        }
-                    ]
-                },
-                "Searing Pendant": {
-                    "tiers": [
-                        {
-                            "description": "Fireball Storm casts Fireball at 2 random enemies, but has +1 Cooldown."
-                        }
-                    ]
-                },
-                "Circlet of Flame": {
-                    "tiers": [
-                        {
-                            "description": "Flamestrike deals 2 more damage."
-                        },
-                        {
-                            "description": "Flamestrike deals 3 more damage."
-                        },
-                        {
-                            "description": "Flamestrike deals 4 more damage."
-                        },
-                        {
-                            "description": "Flamestrike deals 5 more damage."
-                        }
-                    ]
-                }
-            }
-        },
-        "Blademaster Samuro": {
-            "role": "Fighter",
-            "race": "Orc",
-            "abilities": {
-                "Double Strike": {
-                    "tiers": [
-                        {
-                            "speed": 4,
-                            "description": "Attack an enemy. If it was damaged this turn, gain +1 Attack and Attack it again."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Attack an enemy. If it was damaged this turn, gain +2 Attack and Attack it again."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Attack an enemy. If it was damaged this turn, gain +3 Attack and Attack it again."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Attack an enemy. If it was damaged this turn, gain +4 Attack and Attack it again."
-                        },
-                        {
-                            "speed": 4,
-                            "description": "Attack an enemy. If it was damaged this turn, gain +5 Attack and Attack it again."
-                        }
-                    ]
-                },
-                "Mirror Image": {
-                    "tiers": [
-                        {
-                            "speed": 9,
-                            "cooldown": 1,
-                            "description": "Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn."
-                        },
-                        {
-                            "speed": 7,
-                            "cooldown": 1,
-                            "description": "Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn."
-                        },
-                        {
-                            "speed": 4,
-                            "cooldown": 1,
-                            "description": "Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn."
-                        },
-                        {
-                            "speed": 3,
-                            "cooldown": 1,
-                            "description": "Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn."
-                        }
-                    ]
-                },
-                "Whirling Blade": {
-                    "tiers": [
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal damage 2 to all enemies. Gain Immune this turn."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal damage 5 to all enemies. Gain Immune this turn."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal damage 8 to all enemies. Gain Immune this turn."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal damage 9 to all enemies. Gain Immune this turn."
-                        },
-                        {
-                            "speed": 5,
-                            "cooldown": 1,
-                            "description": "Deal damage 10 to all enemies. Gain Immune this turn."
-                        }
-                    ]
-                }
-            },
-            "equipment": {
-                "Honed Blade": {
-                    "unlock": "Level 30",
-                    "tiers": [
-                        {
-                            "description": "Whirling Blade deals 1 more damage."
-                        },
-                        {
-                            "description": "Whirling Blade deals 2 more damage."
-                        },
-                        {
-                            "description": "Whirling Blade deals 3 more damage."
-                        },
-                        {
-                            "description": "Whirling Blade deals 4 more damage."
-                        }
-                    ]
-                },
-                "Sash of Illusion": {
-                    "unlock": "Task 7",
-                    "tiers": [
-                        {
-                            "description": "Mirror Image summons an extra copy of this Merc."
-                        }
-                    ]
-                },
-                "Burning Blade": {
-                    "unlock": "Task 2",
-                    "tiers": [
-                        {
-                            "description": "Passive: Whenever this Merc Attacks, gain +1 Attack."
-                        },
-                        {
-                            "description": "Passive: Whenever this Merc Attacks, gain +2 Attack."
-                        },
-                        {
-                            "description": "Passive: Whenever this Merc Attacks, gain +2/+1."
-                        },
-                        {
-                            "description": "Passive: Whenever this Merc Attacks, gain +2/+2."
-                        }
-                    ]
-                }
-            }
         }
     }
 }

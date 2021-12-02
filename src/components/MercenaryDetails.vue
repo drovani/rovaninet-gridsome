@@ -12,7 +12,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
             <div class="sm:row-span-6 text-xl">
                 <header class="text-center bg-gray-900 text-white rounded-md flex px-1">
-                    <span v-if="activeMerc && activeMerc.collected">
+                    <span v-if="activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
                     </span>
                     <h2 class="flex-grow">{{ mercName }}</h2>
@@ -52,17 +52,16 @@
                 />)
             </div>
             <AbilityCard
-                v-for="(ability, name) in mercenary.abilities"
+                v-for="(ability, name) in abilities"
                 :key="name"
-                :abilityName="name"
                 :ability="ability"
-                :activeTier="activeMerc && activeMerc.abilities[name]"
+                :activeTier="activeMerc.abilities[name]"
                 :costToMax="abilityCostToMax(name)"
                 :showDetails="true"
                 :itemEquippedTier="itemEquippedTierForAbility(name)"
                 @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
-            />
+            >{{ name }}</AbilityCard>
             <div
                 class="sm:col-span-3 text-center mb-4 text-lg pt-1 pb-2 rounded"
                 :class="{
@@ -78,18 +77,17 @@
                 />)
             </div>
             <ItemCard
-                v-for="(item, name) in mercenary.equipment"
+                v-for="(item, name) in equipment"
                 :key="name"
-                :itemName="name"
                 :item="item"
-                :activeTier="activeMerc && activeMerc.equipment[name]"
+                :activeTier="activeMerc.equipment[name]"
                 :costToMax="itemCostToMax(name)"
                 :showDetails="true"
-                :isEquiped="activeMerc && activeMerc.itemEquipped === name"
+                :isEquiped="activeMerc.itemEquipped === name"
                 @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
                 @toggleItemEquipped="$emit('toggleItemEquipped', mercName, name)"
-            />
+            >{{ name }}</ItemCard>
         </div>
     </section>
 </template>
@@ -104,12 +102,28 @@ const itemUpgradeCosts = [100, 150, 175];
 export default {
     name: "MercenaryDetails",
     props: {
-        mercenary: Object,
-        activeMerc: Object,
-        mercName: String
+        mercenary: {
+            type: Object,
+            required: true
+        },
+        activeMerc: {
+            type: Object,
+            required: true
+        },
+        mercName: {
+            type: String,
+            required: true
+        }
     },
     emits: ['closeMercDetails', 'decrementAbilityActiveTier', 'incrementAbilityActiveTier', 'decrementItemActiveTier', 'incrementItemActiveTier'],
     computed: {
+        abilities() {
+            return Object.fromEntries(Object.entries(this.mercenary.abilities).sort((l, r) => l[1].unlock - r[1].unlock));
+        },
+        equipment() {
+            return Object.fromEntries(Object.entries(this.mercenary.equipment).sort((l, r) => l[1].position - r[1].position));
+
+        },
         abilityCostToMax() {
             return (abilityName) => {
                 const numTiers = this.mercenary.abilities[abilityName].tiers.length;
@@ -123,7 +137,7 @@ export default {
         },
         itemCostToMax() {
             return (itemName) => {
-                const numTiers = this.mercenary.equipment[itemName].tiers.length;
+                const numTiers = this.mercenary.equipment[itemName].tiers?.length ?? 0;
                 const currentTier = this.activeMerc?.equipment[itemName] || (4 - numTiers + 1);
                 if (currentTier >= numTiers) {
                     return 0;
@@ -135,7 +149,7 @@ export default {
         itemEquippedTierForAbility() {
             return (abilityName) => {
                 if (this.activeMerc?.itemEquipped && this.mercenary.equipment[this.activeMerc.itemEquipped].affects === abilityName) {
-                    const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers;
+                    const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [];
                     return tiers[this.activeMerc.equipment[this.activeMerc.itemEquipped] + tiers.length - 5]
                 }
                 return null;
