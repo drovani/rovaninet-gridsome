@@ -95,7 +95,7 @@
                 }
             },
             "equipment": {
-                "Dragonflight Talisman": {
+              "Dragonflight Talisman": {
                     "unlock": "Task 7",
                     "position": "middle",
                     "affects": "Dragonqueen's Gambit",
