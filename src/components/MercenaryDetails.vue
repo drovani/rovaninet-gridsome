@@ -121,7 +121,7 @@ export default {
             return Object.fromEntries(Object.entries(this.mercenary.abilities).sort((l, r) => l[1].unlock - r[1].unlock));
         },
         equipment() {
-            return Object.fromEntries(Object.entries(this.mercenary.equipment).sort((l, r) => l[1].position - r[1].position));
+            return Object.fromEntries(Object.entries(this.mercenary.equipment).sort((l, r) => (l[1].position < r[1].position ? -1 : l[1].position > r[1].position ? 1 : 0)));
 
         },
         abilityCostToMax() {
