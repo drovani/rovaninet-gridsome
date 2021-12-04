@@ -18,9 +18,9 @@
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
             >
-                <div v-if="costToMax > 0">{{ costToMax }}</div>
+                <div :class="{ invisible: costToMax <= 0 }">{{ costToMax }}</div>
             </UpDownButtons>
-            <div class="h-10 sm:h-32">{{ description }}</div>
+            <div class="h-16 sm:h-32">{{ description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
             <div>
