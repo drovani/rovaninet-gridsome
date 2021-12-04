@@ -12,6 +12,7 @@ const convertMercTiersToCollection = (obj, maxtiers) =>
 
 const ABILITY_MAX_TIER = 5;
 const ITEM_MAX_TIER = 4;
+const MAX_TASKS = 18;
 
 export default new Vuex.Store({
   strict: true,
@@ -107,6 +108,22 @@ export default new Vuex.Store({
         state.collection[mercName].itemEquipped = null;
       } else {
         state.collection[mercName].itemEquipped = itemName;
+      }
+    },
+    decrementTasksCompleted(state, { mercName }) {
+      this.commit("addToCollection", { name: mercName });
+      if (state.collection[mercName].tasksCompleted > 0) {
+        state.collection[mercName].tasksCompleted--;
+      } else {
+        state.collection[mercName].tasksCompleted = 0;
+      }
+    },
+    incrementTasksCompleted(state, { mercName }) {
+      this.commit("addToCollection", { name: mercName });
+      if (state.collection[mercName].tasksCompleted < MAX_TASKS) {
+        state.collection[mercName].tasksCompleted++;
+      } else {
+        state.collection[mercName].tasksCompleted = MAX_TASKS;
       }
     },
   },

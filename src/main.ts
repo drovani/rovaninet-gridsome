@@ -19,7 +19,9 @@ import {
   faPlus,
   faThumbtack,
   faFileExport,
-  faFileImport
+  faFileImport,
+  faCheckCircle,
+  faUndo
 } from '@fortawesome/free-solid-svg-icons';
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -45,7 +47,9 @@ const client: ClientApiConstructor = (Vue, { appOptions, head }) => {
     faPlus,
     faThumbtack,
     faFileExport,
-    faFileImport
+    faFileImport,
+    faCheckCircle,
+    faUndo
   );
 
   (appOptions as any).store = store;

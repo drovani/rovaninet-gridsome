@@ -3,7 +3,16 @@
         <h1 class="text-4xl text-center mb-8">Hearthstones Mercenaries Helpers</h1>
         <div
             :class="{ hidden: !message }"
-            class="border border-green-800 rounded text-center bg-green-50 mb-8 p-4 relative text-green-900"
+            class="
+                border border-green-800
+                rounded
+                text-center
+                bg-green-50
+                mb-8
+                p-4
+                relative
+                text-green-900
+            "
             @click="message = null"
         >
             {{ message }}
@@ -43,7 +52,11 @@
                                 v-if="collection[name] ? collection[name].collected : false"
                                 :icon="['fas', 'check']"
                             ></app-icon>
-                            <app-icon v-else :icon="['fas', 'plus']" @click="addToCollection(name)"></app-icon>
+                            <app-icon
+                                v-else
+                                :icon="['fas', 'plus']"
+                                @click="addToCollection(name)"
+                            ></app-icon>
                         </span>
                         {{ name }}
                     </li>
@@ -54,6 +67,8 @@
                     :mercName="highlightedMercName"
                     :mercenary="highlightedMerc"
                     :activeMerc="collection[highlightedMercName]"
+                    @decrementTasksCompleted="decrementTasksCompleted"
+                    @incrementTasksCompleted="incrementTasksCompleted"
                     @closeMercDetails="activateMerc(null)"
                     @decrementAbilityActiveTier="decrementAbilityActiveTier"
                     @incrementAbilityActiveTier="incrementAbilityActiveTier"
@@ -84,85 +99,116 @@
 <script>
 import mercjson from "~/store/modules/mercenaries.json";
 import colljson from "~/store/modules/collection.json";
-import MercenaryCard from '~/components/MercenaryCard.vue';
-import MercenaryDetails from '~/components/MercenaryDetails.vue';
-import { mapState } from 'vuex';
+import MercenaryCard from "~/components/MercenaryCard.vue";
+import MercenaryDetails from "~/components/MercenaryDetails.vue";
+import { mapState } from "vuex";
 
 export default {
     data: () => ({
         highlightedMercName: null,
         loadingCollection: false,
-        message: ""
+        message: "",
     }),
     components: {
         MercenaryCard,
-        MercenaryDetails
+        MercenaryDetails,
     },
     metaInfo() {
         return {
-            title: "Hearthstone Mercenaries Helpers"
-        }
+            title: "Hearthstone Mercenaries Helpers",
+        };
     },
     computed: {
         highlightedMerc() {
             return this.mercenaries[this.highlightedMercName];
         },
         ...mapState({
-            mercenaries: state => state.mercenaries,
-            collection: state => state.collection
-        })
+            mercenaries: (state) => state.mercenaries,
+            collection: (state) => state.collection,
+        }),
     },
     methods: {
         activateMerc(mercName) {
-            this.$store.commit('activateMerc', { name: mercName });
+            this.$store.commit("activateMerc", { name: mercName });
             this.highlightedMercName = mercName;
         },
         addToCollection(mercName) {
-            this.$store.commit('addToCollection', {
+            this.$store.commit("addToCollection", {
                 name: mercName,
-                collected: true
+                collected: true,
             });
         },
         exportCollection() {
             const data = JSON.stringify(this.$store.getters.collected);
-            const blob = new Blob([data], { type: 'text/plain' }),
-                event = document.createEvent('MouseEvents'),
-                a = document.createElement('a');
+            const blob = new Blob([data], { type: "text/plain" }),
+                event = document.createEvent("MouseEvents"),
+                a = document.createElement("a");
             a.download = "collection.json";
             a.href = window.URL.createObjectURL(blob);
-            a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
-            event.initEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
+            event.initEvent(
+                "click",
+                true,
+                false,
+                window,
+                0,
+                0,
+                0,
+                0,
+                0,
+                false,
+                false,
+                false,
+                false,
+                0,
+                null
+            );
             a.dispatchEvent(event);
         },
         importCollection(ev) {
-            this.$store.dispatch('importCollection', { file: ev.target.files[0] });
+            this.$store.dispatch("importCollection", { file: ev.target.files[0] });
             this.message = "Collection Imported";
         },
         decrementAbilityActiveTier(mercenaryName, abilityName) {
-            this.$store.commit('decrementAbility', { mercName: mercenaryName, abilityName: abilityName });
+            this.$store.commit("decrementAbility", {
+                mercName: mercenaryName,
+                abilityName: abilityName,
+            });
         },
         incrementAbilityActiveTier(mercenaryName, abilityName) {
-            this.$store.commit('incrementAbility', { mercName: mercenaryName, abilityName: abilityName });
+            this.$store.commit("incrementAbility", {
+                mercName: mercenaryName,
+                abilityName: abilityName,
+            });
         },
         decrementItemActiveTier(mercenaryName, itemName) {
-            this.$store.commit('decrementItem', { mercName: mercenaryName, itemName: itemName });
+            this.$store.commit("decrementItem", { mercName: mercenaryName, itemName: itemName });
         },
         incrementItemActiveTier(mercenaryName, itemName) {
-            this.$store.commit('incrementItem', { mercName: mercenaryName, itemName: itemName });
+            this.$store.commit("incrementItem", { mercName: mercenaryName, itemName: itemName });
         },
         toggleItemEquipped(mercenaryName, itemName) {
-            this.$store.commit('toggleItemEquipped', { mercName: mercenaryName, itemName: itemName });
-        }
+            this.$store.commit("toggleItemEquipped", {
+                mercName: mercenaryName,
+                itemName: itemName,
+            });
+        },
+        decrementTasksCompleted(mercenaryName) {
+            this.$store.commit("decrementTasksCompleted", { mercName: mercenaryName });
+        },
+        incrementTasksCompleted(mercenaryName) {
+            this.$store.commit("incrementTasksCompleted", { mercName: mercenaryName });
+        },
     },
     async mounted() {
         if (Object.keys(this.mercenaries).length === 0) {
-            this.$store.commit('setMercenaries', mercjson.mercenaries);
+            this.$store.commit("setMercenaries", mercjson.mercenaries);
         }
         if (Object.keys(this.collection).length === 0) {
-            this.$store.commit('setCollection', colljson.mercenaries);
+            this.$store.commit("setCollection", colljson.mercenaries);
         }
-    }
-}
+    },
+};
 </script>
 <style>
 .protector {
