@@ -1,20 +1,34 @@
 {
-    "mercenaries": {
-        "Alexstrasza": {
-            "collected": true,
-            "level": 30,
-            "tasksCompleted": 4,
-            "itemEquipped": "Amulet of Swiftness",
-            "abilities": {
-                "Dragon Breath": 2,
-                "Flame Buffet": 2,
-                "Dragonqueen's Gambit": 1
-            },
-            "equipment": {
-                "Alexstrasza's Brooch": 1,
-                "Amulet of Swiftness": 2,
-                "Dragonflight Talisman": 4
-            }
+    "Alexstrasza": {
+        "collected": true,
+        "level": 30,
+        "tasksCompleted": 5,
+        "itemEquipped": null,
+        "abilities": {
+            "Dragon Breath": 3,
+            "Flame Buffet": 2,
+            "Dragonqueen's Gambit": 4
+        },
+        "equipment": {
+            "Alexstrasza's Brooch": 1,
+            "Amulet of Swiftness": 1,
+            "Dragonflight Talisman": 4
+        }
+    },
+    "Anduin Wrynn": {
+        "collected": true,
+        "level": 30,
+        "tasksCompleted": 2,
+        "itemEquipped": null,
+        "abilities": {
+            "Penance": 3,
+            "Holy Nova": 2,
+            "Holy Word: Salvation": 1
+        },
+        "equipment": {
+            "Harmonic Mallet": 1,
+            "Robes of Rejuvenation": 4,
+            "Ring of Purity": 1
         }
     }
 }
