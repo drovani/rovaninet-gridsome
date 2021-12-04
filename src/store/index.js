@@ -29,7 +29,7 @@ export default new Vuex.Store({
     },
     activateMerc(state, { name }) {
       if (!state.collection[name]) {
-        state.commit("addToCollection", { name });
+        this.commit("addToCollection", { name });
       }
     },
     addToCollection(state, { name, collected }) {
@@ -40,7 +40,7 @@ export default new Vuex.Store({
       } else {
         const newmerc = {
           collected: collected || false,
-          level: 1,
+          level: 30,
           tasksCompleted: 0,
           itemEquipped: "",
           abilities: convertMercTiersToCollection(
