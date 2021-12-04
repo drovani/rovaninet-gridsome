@@ -63,7 +63,7 @@
                             class="flex-1"
                             v-if="activeMerc.tasksCompleted < mercenary.tasks.length"
                         >
-                            Next Task: Task {{ activeMerc.tasksCompleted + 1 }}
+                            Next Task: #{{ activeMerc.tasksCompleted + 1 }}
                         </div>
                         <div class="flex-1" v-else>Tasks Complete!</div>
                         <UpDownButtons

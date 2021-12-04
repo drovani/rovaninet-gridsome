@@ -31,7 +31,11 @@
                             id="importCollectionInput"
                         />
                     </label>
-                    <button @click.prevent="exportCollection" class="ml-2 place-self-end">
+                    <button
+                        @click.prevent="exportCollection"
+                        class="ml-2 place-self-end"
+                        title="Export Collection"
+                    >
                         <app-icon :icon="['fas', 'file-export']"></app-icon>
                     </button>
                 </header>
@@ -44,20 +48,15 @@
                         :class="merc.role.toLowerCase()"
                         class="border-2 rounded-md pl-2 mb-1 cursor-pointer"
                     >
-                        <span v-if="loadingCollection">
-                            <app-icon :icon="['fas', 'sync']"></app-icon>
-                        </span>
-                        <span v-else>
-                            <app-icon
-                                v-if="collection[name] ? collection[name].collected : false"
-                                :icon="['fas', 'check']"
-                            ></app-icon>
-                            <app-icon
-                                v-else
-                                :icon="['fas', 'plus']"
-                                @click="addToCollection(name)"
-                            ></app-icon>
-                        </span>
+                        <app-icon
+                            v-if="collection[name] ? collection[name].collected : false"
+                            :icon="['fas', 'check']"
+                        ></app-icon>
+                        <app-icon
+                            v-else
+                            :icon="['fas', 'plus']"
+                            @click="addToCollection(name)"
+                        ></app-icon>
                         {{ name }}
                     </li>
                 </ul>
@@ -106,7 +105,6 @@ import { mapState } from "vuex";
 export default {
     data: () => ({
         highlightedMercName: null,
-        loadingCollection: false,
         message: "",
     }),
     components: {
@@ -141,7 +139,7 @@ export default {
             });
         },
         exportCollection() {
-            const data = JSON.stringify(this.$store.getters.collected);
+            const data = JSON.stringify({ collection: this.$store.getters.collected });
             const blob = new Blob([data], { type: "text/plain" }),
                 event = document.createEvent("MouseEvents"),
                 a = document.createElement("a");
@@ -202,12 +200,12 @@ export default {
             this.$store.commit("incrementTasksCompleted", { mercName: mercenaryName });
         },
     },
-    async mounted() {
+    mounted() {
         if (Object.keys(this.mercenaries).length === 0) {
             this.$store.commit("setMercenaries", mercjson.mercenaries);
         }
         if (Object.keys(this.collection).length === 0) {
-            this.$store.commit("setCollection", colljson.mercenaries);
+            this.$store.commit("setCollection", colljson.collection);
         }
     },
 };

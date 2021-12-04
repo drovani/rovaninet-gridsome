@@ -43,25 +43,25 @@
       </main>
     </transition>
     <footer class="mt-4 pt-2 text-4xl space-x-1 text-center sm:space-x-2 md:space-x-4 border-t rounded-t">
-      <a href="/">
+      <a href="/" title="Home Page">
         <app-icon :icon="['fas', 'home']"></app-icon>
       </a>
-      <a href="https://github.com/drovani">
+      <a href="https://github.com/drovani" title="drovani GitHub profile">
         <app-icon :icon="['fab', 'github']"></app-icon>
       </a>
-      <a href="https://linkedin.com/in/drovani">
+      <a href="https://linkedin.com/in/drovani" title="drovani LinkedIn profile">
         <app-icon :icon="['fab', 'linkedin']"></app-icon>
       </a>
-      <a href="https://twitter.com/davidrovani">
+      <a href="https://twitter.com/davidrovani" title="@davidrovani Twitter profile">
         <app-icon :icon="['fab', 'twitter']"></app-icon>
       </a>
-      <a href="https://stackoverflow.com/users/28310/drovani">
+      <a href="https://stackoverflow.com/users/28310/drovani" title="drovani Stack Overlow profile">
         <app-icon :icon="['fab', 'stack-overflow']"></app-icon>
       </a>
-      <a href="https://dev.to/drovani">
+      <a href="https://dev.to/drovani" title="drovani dev.to profile">
         <app-icon :icon="['fab', 'dev']"></app-icon>
       </a>
-      <a href="/about">
+      <a href="/about" title="About David Rovani">
         <app-icon :icon="['fas', 'user-tie']"></app-icon>
       </a>
     </footer>
