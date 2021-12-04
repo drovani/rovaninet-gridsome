@@ -129,7 +129,9 @@ export default {
     },
     methods: {
         activateMerc(mercName) {
-            this.$store.commit("activateMerc", { name: mercName });
+            if (mercName !== null) {
+                this.$store.commit("activateMerc", { name: mercName });
+            }
             this.highlightedMercName = mercName;
         },
         addToCollection(mercName) {

@@ -77,23 +77,21 @@
                         />
                     </div>
                     <template v-if="activeMerc.tasksCompleted < mercenary.tasks.length">
-                        <transition name="fade">
-                            <p class="font-semibold">
-                                {{ mercenary.tasks[activeMerc.tasksCompleted].name }}
-                            </p>
-                            <p>{{ mercenary.tasks[activeMerc.tasksCompleted].description }}</p>
-                            <p>Rewards:</p>
-                            <ul class="list-disc list-inside">
-                                <li
-                                    v-for="(reward, index) in taskRewards(
-                                        mercenary.tasks[activeMerc.tasksCompleted].rewards
-                                    )"
-                                    :key="index"
-                                >
-                                    {{ reward }}
-                                </li>
-                            </ul>
-                        </transition>
+                        <p class="font-semibold">
+                            {{ mercenary.tasks[activeMerc.tasksCompleted].name }}
+                        </p>
+                        <p>{{ mercenary.tasks[activeMerc.tasksCompleted].description }}</p>
+                        <p>Rewards:</p>
+                        <ul class="list-disc list-inside">
+                            <li
+                                v-for="(reward, index) in taskRewards(
+                                    mercenary.tasks[activeMerc.tasksCompleted].rewards
+                                )"
+                                :key="index"
+                            >
+                                {{ reward }}
+                            </li>
+                        </ul>
                     </template>
                 </div>
             </div>

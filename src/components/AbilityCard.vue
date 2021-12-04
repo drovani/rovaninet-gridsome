@@ -13,6 +13,7 @@
         </div>
         <template v-if="showDetails">
             <UpDownButtons
+                class="px-4"
                 :showDecrement="ability.tiers && tierIndex > 0"
                 :showIncrement="ability.tiers && tierIndex < ability.tiers.length - 1"
                 @decrement="$emit('decrementActiveTier')"

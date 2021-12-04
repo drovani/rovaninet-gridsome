@@ -1,5 +1,8 @@
 <template>
-    <div class="grid grid-cols-3 justify-center sm:px-4 text-center">
+    <div
+        class="grid justify-center text-center"
+        :class="{ 'grid-cols-3': $slots.default, 'grid-cols-2': !$slots.default }"
+    >
         <button @click="$emit('decrement')" :class="{ invisible: !showDecrement }">
             <app-icon :icon="['fas', downIcon]"></app-icon>
         </button>
