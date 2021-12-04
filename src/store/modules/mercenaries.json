@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/drovani/rovaninet/main/src/store/modules/mercenaries.schema.json",
     "mercenaries": {
         "Alexstrasza": {
             "role": "Protector",

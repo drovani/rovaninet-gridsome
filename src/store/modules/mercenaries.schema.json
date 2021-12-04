@@ -1,0 +1,115 @@
+{
+    "$id": "https://raw.githubusercontent.com/drovani/rovaninet/main/src/store/modules/mercenaries.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Hearthstone Mercenaries Mercenaries",
+    "description": "The schema for a complete collection of Mercenaries from the Hearthstone Mercenaries game",
+    "type": "object",
+    "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "role": {
+                "type": "string"
+            },
+            "rarity": {
+                "type": "string"
+            },
+            "race": {
+                "type": "string"
+            },
+            "attack": {
+                "type": "integer"
+            },
+            "health": {
+                "type": "integer"
+            },
+            "abilities": {
+                "type": "object",
+                "minProperties": 3,
+                "maxProperties": 3,
+                "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                        "unlock": {
+                            "type": "integer"
+                        },
+                        "spell_school": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "speed": {
+                            "type": "integer"
+                        },
+                        "cooldown": {
+                            "type": "integer"
+                        },
+                        "tiers": {
+                            "type": "array"
+                        }
+                    }
+                }
+            },
+            "equipment": {
+                "type": "object",
+                "minProperties": 3,
+                "maxProperties": 3,
+                "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                        "unlock": {
+                            "type": "string"
+                        },
+                        "position": {
+                            "type": "string"
+                        },
+                        "affects": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "integer"
+                        },
+                        "modifier": {
+                            "type": "object"
+                        },
+                        "tiers": {
+                            "type": "array"
+                        }
+                    }
+                }
+            },
+            "tasks": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "ability": {
+                            "type": "string"
+                        },
+                        "rewards": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array",
+                                    "items": "integer"
+                                }
+                            ]
+                        },
+                        "quote": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
