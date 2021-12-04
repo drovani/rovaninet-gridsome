@@ -698,6 +698,349 @@
                     "quote": "Light smiles upon the just."
                 }
             ]
+        },
+        "Antonidas": {
+            "role": "Caster",
+            "rarity": "Epic",
+            "race": "Human",
+            "attack": 6,
+            "health": 73,
+            "abilities": {
+                "Fireball": {
+                    "unlock": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage.",
+                    "speed": 4,
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Flamestrike": {
+                    "unlock": 5,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to all enemies.",
+                    "speed": 7,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                },
+                "Fireball Storm": {
+                    "unlock": 15,
+                    "spell_school": "Fire",
+                    "description": "Cast Fireball {0} at {0} random enem{y}. Repeat for each Fire ability you've cast this turn.",
+                    "speed": 7,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Cindercore Staff": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Fireball",
+                    "description": "Fireball deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Searing Pendant": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Fireball Storm",
+                    "description": "Fireball Storm casts Fireball at 2 random enemies, but has +1 Cooldown.",
+                    "modifier": {
+                        "description": [
+                            0,
+                            1,
+                            "ies"
+                        ],
+                        "cooldown": 1
+                    }
+                },
+                "Circlet of Flame": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Flamestrike",
+                    "description": "Flamestrike deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "A Simple Fireball",
+                    "description": "Deal 100 damage using Fireball.",
+                    "ability": "Fireball",
+                    "rewards": [
+                        50,
+                        20
+                    ],
+                    "quote": "This is a land full of unexpected perils… Perhaps you are the key to navigating them?"
+                },
+                {
+                    "name": "Flamestrike",
+                    "ability": "Flamestrike",
+                    "description": "Deal 145 damage using Flamestrike.",
+                    "rewards": "Circlet of Flame",
+                    "quote": "Magic is dangerous when wielded by the unworthy. Let us ensure they learn their lesson!"
+                },
+                {
+                    "name": "Flurry of Fire",
+                    "ability": "Fireball Storm",
+                    "description": "Deal 95 damage using Fireball Storm.",
+                    "rewards": [
+                        50,
+                        25
+                    ],
+                    "quote": "Keep your wits about you, and this will go quickly."
+                },
+                {
+                    "name": "Observe, Apprentice",
+                    "description": "Deal 150 damage.",
+                    "rewards": [
+                        50,
+                        30
+                    ],
+                    "quote": "Do precisely as I say, and all will be well."
+                },
+                {
+                    "name": "The Archmage",
+                    "description": "Complete a bounty while at level 30.",
+                    "rewards": [
+                        50,
+                        35
+                    ],
+                    "quote": "This will test me."
+                },
+                {
+                    "name": "Time to Learn",
+                    "description": "Destroy 40 minions.",
+                    "rewards": [
+                        50,
+                        40
+                    ],
+                    "quote": "This one may take some time… but time is the recipe for wisdom, after all."
+                },
+                {
+                    "name": "Fall to our Magic",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "rewards": "Searing Pendant",
+                    "quote": "If left unchecked, this could become a great disaster."
+                },
+                {
+                    "name": "Empower our Magic",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "rewards": [
+                        60,
+                        30
+                    ],
+                    "quote": "Only the most skilled archmage could make short work of this!"
+                },
+                {
+                    "name": "Defend the Kirin Tor",
+                    "description": "Destroy two enemies in one turn using Flamestrike 10 times.",
+                    "ability": "Flamestrike",
+                    "rewards": [
+                        60,
+                        35
+                    ],
+                    "quote": "If I complete this one, maybe I'll write about it in one of my books."
+                },
+                {
+                    "name": "Incineration",
+                    "description": "Destroy 15 enemies using Fireball.",
+                    "ability": "Fireball",
+                    "rewards": [
+                        60,
+                        40
+                    ],
+                    "quote": "Only someone like me could handle this."
+                },
+                {
+                    "name": "A Scorching Request",
+                    "description": "Deal 450 damage.",
+                    "rewards": [
+                        60,
+                        45
+                    ],
+                    "quote": "Keep your wits about you, and this will go quickly."
+                },
+                {
+                    "name": "Rolling Flames",
+                    "description": "Destroy three enemies in one turn using Fireball Storm 15 times.",
+                    "ability": "Fireball Storm",
+                    "rewards": [
+                        60,
+                        50
+                    ],
+                    "quote": "Magic is dangerous when wielded by the unworthy. Let us ensure they learn their lesson!"
+                },
+                {
+                    "name": "Protecting Dalaran",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "rewards": [
+                        70,
+                        50,
+                        50
+                    ],
+                    "quote": "This will test me."
+                },
+                {
+                    "name": "Teaching the Novices",
+                    "description": "Deal 450 damage using Fireball.",
+                    "ability": "Fireball",
+                    "rewards": [
+                        70,
+                        75,
+                        50
+                    ],
+                    "quote": "Do precisely as I say, and all will be well."
+                },
+                {
+                    "name": "Nurture the Kirin Tor",
+                    "description": "Complete 6 Bounties.",
+                    "rewards": [
+                        70,
+                        75,
+                        75
+                    ],
+                    "quote": "This one may take some time… but time is the recipe for wisdom, after all."
+                },
+                {
+                    "name": "Finding their Weakness",
+                    "description": "Deal 900 damage to Protectors.",
+                    "rewards": [
+                        70,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "If left unchecked, this could become a great disaster."
+                },
+                {
+                    "name": "Pairing of Flames",
+                    "description": "Deal 900 Fire Damage with a team that includes this Mercenary.",
+                    "rewards": [
+                        75,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "Only the most skilled archmage could make short work of this!"
+                },
+                {
+                    "name": "Enemies of Dalaran",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "rewards": [
+                        80,
+                        "Mercenaries Pack"
+                    ],
+                    "quote": "Only someone like me could handle this."
+                }
+            ]
         }
     }
 }

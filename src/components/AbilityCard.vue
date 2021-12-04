@@ -77,32 +77,48 @@ export default {
     computed: {
         description() {
             let desc = this.ability.description;
-            const regex = new RegExp(/\{(\d+)\}/, "g");
+            const regex = new RegExp(/\{(\w+)\}/, "g");
             const matches = [...this.ability.description.matchAll(regex)];
             for (let i = 0; i < matches.length; i++) {
-                const baseValue = Number(matches[i][1]);
-                const tierValue = Number(
-                    this.activeTierInfo.description instanceof Array
-                        ? this.activeTierInfo.description[i]
-                        : this.activeTierInfo.description
-                );
-                const itemValue = () => {
-                    if (!this.itemEquippedTier?.modifier?.description) {
-                        return 0;
-                    } else if (this.itemEquippedTier.modifier.description instanceof Array) {
-                        return this.itemEquippedTier.modifier.description[i];
-                    } else if (this.itemEquippedTier.modifier.description instanceof Number) {
-                        return this.itemEquippedTier.modifier.description;
+                if (isFinite(matches[i][1])) { // Found {0}
+                    const baseValue = Number(matches[i][1]);
+                    const tierValue = Number(
+                        this.activeTierInfo.description instanceof Array
+                            ? this.activeTierInfo.description[i]
+                            : this.activeTierInfo.description
+                    );
+                    const itemValue = () => {
+                        if (!this.itemEquippedTier?.modifier?.description) {
+                            return 0;
+                        } else if (this.itemEquippedTier.modifier.description instanceof Array) {
+                            return this.itemEquippedTier.modifier.description[i];
+                        } else if (isFinite(this.itemEquippedTier.modifier.description)) {
+                            return this.itemEquippedTier.modifier.description;
+                        }
+                    };
+                    desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
+                } else { // {string}
+                    if (this.itemEquippedTier?.modifier?.description?.[i]) {
+                        // replace {string} with modifier
+                        desc = desc.replace(
+                            matches[i][0],
+                            this.itemEquippedTier.modifier.description[i]
+                        );
+                    } else if (this.activeTierInfo.description[i]) {
+                        // replace {string} with active tier replacement
+                        desc = desc.replace(matches[i][0], this.activeTierInfo.description[i]);
+                    } else {
+                        // replace {string} with string (i.e. remove braces)
+                        desc = desc.replace(matches[i][0], matches[i][1]);
                     }
-                };
-                desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
+                }
             }
             if (this.itemEquippedTier?.modifier?.description instanceof Object) {
                 if (this.itemEquippedTier.modifier.description.type === "append") {
                     desc = `${desc} ${this.itemEquippedTier.modifier.description.text}`;
                 }
             }
-            return desc;
+            return desc.replaceAll("{", "").replaceAll("}", "");
         },
         speed() {
             if (this.itemEquippedTier?.modifier?.speed) {
