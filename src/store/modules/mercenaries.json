@@ -189,166 +189,97 @@
                     "name": "The Life-Binder",
                     "description": "Deal 55 damage using Dragon Breath.",
                     "ability": "Dragon Breath",
-                    "rewards": [
-                        50,
-                        20
-                    ],
                     "quote": "I am the protector of all life, a solemn charge that carries greater weight than ever."
                 },
                 {
                     "name": "Firebreathing for Two",
                     "description": "Deal 240 damage using Flame Buffet.",
                     "ability": "Flame Buffet",
-                    "rewards": "Alexstrasza's Brooch",
                     "quote": "Sometimes life must be preserved through more… aggressive means."
                 },
                 {
                     "name": "The Strong Shall Quake",
                     "description": "Deal 70 damage using Dragonqueen's Gambit.",
                     "ability": "Dragonqueen's Gambit",
-                    "rewards": [
-                        50,
-                        25
-                    ],
                     "quote": "Spread your wings and anything is possible."
                 },
                 {
                     "name": "Dragon Fury",
                     "description": "Deal 150 damage.",
-                    "rewards": [
-                        50,
-                        30
-                    ],
                     "quote": "If I address this, I will be one step closer."
                 },
                 {
                     "name": "Empower the Aspects",
                     "description": "Complete a bounty while at level 30.",
-                    "rewards": [
-                        50,
-                        35
-                    ],
                     "quote": "To safeguard some, I must rein others."
                 },
                 {
                     "name": "Death Pains Me",
                     "description": "Destroy 40 minions.",
-                    "rewards": [
-                        50,
-                        40
-                    ],
                     "quote": "I know I can handle this now."
                 },
                 {
                     "name": "A Minor Challenge",
                     "description": "Defeat 2 Heroic bosses.",
-                    "rewards": "Dragonflight Talisman",
                     "quote": "I fear this one may require more effort."
                 },
                 {
                     "name": "Power of Resurrection",
                     "description": "Use the Spirit Healer coin 4 times.",
-                    "rewards": [
-                        60,
-                        30
-                    ],
                     "quote": "The Aspects would smile on me for achieving this."
                 },
                 {
                     "name": "Defender of Life",
                     "description": "Heal 180 damage.",
-                    "rewards": [
-                        60,
-                        35
-                    ],
                     "quote": "How much can I do in service of life? The answer is always: everything."
                 },
                 {
                     "name": "Flames of Life",
                     "description": "Deal 180 damage using Dragon Breath.",
                     "ability": "Dragon Breath",
-                    "rewards": [
-                        60,
-                        40
-                    ],
                     "quote": "There are always more problems for me to solve."
                 },
                 {
                     "name": "A Dragon's Claws",
                     "description": "Deal 450 damage.",
-                    "rewards": [
-                        60,
-                        45
-                    ],
                     "quote": "Sometimes life must be preserved through more… aggressive means."
                 },
                 {
                     "name": "Two for one",
                     "description": "Destroy two enemies in one turn using Flame Buffet 15 times.",
                     "ability": "Flame Buffet",
-                    "rewards": [
-                        60,
-                        50
-                    ],
                     "quote": "I fear this one may require more effort."
                 },
                 {
                     "name": "Formidable Opponents",
                     "description": "Complete 4 Heroic Bounties.",
-                    "rewards": [
-                        70,
-                        50,
-                        50
-                    ],
                     "quote": "If I address this, I will be one step closer."
                 },
                 {
                     "name": "They Stood in the Fire",
                     "description": "Deal 900 damage to adjacent enemies using Flame Buffet.",
                     "ability": "Flame Buffet",
-                    "rewards": [
-                        70,
-                        75,
-                        50
-                    ],
                     "quote": "To safeguard some, I must rein others."
                 },
                 {
                     "name": "The Red Dragonflight",
                     "description": "Complete 6 Bounties.",
-                    "rewards": [
-                        70,
-                        75,
-                        75
-                    ],
                     "quote": "I know I can handle this now."
                 },
                 {
                     "name": "Fire Cleanses",
                     "description": "Deal 900 damage to Fighters.",
-                    "rewards": [
-                        70,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "Spread your wings and anything is possible."
                 },
                 {
                     "name": "Their Strength is Mine",
                     "description": "Destroy 40 enemies using Dragonqueen's Gambit.",
                     "ability": "Dragonqueen's Gambit",
-                    "rewards": [
-                        75,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "There are always more problems for me to solve."
                 },
                 {
                     "name": "Flowers in Flame",
                     "description": "Deal 450 damage to Heroic bosses.",
-                    "rewards": [
-                        80,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "How much can I do in service"
                 }
             ]
@@ -466,7 +397,6 @@
                 "Ring of Purity": {
                     "unlock": "Task 2",
                     "position": "left",
-                    "affects": "passive",
                     "description": "Passive: Whenever a friendly character is healed, gain +{0} Health.",
                     "tiers": [
                         {
@@ -486,7 +416,6 @@
                 "Robes of Rejuvenation": {
                     "unlock": "Level 30",
                     "position": "middle",
-                    "affects": "passive",
                     "description": "Passive: After a friendly Human dies, Refresh Holy Word: Salvation."
                 },
                 "Harmonic Mallet": {
@@ -539,162 +468,93 @@
                     "name": "There Must Be a Way",
                     "description": "Deal 55 damage using Penance.",
                     "ability": "Penance",
-                    "rewards": [
-                        50,
-                        20
-                    ],
                     "quote": "Light be with you, mercenary. Can you aid me in bringing peace to these lands?"
                 },
                 {
                     "name": "Hope is all we have",
                     "description": "Restore 145 Health using Holy Nova.",
                     "ability": "Holy Nova",
-                    "rewards": "Ring of Purity 1",
                     "quote": "Never lose your hope."
                 },
                 {
                     "name": "The Light Will Burn",
                     "description": "Deal 225 Holy Damage with a team that includes this Mercenary.",
-                    "rewards": [
-                        50,
-                        25
-                    ],
                     "quote": "Greetings. We have much ahead of us."
                 },
                 {
                     "name": "The Path of a Diplomat",
                     "description": "Deal 150 damage.",
-                    "rewards": [
-                        50,
-                        30
-                    ],
                     "quote": "Keep your mind open."
                 },
                 {
                     "name": "From Prince to King",
                     "description": "Complete a bounty while at level 30.",
-                    "rewards": [
-                        50,
-                        35
-                    ],
                     "quote": "We must stand together, proud and united."
                 },
                 {
                     "name": "When Peace Fails",
                     "description": "Destroy 40 minions.",
-                    "rewards": [
-                        50,
-                        40
-                    ],
                     "quote": "Doing what’s right is not always easy."
                 },
                 {
                     "name": "The Light Unites",
                     "description": "Defeat 2 Heroic bosses.",
-                    "rewards": "Harmonic Mallet 1",
                     "quote": "The Light has brought us together."
                 },
                 {
                     "name": "The Kyrian Watch",
                     "description": "Use the Spirit Healer coin 4 times.",
-                    "rewards": [
-                        60,
-                        30
-                    ],
                     "quote": "Bring them peace."
                 },
                 {
                     "name": "The Burden of a King",
                     "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
-                    "rewards": [
-                        60,
-                        35
-                    ],
                     "quote": "This place fills me with hope."
                 },
                 {
                     "name": "Preserve the Peace",
                     "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
-                    "rewards": [
-                        60,
-                        40
-                    ],
                     "quote": "Light smiles upon the just."
                 },
                 {
                     "name": "The Priest's Calling",
                     "description": "Heal 450 damage.",
-                    "rewards": [
-                        60,
-                        45
-                    ],
                     "quote": "Greetings. We have much ahead of us."
                 },
                 {
                     "name": "Versatile Light",
                     "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
-                    "rewards": [
-                        60,
-                        50
-                    ],
                     "quote": "Never lose your hope."
                 },
                 {
                     "name": "I Have Seen Nightmares",
                     "description": "Complete 4 Heroic Bounties.",
-                    "rewards": [
-                        70,
-                        50,
-                        50
-                    ],
                     "quote": "Keep your mind open."
                 },
                 {
                     "name": "Penance",
                     "description": "Restore 450 Health using Penance.",
                     "ability": "Penance",
-                    "rewards": [
-                        70,
-                        75,
-                        50
-                    ],
                     "quote": "Bring them peace."
                 },
                 {
                     "name": "War Must Bring Peace",
                     "description": "Complete 6 Bounties.",
-                    "rewards": [
-                        70,
-                        75,
-                        75
-                    ],
                     "quote": "The Light has brought us together."
                 },
                 {
                     "name": "Diplomacy has Failed",
                     "description": "Deal 900 damage to Protectors.",
-                    "rewards": [
-                        70,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "Doing what’s right is not always easy."
                 },
                 {
                     "name": "Bonds of Friendship",
                     "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
-                    "rewards": [
-                        75,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "We must stand together, proud and united."
                 },
                 {
                     "name": "There is Always Hope",
                     "description": "Deal 450 damage to Heroic bosses.",
-                    "rewards": [
-                        80,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "Light smiles upon the just."
                 }
             ]
@@ -878,167 +738,371 @@
                     "name": "A Simple Fireball",
                     "description": "Deal 100 damage using Fireball.",
                     "ability": "Fireball",
-                    "rewards": [
-                        50,
-                        20
-                    ],
                     "quote": "This is a land full of unexpected perils… Perhaps you are the key to navigating them?"
                 },
                 {
                     "name": "Flamestrike",
                     "ability": "Flamestrike",
                     "description": "Deal 145 damage using Flamestrike.",
-                    "rewards": "Circlet of Flame",
                     "quote": "Magic is dangerous when wielded by the unworthy. Let us ensure they learn their lesson!"
                 },
                 {
                     "name": "Flurry of Fire",
                     "ability": "Fireball Storm",
                     "description": "Deal 95 damage using Fireball Storm.",
-                    "rewards": [
-                        50,
-                        25
-                    ],
                     "quote": "Keep your wits about you, and this will go quickly."
                 },
                 {
                     "name": "Observe, Apprentice",
                     "description": "Deal 150 damage.",
-                    "rewards": [
-                        50,
-                        30
-                    ],
                     "quote": "Do precisely as I say, and all will be well."
                 },
                 {
                     "name": "The Archmage",
                     "description": "Complete a bounty while at level 30.",
-                    "rewards": [
-                        50,
-                        35
-                    ],
                     "quote": "This will test me."
                 },
                 {
                     "name": "Time to Learn",
                     "description": "Destroy 40 minions.",
-                    "rewards": [
-                        50,
-                        40
-                    ],
                     "quote": "This one may take some time… but time is the recipe for wisdom, after all."
                 },
                 {
                     "name": "Fall to our Magic",
                     "description": "Defeat 2 Heroic bosses.",
-                    "rewards": "Searing Pendant",
                     "quote": "If left unchecked, this could become a great disaster."
                 },
                 {
                     "name": "Empower our Magic",
                     "description": "Use the Boon: Caster coin 2 times.",
-                    "rewards": [
-                        60,
-                        30
-                    ],
                     "quote": "Only the most skilled archmage could make short work of this!"
                 },
                 {
                     "name": "Defend the Kirin Tor",
                     "description": "Destroy two enemies in one turn using Flamestrike 10 times.",
                     "ability": "Flamestrike",
-                    "rewards": [
-                        60,
-                        35
-                    ],
                     "quote": "If I complete this one, maybe I'll write about it in one of my books."
                 },
                 {
                     "name": "Incineration",
                     "description": "Destroy 15 enemies using Fireball.",
                     "ability": "Fireball",
-                    "rewards": [
-                        60,
-                        40
-                    ],
                     "quote": "Only someone like me could handle this."
                 },
                 {
                     "name": "A Scorching Request",
                     "description": "Deal 450 damage.",
-                    "rewards": [
-                        60,
-                        45
-                    ],
                     "quote": "Keep your wits about you, and this will go quickly."
                 },
                 {
                     "name": "Rolling Flames",
                     "description": "Destroy three enemies in one turn using Fireball Storm 15 times.",
                     "ability": "Fireball Storm",
-                    "rewards": [
-                        60,
-                        50
-                    ],
                     "quote": "Magic is dangerous when wielded by the unworthy. Let us ensure they learn their lesson!"
                 },
                 {
                     "name": "Protecting Dalaran",
                     "description": "Complete 4 Heroic Bounties.",
-                    "rewards": [
-                        70,
-                        50,
-                        50
-                    ],
                     "quote": "This will test me."
                 },
                 {
                     "name": "Teaching the Novices",
                     "description": "Deal 450 damage using Fireball.",
                     "ability": "Fireball",
-                    "rewards": [
-                        70,
-                        75,
-                        50
-                    ],
                     "quote": "Do precisely as I say, and all will be well."
                 },
                 {
                     "name": "Nurture the Kirin Tor",
                     "description": "Complete 6 Bounties.",
-                    "rewards": [
-                        70,
-                        75,
-                        75
-                    ],
                     "quote": "This one may take some time… but time is the recipe for wisdom, after all."
                 },
                 {
                     "name": "Finding their Weakness",
                     "description": "Deal 900 damage to Protectors.",
-                    "rewards": [
-                        70,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "If left unchecked, this could become a great disaster."
                 },
                 {
                     "name": "Pairing of Flames",
                     "description": "Deal 900 Fire Damage with a team that includes this Mercenary.",
-                    "rewards": [
-                        75,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "Only the most skilled archmage could make short work of this!"
                 },
                 {
                     "name": "Enemies of Dalaran",
                     "description": "Deal 450 damage to Heroic bosses.",
-                    "rewards": [
-                        80,
-                        "Mercenaries Pack"
-                    ],
                     "quote": "Only someone like me could handle this."
+                }
+            ]
+        },
+        "Baron Geddon": {
+            "role": "Caster",
+            "rarity": "Epic",
+            "race": "Elemental",
+            "attack": 10,
+            "health": 82,
+            "abilities": {
+                "Heating Up": {
+                    "unlock": 1,
+                    "spell_school": "Fire",
+                    "speed": 7,
+                    "description": "Deal {0} damage. Your Fire abilities are (1) Speed faster next turn.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Inferno": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to all enemies. Fire Combo: Deal another {0} damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                "Living Bomb": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "spell_school": "Fire",
+                    "cooldown": 1,
+                    "description": "Choose an enemy. If it takes damage this turn, deal {0} damage to it and its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Molten Blade": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Heating Up",
+                    "description": "Heating Up deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Mark of Conflagration": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Inferno",
+                    "description": "Inferno's Fire Combo deals {0} more damage",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Burning Bracers": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Living Bomb",
+                    "description": "Living Bomb deals damage twice, but has +1 Cooldown.",
+                    "modifier": {
+                        "cooldown": 1
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "For the Firelord",
+                    "description": "Deal 40 damage using Heating Up.",
+                    "quote": "My flames must consume all in service of the elemental lords, the true rulers of Azeroth!"
+                },
+                {
+                    "name": "Fiery Inferno",
+                    "description": "Deal 145 damage using Inferno.",
+                    "quote": "Time is short. Tick, tick!"
+                },
+                {
+                    "name": "Living Bomb",
+                    "description": "Deal 145 damage using Living Bomb.",
+                    "quote": "My enemies will be devoured by flames! Or run away screaming. They sometimes do that…"
+                },
+                {
+                    "name": "Fiery Blast",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will serve Ragnaros well."
+                },
+                {
+                    "name": "A True Baron",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I cannot delay."
+                },
+                {
+                    "name": "Turn to Ash",
+                    "description": "Destroy 40 minions.",
+                    "quote": "This will let me reveal my might to my foes."
+                },
+                {
+                    "name": "Blazing Power",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The Firelord demands perfection!"
+                },
+                {
+                    "name": "Protect the Firelands",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "My plan must not be interrupted."
+                },
+                {
+                    "name": "A Scorching Sequence",
+                    "description": "Deal 450 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "Unleash armageddon upon my foes!"
+                },
+                {
+                    "name": "Blazing Speed",
+                    "description": "Increase the speed of a friendly ability by (1) 15 times.",
+                    "quote": "Time is short. Tick, tick!"
+                },
+                {
+                    "name": "Combustion",
+                    "description": "Deal 450 damage.",
+                    "quote": "I will leave nothing but ash in my wake."
+                },
+                {
+                    "name": "Roasted Weaklings",
+                    "description": "Destroy three enemies in one turn using Living Bomb 8 times.",
+                    "quote": "My enemies will be devoured by flames! Or run away screaming. They sometimes do that…"
+                },
+                {
+                    "name": "Reclaim my Standing",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I will serve Ragnaros well."
+                },
+                {
+                    "name": "Blistering Torrent",
+                    "description": "Increase the speed of friendly abilities by a total of 15.",
+                    "quote": "I cannot delay."
+                },
+                {
+                    "name": "Set them Aflame",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "The Firelord demands perfection!"
+                },
+                {
+                    "name": "Pyric Destruction",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "This will let me reveal my might to my foes."
+                },
+                {
+                    "name": "Blazing Armageddon",
+                    "description": "Deal 900 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "Unleash armageddon upon my foes!"
+                },
+                {
+                    "name": "Serve the Firelord",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I will leave nothing but ash in my wake."
                 }
             ]
         }

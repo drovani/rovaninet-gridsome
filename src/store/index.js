@@ -4,11 +4,12 @@ import VuexPersistance from "vuex-persist";
 
 Vue.use(Vuex);
 
-const convertMercTiersToCollection = (obj, maxtiers) =>
-  Object.keys(obj).reduce(
-    (o, key) => ({ ...o, [key]: maxtiers - obj[key].tiers.length + 1 }),
+const convertMercTiersToCollection = (obj, maxtiers) => {
+  return Object.keys(obj).reduce(
+    (o, key) => ({ ...o, [key]: maxtiers - (obj[key].tiers?.length ?? 0) + 1 }),
     {}
   );
+};
 
 const ABILITY_MAX_TIER = 5;
 const ITEM_MAX_TIER = 4;
