@@ -5,6 +5,7 @@
             'bg-yellow-100': ability.spell_school === 'Holy',
             'bg-red-100': ability.spell_school === 'Fire',
             'bg-green-100': ability.spell_school === 'Nature',
+            'bg-blue-100': ability.spell_school === 'Arcane',
         }"
     >
         <div
@@ -27,7 +28,7 @@
             <div class="h-16 sm:h-32">{{ description }}</div>
         </template>
         <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
-            <div>
+            <div :class="{ invisible: speed <= 0 }">
                 {{ speed }}
                 <img src="/images/mercs/speed.png" alt="Speed" class="h-4 w-4 inline" />
             </div>
@@ -134,7 +135,7 @@ export default {
                     this.itemEquippedTier.modifier.speed
                 );
             }
-            return this.ability.speed + (this.activeTierInfo.speed ?? 0);
+            return (this.ability.speed ?? 0) + (this.activeTierInfo.speed ?? 0);
         },
         cooldown() {
             if (this.itemEquippedTier?.modifier?.cooldown) {
