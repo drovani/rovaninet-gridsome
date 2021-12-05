@@ -47,7 +47,7 @@ export default {
         },
         costToMax: {
             type: Number,
-            required: true,
+            default: 0,
         },
         showDetails: {
             type: Boolean,

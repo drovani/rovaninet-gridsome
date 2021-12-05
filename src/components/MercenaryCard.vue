@@ -9,47 +9,46 @@
                 v-for="(ability, name) in mercenary.abilities"
                 :key="name"
                 :ability="ability"
-                :activeTier="collected && collected.abilities[name]"
-                :costToMax="0"
+                :activeTier="activeMerc && activeMerc.abilities[name]"
                 @decrementActiveTier="$emit('decrementAbilityActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementAbilityActiveTier', mercName, name)"
-            >{{ name }}</AbilityCard>
+                >{{ name }}</AbilityCard
+            >
         </div>
         <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
             <ItemCard
                 v-for="(item, name) in mercenary.equipment"
                 :key="name"
                 :item="item"
-                :activeTier="collected && collected.equipment[name]"
-                :costToMax="0"
+                :activeTier="activeMerc && activeMerc.equipment[name]"
                 @decrementActiveTier="$emit('decrementItemActiveTier', mercName, name)"
                 @incrementActiveTier="$emit('incrementItemActiveTier', mercName, name)"
-            >{{ name }}</ItemCard>
+                >{{ name }}</ItemCard
+            >
         </div>
     </section>
 </template>
 
 <script>
-
-import AbilityCard from './AbilityCard.vue';
-import ItemCard from './ItemCard.vue';
+import AbilityCard from "./AbilityCard.vue";
+import ItemCard from "./ItemCard.vue";
 
 export default {
     name: "MercenaryCard",
     props: {
         mercenary: {
             type: Object,
-            required: true
+            required: true,
         },
-        collected: Object,
+        activeMerc: Object,
         mercName: {
             type: String,
-            required: true
-        }
+            required: true,
+        },
     },
     components: {
         AbilityCard,
-        ItemCard
-    }
-}
+        ItemCard,
+    },
+};
 </script>

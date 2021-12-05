@@ -55,7 +55,7 @@ export default {
         },
         costToMax: {
             type: Number,
-            required: true,
+            default: 0,
         },
         itemEquippedTier: {
             type: Object,

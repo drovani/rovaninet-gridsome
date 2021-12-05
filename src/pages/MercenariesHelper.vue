@@ -85,10 +85,6 @@
                         :mercName="name"
                         :mercenary="merc"
                         :activeMerc="collection[name]"
-                        @decrementAbilityActiveTier="decrementAbilityActiveTier"
-                        @incrementAbilityActiveTier="incrementAbilityActiveTier"
-                        @decrementItemActiveTier="decrementItemActiveTier"
-                        @incrementItemActiveTier="incrementItemActiveTier"
                     />
                 </div>
             </section>
