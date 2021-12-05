@@ -7,7 +7,7 @@
             'bg-green-100': ability.spell_school === 'Nature',
         }"
     >
-        <div class="h-10 text-center">
+        <div class="h-10 text-center text-xl sm:text-lg">
             <slot />
             {{ activeTier }}
         </div>

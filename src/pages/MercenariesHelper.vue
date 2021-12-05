@@ -66,6 +66,7 @@
                     :mercName="highlightedMercName"
                     :mercenary="highlightedMerc"
                     :activeMerc="collection[highlightedMercName]"
+                    :taskRewards="taskRewards"
                     @decrementTasksCompleted="decrementTasksCompleted"
                     @incrementTasksCompleted="incrementTasksCompleted"
                     @closeMercDetails="activateMerc(null)"
@@ -98,6 +99,8 @@
 <script>
 import mercjson from "~/store/modules/mercenaries.json";
 import colljson from "~/store/modules/collection.json";
+import taskRewardsJson from "~/store/modules/taskrewards.json";
+
 import MercenaryCard from "~/components/MercenaryCard.vue";
 import MercenaryDetails from "~/components/MercenaryDetails.vue";
 import { mapState } from "vuex";
@@ -106,6 +109,9 @@ export default {
     data: () => ({
         highlightedMercName: null,
         message: "",
+        taskRewards: {
+            type: Array,
+        }
     }),
     components: {
         MercenaryCard,
@@ -207,6 +213,7 @@ export default {
         if (Object.keys(this.collection).length === 0) {
             this.$store.commit("setCollection", colljson.collection);
         }
+        this.taskRewards = taskRewardsJson.rewards;
     },
 };
 </script>

@@ -36,7 +36,7 @@
                     >
                         {{ mercenaryAttack }}
                     </div>
-                    <div class="flex-grow text-center">{{ mercenary.race }}</div>
+                    <div class="flex-grow text-center sm:text-sm md:text-xl">{{ mercenary.race }}</div>
                     <div
                         class="
                             health-value
@@ -57,43 +57,16 @@
                     {{ abilitiesMaxCost + equipmentMaxCost }}
                     <img src="/images/mercs/mercenary-coin.png" class="h-6 inline" />
                 </div>
-                <div class="text-base rounded bg-gray-50">
-                    <div class="flex">
-                        <div
-                            class="flex-1"
-                            v-if="activeMerc.tasksCompleted < mercenary.tasks.length"
-                        >
-                            Next Task: #{{ activeMerc.tasksCompleted + 1 }}
-                        </div>
-                        <div class="flex-1" v-else>Tasks Complete!</div>
-                        <UpDownButtons
-                            :showDecrement="activeMerc.tasksCompleted > 0"
-                            :showIncrement="activeMerc.tasksCompleted < mercenary.tasks.length"
-                            :upIcon="'check-circle'"
-                            :downIcon="'undo'"
-                            class="text-sm"
-                            @decrement="$emit('decrementTasksCompleted', mercName)"
-                            @increment="$emit('incrementTasksCompleted', mercName)"
-                        />
-                    </div>
-                    <template v-if="activeMerc.tasksCompleted < mercenary.tasks.length">
-                        <p class="font-semibold">
-                            {{ mercenary.tasks[activeMerc.tasksCompleted].name }}
-                        </p>
-                        <p>{{ mercenary.tasks[activeMerc.tasksCompleted].description }}</p>
-                        <p>Rewards:</p>
-                        <ul class="list-disc list-inside">
-                            <li
-                                v-for="(reward, index) in taskRewards(
-                                    mercenary.tasks[activeMerc.tasksCompleted].rewards
-                                )"
-                                :key="index"
-                            >
-                                {{ reward }}
-                            </li>
-                        </ul>
-                    </template>
-                </div>
+                <TaskTracker
+                    :taskRewards="taskRewards"
+                    :mercName="mercName"
+                    :tasks="mercenary.tasks"
+                    :tasksCompleted="activeMerc.tasksCompleted"
+                    :task2itemName="getItemRewardForTask(2)"
+                    :task7itemName="getItemRewardForTask(7)"
+                    @decrementTasksCompleted="$emit('decrementTasksCompleted', mercName)"
+                    @incrementTasksCompleted="$emit('incrementTasksCompleted', mercName)"
+                ></TaskTracker>
             </div>
             <div
                 class="sm:col-span-3 text-center mb-4 text-lg pt-1 pb-2 rounded"
@@ -149,6 +122,7 @@
 <script>
 import AbilityCard from "./AbilityCard.vue";
 import ItemCard from "./ItemCard.vue";
+import TaskTracker from "./TaskTracker.vue";
 import UpDownButtons from "./UpDownButtons.vue";
 const abilityUpgradeCosts = [50, 125, 150, 150];
 const itemUpgradeCosts = [100, 150, 175];
@@ -166,6 +140,10 @@ export default {
         },
         mercName: {
             type: String,
+            required: true,
+        },
+        taskRewards: {
+            type: Array,
             required: true,
         },
     },
@@ -255,26 +233,17 @@ export default {
                 (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 ? 5 : 0)
             );
         },
-        taskRewards() {
-            return (taskRewards) => {
-                if (taskRewards instanceof Array) {
-                    return taskRewards.map((coins, index) => {
-                        if (isFinite(coins)) {
-                            return `${coins} ${index === 0 ? this.mercName : "Random"} Coins`;
-                        } else {
-                            return coins;
-                        }
-                    });
-                } else {
-                    return [taskRewards];
-                }
-            };
-        },
+        getItemRewardForTask(){
+            return (taskNumber) => {
+                return Object.entries(this.mercenary.equipment).find(item => item[1].unlock === `Task ${taskNumber}`)[0];
+            }
+        }
     },
     components: {
         AbilityCard,
         ItemCard,
         UpDownButtons,
+        TaskTracker
     },
 };
 </script>
