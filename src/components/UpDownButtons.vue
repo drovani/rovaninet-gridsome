@@ -3,11 +3,11 @@
         class="grid justify-center text-center text-xl sm:text-base"
         :class="{ 'grid-cols-3': $slots.default, 'grid-cols-2': !$slots.default }"
     >
-        <button @click="$emit('decrement')" :class="{ invisible: !showDecrement }">
+        <button @click="$emit('decrement')" class="px-0.5" :class="{ invisible: !showDecrement }">
             <app-icon :icon="['fas', downIcon]"></app-icon>
         </button>
         <slot />
-        <button @click="$emit('increment')" :class="{ invisible: !showIncrement }">
+        <button @click="$emit('increment')" class="px-0.5" :class="{ invisible: !showIncrement }">
             <app-icon :icon="['fas', upIcon]"></app-icon>
         </button>
     </div>
