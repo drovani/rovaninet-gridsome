@@ -15,8 +15,8 @@
                 </button>
             </div>
             <UpDownButtons
-                :showDecrement="tierIndex > 0"
-                :showIncrement="item.tiers !== undefined && tierIndex < item.tiers.length - 1"
+                :showDecrement="item.tiers !== undefined && activeTier > 4 - item.tiers.length + 1"
+                :showIncrement="item.tiers !== undefined && activeTier < 4"
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
             >
@@ -55,11 +55,11 @@ export default {
     computed: {
         tierIndex: function () {
             if (this.item.tiers instanceof Array) {
-                return Math.min((this.activeTier ?? 1) - 1, this.item.tiers.length - 1);
+                return this.item.tiers.length - 4 + (this.activeTier - 1);
             } else return null;
         },
         activeTierInfo() {
-            return this.item.tiers[this.activeTier - 1];
+            return this.item.tiers[this.tierIndex];
         },
         description() {
             let desc = this.item.description;
