@@ -6,7 +6,7 @@ Vue.use(Vuex);
 
 const convertMercTiersToCollection = (obj, maxtiers) => {
   return Object.keys(obj).reduce(
-    (o, key) => ({ ...o, [key]: maxtiers - (obj[key].tiers?.length ?? 0) + 1 }),
+    (o, key) => ({ ...o, [key]: maxtiers - (obj[key].tiers?.length + 1 ?? 0) }),
     {}
   );
 };
@@ -46,11 +46,11 @@ export default new Vuex.Store({
           itemEquipped: "",
           abilities: convertMercTiersToCollection(
             state.mercenaries[name].abilities,
-            5
+            ABILITY_MAX_TIER
           ),
           equipment: convertMercTiersToCollection(
             state.mercenaries[name].equipment,
-            4
+            ITEM_MAX_TIER
           ),
         };
         state.collection = {

@@ -59,7 +59,7 @@ export default {
         },
         itemEquippedTier: {
             type: Object,
-            required: false
+            required: false,
         },
     },
     emits: {
@@ -103,14 +103,14 @@ export default {
                     };
                     desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
                 } else {
-                    // {string}
+                    // Found {string}
                     if (this.itemEquippedTier?.modifier?.description?.[i]) {
                         // replace {string} with modifier
                         desc = desc.replace(
                             matches[i][0],
                             this.itemEquippedTier.modifier.description[i]
                         );
-                    } else if (this.activeTierInfo.description[i]) {
+                    } else if (this.activeTierInfo.description?.[i]) {
                         // replace {string} with active tier replacement
                         desc = desc.replace(matches[i][0], this.activeTierInfo.description[i]);
                     } else {

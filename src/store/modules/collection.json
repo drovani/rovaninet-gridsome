@@ -19,11 +19,11 @@
         "Anduin Wrynn": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 2,
+            "tasksCompleted": 4,
             "itemEquipped": "Ring of Purity",
             "abilities": {
                 "Penance": 3,
-                "Holy Nova": 2,
+                "Holy Nova": 3,
                 "Holy Word: Salvation": 1
             },
             "equipment": {
@@ -46,6 +46,38 @@
                 "Cindercore Staff": 2,
                 "Searing Pendant": 4,
                 "Circlet of Flame": 2
+            }
+        },
+        "Baron Geddon": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "Molten Blade",
+            "abilities": {
+                "Heating Up": 3,
+                "Inferno": 5,
+                "Living Bomb": 2
+            },
+            "equipment": {
+                "Molten Blade": 2,
+                "Mark of Conflagration": 1,
+                "Burning Bracers": 4
+            }
+        },
+        "Blademaster Samuro": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 9,
+            "itemEquipped": "Burning Blade",
+            "abilities": {
+                "Double Strike": 5,
+                "Mirror Image": 5,
+                "Whirling Blade": 5
+            },
+            "equipment": {
+                "Honed Blade": 3,
+                "Burning Blade": 4,
+                "Sash of Illusion": 4
             }
         }
     }

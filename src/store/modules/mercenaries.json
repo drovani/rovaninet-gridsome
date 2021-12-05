@@ -1105,6 +1105,241 @@
                     "quote": "I will leave nothing but ash in my wake."
                 }
             ]
+        },
+        "Blademaster Samuro": {
+            "role": "Fighter",
+            "rarity": "Rare",
+            "race": "Orc",
+            "attack": 10,
+            "health": 66,
+            "abilities": {
+                "Double Strike": {
+                    "unlock": 1,
+                    "description": "Attack an enemy. If it was damaged this turn, gain +{0} Attack and Attack it again.",
+                    "speed": 4,
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Mirror Image": {
+                    "unlock": 5,
+                    "description": "Choose an enemy. Summon {a copy} of this Merc that Attack{s} it and die{s} as the end of the turn.",
+                    "speed": 9,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -4
+                        },
+                        {
+                            "speed": -5
+                        },
+                        {
+                            "speed": -6
+                        }
+                    ]
+                },
+                "Whirling Blade": {
+                    "unlock": 15,
+                    "description": "Deal {0} damage to all enemies. Gain Immune this turn.",
+                    "speed": 5,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Honed Blade": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Whirling Blade",
+                    "description": "Whirling Blade does {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Burning Blade": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: Whenever this Merc Attacks, gain {stats}.",
+                    "tiers": [
+                        {
+                            "description": "+1 Attack"
+                        },
+                        {
+                            "description": "+2 Attack"
+                        },
+                        {
+                            "description": "+2/+1"
+                        },
+                        {
+                            "description": "+2/+2"
+                        }
+                    ]
+                },
+                "Sash of Illusion": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Mirror Image",
+                    "description": "Mirror Image summons an extra copy of this Merc.",
+                    "modifier": {
+                        "description": [
+                            "2 copies",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "For My Clan",
+                    "description": "Deal 40 damage using Double Strike.",
+                    "quote": "My blade seeks vengeance for the fall of the Burning Blade, my clan…"
+                },
+                {
+                    "name": "Whirling Blade",
+                    "description": "Deal 70 damage using Mirror Image.",
+                    "quote": "I will see that these fools atone for their deeds."
+                },
+                {
+                    "name": "Doppelganger",
+                    "description": "Use Whirling Blade 10 times.",
+                    "quote": "I cannot tell you all that has passed, only that these ones must perish."
+                },
+                {
+                    "name": "The Burning Blade",
+                    "description": "Deal 150 damage.",
+                    "quote": "If I do this, I will be one step closer to peace."
+                },
+                {
+                    "name": "Focus and Discipline",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I must face these foes and teach them the meaning of vengeance."
+                },
+                {
+                    "name": "Death before Disgrace",
+                    "description": "Destroy 40 minions.",
+                    "quote": "This one will be more difficult."
+                },
+                {
+                    "name": "Glory for the Horde",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Even a Blademaster would break a sweat doing this one."
+                },
+                {
+                    "name": "The Fire Within",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "The impudence of my enemies never ceases."
+                },
+                {
+                    "name": "Mark of the Warrior",
+                    "description": "Gain 75 Attack using Double Strike.",
+                    "quote": "The Burning Blade would make short work of them, but instead it falls to me."
+                },
+                {
+                    "name": "I Serve the Warchief",
+                    "description": "Deal 270 damage using Double Strike.",
+                    "quote": "I will fight well and taste glory!"
+                },
+                {
+                    "name": "Vengeance for my Clan",
+                    "description": "Deal 450 damage.",
+                    "quote": "I will see that these fools atone for their deeds."
+                },
+                {
+                    "name": "Sacrifice for my Clan",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "If I do this, I will be one step closer to peace."
+                },
+                {
+                    "name": "They Die Well",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I cannot tell you all that has passed, only that these ones must perish."
+                },
+                {
+                    "name": "Disciple of the Blade",
+                    "description": "Deal 490 damage using Mirror Image.",
+                    "quote": "This one will be more difficult."
+                },
+                {
+                    "name": "The Honor of the Blade",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I must face these foes and teach them the meaning of vengeance."
+                },
+                {
+                    "name": "The Road to Redemption",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Even a Blademaster would break a sweat doing this one."
+                },
+                {
+                    "name": "We Fight as One",
+                    "description": "Destroy 40 enemies using Whirling Blade.",
+                    "quote": "The impudence of my enemies never ceases."
+                },
+                {
+                    "name": "Spirits bring me Honor",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "The Burning Blade would make short work of them, but instead it falls to me."
+                }
+            ]
         }
     }
 }

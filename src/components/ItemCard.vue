@@ -6,9 +6,7 @@
         </div>
         <template v-if="showDetails">
             <div class="flex rounded px-2" :class="{ 'bg-yellow-100': !isUnlocked }">
-                <div class="flex-grow">
-                    Unlock: {{ item.unlock }}
-                </div>
+                <div class="flex-grow">Unlock: {{ item.unlock }}</div>
                 <button @click.prevent="$emit('toggleItemEquipped')">
                     <app-icon
                         :icon="['fas', 'thumbtack']"
@@ -64,23 +62,32 @@ export default {
             return this.item.tiers[this.activeTier - 1];
         },
         description() {
+            let desc = this.item.description;
             if (this.item.tiers instanceof Array) {
-                let desc = this.item.description;
-                const regex = new RegExp(/\{(\d+)\}/, "g");
+                const regex = new RegExp(/\{(\w+)\}/, "g");
                 const matches = [...this.item.description.matchAll(regex)];
                 for (let i = 0; i < matches.length; i++) {
-                    const baseValue = Number(matches[i][1]);
-                    const tierValue = Number(
-                        this.activeTierInfo.description instanceof Array
-                            ? this.activeTierInfo.description[i]
-                            : this.activeTierInfo.description
-                    );
-                    desc = desc.replace(matches[i][0], baseValue + tierValue);
+                    if (isFinite(matches[i][1])) {
+                        // Found {0}
+                        const baseValue = Number(matches[i][1]);
+                        const tierValue = Number(
+                            this.activeTierInfo.description instanceof Array
+                                ? this.activeTierInfo.description[i]
+                                : this.activeTierInfo.description
+                        );
+                        desc = desc.replace(matches[i][0], baseValue + tierValue);
+                    } else {
+                        // Found {string}
+                        desc = desc.replace(
+                            matches[i][0],
+                            this.activeTierInfo.description instanceof Array
+                                ? this.activeTierInfo.description[i]
+                                : this.activeTierInfo.description
+                        );
+                    }
                 }
-                return desc;
-            } else {
-                return this.item.description;
             }
+            return desc.replaceAll("{", "").replaceAll("}", "");
         },
         displayTier() {
             return this.activeTier || 5 - (this.item.tiers?.length ?? 1);
