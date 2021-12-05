@@ -7,7 +7,10 @@
             'bg-green-100': ability.spell_school === 'Nature',
         }"
     >
-        <div class="h-10 text-center text-xl sm:text-lg">
+        <div
+            class="h-12 text-center text-base mb-1"
+            :class="{ 'text-base': !showDetails, 'text-xl': showDetails }"
+        >
             <slot />
             {{ activeTier }}
         </div>
@@ -56,6 +59,7 @@ export default {
         },
         itemEquippedTier: {
             type: Object,
+            required: false
         },
     },
     emits: {
@@ -80,7 +84,8 @@ export default {
             const regex = new RegExp(/\{(\w+)\}/, "g");
             const matches = [...this.ability.description.matchAll(regex)];
             for (let i = 0; i < matches.length; i++) {
-                if (isFinite(matches[i][1])) { // Found {0}
+                if (isFinite(matches[i][1])) {
+                    // Found {0}
                     const baseValue = Number(matches[i][1]);
                     const tierValue = Number(
                         this.activeTierInfo.description instanceof Array
@@ -97,7 +102,8 @@ export default {
                         }
                     };
                     desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
-                } else { // {string}
+                } else {
+                    // {string}
                     if (this.itemEquippedTier?.modifier?.description?.[i]) {
                         // replace {string} with modifier
                         desc = desc.replace(
