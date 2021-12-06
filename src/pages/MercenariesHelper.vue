@@ -107,7 +107,7 @@ export default {
         message: "",
         taskRewards: {
             type: Array,
-        }
+        },
     }),
     components: {
         MercenaryCard,
@@ -132,7 +132,11 @@ export default {
             if (mercName !== null) {
                 this.$store.commit("activateMerc", { name: mercName });
             }
-            this.highlightedMercName = mercName;
+            if (this.highlightedMercName === mercName) {
+                this.highlightedMercName = null;
+            } else {
+                this.highlightedMercName = mercName;
+            }
         },
         addToCollection(mercName) {
             this.$store.commit("addToCollection", {

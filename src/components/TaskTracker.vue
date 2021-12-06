@@ -11,6 +11,7 @@
                 :upIcon="'check-circle'"
                 :downIcon="'undo'"
                 class="text-sm"
+                style="direction: rtl"
                 @decrement="$emit('decrementTasksCompleted', mercName)"
                 @increment="$emit('incrementTasksCompleted', mercName)"
             />

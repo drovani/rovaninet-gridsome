@@ -1105,6 +1105,1173 @@
                     "quote": "I will leave nothing but ash in my wake."
                 }
             ]
+        },
+        "Blademaster Samuro": {
+            "role": "Fighter",
+            "rarity": "Rare",
+            "race": "Orc",
+            "attack": 10,
+            "health": 66,
+            "abilities": {
+                "Double Strike": {
+                    "unlock": 1,
+                    "description": "Attack an enemy. If it was damaged this turn, gain +{0} Attack and Attack it again.",
+                    "speed": 4,
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Mirror Image": {
+                    "unlock": 5,
+                    "description": "Choose an enemy. Summon {a copy} of this Merc that Attack{s} it and die{s} as the end of the turn.",
+                    "speed": 9,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -4
+                        },
+                        {
+                            "speed": -5
+                        },
+                        {
+                            "speed": -6
+                        }
+                    ]
+                },
+                "Whirling Blade": {
+                    "unlock": 15,
+                    "description": "Deal {0} damage to all enemies. Gain Immune this turn.",
+                    "speed": 5,
+                    "cooldown": 1,
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Honed Blade": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Whirling Blade",
+                    "description": "Whirling Blade does {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Burning Blade": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: Whenever this Merc Attacks, gain {stats}.",
+                    "tiers": [
+                        {
+                            "description": "+1 Attack"
+                        },
+                        {
+                            "description": "+2 Attack"
+                        },
+                        {
+                            "description": "+2/+1"
+                        },
+                        {
+                            "description": "+2/+2"
+                        }
+                    ]
+                },
+                "Sash of Illusion": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Mirror Image",
+                    "description": "Mirror Image summons an extra copy of this Merc.",
+                    "modifier": {
+                        "description": [
+                            "2 copies",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "For My Clan",
+                    "description": "Deal 40 damage using Double Strike.",
+                    "quote": "My blade seeks vengeance for the fall of the Burning Blade, my clan…"
+                },
+                {
+                    "name": "Whirling Blade",
+                    "description": "Deal 70 damage using Mirror Image.",
+                    "quote": "I will see that these fools atone for their deeds."
+                },
+                {
+                    "name": "Doppelganger",
+                    "description": "Use Whirling Blade 10 times.",
+                    "quote": "I cannot tell you all that has passed, only that these ones must perish."
+                },
+                {
+                    "name": "The Burning Blade",
+                    "description": "Deal 150 damage.",
+                    "quote": "If I do this, I will be one step closer to peace."
+                },
+                {
+                    "name": "Focus and Discipline",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I must face these foes and teach them the meaning of vengeance."
+                },
+                {
+                    "name": "Death before Disgrace",
+                    "description": "Destroy 40 minions.",
+                    "quote": "This one will be more difficult."
+                },
+                {
+                    "name": "Glory for the Horde",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Even a Blademaster would break a sweat doing this one."
+                },
+                {
+                    "name": "The Fire Within",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "The impudence of my enemies never ceases."
+                },
+                {
+                    "name": "Mark of the Warrior",
+                    "description": "Gain 75 Attack using Double Strike.",
+                    "quote": "The Burning Blade would make short work of them, but instead it falls to me."
+                },
+                {
+                    "name": "I Serve the Warchief",
+                    "description": "Deal 270 damage using Double Strike.",
+                    "quote": "I will fight well and taste glory!"
+                },
+                {
+                    "name": "Vengeance for my Clan",
+                    "description": "Deal 450 damage.",
+                    "quote": "I will see that these fools atone for their deeds."
+                },
+                {
+                    "name": "Sacrifice for my Clan",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "If I do this, I will be one step closer to peace."
+                },
+                {
+                    "name": "They Die Well",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I cannot tell you all that has passed, only that these ones must perish."
+                },
+                {
+                    "name": "Disciple of the Blade",
+                    "description": "Deal 490 damage using Mirror Image.",
+                    "quote": "This one will be more difficult."
+                },
+                {
+                    "name": "The Honor of the Blade",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I must face these foes and teach them the meaning of vengeance."
+                },
+                {
+                    "name": "The Road to Redemption",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Even a Blademaster would break a sweat doing this one."
+                },
+                {
+                    "name": "We Fight as One",
+                    "description": "Destroy 40 enemies using Whirling Blade.",
+                    "quote": "The impudence of my enemies never ceases."
+                },
+                {
+                    "name": "Spirits bring me Honor",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "The Burning Blade would make short work of them, but instead it falls to me."
+                }
+            ]
+        },
+        "Blink Fox": {
+            "role": "Caster",
+            "rarity": "Rare",
+            "race": "Beast",
+            "attack": 10,
+            "health": 79,
+            "abilities": {
+                "Arcane Fling": {
+                    "unlock": 1,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage. Arcane Combo: Deal {0} damage instead.",
+                    "speed": 5,
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                17
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                18
+                            ]
+                        }
+                    ]
+                },
+                "Mana Blink": {
+                    "unlock": 5,
+                    "spell_school": "Arcane",
+                    "description": "Refresh your characters' abilities. Their next ability is ({0}) Speed faster.",
+                    "cooldown": 2,
+                    "speed": 10,
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Mind Thief": {
+                    "unlock": 15,
+                    "description": "This is always a copy of {target} and is ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "a random enemy ability",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                "a random enemy ability",
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                "a random enemy ability",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                "a random enemy ability",
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                "a random enemy ability",
+                                5
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Arcane Fang": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Arcane Fling",
+                    "description": "Arcane Fling does {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Mana Runes": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Mana Blink",
+                    "description": "Mana Blink makes your characters' next ability an additional ({0}) Speed faster",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        }
+                    ]
+                },
+                "Tenth Tail": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Mind Thief",
+                    "description": "Mind Thief always steals the last enemy ability cast last turn. It has no Cooldown",
+                    "modifier": {
+                        "description": [
+                            "the last enemy ability played last turn. It has no cooldown",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Task 1: Speed and Illusions",
+                    "description": "Deal 80 damage using Arcane Fling.",
+                    "quote": "<With my speed, they see the illusion of where I was.>"
+                },
+                {
+                    "name": "Task 2: Arcane Powers",
+                    "description": "Deal 225 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "<Blink and I'll be gone. Blink again and I return.>"
+                },
+                {
+                    "name": "Task 3: Now It Is Mine",
+                    "description": "Use Mind Thief 12 times.",
+                    "quote": "<This seems like fun, I think I'll borrow it!>"
+                },
+                {
+                    "name": "Task 4: My Teeth are Sharp",
+                    "description": "Deal 150 damage.",
+                    "quote": "<Now you see me! Now you don't!>"
+                },
+                {
+                    "name": "Task 5: Protecting the Forest",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<We must protect the forest and those who dwell in it.>"
+                },
+                {
+                    "name": "Task 6: Bark and Bite",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<There's bite to my bark.>"
+                },
+                {
+                    "name": "Task 7: Try to Catch Me",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<They may be strong, but they must catch me first.>"
+                },
+                {
+                    "name": "Task 8: Seeing the Spirits",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "<A brief rest before we continue this adventure.>"
+                },
+                {
+                    "name": "Task 9: Speed for All",
+                    "description": "Increase the speed of friendly abilities by a total of 10.",
+                    "quote": ""
+                },
+                {
+                    "name": "Task 10: A Quick Fling",
+                    "description": "Deal 450 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "<I've never really tested my true power. This seems as good a time as any.>"
+                },
+                {
+                    "name": "Task 11: From Here to There",
+                    "description": "Deal 450 damage.",
+                    "quote": "<With my speed, they see the illusion of where I was.>"
+                },
+                {
+                    "name": "Task 12: Counterpunch",
+                    "description": "Deal 450 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "<This seems like fun, I think I'll borrow it!>"
+                },
+                {
+                    "name": "Task 13: Strength vs Speed",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<They may be strong, but they must catch me first.>"
+                },
+                {
+                    "name": "Task 14: Zoom!",
+                    "description": "Increase the speed of a friendly ability by (5) in one turn 15 times.",
+                    "quote": ""
+                },
+                {
+                    "name": "Task 15: Arcane Speed",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<We must protect the forest and those who dwell in it.>"
+                },
+                {
+                    "name": "Task 16: Can they Catch Me?",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "<There's bite to my bark.>"
+                },
+                {
+                    "name": "Task 17: Fling Me at Them",
+                    "description": "Deal 900 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "<Blink and I'll be gone. Blink again and I return.>"
+                },
+                {
+                    "name": "Task 18: They call me Blink Fox",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<A brief rest before we continue this adventure.>                "
+                }
+            ]
+        },
+        "Brightwing": {
+            "role": "Caster",
+            "rarity": "Epic",
+            "race": "Dragon",
+            "attack": 6,
+            "health": 72,
+            "abilities": {
+                "Faerie Breath": {
+                    "unlock": 1,
+                    "spell_school": "Nature",
+                    "speed": 3,
+                    "description": "Deal {0} damage. Give a random friendly Merc on your bench +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Pixie Dust": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Restore {0} Health to all your characters.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 16
+                        },
+                        {
+                            "description": 17
+                        },
+                        {
+                            "description": 18
+                        }
+                    ]
+                },
+                "Phase Shift": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Retore {0} Health to this Merc and swap it with the highest Health Merc from your bench.",
+                    "tiers": [
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 21
+                        },
+                        {
+                            "description": 23
+                        },
+                        {
+                            "description": 25
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Brightwing's Necklace": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Faerie Breath",
+                    "description": "Faerie Breath gives an additional +{0} health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Brightwing's Ring": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Phase Shift",
+                    "description": "Phase Shift restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": 10
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "description": 15
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "description": 20
+                            }
+                        },
+                        {
+                            "description": 25,
+                            "modifier": {
+                                "description": 25
+                            }
+                        }
+                    ]
+                },
+                "Pixie's Pouch": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Pixie Dust",
+                    "description": "Pixie Dust restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Hello, Friend",
+                    "description": "Deal 70 damage using Faerie Breath.",
+                    "quote": "Ooo, look at you! Can you be friend? Friends prove selves by doing nice things!"
+                },
+                {
+                    "name": "Nice, Friendly Things",
+                    "description": "Restore 215 Health using Pixie Dust.",
+                    "quote": "Brightwing want to do more nice, friendly things. Do thing now!"
+                },
+                {
+                    "name": "Phase Shifting",
+                    "description": "Use Phase Shift 10 times.",
+                    "quote": "Please help Brightwing do this."
+                },
+                {
+                    "name": "Do it Together",
+                    "description": "Deal 150 damage.",
+                    "quote": "See this thing? It is very important for being friends with Brightwing."
+                },
+                {
+                    "name": "Brightwing is Strong!",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Brightwing need more friends. Go do this with Brightwing if you need friends too."
+                },
+                {
+                    "name": "Squish, Squash!",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Do you enjoy brutally defeating enemies? Brightwing does!"
+                },
+                {
+                    "name": "Defeat the Bad Ones",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I only ask you to do good things. Never bad things. No."
+                },
+                {
+                    "name": "Time for Play",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "Sometimes things are hard and mean. But Brightwing ask for them anyway."
+                },
+                {
+                    "name": "Helping Friends",
+                    "description": "Give 60 Health or Attack to friendly Mercenaries.",
+                    "quote": "This will make Brightwing very happy!"
+                },
+                {
+                    "name": "Fight Time!",
+                    "description": "Deal 120 damage using Faerie Breath.",
+                    "quote": "We are becoming very nice friends. Keep working hard!"
+                },
+                {
+                    "name": "Let us be Friends",
+                    "description": "Heal 225 damage.",
+                    "quote": "Brightwing want to do more nice, friendly things. Do thing now!"
+                },
+                {
+                    "name": "Play with Friends",
+                    "description": "Deal 450 damage with Dragons with a team that includes this Mercenary.",
+                    "quote": "Please help Brightwing do this."
+                },
+                {
+                    "name": "Many Meanies",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "See this thing? It is very important for being friends with Brightwing."
+                },
+                {
+                    "name": "Faerie Fire",
+                    "description": "Deal 450 damage using Faerie Breath.",
+                    "quote": "Do you enjoy brutally defeating enemies? Brightwing does!"
+                },
+                {
+                    "name": "Bountiful Baddies",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Brightwing need more friends. Go do this with Brightwing if you need friends too."
+                },
+                {
+                    "name": "No Hurting Friends",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Sometimes things are hard and mean. But Brightwing ask for them anyway."
+                },
+                {
+                    "name": "Healing for Friends",
+                    "description": "Heal 900 damage.",
+                    "quote": "I only ask you to do good things. Never bad things. No."
+                },
+                {
+                    "name": "Ouchie Time!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "We are becoming very nice friends. Keep working hard!"
+                }
+            ]
+        },
+        "Bru'kan": {
+            "race": "Troll",
+            "rarity": "Rare",
+            "role": "Caster",
+            "health": 76,
+            "attack": 7,
+            "abilities": {
+                "Lightning Bolt": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Gain +{0} Nature Damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Muddy Footing": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to a character. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                6
+                            ]
+                        }
+                    ]
+                },
+                "Chain Lightning": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school":"Nature",
+                    "description": "Deal {0} damage to an enemy. Repeat this on {0} additional adjacent enem{y}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Lightning Rod": {
+                    "unlock": "Task 2",
+                    "affects": "Chain Lightning",
+                    "position": "right",
+                    "description": "Chain Lightning repeats on {0} additional enem{y}, but has +{0} Cooldown.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                "y",
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    1,
+                                    "ies"
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                "ies",
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2,
+                                    "ies"
+                                ],
+                                "cooldown": 1
+                            }
+                        }
+                    ]
+                },
+                "Crackling Band": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Lightning Bolt",
+                    "description": "Lightning Bolt deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Timberfrost Totem": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Mudding Footing",
+                    "description": "Muddy Footing slows ({0}) Speed more.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "A Little Lightning",
+                    "description": "Deal 55 damage using Lightning Bolt.",
+                    "quote": "Dese old bones know when dere's battle on da horizon…"
+                },
+                {
+                    "name": "Lightning is my Axe",
+                    "description": "Deal 35 damage using Muddy Footing.",
+                    "quote": "Sometimes I sense da enemies before they come. Makes it easier dat way."
+                },
+                {
+                    "name": "Blasting my Foes",
+                    "description": "Deal 60 damage using Chain Lightning.",
+                    "quote": "My foes will cower before da fury of da elements!"
+                },
+                {
+                    "name": "Elements Aid Me",
+                    "description": "Deal 150 damage.",
+                    "quote": "I can sense a storm comin' for dese ones…"
+                },
+                {
+                    "name": "A Simple Shaman",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I'll show dem not to mess with me."
+                },
+                {
+                    "name": "Bring the Thunder",
+                    "description": "Destroy 40 minions.",
+                    "quote": "If they don't listen to me, they can listen to da thunder I bring!"
+                },
+                {
+                    "name": "Listen for the Thunder",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "There's a whole lotta things dat need to be zapped."
+                },
+                {
+                    "name": "Study the Elements",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I became a shaman to overcome all da odds. And to get the best choice of snacks."
+                },
+                {
+                    "name": "Nature's Blessing",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "Da spirits guide me to do this… they better not be playing a joke this time."
+                },
+                {
+                    "name": "Mud on your Feet",
+                    "description": "Deal 120 damage using Muddy Footing.",
+                    "quote": "Dis one might take some discipline."
+                },
+                {
+                    "name": "Guided by the Elements",
+                    "description": "Deal 450 damage.",
+                    "quote": "Sometimes I sense da enemies before they come. Makes it easier dat way."
+                },
+                {
+                    "name": "Big Bolt of Lightning",
+                    "description": "Deal 15 or more damage in one turn using Lightning Bolt 10 times.",
+                    "quote": "My foes will cower before da fury of da elements!"
+                },
+                {
+                    "name": "Rage of the Storm",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I can sense a storm comin' for dese ones…"
+                },
+                {
+                    "name": "Caught in the Morass",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "I'll show dem not to mess with me."
+                },
+                {
+                    "name": "Following the Path",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "If they don't listen to me, they can listen to da thunder I bring!"
+                },
+                {
+                    "name": "Bringing Balance",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "There's a whole lotta things dat need to be zapped."
+                },
+                {
+                    "name": "A Little Electricity",
+                    "description": "Deal 20 or more damage in one turn using Muddy Footing 10 times.",
+                    "quote": "I became a shaman to overcome all da odds. And to get the best choice of snacks."
+                },
+                {
+                    "name": "The Elements are Chaos",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Da spirits guide me to do this… they better not be playing a joke this time."
+                }
+            ]
         }
     }
 }

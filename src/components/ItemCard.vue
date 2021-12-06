@@ -6,9 +6,7 @@
         </div>
         <template v-if="showDetails">
             <div class="flex rounded px-2" :class="{ 'bg-yellow-100': !isUnlocked }">
-                <div class="flex-grow">
-                    Unlock: {{ item.unlock }}
-                </div>
+                <div class="flex-grow">Unlock: {{ item.unlock }}</div>
                 <button @click.prevent="$emit('toggleItemEquipped')">
                     <app-icon
                         :icon="['fas', 'thumbtack']"
@@ -17,8 +15,8 @@
                 </button>
             </div>
             <UpDownButtons
-                :showDecrement="tierIndex > 0"
-                :showIncrement="item.tiers !== undefined && tierIndex < item.tiers.length - 1"
+                :showDecrement="item.tiers !== undefined && activeTier > 4 - item.tiers.length + 1"
+                :showIncrement="item.tiers !== undefined && activeTier < 4"
                 @decrement="$emit('decrementActiveTier')"
                 @increment="$emit('incrementActiveTier')"
             >
@@ -57,30 +55,39 @@ export default {
     computed: {
         tierIndex: function () {
             if (this.item.tiers instanceof Array) {
-                return Math.min((this.activeTier ?? 1) - 1, this.item.tiers.length - 1);
+                return this.item.tiers.length - 4 + (this.activeTier - 1);
             } else return null;
         },
         activeTierInfo() {
-            return this.item.tiers[this.activeTier - 1];
+            return this.item.tiers[this.tierIndex];
         },
         description() {
+            let desc = this.item.description;
             if (this.item.tiers instanceof Array) {
-                let desc = this.item.description;
-                const regex = new RegExp(/\{(\d+)\}/, "g");
+                const regex = new RegExp(/\{(\w+)\}/, "g");
                 const matches = [...this.item.description.matchAll(regex)];
                 for (let i = 0; i < matches.length; i++) {
-                    const baseValue = Number(matches[i][1]);
-                    const tierValue = Number(
-                        this.activeTierInfo.description instanceof Array
-                            ? this.activeTierInfo.description[i]
-                            : this.activeTierInfo.description
-                    );
-                    desc = desc.replace(matches[i][0], baseValue + tierValue);
+                    if (isFinite(matches[i][1])) {
+                        // Found {0}
+                        const baseValue = Number(matches[i][1]);
+                        const tierValue = Number(
+                            this.activeTierInfo.description instanceof Array
+                                ? this.activeTierInfo.description[i]
+                                : this.activeTierInfo.description
+                        );
+                        desc = desc.replace(matches[i][0], baseValue + tierValue);
+                    } else {
+                        // Found {string}
+                        desc = desc.replace(
+                            matches[i][0],
+                            this.activeTierInfo.description instanceof Array
+                                ? this.activeTierInfo.description[i]
+                                : this.activeTierInfo.description
+                        );
+                    }
                 }
-                return desc;
-            } else {
-                return this.item.description;
             }
+            return desc.replaceAll("{", "").replaceAll("}", "");
         },
         displayTier() {
             return this.activeTier || 5 - (this.item.tiers?.length ?? 1);

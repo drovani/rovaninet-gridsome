@@ -224,13 +224,13 @@ export default {
         mercenaryAttack() {
             return (
                 this.mercenary.attack +
-                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 ? 1 : 0)
+                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 && this.activeMerc.tasksCompleted >= 7 ? 1 : 0)
             );
         },
         mercenaryHealth() {
             return (
                 this.mercenary.health +
-                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 ? 5 : 0)
+                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 && this.activeMerc.tasksCompleted >= 7  ? 5 : 0)
             );
         },
         getItemRewardForTask(){
