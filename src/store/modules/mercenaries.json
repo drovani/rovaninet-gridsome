@@ -1623,6 +1623,311 @@
                     "quote": "<A brief rest before we continue this adventure.>                "
                 }
             ]
+        },
+        "Brightwing": {
+            "role": "Caster",
+            "rarity": "Epic",
+            "race": "Dragon",
+            "attack": 6,
+            "health": 72,
+            "abilities": {
+                "Faerie Breath": {
+                    "unlock": 1,
+                    "spell_school": "Nature",
+                    "speed": 3,
+                    "description": "Deal {0} damage. Give a random friendly Merc on your bench +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Pixie Dust": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Restore {0} Health to all your characters.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 16
+                        },
+                        {
+                            "description": 17
+                        },
+                        {
+                            "description": 18
+                        }
+                    ]
+                },
+                "Phase Shift": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Retore {0} Health to this Merc and swap it with the highest Health Merc from your bench.",
+                    "tiers": [
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 21
+                        },
+                        {
+                            "description": 23
+                        },
+                        {
+                            "description": 25
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Brightwing's Necklace": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Faerie Breath",
+                    "description": "Faerie Breath gives an additional +{0} health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Brightwing's Ring": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Phase Shift",
+                    "description": "Phase Shift restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": 10
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "description": 15
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "description": 20
+                            }
+                        },
+                        {
+                            "description": 25,
+                            "modifier": {
+                                "description": 25
+                            }
+                        }
+                    ]
+                },
+                "Pixie's Pouch": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Pixie Dust",
+                    "description": "Pixie Dust restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Hello, Friend",
+                    "description": "Deal 70 damage using Faerie Breath.",
+                    "quote": "Ooo, look at you! Can you be friend? Friends prove selves by doing nice things!"
+                },
+                {
+                    "name": "Nice, Friendly Things",
+                    "description": "Restore 215 Health using Pixie Dust.",
+                    "quote": "Brightwing want to do more nice, friendly things. Do thing now!"
+                },
+                {
+                    "name": "Phase Shifting",
+                    "description": "Use Phase Shift 10 times.",
+                    "quote": "Please help Brightwing do this."
+                },
+                {
+                    "name": "Do it Together",
+                    "description": "Deal 150 damage.",
+                    "quote": "See this thing? It is very important for being friends with Brightwing."
+                },
+                {
+                    "name": "Brightwing is Strong!",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Brightwing need more friends. Go do this with Brightwing if you need friends too."
+                },
+                {
+                    "name": "Squish, Squash!",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Do you enjoy brutally defeating enemies? Brightwing does!"
+                },
+                {
+                    "name": "Defeat the Bad Ones",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I only ask you to do good things. Never bad things. No."
+                },
+                {
+                    "name": "Time for Play",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "Sometimes things are hard and mean. But Brightwing ask for them anyway."
+                },
+                {
+                    "name": "Helping Friends",
+                    "description": "Give 60 Health or Attack to friendly Mercenaries.",
+                    "quote": "This will make Brightwing very happy!"
+                },
+                {
+                    "name": "Fight Time!",
+                    "description": "Deal 120 damage using Faerie Breath.",
+                    "quote": "We are becoming very nice friends. Keep working hard!"
+                },
+                {
+                    "name": "Let us be Friends",
+                    "description": "Heal 225 damage.",
+                    "quote": "Brightwing want to do more nice, friendly things. Do thing now!"
+                },
+                {
+                    "name": "Play with Friends",
+                    "description": "Deal 450 damage with Dragons with a team that includes this Mercenary.",
+                    "quote": "Please help Brightwing do this."
+                },
+                {
+                    "name": "Many Meanies",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "See this thing? It is very important for being friends with Brightwing."
+                },
+                {
+                    "name": "Faerie Fire",
+                    "description": "Deal 450 damage using Faerie Breath.",
+                    "quote": "Do you enjoy brutally defeating enemies? Brightwing does!"
+                },
+                {
+                    "name": "Bountiful Baddies",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Brightwing need more friends. Go do this with Brightwing if you need friends too."
+                },
+                {
+                    "name": "No Hurting Friends",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Sometimes things are hard and mean. But Brightwing ask for them anyway."
+                },
+                {
+                    "name": "Healing for Friends",
+                    "description": "Heal 900 damage.",
+                    "quote": "I only ask you to do good things. Never bad things. No."
+                },
+                {
+                    "name": "Ouchie Time!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "We are becoming very nice friends. Keep working hard!"
+                }
+            ]
         }
     }
 }
