@@ -79,6 +79,22 @@
                 "Burning Blade": 4,
                 "Sash of Illusion": 4
             }
+        },
+        "Blink Fox": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "Arcane Fang",
+            "abilities": {
+                "Arcane Fling": 5,
+                "Mana Blink": 5,
+                "Mind Thief": 5
+            },
+            "equipment": {
+                "Arcane Fang": 4,
+                "Mana Runes": 4,
+                "Tenth Tail": 4
+            }
         }
     }
 }
