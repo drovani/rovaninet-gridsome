@@ -85,33 +85,44 @@ export default {
             const regex = new RegExp(/\{(\w+)\}/, "g");
             const matches = [...this.ability.description.matchAll(regex)];
             for (let i = 0; i < matches.length; i++) {
-                if (isFinite(matches[i][1])) {
+                if (!isNaN(matches[i][1])) {
                     // Found {0}
                     const baseValue = Number(matches[i][1]);
-                    const tierValue = Number(
-                        this.activeTierInfo.description instanceof Array
-                            ? this.activeTierInfo.description[i]
-                            : this.activeTierInfo.description
-                    );
-                    const itemValue = () => {
-                        if (!this.itemEquippedTier?.modifier?.description) {
-                            return 0;
-                        } else if (this.itemEquippedTier.modifier.description instanceof Array) {
-                            return this.itemEquippedTier.modifier.description[i];
-                        } else if (isFinite(this.itemEquippedTier.modifier.description)) {
-                            return this.itemEquippedTier.modifier.description;
+                    const tierValue = () => {
+                        if (Array.isArray(this.activeTierInfo.description)) {
+                            return Number(this.activeTierInfo.description[i]) || 0;
+                        } else {
+                            return Number(this.activeTierInfo.description) || 0;
                         }
                     };
-                    desc = desc.replace(matches[i][0], baseValue + tierValue + itemValue());
+                    const itemValue = () => {
+                        if (Array.isArray(this.itemEquippedTier?.modifier?.description)) {
+                            return Number(this.itemEquippedTier.modifier.description[i]) || 0;
+                        } else {
+                            return Number(this.itemEquippedTier?.modifier?.description) || 0;
+                        }
+                    };
+                    // console.debug({ baseValue, tierValue: tierValue(), itemValue: itemValue() });
+                    desc = desc.replace(matches[i][0], baseValue + tierValue() + itemValue());
                 } else {
                     // Found {string}
-                    if (this.itemEquippedTier?.modifier?.description?.[i]) {
+                    console.debug({
+                        match: matches[i],
+                        repl: this.activeTierInfo.description?.[i],
+                    });
+                    if (
+                        Array.isArray(this.itemEquippedTier?.modifier?.description) &&
+                        this.itemEquippedTier.modifier.description[i]
+                    ) {
                         // replace {string} with modifier
                         desc = desc.replace(
                             matches[i][0],
                             this.itemEquippedTier.modifier.description[i]
                         );
-                    } else if (this.activeTierInfo.description?.[i]) {
+                    } else if (
+                        Array.isArray(this.activeTierInfo.description) &&
+                        this.activeTierInfo.description[i]
+                    ) {
                         // replace {string} with active tier replacement
                         desc = desc.replace(matches[i][0], this.activeTierInfo.description[i]);
                     } else {
