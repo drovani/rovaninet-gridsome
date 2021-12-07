@@ -82,7 +82,7 @@ export default {
     computed: {
         description() {
             let desc = this.ability.description;
-            const regex = new RegExp(/\{(\w+)\}/, "g");
+            const regex = new RegExp(/\{([\w\d\s]+)\}/, "g");
             const matches = [...this.ability.description.matchAll(regex)];
             for (let i = 0; i < matches.length; i++) {
                 if (!isNaN(matches[i][1])) {
