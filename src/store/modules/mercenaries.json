@@ -2577,6 +2577,286 @@
                     "quote": "I may find this trying, but it will be worth it in the end."
                 }
             ]
+        },
+        "Cariel Roame": {
+            "race": "Human",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 10,
+            "health": 73,
+            "abilities": {
+                "Crusader's Blow": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attach an enemy. Deathblow: Restore {0} Health to {this Merc}.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 35
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                },
+                "Taunt": {
+                    "unlock": 5,
+                    "speed": 1,
+                    "description": "Restore {0} Health to this Merc and gain Taunt for {0} {turn}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1,
+                                "turn"
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                1,
+                                "turn"
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                2,
+                                "turns"
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3,
+                                "turns"
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3,
+                                "turns"
+                            ]
+                        }
+                    ]
+                },
+                "Seal of Light": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Choose a friendly character. Give it +{0} Attack and restore {0} Health.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                11
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                13
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Tome of Judgement": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Seal of Light",
+                    "description": "Seal of Light gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Tome of Light": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: While this Merc has Taunt, it has +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Hammer of Dawn": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Crusader's Blow",
+                    "description": "Crusader's Blow restores Health to your other characters as well.",
+                    "modifier": {
+                        "description": [
+                            0,
+                            "your party"
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Silver Hand Training",
+                    "description": "Deal 55 damage using Crusader's Blow.",
+                    "quote": "Delivering justice can be quite the heavy task, but it is mine to carry."
+                },
+                {
+                    "name": "Protecting the Weak",
+                    "description": "Use Taunt 10 times.",
+                    "quote": "I am here to keep the peace."
+                },
+                {
+                    "name": "Invoking the Light",
+                    "description": "Restore 120 Health using Crusader's Blow.",
+                    "quote": "They will answer to me."
+                },
+                {
+                    "name": "Where is my Sister?",
+                    "description": "Deal 150 damage.",
+                    "quote": "I won't get distracted from my purpose."
+                },
+                {
+                    "name": "Becoming a Paladin",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "When this is done, the world might be just a little bit better."
+                },
+                {
+                    "name": "Smite Evil as it Grows",
+                    "description": "Destroy 40 minions.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Righteous Fury",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "These ones must pay a heavy price."
+                },
+                {
+                    "name": "Rest in the Light",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Justice demands retribution. Especially in this case."
+                },
+                {
+                    "name": "Rally for Stormwind",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Nothing can change what already happened, but I can make this right."
+                },
+                {
+                    "name": "A Glorious Restoration",
+                    "description": "Restore 285 Health using Crusader's Blow.",
+                    "quote": "I won't stop until everything is atoned for."
+                },
+                {
+                    "name": "A Hammer finds Nails",
+                    "description": "Deal 450 damage.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Protecting my Friends",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I am here to keep the peace."
+                },
+                {
+                    "name": "Redemption for Tamsin",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Blessings of Faith",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "When this is done, the world might be just a little bit better."
+                },
+                {
+                    "name": "Friends Bolster Faith",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I won't get distracted from my purpose."
+                },
+                {
+                    "name": "Bulwark of Light",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "These ones must pay a heavy price."
+                },
+                {
+                    "name": "Reinforce the Faith",
+                    "description": "Deal 900 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Justice demands retribution. Especially in this case."
+                },
+                {
+                    "name": "A Quest Realized",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Delivering justice can be quite the heavy task, but it is mine to carry."
+                }
+            ]
         }
     }
 }
