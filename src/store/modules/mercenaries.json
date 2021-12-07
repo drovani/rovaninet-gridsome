@@ -2016,7 +2016,7 @@
                     "unlock": 15,
                     "speed": 6,
                     "cooldown": 1,
-                    "spell_school":"Nature",
+                    "spell_school": "Nature",
                     "description": "Deal {0} damage to an enemy. Repeat this on {0} additional adjacent enem{y}.",
                     "tiers": [
                         {
@@ -2270,6 +2270,311 @@
                     "name": "The Elements are Chaos",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "Da spirits guide me to do this… they better not be playing a joke this time."
+                }
+            ]
+        },
+        "Cairne Bloodhoof": {
+            "race": "Tauren",
+            "role": "Protector",
+            "rarity": "Epic",
+            "attack": 12,
+            "health": 77,
+            "abilities": {
+                "Ancestral Uppercut": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Restore {0} Health for each enemy that hasn't acted yet.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Endurance Aura": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Gain Taunt for {0} {turn}. Your characters are ({0}) Speed faster this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                "turn",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                "turn",
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                4
+                            ]
+                        }
+                    ]
+                },
+                "Earth Stomp": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to all enemies. They are ({0}) Speed slower next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Thunderous Sash": {
+                    "position": "middle",
+                    "affects": "Earth Stomp",
+                    "unlock": "Task 2",
+                    "description": "Earth Stomp deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Swift Totem": {
+                    "position": "left",
+                    "unlock": "Task 7",
+                    "affects": "Endurance Aura",
+                    "description": "Endurance Aura makes this Merc's next ability ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (1) Speed faster."
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (2) Speed faster."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (3) Speed faster."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Reincarnation": {
+                    "position": "right",
+                    "unlock": "Level 30",
+                    "description": "Passive: the first time this Merc dies, return it to life at {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "For our Ancestors",
+                    "description": "Restore 55 Health using Ancestral Uppercut.",
+                    "quote": "I have need of your assistance. Aid me, and I will see that you are well rewarded."
+                },
+                {
+                    "name": "Plainsrunner",
+                    "description": "Use Endurance Aura 10 times.",
+                    "quote": "Here is the next task I require."
+                },
+                {
+                    "name": "War Stomp",
+                    "description": "Deal 95 damage using Earth Stomp.",
+                    "quote": "We tauren appreciate diligence."
+                },
+                {
+                    "name": "What Must be Done",
+                    "description": "Deal 150 damage.",
+                    "quote": "There is always much to be done."
+                },
+                {
+                    "name": "The Earthmother Bides",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I must show my valor through this."
+                },
+                {
+                    "name": "Spirits Watch over Me",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Can I entrust this to you?"
+                },
+                {
+                    "name": "Strength will Prevail",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "This one will bring great honor."
+                },
+                {
+                    "name": "Our Way is Harmony",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I feel ready for a greater challenge."
+                },
+                {
+                    "name": "Protect our People",
+                    "description": "Destroy 45 enemies using Earth Stomp.",
+                    "quote": "I may find this trying, but it will be worth it in the end."
+                },
+                {
+                    "name": "Endure for my People",
+                    "description": "Deal 20 or more damage in one turn using Earth Stomp 5 times.",
+                    "quote": "I would be proud to achieve this."
+                },
+                {
+                    "name": "Trample the Enemy",
+                    "description": "Deal 450 damage.",
+                    "quote": "Here is the next task I require."
+                },
+                {
+                    "name": "The Earthmother is Near",
+                    "description": "Heal 100 damage.",
+                    "quote": "We tauren appreciate diligence."
+                },
+                {
+                    "name": "The Spirits Call",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "There is always much to be done."
+                },
+                {
+                    "name": "Crush them Underhoof",
+                    "description": "Deal 30 or more damage in one turn using Earth Stomp 20 times.",
+                    "quote": "I must show my valor through this."
+                },
+                {
+                    "name": "For my People",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Can I entrust this to you?"
+                },
+                {
+                    "name": "Spirits Guide Me",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "This one will bring great honor."
+                },
+                {
+                    "name": "For Thunder Bluff",
+                    "description": "Deal 900 damage using Earth Stomp.",
+                    "quote": "I feel ready for a greater challenge."
+                },
+                {
+                    "name": "High Chieftain",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I may find this trying, but it will be worth it in the end."
                 }
             ]
         }

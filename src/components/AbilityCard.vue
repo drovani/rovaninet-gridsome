@@ -106,10 +106,6 @@ export default {
                     desc = desc.replace(matches[i][0], baseValue + tierValue() + itemValue());
                 } else {
                     // Found {string}
-                    console.debug({
-                        match: matches[i],
-                        repl: this.activeTierInfo.description?.[i],
-                    });
                     if (
                         Array.isArray(this.itemEquippedTier?.modifier?.description) &&
                         this.itemEquippedTier.modifier.description[i]
