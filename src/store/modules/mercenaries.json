@@ -3034,25 +3034,45 @@
                         {
                             "description": 2,
                             "modifier": {
-                                "description": [0, "2/+",0,""]
+                                "description": [
+                                    0,
+                                    "2/+",
+                                    0,
+                                    ""
+                                ]
                             }
                         },
                         {
                             "description": 3,
                             "modifier": {
-                                "description": [0, "3/+",0,""]
+                                "description": [
+                                    0,
+                                    "3/+",
+                                    0,
+                                    ""
+                                ]
                             }
                         },
                         {
                             "description": 4,
                             "modifier": {
-                                "description": [0, "4/+",0,""]
+                                "description": [
+                                    0,
+                                    "4/+",
+                                    0,
+                                    ""
+                                ]
                             }
                         },
                         {
                             "description": 5,
                             "modifier": {
-                                "description": [0, "5/+",0,""]
+                                "description": [
+                                    0,
+                                    "5/+",
+                                    0,
+                                    ""
+                                ]
                             }
                         }
                     ]
@@ -3148,6 +3168,289 @@
                     "name": "Prime Cuts",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "<happy mrrgl mrrgl sounds>"
+                }
+            ]
+        },
+        "Cornelius Roame": {
+            "race": "Human",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 11,
+            "health": 74,
+            "abilities": {
+                "Martial Mastery": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Gain +{0} Health and Attach an enemy. If it's a Fighter, gain +{0} Health instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Hold the Front": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "description": "Gain Taunt for 2 turns. Restore {0} Health to adjacent characters.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                },
+                "Blessing of Sacrifice": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school":"Holy",
+                    "description": "Restore {0} Health to another friendly Merc. Whenever it takes damage this turn, this Merc takes it instead.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "speed": 0
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 6,
+                            "speed": -2
+                        },
+                        {
+                            "description": 8,
+                            "speed": -3
+                        },
+                        {
+                            "description": 10,
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Striking Gauntlets": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Martial Mastery",
+                    "description": "Martial Mastery gives {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Band of Enlightenment": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Hold the Front",
+                    "description": "Hold the Front restore {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                },
+                "Shield of Dawn": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Take {0} less damage.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Lethal Blows",
+                    "description": "Deal 55 damage using Martial Mastery.",
+                    "quote": "It's time for action! I must complete my training to become a proper defender for the kingdom."
+                },
+                {
+                    "name": "I Will Take the Hit",
+                    "description": "Restore 95 Health using Hold the Front.",
+                    "quote": "My martial skills must be perfected."
+                },
+                {
+                    "name": "The Light Heals",
+                    "description": "Deal 115 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I know no one can do this like I can."
+                },
+                {
+                    "name": "Strike Strong",
+                    "description": "Deal 150 damage.",
+                    "quote": "The city guard will surely acknowledge me if I complete this."
+                },
+                {
+                    "name": "For the Alliance",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "My will shall be as strong as my armor."
+                },
+                {
+                    "name": "The Light Shall Guide",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Watch as I break them!"
+                },
+                {
+                    "name": "Justice has Come",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The enemies of Stormwind will not be ready for me."
+                },
+                {
+                    "name": "We Need Healing",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I won't hold back!"
+                },
+                {
+                    "name": "United We Stand",
+                    "description": "Gain 120 Health using Martial Mastery.",
+                    "quote": "No one can break through my defenses."
+                },
+                {
+                    "name": "Attack and Receive",
+                    "description": "Restore 360 Health using Hold the Front.",
+                    "quote": "I will take pride in finishing this one."
+                },
+                {
+                    "name": "A Simple Task",
+                    "description": "Deal 225 damage.",
+                    "quote": "My martial skills must be perfected."
+                },
+                {
+                    "name": "Holy Forces",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I know no one can do this like I can."
+                },
+                {
+                    "name": "You Ready for This?",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "The city guard will surely acknowledge me if I complete this."
+                },
+                {
+                    "name": "Allied Forces",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "My will shall be as strong as my armor."
+                },
+                {
+                    "name": "Justice Delivered",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Watch as I break them!"
+                },
+                {
+                    "name": "No Mercy",
+                    "description": "Deal 450 damage to Fighters.",
+                    "quote": "The enemies of Stormwind will not be ready for me."
+                },
+                {
+                    "name": "Rally to Me",
+                    "description": "Restore 450 Health using Hold the Front.",
+                    "quote": "No one can break through my defenses."
+                },
+                {
+                    "name": "Take Them Down!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I won't hold back!"
                 }
             ]
         }
