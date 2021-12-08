@@ -106,18 +106,32 @@ export default {
                     desc = desc.replace(matches[i][0], baseValue + tierValue() + itemValue());
                 } else {
                     // Found {string}
+                    /*
+                    console.debug({
+                        index: i,
+                        match: matches[i][1],
+                        itemEquippedTier: this.itemEquippedTier?.modifier?.description,
+                        activeTierInfo: this.activeTierInfo?.description,
+                    });
+                    */
                     if (
                         Array.isArray(this.itemEquippedTier?.modifier?.description) &&
-                        this.itemEquippedTier.modifier.description[i]
+                        this.itemEquippedTier.modifier.description[i] !== undefined
                     ) {
                         // replace {string} with modifier
                         desc = desc.replace(
                             matches[i][0],
                             this.itemEquippedTier.modifier.description[i]
                         );
+                    } else if (this.itemEquippedTier?.modifier?.description !== undefined) {
+                        // replace {string} with modifier
+                        desc = desc.replace(
+                            matches[i][0],
+                            this.itemEquippedTier.modifier.description
+                        );
                     } else if (
                         Array.isArray(this.activeTierInfo.description) &&
-                        this.activeTierInfo.description[i]
+                        this.activeTierInfo.description[i] !== undefined
                     ) {
                         // replace {string} with active tier replacement
                         desc = desc.replace(matches[i][0], this.activeTierInfo.description[i]);

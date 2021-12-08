@@ -2857,6 +2857,299 @@
                     "quote": "Delivering justice can be quite the heavy task, but it is mine to carry."
                 }
             ]
+        },
+        "Cookie, the Cook": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 65,
+            "abilities": {
+                "Fish Feast": {
+                    "unlock": 1,
+                    "speed": 2,
+                    "description": "Deal {0} damage to an enemy. Deathblow: Give +{attack}{0}{ Health} to all friendly characters.",
+                    "spell_school": "Nature",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                "",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                "",
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                "",
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                "",
+                                12
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                "",
+                                15
+                            ]
+                        }
+                    ]
+                },
+                "Cookie's Cooking": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Bleed ({0}) to all enemies. Restore {0} Health to friendly Murlocs and Pirates.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Go Fish!": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Summon a random fish for your opponent, with a Deathrattle that benefits you.",
+                    "tiers": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            },
+            "equipment": {
+                "Iron Ladel": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Cookie's Cooking",
+                    "description": "Cookie's Cooking restores an additional {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Appetizers": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Start of Game: Give friendly characters +{0} Health",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 9
+                        }
+                    ]
+                },
+                "Seasoned Pan": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Fish Feast",
+                    "description": "Fish Feast gives +{0} Attack as well.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [0, "2/+",0,""]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [0, "3/+",0,""]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [0, "4/+",0,""]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [0, "5/+",0,""]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Warming the Grill",
+                    "description": "Deal 55 damage using Fish Feast.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Eat Up!",
+                    "description": "Restore 100 Health using Cookie's Cooking.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Gone Fishing",
+                    "description": "Use Go Fish! 10 times.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Happy Customers",
+                    "description": "Trigger Deathblow on Fish Feast 10 times.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "High Heat",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Stocking the Larder",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "VIP Treatment",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Health Inspection",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Surf and Turf",
+                    "description": "Defeat 180 Beasts.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Full Service",
+                    "description": "Deal 180 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Going Organic",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Full Bellies",
+                    "description": "Destroy 15 enemies using Fish Feast.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Franchising",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Hearty Meals",
+                    "description": "Gain 900 Health using Fish Feast.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "All Covers",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "House Specialities",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Ship's Cook",
+                    "description": "Deal 900 damage with Pirates while this is in your team.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Prime Cuts",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                }
+            ]
         }
     }
 }
