@@ -2016,7 +2016,7 @@
                     "unlock": 15,
                     "speed": 6,
                     "cooldown": 1,
-                    "spell_school":"Nature",
+                    "spell_school": "Nature",
                     "description": "Deal {0} damage to an enemy. Repeat this on {0} additional adjacent enem{y}.",
                     "tiers": [
                         {
@@ -2270,6 +2270,1187 @@
                     "name": "The Elements are Chaos",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "Da spirits guide me to do this… they better not be playing a joke this time."
+                }
+            ]
+        },
+        "Cairne Bloodhoof": {
+            "race": "Tauren",
+            "role": "Protector",
+            "rarity": "Epic",
+            "attack": 12,
+            "health": 77,
+            "abilities": {
+                "Ancestral Uppercut": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Restore {0} Health for each enemy that hasn't acted yet.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Endurance Aura": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Gain Taunt for {0} {turn}. Your characters are ({0}) Speed faster this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                "turn",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                "turn",
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "turns",
+                                4
+                            ]
+                        }
+                    ]
+                },
+                "Earth Stomp": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to all enemies. They are ({0}) Speed slower next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Thunderous Sash": {
+                    "position": "middle",
+                    "affects": "Earth Stomp",
+                    "unlock": "Task 2",
+                    "description": "Earth Stomp deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Swift Totem": {
+                    "position": "left",
+                    "unlock": "Task 7",
+                    "affects": "Endurance Aura",
+                    "description": "Endurance Aura makes this Merc's next ability ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (1) Speed faster."
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (2) Speed faster."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc's next ability is (3) Speed faster."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Reincarnation": {
+                    "position": "right",
+                    "unlock": "Level 30",
+                    "description": "Passive: the first time this Merc dies, return it to life at {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "For our Ancestors",
+                    "description": "Restore 55 Health using Ancestral Uppercut.",
+                    "quote": "I have need of your assistance. Aid me, and I will see that you are well rewarded."
+                },
+                {
+                    "name": "Plainsrunner",
+                    "description": "Use Endurance Aura 10 times.",
+                    "quote": "Here is the next task I require."
+                },
+                {
+                    "name": "War Stomp",
+                    "description": "Deal 95 damage using Earth Stomp.",
+                    "quote": "We tauren appreciate diligence."
+                },
+                {
+                    "name": "What Must be Done",
+                    "description": "Deal 150 damage.",
+                    "quote": "There is always much to be done."
+                },
+                {
+                    "name": "The Earthmother Bides",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I must show my valor through this."
+                },
+                {
+                    "name": "Spirits Watch over Me",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Can I entrust this to you?"
+                },
+                {
+                    "name": "Strength will Prevail",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "This one will bring great honor."
+                },
+                {
+                    "name": "Our Way is Harmony",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I feel ready for a greater challenge."
+                },
+                {
+                    "name": "Protect our People",
+                    "description": "Destroy 45 enemies using Earth Stomp.",
+                    "quote": "I may find this trying, but it will be worth it in the end."
+                },
+                {
+                    "name": "Endure for my People",
+                    "description": "Deal 20 or more damage in one turn using Earth Stomp 5 times.",
+                    "quote": "I would be proud to achieve this."
+                },
+                {
+                    "name": "Trample the Enemy",
+                    "description": "Deal 450 damage.",
+                    "quote": "Here is the next task I require."
+                },
+                {
+                    "name": "The Earthmother is Near",
+                    "description": "Heal 100 damage.",
+                    "quote": "We tauren appreciate diligence."
+                },
+                {
+                    "name": "The Spirits Call",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "There is always much to be done."
+                },
+                {
+                    "name": "Crush them Underhoof",
+                    "description": "Deal 30 or more damage in one turn using Earth Stomp 20 times.",
+                    "quote": "I must show my valor through this."
+                },
+                {
+                    "name": "For my People",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Can I entrust this to you?"
+                },
+                {
+                    "name": "Spirits Guide Me",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "This one will bring great honor."
+                },
+                {
+                    "name": "For Thunder Bluff",
+                    "description": "Deal 900 damage using Earth Stomp.",
+                    "quote": "I feel ready for a greater challenge."
+                },
+                {
+                    "name": "High Chieftain",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I may find this trying, but it will be worth it in the end."
+                }
+            ]
+        },
+        "Cariel Roame": {
+            "race": "Human",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 10,
+            "health": 73,
+            "abilities": {
+                "Crusader's Blow": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attach an enemy. Deathblow: Restore {0} Health to {this Merc}.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 35
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                },
+                "Taunt": {
+                    "unlock": 5,
+                    "speed": 1,
+                    "description": "Restore {0} Health to this Merc and gain Taunt for {0} {turn}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1,
+                                "turn"
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                1,
+                                "turn"
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                2,
+                                "turns"
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3,
+                                "turns"
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3,
+                                "turns"
+                            ]
+                        }
+                    ]
+                },
+                "Seal of Light": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Choose a friendly character. Give it +{0} Attack and restore {0} Health.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                11
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                13
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Tome of Judgement": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Seal of Light",
+                    "description": "Seal of Light gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Tome of Light": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: While this Merc has Taunt, it has +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Hammer of Dawn": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Crusader's Blow",
+                    "description": "Crusader's Blow restores Health to your other characters as well.",
+                    "modifier": {
+                        "description": [
+                            0,
+                            "your party"
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Silver Hand Training",
+                    "description": "Deal 55 damage using Crusader's Blow.",
+                    "quote": "Delivering justice can be quite the heavy task, but it is mine to carry."
+                },
+                {
+                    "name": "Protecting the Weak",
+                    "description": "Use Taunt 10 times.",
+                    "quote": "I am here to keep the peace."
+                },
+                {
+                    "name": "Invoking the Light",
+                    "description": "Restore 120 Health using Crusader's Blow.",
+                    "quote": "They will answer to me."
+                },
+                {
+                    "name": "Where is my Sister?",
+                    "description": "Deal 150 damage.",
+                    "quote": "I won't get distracted from my purpose."
+                },
+                {
+                    "name": "Becoming a Paladin",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "When this is done, the world might be just a little bit better."
+                },
+                {
+                    "name": "Smite Evil as it Grows",
+                    "description": "Destroy 40 minions.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Righteous Fury",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "These ones must pay a heavy price."
+                },
+                {
+                    "name": "Rest in the Light",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Justice demands retribution. Especially in this case."
+                },
+                {
+                    "name": "Rally for Stormwind",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Nothing can change what already happened, but I can make this right."
+                },
+                {
+                    "name": "A Glorious Restoration",
+                    "description": "Restore 285 Health using Crusader's Blow.",
+                    "quote": "I won't stop until everything is atoned for."
+                },
+                {
+                    "name": "A Hammer finds Nails",
+                    "description": "Deal 450 damage.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Protecting my Friends",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I am here to keep the peace."
+                },
+                {
+                    "name": "Redemption for Tamsin",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We've got to face the facts and do what's necessary."
+                },
+                {
+                    "name": "Blessings of Faith",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "When this is done, the world might be just a little bit better."
+                },
+                {
+                    "name": "Friends Bolster Faith",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I won't get distracted from my purpose."
+                },
+                {
+                    "name": "Bulwark of Light",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "These ones must pay a heavy price."
+                },
+                {
+                    "name": "Reinforce the Faith",
+                    "description": "Deal 900 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Justice demands retribution. Especially in this case."
+                },
+                {
+                    "name": "A Quest Realized",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Delivering justice can be quite the heavy task, but it is mine to carry."
+                }
+            ]
+        },
+        "Cookie, the Cook": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 65,
+            "abilities": {
+                "Fish Feast": {
+                    "unlock": 1,
+                    "speed": 2,
+                    "description": "Deal {0} damage to an enemy. Deathblow: Give +{attack}{0}{ Health} to all friendly characters.",
+                    "spell_school": "Nature",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                "",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                "",
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                "",
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                "",
+                                12
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                "",
+                                15
+                            ]
+                        }
+                    ]
+                },
+                "Cookie's Cooking": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Bleed ({0}) to all enemies. Restore {0} Health to friendly Murlocs and Pirates.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Go Fish!": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Summon a random fish for your opponent, with a Deathrattle that benefits you.",
+                    "tiers": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            },
+            "equipment": {
+                "Iron Ladel": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Cookie's Cooking",
+                    "description": "Cookie's Cooking restores an additional {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Appetizers": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Start of Game: Give friendly characters +{0} Health",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 9
+                        }
+                    ]
+                },
+                "Seasoned Pan": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Fish Feast",
+                    "description": "Fish Feast gives +{0} Attack as well.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "2/+",
+                                    0,
+                                    ""
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "3/+",
+                                    0,
+                                    ""
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "4/+",
+                                    0,
+                                    ""
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "5/+",
+                                    0,
+                                    ""
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Warming the Grill",
+                    "description": "Deal 55 damage using Fish Feast.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Eat Up!",
+                    "description": "Restore 100 Health using Cookie's Cooking.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Gone Fishing",
+                    "description": "Use Go Fish! 10 times.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Happy Customers",
+                    "description": "Trigger Deathblow on Fish Feast 10 times.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "High Heat",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Stocking the Larder",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "VIP Treatment",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Health Inspection",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Surf and Turf",
+                    "description": "Defeat 180 Beasts.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Full Service",
+                    "description": "Deal 180 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Going Organic",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Full Bellies",
+                    "description": "Destroy 15 enemies using Fish Feast.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Franchising",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Hearty Meals",
+                    "description": "Gain 900 Health using Fish Feast.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "All Covers",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "House Specialities",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "<excited mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Ship's Cook",
+                    "description": "Deal 900 damage with Pirates while this is in your team.",
+                    "quote": "<mocking mrrgl mrrgl sounds>"
+                },
+                {
+                    "name": "Prime Cuts",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<happy mrrgl mrrgl sounds>"
+                }
+            ]
+        },
+        "Cornelius Roame": {
+            "race": "Human",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 11,
+            "health": 74,
+            "abilities": {
+                "Martial Mastery": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Gain +{0} Health and Attach an enemy. If it's a Fighter, gain +{0} Health instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Hold the Front": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "description": "Gain Taunt for 2 turns. Restore {0} Health to adjacent characters.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                },
+                "Blessing of Sacrifice": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school":"Holy",
+                    "description": "Restore {0} Health to another friendly Merc. Whenever it takes damage this turn, this Merc takes it instead.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "speed": 0
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 6,
+                            "speed": -2
+                        },
+                        {
+                            "description": 8,
+                            "speed": -3
+                        },
+                        {
+                            "description": 10,
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Striking Gauntlets": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Martial Mastery",
+                    "description": "Martial Mastery gives {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Band of Enlightenment": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Hold the Front",
+                    "description": "Hold the Front restore {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                },
+                "Shield of Dawn": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Take {0} less damage.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Lethal Blows",
+                    "description": "Deal 55 damage using Martial Mastery.",
+                    "quote": "It's time for action! I must complete my training to become a proper defender for the kingdom."
+                },
+                {
+                    "name": "I Will Take the Hit",
+                    "description": "Restore 95 Health using Hold the Front.",
+                    "quote": "My martial skills must be perfected."
+                },
+                {
+                    "name": "The Light Heals",
+                    "description": "Deal 115 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I know no one can do this like I can."
+                },
+                {
+                    "name": "Strike Strong",
+                    "description": "Deal 150 damage.",
+                    "quote": "The city guard will surely acknowledge me if I complete this."
+                },
+                {
+                    "name": "For the Alliance",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "My will shall be as strong as my armor."
+                },
+                {
+                    "name": "The Light Shall Guide",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Watch as I break them!"
+                },
+                {
+                    "name": "Justice has Come",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The enemies of Stormwind will not be ready for me."
+                },
+                {
+                    "name": "We Need Healing",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I won't hold back!"
+                },
+                {
+                    "name": "United We Stand",
+                    "description": "Gain 120 Health using Martial Mastery.",
+                    "quote": "No one can break through my defenses."
+                },
+                {
+                    "name": "Attack and Receive",
+                    "description": "Restore 360 Health using Hold the Front.",
+                    "quote": "I will take pride in finishing this one."
+                },
+                {
+                    "name": "A Simple Task",
+                    "description": "Deal 225 damage.",
+                    "quote": "My martial skills must be perfected."
+                },
+                {
+                    "name": "Holy Forces",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I know no one can do this like I can."
+                },
+                {
+                    "name": "You Ready for This?",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "The city guard will surely acknowledge me if I complete this."
+                },
+                {
+                    "name": "Allied Forces",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "My will shall be as strong as my armor."
+                },
+                {
+                    "name": "Justice Delivered",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Watch as I break them!"
+                },
+                {
+                    "name": "No Mercy",
+                    "description": "Deal 450 damage to Fighters.",
+                    "quote": "The enemies of Stormwind will not be ready for me."
+                },
+                {
+                    "name": "Rally to Me",
+                    "description": "Restore 450 Health using Hold the Front.",
+                    "quote": "No one can break through my defenses."
+                },
+                {
+                    "name": "Take Them Down!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I won't hold back!"
                 }
             ]
         }

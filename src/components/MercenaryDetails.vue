@@ -170,7 +170,7 @@ export default {
         abilityCostToMax() {
             return (abilityName) => {
                 const numTiers = this.mercenary.abilities[abilityName].tiers.length;
-                const currentTier = this.activeMerc?.abilities[abilityName] || 5 - numTiers + 1;
+                const currentTier = this.activeMerc.abilities[abilityName];
                 if (currentTier >= numTiers) {
                     return 0;
                 } else {
@@ -182,13 +182,12 @@ export default {
         },
         itemCostToMax() {
             return (itemName) => {
-                const numTiers = this.mercenary.equipment[itemName].tiers?.length ?? 0;
-                const currentTier = this.activeMerc?.equipment[itemName] || 4 - numTiers + 1;
-                if (currentTier >= numTiers) {
+                const currentTier = this.activeMerc.equipment[itemName];
+                if (currentTier > itemUpgradeCosts.length) {
                     return 0;
                 } else {
                     return itemUpgradeCosts
-                        .slice(-1 * (numTiers - currentTier))
+                        .slice(-1 * (4 - currentTier))
                         .reduce((totalCost, cost) => totalCost + cost, 0);
                 }
             };
@@ -196,7 +195,7 @@ export default {
         itemEquippedTierForAbility() {
             return (abilityName) => {
                 if (
-                    this.activeMerc?.itemEquipped &&
+                    this.activeMerc.itemEquipped &&
                     this.mercenary.equipment[this.activeMerc.itemEquipped].affects === abilityName
                 ) {
                     const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [
