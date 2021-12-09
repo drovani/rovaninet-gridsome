@@ -4029,6 +4029,290 @@
                     "quote": "They must pay for what they did."
                 }
             ]
+        },
+        "Eudora": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 73,
+            "abilities": {
+                "Coup d'Etat": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Attack an enemy. If it's the left or right-most enemy, fire Eudora's Cannons at it.",
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Prepare the Cannons": {
+                    "unlock": 5,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "description": "Summon a Cannon to the left or right of this Merc. (Starts off cooldown)",
+                    "summon": {
+                        "name": "Eudora's Cannon",
+                        "attack": 0,
+                        "health": 0,
+                        "description": "At the end of the turn, deal {0} damage to the characters opposite this."
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": 5,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 9,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 13,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 14,
+                                "health": 16
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 15,
+                                "health": 18
+                            }
+                        }
+                    ]
+                },
+                "Covering Fire": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "description": "Restore {0} Health to a friendly Merc and return them to your bench. Fire all your cannons.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Shrapnel Shot": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Prepare the Cannons",
+                    "description": "Cannons deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "description": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "summon": {
+                                    "description": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "description": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "summon": {
+                                    "description": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Primed Armaments": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Battlecry: Summon a Cannon"
+                },
+                "Briny Bracers": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                4
+                            ],
+                            "modifier": {
+                                "attack": 1,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 1,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Focus Fire",
+                    "description": "Deal 75 damage using Coup d'Etat.",
+                    "quote": "Ahoy there, landlubber. Are you ready to outfox the enemy?"
+                },
+                {
+                    "name": "Blast Them Away!",
+                    "description": "Use Prepare the Cannons 10 times.",
+                    "quote": "Hungry for more?"
+                },
+                {
+                    "name": "High Seas Helper",
+                    "description": "Restore 60 Health using Covering Fire.",
+                    "quote": "Our adventure continues."
+                },
+                {
+                    "name": "Ready, Aim, Fire!",
+                    "description": "Deal 150 damage.",
+                    "quote": "Look alive, mercenary! The fun is just getting started."
+                },
+                {
+                    "name": "Treasure Hunter",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Show these scallywags a jolly good time."
+                },
+                {
+                    "name": "Swash and Buckle",
+                    "description": "Destroy 12 minions.",
+                    "quote": "Things are about to get messy!"
+                },
+                {
+                    "name": "Bounty of the Seas",
+                    "description": "Complete 2 Heroic Bounties.",
+                    "quote": "Get ready for battle, landlubbers."
+                },
+                {
+                    "name": "Man the Decks!",
+                    "description": "Use the Boon: Fighter coin 4 times.",
+                    "quote": "Time to spice things up."
+                },
+                {
+                    "name": "All Cannons Ho!",
+                    "description": "Deal 120 damage with cannons",
+                    "quote": "You think you can handle this?"
+                },
+                {
+                    "name": "Superior Firepower",
+                    "description": "Deal 150 damage to Casters.",
+                    "quote": "Look alive, mercenary! The fun is just getting started."
+                },
+                {
+                    "name": "Mercenary and Commander",
+                    "description": "Complete 3 Bounties.",
+                    "quote": "Our adventure continues."
+                },
+                {
+                    "name": "Pirate Party",
+                    "description": "Deal 450 damage with Pirates with a team that includes this Mercenary.",
+                    "quote": "Hungry for more?"
+                },
+                {
+                    "name": "Sink Their Ships",
+                    "description": "Deal 450 damage.",
+                    "quote": "Get ready for battle, landlubbers."
+                },
+                {
+                    "name": "Rapscallion Rescue",
+                    "description": "Restore 75 Health using Covering Fire.",
+                    "quote": "You think you can handle this?"
+                },
+                {
+                    "name": "Pugnacious Plunderer",
+                    "description": "Deal 40 damage in one turn.",
+                    "quote": "Things are about to get messy!"
+                },
+                {
+                    "name": "Cannon Fodder",
+                    "description": "Defeat 8 enemies with cannons",
+                    "quote": "Show these scallywags a jolly good time."
+                },
+                {
+                    "name": "High Explosives",
+                    "description": "Deal 80 damage to Heroic bosses.",
+                    "quote": "Shiver me timbers, this is it!"
+                },
+                {
+                    "name": "X Marks the Spot",
+                    "description": "Complete 5 Bounties.",
+                    "quote": "Not bad! I think this calls for a little celebration. Here’s to unusual partnerships!"
+                }
+            ]
         }
     }
 }
