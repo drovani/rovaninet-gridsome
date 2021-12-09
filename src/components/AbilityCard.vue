@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-gray-50 rounded-md p-1 text-sm"
+        class="bg-gray-50 rounded-md p-1 text-sm text-center"
         :class="{
             'bg-yellow-100': ability.spell_school === 'Holy',
             'bg-red-100': ability.spell_school === 'Fire',
@@ -9,7 +9,7 @@
         }"
     >
         <div
-            class="h-12 text-center text-base mb-1"
+            class="h-12 text-base mb-1"
             :class="{ 'text-base': !showDetails, 'text-xl': showDetails }"
         >
             <slot />

@@ -1,5 +1,8 @@
 <template>
     <div class="text-base rounded bg-gray-50">
+        <div class="mb-4 mx-2 border-b text-center h-12 pb-4" v-if="tasksCompleted > 0">
+            Task #{{ tasksCompleted }}: {{ tasks[tasksCompleted - 1].name }}
+        </div>
         <div class="flex">
             <div class="flex-1" v-if="tasksCompleted < taskRewards.length">
                 Next Task: #{{ tasksCompleted + 1 }}

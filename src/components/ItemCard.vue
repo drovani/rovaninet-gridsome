@@ -1,6 +1,6 @@
 <template>
-    <div class="item text-sm">
-        <div class="h-12 text-center text-base">
+    <div class="item text-center text-sm">
+        <div class="h-12 text-base">
             <slot />
             {{ displayTier }}
         </div>
