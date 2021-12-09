@@ -3511,7 +3511,7 @@
                     "unlock": 15,
                     "speed": 6,
                     "cooldown": 1,
-                    "spell_school":"Fire",
+                    "spell_school": "Fire",
                     "description": "Choose an enemy to take Critical Damage from all Roles this turn. Deal {0} damage to them.",
                     "tiers": [
                         {
@@ -3710,6 +3710,323 @@
                     "name": "I Am The Prime Evil",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "Is it fear that I smell?"
+                }
+            ]
+        },
+        "Edwin, Defias Kingpin": {
+            "race": "Pirate",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 75,
+            "abilities": {
+                "Assassin's Blade": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. If it hasn't acted yet this turn, gain +{0} Health and Attack it again.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Assisted Strike": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack for each friendly Pirate and Attack a random enemy. {Combo: }Gain Immune while Attacking this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Kingpin's Bounty": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 2,
+                    "description": "Deal {0} damage to an enemy. Repeat for each other Pirate you control. Deathblow: Restore {0} Health{slot1}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                20,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                25,
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Black Flag": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "description": "Passive: Adjacent Pirates are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Even Shares": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Kingpin's Bounty",
+                    "description": "Kingpin's Bounty{slot1} affects all friendly {slot2}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "",
+                                "Pirates"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    " to all friendly Pirates"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                "",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                " restores 5 more Health and",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                " restores 10 more Health and",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    10,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Round of Drinks": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Assisted Strike",
+                    "description": "Assisted Strike{slot1} always has Immune while Attacking.",
+                    "tiers": [
+                        {
+                            "description": "",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ]
+                            }
+                        },
+                        {
+                            "description": " is (1) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": " is (2) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": " is (3) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "The Finisher",
+                    "description": "Deal 70 damage using Assassin's Blade.",
+                    "quote": "You're who everyone's talking about. Let's see what you can do."
+                },
+                {
+                    "name": "Bounties Pay!",
+                    "description": "Use Assisted Strike 20 times.",
+                    "quote": "They must pay for what they did."
+                },
+                {
+                    "name": "Prevail as One",
+                    "description": "Use Kingpin's Bounty 15 times.",
+                    "quote": "The Brotherhood demands another proof of loyalty."
+                },
+                {
+                    "name": "Righteous Vengeance",
+                    "description": "Deal 20 or more damage in one turn using Assassin's Blade 5 times.",
+                    "quote": "Revenge never tasted so good."
+                },
+                {
+                    "name": "A Day's Work",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Revenge Campaign",
+                    "description": "Destroy 40 minions.",
+                    "quote": "You know what must be done."
+                },
+                {
+                    "name": "Contract Kills",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Our target was foolish enough to reveal itself. Strike now."
+                },
+                {
+                    "name": "Strategic Plans",
+                    "description": "Use the Boon: Fighter coin 4 times.",
+                    "quote": "They must pay for what they did."
+                },
+                {
+                    "name": "Find their Weakness",
+                    "description": "Deal 180 damage to Protectors.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Dance of Death",
+                    "description": "Deal 200 Combo damage.",
+                    "quote": "Revenge never tasted so good."
+                },
+                {
+                    "name": "Coup-de-grace",
+                    "description": "Deal 20 or more damage in one turn using Kingpin's Bounty 10 times.",
+                    "quote": "Get your weapons. This will get ugly."
+                },
+                {
+                    "name": "United we Slay",
+                    "description": "Deal 450 damage with Pirates with a team that includes this Mercenary.",
+                    "quote": "Another task for our… glorified mercenary. You ready?"
+                },
+                {
+                    "name": "Cut a thug",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "You know what must be done."
+                },
+                {
+                    "name": "Measure Once…",
+                    "description": "Gain 40 Health using Assassin's Blade.",
+                    "quote": "The Brotherhood demands another proof of loyalty."
+                },
+                {
+                    "name": "Stay the Course",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Get your weapons. This will get ugly."
+                },
+                {
+                    "name": "A Show of Dominance",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Be quick and ruthless."
+                },
+                {
+                    "name": "Lead From the Front",
+                    "description": "Restore 600 Health using Kingpin's Bounty.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Worthy Victims",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "They must pay for what they did."
                 }
             ]
         }
