@@ -36,7 +36,9 @@
                     >
                         {{ mercenaryAttack }}
                     </div>
-                    <div class="flex-grow text-center sm:text-sm md:text-xl">{{ mercenary.race }}</div>
+                    <div class="flex-grow text-center sm:text-sm md:text-xl">
+                        {{ mercenary.race }}
+                    </div>
                     <div
                         class="
                             health-value
@@ -220,29 +222,58 @@ export default {
                 0
             );
         },
+        itemEquippedActiveTierModifier() {
+            const item = this.mercenary.equipment[this.activeMerc.itemEquipped];
+            if (item) {
+                if (Array.isArray(item.tiers)) {
+                    return (
+                        item.tiers[
+                            this.activeMerc.equipment[this.activeMerc.itemEquipped] +
+                                item.tiers.length -
+                                5
+                        ].modifier ?? null
+                    );
+                } else {
+                    return item.modifier ?? null;
+                }
+            }
+            return null;
+        },
         mercenaryAttack() {
             return (
                 this.mercenary.attack +
-                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 && this.activeMerc.tasksCompleted >= 7 ? 1 : 0)
+                (this.abilitiesMaxCost === 0 &&
+                this.equipmentMaxCost === 0 &&
+                this.activeMerc.tasksCompleted >= 7
+                    ? 1
+                    : 0) +
+                (this.itemEquippedActiveTierModifier?.attack ?? 0)
             );
         },
         mercenaryHealth() {
             return (
                 this.mercenary.health +
-                (this.abilitiesMaxCost === 0 && this.equipmentMaxCost === 0 && this.activeMerc.tasksCompleted >= 7  ? 5 : 0)
+                (this.abilitiesMaxCost === 0 &&
+                this.equipmentMaxCost === 0 &&
+                this.activeMerc.tasksCompleted >= 7
+                    ? 5
+                    : 0) +
+                (this.itemEquippedActiveTierModifier?.health ?? 0)
             );
         },
-        getItemRewardForTask(){
+        getItemRewardForTask() {
             return (taskNumber) => {
-                return Object.entries(this.mercenary.equipment).find(item => item[1].unlock === `Task ${taskNumber}`)[0];
-            }
-        }
+                return Object.entries(this.mercenary.equipment).find(
+                    (item) => item[1].unlock === `Task ${taskNumber}`
+                )[0];
+            };
+        },
     },
     components: {
         AbilityCard,
         ItemCard,
         UpDownButtons,
-        TaskTracker
+        TaskTracker,
     },
 };
 </script>

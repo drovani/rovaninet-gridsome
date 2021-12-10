@@ -3241,7 +3241,7 @@
                     "unlock": 15,
                     "speed": 6,
                     "cooldown": 1,
-                    "spell_school":"Holy",
+                    "spell_school": "Holy",
                     "description": "Restore {0} Health to another friendly Merc. Whenever it takes damage this turn, this Merc takes it instead.",
                     "tiers": [
                         {
@@ -3451,6 +3451,866 @@
                     "name": "Take Them Down!",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "I won't hold back!"
+                }
+            ]
+        },
+        "Diablo": {
+            "race": "Demon",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 11,
+            "health": 70,
+            "abilities": {
+                "Doom Charge": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Fire Stomp": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to all enemies. Repeat for each enemy that hasn't acted yet.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                },
+                "Apocalypse": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Choose an enemy to take Critical Damage from all Roles this turn. Deal {0} damage to them.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Black Soulstone": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "description": "Passive: After a character dies, this Merc gains +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "item2": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Apocalypse",
+                    "description": "Apocalypse deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        }
+                    ]
+                },
+                "Claws of Terror": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Doom Charge",
+                    "description": "Passive: +{0} Attack. Doom Charge slows the enemy by ({0}) Speed more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                2
+                            ],
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                3
+                            ],
+                            "modifier": {
+                                "description": 3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "A New Realm",
+                    "description": "Deal 70 damage using Doom Charge.",
+                    "quote": "What is this realm? I must conquer it."
+                },
+                {
+                    "name": "Fiery Stomp",
+                    "description": "Deal 90 damage using Fire Stomp.",
+                    "quote": "Tremble before me."
+                },
+                {
+                    "name": "Apocalypse",
+                    "description": "Deal 50 damage using Apocalypse.",
+                    "quote": "You now speak to the Lord of Terror."
+                },
+                {
+                    "name": "A Ripe World",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will feast upon this world."
+                },
+                {
+                    "name": "Heed my Call",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Do my bidding."
+                },
+                {
+                    "name": "Conquer this Realm",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Nothing shall remain of this reality."
+                },
+                {
+                    "name": "Resign Yourself",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "There is no escape."
+                },
+                {
+                    "name": "Find the Soulstones",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Abandon all hope."
+                },
+                {
+                    "name": "Quake Before Me",
+                    "description": "Deal 450 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "The end has come."
+                },
+                {
+                    "name": "Pitiful Mortals",
+                    "description": "Deal 150 damage using Doom Charge.",
+                    "quote": "Is it fear that I smell?"
+                },
+                {
+                    "name": "Fear is Eternal",
+                    "description": "Deal 450 damage.",
+                    "quote": "Tremble before me."
+                },
+                {
+                    "name": "Death is the Beginning",
+                    "description": "Destroy two enemies in one turn using Fire Stomp 15 times.",
+                    "quote": "Do my bidding."
+                },
+                {
+                    "name": "Serve me in Hell",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I will feast upon this world."
+                },
+                {
+                    "name": "Fires of Hell Heal Me",
+                    "description": "Heal 450 damage.",
+                    "quote": "You now speak to the Lord of Terror."
+                },
+                {
+                    "name": "Death will not Save You",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Nothing shall remain of this reality."
+                },
+                {
+                    "name": "Kneel Before Me",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "There is no escape."
+                },
+                {
+                    "name": "Puny Heroes",
+                    "description": "Deal 900 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "Abandon all hope."
+                },
+                {
+                    "name": "I Am The Prime Evil",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Is it fear that I smell?"
+                }
+            ]
+        },
+        "Edwin, Defias Kingpin": {
+            "race": "Pirate",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 75,
+            "abilities": {
+                "Assassin's Blade": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. If it hasn't acted yet this turn, gain +{0} Health and Attack it again.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Assisted Strike": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack for each friendly Pirate and Attack a random enemy. {Combo: }Gain Immune while Attacking this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Kingpin's Bounty": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 2,
+                    "description": "Deal {0} damage to an enemy. Repeat for each other Pirate you control. Deathblow: Restore {0} Health{slot1}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                20,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                25,
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Black Flag": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "description": "Passive: Adjacent Pirates are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Even Shares": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Kingpin's Bounty",
+                    "description": "Kingpin's Bounty{slot1} affects all friendly {slot2}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "",
+                                "Pirates"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    " to all friendly Pirates"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                "",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                " restores 5 more Health and",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                " restores 10 more Health and",
+                                "characters"
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    10,
+                                    " to all friendly characters"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Round of Drinks": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Assisted Strike",
+                    "description": "Assisted Strike{slot1} always has Immune while Attacking.",
+                    "tiers": [
+                        {
+                            "description": "",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ]
+                            }
+                        },
+                        {
+                            "description": " is (1) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": " is (2) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": " is (3) Speed faster and",
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    ""
+                                ],
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "The Finisher",
+                    "description": "Deal 70 damage using Assassin's Blade.",
+                    "quote": "You're who everyone's talking about. Let's see what you can do."
+                },
+                {
+                    "name": "Bounties Pay!",
+                    "description": "Use Assisted Strike 20 times.",
+                    "quote": "They must pay for what they did."
+                },
+                {
+                    "name": "Prevail as One",
+                    "description": "Use Kingpin's Bounty 15 times.",
+                    "quote": "The Brotherhood demands another proof of loyalty."
+                },
+                {
+                    "name": "Righteous Vengeance",
+                    "description": "Deal 20 or more damage in one turn using Assassin's Blade 5 times.",
+                    "quote": "Revenge never tasted so good."
+                },
+                {
+                    "name": "A Day's Work",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Revenge Campaign",
+                    "description": "Destroy 40 minions.",
+                    "quote": "You know what must be done."
+                },
+                {
+                    "name": "Contract Kills",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Our target was foolish enough to reveal itself. Strike now."
+                },
+                {
+                    "name": "Strategic Plans",
+                    "description": "Use the Boon: Fighter coin 4 times.",
+                    "quote": "They must pay for what they did."
+                },
+                {
+                    "name": "Find their Weakness",
+                    "description": "Deal 180 damage to Protectors.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Dance of Death",
+                    "description": "Deal 200 Combo damage.",
+                    "quote": "Revenge never tasted so good."
+                },
+                {
+                    "name": "Coup-de-grace",
+                    "description": "Deal 20 or more damage in one turn using Kingpin's Bounty 10 times.",
+                    "quote": "Get your weapons. This will get ugly."
+                },
+                {
+                    "name": "United we Slay",
+                    "description": "Deal 450 damage with Pirates with a team that includes this Mercenary.",
+                    "quote": "Another task for our… glorified mercenary. You ready?"
+                },
+                {
+                    "name": "Cut a thug",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "You know what must be done."
+                },
+                {
+                    "name": "Measure Once…",
+                    "description": "Gain 40 Health using Assassin's Blade.",
+                    "quote": "The Brotherhood demands another proof of loyalty."
+                },
+                {
+                    "name": "Stay the Course",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Get your weapons. This will get ugly."
+                },
+                {
+                    "name": "A Show of Dominance",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Be quick and ruthless."
+                },
+                {
+                    "name": "Lead From the Front",
+                    "description": "Restore 600 Health using Kingpin's Bounty.",
+                    "quote": "Skip the pleasantries and get to business."
+                },
+                {
+                    "name": "Worthy Victims",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "They must pay for what they did."
+                }
+            ]
+        },
+        "Eudora": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 73,
+            "abilities": {
+                "Coup d'Etat": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Attack an enemy. If it's the left or right-most enemy, fire Eudora's Cannons at it.",
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Prepare the Cannons": {
+                    "unlock": 5,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "description": "Summon a Cannon to the left or right of this Merc. (Starts off cooldown)",
+                    "summon": {
+                        "name": "Eudora's Cannon",
+                        "attack": 0,
+                        "health": 0,
+                        "description": "At the end of the turn, deal {0} damage to the characters opposite this."
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": 5,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 9,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 13,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 14,
+                                "health": 16
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 15,
+                                "health": 18
+                            }
+                        }
+                    ]
+                },
+                "Covering Fire": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "description": "Restore {0} Health to a friendly Merc and return them to your bench. Fire all your cannons.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Shrapnel Shot": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Prepare the Cannons",
+                    "description": "Cannons deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "description": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "summon": {
+                                    "description": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "description": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "summon": {
+                                    "description": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Primed Armaments": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Battlecry: Summon a Cannon"
+                },
+                "Briny Bracers": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                4
+                            ],
+                            "modifier": {
+                                "attack": 1,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 1,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Focus Fire",
+                    "description": "Deal 75 damage using Coup d'Etat.",
+                    "quote": "Ahoy there, landlubber. Are you ready to outfox the enemy?"
+                },
+                {
+                    "name": "Blast Them Away!",
+                    "description": "Use Prepare the Cannons 10 times.",
+                    "quote": "Hungry for more?"
+                },
+                {
+                    "name": "High Seas Helper",
+                    "description": "Restore 60 Health using Covering Fire.",
+                    "quote": "Our adventure continues."
+                },
+                {
+                    "name": "Ready, Aim, Fire!",
+                    "description": "Deal 150 damage.",
+                    "quote": "Look alive, mercenary! The fun is just getting started."
+                },
+                {
+                    "name": "Treasure Hunter",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Show these scallywags a jolly good time."
+                },
+                {
+                    "name": "Swash and Buckle",
+                    "description": "Destroy 12 minions.",
+                    "quote": "Things are about to get messy!"
+                },
+                {
+                    "name": "Bounty of the Seas",
+                    "description": "Complete 2 Heroic Bounties.",
+                    "quote": "Get ready for battle, landlubbers."
+                },
+                {
+                    "name": "Man the Decks!",
+                    "description": "Use the Boon: Fighter coin 4 times.",
+                    "quote": "Time to spice things up."
+                },
+                {
+                    "name": "All Cannons Ho!",
+                    "description": "Deal 120 damage with cannons",
+                    "quote": "You think you can handle this?"
+                },
+                {
+                    "name": "Superior Firepower",
+                    "description": "Deal 150 damage to Casters.",
+                    "quote": "Look alive, mercenary! The fun is just getting started."
+                },
+                {
+                    "name": "Mercenary and Commander",
+                    "description": "Complete 3 Bounties.",
+                    "quote": "Our adventure continues."
+                },
+                {
+                    "name": "Pirate Party",
+                    "description": "Deal 450 damage with Pirates with a team that includes this Mercenary.",
+                    "quote": "Hungry for more?"
+                },
+                {
+                    "name": "Sink Their Ships",
+                    "description": "Deal 450 damage.",
+                    "quote": "Get ready for battle, landlubbers."
+                },
+                {
+                    "name": "Rapscallion Rescue",
+                    "description": "Restore 75 Health using Covering Fire.",
+                    "quote": "You think you can handle this?"
+                },
+                {
+                    "name": "Pugnacious Plunderer",
+                    "description": "Deal 40 damage in one turn.",
+                    "quote": "Things are about to get messy!"
+                },
+                {
+                    "name": "Cannon Fodder",
+                    "description": "Defeat 8 enemies with cannons",
+                    "quote": "Show these scallywags a jolly good time."
+                },
+                {
+                    "name": "High Explosives",
+                    "description": "Deal 80 damage to Heroic bosses.",
+                    "quote": "Shiver me timbers, this is it!"
+                },
+                {
+                    "name": "X Marks the Spot",
+                    "description": "Complete 5 Bounties.",
+                    "quote": "Not bad! I think this calls for a little celebration. Here’s to unusual partnerships!"
                 }
             ]
         }
