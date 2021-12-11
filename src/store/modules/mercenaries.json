@@ -4313,6 +4313,274 @@
                     "quote": "Not bad! I think this calls for a little celebration. Here’s to unusual partnerships!"
                 }
             ]
+        },
+        "Garrosh Hellscream": {
+            "race": "Orc",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 10,
+            "health": 79,
+            "abilities": {
+                "Mak'Gora": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "cooldown": 0,
+                    "description": "Attack an enemy, it Attacks this merc back.",
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Horde Strength": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Gaint Taunt for {0} turn{s}. Gain +{0} Health for each enemy character.",
+                    "tiers": [
+                        {
+                            "description": [1,"", 2]
+                        },
+                        {
+                            "description": [1,"", 5]
+                        },
+                        {
+                            "description": [2,"s",8]
+                        },
+                        {
+                            "description": [2,"s", 9]
+                        },
+                        {
+                            "description": [2,"s",10]
+                        }
+                    ]
+                },
+                "Battle Shout": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Give your Orcs +{0} Attack this turn. Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dueling Gauntlets": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Mak'Gora",
+                    "description": "If this Merc has {0} or less Health, Mak'Gora becomes a BATTLE TO THE DEATH!",
+                    "tiers": [
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 30,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 40,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 50,
+                            "modifier": {
+                                "description": []
+                            }
+                        }
+                    ]
+                },
+                "Tusks of Mannoroth": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Horde Strength",
+                    "description": "Horde Strength gives +{0} more Health",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [0,null,2]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [0,null,4]
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": [0,null,6]
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": [0,null,8]
+                            }
+                        }
+                    ]
+                },
+                "Orish Banner": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Battle Shout",
+                    "description": "Battle Shout also restores {0} Health to your Orcs.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": []
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "They Will Pay",
+                    "description": "Deal 55 damage using Mak'Gora.",
+                    "quote": "You there! Pledge your blade to me, and we shall cut down our weak and fragile foes!"
+                },
+                {
+                    "name": "Victory or Death",
+                    "description": "Gain 60 Health using Horde Strength.",
+                    "quote": "Live by these words: Lok'tar ogar. Victory... or death."
+                },
+                {
+                    "name": "Crush Them To Dust",
+                    "description": "Gain 144 Attack using Battle Shout.",
+                    "quote": "Cold is the steel of my axe."
+                },
+                {
+                    "name": "I Smell a Battle",
+                    "description": "Deal 150 damage.",
+                    "quote": "These ones have gotten in my way."
+                },
+                {
+                    "name": "Show No Mercy",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "A show of strength."
+                },
+                {
+                    "name": "I Will Destroy You",
+                    "description": "Destroy 40 minions.",
+                    "quote": "For the Horde."
+                },
+                {
+                    "name": "Crush Them Underboot",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Do not question me."
+                },
+                {
+                    "name": "Healing Me Is Wise",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "Get on with it."
+                },
+                {
+                    "name": "Strength Unrivaled",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "Blood and thunder."
+                },
+                {
+                    "name": "Now You Die",
+                    "description": "Deal 120 damage using Mak'Gora.",
+                    "quote": "Hellscream's eyes are upon you."
+                },
+                {
+                    "name": "Victory Will Be Ours",
+                    "description": "Deal 450 damage.",
+                    "quote": "You there! Pledge your blade to me, and we shall cut down our weak and fragile foes!"
+                },
+                {
+                    "name": "Relentless Horde",
+                    "description": "Gain 240 Health using Horde Strength.",
+                    "quote": "Cold is the steel of my axe."
+                },
+                {
+                    "name": "We Will Claim Victory",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "A show of strength."
+                },
+                {
+                    "name": "My Power Grows",
+                    "description": "Gain 10 or more Health in one turn using Horde Strength 20 times.",
+                    "quote": "For the Horde."
+                },
+                {
+                    "name": "Fear Me",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Get on with it."
+                },
+                {
+                    "name": "You Will Pay",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Do not question me."
+                },
+                {
+                    "name": "Strength and Honor",
+                    "description": "Deal 900 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "Live by these words: Lok'tar ogar. Victory... or death."
+                },
+                {
+                    "name": "You Are Beneath Me",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "These ones have gotten in my way."
+                }
+            ]
         }
     }
 }
