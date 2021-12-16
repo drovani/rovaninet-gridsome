@@ -4325,7 +4325,7 @@
                     "unlock": 1,
                     "speed": 9,
                     "cooldown": 0,
-                    "description": "Attack an enemy, it Attacks this merc back.",
+                    "description": "Attack an enemy, it Attacks this merc back{.}",
                     "tiers": [
                         {
                             "speed": 0
@@ -4351,19 +4351,39 @@
                     "description": "Gaint Taunt for {0} turn{s}. Gain +{0} Health for each enemy character.",
                     "tiers": [
                         {
-                            "description": [1,"", 2]
+                            "description": [
+                                1,
+                                "",
+                                2
+                            ]
                         },
                         {
-                            "description": [1,"", 5]
+                            "description": [
+                                1,
+                                "",
+                                5
+                            ]
                         },
                         {
-                            "description": [2,"s",8]
+                            "description": [
+                                2,
+                                "s",
+                                8
+                            ]
                         },
                         {
-                            "description": [2,"s", 9]
+                            "description": [
+                                2,
+                                "s",
+                                9
+                            ]
                         },
                         {
-                            "description": [2,"s",10]
+                            "description": [
+                                2,
+                                "s",
+                                10
+                            ]
                         }
                     ]
                 },
@@ -4371,29 +4391,44 @@
                     "unlock": 15,
                     "speed": 3,
                     "cooldown": 1,
-                    "description": "Give your Orcs +{0} Attack this turn. Attack a random enemy.",
+                    "description": "Give your Orcs +{0} Attack{ and restore 0 Health} this turn. Attack a random enemy.",
                     "tiers": [
                         {
-                            "description": 4
+                            "description": [
+                                4,
+                                ""
+                            ]
                         },
                         {
-                            "description": 6
+                            "description": [
+                                6,
+                                ""
+                            ]
                         },
                         {
-                            "description": 8
+                            "description": [
+                                8,
+                                ""
+                            ]
                         },
                         {
-                            "description": 9
+                            "description": [
+                                9,
+                                ""
+                            ]
                         },
                         {
-                            "description": 10
+                            "description": [
+                                10,
+                                ""
+                            ]
                         }
                     ]
                 }
             },
             "equipment": {
                 "Dueling Gauntlets": {
-                    "unlock": "Level 30",
+                    "unlock": "Task 2",
                     "position": "left",
                     "affects": "Mak'Gora",
                     "description": "If this Merc has {0} or less Health, Mak'Gora becomes a BATTLE TO THE DEATH!",
@@ -4401,25 +4436,25 @@
                         {
                             "description": 20,
                             "modifier": {
-                                "description": []
+                                "description": " TO THE DEATH!"
                             }
                         },
                         {
                             "description": 30,
                             "modifier": {
-                                "description": []
+                                "description": " TO THE DEATH!"
                             }
                         },
                         {
                             "description": 40,
                             "modifier": {
-                                "description": []
+                                "description": " TO THE DEATH!"
                             }
                         },
                         {
                             "description": 50,
                             "modifier": {
-                                "description": []
+                                "description": " TO THE DEATH!"
                             }
                         }
                     ]
@@ -4433,25 +4468,41 @@
                         {
                             "description": 2,
                             "modifier": {
-                                "description": [0,null,2]
+                                "description": [
+                                    0,
+                                    null,
+                                    2
+                                ]
                             }
                         },
                         {
                             "description": 4,
                             "modifier": {
-                                "description": [0,null,4]
+                                "description": [
+                                    0,
+                                    null,
+                                    4
+                                ]
                             }
                         },
                         {
                             "description": 6,
                             "modifier": {
-                                "description": [0,null,6]
+                                "description": [
+                                    0,
+                                    null,
+                                    6
+                                ]
                             }
                         },
                         {
                             "description": 8,
                             "modifier": {
-                                "description": [0,null,8]
+                                "description": [
+                                    0,
+                                    null,
+                                    8
+                                ]
                             }
                         }
                     ]
@@ -4465,25 +4516,37 @@
                         {
                             "description": 4,
                             "modifier": {
-                                "description": []
+                                "description": [
+                                    0,
+                                    " and restore 4 Health"
+                                ]
                             }
                         },
                         {
                             "description": 6,
                             "modifier": {
-                                "description": []
+                                "description": [
+                                    0,
+                                    " and restore 6 Health"
+                                ]
                             }
                         },
                         {
                             "description": 8,
                             "modifier": {
-                                "description": []
+                                "description": [
+                                    0,
+                                    " and restore 8 Health"
+                                ]
                             }
                         },
                         {
                             "description": 10,
                             "modifier": {
-                                "description": []
+                                "description": [
+                                    0,
+                                    " and restore 10 Health"
+                                ]
                             }
                         }
                     ]
