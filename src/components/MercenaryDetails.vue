@@ -265,7 +265,7 @@ export default {
             return (taskNumber) => {
                 return Object.entries(this.mercenary.equipment).find(
                     (item) => item[1].unlock === `Task ${taskNumber}`
-                )[0];
+                )?.[0];
             };
         },
     },
