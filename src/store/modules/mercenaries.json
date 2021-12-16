@@ -4644,6 +4644,326 @@
                     "quote": "These ones have gotten in my way."
                 }
             ]
+        },
+        "Grommash Hellscream": {
+            "race": "Orc",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 11,
+            "health": 69,
+            "abilities": {
+                "Blood Fervor": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Attack an enemy. Deathblow: Gain +{0} Attack{slot}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "Staggering Slam": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "description": "Deal {0} damage to an enemy. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                6
+                            ]
+                        }
+                    ]
+                },
+                "Battlefury": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack. Attack an enemy and one of its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Halting Sash": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Staggering Slam",
+                    "description": "Staggering Slam deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Bloodthirst Amulet": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Battlefury",
+                    "description": "Battlefury gives +{0} Attack more.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Gorehowl": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Blood Fervor",
+                    "description": "Blood Fervor also restores {0} Health on Deathblow",
+                    "tiers": [
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    " and restore 5 Health"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    " and restore 10 Health"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    " and restore 15 Health"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    " and restore 20 Health"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "The Blood Curse",
+                    "description": "Deal 55 damage using Blood Fervor.",
+                    "quote": "I must always be one step ahead of my enemies."
+                },
+                {
+                    "name": "Dual Fury",
+                    "description": "Deal 50 damage using Staggering Slam.",
+                    "quote": "These foes have earned my ire."
+                },
+                {
+                    "name": "For the Horde",
+                    "description": "Deal 120 damage using Battlefury.",
+                    "quote": "Nothing ever changes. We must always fight to survive."
+                },
+                {
+                    "name": "Face my Wrath",
+                    "description": "Deal 150 damage.",
+                    "quote": "Our enemies must be punished before it is too late."
+                },
+                {
+                    "name": "Clear the Way",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I will rest easier once this is done."
+                },
+                {
+                    "name": "Gorehowl's Edge",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Enemies may underestimate me, but my allies will not."
+                },
+                {
+                    "name": "Gorehowl's Glory",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Let me show that fire flows through my veins!"
+                },
+                {
+                    "name": "Are they Worthy?",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "I will not fail."
+                },
+                {
+                    "name": "Respite from Pain",
+                    "description": "Complete 5 battles with 40 or more Attack.",
+                    "quote": "I almost envy my opponents…"
+                },
+                {
+                    "name": "Strength Within",
+                    "description": "Gain 195 Attack using Blood Fervor.",
+                    "quote": "Even this task will not be too much for me."
+                },
+                {
+                    "name": "The Inner Fire",
+                    "description": "Deal 450 damage.",
+                    "quote": "Let me show that fire flows through my veins!"
+                },
+                {
+                    "name": "Glory for the Warsong",
+                    "description": "Deathblow 75 times.",
+                    "quote": "Nothing ever changes. We must always fight to survive."
+                },
+                {
+                    "name": "Practice",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I will rest easier once this is done."
+                },
+                {
+                    "name": "Mannoroth's Promise",
+                    "description": "Destroy two enemies in one turn using Battlefury 5 times.",
+                    "quote": "These foes have earned my ire."
+                },
+                {
+                    "name": "Furious Wrath",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I must always be one step ahead of my enemies."
+                },
+                {
+                    "name": "The Curse Calls",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Even this task will not be too much for me."
+                },
+                {
+                    "name": "Test My Axe",
+                    "description": "Gain 450 Attack using Blood Fervor.",
+                    "quote": "Enemies may underestimate me, but my allies will not."
+                },
+                {
+                    "name": "A True Challenge",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I almost envy my opponents…"
+                }
+            ]
         }
     }
 }
