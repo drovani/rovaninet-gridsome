@@ -2658,6 +2658,7 @@
                     "unlock": 15,
                     "speed": 4,
                     "cooldown": 1,
+                    "spell_school": "Holy",
                     "description": "Choose a friendly character. Give it +{0} Attack and restore {0} Health.",
                     "tiers": [
                         {
@@ -5645,6 +5646,263 @@
                     "name": "A Time to Fight",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "I tried talking to them, but it didn't work. So I guess I have to fight."
+                }
+            ]
+        },
+        "Gul'dan": {
+            "race": "Orc",
+            "rarity": "Legendary",
+            "role": "Caster",
+            "attack": 4,
+            "health": 82,
+            "abilities": {
+                "Fel Bolt": {
+                    "unlock": 1,
+                    "speed": 10,
+                    "description": "Deal {0} damage.",
+                    "spell_school": "Fel",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 16
+                        },
+                        {
+                            "description": 18
+                        },
+                        {
+                            "description": 20
+                        }
+                    ]
+                },
+                "Rain of Destruction": {
+                    "unlock": 5,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Fel",
+                    "description": "Deal {0} damage to a random enemy. Repeat for each Fel ability you've cast this turn.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                },
+                "Siphon Life": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage. Restore that much Health to all friendly Orcs and Demons.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Amulet of Souls": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Siphon Life",
+                    "description": "Siphon Life deals an additional {0} damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Blood of Mannoroth": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Rain of Destruction",
+                    "description": "Rain of Destruction deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Staff of Chaos": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: After an Orc dies, gain +{0} Fel Damage.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Powerful Fel Magic",
+                    "description": "Deal 70 damage using Fel Bolt.",
+                    "quote": "Bow before the Legion’s might, or break before it…"
+                },
+                {
+                    "name": "Protect our Allies",
+                    "description": "Deal 120 damage using Rain of Destruction.",
+                    "quote": "Are you ready to serve?"
+                },
+                {
+                    "name": "Their Soul is Mine",
+                    "description": "Restore 50 Health using Siphon Life.",
+                    "quote": "Their souls will be mine."
+                },
+                {
+                    "name": "Darkness Incarnate",
+                    "description": "Deal 150 damage.",
+                    "quote": "I am darkness incarnate."
+                },
+                {
+                    "name": "Harbinger of Fury",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "My plans are coming to fruition."
+                },
+                {
+                    "name": "For the Shadowmoon",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I will not be denied."
+                },
+                {
+                    "name": "Ner'zhul Was Weak",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Claim your destiny."
+                },
+                {
+                    "name": "Another Bargain?",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "Bask in my glory."
+                },
+                {
+                    "name": "Souls for Kil'jaeden",
+                    "description": "Restore 100 Health using Siphon Life.",
+                    "quote": "Watch your words when you speak to me."
+                },
+                {
+                    "name": "Blackhand was Weak",
+                    "description": "Deal 180 damage using Fel Bolt.",
+                    "quote": "Do not test me."
+                },
+                {
+                    "name": "The Blood of Mannoroth",
+                    "description": "Deal 450 damage.",
+                    "quote": "Are you ready to serve?"
+                },
+                {
+                    "name": "Horde United",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "I am darkness incarnate."
+                },
+                {
+                    "name": "Shadow Council's Plans",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Their souls will be mine."
+                },
+                {
+                    "name": "Destroyer of Dreams",
+                    "description": "Deal 900 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "My plans are coming to fruition."
+                },
+                {
+                    "name": "A Paltry Challenge",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Do not test me."
+                },
+                {
+                    "name": "I need More Souls",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "I will not be denied."
+                },
+                {
+                    "name": "Corrupted Fel Bolts",
+                    "description": "Deal 900 damage using Rain of Destruction.",
+                    "quote": "Bask in my glory."
+                },
+                {
+                    "name": "Founder of the Horde",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Watch your words when you speak to me."
                 }
             ]
         }
