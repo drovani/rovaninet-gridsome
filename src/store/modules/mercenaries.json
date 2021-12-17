@@ -2022,31 +2022,36 @@
                         {
                             "description": [
                                 4,
-                                1
+                                1,
+                                "y"
                             ]
                         },
                         {
                             "description": [
                                 9,
-                                1
+                                1,
+                                "y"
                             ]
                         },
                         {
                             "description": [
                                 14,
-                                1
+                                1,
+                                "y"
                             ]
                         },
                         {
                             "description": [
                                 15,
-                                1
+                                1,
+                                "y"
                             ]
                         },
                         {
                             "description": [
                                 16,
-                                1
+                                1,
+                                "y"
                             ]
                         }
                     ]
@@ -2138,7 +2143,7 @@
                 "Timberfrost Totem": {
                     "unlock": "Level 30",
                     "position": "middle",
-                    "affects": "Mudding Footing",
+                    "affects": "Muddy Footing",
                     "description": "Muddy Footing slows ({0}) Speed more.",
                     "tiers": [
                         {
@@ -3749,19 +3754,34 @@
                     "description": "Gain +{0} Attack for each friendly Pirate and Attack a random enemy. {Combo: }Gain Immune while Attacking this turn.",
                     "tiers": [
                         {
-                            "description": 1
+                            "description": [
+                                1,
+                                "Combo: "
+                            ]
                         },
                         {
-                            "description": 2
+                            "description": [
+                                2,
+                                null
+                            ]
                         },
                         {
-                            "description": 3
+                            "description": [
+                                3,
+                                null
+                            ]
                         },
                         {
-                            "description": 4
+                            "description": [
+                                4,
+                                null
+                            ]
                         },
                         {
-                            "description": 5
+                            "description": [
+                                5,
+                                null
+                            ]
                         }
                     ]
                 },
@@ -4064,41 +4084,53 @@
                     "speed": 7,
                     "cooldown": 1,
                     "description": "Summon a Cannon to the left or right of this Merc. (Starts off cooldown)",
-                    "summon": {
-                        "name": "Eudora's Cannon",
-                        "attack": 0,
-                        "health": 0,
-                        "description": "At the end of the turn, deal {0} damage to the characters opposite this."
+                    "info": {
+                        "summon": {
+                            "name": "Eudora's Cannon",
+                            "attack": 0,
+                            "health": 0,
+                            "description": "At the end of the turn, deal {0} damage to the characters opposite this."
+                        }
                     },
                     "tiers": [
                         {
-                            "summon": {
-                                "description": 5,
-                                "health": 6
+                            "info": {
+                                "summon": {
+                                    "description": 5,
+                                    "health": 6
+                                }
                             }
                         },
                         {
-                            "summon": {
-                                "description": 9,
-                                "health": 10
+                            "info": {
+                                "summon": {
+                                    "description": 9,
+                                    "health": 10
+                                }
                             }
                         },
                         {
-                            "summon": {
-                                "description": 13,
-                                "health": 14
+                            "info": {
+                                "summon": {
+                                    "description": 13,
+                                    "health": 14
+                                }
                             }
                         },
                         {
-                            "summon": {
-                                "description": 14,
-                                "health": 16
+                            "info": {
+                                "summon": {
+                                    "description": 14,
+                                    "health": 16
+                                }
                             }
                         },
                         {
-                            "summon": {
-                                "description": 15,
-                                "health": 18
+                            "info": {
+                                "summon": {
+                                    "description": 15,
+                                    "health": 18
+                                }
                             }
                         }
                     ]
@@ -4962,6 +4994,657 @@
                     "name": "A True Challenge",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "I almost envy my opponents…"
+                }
+            ]
+        },
+        "Gruul": {
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 14,
+            "health": 80,
+            "abilities": {
+                "Crazed Flurry": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Attack an enemy. If this Merc took damage this turn, gain +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                },
+                "Dragonslayer Shot": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "description": "Deal {0} damage. If it's a Dragon, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                21
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                23
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                25
+                            ]
+                        }
+                    ]
+                },
+                "Dragonmaw Poacher": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Dragonmaw Poacher",
+                        "race": "Orc",
+                        "description": "Battlecry: If your opponent controls a Dragon, gain +{0}/+{0} and Rush.",
+                        "attack": 0,
+                        "health": 0
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": [
+                                    6,
+                                    6
+                                ],
+                                "attack": 6,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    9,
+                                    9
+                                ],
+                                "attack": 9,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    12,
+                                    12
+                                ],
+                                "attack": 12,
+                                "health": 12
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    14,
+                                    14
+                                ],
+                                "attack": 14,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    15,
+                                    15
+                                ],
+                                "attack": 15,
+                                "health": 15
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dragon's Skull": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "description": "Passive: Your characters have +{0} Fire Resistance.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Burning Shot": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Dragonslayer Shot",
+                    "description": "Dragonslayer Shot deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Dragonclaw Fists": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: Gruul has +{0} Attack while an enemy Dragon is on the battlefield.",
+                    "tiers": [
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Crazed Flurry",
+                    "description": "Gain 55 Attack using Crazed Flurry.",
+                    "quote": "Come… serve Gruul, and gain strength."
+                },
+                {
+                    "name": "Flying Lizards",
+                    "description": "Deal 50 damage using Dragonslayer Shot.",
+                    "quote": "Defeat my enemies…"
+                },
+                {
+                    "name": "Dragon Catchers",
+                    "description": "Summon a Dragonmaw Poacher 10 times.",
+                    "quote": "Make them suffer…"
+                },
+                {
+                    "name": "The Gronn Lord",
+                    "description": "Deal 150 damage.",
+                    "quote": "This is Gruul's command."
+                },
+                {
+                    "name": "Blade's Edge",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Slay them..."
+                },
+                {
+                    "name": "Come… and Die",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Be swift."
+                },
+                {
+                    "name": "Unworthy",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Fight harder…"
+                },
+                {
+                    "name": "Gruul Needs Strength",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "Destroy them all."
+                },
+                {
+                    "name": "Dragon Invaders",
+                    "description": "Destroy 45 enemies using Dragonmaw Poacher.",
+                    "quote": "Gruul demands this."
+                },
+                {
+                    "name": "Massive Fists",
+                    "description": "Deal 200 damage using Crazed Flurry.",
+                    "quote": "Gronn have many foes. Some very big."
+                },
+                {
+                    "name": "Might of the Gronns",
+                    "description": "Deal 450 damage.",
+                    "quote": "Defeat my enemies…"
+                },
+                {
+                    "name": "We Kill Dragons",
+                    "description": "Defeat 30 Dragons.",
+                    "quote": "Make them suffer…"
+                },
+                {
+                    "name": "Scurry, Weak Ones",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "This is Gruul's command."
+                },
+                {
+                    "name": "Kill the Invaders",
+                    "description": "Destroy 40 Dragons using Dragonslayer Shot.",
+                    "quote": "Slay them..."
+                },
+                {
+                    "name": "Ogre Overlord",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Be swift."
+                },
+                {
+                    "name": "Squash Them",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Destroy them all."
+                },
+                {
+                    "name": "Pain Makes Gain",
+                    "description": "Deal 900 damage using Crazed Flurry.",
+                    "quote": "Fight harder…"
+                },
+                {
+                    "name": "The Dragonslayer",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Gruul demands this."
+                }
+            ]
+        },
+        "Guff Runetotem": {
+            "race": "Tauren",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 9,
+            "health": 75,
+            "abilities": {
+                "Runic Slam": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "spell_school": "Nature",
+                    "description": "Attack an enemy. Deathblow: Give all Mercs on your battlefield and bench +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Living Brambles": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Nature Combo: Repeat this.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Ironbark": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Gain Taunt this turn. After you cast a Nature ability this turn, gain +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                12
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Bramblethorn Totem": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Living Brambles",
+                    "description": "Living Brambles deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Earthen Bracers": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Ironbark",
+                    "description": "Ironbark gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Bloomin' Shroom": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Runic Slam",
+                    "description": "Runic Slam gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                5
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "I Can Help",
+                    "description": "Deal 55 damage using Runic Slam.",
+                    "quote": "Hey, is it adventuring time? Guff loves that time!"
+                },
+                {
+                    "name": "Protect the Land",
+                    "description": "Deal 55 damage using Living Brambles.",
+                    "quote": "I'll try to do this as nicely as possible."
+                },
+                {
+                    "name": "Protect the Weak",
+                    "description": "Use Ironbark 12 times.",
+                    "quote": "Hm, why am I focusing on this when I could be picking flowers?"
+                },
+                {
+                    "name": "Pruning the Bad Growth",
+                    "description": "Deal 150 damage.",
+                    "quote": "Let's bring them peace."
+                },
+                {
+                    "name": "Nature Calls",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I should get this done quickly so I can take a nice, long nap."
+                },
+                {
+                    "name": "A Little Problem",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Another thing for me to do…"
+                },
+                {
+                    "name": "Can't We All Get Along",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Hey, this looks kind of hard! But I'll keep trying, slow and steady."
+                },
+                {
+                    "name": "Tending the Land",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I never knew protecting nature would mean doing so much."
+                },
+                {
+                    "name": "Strength from Nature",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "I tried talking to them, but it didn't work. So I guess I have to fight."
+                },
+                {
+                    "name": "Care and Feeding",
+                    "description": "Give 90 Health or Attack to friendly Mercenaries.",
+                    "quote": "I'm concerned about this one…"
+                },
+                {
+                    "name": "Nature's Wrath",
+                    "description": "Deal 450 damage.",
+                    "quote": "I'll try to do this as nicely as possible."
+                },
+                {
+                    "name": "Make Hamuul Proud",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "Hm, why am I focusing on this when I could be picking flowers?"
+                },
+                {
+                    "name": "Seeing the World",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Let's bring them peace."
+                },
+                {
+                    "name": "Nature has Thorns",
+                    "description": "Deal 20 or more damage in one turn using Living Brambles 15 times.",
+                    "quote": "Another thing for me to do…"
+                },
+                {
+                    "name": "Adventure, then Nap",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I should get this done quickly so I can take a nice, long nap."
+                },
+                {
+                    "name": "Slow and Steady",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Hey, this looks kind of hard! But I'll keep trying, slow and steady."
+                },
+                {
+                    "name": "I Do Not Want to Fight",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "I never knew protecting nature would mean doing so much."
+                },
+                {
+                    "name": "A Time to Fight",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I tried talking to them, but it didn't work. So I guess I have to fight."
                 }
             ]
         }
