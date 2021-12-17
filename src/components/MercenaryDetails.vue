@@ -11,7 +11,12 @@
         </button>
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
             <div class="sm:row-span-6 text-xl">
-                <header class="text-center bg-gray-900 text-white rounded-md flex px-1">
+                <header class="text-center bg-gray-900 text-white rounded-md flex px-1 mb-4"
+                :class="{
+                    'bg-red-900': mercenary.role === 'Protector',
+                    'bg-green-900': mercenary.role === 'Fighter',
+                    'bg-blue-900': mercenary.role === 'Caster',
+                }">
                     <span v-if="activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
                     </span>
