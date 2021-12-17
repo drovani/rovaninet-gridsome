@@ -21,39 +21,19 @@
                     </button>
                 </header>
                 <div class="flex px-1 items-center">
-                    <div
-                        class="
-                            attack-value
-                            bg-center bg-contain
-                            w-12
-                            h-12
-                            text-center
-                            pt-3
-                            font-semibold
-                            text-white
-                            bg-no-repeat
-                        "
-                    >
-                        {{ mercenaryAttack }}
-                    </div>
+                    <Attack
+                        :role="mercenary.role"
+                        :value="mercenaryAttack"
+                        class="w-12 h-12 text-2xl p-2"
+                    ></Attack>
                     <div class="flex-grow text-center sm:text-sm md:text-xl">
                         {{ mercenary.race }}
                     </div>
-                    <div
-                        class="
-                            health-value
-                            bg-center bg-contain
-                            w-12
-                            h-12
-                            text-center
-                            pt-3
-                            font-semibold
-                            text-white
-                            bg-no-repeat
-                        "
-                    >
-                        {{ mercenaryHealth }}
-                    </div>
+                    <Health
+                        :role="mercenary.role"
+                        :value="mercenaryHealth"
+                        class="w-12 h-12 text-2xl p-2"
+                    ></Health>
                 </div>
                 <div class="text-center mb-4">
                     {{ abilitiesMaxCost + equipmentMaxCost }}
@@ -126,6 +106,8 @@ import AbilityCard from "./AbilityCard.vue";
 import ItemCard from "./ItemCard.vue";
 import TaskTracker from "./TaskTracker.vue";
 import UpDownButtons from "./UpDownButtons.vue";
+import Attack from "./Attack.vue";
+import Health from "./Health.vue";
 const abilityUpgradeCosts = [50, 125, 150, 150];
 const itemUpgradeCosts = [100, 150, 175];
 
@@ -274,6 +256,8 @@ export default {
         ItemCard,
         UpDownButtons,
         TaskTracker,
+        Attack,
+        Health,
     },
 };
 </script>
