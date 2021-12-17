@@ -1,12 +1,14 @@
 <template>
     <div
-        class="bg-gray-50 rounded-md p-1 text-center"
+        class="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 rounded-md p-1 text-center"
         :class="{
-            'bg-gradient-to-b from-gray-50 via-gray-100 to-yellow-100': ability.spell_school === 'Holy',
-            'bg-gradient-to-b from-gray-50 via-gray-100 to-red-300': ability.spell_school === 'Fire',
-            'bg-gradient-to-b from-gray-50 via-gray-100 to-green-200': ability.spell_school === 'Nature',
-            'bg-gradient-to-b from-gray-50 via-gray-100 to-blue-100': ability.spell_school === 'Arcane',
-            'bg-gradient-to-b from-gray-200 via-gray-200  to-yellow-700': ability.summon,
+            'to-yellow-100': ability.spell_school === 'Holy',
+            'to-red-300': ability.spell_school === 'Fire',
+            'to-green-200': ability.spell_school === 'Nature',
+            'to-blue-100': ability.spell_school === 'Arcane',
+            'to-gray-600': ability.spell_school === 'Shadow',
+            'to-purple-400': ability.spell_school === 'Fel',
+            'from-gray-200 via-gray-200  to-yellow-700': ability.summon,
         }"
     >
         <div class="h-12 mb-1" :class="{ 'text-sm': !showDetails, 'text-xl': showDetails }">
