@@ -1,8 +1,8 @@
 <template>
     <div class="text-base rounded bg-gray-50">
-        <div class="mb-4 mx-2 border-b text-center h-12 pb-4">
+        <div class="mb-4 mx-2 border-b text-center h-16 pb-20">
             <span v-if="tasksCompleted === 0">No tasks completed, yet!</span>
-            <span v-else>Task #{{ tasksCompleted }}: {{ tasks[tasksCompleted - 1].name }}</span>
+            <span v-else>Completed Task #{{ tasksCompleted }}: {{ tasks[tasksCompleted - 1].name }}</span>
         </div>
         <div class="flex">
             <div class="flex-1">
