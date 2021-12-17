@@ -1,8 +1,17 @@
 <template>
-    <section :class="mercenary.role.toLowerCase()" class="p-2 border-2 rounded-md">
-        <header class="text-center">
-            <h2 class="bg-gray-900 text-white rounded-md">{{ mercName }}</h2>
-            <span>{{ mercenary.race }}</span>
+    <section
+        class="p-2 border-2 rounded-md"
+        :class="{
+            'border-red-400': mercenary.role === 'Protector',
+            'border-green-400': mercenary.role === 'Fighter',
+            'border-blue-400': mercenary.role === 'Caster',
+        }"
+    >
+        <header class="bg-gray-900 text-white rounded-md text-center grid grid-cols-3">
+            <h2 class="col-span-2">
+                {{ mercName }}
+            </h2>
+            <div>{{ mercenary.race }}</div>
         </header>
         <div class="grid grid-cols-1 space-y-2 sm:space-y-0 sm:grid-cols-3 sm:space-x-2">
             <AbilityCard

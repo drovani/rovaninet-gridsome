@@ -1,17 +1,17 @@
 <template>
     <div
-        class="bg-gray-50 rounded-md p-1 text-sm text-center"
+        class="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 rounded-md p-1 text-center"
         :class="{
-            'bg-yellow-100': ability.spell_school === 'Holy',
-            'bg-red-100': ability.spell_school === 'Fire',
-            'bg-green-100': ability.spell_school === 'Nature',
-            'bg-blue-100': ability.spell_school === 'Arcane',
+            'to-yellow-100': ability.spell_school === 'Holy',
+            'to-red-300': ability.spell_school === 'Fire',
+            'to-green-200': ability.spell_school === 'Nature',
+            'to-blue-100': ability.spell_school === 'Arcane',
+            'to-gray-600': ability.spell_school === 'Shadow',
+            'to-purple-400': ability.spell_school === 'Fel',
+            'from-gray-200 via-gray-200  to-yellow-700': ability.summon,
         }"
     >
-        <div
-            class="h-12 text-base mb-1"
-            :class="{ 'text-base': !showDetails, 'text-xl': showDetails }"
-        >
+        <div class="h-12 mb-1" :class="{ 'text-sm': !showDetails, 'text-xl': showDetails }">
             <slot />
             {{ activeTier }}
         </div>
@@ -25,9 +25,26 @@
             >
                 <div :class="{ invisible: costToMax <= 0 }">{{ costToMax }}</div>
             </UpDownButtons>
-            <div class="h-16 sm:h-32">{{ description }}</div>
+            <AbilityDescription
+                v-if="ability.description"
+                class="h-16 sm:h-32"
+                :abilityDescription="ability.description"
+                :activeTierInfo="activeTierInfo"
+                :itemEquippedTier="itemEquippedTier"
+            ></AbilityDescription>
+            <SummonDescription
+                v-else-if="ability.summon"
+                class="h-16 sm:h-32"
+                :summon="ability.summon"
+                :activeTierInfo="activeTierInfo"
+                :itemEquippedTier="itemEquippedTier"
+            >
+            </SummonDescription>
         </template>
-        <div class="grid grid-cols-3 lg:grid-cols-2 text-center">
+        <div
+            class="grid grid-cols-3 lg:grid-cols-2 text-center"
+            :class="{ 'text-base': !showDetails, 'text-xl': showDetails }"
+        >
             <div :class="{ invisible: speed <= 0 }">
                 {{ speed }}
                 <img src="/images/mercs/speed.png" alt="Speed" class="h-4 w-4 inline" />
@@ -42,6 +59,8 @@
 </template>
 <script>
 import UpDownButtons from "~/components/UpDownButtons.vue";
+import AbilityDescription from "~/components/AbilityDescription.vue";
+import SummonDescription from "~/components/SummonDescription.vue";
 
 export default {
     props: {
@@ -80,74 +99,6 @@ export default {
         },
     },
     computed: {
-        description() {
-            let desc = this.ability.description;
-            const regex = new RegExp(/\{([\w\d\s:]+)\}/, "g");
-            const matches = [...this.ability.description.matchAll(regex)];
-            for (let i = 0; i < matches.length; i++) {
-                if (!isNaN(matches[i][1])) {
-                    // Found {0}
-                    const baseValue = Number(matches[i][1]);
-                    const tierValue = () => {
-                        if (Array.isArray(this.activeTierInfo.description)) {
-                            return Number(this.activeTierInfo.description[i]) || 0;
-                        } else {
-                            return Number(this.activeTierInfo.description) || 0;
-                        }
-                    };
-                    const itemValue = () => {
-                        if (Array.isArray(this.itemEquippedTier?.modifier?.description)) {
-                            return Number(this.itemEquippedTier.modifier.description[i]) || 0;
-                        } else {
-                            return Number(this.itemEquippedTier?.modifier?.description) || 0;
-                        }
-                    };
-                    // console.debug({ baseValue, tierValue: tierValue(), itemValue: itemValue() });
-                    desc = desc.replace(matches[i][0], baseValue + tierValue() + itemValue());
-                } else {
-                    // Found {string}
-                    /*
-                    console.debug({
-                        index: i,
-                        match: matches[i][1],
-                        itemEquippedTier: this.itemEquippedTier?.modifier?.description,
-                        activeTierInfo: this.activeTierInfo?.description,
-                    });
-                    */
-                    if (
-                        Array.isArray(this.itemEquippedTier?.modifier?.description) &&
-                        this.itemEquippedTier.modifier.description[i] !== undefined
-                    ) {
-                        // replace {string} with modifier
-                        desc = desc.replace(
-                            matches[i][0],
-                            this.itemEquippedTier.modifier.description[i]
-                        );
-                    } else if (this.itemEquippedTier?.modifier?.description !== undefined) {
-                        // replace {string} with modifier
-                        desc = desc.replace(
-                            matches[i][0],
-                            this.itemEquippedTier.modifier.description
-                        );
-                    } else if (
-                        Array.isArray(this.activeTierInfo.description) &&
-                        this.activeTierInfo.description[i] !== undefined
-                    ) {
-                        // replace {string} with active tier replacement
-                        desc = desc.replace(matches[i][0], this.activeTierInfo.description[i]);
-                    } else {
-                        // replace {string} with string (i.e. remove braces)
-                        desc = desc.replace(matches[i][0], matches[i][1]);
-                    }
-                }
-            }
-            if (this.itemEquippedTier?.modifier?.description instanceof Object) {
-                if (this.itemEquippedTier.modifier.description.type === "append") {
-                    desc = `${desc} ${this.itemEquippedTier.modifier.description.text}`;
-                }
-            }
-            return desc.replaceAll("{", "").replaceAll("}", "");
-        },
         speed() {
             if (this.itemEquippedTier?.modifier?.speed) {
                 return (
@@ -175,6 +126,6 @@ export default {
             return this.ability.tiers[this.activeTier - 1];
         },
     },
-    components: { UpDownButtons },
+    components: { UpDownButtons, AbilityDescription, SummonDescription },
 };
 </script>

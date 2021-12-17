@@ -11,7 +11,12 @@
         </button>
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
             <div class="sm:row-span-6 text-xl">
-                <header class="text-center bg-gray-900 text-white rounded-md flex px-1">
+                <header class="text-center bg-gray-900 text-white rounded-md flex px-1 mb-4"
+                :class="{
+                    'bg-red-900': mercenary.role === 'Protector',
+                    'bg-green-900': mercenary.role === 'Fighter',
+                    'bg-blue-900': mercenary.role === 'Caster',
+                }">
                     <span v-if="activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
                     </span>
@@ -21,39 +26,19 @@
                     </button>
                 </header>
                 <div class="flex px-1 items-center">
-                    <div
-                        class="
-                            attack-value
-                            bg-center bg-contain
-                            w-12
-                            h-12
-                            text-center
-                            pt-3
-                            font-semibold
-                            text-white
-                            bg-no-repeat
-                        "
-                    >
-                        {{ mercenaryAttack }}
-                    </div>
+                    <Attack
+                        :role="mercenary.role"
+                        :value="mercenaryAttack"
+                        class="w-12 h-12 text-2xl p-2"
+                    ></Attack>
                     <div class="flex-grow text-center sm:text-sm md:text-xl">
                         {{ mercenary.race }}
                     </div>
-                    <div
-                        class="
-                            health-value
-                            bg-center bg-contain
-                            w-12
-                            h-12
-                            text-center
-                            pt-3
-                            font-semibold
-                            text-white
-                            bg-no-repeat
-                        "
-                    >
-                        {{ mercenaryHealth }}
-                    </div>
+                    <Health
+                        :role="mercenary.role"
+                        :value="mercenaryHealth"
+                        class="w-12 h-12 text-2xl p-2"
+                    ></Health>
                 </div>
                 <div class="text-center mb-4">
                     {{ abilitiesMaxCost + equipmentMaxCost }}
@@ -126,6 +111,8 @@ import AbilityCard from "./AbilityCard.vue";
 import ItemCard from "./ItemCard.vue";
 import TaskTracker from "./TaskTracker.vue";
 import UpDownButtons from "./UpDownButtons.vue";
+import Attack from "./Attack.vue";
+import Health from "./Health.vue";
 const abilityUpgradeCosts = [50, 125, 150, 150];
 const itemUpgradeCosts = [100, 150, 175];
 
@@ -265,7 +252,7 @@ export default {
             return (taskNumber) => {
                 return Object.entries(this.mercenary.equipment).find(
                     (item) => item[1].unlock === `Task ${taskNumber}`
-                )[0];
+                )?.[0];
             };
         },
     },
@@ -274,6 +261,8 @@ export default {
         ItemCard,
         UpDownButtons,
         TaskTracker,
+        Attack,
+        Health,
     },
 };
 </script>

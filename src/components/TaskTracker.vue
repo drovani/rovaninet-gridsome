@@ -1,13 +1,16 @@
 <template>
     <div class="text-base rounded bg-gray-50">
-        <div class="mb-4 mx-2 border-b text-center h-12 pb-4" v-if="tasksCompleted > 0">
-            Task #{{ tasksCompleted }}: {{ tasks[tasksCompleted - 1].name }}
+        <div class="mb-4 mx-2 border-b text-center h-16 pb-20">
+            <span v-if="tasksCompleted === 0">No tasks completed, yet!</span>
+            <span v-else>Completed Task #{{ tasksCompleted }}: {{ tasks[tasksCompleted - 1].name }}</span>
         </div>
         <div class="flex">
-            <div class="flex-1" v-if="tasksCompleted < taskRewards.length">
-                Next Task: #{{ tasksCompleted + 1 }}
+            <div class="flex-1">
+                <span v-if="tasksCompleted < taskRewards.length">
+                    Next Task: #{{ tasksCompleted + 1 }}</span
+                >
+                <span v-else>Tasks Complete!</span>
             </div>
-            <div class="flex-1" v-else>Tasks Complete!</div>
             <UpDownButtons
                 :showDecrement="tasksCompleted > 0"
                 :showIncrement="tasksCompleted < taskRewards.length"
@@ -33,6 +36,7 @@
                     {{ reward }}
                 </li>
             </ul>
+            <p class="hidden sm:block mt-4">{{tasks[tasksCompleted].quote}}</p>
         </template>
     </div>
 </template>
