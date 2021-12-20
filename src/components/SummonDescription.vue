@@ -7,7 +7,7 @@
         >
             {{ description }}
         </p>
-        <div class="grid grid-cols-3 justify-items-center rounded bg-gray-50 bg-opacity-20 py-1">
+        <div class="grid grid-cols-3 justify-items-center rounded-xl bg-gray-50 bg-opacity-20 py-1">
             <Attack :role="summon.role" :value="summonAttack" class="h-8 w-8 text-xl p-1" />
             <div class="self-end font-semibold">{{ summon.race }}</div>
             <Health :role="summon.role" :value="summonHealth" class="h-8 w-8 text-xl p-1" />

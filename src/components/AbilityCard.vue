@@ -6,6 +6,7 @@
             'to-red-300': ability.spell_school === 'Fire',
             'to-green-200': ability.spell_school === 'Nature',
             'to-blue-100': ability.spell_school === 'Arcane',
+            'to-blue-500':ability.spell_school === 'Frost',
             'to-gray-600': ability.spell_school === 'Shadow',
             'to-purple-400': ability.spell_school === 'Fel',
             'from-gray-200 via-gray-200  to-yellow-700': ability.summon,

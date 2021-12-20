@@ -3,7 +3,7 @@
         "Alexstrasza": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
+            "tasksCompleted": 6,
             "itemEquipped": "Alexstrasza's Brooch",
             "abilities": {
                 "Dragon Breath": 3,
@@ -51,7 +51,7 @@
         "Baron Geddon": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 3,
+            "tasksCompleted": 4,
             "itemEquipped": "Molten Blade",
             "abilities": {
                 "Heating Up": 4,
@@ -67,7 +67,7 @@
         "Blademaster Samuro": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 9,
+            "tasksCompleted": 10,
             "itemEquipped": "Burning Blade",
             "abilities": {
                 "Double Strike": 5,
@@ -83,7 +83,7 @@
         "Blink Fox": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 4,
+            "tasksCompleted": 5,
             "itemEquipped": "Arcane Fang",
             "abilities": {
                 "Arcane Fling": 5,
@@ -99,7 +99,7 @@
         "Grommash Hellscream": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 8,
             "itemEquipped": "Halting Sash",
             "abilities": {
                 "Blood Fervor": 5,
@@ -115,7 +115,7 @@
         "Gruul": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 6,
             "itemEquipped": "Dragonclaw Fists",
             "abilities": {
                 "Crazed Flurry": 3,
@@ -131,7 +131,7 @@
         "Cornelius Roame": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 14,
             "itemEquipped": "Shield of Dawn",
             "abilities": {
                 "Martial Mastery": 5,
@@ -147,7 +147,7 @@
         "Cookie, the Cook": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 6,
             "itemEquipped": "Iron Ladel",
             "abilities": {
                 "Fish Feast": 3,
@@ -179,7 +179,7 @@
         "Brightwing": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 5,
             "itemEquipped": "Pixie's Pouch",
             "abilities": {
                 "Faerie Breath": 3,
@@ -195,7 +195,7 @@
         "Bru'kan": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 11,
+            "tasksCompleted": 6,
             "itemEquipped": "Lightning Rod",
             "abilities": {
                 "Lightning Bolt": 5,
@@ -211,7 +211,7 @@
         "Cairne Bloodhoof": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 7,
             "itemEquipped": "Swift Totem",
             "abilities": {
                 "Ancestral Uppercut": 3,
@@ -227,7 +227,7 @@
         "Cariel Roame": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 12,
             "itemEquipped": "Hammer of Dawn",
             "abilities": {
                 "Crusader's Blow": 5,
@@ -243,7 +243,7 @@
         "Eudora": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 7,
             "itemEquipped": "Primed Armaments",
             "abilities": {
                 "Coup d'Etat": 3,
@@ -259,7 +259,7 @@
         "Guff Runetotem": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
+            "tasksCompleted": 7,
             "itemEquipped": "Bramblethorn Totem",
             "abilities": {
                 "Runic Slam": 5,
@@ -275,7 +275,7 @@
         "Gul'dan": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 2,
             "itemEquipped": "Amulet of Souls",
             "abilities": {
                 "Fel Bolt": 2,
@@ -291,7 +291,7 @@
         "Illidan Stormrage": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 4,
             "itemEquipped": "Demon Shroud",
             "abilities": {
                 "Winged Assault": 3,
@@ -302,6 +302,70 @@
                 "Razor Fist": 2,
                 "Warglaives of Azzinoth": 4,
                 "Demon Shroud": 2
+            }
+        },
+        "Jaina Proudmoore": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 8,
+            "itemEquipped": "Frost Shards",
+            "abilities": {
+                "Icicle": 3,
+                "Ice Floes": 3,
+                "Water Elemental": 3
+            },
+            "equipment": {
+                "Frost Shards": 1,
+                "Frost Dust": 2,
+                "Ice Block Talisman": 4
+            }
+        },
+        "King Krush": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Flaming Claws",
+            "abilities": {
+                "Apex Predator": 4,
+                "Terrify": 3,
+                "Devilsaur": 4
+            },
+            "equipment": {
+                "Flaming Claws": 3,
+                "Rocky Carapace": 2,
+                "Fresh Meat": 1
+            }
+        },
+        "Kurtus Ashfallen": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 5,
+            "itemEquipped": "Chaos Amulet",
+            "abilities": {
+                "Demon Slayer": 3,
+                "Aimless Assault": 5,
+                "Eye Beam": 4
+            },
+            "equipment": {
+                "Demon Guard": 1,
+                "Fel Blade": 3,
+                "Chaos Amulet": 2
+            }
+        },
+        "King Mukla": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Mukla's Big Brother",
+            "abilities": {
+                "Banana Frenzy": 5,
+                "Dinner Time": 5,
+                "Primal Power": 3
+            },
+            "equipment": {
+                "Refreshing Bananas": 2,
+                "Radioactive Bananas": 3,
+                "Mukla's Big Brother": 2
             }
         }
     }
