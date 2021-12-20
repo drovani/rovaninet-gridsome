@@ -7912,6 +7912,317 @@
                     "quote": "You do not want to fail me, mortal."
                 }
             ]
+        },
+        "Malfurion Stormrage": {
+            "race": "Night Elf",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 6,
+            "health": 68,
+            "abilities": {
+                "Cenarion Surge": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Your character's Nature abilities are ({0}) Speed faster next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Entangling Roots": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to an enemy and Root it.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 16
+                        }
+                    ]
+                },
+                "Archdruid's Call": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Choose One - Deal {0} damage to all enemies; or Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                24
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Forest Medallion": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Entangling Roots",
+                    "description": "Entangling Roots also slows the enemies next ability by ({0}) Speed.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type":"append",
+                                    "text":" Its next ability is (1) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type":"append",
+                                    "text":" Its next ability is (2) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type":"append",
+                                    "text":" Its next ability is (3) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type":"append",
+                                    "text":" Its next ability is (4) Speed slower."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Briarthorn": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Archdruid's Call",
+                    "description": "Archdruid's Call deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Liferoot Staff": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever you cast a Nature ability, Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "As Nature Wills",
+                    "description": "Deal 70 damage using Cenarian Surge.",
+                    "quote": "I am nature’s guardian. You can trust my judgment to protect the wilds."
+                },
+                {
+                    "name": "You Look Tied Up",
+                    "description": "Deal 145 damage using Entangling Roots.",
+                    "quote": "May Elune grant us strength."
+                },
+                {
+                    "name": "Nature's Strength",
+                    "description": "Deal 85 damage using Archdruid's Call.",
+                    "quote": "The land and I are one."
+                },
+                {
+                    "name": "Elune Give Us Strength",
+                    "description": "Deal 150 damage.",
+                    "quote": "My greetings."
+                },
+                {
+                    "name": "Attack Now",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Remember your teachings."
+                },
+                {
+                    "name": "Nature Calls",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Hail to the night."
+                },
+                {
+                    "name": "We Must Attack Now",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Nature stands with you."
+                },
+                {
+                    "name": "Unleash Nature's Wrath",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "We are all connected to each other."
+                },
+                {
+                    "name": "Blessings Upon You",
+                    "description": "Increase the speed of friendly abilities by a total of 55.",
+                    "quote": "Elune-Adore."
+                },
+                {
+                    "name": "I Feel Stronger",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "I’m awake, I’m awake… Now to get to the point..."
+                },
+                {
+                    "name": "Rise To Action",
+                    "description": "Deal 450 damage.",
+                    "quote": "May Elune grant us strength."
+                },
+                {
+                    "name": "Nature's Wrath",
+                    "description": "Restore 245 Health using Archdruid's Call.",
+                    "quote": "We are all connected to each other."
+                },
+                {
+                    "name": "I Hear the Wild Calls",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My greetings."
+                },
+                {
+                    "name": "Vengeance is Mine",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "Remember your teachings."
+                },
+                {
+                    "name": "Justice Be Done",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Hail to the night."
+                },
+                {
+                    "name": "Nothing Personal",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Nature stands with you."
+                },
+                {
+                    "name": "Give and Take",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "The land and I are one."
+                },
+                {
+                    "name": "Enemies Beware",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Elune-Adore."
+                }
+            ]
         }
     }
 }
