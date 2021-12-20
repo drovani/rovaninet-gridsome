@@ -6283,25 +6283,37 @@
                         {
                             "description": 2,
                             "modifier": {
-                                "description": [2,2]
+                                "description": [
+                                    2,
+                                    2
+                                ]
                             }
                         },
                         {
                             "description": 3,
                             "modifier": {
-                                "description": [3,3]
+                                "description": [
+                                    3,
+                                    3
+                                ]
                             }
                         },
                         {
                             "description": 4,
                             "modifier": {
-                                "description": [4,4]
+                                "description": [
+                                    4,
+                                    4
+                                ]
                             }
                         },
                         {
                             "description": 5,
                             "modifier": {
-                                "description": [5,5]
+                                "description": [
+                                    5,
+                                    5
+                                ]
                             }
                         }
                     ]
@@ -6458,6 +6470,287 @@
                     "name": "This Isn't Your Day",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "The cold never bothered me. However, it might bother them…"
+                }
+            ]
+        },
+        "King Krush": {
+            "race": "Beast",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 11,
+            "health": 68,
+            "abilities": {
+                "Apex Predator": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "description": "Attack the lowest Health enemy. Deathblow: Repeat this.",
+                    "tiers": [
+                        {
+                            "speed": 0
+                        },
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Terrify": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack for each of your Beasts. Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Devilsaur": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Devilsaur",
+                        "race": "Beast",
+                        "description": "Rush"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 6,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 14,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 16,
+                                "health": 16
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 18,
+                                "health": 18
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Flaming Claws": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "description": "Passive: +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "item2": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Devilsaur",
+                    "description": "Devilsaur has +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "health": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "health": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "health": 8
+                                }
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "summon": {
+                                    "health": 10
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Fresh Meat": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Terrify",
+                    "description": "Terrify gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Sholazar Sovereign",
+                    "description": "Deal 50 damage using Apex Predator.",
+                    "quote": ""
+                },
+                {
+                    "name": "A Green Terror",
+                    "description": "Gain 25 Attack using Terrify.",
+                    "quote": "<Look at them flee when they see me coming!>"
+                },
+                {
+                    "name": "Devilsaurs",
+                    "description": "Summon a Devilsaur 12 times.",
+                    "quote": "<My brethren will always aid me.>"
+                },
+                {
+                    "name": "Crush is my Name",
+                    "description": "Deal 150 damage.",
+                    "quote": "<Rend and tear until they are meat for our feast.>"
+                },
+                {
+                    "name": "Devilsaur Power",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<There can only be one king in the basin.>"
+                },
+                {
+                    "name": "Stomp, stomp, stomp",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<Crush them all beneath my feet.>"
+                },
+                {
+                    "name": "Rampage",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<They think they can beat the king? They are wrong.>"
+                },
+                {
+                    "name": "Sharpen your Teeth",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "<A king must never rest, they must become stronger.>"
+                },
+                {
+                    "name": "My Subjects Serve",
+                    "description": "Destroy 40 enemies using Devilsaur.",
+                    "quote": "<My brethren will always aid me.>"
+                },
+                {
+                    "name": "Purge the Weak",
+                    "description": "Deal 180 damage using Apex Predator.",
+                    "quote": "<The weak will be food for my family.>"
+                },
+                {
+                    "name": "Outgrowing Sholazar",
+                    "description": "Deal 450 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "The King of Crush",
+                    "description": "Destroy two enemies in one turn using Apex Predator 15 times.",
+                    "quote": ""
+                },
+                {
+                    "name": "The Mighty Devilsaur",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<Look at them flee when they see me coming!>"
+                },
+                {
+                    "name": "Flee Before my Rage",
+                    "description": "Gain 100 Attack using Terrify.",
+                    "quote": "<The weak will be food for my family.>"
+                },
+                {
+                    "name": "Protecting the Basin",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<Rend and tear until they are meat for our feast.>"
+                },
+                {
+                    "name": "Jaws vs. Magic",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "<There can only be one king in the basin.>"
+                },
+                {
+                    "name": "Apex Predator",
+                    "description": "Deal 900 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "<Crush them all beneath my feet.>"
+                },
+                {
+                    "name": "Clash of Titans",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<They think they can beat the king? They are wrong.>"
                 }
             ]
         }
