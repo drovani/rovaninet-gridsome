@@ -396,7 +396,7 @@
             "equipment": {
                 "Ring of Purity": {
                     "unlock": "Task 2",
-                    "position": "left",
+                    "position": "right",
                     "description": "Passive: Whenever a friendly character is healed, gain +{0} Health.",
                     "tiers": [
                         {
@@ -420,7 +420,7 @@
                 },
                 "Harmonic Mallet": {
                     "unlock": "Task 7",
-                    "position": "right",
+                    "position": "left",
                     "affects": "Holy Nova",
                     "description": "Holy Nova deals {0} more damage",
                     "tiers": [
@@ -2311,41 +2311,46 @@
                     "unlock": 5,
                     "speed": 3,
                     "cooldown": 1,
-                    "description": "Gain Taunt for {0} {turn}. Your characters are ({0}) Speed faster this turn.",
+                    "description": "Gain Taunt for {0} {turn}. Your characters are ({0}) Speed faster this turn{.}",
                     "tiers": [
                         {
                             "description": [
                                 1,
                                 "turn",
-                                1
+                                1,
+                                "."
                             ]
                         },
                         {
                             "description": [
                                 1,
                                 "turn",
-                                2
+                                2,
+                                "."
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                2
+                                2,
+                                "."
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                3
+                                3,
+                                "."
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                4
+                                4,
+                                "."
                             ]
                         }
                     ]
@@ -2444,28 +2449,34 @@
                         {
                             "description": 1,
                             "modifier": {
-                                "description": {
-                                    "type": "append",
-                                    "text": "This Merc's next ability is (1) Speed faster."
-                                }
+                                "description": [
+                                    0,
+                                    null,
+                                    0,
+                                    ", and this Merc's next ability is (1) Speed faster."
+                                ]
                             }
                         },
                         {
                             "description": 2,
                             "modifier": {
-                                "description": {
-                                    "type": "append",
-                                    "text": "This Merc's next ability is (2) Speed faster."
-                                }
+                                "description": [
+                                    0,
+                                    null,
+                                    0,
+                                    ", and this Merc's next ability is (2) Speed faster."
+                                ]
                             }
                         },
                         {
                             "description": 3,
                             "modifier": {
-                                "description": {
-                                    "type": "append",
-                                    "text": "This Merc's next ability is (3) Speed faster."
-                                }
+                                "description": [
+                                    0,
+                                    null,
+                                    0,
+                                    ", and this Merc's next ability is (3) Speed faster."
+                                ]
                             }
                         }
                     ]
@@ -2697,7 +2708,7 @@
             "equipment": {
                 "Tome of Judgement": {
                     "unlock": "Level 30",
-                    "position": "right",
+                    "position": "middle",
                     "affects": "Seal of Light",
                     "description": "Seal of Light gives an additional +{0} Attack.",
                     "tiers": [
@@ -2741,7 +2752,7 @@
                 },
                 "Tome of Light": {
                     "unlock": "Task 2",
-                    "position": "middle",
+                    "position": "right",
                     "description": "Passive: While this Merc has Taunt, it has +{0} Attack.",
                     "tiers": [
                         {
@@ -2760,7 +2771,7 @@
                 },
                 "Hammer of Dawn": {
                     "unlock": "Task 7",
-                    "position": "right",
+                    "position": "left",
                     "affects": "Crusader's Blow",
                     "description": "Crusader's Blow restores Health to your other characters as well.",
                     "modifier": {
@@ -4786,7 +4797,7 @@
             "equipment": {
                 "Halting Sash": {
                     "unlock": "Task 2",
-                    "position": "left",
+                    "position": "middle",
                     "affects": "Staggering Slam",
                     "description": "Staggering Slam deals {0} more damage.",
                     "tiers": [
@@ -4830,7 +4841,7 @@
                 },
                 "Bloodthirst Amulet": {
                     "unlock": "Level 30",
-                    "position": "middle",
+                    "position": "right",
                     "affects": "Battlefury",
                     "description": "Battlefury gives +{0} Attack more.",
                     "tiers": [
@@ -4862,7 +4873,7 @@
                 },
                 "Gorehowl": {
                     "unlock": "Task 7",
-                    "position": "right",
+                    "position": "left",
                     "affects": "Blood Fervor",
                     "description": "Blood Fervor also restores {0} Health on Deathblow",
                     "tiers": [
@@ -5131,7 +5142,7 @@
             "equipment": {
                 "Dragon's Skull": {
                     "unlock": "Task 7",
-                    "position": "left",
+                    "position": "middle",
                     "description": "Passive: Your characters have +{0} Fire Resistance.",
                     "tiers": [
                         {
@@ -5150,7 +5161,7 @@
                 },
                 "Burning Shot": {
                     "unlock": "Task 2",
-                    "position": "middle",
+                    "position": "left",
                     "affects": "Dragonslayer Shot",
                     "description": "Dragonslayer Shot deals {0} more damage.",
                     "tiers": [
@@ -5413,7 +5424,7 @@
             "equipment": {
                 "Bramblethorn Totem": {
                     "unlock": "Level 30",
-                    "position": "left",
+                    "position": "middle",
                     "affects": "Living Brambles",
                     "description": "Living Brambles deals {0} more damage.",
                     "tiers": [
@@ -5445,7 +5456,7 @@
                 },
                 "Earthen Bracers": {
                     "unlock": "Task 2",
-                    "position": "middle",
+                    "position": "right",
                     "affects": "Ironbark",
                     "description": "Ironbark gives +{0}/+{0} more.",
                     "tiers": [
@@ -5501,7 +5512,7 @@
                 },
                 "Bloomin' Shroom": {
                     "unlock": "Task 7",
-                    "position": "right",
+                    "position": "left",
                     "affects": "Runic Slam",
                     "description": "Runic Slam gives +{0}/+{0} more.",
                     "tiers": [
@@ -5731,7 +5742,7 @@
             "equipment": {
                 "Amulet of Souls": {
                     "unlock": "Level 30",
-                    "position": "left",
+                    "position": "middle",
                     "affects": "Siphon Life",
                     "description": "Siphon Life deals an additional {0} damage.",
                     "tiers": [
@@ -5763,7 +5774,7 @@
                 },
                 "Blood of Mannoroth": {
                     "unlock": "Task 2",
-                    "position": "middle",
+                    "position": "left",
                     "affects": "Rain of Destruction",
                     "description": "Rain of Destruction deals {0} more damage.",
                     "tiers": [
