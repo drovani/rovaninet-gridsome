@@ -5916,6 +5916,238 @@
                     "quote": "Watch your words when you speak to me."
                 }
             ]
+        },
+        "Illidan Stormrage": {
+            "race": "Night Elf",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 74,
+            "abilities": {
+                "Winged Assault": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Attack an enemy. If it's the left or right-most enemy, gain +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Outcast Attack": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Attack the left and right-most enemies. Deathblow: Restore {0} Health to this Merc.",
+                    "tiers": [
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 21
+                        },
+                        {
+                            "description": 23
+                        },
+                        {
+                            "description": 25
+                        }
+                    ]
+                },
+                "Blade Dance": {
+                    "unlock": 15,
+                    "speed": 10,
+                    "cooldown": 1,
+                    "description": "Deal damage equal to this Merc's Attack to {0} random enemies.",
+                    "spell_school": "Fel",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "speed": -2
+                        },
+                        {
+                            "description": 3,
+                            "speed": -3
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Razor Fist": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Winged Assault",
+                    "description": "Winged Assault gains +{0} more Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Warglaives of Azzinoth": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Outcast Attack",
+                    "description": "Outcast Attack also Attacks the left-most enemy twice."
+                },
+                "Demon Shroud": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: Take {0} less damage while Attacking.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Strike Swiftly",
+                    "description": "Deal 70 damage using Winged Assault.",
+                    "quote": "My hatred is unending, as are my foes. Will you aid me against them?"
+                },
+                {
+                    "name": "Forever an Outcast",
+                    "description": "Gain 25 Attack using Winged Assault.",
+                    "quote": "We will not sit idle."
+                },
+                {
+                    "name": "Legion's End",
+                    "description": "Deal 110 damage using Blade Dance.",
+                    "quote": "The Legion’s end is all I seek."
+                },
+                {
+                    "name": "You Cannot Hide",
+                    "description": "Deal 150 damage.",
+                    "quote": "A timely arrival."
+                },
+                {
+                    "name": "The Legion Fears Us",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "We do what we must."
+                },
+                {
+                    "name": "Back to the Nether",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Listen well, and I will lead you to victory."
+                },
+                {
+                    "name": "Impressive Victory",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "My fate is my own."
+                },
+                {
+                    "name": "Withstand our Fury",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "I will have my vengeance."
+                },
+                {
+                    "name": "Show Them No Quarter",
+                    "description": "Gain 50 Attack using Winged Assault.",
+                    "quote": "I have no time for games."
+                },
+                {
+                    "name": "Winged Assault",
+                    "description": "Deal 210 damage using Winged Assault.",
+                    "quote": "I fear no demon."
+                },
+                {
+                    "name": "Eradicate Them",
+                    "description": "Deal 450 damage.",
+                    "quote": "We will not sit idle."
+                },
+                {
+                    "name": "Strike them Down",
+                    "description": "Deal 450 damage with Demons with a team that includes this Mercenary.",
+                    "quote": "The Legion’s end is all I seek."
+                },
+                {
+                    "name": "Seek out the Source",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "A timely arrival."
+                },
+                {
+                    "name": "We Will Break Them",
+                    "description": "Defeat 40 Demons.",
+                    "quote": "We do what we must."
+                },
+                {
+                    "name": "Aiding our Cause",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Listen well, and I will lead you to victory."
+                },
+                {
+                    "name": "Leave None Standing",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "I fear no demon."
+                },
+                {
+                    "name": "Do What Must Be Done",
+                    "description": "Deal 900 damage with Demons with a team that includes this Mercenary.",
+                    "quote": "I have no time for games."
+                },
+                {
+                    "name": "Strike it Down",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "My fate is my own."
+                }
+            ]
         }
     }
 }
