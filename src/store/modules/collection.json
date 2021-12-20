@@ -7,11 +7,11 @@
             "itemEquipped": "Alexstrasza's Brooch",
             "abilities": {
                 "Dragon Breath": 3,
-                "Flame Buffet": 2,
+                "Flame Buffet": 3,
                 "Dragonqueen's Gambit": 4
             },
             "equipment": {
-                "Alexstrasza's Brooch": 1,
+                "Alexstrasza's Brooch": 2,
                 "Amulet of Swiftness": 1,
                 "Dragonflight Talisman": 4
             }
@@ -23,8 +23,8 @@
             "itemEquipped": "Ring of Purity",
             "abilities": {
                 "Penance": 3,
-                "Holy Nova": 3,
-                "Holy Word: Salvation": 1
+                "Holy Nova": 4,
+                "Holy Word: Salvation": 2
             },
             "equipment": {
                 "Harmonic Mallet": 1,
@@ -39,7 +39,7 @@
             "itemEquipped": "Cindercore Staff",
             "abilities": {
                 "Fireball": 3,
-                "Flamestrike": 2,
+                "Flamestrike": 3,
                 "Fireball Storm": 3
             },
             "equipment": {
@@ -54,9 +54,9 @@
             "tasksCompleted": 3,
             "itemEquipped": "Molten Blade",
             "abilities": {
-                "Heating Up": 3,
+                "Heating Up": 4,
                 "Inferno": 5,
-                "Living Bomb": 2
+                "Living Bomb": 3
             },
             "equipment": {
                 "Molten Blade": 2,
@@ -94,6 +94,214 @@
                 "Arcane Fang": 4,
                 "Mana Runes": 4,
                 "Tenth Tail": 4
+            }
+        },
+        "Grommash Hellscream": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Halting Sash",
+            "abilities": {
+                "Blood Fervor": 5,
+                "Staggering Slam": 5,
+                "Battlefury": 3
+            },
+            "equipment": {
+                "Halting Sash": 2,
+                "Bloodthirst Amulet": 1,
+                "Gorehowl": 1
+            }
+        },
+        "Gruul": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Dragonclaw Fists",
+            "abilities": {
+                "Crazed Flurry": 3,
+                "Dragonslayer Shot": 3,
+                "Dragonmaw Poacher": 3
+            },
+            "equipment": {
+                "Dragon's Skull": 4,
+                "Burning Shot": 4,
+                "Dragonclaw Fists": 3
+            }
+        },
+        "Cornelius Roame": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Shield of Dawn",
+            "abilities": {
+                "Martial Mastery": 5,
+                "Hold the Front": 5,
+                "Blessing of Sacrifice": 5
+            },
+            "equipment": {
+                "Striking Gauntlets": 1,
+                "Band of Enlightenment": 1,
+                "Shield of Dawn": 4
+            }
+        },
+        "Cookie, the Cook": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Iron Ladel",
+            "abilities": {
+                "Fish Feast": 3,
+                "Cookie's Cooking": 3,
+                "Go Fish!": 4
+            },
+            "equipment": {
+                "Iron Ladel": 1,
+                "Appetizers": 1,
+                "Seasoned Pan": 1
+            }
+        },
+        "Garrosh Hellscream": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Tusks of Mannoroth",
+            "abilities": {
+                "Mak'Gora": 2,
+                "Horde Strength": 2,
+                "Battle Shout": 2
+            },
+            "equipment": {
+                "Dueling Gauntlets": 1,
+                "Tusks of Mannoroth": 1,
+                "Orish Banner": 1
+            }
+        },
+        "Brightwing": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Pixie's Pouch",
+            "abilities": {
+                "Faerie Breath": 3,
+                "Pixie Dust": 3,
+                "Phase Shift": 3
+            },
+            "equipment": {
+                "Brightwing's Necklace": 1,
+                "Brightwing's Ring": 1,
+                "Pixie's Pouch": 1
+            }
+        },
+        "Bru'kan": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 11,
+            "itemEquipped": "Lightning Rod",
+            "abilities": {
+                "Lightning Bolt": 5,
+                "Muddy Footing": 5,
+                "Chain Lightning": 5
+            },
+            "equipment": {
+                "Lightning Rod": 4,
+                "Crackling Band": 2,
+                "Timberfrost Totem": 3
+            }
+        },
+        "Cairne Bloodhoof": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Swift Totem",
+            "abilities": {
+                "Ancestral Uppercut": 3,
+                "Endurance Aura": 5,
+                "Earth Stomp": 3
+            },
+            "equipment": {
+                "Thunderous Sash": 1,
+                "Swift Totem": 2,
+                "Reincarnation": 1
+            }
+        },
+        "Cariel Roame": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Hammer of Dawn",
+            "abilities": {
+                "Crusader's Blow": 5,
+                "Taunt": 5,
+                "Seal of Light": 5
+            },
+            "equipment": {
+                "Tome of Judgement": 4,
+                "Tome of Light": 4,
+                "Hammer of Dawn": 4
+            }
+        },
+        "Eudora": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Primed Armaments",
+            "abilities": {
+                "Coup d'Etat": 3,
+                "Prepare the Cannons": 5,
+                "Covering Fire": 2
+            },
+            "equipment": {
+                "Shrapnel Shot": 1,
+                "Primed Armaments": 4,
+                "Briny Bracers": 1
+            }
+        },
+        "Guff Runetotem": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 6,
+            "itemEquipped": "Bramblethorn Totem",
+            "abilities": {
+                "Runic Slam": 5,
+                "Living Brambles": 5,
+                "Ironbark": 5
+            },
+            "equipment": {
+                "Bramblethorn Totem": 2,
+                "Earthen Bracers": 2,
+                "Bloomin' Shroom": 2
+            }
+        },
+        "Gul'dan": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Amulet of Souls",
+            "abilities": {
+                "Fel Bolt": 2,
+                "Rain of Destruction": 3,
+                "Siphon Life": 2
+            },
+            "equipment": {
+                "Amulet of Souls": 1,
+                "Blood of Mannoroth": 4,
+                "Staff of Chaos": 1
+            }
+        },
+        "Illidan Stormrage": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Demon Shroud",
+            "abilities": {
+                "Winged Assault": 3,
+                "Outcast Attack": 4,
+                "Blade Dance": 3
+            },
+            "equipment": {
+                "Razor Fist": 2,
+                "Warglaives of Azzinoth": 4,
+                "Demon Shroud": 2
             }
         }
     }
