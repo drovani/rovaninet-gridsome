@@ -120,16 +120,16 @@ export default {
         },
         summonAttack() {
             return (
-                this.summon.attack +
+                (this.summon.attack ?? 0) +
                 (this.activeTierInfo.summon?.attack ?? 0) +
-                (this.itemEquippedActiveTier?.modifier?.summon?.attack ?? 0)
+                (this.itemEquippedTier?.modifier?.summon?.attack ?? 0)
             );
         },
         summonHealth() {
             return (
-                this.summon.health +
+                (this.summon.health ?? 0) +
                 (this.activeTierInfo.summon?.health ?? 0) +
-                (this.itemEquippedActiveTier?.modifier?.summon?.health ?? 0)
+                (this.itemEquippedTier?.modifier?.summon?.health ?? 0)
             );
         },
     },
