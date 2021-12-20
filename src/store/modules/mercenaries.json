@@ -6571,24 +6571,36 @@
             "equipment": {
                 "Flaming Claws": {
                     "unlock": "Task 2",
-                    "position": "left",
+                    "position": "right",
                     "description": "Passive: +{0} Attack.",
                     "tiers": [
                         {
-                            "description": 2
+                            "description": 2,
+                            "modifier": {
+                                "attack": 2
+                            }
                         },
                         {
-                            "description": 4
+                            "description": 4,
+                            "modifier": {
+                                "attack": 4
+                            }
                         },
                         {
-                            "description": 6
+                            "description": 6,
+                            "modifier": {
+                                "attack": 6
+                            }
                         },
                         {
-                            "description": 8
+                            "description": 8,
+                            "modifier": {
+                                "attack": 8
+                            }
                         }
                     ]
                 },
-                "item2": {
+                "Rocky Carapace": {
                     "unlock": "Level 30",
                     "position": "middle",
                     "affects": "Devilsaur",
@@ -6630,7 +6642,7 @@
                 },
                 "Fresh Meat": {
                     "unlock": "Task 7",
-                    "position": "right",
+                    "position": "left",
                     "affects": "Terrify",
                     "description": "Terrify gives an additional +{0} Attack.",
                     "tiers": [
@@ -6803,6 +6815,7 @@
                     "speed": 4,
                     "cooldown": 1,
                     "description": "Eat {0} Banana{s} and gain Taunt this turn.",
+                    "spell_school": "Nature",
                     "tiers": [
                         {
                             "description": [
