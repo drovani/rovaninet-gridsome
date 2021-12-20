@@ -367,6 +367,22 @@
                 "Radioactive Bananas": 3,
                 "Mukla's Big Brother": 2
             }
+        },
+        "Lady Anacondra": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 9,
+            "itemEquipped": "Signet of the Wilds",
+            "abilities": {
+                "Serpent's Bite": 5,
+                "Mend Beast": 5,
+                "Nightmare Viper": 5
+            },
+            "equipment": {
+                "Toxic Venom": 2,
+                "Snake Snacks": 2,
+                "Signet of the Wilds": 4
+            }
         }
     }
 }

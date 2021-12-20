@@ -7282,6 +7282,636 @@
                     "quote": "They shall wish they never laid eyes on me."
                 }
             ]
+        },
+        "Lady Anacondra": {
+            "race": "Night Elf",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 7,
+            "health": 71,
+            "abilities": {
+                "Serpent's Bite": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to a character. At the end of this turn, it take {0} damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                6
+                            ]
+                        }
+                    ]
+                },
+                "Mend Beast": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Restore {0} Health to a character{slot}. If it's a Beast, also give it +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                "",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                "",
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                "",
+                                11
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                "",
+                                13
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                "",
+                                15
+                            ]
+                        }
+                    ]
+                },
+                "Nightmare Viper": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Nightmare Viper",
+                        "description": "This minion's Attack is always equal to its Health.",
+                        "race": "Beast"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "health": 3
+                            }
+                        },
+                        {
+                            "summon": {
+                                "health": 7
+                            }
+                        },
+                        {
+                            "summon": {
+                                "health": 11
+                            }
+                        },
+                        {
+                            "summon": {
+                                "health": 13
+                            }
+                        },
+                        {
+                            "summon": {
+                                "health": 15
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Toxic Venom": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Serpent's Bite",
+                    "description": "Serpent's Bite deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Snake Snacks": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Nightmare Viper",
+                    "description": "Nightmare Viper has +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "health": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "health": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "health": 8
+                                }
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "summon": {
+                                    "health": 10
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Signet of the Wilds": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Mend Beast",
+                    "description": "Mend Beast restores Health to Lady Anancondra as well.",
+                    "modifier": {
+                        "description": [
+                            0,
+                            " and this Merc",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "A Venomous Bite",
+                    "description": "Deal 40 damage using Serpent's Bite.",
+                    "quote": "My anger will poison them like venom!"
+                },
+                {
+                    "name": "Healing our Vipers",
+                    "description": "Restore 85 Health using Mend Beast.",
+                    "quote": "I will show all of my enemies their folly!"
+                },
+                {
+                    "name": "Nightmare Vipers",
+                    "description": "Summon a Nightmare Viper 12 times.",
+                    "quote": "Everyone must know that the Nightmare cannot be stopped."
+                },
+                {
+                    "name": "Naralex Commands It",
+                    "description": "Deal 150 damage.",
+                    "quote": "My enemies never rest for long."
+                },
+                {
+                    "name": "Will the Dream End?",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "This is the only way."
+                },
+                {
+                    "name": "The Long Sleep",
+                    "description": "Destroy 40 minions.",
+                    "quote": "None can stand against me. But… they don't really understand that yet."
+                },
+                {
+                    "name": "The Eternal Sleep",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Yes… I have much yet to do."
+                },
+                {
+                    "name": "Scarletleaf No More",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "This will test my commitment to the cause."
+                },
+                {
+                    "name": "Mend the Fanged Ones",
+                    "description": "Restore 140 Health using Mend Beast.",
+                    "quote": "It's time for something… more difficult."
+                },
+                {
+                    "name": "Our Fangs are Sharp",
+                    "description": "Deal 270 damage using Serpent's Bite.",
+                    "quote": "My anger will poison them like venom!"
+                },
+                {
+                    "name": "While Naralex Dreams",
+                    "description": "Deal 450 damage.",
+                    "quote": "I will show all of my enemies their folly!"
+                },
+                {
+                    "name": "Druid of the Fang",
+                    "description": "Deal 450 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Everyone must know that the Nightmare cannot be stopped."
+                },
+                {
+                    "name": "Foes of the Fang",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My enemies never rest for long."
+                },
+                {
+                    "name": "Beast Filled Anger",
+                    "description": "Deal 900 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "I am glad I can handle this. It's so tedious having work left undone…"
+                },
+                {
+                    "name": "For the Fang",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This will test my commitment to the cause."
+                },
+                {
+                    "name": "Poison Bows to None",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "This is the only way."
+                },
+                {
+                    "name": "My Little Ones Live",
+                    "description": "Restore 400 Health using Mend Beast.",
+                    "quote": "Yes… I have much yet to do."
+                },
+                {
+                    "name": "Fanglord",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I am glad I can handle this. It's so tedious having work left undone…"
+                }
+            ]
+        },
+        "Lord Jaraxxus": {
+            "race": "Demon",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 9,
+            "health": 76,
+            "abilities": {
+                "Legion Burst": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "spell_school": "Fel",
+                    "description": "Deal {0} damage. Deathblow: Cast Fist of Jaraxxus {0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Fist of Jaraxxus": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "spell_school": "Fel",
+                    "description": "Deal {0} damage to {a random} enemy. Repeat for each of your other Demons.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                "a random"
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                "a random"
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                "a random"
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                "a random"
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                "a random"
+                            ]
+                        }
+                    ]
+                },
+                "Fel Infernal": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Fel Infernal",
+                        "description": "+{0} Fel Damage",
+                        "race": "Demon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": 1,
+                                "attack": 4,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 1,
+                                "attack": 9,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 2,
+                                "attack": 13,
+                                "health": 13
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 2,
+                                "attack": 14,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 2,
+                                "attack": 15,
+                                "health": 15
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Amulet of Outrage": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Fist of Jaraxxus",
+                    "description": "Fist of Jaraxxus deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    null
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    null
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    null
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    null
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Fel Core": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Fel Infernal",
+                    "description": "Fel Infernal give an additional +{0} Fel Damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "summon": {
+                                    "description": 1
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "description": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "summon": {
+                                    "description": 3
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Truestrike Gauntlets": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Fist of Jaraxxus",
+                    "description": "Fist of Jaraxxus always targets the lowest Health enemy.",
+                    "modifier": {
+                        "description": "the lowest Health"
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Punish their Arrogance",
+                    "description": "Trigger Fists of Fury's Deathblow 10 times.",
+                    "quote": "Your arrogance will be your undoing unless you lend me your service."
+                },
+                {
+                    "name": "Oblivion",
+                    "description": "Deal 110 damage using Fist of Jaraxxus.",
+                    "quote": "Fear the oblivion."
+                },
+                {
+                    "name": "Coins for Sargeras",
+                    "description": "Summon a Fel Infernal 12 times.",
+                    "quote": "Remember your place."
+                },
+                {
+                    "name": "Inferno",
+                    "description": "Deal 150 damage.",
+                    "quote": "Beware the Legion’s might."
+                },
+                {
+                    "name": "Ascension",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I will feast on their souls. They taste like mana crystals…"
+                },
+                {
+                    "name": "Flesh from Bone",
+                    "description": "Destroy 40 minions.",
+                    "quote": "It is foolish to resist me."
+                },
+                {
+                    "name": "You Face Jaraxxus",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "This world is doomed!"
+                },
+                {
+                    "name": "Weak like Velen",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "You do not want to fail me, mortal."
+                },
+                {
+                    "name": "Countless Fists",
+                    "description": "Deal 150 damage using Fist of Jaraxxus.",
+                    "quote": "This better be good."
+                },
+                {
+                    "name": "Fel Flames",
+                    "description": "Cast Fist of Jaraxxus 45 times.",
+                    "quote": "For the Burning Legion!"
+                },
+                {
+                    "name": "Cleaving Inferno",
+                    "description": "Destroy two enemies in one turn using Fist of Jaraxxus 8 times.",
+                    "quote": "Your arrogance will be your undoing unless you lend me your service."
+                },
+                {
+                    "name": "Curse of the Nether",
+                    "description": "Deal 685 damage using Fel Infernal.",
+                    "quote": "Fear the oblivion."
+                },
+                {
+                    "name": "Unworthy Opponents",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Remember your place."
+                },
+                {
+                    "name": "Feel my Fist",
+                    "description": "Deal 360 damage using Fist of Jaraxxus.",
+                    "quote": "Beware the Legion’s might."
+                },
+                {
+                    "name": "There are only Man'ari",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I will feast on their souls. They taste like mana crystals…"
+                },
+                {
+                    "name": "Pathetic Mortals",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "It is foolish to resist me."
+                },
+                {
+                    "name": "Clear the Path",
+                    "description": "Trigger Deathblow on Legion Burst 20 times.",
+                    "quote": "This world is doomed!"
+                },
+                {
+                    "name": "Pitiful Foes",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "You do not want to fail me, mortal."
+                }
+            ]
         }
     }
 }
