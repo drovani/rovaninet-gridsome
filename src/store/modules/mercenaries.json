@@ -5081,9 +5081,7 @@
                     "summon": {
                         "name": "Dragonmaw Poacher",
                         "race": "Orc",
-                        "description": "Battlecry: If your opponent controls a Dragon, gain +{0}/+{0} and Rush.",
-                        "attack": 0,
-                        "health": 0
+                        "description": "Battlecry: If your opponent controls a Dragon, gain +{0}/+{0} and Rush."
                     },
                     "tiers": [
                         {
@@ -6146,6 +6144,320 @@
                     "name": "Strike it Down",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "My fate is my own."
+                }
+            ]
+        },
+        "Jaina Proudmoore": {
+            "race": "Human",
+            "rarity": "Legendary",
+            "role": "Caster",
+            "attack": 7,
+            "health": 72,
+            "abilities": {
+                "Icicle": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "spell_school": "Frost",
+                    "description": "Deal {0} damage to a character. If it's Frozen, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                12
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                24
+                            ]
+                        }
+                    ]
+                },
+                "Ice Floes": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "spell_school": "Frost",
+                    "description": "Deal {0} damage. Gain +{0} Frost Damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Water Elemental": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Water Elemental",
+                        "description": "Taunt. Whenever this damages a character, Freeze them.",
+                        "race": "Elemental"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 3,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 6,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 11,
+                                "health": 15
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 12,
+                                "health": 16
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Frost Shards": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Icicle",
+                    "description": "Icicle deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [2,2]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [3,3]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [4,4]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [5,5]
+                            }
+                        }
+                    ]
+                },
+                "Frost Dust": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Water Elemental",
+                    "description": "Water Elemental has an additional +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 1,
+                                    "health": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 2,
+                                    "health": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                6
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 3,
+                                    "health": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4,
+                                    "health": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Ice Block Talisman": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: The first time this Merc would take fatal damage, prevent it and become Immune this turn."
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Served Cold",
+                    "description": "Deal 80 damage using Icicle.",
+                    "quote": "My enemies are close. Will you help me defend against them?"
+                },
+                {
+                    "name": "Believe in Magic",
+                    "description": "Deal 85 damage using Ice Floes.",
+                    "quote": "The Horde and Alliance can coexist. And this place proves it."
+                },
+                {
+                    "name": "Tearing You Apart",
+                    "description": "Summon a Water Elemental 12 times.",
+                    "quote": "Time is of the essence."
+                },
+                {
+                    "name": "Press Forward!",
+                    "description": "Deal 150 damage.",
+                    "quote": "My magic is unrivaled. But having more never hurt anything."
+                },
+                {
+                    "name": "The Battle Awaits Us",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Time to turn the tide."
+                },
+                {
+                    "name": "Let's Try That Again",
+                    "description": "Destroy 40 minions.",
+                    "quote": "The currents of magic are in upheaval."
+                },
+                {
+                    "name": "Watch Out",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "There’s much to be done."
+                },
+                {
+                    "name": "A Chance Opportunity",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "Let's tend to this quickly."
+                },
+                {
+                    "name": "A Little Help",
+                    "description": "Destroy 45 enemies using Water Elemental.",
+                    "quote": "Shhh... I'm trying to think here."
+                },
+                {
+                    "name": "That's a Magic Moment",
+                    "description": "Deal 270 damage using Ice Floes.",
+                    "quote": "The cold never bothered me. However, it might bother them…"
+                },
+                {
+                    "name": "This Should be Quick",
+                    "description": "Deal 450 damage.",
+                    "quote": "Time is of the essence."
+                },
+                {
+                    "name": "That Was Close",
+                    "description": "Deal 30 or more damage in one turn using Ice Floes 15 times.",
+                    "quote": "Shhh... I'm trying to think here."
+                },
+                {
+                    "name": "This Should be Good",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "There’s much to be done."
+                },
+                {
+                    "name": "Chill Out For a Bit",
+                    "description": "Deal 900 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "The currents of magic are in upheaval."
+                },
+                {
+                    "name": "You're the Next to Fall",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Time to turn the tide."
+                },
+                {
+                    "name": "It's Nothing Personal",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "My magic is unrivaled. But having more never hurt anything."
+                },
+                {
+                    "name": "It's Going to be Icy",
+                    "description": "Deal 900 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "Let's tend to this quickly."
+                },
+                {
+                    "name": "This Isn't Your Day",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "The cold never bothered me. However, it might bother them…"
                 }
             ]
         }
