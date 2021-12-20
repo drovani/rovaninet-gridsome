@@ -6753,6 +6753,273 @@
                     "quote": "<They think they can beat the king? They are wrong.>"
                 }
             ]
+        },
+        "King Mukla": {
+            "race": "Beast",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 11,
+            "health": 77,
+            "abilities": {
+                "Banana Frenzy": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Given {0} Banana{s} randomly to your characters and Attack an enemy.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "s"
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                "s"
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                "s"
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                "s"
+                            ]
+                        }
+                    ]
+                },
+                "Dinner Time": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Eat {0} Banana{s} and gain Taunt this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                "s"
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                "s"
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                "s"
+                            ],
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                3,
+                                "s"
+                            ],
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Primal Power": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Give a friendly Beast +{0} Attack and Immune while Attacking this turn.",
+                    "tiers": [
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Refreshing Bananas": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "description": "Bananas give an additional +{0} Health",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Radioactive Bananas": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Bananas give an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        }
+                    ]
+                },
+                "Mukla's Big Brother": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Battlecry: Summon a {0}/{0} Beast with Taunt.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                24
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Eat your Bananas",
+                    "description": "Deal 55 damage using Banana Frenzy.",
+                    "quote": "<Bananas makes you stronger!>"
+                },
+                {
+                    "name": "Beast Force",
+                    "description": "Deal 90 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "<Bananas are filled with lots of vitamins!>"
+                },
+                {
+                    "name": "Drive them Away",
+                    "description": "Use Primal Power 12 times.",
+                    "quote": ""
+                },
+                {
+                    "name": "King of the Jungle",
+                    "description": "Deal 150 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "Sweet Solitude",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": ""
+                },
+                {
+                    "name": "Fight them Off",
+                    "description": "Destroy 40 minions.",
+                    "quote": ""
+                },
+                {
+                    "name": "Who is Stronger?",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<These ones seem strong, but I am stronger.>"
+                },
+                {
+                    "name": "Who needs Protecting?",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": ""
+                },
+                {
+                    "name": "Rejuvenating Bananas",
+                    "description": "Gain 60 Health using Banana Frenzy.",
+                    "quote": "<Bananas are filled with lots of vitamins!>"
+                },
+                {
+                    "name": "Banana Frenzy",
+                    "description": "Deal 450 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "<Bananas makes you stronger!>"
+                },
+                {
+                    "name": "Mukla's Mayhem",
+                    "description": "Deal 450 damage.",
+                    "quote": "<Without my size I would not be king, but I must use this gift to help my fellow beasts.>"
+                },
+                {
+                    "name": "Protecting my Island",
+                    "description": "Deal 450 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": ""
+                },
+                {
+                    "name": "Aid the Jungle",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "King of the Cape",
+                    "description": "Gain 15 Attack using Banana Frenzy.",
+                    "quote": ""
+                },
+                {
+                    "name": "Scare them Away",
+                    "description": "Complete 6 Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Swords Still Hurt",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": ""
+                },
+                {
+                    "name": "Family Ties",
+                    "description": "Destroy 75 enemies using Mukla's Big Brother.",
+                    "quote": "<These ones seem strong, but I am stronger.>"
+                },
+                {
+                    "name": "Simian Slam",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": ""
+                }
+            ]
         }
     }
 }
