@@ -51,10 +51,14 @@ export default {
                         }
                     };
                     const itemValue = () => {
-                        if (Array.isArray(this.itemEquippedTier?.modifier?.description)) {
-                            return Number(this.itemEquippedTier.modifier.description[i]) || 0;
+                        if (Array.isArray(this.itemEquippedTier?.modifier?.summon?.description)) {
+                            return (
+                                Number(this.itemEquippedTier.modifier.summon.description[i]) || 0
+                            );
                         } else {
-                            return Number(this.itemEquippedTier?.modifier?.description) || 0;
+                            return (
+                                Number(this.itemEquippedTier?.modifier?.summon?.description) || 0
+                            );
                         }
                     };
                     // console.debug({ baseValue, tierValue: tierValue(), itemValue: itemValue() });
