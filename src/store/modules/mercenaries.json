@@ -7020,6 +7020,255 @@
                     "quote": ""
                 }
             ]
+        },
+        "Kurtus Ashfallen": {
+            "race": "Night Elf",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 13,
+            "health": 69,
+            "abilities": {
+                "Demon Slayer": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. If it's a Demon, gain +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 6,
+                            "speed": -1
+                        },
+                        {
+                            "description": 6,
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Aimless Assault": {
+                    "unlock": 5,
+                    "speed": 9,
+                    "cooldown": 1,
+                    "description": "Attack a random enemy. If it's the left or right-most enemy, gain Immune this turn.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Eye Beam": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage. restore that much health to this Merc.",
+                    "spell_school": "Fel",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Demon Guard": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Attack. This Merc always deals Critical Damage to Demons.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Fel Blade": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Eye Beam",
+                    "description": "Eye Beam also gives +{0} Fel Damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Gain +1 Fel Damage."
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Gain +2 Fel Damage."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Chaos Amulet": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Eye Beam",
+                    "description": "Eye Beam deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Demon Slaying",
+                    "description": "Deal 40 damage using Demon Slayer.",
+                    "quote": "I will stop my enemies at any cost… that is the vow I have taken."
+                },
+                {
+                    "name": "Feel my Fury",
+                    "description": "Deal 35 damage using Aimless Assault.",
+                    "quote": "It is my fate to defeat them."
+                },
+                {
+                    "name": "Exchange of Vision",
+                    "description": "Restore 25 Health using Eye Beam.",
+                    "quote": "I will strike down anyone who gets in my way."
+                },
+                {
+                    "name": "Do Not Interfere",
+                    "description": "Deal 150 damage.",
+                    "quote": "They will suffer the consequences of angering me."
+                },
+                {
+                    "name": "My Quest Remains",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Fighting these foes will turn the tide of the battle."
+                },
+                {
+                    "name": "Die Well",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Everyone warned me it would get more difficult at a certain point…"
+                },
+                {
+                    "name": "You are an Impediment",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "No matter how great the peril, I will not back down."
+                },
+                {
+                    "name": "What Use is Rest?",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I will show them my power."
+                },
+                {
+                    "name": "Hunt them all Down",
+                    "description": "Defeat 20 Demons.",
+                    "quote": "They shall wish they never laid eyes on me."
+                },
+                {
+                    "name": "I Will Train Alone",
+                    "description": "Complete 30 battles with 25 or more Attack.",
+                    "quote": "I must do this."
+                },
+                {
+                    "name": "Fate Calls",
+                    "description": "Deal 450 damage.",
+                    "quote": "It is my fate to defeat them."
+                },
+                {
+                    "name": "The Hunt Must Continue",
+                    "description": "Deal 450 Fel Damage with a team that includes this Mercenary.",
+                    "quote": "I will strike down anyone who gets in my way."
+                },
+                {
+                    "name": "Suffer the Consequence",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "They will suffer the consequences of angering me."
+                },
+                {
+                    "name": "Bind my Wounds",
+                    "description": "Heal 200 damage.",
+                    "quote": "Fighting these foes will turn the tide of the battle."
+                },
+                {
+                    "name": "I Must Prevail",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Everyone warned me it would get more difficult at a certain point…"
+                },
+                {
+                    "name": "Where is She?",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "No matter how great the peril, I will not back down."
+                },
+                {
+                    "name": "My Fury Remains",
+                    "description": "Destroy 75 enemies using Aimless Assault.",
+                    "quote": "I will show them my power."
+                },
+                {
+                    "name": "Without Mercy",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "They shall wish they never laid eyes on me."
+                }
+            ]
         }
     }
 }
