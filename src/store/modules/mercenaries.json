@@ -8033,8 +8033,8 @@
                             "description": 1,
                             "modifier": {
                                 "description": {
-                                    "type":"append",
-                                    "text":" Its next ability is (1) Speed slower."
+                                    "type": "append",
+                                    "text": " Its next ability is (1) Speed slower."
                                 }
                             }
                         },
@@ -8042,8 +8042,8 @@
                             "description": 2,
                             "modifier": {
                                 "description": {
-                                    "type":"append",
-                                    "text":" Its next ability is (2) Speed slower."
+                                    "type": "append",
+                                    "text": " Its next ability is (2) Speed slower."
                                 }
                             }
                         },
@@ -8051,8 +8051,8 @@
                             "description": 3,
                             "modifier": {
                                 "description": {
-                                    "type":"append",
-                                    "text":" Its next ability is (3) Speed slower."
+                                    "type": "append",
+                                    "text": " Its next ability is (3) Speed slower."
                                 }
                             }
                         },
@@ -8060,8 +8060,8 @@
                             "description": 4,
                             "modifier": {
                                 "description": {
-                                    "type":"append",
-                                    "text":" Its next ability is (4) Speed slower."
+                                    "type": "append",
+                                    "text": " Its next ability is (4) Speed slower."
                                 }
                             }
                         }
@@ -8221,6 +8221,285 @@
                     "name": "Enemies Beware",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "Elune-Adore."
+                }
+            ]
+        },
+        "Mannoroth": {
+            "race": "Demon",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 10,
+            "health": 73,
+            "abilities": {
+                "Terror Charge": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. Give your Demons +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Fel Lash": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Fel",
+                    "description": "Deal {0} damage to an enemy. It can't heal this turn.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Howl of Terror": {
+                    "unlock": 15,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Reduce the Attack of all enemies by {0} this turn.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Fel Spikes": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Fel Lash",
+                    "description": "Fel Lash deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        }
+                    ]
+                },
+                "Fel-Enhanced Lungs": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Howl of Terror",
+                    "description": "Howl of Terror also does {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Deal 2 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Deal 3 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Deal 4 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": " Deal 5 damage to all enemies."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Pit Lord's Staff": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Terror Charge",
+                    "description": "Terror Charge gives an additional +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Empower the Legion",
+                    "description": "Gain 55 Health using Terror Charge.",
+                    "quote": "I must show the Burning Legion my endless strength if I wish to retain my position."
+                },
+                {
+                    "name": "Fear my Wrath",
+                    "description": "Deal 45 damage using Fel Lash.",
+                    "quote": "I will strike down these mortals to demonstrate my power!"
+                },
+                {
+                    "name": "Crush Them",
+                    "description": "Use Howl of Terror 12 times.",
+                    "quote": "My enemies are doomed to failure."
+                },
+                {
+                    "name": "Lead the Legion",
+                    "description": "Deal 150 damage.",
+                    "quote": "This will be a simple feat. Even for you."
+                },
+                {
+                    "name": "Feel the Power",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "They will heed my demands!"
+                },
+                {
+                    "name": "Puny Mortals",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Destroy them all!"
+                },
+                {
+                    "name": "Hardly a Challenge",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "My rage will devour everything."
+                },
+                {
+                    "name": "Rest for the Wicked",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "There is no room for failure. Not that I have always succeeded… but… forget I said anything!"
+                },
+                {
+                    "name": "Trample their Bones",
+                    "description": "Grant 270 Health using Terror Charge.",
+                    "quote": "This will be a simple feat. Even for you."
+                },
+                {
+                    "name": "True Terror",
+                    "description": "Use Howl of Terror 10 times.",
+                    "quote": "They will heed my demands!"
+                },
+                {
+                    "name": "Strengthen the Legion",
+                    "description": "Grant your demons 270 health with Terror Charge.",
+                    "quote": "I am always watching my enemies."
+                },
+                {
+                    "name": "Foolish Weaklings",
+                    "description": "Prevent 150 healing with Fel Lash",
+                    "quote": "The Legion will remember me for this."
+                },
+                {
+                    "name": "The Flayer",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I will strike down these mortals to demonstrate my power!"
+                },
+                {
+                    "name": "Teach them Fear",
+                    "description": "Deal 12 damage in a single attack with Howl of Terror.",
+                    "quote": "Destroy them all!"
+                },
+                {
+                    "name": "Onslaught of Fel",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "My enemies are doomed to failure."
+                },
+                {
+                    "name": "No More Failure",
+                    "description": "Deal 300 damage using Fel Lash.",
+                    "quote": "My rage will devour everything."
+                },
+                {
+                    "name": "The Pit Lord",
+                    "description": "Deal 240 damage to Fighters.",
+                    "quote": "There is no room for failure. Not that I have always succeeded… but… forget I said anything!"
+                },
+                {
+                    "name": "The Enforcer",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I must show the Burning Legion my endless strength if I wish to retain my position."
                 }
             ]
         }
