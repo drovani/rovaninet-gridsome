@@ -4369,7 +4369,7 @@
                     "unlock": 1,
                     "speed": 9,
                     "cooldown": 0,
-                    "description": "Attack an enemy, it Attacks this merc back{.}",
+                    "description": "Attack an enemy, it Attacks this merc back.",
                     "tiers": [
                         {
                             "speed": 0
@@ -4480,25 +4480,37 @@
                         {
                             "description": 20,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 20 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 30,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 30 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 40,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 40 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 50,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 50 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         }
                     ]
@@ -8034,7 +8046,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Its next ability is (1) Speed slower."
+                                    "text": "Its next ability is (1) Speed slower."
                                 }
                             }
                         },
@@ -8043,7 +8055,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Its next ability is (2) Speed slower."
+                                    "text": "Its next ability is (2) Speed slower."
                                 }
                             }
                         },
@@ -8052,7 +8064,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Its next ability is (3) Speed slower."
+                                    "text": "Its next ability is (3) Speed slower."
                                 }
                             }
                         },
@@ -8061,7 +8073,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Its next ability is (4) Speed slower."
+                                    "text": "Its next ability is (4) Speed slower."
                                 }
                             }
                         }
@@ -8344,7 +8356,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Deal 2 damage to all enemies."
+                                    "text": "Deal 2 damage to all enemies."
                                 }
                             }
                         },
@@ -8353,7 +8365,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Deal 3 damage to all enemies."
+                                    "text": "Deal 3 damage to all enemies."
                                 }
                             }
                         },
@@ -8362,7 +8374,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Deal 4 damage to all enemies."
+                                    "text": "Deal 4 damage to all enemies."
                                 }
                             }
                         },
@@ -8371,7 +8383,7 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Deal 5 damage to all enemies."
+                                    "text": "Deal 5 damage to all enemies."
                                 }
                             }
                         }
@@ -8500,6 +8512,313 @@
                     "name": "The Enforcer",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "I must show the Burning Legion my endless strength if I wish to retain my position."
+                }
+            ]
+        },
+        "Millhouse Manastorm": {
+            "race": "Gnome",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 64,
+            "abilities": {
+                "Arcane Explosion": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Arcane Bolt": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage. Gain +{0} Arcane Damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Greater Arcane Missiles": {
+                    "unlock": 15,
+                    "speed": 9,
+                    "cooldown": 2,
+                    "spell_school":"Arcane",
+                    "description": "Shoot three missiles at {random enemies} that deal {0} damage each.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "random enemies",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                13
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                15
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Arcane Powder": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Arcane Explosion",
+                    "description": "Arcane Explosion deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Ley Line Wand": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Greater Arcane Missiles",
+                    "description": "Greater Arcane Missiles targets the lowest Health enemy.",
+                    "modifier": {
+                        "description": [
+                            "the lowest Health enemy",
+                            0
+                        ]
+                    }
+                },
+                "Mana Rod": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Arcane Bolt",
+                    "description": "Arcane Bolt gains +{0} Arcane Damage more, but has +{0} Cooldown.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    1
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ],
+                                "cooldown": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Explosions!",
+                    "description": "Deal 100 damage using Arcane Explosion.",
+                    "quote": "Hey, I need some help over here! And trust me, you don't wanna get on my bad side!"
+                },
+                {
+                    "name": "Everyone gets a Bolt!",
+                    "description": "Deal 60 damage using Arcane Bolt.",
+                    "quote": "Only really smart types listen to the mighty Millhouse Manastorm!"
+                },
+                {
+                    "name": "Millhouse Missiles!",
+                    "description": "Deal 245 damage using Greater Arcane Missiles.",
+                    "quote": "Whoa, you're actually taking my orders? I mean, of course you are!"
+                },
+                {
+                    "name": "Working off my Debt",
+                    "description": "Deal 150 damage.",
+                    "quote": "Let's go do this too, okay?"
+                },
+                {
+                    "name": "I'm Better than Them!",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Gotta defeat these impudent imbeciles!"
+                },
+                {
+                    "name": "Arcane Powers",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Yeah, I'm gonna need some top people to jump in on this one. Wait, that's me. I'm the top people!"
+                },
+                {
+                    "name": "Blast Everything!",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "This seems really hard, but it's just like shooting cockroaches in a barrel."
+                },
+                {
+                    "name": "More Power!",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I gotta do that thing to my enemies again. You know, like wham, boom, MILLHOUSED!"
+                },
+                {
+                    "name": "Even More Power!",
+                    "description": "Deal 450 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "These ones need to be obliterated, disintegrated, exterminated!"
+                },
+                {
+                    "name": "Millhouse Math!",
+                    "description": "Deal 20 or more damage in one turn using Arcane Explosion 10 times.",
+                    "quote": "Hey, let's just talk for a bit. Haha, just kidding, I've got more giant problems to fix."
+                },
+                {
+                    "name": "A Whole lot of Energy!",
+                    "description": "Deal 450 damage.",
+                    "quote": "Let's go do this too, okay?"
+                },
+                {
+                    "name": "Zap and Pow!",
+                    "description": "Destroy three enemies in one turn using Arcane Explosion 15 times.",
+                    "quote": "Yeah, I'm gonna need some top people to jump in on this one. Wait, that's me. I'm the top people!"
+                },
+                {
+                    "name": "Bigger they are…",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Hey, I need some help over here! And trust me, you don't wanna get on my bad side!"
+                },
+                {
+                    "name": "Pew, pew, pew!",
+                    "description": "Deal 900 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "Only really smart types listen to the mighty Millhouse Manastorm!"
+                },
+                {
+                    "name": "Wait, What?",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Whoa, you're actually taking my orders? I mean, of course you are!"
+                },
+                {
+                    "name": "Impudent Imbeciles",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Gotta defeat these impudent imbeciles!"
+                },
+                {
+                    "name": "Bigger, Better Bolt",
+                    "description": "Deal 20 or more damage in one turn using Arcane Bolt 25 times.",
+                    "quote": "These ones need to be obliterated, disintegrated, exterminated!"
+                },
+                {
+                    "name": "Zap them all!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I gotta do that thing to my enemies again. You know, like wham, boom, MILLHOUSED!"
                 }
             ]
         }
