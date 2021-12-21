@@ -7828,7 +7828,7 @@
                     "affects": "Fist of Jaraxxus",
                     "description": "Fist of Jaraxxus always targets the lowest Health enemy.",
                     "modifier": {
-                        "description": "the lowest Health"
+                        "description": "the lowest-Health"
                     }
                 }
             },
@@ -8587,7 +8587,7 @@
                     "unlock": 15,
                     "speed": 9,
                     "cooldown": 2,
-                    "spell_school":"Arcane",
+                    "spell_school": "Arcane",
                     "description": "Shoot three missiles at {random enemies} that deal {0} damage each.",
                     "tiers": [
                         {
@@ -8663,7 +8663,7 @@
                     "description": "Greater Arcane Missiles targets the lowest Health enemy.",
                     "modifier": {
                         "description": [
-                            "the lowest Health enemy",
+                            "the lowest-Health enemy",
                             0
                         ]
                     }
@@ -8819,6 +8819,304 @@
                     "name": "Zap them all!",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "I gotta do that thing to my enemies again. You know, like wham, boom, MILLHOUSED!"
+                }
+            ]
+        },
+        "Morgl the Oracle": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 8,
+            "health": 78,
+            "abilities": {
+                "Murloc Missile": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Give your {Murlocs} +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                "Murlocs",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                "Murlocs",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                "Murlocs",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                "Murlocs",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                "Murlocs",
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Fishy Barrage": {
+                    "unlock": 5,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to a random enemy. Repeat for each of your other Murlocs.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Healing Wave": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Restore {0} Health. If the target hasn't acted yet, restore {0} instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                26
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                30
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dousing Rod": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Healing Wave",
+                    "description": "Healing Wave restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": [
+                                    6,
+                                    6
+                                ]
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": [
+                                    8,
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": [
+                                    10,
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Spiky Pufferfish": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Fishy Barrage",
+                    "description": "Fishy Barrage deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Morgl's Mitt": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Murloc Missile",
+                    "description": "Murloc Missile buffs all friendly characters",
+                    "modifier": {
+                        "description": [
+                            0,
+                            "party",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Wisdom of the Seas",
+                    "description": "Deal 70 damage using Murloc Missile.",
+                    "quote": "<Face the wisdom of the seas!>"
+                },
+                {
+                    "name": "Fishy Barrage",
+                    "description": "Deal 85 damage using Fishy Barrage.",
+                    "quote": "<Times are best when you have friends.>"
+                },
+                {
+                    "name": "Salt Water on Wounds",
+                    "description": "Restore 95 Health using Healing Wave.",
+                    "quote": "<The Seas can heal even the greatest wounds.>"
+                },
+                {
+                    "name": "Lessons of the Sea",
+                    "description": "Deal 150 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "Out for A Stretch",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<It feels good to stretch these old bones.>"
+                },
+                {
+                    "name": "Sea Slag",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<The seas will take what is theirs.>"
+                },
+                {
+                    "name": "Violence with Age",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Is there a purpose to all this violence? Not that I mind.>"
+                },
+                {
+                    "name": "What Happens After",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "<What a strange world we see when we pass.>"
+                },
+                {
+                    "name": "Murloc Madness",
+                    "description": "Gain 225 Health using Murloc Missile.",
+                    "quote": ""
+                },
+                {
+                    "name": "Dank Drudgery",
+                    "description": "Deal 280 damage using Fishy Barrage.",
+                    "quote": "<Seas swallow you whole!>"
+                },
+                {
+                    "name": "The Sea Swallows All",
+                    "description": "Deal 450 damage.",
+                    "quote": "<Face the wisdom of the seas!>"
+                },
+                {
+                    "name": "Sparged with Blood",
+                    "description": "Destroy two enemies in one turn using Fishy Barrage 15 times.",
+                    "quote": "<Times are best when you have friends.>"
+                },
+                {
+                    "name": "Damp Lessons",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Patience Wins",
+                    "description": "Heal 450 damage.",
+                    "quote": "<The Seas can heal even the greatest wounds.>"
+                },
+                {
+                    "name": "An Evening Swim",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<It feels good to stretch these old bones.>"
+                },
+                {
+                    "name": "Worse than the Naga",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "<The seas will take what is theirs.>"
+                },
+                {
+                    "name": "Shoal them the Way",
+                    "description": "Deal 600 damage using Fishy Barrage.",
+                    "quote": "<Is there a purpose to all this violence? Not that I mind.>"
+                },
+                {
+                    "name": "Schools of the Sea",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<Seas swallow you whole!>"
                 }
             ]
         }
