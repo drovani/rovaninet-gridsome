@@ -463,6 +463,22 @@
                 "Sailor's Cap": 1,
                 "Heavy Anchor": 1
             }
+        },
+        "Mutanus": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Earthen Armor",
+            "abilities": {
+                "Devouring Attack": 3,
+                "Scaly Taunt": 5,
+                "Devour": 2
+            },
+            "equipment": {
+                "Iridescent Necklace": 3,
+                "Earthen Armor": 2,
+                "Pearlescent Scales": 1
+            }
         }
     }
 }

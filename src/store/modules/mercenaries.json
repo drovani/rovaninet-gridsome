@@ -9342,49 +9342,331 @@
                     "quote": "To the locker with them!"
                 },
                 {
-                    "name": " Little Bit o'Luck",
+                    "name": "Little Bit o'Luck",
                     "description": "Deal 450 damage using Smite Slam.",
                     "quote": "You want to prove yourself to me and the crew? Here is your chance."
                 },
                 {
-                    "name": " Raise Up the Flag!",
+                    "name": "Raise Up the Flag!",
                     "description": "Deal 450 damage.",
                     "quote": "Moo-ve it!"
                 },
                 {
-                    "name": " Talk Like a Pirate",
+                    "name": "Talk Like a Pirate",
                     "description": "Gain 80 Attack using Avast ye Matey.",
                     "quote": "Nothing like a good pillage."
                 },
                 {
-                    "name": " Pirate's Bounty",
+                    "name": "Pirate's Bounty",
                     "description": "Complete 4 Heroic Bounties.",
                     "quote": "No parley today."
                 },
                 {
-                    "name": " With an Iron Boot",
+                    "name": "With an Iron Boot",
                     "description": "Deal 50 or more damage in one turn using Overboard 10 times.",
                     "quote": "An opportunity presents itself."
                 },
                 {
-                    "name": " Fortune and Glory",
+                    "name": "Fortune and Glory",
                     "description": "Complete 6 Bounties.",
                     "quote": "These landlubbers are tougher than I thought."
                 },
                 {
-                    "name": " Landlubbers!",
+                    "name": "Landlubbers!",
                     "description": "Deal 900 damage to Fighters.",
                     "quote": "Send them to the bottom of the ocean."
                 },
                 {
-                    "name": " Hold Fast",
+                    "name": "Hold Fast",
                     "description": "Gain 60 Attack using Avast ye Matey.",
                     "quote": "The open sea calls your name."
                 },
                 {
-                    "name": " Batten Their Hatches",
+                    "name": "Batten Their Hatches",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "To the locker with them!"
+                }
+            ]
+        },
+        "Mutanus": {
+            "race": "Murloc",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 8,
+            "health": 75,
+            "abilities": {
+                "Devouring Attack": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "description": "Attack an enemy. Deathblow: Gain its Attack.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Scaly Taunt": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "description": "Gain Taunt and this takes {0} less damage this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Devour": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 2,
+                    "description": "Eat your lowest Health Murloc and gain {its stats}.",
+                    "tiers": [
+                        {
+                            "description": "+5/+5"
+                        },
+                        {
+                            "description": "+10/+10"
+                        },
+                        {
+                            "description": "its stats"
+                        },
+                        {
+                            "description": "its stats",
+                            "speed": -1
+                        },
+                        {
+                            "description": "its stats",
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Iridescent Necklace": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Scaly Taunt",
+                    "description": "Scaly Taunt makes this Merc takes {0} less damage and is Immune to Critical Damage this turn.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 3
+                            }
+                        }
+                    ]
+                },
+                "Earthen Armor": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 3,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 4,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 5,
+                                "health": 10
+                            }
+                        }
+                    ]
+                },
+                "Pearlescent Scales": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Passive: After a Murloc dies, gain +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Devour the Weak",
+                    "description": "Deal 55 damage using Devouring Attack.",
+                    "quote": "<Such tasty morsels. Mutanus loves the crunch.>"
+                },
+                {
+                    "name": "Puny Weapons",
+                    "description": "Block 30 damage using Scaly Taunt.",
+                    "quote": "<Tiny weapons. Weak. Cannot hurt Mutanus.>"
+                },
+                {
+                    "name": "Tastes like Chicken",
+                    "description": "Use Devour 10 times.",
+                    "quote": "<Tasty fishies. Your strength is mine!>"
+                },
+                {
+                    "name": "Sleep with the Fishes",
+                    "description": "Deal 150 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "Enter the Dream",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<You cannot understand the Emerald Dream.>"
+                },
+                {
+                    "name": "Nightmare Rage",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<The nightmare will fuel my power.>"
+                },
+                {
+                    "name": "Empower",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
+                },
+                {
+                    "name": "Can a Dream Sleep?",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "<What is this? It hurts the nightmare.>"
+                },
+                {
+                    "name": "Crunch",
+                    "description": "Deathblow with Devouring Attack 15 times",
+                    "quote": "<*Crunch crunch crunch*>"
+                },
+                {
+                    "name": "Famished",
+                    "description": "Gain 100 Attack using Devour.",
+                    "quote": "<Our corruption spreads. Soon the Dream will be ours.>"
+                },
+                {
+                    "name": "Mutanus the Mighty",
+                    "description": "Deal 450 damage.",
+                    "quote": "<Such tasty morsels. Mutanus loves the crunch.>"
+                },
+                {
+                    "name": "Toughened Skin",
+                    "description": "Block 90 damage using Scaly Taunt.",
+                    "quote": "<Tiny weapons. Weak. Cannot hurt Mutanus.>"
+                },
+                {
+                    "name": "A Permanent Sleep",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Feast of Fish",
+                    "description": "Deal 300 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<Tasty fishies. Your strength is mine!>"
+                },
+                {
+                    "name": "Fueling the Corruption",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<You cannot understand the Emerald Dream.>"
+                },
+                {
+                    "name": "The Nightmare Beckons",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "<The nightmare will fuel my power.>"
+                },
+                {
+                    "name": "A Murloc a Day",
+                    "description": "Gain 300 Attack using Devour.",
+                    "quote": "<*Crunch crunch crunch*>"
+                },
+                {
+                    "name": "Unstable Corruption",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
                 }
             ]
         }
