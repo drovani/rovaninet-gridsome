@@ -4369,7 +4369,7 @@
                     "unlock": 1,
                     "speed": 9,
                     "cooldown": 0,
-                    "description": "Attack an enemy, it Attacks this merc back{.}",
+                    "description": "Attack an enemy, it Attacks this merc back.",
                     "tiers": [
                         {
                             "speed": 0
@@ -4480,25 +4480,37 @@
                         {
                             "description": 20,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 20 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 30,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 30 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 40,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 40 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         },
                         {
                             "description": 50,
                             "modifier": {
-                                "description": " TO THE DEATH!"
+                                "description": {
+                                    "type": "append",
+                                    "text": "If this Merc has 50 or less Health, BATTLE TO THE DEATH!"
+                                }
                             }
                         }
                     ]
@@ -7816,7 +7828,7 @@
                     "affects": "Fist of Jaraxxus",
                     "description": "Fist of Jaraxxus always targets the lowest Health enemy.",
                     "modifier": {
-                        "description": "the lowest Health"
+                        "description": "the lowest-Health"
                     }
                 }
             },
@@ -7910,6 +7922,1751 @@
                     "name": "Pitiful Foes",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "You do not want to fail me, mortal."
+                }
+            ]
+        },
+        "Malfurion Stormrage": {
+            "race": "Night Elf",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 6,
+            "health": 68,
+            "abilities": {
+                "Cenarion Surge": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Your character's Nature abilities are ({0}) Speed faster next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Entangling Roots": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to an enemy and Root it.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 16
+                        }
+                    ]
+                },
+                "Archdruid's Call": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Choose One - Deal {0} damage to all enemies; or Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                24
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Forest Medallion": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Entangling Roots",
+                    "description": "Entangling Roots also slows the enemies next ability by ({0}) Speed.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Its next ability is (1) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Its next ability is (2) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Its next ability is (3) Speed slower."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Its next ability is (4) Speed slower."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Briarthorn": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Archdruid's Call",
+                    "description": "Archdruid's Call deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Liferoot Staff": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever you cast a Nature ability, Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "As Nature Wills",
+                    "description": "Deal 70 damage using Cenarian Surge.",
+                    "quote": "I am nature’s guardian. You can trust my judgment to protect the wilds."
+                },
+                {
+                    "name": "You Look Tied Up",
+                    "description": "Deal 145 damage using Entangling Roots.",
+                    "quote": "May Elune grant us strength."
+                },
+                {
+                    "name": "Nature's Strength",
+                    "description": "Deal 85 damage using Archdruid's Call.",
+                    "quote": "The land and I are one."
+                },
+                {
+                    "name": "Elune Give Us Strength",
+                    "description": "Deal 150 damage.",
+                    "quote": "My greetings."
+                },
+                {
+                    "name": "Attack Now",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Remember your teachings."
+                },
+                {
+                    "name": "Nature Calls",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Hail to the night."
+                },
+                {
+                    "name": "We Must Attack Now",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Nature stands with you."
+                },
+                {
+                    "name": "Unleash Nature's Wrath",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "We are all connected to each other."
+                },
+                {
+                    "name": "Blessings Upon You",
+                    "description": "Increase the speed of friendly abilities by a total of 55.",
+                    "quote": "Elune-Adore."
+                },
+                {
+                    "name": "I Feel Stronger",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "I’m awake, I’m awake… Now to get to the point..."
+                },
+                {
+                    "name": "Rise To Action",
+                    "description": "Deal 450 damage.",
+                    "quote": "May Elune grant us strength."
+                },
+                {
+                    "name": "Nature's Wrath",
+                    "description": "Restore 245 Health using Archdruid's Call.",
+                    "quote": "We are all connected to each other."
+                },
+                {
+                    "name": "I Hear the Wild Calls",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My greetings."
+                },
+                {
+                    "name": "Vengeance is Mine",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "Remember your teachings."
+                },
+                {
+                    "name": "Justice Be Done",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Hail to the night."
+                },
+                {
+                    "name": "Nothing Personal",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Nature stands with you."
+                },
+                {
+                    "name": "Give and Take",
+                    "description": "Deal 900 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "The land and I are one."
+                },
+                {
+                    "name": "Enemies Beware",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Elune-Adore."
+                }
+            ]
+        },
+        "Mannoroth": {
+            "race": "Demon",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 10,
+            "health": 73,
+            "abilities": {
+                "Terror Charge": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. Give your Demons +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Fel Lash": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Fel",
+                    "description": "Deal {0} damage to an enemy. It can't heal this turn.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Howl of Terror": {
+                    "unlock": 15,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Reduce the Attack of all enemies by {0} this turn.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Fel Spikes": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Fel Lash",
+                    "description": "Fel Lash deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        }
+                    ]
+                },
+                "Fel-Enhanced Lungs": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Howl of Terror",
+                    "description": "Howl of Terror also does {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deal 2 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deal 3 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deal 4 damage to all enemies."
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deal 5 damage to all enemies."
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Pit Lord's Staff": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Terror Charge",
+                    "description": "Terror Charge gives an additional +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Empower the Legion",
+                    "description": "Gain 55 Health using Terror Charge.",
+                    "quote": "I must show the Burning Legion my endless strength if I wish to retain my position."
+                },
+                {
+                    "name": "Fear my Wrath",
+                    "description": "Deal 45 damage using Fel Lash.",
+                    "quote": "I will strike down these mortals to demonstrate my power!"
+                },
+                {
+                    "name": "Crush Them",
+                    "description": "Use Howl of Terror 12 times.",
+                    "quote": "My enemies are doomed to failure."
+                },
+                {
+                    "name": "Lead the Legion",
+                    "description": "Deal 150 damage.",
+                    "quote": "This will be a simple feat. Even for you."
+                },
+                {
+                    "name": "Feel the Power",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "They will heed my demands!"
+                },
+                {
+                    "name": "Puny Mortals",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Destroy them all!"
+                },
+                {
+                    "name": "Hardly a Challenge",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "My rage will devour everything."
+                },
+                {
+                    "name": "Rest for the Wicked",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "There is no room for failure. Not that I have always succeeded… but… forget I said anything!"
+                },
+                {
+                    "name": "Trample their Bones",
+                    "description": "Grant 270 Health using Terror Charge.",
+                    "quote": "This will be a simple feat. Even for you."
+                },
+                {
+                    "name": "True Terror",
+                    "description": "Use Howl of Terror 10 times.",
+                    "quote": "They will heed my demands!"
+                },
+                {
+                    "name": "Strengthen the Legion",
+                    "description": "Grant your demons 270 health with Terror Charge.",
+                    "quote": "I am always watching my enemies."
+                },
+                {
+                    "name": "Foolish Weaklings",
+                    "description": "Prevent 150 healing with Fel Lash",
+                    "quote": "The Legion will remember me for this."
+                },
+                {
+                    "name": "The Flayer",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I will strike down these mortals to demonstrate my power!"
+                },
+                {
+                    "name": "Teach them Fear",
+                    "description": "Deal 12 damage in a single attack with Howl of Terror.",
+                    "quote": "Destroy them all!"
+                },
+                {
+                    "name": "Onslaught of Fel",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "My enemies are doomed to failure."
+                },
+                {
+                    "name": "No More Failure",
+                    "description": "Deal 300 damage using Fel Lash.",
+                    "quote": "My rage will devour everything."
+                },
+                {
+                    "name": "The Pit Lord",
+                    "description": "Deal 240 damage to Fighters.",
+                    "quote": "There is no room for failure. Not that I have always succeeded… but… forget I said anything!"
+                },
+                {
+                    "name": "The Enforcer",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I must show the Burning Legion my endless strength if I wish to retain my position."
+                }
+            ]
+        },
+        "Millhouse Manastorm": {
+            "race": "Gnome",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 64,
+            "abilities": {
+                "Arcane Explosion": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Arcane Bolt": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage. Gain +{0} Arcane Damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Greater Arcane Missiles": {
+                    "unlock": 15,
+                    "speed": 9,
+                    "cooldown": 2,
+                    "spell_school": "Arcane",
+                    "description": "Shoot three missiles at {random enemies} that deal {0} damage each.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "random enemies",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                13
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                "random enemies",
+                                15
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Arcane Powder": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Arcane Explosion",
+                    "description": "Arcane Explosion deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Ley Line Wand": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "affects": "Greater Arcane Missiles",
+                    "description": "Greater Arcane Missiles targets the lowest Health enemy.",
+                    "modifier": {
+                        "description": [
+                            "the lowest-Health enemy",
+                            0
+                        ]
+                    }
+                },
+                "Mana Rod": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Arcane Bolt",
+                    "description": "Arcane Bolt gains +{0} Arcane Damage more, but has +{0} Cooldown.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    1
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ],
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ],
+                                "cooldown": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Explosions!",
+                    "description": "Deal 100 damage using Arcane Explosion.",
+                    "quote": "Hey, I need some help over here! And trust me, you don't wanna get on my bad side!"
+                },
+                {
+                    "name": "Everyone gets a Bolt!",
+                    "description": "Deal 60 damage using Arcane Bolt.",
+                    "quote": "Only really smart types listen to the mighty Millhouse Manastorm!"
+                },
+                {
+                    "name": "Millhouse Missiles!",
+                    "description": "Deal 245 damage using Greater Arcane Missiles.",
+                    "quote": "Whoa, you're actually taking my orders? I mean, of course you are!"
+                },
+                {
+                    "name": "Working off my Debt",
+                    "description": "Deal 150 damage.",
+                    "quote": "Let's go do this too, okay?"
+                },
+                {
+                    "name": "I'm Better than Them!",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Gotta defeat these impudent imbeciles!"
+                },
+                {
+                    "name": "Arcane Powers",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Yeah, I'm gonna need some top people to jump in on this one. Wait, that's me. I'm the top people!"
+                },
+                {
+                    "name": "Blast Everything!",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "This seems really hard, but it's just like shooting cockroaches in a barrel."
+                },
+                {
+                    "name": "More Power!",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I gotta do that thing to my enemies again. You know, like wham, boom, MILLHOUSED!"
+                },
+                {
+                    "name": "Even More Power!",
+                    "description": "Deal 450 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "These ones need to be obliterated, disintegrated, exterminated!"
+                },
+                {
+                    "name": "Millhouse Math!",
+                    "description": "Deal 20 or more damage in one turn using Arcane Explosion 10 times.",
+                    "quote": "Hey, let's just talk for a bit. Haha, just kidding, I've got more giant problems to fix."
+                },
+                {
+                    "name": "A Whole lot of Energy!",
+                    "description": "Deal 450 damage.",
+                    "quote": "Let's go do this too, okay?"
+                },
+                {
+                    "name": "Zap and Pow!",
+                    "description": "Destroy three enemies in one turn using Arcane Explosion 15 times.",
+                    "quote": "Yeah, I'm gonna need some top people to jump in on this one. Wait, that's me. I'm the top people!"
+                },
+                {
+                    "name": "Bigger they are…",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Hey, I need some help over here! And trust me, you don't wanna get on my bad side!"
+                },
+                {
+                    "name": "Pew, pew, pew!",
+                    "description": "Deal 900 Arcane Damage with a team that includes this Mercenary.",
+                    "quote": "Only really smart types listen to the mighty Millhouse Manastorm!"
+                },
+                {
+                    "name": "Wait, What?",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Whoa, you're actually taking my orders? I mean, of course you are!"
+                },
+                {
+                    "name": "Impudent Imbeciles",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Gotta defeat these impudent imbeciles!"
+                },
+                {
+                    "name": "Bigger, Better Bolt",
+                    "description": "Deal 20 or more damage in one turn using Arcane Bolt 25 times.",
+                    "quote": "These ones need to be obliterated, disintegrated, exterminated!"
+                },
+                {
+                    "name": "Zap them all!",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I gotta do that thing to my enemies again. You know, like wham, boom, MILLHOUSED!"
+                }
+            ]
+        },
+        "Morgl the Oracle": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 8,
+            "health": 78,
+            "abilities": {
+                "Murloc Missile": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage. Give your {Murlocs} +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                "Murlocs",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                "Murlocs",
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                "Murlocs",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                "Murlocs",
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                "Murlocs",
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Fishy Barrage": {
+                    "unlock": 5,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to a random enemy. Repeat for each of your other Murlocs.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Healing Wave": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Restore {0} Health. If the target hasn't acted yet, restore {0} instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                26
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                30
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dousing Rod": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Healing Wave",
+                    "description": "Healing Wave restores {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": [
+                                    6,
+                                    6
+                                ]
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": [
+                                    8,
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": [
+                                    10,
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Spiky Pufferfish": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Fishy Barrage",
+                    "description": "Fishy Barrage deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Morgl's Mitt": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Murloc Missile",
+                    "description": "Murloc Missile buffs all friendly characters",
+                    "modifier": {
+                        "description": [
+                            0,
+                            "party",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Wisdom of the Seas",
+                    "description": "Deal 70 damage using Murloc Missile.",
+                    "quote": "<Face the wisdom of the seas!>"
+                },
+                {
+                    "name": "Fishy Barrage",
+                    "description": "Deal 85 damage using Fishy Barrage.",
+                    "quote": "<Times are best when you have friends.>"
+                },
+                {
+                    "name": "Salt Water on Wounds",
+                    "description": "Restore 95 Health using Healing Wave.",
+                    "quote": "<The Seas can heal even the greatest wounds.>"
+                },
+                {
+                    "name": "Lessons of the Sea",
+                    "description": "Deal 150 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "Out for A Stretch",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<It feels good to stretch these old bones.>"
+                },
+                {
+                    "name": "Sea Slag",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<The seas will take what is theirs.>"
+                },
+                {
+                    "name": "Violence with Age",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Is there a purpose to all this violence? Not that I mind.>"
+                },
+                {
+                    "name": "What Happens After",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "<What a strange world we see when we pass.>"
+                },
+                {
+                    "name": "Murloc Madness",
+                    "description": "Gain 225 Health using Murloc Missile.",
+                    "quote": ""
+                },
+                {
+                    "name": "Dank Drudgery",
+                    "description": "Deal 280 damage using Fishy Barrage.",
+                    "quote": "<Seas swallow you whole!>"
+                },
+                {
+                    "name": "The Sea Swallows All",
+                    "description": "Deal 450 damage.",
+                    "quote": "<Face the wisdom of the seas!>"
+                },
+                {
+                    "name": "Sparged with Blood",
+                    "description": "Destroy two enemies in one turn using Fishy Barrage 15 times.",
+                    "quote": "<Times are best when you have friends.>"
+                },
+                {
+                    "name": "Damp Lessons",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Patience Wins",
+                    "description": "Heal 450 damage.",
+                    "quote": "<The Seas can heal even the greatest wounds.>"
+                },
+                {
+                    "name": "An Evening Swim",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<It feels good to stretch these old bones.>"
+                },
+                {
+                    "name": "Worse than the Naga",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "<The seas will take what is theirs.>"
+                },
+                {
+                    "name": "Shoal them the Way",
+                    "description": "Deal 600 damage using Fishy Barrage.",
+                    "quote": "<Is there a purpose to all this violence? Not that I mind.>"
+                },
+                {
+                    "name": "Schools of the Sea",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<Seas swallow you whole!>"
+                }
+            ]
+        },
+        "Mr. Smite": {
+            "race": "Pirate",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 6,
+            "health": 70,
+            "abilities": {
+                "Smite Slam": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Gain +{0} Attack for each enemy with {0} or less Health. Attack an enemy.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                30
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                40
+                            ]
+                        }
+                    ]
+                },
+                "Avast ye Matey": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "description": "Gain Taunt this turn. After an enemy Attack this Merc gain +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Overboard": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "After another friendly character is damaged this turn, gain +{0} Health and Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Sharpened Scabbard": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Whenever another friendly Pirate attacks, gain +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Sailor's Cap": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Smite Slam",
+                    "description": "Mr Smite gains an additional +{0} Attack from Smite Slam.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Heavy Anchor": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Overboard",
+                    "description": "Overboard grants +{0} Attack if the damaged friend is a Pirate.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Ahoy!",
+                    "description": "Deal 90 damage using Smite Slam.",
+                    "quote": "You there! Time to get your hands dirty."
+                },
+                {
+                    "name": "Desist, Novice Seaman!",
+                    "description": "Gain 30 Attack using Avast ye Matey.",
+                    "quote": "Moo-ve it!"
+                },
+                {
+                    "name": "Keelhaul Them!",
+                    "description": "Use Overboard 10 times.",
+                    "quote": "Nothing like a good pillage."
+                },
+                {
+                    "name": "Taurrrgh-en Charm",
+                    "description": "Deal 280 damage.",
+                    "quote": "No parley today."
+                },
+                {
+                    "name": "Arm of Iron",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "An opportunity presents itself."
+                },
+                {
+                    "name": "Swab the Decks",
+                    "description": "Destroy 40 minions.",
+                    "quote": "These landlubbers are tougher than I thought."
+                },
+                {
+                    "name": "On Land or Sea or Foam",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Send them to the bottom of the ocean."
+                },
+                {
+                    "name": "Superstitious Seas",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "The open sea calls your name."
+                },
+                {
+                    "name": "Shatter The Mast",
+                    "description": "Deal 30 or more damage in one turn using Smite Slam 10 times.",
+                    "quote": "To the locker with them!"
+                },
+                {
+                    "name": "Little Bit o'Luck",
+                    "description": "Deal 450 damage using Smite Slam.",
+                    "quote": "You want to prove yourself to me and the crew? Here is your chance."
+                },
+                {
+                    "name": "Raise Up the Flag!",
+                    "description": "Deal 450 damage.",
+                    "quote": "Moo-ve it!"
+                },
+                {
+                    "name": "Talk Like a Pirate",
+                    "description": "Gain 80 Attack using Avast ye Matey.",
+                    "quote": "Nothing like a good pillage."
+                },
+                {
+                    "name": "Pirate's Bounty",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "No parley today."
+                },
+                {
+                    "name": "With an Iron Boot",
+                    "description": "Deal 50 or more damage in one turn using Overboard 10 times.",
+                    "quote": "An opportunity presents itself."
+                },
+                {
+                    "name": "Fortune and Glory",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "These landlubbers are tougher than I thought."
+                },
+                {
+                    "name": "Landlubbers!",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Send them to the bottom of the ocean."
+                },
+                {
+                    "name": "Hold Fast",
+                    "description": "Gain 60 Attack using Avast ye Matey.",
+                    "quote": "The open sea calls your name."
+                },
+                {
+                    "name": "Batten Their Hatches",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "To the locker with them!"
+                }
+            ]
+        },
+        "Mutanus": {
+            "race": "Murloc",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 8,
+            "health": 75,
+            "abilities": {
+                "Devouring Attack": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "description": "Attack an enemy. Deathblow: Gain its Attack.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Scaly Taunt": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "description": "Gain Taunt and this takes {0} less damage this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Devour": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 2,
+                    "description": "Eat your lowest Health Murloc and gain {its stats}.",
+                    "tiers": [
+                        {
+                            "description": "+5/+5"
+                        },
+                        {
+                            "description": "+10/+10"
+                        },
+                        {
+                            "description": "its stats"
+                        },
+                        {
+                            "description": "its stats",
+                            "speed": -1
+                        },
+                        {
+                            "description": "its stats",
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Iridescent Necklace": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Scaly Taunt",
+                    "description": "Scaly Taunt makes this Merc takes {0} less damage and is Immune to Critical Damage this turn.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "type": "replace",
+                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                "description": 3
+                            }
+                        }
+                    ]
+                },
+                "Earthen Armor": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 3,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 4,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 5,
+                                "health": 10
+                            }
+                        }
+                    ]
+                },
+                "Pearlescent Scales": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Passive: After a Murloc dies, gain +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Devour the Weak",
+                    "description": "Deal 55 damage using Devouring Attack.",
+                    "quote": "<Such tasty morsels. Mutanus loves the crunch.>"
+                },
+                {
+                    "name": "Puny Weapons",
+                    "description": "Block 30 damage using Scaly Taunt.",
+                    "quote": "<Tiny weapons. Weak. Cannot hurt Mutanus.>"
+                },
+                {
+                    "name": "Tastes like Chicken",
+                    "description": "Use Devour 10 times.",
+                    "quote": "<Tasty fishies. Your strength is mine!>"
+                },
+                {
+                    "name": "Sleep with the Fishes",
+                    "description": "Deal 150 damage.",
+                    "quote": ""
+                },
+                {
+                    "name": "Enter the Dream",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<You cannot understand the Emerald Dream.>"
+                },
+                {
+                    "name": "Nightmare Rage",
+                    "description": "Destroy 40 minions.",
+                    "quote": "<The nightmare will fuel my power.>"
+                },
+                {
+                    "name": "Empower",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
+                },
+                {
+                    "name": "Can a Dream Sleep?",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "<What is this? It hurts the nightmare.>"
+                },
+                {
+                    "name": "Crunch",
+                    "description": "Deathblow with Devouring Attack 15 times",
+                    "quote": "<*Crunch crunch crunch*>"
+                },
+                {
+                    "name": "Famished",
+                    "description": "Gain 100 Attack using Devour.",
+                    "quote": "<Our corruption spreads. Soon the Dream will be ours.>"
+                },
+                {
+                    "name": "Mutanus the Mighty",
+                    "description": "Deal 450 damage.",
+                    "quote": "<Such tasty morsels. Mutanus loves the crunch.>"
+                },
+                {
+                    "name": "Toughened Skin",
+                    "description": "Block 90 damage using Scaly Taunt.",
+                    "quote": "<Tiny weapons. Weak. Cannot hurt Mutanus.>"
+                },
+                {
+                    "name": "A Permanent Sleep",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Feast of Fish",
+                    "description": "Deal 300 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<Tasty fishies. Your strength is mine!>"
+                },
+                {
+                    "name": "Fueling the Corruption",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "<You cannot understand the Emerald Dream.>"
+                },
+                {
+                    "name": "The Nightmare Beckons",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "<The nightmare will fuel my power.>"
+                },
+                {
+                    "name": "A Murloc a Day",
+                    "description": "Gain 300 Attack using Devour.",
+                    "quote": "<*Crunch crunch crunch*>"
+                },
+                {
+                    "name": "Unstable Corruption",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
                 }
             ]
         }

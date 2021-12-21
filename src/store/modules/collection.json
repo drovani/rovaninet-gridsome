@@ -163,8 +163,8 @@
         "Garrosh Hellscream": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
-            "itemEquipped": "Tusks of Mannoroth",
+            "tasksCompleted": 1,
+            "itemEquipped": "Dueling Gauntlets",
             "abilities": {
                 "Mak'Gora": 2,
                 "Horde Strength": 2,
@@ -382,6 +382,102 @@
                 "Toxic Venom": 2,
                 "Snake Snacks": 2,
                 "Signet of the Wilds": 4
+            }
+        },
+        "Malfurion Stormrage": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "Forest Medallion",
+            "abilities": {
+                "Cenarion Surge": 3,
+                "Entangling Roots": 3,
+                "Archdruid's Call": 2
+            },
+            "equipment": {
+                "Forest Medallion": 2,
+                "Briarthorn": 1,
+                "Liferoot Staff": 1
+            }
+        },
+        "Mannoroth": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 5,
+            "itemEquipped": "Fel-Enhanced Lungs",
+            "abilities": {
+                "Terror Charge": 3,
+                "Fel Lash": 3,
+                "Howl of Terror": 5
+            },
+            "equipment": {
+                "Fel Spikes": 2,
+                "Fel-Enhanced Lungs": 2,
+                "Pit Lord's Staff": 1
+            }
+        },
+        "Millhouse Manastorm": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 8,
+            "itemEquipped": "Ley Line Wand",
+            "abilities": {
+                "Arcane Explosion": 3,
+                "Arcane Bolt": 5,
+                "Greater Arcane Missiles": 5
+            },
+            "equipment": {
+                "Arcane Powder": 2,
+                "Ley Line Wand": 4,
+                "Mana Rod": 1
+            }
+        },
+        "Morgl the Oracle": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 9,
+            "itemEquipped": "Spiky Pufferfish",
+            "abilities": {
+                "Murloc Missile": 5,
+                "Fishy Barrage": 5,
+                "Healing Wave": 5
+            },
+            "equipment": {
+                "Dousing Rod": 3,
+                "Spiky Pufferfish": 3,
+                "Morgl's Mitt": 4
+            }
+        },
+        "Mr. Smite": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "Sailor's Cap",
+            "abilities": {
+                "Smite Slam": 3,
+                "Avast ye Matey": 2,
+                "Overboard": 3
+            },
+            "equipment": {
+                "Sharpened Scabbard": 1,
+                "Sailor's Cap": 1,
+                "Heavy Anchor": 1
+            }
+        },
+        "Mutanus": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Earthen Armor",
+            "abilities": {
+                "Devouring Attack": 3,
+                "Scaly Taunt": 5,
+                "Devour": 2
+            },
+            "equipment": {
+                "Iridescent Necklace": 3,
+                "Earthen Armor": 2,
+                "Pearlescent Scales": 1
             }
         }
     }

@@ -27,6 +27,11 @@ export default {
     computed: {
         description() {
             let desc = this.abilityDescription;
+
+            if (this.itemEquippedTier?.modifier?.type === "replace") {
+                desc = this.itemEquippedTier.modifier.text;
+            }
+
             const regex = new RegExp(/\{([\w\d\s:\.]+)\}/, "g");
             const matches = [...this.abilityDescription.matchAll(regex)];
             for (let i = 0; i < matches.length; i++) {
