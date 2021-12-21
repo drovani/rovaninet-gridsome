@@ -9119,6 +9119,274 @@
                     "quote": "<Seas swallow you whole!>"
                 }
             ]
+        },
+        "Mr. Smite": {
+            "race": "Pirate",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 6,
+            "health": 70,
+            "abilities": {
+                "Smite Slam": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Gain +{0} Attack for each enemy with {0} or less Health. Attack an enemy.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                30
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                40
+                            ]
+                        }
+                    ]
+                },
+                "Avast ye Matey": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "description": "Gain Taunt this turn. After an enemy Attack this Merc gain +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Overboard": {
+                    "unlock": 15,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "After another friendly character is damaged this turn, gain +{0} Health and Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Sharpened Scabbard": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Whenever another friendly Pirate attacks, gain +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Sailor's Cap": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Smite Slam",
+                    "description": "Mr Smite gains an additional +{0} Attack from Smite Slam.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Heavy Anchor": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Overboard",
+                    "description": "Overboard grants +{0} Attack if the damaged friend is a Pirate.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Ahoy!",
+                    "description": "Deal 90 damage using Smite Slam.",
+                    "quote": "You there! Time to get your hands dirty."
+                },
+                {
+                    "name": "Desist, Novice Seaman!",
+                    "description": "Gain 30 Attack using Avast ye Matey.",
+                    "quote": "Moo-ve it!"
+                },
+                {
+                    "name": "Keelhaul Them!",
+                    "description": "Use Overboard 10 times.",
+                    "quote": "Nothing like a good pillage."
+                },
+                {
+                    "name": "Taurrrgh-en Charm",
+                    "description": "Deal 280 damage.",
+                    "quote": "No parley today."
+                },
+                {
+                    "name": "Arm of Iron",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "An opportunity presents itself."
+                },
+                {
+                    "name": "Swab the Decks",
+                    "description": "Destroy 40 minions.",
+                    "quote": "These landlubbers are tougher than I thought."
+                },
+                {
+                    "name": "On Land or Sea or Foam",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Send them to the bottom of the ocean."
+                },
+                {
+                    "name": "Superstitious Seas",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "The open sea calls your name."
+                },
+                {
+                    "name": "Shatter The Mast",
+                    "description": "Deal 30 or more damage in one turn using Smite Slam 10 times.",
+                    "quote": "To the locker with them!"
+                },
+                {
+                    "name": " Little Bit o'Luck",
+                    "description": "Deal 450 damage using Smite Slam.",
+                    "quote": "You want to prove yourself to me and the crew? Here is your chance."
+                },
+                {
+                    "name": " Raise Up the Flag!",
+                    "description": "Deal 450 damage.",
+                    "quote": "Moo-ve it!"
+                },
+                {
+                    "name": " Talk Like a Pirate",
+                    "description": "Gain 80 Attack using Avast ye Matey.",
+                    "quote": "Nothing like a good pillage."
+                },
+                {
+                    "name": " Pirate's Bounty",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "No parley today."
+                },
+                {
+                    "name": " With an Iron Boot",
+                    "description": "Deal 50 or more damage in one turn using Overboard 10 times.",
+                    "quote": "An opportunity presents itself."
+                },
+                {
+                    "name": " Fortune and Glory",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "These landlubbers are tougher than I thought."
+                },
+                {
+                    "name": " Landlubbers!",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Send them to the bottom of the ocean."
+                },
+                {
+                    "name": " Hold Fast",
+                    "description": "Gain 60 Attack using Avast ye Matey.",
+                    "quote": "The open sea calls your name."
+                },
+                {
+                    "name": " Batten Their Hatches",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "To the locker with them!"
+                }
+            ]
         }
     }
 }
