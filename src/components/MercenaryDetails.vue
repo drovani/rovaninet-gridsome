@@ -11,12 +11,14 @@
         </button>
         <div class="grid grid-cols-1 sm:grid-cols-4 sm:space-x-2 space-y-4">
             <div class="sm:row-span-6 text-xl">
-                <header class="text-center bg-gray-900 text-white rounded-md flex px-1 mb-4"
-                :class="{
-                    'bg-red-900': mercenary.role === 'Protector',
-                    'bg-green-900': mercenary.role === 'Fighter',
-                    'bg-blue-900': mercenary.role === 'Caster',
-                }">
+                <header
+                    class="text-center bg-gray-900 text-white rounded-md flex px-1 mb-4"
+                    :class="{
+                        'bg-red-900': mercenary.role === 'Protector',
+                        'bg-green-900': mercenary.role === 'Fighter',
+                        'bg-blue-900': mercenary.role === 'Caster',
+                    }"
+                >
                     <span v-if="activeMerc.collected">
                         <app-icon :icon="['fas', 'check']"></app-icon>
                     </span>
@@ -183,18 +185,23 @@ export default {
         },
         itemEquippedTierForAbility() {
             return (abilityName) => {
-                if (
-                    this.activeMerc.itemEquipped &&
-                    this.mercenary.equipment[this.activeMerc.itemEquipped].affects === abilityName
-                ) {
+                if (!this.activeMerc.itemEquipped) {
+                    return null;
+                }
+
+                const item = this.mercenary.equipment[this.activeMerc.itemEquipped];
+                const affects = Array.isArray(item.affects) ? item.affects : [item.affects];
+
+                if (affects.includes(abilityName)) {
                     const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [
                         this.mercenary.equipment[this.activeMerc.itemEquipped],
                     ];
                     return tiers[
                         this.activeMerc.equipment[this.activeMerc.itemEquipped] + tiers.length - 5
                     ];
+                } else {
+                    return null;
                 }
-                return null;
             };
         },
         abilitiesMaxCost() {
