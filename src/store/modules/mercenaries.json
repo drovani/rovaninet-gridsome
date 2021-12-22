@@ -9669,6 +9669,316 @@
                     "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
                 }
             ]
+        },
+        "Natalie Seline": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 4,
+            "health": 70,
+            "abilities": {
+                "Shadow Beam": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage. If you have Anathema, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Light Beam": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health. If you have Benediction, restore {0} Health instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                18
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                20
+                            ]
+                        }
+                    ]
+                },
+                "Anathema": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to all enemies. (Transform into Benediction)",
+                    "transform": {
+                        "Benediction": {
+                            "speed": 6,
+                            "cooldown": 1,
+                            "spell_school": "Holy",
+                            "description": "Restore {0} Health to all your characters.",
+                            "tiers": [
+                                {
+                                    "description": 8
+                                },
+                                {
+                                    "description": 16
+                                },
+                                {
+                                    "description": 24
+                                },
+                                {
+                                    "description": 27
+                                },
+                                {
+                                    "description": 30
+                                }
+                            ]
+                        }
+                    },
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Eye of Divinity": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": [
+                        "Light Beam",
+                        "Benediction"
+                    ],
+                    "description": "Benediction and Light Beam restore {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                },
+                "Eye of Shadow": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": [
+                        "Anathema",
+                        "Shadow Beam"
+                    ],
+                    "description": "Anathema and Shadow Beam deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Splinter of Nordrassil": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": [
+                        "Anathema",
+                        "Benediction"
+                    ],
+                    "description": "Anathema and Benediction have no Cooldown.",
+                    "modifier": {
+                        "cooldown": -1
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Blessing of the Light",
+                    "description": "Deal 70 damage using Shadow Beam.",
+                    "quote": "I walk between shadow and light."
+                },
+                {
+                    "name": "Suffering in the Dark",
+                    "description": "Restore 84 Health using Light Beam.",
+                    "quote": "Cold is the Void, but I do not fear it. Perhaps you will help me wield its power?"
+                },
+                {
+                    "name": "Tendrils of Agony",
+                    "description": "Deal 180 damage using Anathema.",
+                    "quote": "Knowledge is the only power I seek."
+                },
+                {
+                    "name": "Light Heals All Wounds",
+                    "description": "Restore 190 Health using Benediction.",
+                    "quote": "My mind’s chained down by the voices."
+                },
+                {
+                    "name": "Can Balance be Found",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "There must be both dark and light."
+                },
+                {
+                    "name": "Listen to the Voices",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Never surrender to madness."
+                },
+                {
+                    "name": "May the Light Shine",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Feed the hungering Void."
+                },
+                {
+                    "name": "Peace and Thought",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Don’t mind the apparitions. They’re mostly friendly."
+                },
+                {
+                    "name": "Destroy the Madness",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I will not be consumed."
+                },
+                {
+                    "name": "Trust in the Void",
+                    "description": "Deal 210 damage using Shadow Beam.",
+                    "quote": "My studies must continue."
+                },
+                {
+                    "name": "Embrace the Shadows",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Cold is the Void, but I do not fear it. Perhaps you will help me wield its power?"
+                },
+                {
+                    "name": "Power in Shadows",
+                    "description": "Deal 450 damage.",
+                    "quote": "Knowledge is the only power I seek."
+                },
+                {
+                    "name": "Xal'atath Knows All",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My mind’s chained down by the voices."
+                },
+                {
+                    "name": "Shadows Rise Again",
+                    "description": "Use Shadow Beam while you have Anathema 30 times",
+                    "quote": "I walk between shadow and light."
+                },
+                {
+                    "name": "More Study is Needed",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I will not be consumed."
+                },
+                {
+                    "name": "Listen to the Shadows",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Never surrender to madness."
+                },
+                {
+                    "name": "Let the Balance Tilt",
+                    "description": "Heal 900 damage.",
+                    "quote": "Feed the hungering Void."
+                },
+                {
+                    "name": "Void Swallow your Soul",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Don’t mind the apparitions. They’re mostly friendly."
+                }
+            ]
         }
     }
 }
