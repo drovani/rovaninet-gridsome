@@ -11795,6 +11795,366 @@
                     "quote": "Lok'tar ogar!"
                 }
             ]
+        },
+        "Saurfang": {
+            "race": "Orc",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 70,
+            "abilities": {
+                "Mobilizing Strike": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Give all your damaged Orcs +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Whirlwind": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to enemies and {0} damage to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                "Bladehand Berserker": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Bladehand Berserker",
+                        "race": "Orc",
+                        "description": "Whenever a character takes damage, gain +{0} Attack."
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": 1,
+                                "health": 2,
+                                "attack": 5
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 2,
+                                "health": 3,
+                                "attack": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 4,
+                                "attack": 13
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 5,
+                                "attack": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 6,
+                                "attack": 15
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Serrated Shield": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 3,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 4,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                12
+                            ],
+                            "modifier": {
+                                "attack": 5,
+                                "health": 12
+                            }
+                        }
+                    ]
+                },
+                "Berserker's Blade": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Whirlwind",
+                    "description": "Whirlwind deals {0} more damage to enemies.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Saronite Stompers": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Mobilizing Strike",
+                    "description": "Mobilizing Strike gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Battle is Close",
+                    "description": "Deal 70 damage using Mobilizing Strike.",
+                    "quote": "Enemies surround me on all sides… But not for long."
+                },
+                {
+                    "name": "Winds of War",
+                    "description": "Deal 70 damage using Whirlwind.",
+                    "quote": "These ones have caused enough trouble for now. I will put an end to it."
+                },
+                {
+                    "name": "Watch My Power Grow",
+                    "description": "Summon a Bladehand Berserker 12 times.",
+                    "quote": "I think this is well within my abilities…"
+                },
+                {
+                    "name": "For The Horde",
+                    "description": "Deal 150 damage.",
+                    "quote": "My foes still think they have the upper hand. Hah!"
+                },
+                {
+                    "name": "I Grow Stronger",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "There is only one solution to this problem."
+                },
+                {
+                    "name": "No Mercy",
+                    "description": "Destroy 40 minions.",
+                    "quote": "This will require patience as well as skill."
+                },
+                {
+                    "name": "I Do Not Fear Death",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "It is time to show them what I can handle."
+                },
+                {
+                    "name": "Reinforcements Needed",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "The spirit of a warrior rages within me!"
+                },
+                {
+                    "name": "The Horde Grows Strong",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "Sometimes the hour calls for greatness. This is that hour."
+                },
+                {
+                    "name": "Strike Strong",
+                    "description": "Give 180 Health or Attack to friendly Mercenaries.",
+                    "quote": "For all my prowess, they still require more from me."
+                },
+                {
+                    "name": "Savage Blows",
+                    "description": "Deal 450 damage.",
+                    "quote": "There is only one solution to this problem."
+                },
+                {
+                    "name": "A Mighty Blow",
+                    "description": "Deal 30 or more damage in one turn using Mobilizing Strike 15 times.",
+                    "quote": "My foes still think they have the upper hand. Hah!"
+                },
+                {
+                    "name": "A Challenge Approaches",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "These ones have caused enough trouble for now. I will put an end to it."
+                },
+                {
+                    "name": "Strike Them All",
+                    "description": "Destroy 40 enemies using Whirlwind.",
+                    "quote": "I think this is well within my abilities…"
+                },
+                {
+                    "name": "Strike Them Down",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This will require patience as well as skill."
+                },
+                {
+                    "name": "Nothing Personal",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "It is time to show them what I can handle."
+                },
+                {
+                    "name": "Effective Tactics",
+                    "description": "Deal 900 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "The spirit of a warrior rages within me!"
+                },
+                {
+                    "name": "I Will Be Your Death",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "For all my prowess, they still require more from me."
+                }
+            ]
         }
     }
 }
