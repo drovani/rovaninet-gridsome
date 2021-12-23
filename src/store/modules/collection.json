@@ -723,7 +723,7 @@
         "Thrall": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 1,
+            "tasksCompleted": 0,
             "itemEquipped": null,
             "abilities": {
                 "For The Horde": 1,
@@ -734,6 +734,22 @@
                 "Ornate Warhorn": 1,
                 "Ring of Strength": 1,
                 "Doomhammer": 1
+            }
+        },
+        "Tirion Fordring": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "King's Helm",
+            "abilities": {
+                "Divine Assault": 3,
+                "Blessing of Kings": 3,
+                "Judgement of Humility": 4
+            },
+            "equipment": {
+                "Ashbringer": 1,
+                "King's Helm": 2,
+                "Tirion's Shield": 1
             }
         }
     }

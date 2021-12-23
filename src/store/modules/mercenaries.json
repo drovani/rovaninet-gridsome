@@ -15089,6 +15089,338 @@
                     "quote": "Our coming will be like thunder from the sky."
                 }
             ]
+        },
+        "Tirion Fordring": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 69,
+            "abilities": {
+                "Divine Assault": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "description": "Attack an enemy. Dealthblow: {Give your characters} Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": "Gain"
+                        },
+                        {
+                            "description": "Give this Merc and a random neighbor"
+                        },
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Blessing of Kings": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 2,
+                    "spell_school": "Holy",
+                    "description": "Give a character +{0}/+{0} and Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                "Judgement of Humility": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Set an enemy's Attack to {0} this turn. Attack them.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 2,
+                            "speed": -1
+                        },
+                        {
+                            "description": 1,
+                            "speed": -2
+                        },
+                        {
+                            "description": 1,
+                            "speed": -3
+                        },
+                        {
+                            "description": 1,
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Ashbringer": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Deathrattle: Give all Mercs on your battlefield and bench +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                "King's Helm": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Blessing of Kings",
+                    "description": "Blessing of Kings also gives this Merc +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc gains +{0}/+{0}.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        1,
+                                        1
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc gains +{0}/+{0}.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc gains +{0}/+{0}.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        3,
+                                        3
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc gains +{0}/+{0}.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        4,
+                                        4
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Tirion's Shield": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Passive: +{0} Health. This Merc starts the game with Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Crusader of Light",
+                    "description": "Deal 55 damage using Divine Assault.",
+                    "quote": "There is much work to be done. Will you answer my call to arms?"
+                },
+                {
+                    "name": "Blessing of Kings",
+                    "description": "Give 70 Health or Attack to friendly Mercenaries.",
+                    "quote": "I will be judged only for my deeds."
+                },
+                {
+                    "name": "Light's Judge",
+                    "description": "Use Judgment of Humility 12 times.",
+                    "quote": "I always fight valiantly."
+                },
+                {
+                    "name": "By the Holy Light",
+                    "description": "Deal 150 damage.",
+                    "quote": "Honor cannot be given. It must be earned."
+                },
+                {
+                    "name": "Faith in the Light",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Put your faith in the Light, and all is possible."
+                },
+                {
+                    "name": "Courage and Honor",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Courage is my greatest weapon against mighty foes."
+                },
+                {
+                    "name": "A Test of Faith",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "If it were easy, anyone could do it. But we are something more."
+                },
+                {
+                    "name": "Of Blood and Honor",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Integrity… Honor… They can conquer anything."
+                },
+                {
+                    "name": "Light in the Darkness",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "If I believe in my cause, the rest will follow."
+                },
+                {
+                    "name": "Hope Remains",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Do not lose hope, even if victory seems outside our grasp."
+                },
+                {
+                    "name": "Divine Fire",
+                    "description": "Deal 450 damage.",
+                    "quote": "I will be judged only for my deeds."
+                },
+                {
+                    "name": "Infused with Light",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I always fight valiantly."
+                },
+                {
+                    "name": "Darkness will Fail",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Honor cannot be given. It must be earned."
+                },
+                {
+                    "name": "Argent Crusader",
+                    "description": "Give 240 Health or Attack to friendly Mercenaries.",
+                    "quote": "Put your faith in the Light, and all is possible."
+                },
+                {
+                    "name": "Courage Carries Me",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Courage is my greatest weapon against mighty foes."
+                },
+                {
+                    "name": "We Know Their Weakness",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "If it were easy, anyone could do it. But we are something more."
+                },
+                {
+                    "name": "Beacon of Light",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Integrity… Honor… They can conquer anything."
+                },
+                {
+                    "name": "Lord Paladin",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "If I believe in my cause, the rest will follow."
+                }
+            ]
         }
     }
 }
