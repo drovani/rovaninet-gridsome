@@ -10925,6 +10925,300 @@
                     "quote": "THIS ENTIRE PLACE WILL BURN. EVENTUALLY."
                 }
             ]
+        },
+        "Rathorian": {
+            "race": "Demon",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 11,
+            "health": 76,
+            "abilities": {
+                "Blitzing Legion": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Attack an enemy. If you control another Demon, deal {0} damage to a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        }
+                    ]
+                },
+                "Hulking Overfiend": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Hulking Overfiend",
+                        "description": "Battlecry: Attack the lowest Health enemy. Deathblow: Attack the lowest Health enemy.",
+                        "race": "Demon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 4,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 6,
+                                "health": 12
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 8,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 9,
+                                "health": 15
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 16
+                            }
+                        }
+                    ]
+                },
+                "Fel Command": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Fel",
+                    "description": "Gain +{0}{ Attack}. Deal this Merc's Attack damage to an enemy.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Demonic Ashes": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Hulking Overfiend",
+                    "description": "Hulking Overfiend has +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 8
+                                }
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 10
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Soul Gem": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Fel Command",
+                    "description": "Fel Command also gives +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+4"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+6"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+8"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+10"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Demon's Mark": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever a friendly Demon attacks, give it +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Unstoppable Force",
+                    "description": "Deal 55 damage using Blitzing Legion.",
+                    "quote": "The Burning Legion only rewards strength and cruelty… That is how I will succeed."
+                },
+                {
+                    "name": "Legion Blitz",
+                    "description": "Deal 95 damage using Fel Command.",
+                    "quote": "Giving your time and effort to the Legion has its rewards."
+                },
+                {
+                    "name": "Tithe for Sargeras",
+                    "description": "Deal 60 damage using Fel Command.",
+                    "quote": "I obey the Legion without question."
+                },
+                {
+                    "name": "Burning Glory",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will crush the mortals in my path."
+                },
+                {
+                    "name": "For the Legion",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "The Legion will not tolerate any hesitance."
+                },
+                {
+                    "name": "Weak Foes",
+                    "description": "Destroy 40 minions.",
+                    "quote": "None will question me after this."
+                },
+                {
+                    "name": "Felguard's Prowess",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "My foes will only know the taste of defeat."
+                },
+                {
+                    "name": "There is no Failure",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Why yes, I do have a nearly infinite list of tasks ahead of me…"
+                },
+                {
+                    "name": "Atop Dreadmist Peak",
+                    "description": "Deal 225 damage using Fel Command.",
+                    "quote": "I will work tirelessly to please my masters."
+                },
+                {
+                    "name": "Strength and Cruelty",
+                    "description": "Deal 490 damage to Protectors.",
+                    "quote": "The Burning Legion only rewards strength and cruelty… That is how I will succeed."
+                },
+                {
+                    "name": "Double Pay, Double Work",
+                    "description": "Deal 450 damage.",
+                    "quote": "Giving your time and effort to the Legion has its rewards."
+                },
+                {
+                    "name": "Safety in Numbers? Ha!",
+                    "description": "Deal 105 damage to Random targets with Blitzing Legion.",
+                    "quote": "I obey the Legion without question."
+                },
+                {
+                    "name": "We are Legion",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "None will question me after this."
+                },
+                {
+                    "name": "Juggernaut",
+                    "description": "Have a Hulking Overfiend with 20 attack",
+                    "quote": "I will work tirelessly to please my masters."
+                },
+                {
+                    "name": "For Sargeras",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Vast power will one day be mine… this is one step closer…"
+                },
+                {
+                    "name": "Crush the Magic Users",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "My foes will only know the taste of defeat."
+                },
+                {
+                    "name": "Hulking Fiend",
+                    "description": "Have a Hulking Overfiend with 45 health",
+                    "quote": "The Legion will not tolerate any hesitance."
+                },
+                {
+                    "name": "Destroy the Weak",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I will crush the mortals in my path."
+                }
+            ]
         }
     }
 }
