@@ -2953,12 +2953,146 @@
                     "speed": 4,
                     "cooldown": 1,
                     "description": "Summon a random fish for your opponent, with a Deathrattle that benefits you.",
+                    "choose": {
+                        "type": "random",
+                        "options": [
+                            {
+                                "summon": {
+                                    "name": "Helmet Hermit",
+                                    "description": "Deathrattle: Give all enemies +{0}/+{0}.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            },
+                            {
+                                "summon": {
+                                    "name": "Shimmering Sunfish",
+                                    "description": "Deathrattle: Restore {0} Health to all enemy characters.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            },
+                            {
+                                "summon": {
+                                    "name": "Swordfish",
+                                    "description": "Deathrattle: Deal {0} damage to all friendly characters.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            }
+                        ]
+                    },
                     "tiers": [
-                        {},
-                        {},
-                        {},
-                        {},
-                        {}
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 5
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 3
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            2,
+                                            4
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 10
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 6
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            3,
+                                            6
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 15
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 9
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            4,
+                                            8
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 20
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 12
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            5,
+                                            10
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 25
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 15
+                                    }
+                                }
+                            ]
+                        }
                     ]
                 }
             },
@@ -4073,6 +4207,16 @@
                             "description": "At the end of the turn, deal {0} damage to the characters opposite this."
                         }
                     },
+                    "choose": [
+                        {
+                            "name": "Port",
+                            "description": "Summon a Cannon to the left of this Merc."
+                        },
+                        {
+                            "name": "Starboard",
+                            "description": "Summon a Cannon to the right of this Merc."
+                        }
+                    ],
                     "tiers": [
                         {
                             "info": {
@@ -10617,6 +10761,1038 @@
                     "name": "Save my People",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "An even greater trial lies ahead."
+                }
+            ]
+        },
+        "Ragnaros": {
+            "race": "Elemental",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 8,
+            "health": 64,
+            "abilities": {
+                "Magma Blast": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage. Fire Combo: Deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                12
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                18
+                            ]
+                        }
+                    ]
+                },
+                "DIE, INSECTS!": {
+                    "unlock": 5,
+                    "speed": 10,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to a random enemy. Deathblow: Repeat this.",
+                    "tiers": [
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 18
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 22
+                        }
+                    ]
+                },
+                "Meteor": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 2,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to a character and {0} damage to adjacent ones.",
+                    "tiers": [
+                        {
+                            "description": [
+                                9,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                21,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                23,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                25,
+                                10
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Molten Core": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Magma Blast",
+                    "description": "Magma Blast deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ],
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Sulfuras": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: +{0} Health. Your characters cannot be Frozen.",
+                    "tiers": [
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "health": 5
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "health": 10
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "health": 15
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "health": 20
+                            }
+                        }
+                    ]
+                },
+                "Blazing Rune": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Fire Damage.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Magma Blast",
+                    "description": "Deal 80 damage using Magma Blast.",
+                    "quote": "WHAT, MORTAL? YOU WISH TO Aid THE MIGHTY FIRELORD?"
+                },
+                {
+                    "name": "Fire Fuels Me",
+                    "description": "Deal 120 damage using DIE, INSECTS!.",
+                    "quote": "BE QUICK ABOUT IT."
+                },
+                {
+                    "name": "A Mighty Meteor",
+                    "description": "Deal 180 damage using Meteor.",
+                    "quote": "DO NOT THINK OF WASTING MY TIME."
+                },
+                {
+                    "name": "Swat them Aside",
+                    "description": "Deal 150 damage.",
+                    "quote": "I'M WARNING YOU, INSECT."
+                },
+                {
+                    "name": "By Fire be Purged",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "MY FLAMES ARE ETERNAL."
+                },
+                {
+                    "name": "They are Weak",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I’M ON FIRE! FAIL ME AND YOU WILL BE TOO."
+                },
+                {
+                    "name": "Pitiful Insects",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "A SMALL TASK FOR MY SMALL SERVANT."
+                },
+                {
+                    "name": "Cast them Aside",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "YOU ARE LATE, MINION."
+                },
+                {
+                    "name": "Fiery Combo",
+                    "description": "Deal 450 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "ASHES AND CINDERS!"
+                },
+                {
+                    "name": "Burn it all",
+                    "description": "Deal 15 Combo damage.",
+                    "quote": "THIS ENTIRE PLACE WILL BURN. EVENTUALLY."
+                },
+                {
+                    "name": "Incinerate Them",
+                    "description": "Deal 450 damage.",
+                    "quote": "BE QUICK ABOUT IT."
+                },
+                {
+                    "name": "Elemental Lord of Fire",
+                    "description": "Destroy two enemies in one turn using DIE, INSECTS! 15 times.",
+                    "quote": "A SMALL TASK FOR MY SMALL SERVANT."
+                },
+                {
+                    "name": "Clear These Insects",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I'M WARNING YOU, INSECT."
+                },
+                {
+                    "name": "A Wave of Fire",
+                    "description": "Deal 900 Fire Damage with a team that includes this Mercenary.",
+                    "quote": "MY FLAMES ARE ETERNAL."
+                },
+                {
+                    "name": "Sulfuras Burns",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I’M ON FIRE! FAIL ME AND YOU WILL BE TOO."
+                },
+                {
+                    "name": "Reduce them to Ashes",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "DO NOT THINK OF WASTING MY TIME."
+                },
+                {
+                    "name": "Let Fire Consume",
+                    "description": "Deal 600 damage using Magma Blast.",
+                    "quote": "ASHES AND CINDERS!"
+                },
+                {
+                    "name": "The Firelord",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "THIS ENTIRE PLACE WILL BURN. EVENTUALLY."
+                }
+            ]
+        },
+        "Rathorian": {
+            "race": "Demon",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 11,
+            "health": 76,
+            "abilities": {
+                "Blitzing Legion": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Attack an enemy. If you control another Demon, deal {0} damage to a random enemy.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        }
+                    ]
+                },
+                "Hulking Overfiend": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Hulking Overfiend",
+                        "description": "Battlecry: Attack the lowest Health enemy. Deathblow: Attack the lowest Health enemy.",
+                        "race": "Demon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 4,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 6,
+                                "health": 12
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 8,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 9,
+                                "health": 15
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 16
+                            }
+                        }
+                    ]
+                },
+                "Fel Command": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Fel",
+                    "description": "Gain +{0}{ Attack}. Deal this Merc's Attack damage to an enemy.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Demonic Ashes": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Hulking Overfiend",
+                    "description": "Hulking Overfiend has +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 8
+                                }
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 10
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Soul Gem": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Fel Command",
+                    "description": "Fel Command also gives +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+4"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+6"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+8"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    "/+10"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Demon's Mark": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever a friendly Demon attacks, give it +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Unstoppable Force",
+                    "description": "Deal 55 damage using Blitzing Legion.",
+                    "quote": "The Burning Legion only rewards strength and cruelty… That is how I will succeed."
+                },
+                {
+                    "name": "Legion Blitz",
+                    "description": "Deal 95 damage using Fel Command.",
+                    "quote": "Giving your time and effort to the Legion has its rewards."
+                },
+                {
+                    "name": "Tithe for Sargeras",
+                    "description": "Deal 60 damage using Fel Command.",
+                    "quote": "I obey the Legion without question."
+                },
+                {
+                    "name": "Burning Glory",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will crush the mortals in my path."
+                },
+                {
+                    "name": "For the Legion",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "The Legion will not tolerate any hesitance."
+                },
+                {
+                    "name": "Weak Foes",
+                    "description": "Destroy 40 minions.",
+                    "quote": "None will question me after this."
+                },
+                {
+                    "name": "Felguard's Prowess",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "My foes will only know the taste of defeat."
+                },
+                {
+                    "name": "There is no Failure",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Why yes, I do have a nearly infinite list of tasks ahead of me…"
+                },
+                {
+                    "name": "Atop Dreadmist Peak",
+                    "description": "Deal 225 damage using Fel Command.",
+                    "quote": "I will work tirelessly to please my masters."
+                },
+                {
+                    "name": "Strength and Cruelty",
+                    "description": "Deal 490 damage to Protectors.",
+                    "quote": "The Burning Legion only rewards strength and cruelty… That is how I will succeed."
+                },
+                {
+                    "name": "Double Pay, Double Work",
+                    "description": "Deal 450 damage.",
+                    "quote": "Giving your time and effort to the Legion has its rewards."
+                },
+                {
+                    "name": "Safety in Numbers? Ha!",
+                    "description": "Deal 105 damage to Random targets with Blitzing Legion.",
+                    "quote": "I obey the Legion without question."
+                },
+                {
+                    "name": "We are Legion",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "None will question me after this."
+                },
+                {
+                    "name": "Juggernaut",
+                    "description": "Have a Hulking Overfiend with 20 attack",
+                    "quote": "I will work tirelessly to please my masters."
+                },
+                {
+                    "name": "For Sargeras",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Vast power will one day be mine… this is one step closer…"
+                },
+                {
+                    "name": "Crush the Magic Users",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "My foes will only know the taste of defeat."
+                },
+                {
+                    "name": "Hulking Fiend",
+                    "description": "Have a Hulking Overfiend with 45 health",
+                    "quote": "The Legion will not tolerate any hesitance."
+                },
+                {
+                    "name": "Destroy the Weak",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I will crush the mortals in my path."
+                }
+            ]
+        },
+        "Rexxar": {
+            "race": "Half-Orc",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 67,
+            "abilities": {
+                "Kill Command": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Deal {0} damage. If you control a Beast, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Animal Companion": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Coose a Beast Companion. Summon it.",
+                    "choose": [
+                        {
+                            "summon": {
+                                "name": "Huffer",
+                                "race": "Beast",
+                                "description": "Rush"
+                            }
+                        },
+                        {
+                            "summon": {
+                                "name": "Leokk",
+                                "race": "Beast",
+                                "description": "Your other characters have +{0} Attack."
+                            }
+                        },
+                        {
+                            "summon": {
+                                "name": "Misha",
+                                "race": "Beast",
+                                "description": "Taunt"
+                            }
+                        }
+                    ],
+                    "tiers": [
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 5,
+                                        "health": 3
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 3,
+                                        "health": 5,
+                                        "description": 1
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 5,
+                                        "health": 5
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 6
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 6,
+                                        "health": 10,
+                                        "description": 2
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 10
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 15,
+                                        "health": 10
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 15,
+                                        "description": 3
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 15,
+                                        "health": 15
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 16,
+                                        "health": 11
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 11,
+                                        "health": 16,
+                                        "description": 4
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 16,
+                                        "health": 16
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 17,
+                                        "health": 12
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 12,
+                                        "health": 17,
+                                        "description": 5
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 17,
+                                        "health": 17
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Explosive Shot": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to an enemy and {0} to adjacent ones.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                8
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Huntsman's Rifle": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Explosive Shot",
+                    "description": "Explosive Shot deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Swiftfeather Bow": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Kill Command",
+                    "description": "Kill Command is ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "speed": -3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "speed": -4
+                            }
+                        }
+                    ]
+                },
+                "Mama Bear's Claws": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever you summon a Beast, give it +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Kill Command",
+                    "description": "Deal 70 damage using Kill Command.",
+                    "quote": "Always trust your instincts."
+                },
+                {
+                    "name": "Misha, Huffer, Leokk",
+                    "description": "Use Animal Companion 12 times.",
+                    "quote": "The animals are the only family I have. Help me protect them."
+                },
+                {
+                    "name": "Explosive Shot",
+                    "description": "Deal 110 damage using Explosive Shot.",
+                    "quote": "Nothing like a thrill of the hunt."
+                },
+                {
+                    "name": "The Hunt Begins",
+                    "description": "Deal 150 damage.",
+                    "quote": "The hunt begins now."
+                },
+                {
+                    "name": "A Walkabout",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Lok'tar ogar!"
+                },
+                {
+                    "name": "Remembering Haratha",
+                    "description": "Destroy 40 minions.",
+                    "quote": "By fang and claw."
+                },
+                {
+                    "name": "They Must be Put Down",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Nothing like a thrill of the hunt."
+                },
+                {
+                    "name": "Is the Horde Righteous",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Run with the pack."
+                },
+                {
+                    "name": "Go Misha!",
+                    "description": "Deal 210 damage using Kill Command.",
+                    "quote": "Hear the call of the wild."
+                },
+                {
+                    "name": "My Only Family",
+                    "description": "Deal 375 damage using Explosive Shot.",
+                    "quote": "The animals are the only family I have. Help me protect them."
+                },
+                {
+                    "name": "The Beasts Will Aid Us",
+                    "description": "Deal 450 damage.",
+                    "quote": "Always aim for the face."
+                },
+                {
+                    "name": "A Wide Blast Radius",
+                    "description": "Deal 90 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Always trust your instincts."
+                },
+                {
+                    "name": "The Wilds are Home",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "By fang and claw."
+                },
+                {
+                    "name": "Beastmaster",
+                    "description": "Deal 180 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Run with the pack."
+                },
+                {
+                    "name": "A Noble Wanderer",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "The hunt begins now."
+                },
+                {
+                    "name": "Trust Only Beast",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Always aim for the face."
+                },
+                {
+                    "name": "My One True Friend",
+                    "description": "Summon a Beast with 13 or more Health 30 times.",
+                    "quote": "Unleash the beast within."
+                },
+                {
+                    "name": "Champion of the Horde",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Lok'tar ogar!"
                 }
             ]
         }
