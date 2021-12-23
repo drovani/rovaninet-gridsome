@@ -12464,6 +12464,435 @@
                     "quote": "For all my prowess, they still require more from me."
                 }
             ]
+        },
+        "Scabbs Cutterbutter": {
+            "race": "Gnome",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 72,
+            "abilities": {
+                "Tactical Strike": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Attack an enemy. Combo: Deal {0} damage to it as well.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Wicked Stab": {
+                    "unlock": 5,
+                    "cooldown": 1,
+                    "description": "Choose to deal {0}, {0}, or {0} damage. (Casts at different Speeds.)",
+                    "choose": [
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 3
+                        },
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 6
+                        },
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 9
+                        }
+                    ],
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                7,
+                                10
+                            ],
+                            "choose": [
+                                {
+                                    "description": 4
+                                },
+                                {
+                                    "description": 7
+                                },
+                                {
+                                    "description": 10
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                10,
+                                14
+                            ],
+                            "choose": [
+                                {
+                                    "description": 6
+                                },
+                                {
+                                    "description": 10
+                                },
+                                {
+                                    "description": 14
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                13,
+                                18
+                            ],
+                            "choose": [
+                                {
+                                    "description": 8
+                                },
+                                {
+                                    "description": 13
+                                },
+                                {
+                                    "description": 18
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                14,
+                                19
+                            ],
+                            "choose": [
+                                {
+                                    "description": 9
+                                },
+                                {
+                                    "description": 14
+                                },
+                                {
+                                    "description": 19
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                15,
+                                20
+                            ],
+                            "choose": [
+                                {
+                                    "description": 10
+                                },
+                                {
+                                    "description": 15
+                                },
+                                {
+                                    "description": 20
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Shadow Blade": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Attack an enemy then gain Stealth.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "SI:7 Contract": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Tactical Strike",
+                    "description": "Tactical Strike's Combo effect deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Paring Knife": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Wicked Stab",
+                    "description": "Wicked Stab deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2,
+                                    2
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 2
+                                    },
+                                    {
+                                        "description": 2
+                                    },
+                                    {
+                                        "description": 2
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3,
+                                    3
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 3
+                                    },
+                                    {
+                                        "description": 3
+                                    },
+                                    {
+                                        "description": 3
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4,
+                                    4
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 4
+                                    },
+                                    {
+                                        "description": 4
+                                    },
+                                    {
+                                        "description": 4
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5,
+                                    5
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 5
+                                    },
+                                    {
+                                        "description": 5
+                                    },
+                                    {
+                                        "description": 5
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Honing Rod": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Shadow Blade",
+                    "description": "Shadow Blade gives +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 1
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 4
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Secret Agent",
+                    "description": "Deal Combo Damage 15 times.",
+                    "quote": "I'll let you in on something—I'm here on a critical mission for the Alliance."
+                },
+                {
+                    "name": "Tricky Opponents",
+                    "description": "Deal 70 damage using Wicked Stab.",
+                    "quote": "Our targets are wily and treacherous. Wait, no, these ones are dumb as rocks."
+                },
+                {
+                    "name": "Right Tool, Right Job",
+                    "description": "Deal 120 damage using Honing Blades.",
+                    "quote": "Here's my next agenda."
+                },
+                {
+                    "name": "Unconventional Tactics",
+                    "description": "Deal 150 damage.",
+                    "quote": "Trust your instincts when you're fighting these things."
+                },
+                {
+                    "name": "Stealth or Stabbing",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "This calls for some unconventional tactics!"
+                },
+                {
+                    "name": "Plenty of Targets",
+                    "description": "Destroy 40 minions.",
+                    "quote": "We'd better pay close attention on this one."
+                },
+                {
+                    "name": "Bigs Ones Take Longer",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Don't look so nervous. I've trained a lot for this!"
+                },
+                {
+                    "name": "Fighters Know Best",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "This might be an impossible task—if not for me!"
+                },
+                {
+                    "name": "Two plus Two is Five",
+                    "description": "Deal 180 Combo damage.",
+                    "quote": "It's time to slice and dice!"
+                },
+                {
+                    "name": "Choices for Chopping",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Give 'em the ol' choppy choppy."
+                },
+                {
+                    "name": "Tricky Targets",
+                    "description": "Deal 450 damage.",
+                    "quote": "Our targets are wily and treacherous. Wait, no, these ones are dumb as rocks."
+                },
+                {
+                    "name": "Tactical Strikes",
+                    "description": "Deal 180 damage using Tactical Strike.",
+                    "quote": "Here's my next agenda."
+                },
+                {
+                    "name": "SI:7 Warned Me",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Trust your instincts when you're fighting these things."
+                },
+                {
+                    "name": "Where's my Whetstone",
+                    "description": "Gain 90 Attack using Honing Blades.",
+                    "quote": "This calls for some unconventional tactics!"
+                },
+                {
+                    "name": "Coin for the Cause",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "We'd better pay close attention on this one."
+                },
+                {
+                    "name": "Easy Targets",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Don't look so nervous. I've trained a lot for this!"
+                },
+                {
+                    "name": "Right in the Back",
+                    "description": "Destroy 15 enemies using Wicked Stab.",
+                    "quote": "This might be an impossible task—if not for me!"
+                },
+                {
+                    "name": "A High Body Count",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "It's time to slice and dice!"
+                }
+            ]
         }
     }
 }

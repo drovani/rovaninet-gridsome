@@ -611,17 +611,33 @@
         "Rokara": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
-            "itemEquipped": null,
+            "tasksCompleted": 10,
+            "itemEquipped": "Frostwolf Talisman",
             "abilities": {
                 "Tribal Warfare": 5,
                 "Offensive Rally": 5,
                 "Orc Onslaught": 5
             },
             "equipment": {
-                "Ancestral Armor": 1,
-                "Frostwolf Talisman": 1,
-                "Helm of Inspiration": 1
+                "Ancestral Armor": 4,
+                "Frostwolf Talisman": 4,
+                "Helm of Inspiration": 4
+            }
+        },
+        "Scabbs Cutterbutter": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Honing Rod",
+            "abilities": {
+                "Tactical Strike": 5,
+                "Wicked Stab": 1,
+                "Shadow Blade": 1
+            },
+            "equipment": {
+                "SI:7 Contract": 4,
+                "Paring Knife": 4,
+                "Honing Rod": 1
             }
         }
     }
