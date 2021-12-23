@@ -2953,12 +2953,146 @@
                     "speed": 4,
                     "cooldown": 1,
                     "description": "Summon a random fish for your opponent, with a Deathrattle that benefits you.",
+                    "choose": {
+                        "type": "random",
+                        "options": [
+                            {
+                                "summon": {
+                                    "name": "Helmet Hermit",
+                                    "description": "Deathrattle: Give all enemies +{0}/+{0}.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            },
+                            {
+                                "summon": {
+                                    "name": "Shimmering Sunfish",
+                                    "description": "Deathrattle: Restore {0} Health to all enemy characters.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            },
+                            {
+                                "summon": {
+                                    "name": "Swordfish",
+                                    "description": "Deathrattle: Deal {0} damage to all friendly characters.",
+                                    "race": "Beast",
+                                    "health": 15
+                                }
+                            }
+                        ]
+                    },
                     "tiers": [
-                        {},
-                        {},
-                        {},
-                        {},
-                        {}
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 5
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 3
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            2,
+                                            4
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 10
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 6
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            3,
+                                            6
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 15
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 9
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            4,
+                                            8
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 20
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 12
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "description": [
+                                            5,
+                                            10
+                                        ]
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 25
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "description": 15
+                                    }
+                                }
+                            ]
+                        }
                     ]
                 }
             },
@@ -4073,6 +4207,16 @@
                             "description": "At the end of the turn, deal {0} damage to the characters opposite this."
                         }
                     },
+                    "choose": [
+                        {
+                            "name": "Port",
+                            "description": "Summon a Cannon to the left of this Merc."
+                        },
+                        {
+                            "name": "Starboard",
+                            "description": "Summon a Cannon to the right of this Merc."
+                        }
+                    ],
                     "tiers": [
                         {
                             "info": {
