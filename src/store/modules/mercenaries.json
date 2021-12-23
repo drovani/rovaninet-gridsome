@@ -10330,6 +10330,295 @@
                     "quote": "<We need more reinforcements to take this beach!>"
                 }
             ]
+        },
+        "Prophet Velen": {
+            "race": "Draenei",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 6,
+            "health": 74,
+            "abilities": {
+                "Holy Blast": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage. Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                6
+                            ]
+                        }
+                    ]
+                },
+                "Splitting Light": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to an enemy. Holy Combo: Also damages its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                },
+                "Velen's Blessing": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 2,
+                    "spell_school": "Holy",
+                    "description": "Gain +{0} Holy Damage. Your next Holy ability casts twice.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1,
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Blessed Shard": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Splitting Light",
+                    "description": "Splitting Light deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Tome of Inspiration": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Holy Blast",
+                    "description": "Holy Blast restores {0} more Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Potion of Light": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Holy Blast",
+                    "description": "Restore 80 Health using Holy Blast.",
+                    "quote": "The path ahead lies full of challenge, but the Light will shine on those who walk it."
+                },
+                {
+                    "name": "Life is the Light",
+                    "description": "Deal 70 damage using Splitting Light.",
+                    "quote": "Alas, I have no lack of enemies."
+                },
+                {
+                    "name": "My Blessings to All",
+                    "description": "Deal 225 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I shall go forth in the name of the Light."
+                },
+                {
+                    "name": "They are Unwise",
+                    "description": "Deal 150 damage.",
+                    "quote": "I must address this."
+                },
+                {
+                    "name": "Light Protect Us",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Light, lend me aid in these battles."
+                },
+                {
+                    "name": "Follow the Light",
+                    "description": "Destroy 40 minions.",
+                    "quote": "May the Light protect me."
+                },
+                {
+                    "name": "You Must have Faith",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "An even greater trial lies ahead."
+                },
+                {
+                    "name": "I Go Into the Light",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "This will help immeasurably."
+                },
+                {
+                    "name": "Savior of my People",
+                    "description": "Heal 225 damage.",
+                    "quote": "I will take care on this journey."
+                },
+                {
+                    "name": "Purge the Foul",
+                    "description": "Defeat 40 Demons.",
+                    "quote": "This shall be quite an undertaking, but I am well-prepared."
+                },
+                {
+                    "name": "Lay them to Rest",
+                    "description": "Deal 450 damage.",
+                    "quote": "I must address this."
+                },
+                {
+                    "name": "The Light Purges All",
+                    "description": "Deal 85 damage in one turn.",
+                    "quote": "I shall go forth in the name of the Light."
+                },
+                {
+                    "name": "Turn from the Dark Path",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Alas, I have no lack of enemies."
+                },
+                {
+                    "name": "The Pure Light",
+                    "description": "Heal 450 damage.",
+                    "quote": "Light, lend me aid in these battles."
+                },
+                {
+                    "name": "One Problem at a Time",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This will help immeasurably."
+                },
+                {
+                    "name": "We Must Stop Them",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "May the Light protect me."
+                },
+                {
+                    "name": "Perfect Light",
+                    "description": "Deal 50 or more damage in one turn using Splitting Light 20 times.",
+                    "quote": "I will take care on this journey."
+                },
+                {
+                    "name": "Save my People",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "An even greater trial lies ahead."
+                }
+            ]
         }
     }
 }
