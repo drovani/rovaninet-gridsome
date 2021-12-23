@@ -11795,6 +11795,1993 @@
                     "quote": "Lok'tar ogar!"
                 }
             ]
+        },
+        "Rokara": {
+            "race": "Orc",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 71,
+            "abilities": {
+                "Tribal Warfare": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Attack an enemy. If you control another Orc, gain +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "speed": -2
+                        },
+                        {
+                            "description": 4,
+                            "speed": -2
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Offensive Rally": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Whenever a friendly character Attacks this turn, give it +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Orc Onslaught": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage. Repeat for each other Orc you control.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Ancestral Armor": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "health": 5
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "health": 10
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "health": 15
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "health": 20
+                            }
+                        }
+                    ]
+                },
+                "Frostwolf Talisman": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Tribal Warfare",
+                    "description": "Tribal Warfare gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Helm of Inspiration": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Offensive Rally",
+                    "description": "Offensive Rally gives an additional +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Servant of the Horde",
+                    "description": "Deal 40 damage using Tribal Warfare.",
+                    "quote": "Me? I am always ready to serve the Horde."
+                },
+                {
+                    "name": "Helping Good Friends",
+                    "description": "Gain 25 Attack using Offensive Rally.",
+                    "quote": "Yeah, anything can happen in these parts."
+                },
+                {
+                    "name": "Surprise!",
+                    "description": "Deal 170 damage using Orc Onslaught.",
+                    "quote": "I should make sure these ones settle down."
+                },
+                {
+                    "name": "Busy, busy, busy",
+                    "description": "Deal 150 damage.",
+                    "quote": "At least I can always count on being busy…"
+                },
+                {
+                    "name": "What an Adventure",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I had some adventures before, but not like this."
+                },
+                {
+                    "name": "Strength and Honor",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I need to show them I've got strength and honor to spare."
+                },
+                {
+                    "name": "Whoa! They're Big!",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Yes! This one might get exciting…"
+                },
+                {
+                    "name": "Stories for the Fire",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Listen! If this goes well, I'll have some new stories to tell back home."
+                },
+                {
+                    "name": "A New Quest",
+                    "description": "Gain 45 Attack using Tribal Warfare.",
+                    "quote": "Whoo! Good thing I never get tired of questing!"
+                },
+                {
+                    "name": "Learn from the Tribes",
+                    "description": "Deal 195 damage using Tribal Warfare.",
+                    "quote": "This one might take a while…"
+                },
+                {
+                    "name": "Anything can Happen",
+                    "description": "Deal 450 damage.",
+                    "quote": "Yeah, anything can happen in these parts."
+                },
+                {
+                    "name": "Risky Strategy",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "At least I can always count on being busy…"
+                },
+                {
+                    "name": "More Big Ones!",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I should make sure these ones settle down."
+                },
+                {
+                    "name": "Rally for the Horde",
+                    "description": "Deal 600 damage using Orc Onslaught.",
+                    "quote": "I need to show them I've got strength and honor to spare."
+                },
+                {
+                    "name": "The Champion's Path",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I had some adventures before, but not like this."
+                },
+                {
+                    "name": "Magic vs. Axe",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Yes! This one might get exciting…"
+                },
+                {
+                    "name": "Tribal Fortitude",
+                    "description": "Gain 320 Health using Offensive Rally.",
+                    "quote": "Whoo! Good thing I never get tired of questing!"
+                },
+                {
+                    "name": "Am I the Champion?",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "This one might take a while…"
+                }
+            ]
+        },
+        "Saurfang": {
+            "race": "Orc",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 70,
+            "abilities": {
+                "Mobilizing Strike": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Give all your damaged Orcs +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Whirlwind": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to enemies and {0} damage to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                "Bladehand Berserker": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Bladehand Berserker",
+                        "race": "Orc",
+                        "description": "Whenever a character takes damage, gain +{0} Attack."
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": 1,
+                                "health": 2,
+                                "attack": 5
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 2,
+                                "health": 3,
+                                "attack": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 4,
+                                "attack": 13
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 5,
+                                "attack": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": 3,
+                                "health": 6,
+                                "attack": 15
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Serrated Shield": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                6
+                            ],
+                            "modifier": {
+                                "attack": 2,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                8
+                            ],
+                            "modifier": {
+                                "attack": 3,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ],
+                            "modifier": {
+                                "attack": 4,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                12
+                            ],
+                            "modifier": {
+                                "attack": 5,
+                                "health": 12
+                            }
+                        }
+                    ]
+                },
+                "Berserker's Blade": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Whirlwind",
+                    "description": "Whirlwind deals {0} more damage to enemies.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Saronite Stompers": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Mobilizing Strike",
+                    "description": "Mobilizing Strike gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Battle is Close",
+                    "description": "Deal 70 damage using Mobilizing Strike.",
+                    "quote": "Enemies surround me on all sides… But not for long."
+                },
+                {
+                    "name": "Winds of War",
+                    "description": "Deal 70 damage using Whirlwind.",
+                    "quote": "These ones have caused enough trouble for now. I will put an end to it."
+                },
+                {
+                    "name": "Watch My Power Grow",
+                    "description": "Summon a Bladehand Berserker 12 times.",
+                    "quote": "I think this is well within my abilities…"
+                },
+                {
+                    "name": "For The Horde",
+                    "description": "Deal 150 damage.",
+                    "quote": "My foes still think they have the upper hand. Hah!"
+                },
+                {
+                    "name": "I Grow Stronger",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "There is only one solution to this problem."
+                },
+                {
+                    "name": "No Mercy",
+                    "description": "Destroy 40 minions.",
+                    "quote": "This will require patience as well as skill."
+                },
+                {
+                    "name": "I Do Not Fear Death",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "It is time to show them what I can handle."
+                },
+                {
+                    "name": "Reinforcements Needed",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "The spirit of a warrior rages within me!"
+                },
+                {
+                    "name": "The Horde Grows Strong",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "Sometimes the hour calls for greatness. This is that hour."
+                },
+                {
+                    "name": "Strike Strong",
+                    "description": "Give 180 Health or Attack to friendly Mercenaries.",
+                    "quote": "For all my prowess, they still require more from me."
+                },
+                {
+                    "name": "Savage Blows",
+                    "description": "Deal 450 damage.",
+                    "quote": "There is only one solution to this problem."
+                },
+                {
+                    "name": "A Mighty Blow",
+                    "description": "Deal 30 or more damage in one turn using Mobilizing Strike 15 times.",
+                    "quote": "My foes still think they have the upper hand. Hah!"
+                },
+                {
+                    "name": "A Challenge Approaches",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "These ones have caused enough trouble for now. I will put an end to it."
+                },
+                {
+                    "name": "Strike Them All",
+                    "description": "Destroy 40 enemies using Whirlwind.",
+                    "quote": "I think this is well within my abilities…"
+                },
+                {
+                    "name": "Strike Them Down",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This will require patience as well as skill."
+                },
+                {
+                    "name": "Nothing Personal",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "It is time to show them what I can handle."
+                },
+                {
+                    "name": "Effective Tactics",
+                    "description": "Deal 900 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "The spirit of a warrior rages within me!"
+                },
+                {
+                    "name": "I Will Be Your Death",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "For all my prowess, they still require more from me."
+                }
+            ]
+        },
+        "Scabbs Cutterbutter": {
+            "race": "Gnome",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 72,
+            "abilities": {
+                "Tactical Strike": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Attack an enemy. Combo: Deal {0} damage to it as well.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Wicked Stab": {
+                    "unlock": 5,
+                    "cooldown": 1,
+                    "description": "Choose to deal {0}, {0}, or {0} damage. (Casts at different Speeds.)",
+                    "choose": [
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 3
+                        },
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 6
+                        },
+                        {
+                            "description": "Deal {0} damage.",
+                            "speed": 9
+                        }
+                    ],
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                7,
+                                10
+                            ],
+                            "choose": [
+                                {
+                                    "description": 4
+                                },
+                                {
+                                    "description": 7
+                                },
+                                {
+                                    "description": 10
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                10,
+                                14
+                            ],
+                            "choose": [
+                                {
+                                    "description": 6
+                                },
+                                {
+                                    "description": 10
+                                },
+                                {
+                                    "description": 14
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                13,
+                                18
+                            ],
+                            "choose": [
+                                {
+                                    "description": 8
+                                },
+                                {
+                                    "description": 13
+                                },
+                                {
+                                    "description": 18
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                14,
+                                19
+                            ],
+                            "choose": [
+                                {
+                                    "description": 9
+                                },
+                                {
+                                    "description": 14
+                                },
+                                {
+                                    "description": 19
+                                }
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                15,
+                                20
+                            ],
+                            "choose": [
+                                {
+                                    "description": 10
+                                },
+                                {
+                                    "description": 15
+                                },
+                                {
+                                    "description": 20
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Shadow Blade": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Attack an enemy then gain Stealth.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "SI:7 Contract": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Tactical Strike",
+                    "description": "Tactical Strike's Combo effect deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Paring Knife": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Wicked Stab",
+                    "description": "Wicked Stab deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2,
+                                    2
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 2
+                                    },
+                                    {
+                                        "description": 2
+                                    },
+                                    {
+                                        "description": 2
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3,
+                                    3
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 3
+                                    },
+                                    {
+                                        "description": 3
+                                    },
+                                    {
+                                        "description": 3
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4,
+                                    4
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 4
+                                    },
+                                    {
+                                        "description": 4
+                                    },
+                                    {
+                                        "description": 4
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5,
+                                    5
+                                ],
+                                "choose": [
+                                    {
+                                        "description": 5
+                                    },
+                                    {
+                                        "description": 5
+                                    },
+                                    {
+                                        "description": 5
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Honing Rod": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Shadow Blade",
+                    "description": "Shadow Blade gives +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 1
+                                }
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +{0} Attack.",
+                                    "value": 4
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Secret Agent",
+                    "description": "Deal Combo Damage 15 times.",
+                    "quote": "I'll let you in on something—I'm here on a critical mission for the Alliance."
+                },
+                {
+                    "name": "Tricky Opponents",
+                    "description": "Deal 70 damage using Wicked Stab.",
+                    "quote": "Our targets are wily and treacherous. Wait, no, these ones are dumb as rocks."
+                },
+                {
+                    "name": "Right Tool, Right Job",
+                    "description": "Deal 120 damage using Honing Blades.",
+                    "quote": "Here's my next agenda."
+                },
+                {
+                    "name": "Unconventional Tactics",
+                    "description": "Deal 150 damage.",
+                    "quote": "Trust your instincts when you're fighting these things."
+                },
+                {
+                    "name": "Stealth or Stabbing",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "This calls for some unconventional tactics!"
+                },
+                {
+                    "name": "Plenty of Targets",
+                    "description": "Destroy 40 minions.",
+                    "quote": "We'd better pay close attention on this one."
+                },
+                {
+                    "name": "Bigs Ones Take Longer",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Don't look so nervous. I've trained a lot for this!"
+                },
+                {
+                    "name": "Fighters Know Best",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "This might be an impossible task—if not for me!"
+                },
+                {
+                    "name": "Two plus Two is Five",
+                    "description": "Deal 180 Combo damage.",
+                    "quote": "It's time to slice and dice!"
+                },
+                {
+                    "name": "Choices for Chopping",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Give 'em the ol' choppy choppy."
+                },
+                {
+                    "name": "Tricky Targets",
+                    "description": "Deal 450 damage.",
+                    "quote": "Our targets are wily and treacherous. Wait, no, these ones are dumb as rocks."
+                },
+                {
+                    "name": "Tactical Strikes",
+                    "description": "Deal 180 damage using Tactical Strike.",
+                    "quote": "Here's my next agenda."
+                },
+                {
+                    "name": "SI:7 Warned Me",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Trust your instincts when you're fighting these things."
+                },
+                {
+                    "name": "Where's my Whetstone",
+                    "description": "Gain 90 Attack using Honing Blades.",
+                    "quote": "This calls for some unconventional tactics!"
+                },
+                {
+                    "name": "Coin for the Cause",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "We'd better pay close attention on this one."
+                },
+                {
+                    "name": "Easy Targets",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Don't look so nervous. I've trained a lot for this!"
+                },
+                {
+                    "name": "Right in the Back",
+                    "description": "Destroy 15 enemies using Wicked Stab.",
+                    "quote": "This might be an impossible task—if not for me!"
+                },
+                {
+                    "name": "A High Body Count",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "It's time to slice and dice!"
+                }
+            ]
+        },
+        "Sneed": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 6,
+            "health": 72,
+            "abilities": {
+                "Bzzz!!!": {
+                    "unlock": 1,
+                    "speed": 10,
+                    "description": "Deal damage equal to your Attack. If Activate Saw is active also damage the target's neighbors.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Activate Saw": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack for {0} turns. Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                2
+                            ]
+                        }
+                    ]
+                },
+                "Disarm": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Attack an enemy. Give it -{0} Attack permanently.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Titanium Blades": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Activate Saw",
+                    "description": "Activate Saw gives +{0} Attack and lasts {0} more turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    1
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Skull Dust": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Bzzz!!!",
+                    "description": "Bzzz!!! gains Bleed ({0}).",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Extra Blades": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Sneed starts with Activate Saw {0} active for {0} turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Fire the Engines!",
+                    "description": "Deal 55 damage using Bzzz!!!.",
+                    "quote": "No time to explain. Jump in my shredder and let’s gooooo!"
+                },
+                {
+                    "name": "Blades a'Spinning",
+                    "description": "Gain 30 Attack using Activate Saw.",
+                    "quote": "You ever get tired of shreddin's stuff? Me neither!"
+                },
+                {
+                    "name": "Workplace Hazards",
+                    "description": "Deal 90 damage using Disarm.",
+                    "quote": "Let's give 'em a nice welcome. And by welcome, I mean shred 'em!"
+                },
+                {
+                    "name": "Spin and Slash",
+                    "description": "Deal 240 damage.",
+                    "quote": "There's work to be done. Put your back into it!"
+                },
+                {
+                    "name": "All in a Day's Work",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Do I have to do everything myself? No! Because now I have you."
+                },
+                {
+                    "name": "Rats in the Workshop",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Oh, would you look at that. It's shreddin' time!"
+                },
+                {
+                    "name": "Dominion of Iron",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "If you want something done right, you gotta find yourself a reliable mercenary."
+                },
+                {
+                    "name": "Got a Jump?",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Leave this to an expert. That's you, by the way."
+                },
+                {
+                    "name": "Fingers and Toes",
+                    "description": "Reduce an Enemy's Attack to 0 10 times.",
+                    "quote": "Uh oh! I smell trouble."
+                },
+                {
+                    "name": "Cut, Cut, Cut!",
+                    "description": "Deal 240 damage using Bzzz!!!.",
+                    "quote": "Let's roll! But let's roll extra loud so they know who's boss."
+                },
+                {
+                    "name": "All Out of Lumber",
+                    "description": "Deal 180 damage.",
+                    "quote": "You ever get tired of shreddin's stuff? Me neither!"
+                },
+                {
+                    "name": "Clear The Rabble",
+                    "description": "Deal 180 damage to adjacent enemies using Bzzz!!!.",
+                    "quote": "Let's give 'em a nice welcome. And by welcome, I mean shred 'em!"
+                },
+                {
+                    "name": "Measure Once",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "There's work to be done. Put your back into it!"
+                },
+                {
+                    "name": "Cut Twice",
+                    "description": "Destroy two enemies in one turn using Bzzz!!! 6 times.",
+                    "quote": "Do I have to do everything myself? No! Because now I have you."
+                },
+                {
+                    "name": "Gotta Work!",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Oh, would you look at that. It's shreddin' time!"
+                },
+                {
+                    "name": "Beneath the Blade",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "If you want something done right, you gotta find yourself a reliable mercenary."
+                },
+                {
+                    "name": "Raging Engine",
+                    "description": "Gain 80 Attack using Activate Saw.",
+                    "quote": "Leave this to an expert. That's you, by the way."
+                },
+                {
+                    "name": "Paramount",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Uh oh! I smell trouble."
+                }
+            ]
+        },
+        "Sylvanas Windrunner": {
+            "race": "Undead",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 66,
+            "abilities": {
+                "Banshee Bolt": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "spell_school": "Shadow",
+                    "description": "Deal damage equal to this Merc's Attack.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Reclaimed Souls": {
+                    "unlock": 5,
+                    "speed": 10,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Gain +{0} Attack for each friendly character that died this game.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "For the Queen": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 2,
+                    "spell_school": "Shadow",
+                    "description": "Choose an enemy. A{n a}djacent enem{y} Attack{s} it.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -2
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -3
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Mourneblade": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "description": "Passive: +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "attack": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "attack": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "attack": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "attack": 5
+                            }
+                        }
+                    ]
+                },
+                "Soul Jar": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Reclaimed Souls",
+                    "description": "Reclaimed Souls gives +{0} more Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Death Volley": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Deal damage equal to this Merc's Attack to {all} enem{ies}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "1",
+                                "y"
+                            ]
+                        },
+                        {
+                            "description": [
+                                "2",
+                                "ies"
+                            ]
+                        },
+                        {
+                            "description": [
+                                "all",
+                                "ies"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Banshee Bolt",
+                    "description": "Deal 55 damage using Banshee Bolt.",
+                    "quote": "My work here is critical to the future of the Horde. Do not fail me, mercenary."
+                },
+                {
+                    "name": "Claim the Souls",
+                    "description": "Gain 10 Attack using Reclaimed Souls.",
+                    "quote": "What joy is there in this curse?"
+                },
+                {
+                    "name": "Mark them Traitors",
+                    "description": "Deal 70 damage using For the Queen.",
+                    "quote": "Victory for the Forsaken."
+                },
+                {
+                    "name": "My Arrows Strike True",
+                    "description": "Deal 150 damage.",
+                    "quote": "My will is my own. Yours may vary."
+                },
+                {
+                    "name": "No Joy in this Curse",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "In the end, death claims us all."
+                },
+                {
+                    "name": "Death Beckons",
+                    "description": "Destroy 40 minions.",
+                    "quote": "If only you could see yourself as I see you…"
+                },
+                {
+                    "name": "Victory Draws Near",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Show no mercy."
+                },
+                {
+                    "name": "Serve me in Death",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "This world… is a prison."
+                },
+                {
+                    "name": "How Cunning",
+                    "description": "Destroy 30 enemies using For the Queen.",
+                    "quote": "I've not come this far to falter now."
+                },
+                {
+                    "name": "Banshee Queen",
+                    "description": "Deal 180 damage using Banshee Bolt.",
+                    "quote": "The Dark Lady watches you."
+                },
+                {
+                    "name": "Feel My Suffering",
+                    "description": "Deal 450 damage.",
+                    "quote": "What joy is there in this curse?"
+                },
+                {
+                    "name": "Even in Death",
+                    "description": "Destroy an enemy using Death Volley 15 times.",
+                    "quote": "Victory for the Forsaken."
+                },
+                {
+                    "name": "Queen of the Damned",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My will is my own. Yours may vary."
+                },
+                {
+                    "name": "Fall Before Me",
+                    "description": "Deal 490 damage using Banshee Bolt.",
+                    "quote": "In the end, death claims us all."
+                },
+                {
+                    "name": "My Hunt has No End",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "If only you could see yourself as I see you…"
+                },
+                {
+                    "name": "The Dark Lady Watches",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Show no mercy."
+                },
+                {
+                    "name": "Wrath of the Banshee",
+                    "description": "Gain 90 Attack using Reclaimed Souls.",
+                    "quote": "This world… is a prison."
+                },
+                {
+                    "name": "We are the Forsaken",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I've not come this far to falter now."
+                }
+            ]
+        },
+        "Sky Admiral Rogers": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 10,
+            "health": 71,
+            "abilities": {
+                "Sky Guard": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Gain +{0} Attack and Attack an enemy. If it's a Pirate, gain Immune while Attacking this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Master Tactician": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy, or restore {0} Health to an ally. It goes {next}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                11
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                12
+                            ]
+                        }
+                    ]
+                },
+                "Firing Position": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to all enemies that have already acted.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 16
+                        },
+                        {
+                            "description": 18
+                        },
+                        {
+                            "description": 20
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Swash Buckling Sash": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Sky Guard",
+                    "description": "Sky Guard gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Scout's Spyglass": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: After this Merc Attacks, deal {0} damage to all enemies. (Deals Critical Damage to Pirates.)",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Ship's Bell": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Master Tactician",
+                    "description": "Master Tactician deals {0} more damage, and makes the target go last.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "All Aboard!",
+                    "description": "Deal 55 damage using Sky Guard.",
+                    "quote": "Welcome aboard, Mercenary. Strap yourself in and get ready for lift off!"
+                },
+                {
+                    "name": "Formation Flying",
+                    "description": "Restore 60 Health using Master Tactician.",
+                    "quote": "Ready to rule the skies?"
+                },
+                {
+                    "name": "Ready, Aim, Fire!",
+                    "description": "Deal 120 damage using Firing Position.",
+                    "quote": "Show them what we're made of."
+                },
+                {
+                    "name": "Make Ready",
+                    "description": "Gain 70 Attack using Sky Guard.",
+                    "quote": "Time to get airborne again."
+                },
+                {
+                    "name": "Pride of the Fleet",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Clear the Decks",
+                    "description": "Destroy 40 minions.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Prime Targets",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Our mission is of the utmost importance."
+                },
+                {
+                    "name": "Shore Leave",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "We can't slow now. Push forward!"
+                },
+                {
+                    "name": "Reclaim the Skies",
+                    "description": "Defeat 12 Dragons.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Conscripts",
+                    "description": "Deal 180 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Let's fly. For the Alliance!"
+                },
+                {
+                    "name": "Grapeshot and Langrage",
+                    "description": "Deal 450 damage.",
+                    "quote": "We're approaching our target. Make ready!"
+                },
+                {
+                    "name": "Repel Boarders!",
+                    "description": "Destroy 15 enemies using Sky Guard.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Stormy Skies Ahead",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We're approaching our target. Make ready!"
+                },
+                {
+                    "name": "The Perfect Plan",
+                    "description": "Deal 300 damage using Firing Position.",
+                    "quote": "Time to get airborne again."
+                },
+                {
+                    "name": "Ocean Commotion",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Mark Your Targets",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Show them what we're made of."
+                },
+                {
+                    "name": "Cut Them Down!",
+                    "description": "Destroy 40 enemies using Firing Position.",
+                    "quote": "Ready to rule the skies?"
+                },
+                {
+                    "name": "Earn Your Commission",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "And who said the sky is the limit? Impressive work, Mercenary."
+                },
+                {
+                    "name": "Beauty of the Open Skies",
+                    "description": "Complete <specific> Legendary bounty.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Sky Admiral Ascending",
+                    "description": "Deal 1350 damage.",
+                    "quote": "And who said the sky is the limit? Impressive work, mercenary."
+                }
+            ]
         }
     }
 }

@@ -27,7 +27,9 @@ export default new Vuex.Store({
       state.collection = loadedCollection;
     },
     setMercenaries(state, loadedMercenaries) {
-      state.mercenaries = loadedMercenaries;
+      state.mercenaries = Object.keys(loadedMercenaries)
+        .sort()
+        .reduce((res, key) => ((res[key] = loadedMercenaries[key]), res), {});
     },
     activateMerc(state, { name }) {
       if (!state.collection[name]) {
