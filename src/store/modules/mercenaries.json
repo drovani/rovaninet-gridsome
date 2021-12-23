@@ -9918,6 +9918,418 @@
                     "quote": "Don’t mind the apparitions. They’re mostly friendly."
                 }
             ]
+        },
+        "Old Murk-Eye": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 74,
+            "abilities": {
+                "Finvasion": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. {0 other friendly} Murloc{s} Attack{s} it.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "1 other friendly",
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "2 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "3 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "4 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "Your other",
+                                null,
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "Felfin Navigator": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Felfin Navigator",
+                        "description": "Battlecry: Give your other Murlocs +{0}/+{0}.",
+                        "race": "Murloc"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": [
+                                    1,
+                                    1
+                                ],
+                                "attack": 4,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    2,
+                                    2
+                                ],
+                                "attack": 6,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    3,
+                                    3
+                                ],
+                                "attack": 8,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    4,
+                                    4
+                                ],
+                                "attack": 9,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    5,
+                                    5
+                                ],
+                                "attack": 10,
+                                "health": 10
+                            }
+                        }
+                    ]
+                },
+                "Giantfin": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Giantfin",
+                        "description": "Rush",
+                        "race": "Murloc"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 8,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 12,
+                                "health": 12
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 16,
+                                "health": 16
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 18,
+                                "health": 18
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 20,
+                                "health": 20
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Primordial Fin": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Giantfin",
+                    "description": "Giantfin gains +{0} Attack and Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Navigator's Amulet": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Felfin Navigator",
+                    "description": "Felfin Navigator gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        3,
+                                        3
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        5,
+                                        5
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Bubble Wand": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Finvasion",
+                    "description": "Finvasion also gives this Merc +{0} Attack and Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +2 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +3 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +4 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +5 Attack and Divine Shield."
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Finvasion by Sea",
+                    "description": "Deal 80 damage using Finvasion.",
+                    "quote": ""
+                },
+                {
+                    "name": "Confidence in Numbers",
+                    "description": "Summon a Felfin Navigator 12 times.",
+                    "quote": "<Aid me my good friends!>"
+                },
+                {
+                    "name": "Middlefin Was My Name",
+                    "description": "Summon a Giantfin 12 times.",
+                    "quote": "<The only one allowed to call me Middlefin anymore. The rest are gone.>"
+                },
+                {
+                    "name": "We'll Take Westfall",
+                    "description": "Deal 150 damage.",
+                    "quote": "<A poke and a prod always solves my problems.>"
+                },
+                {
+                    "name": "Continue the Campaign",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<I've slain many more challenging foes than this.>"
+                },
+                {
+                    "name": "Damp Drudgery",
+                    "description": "Destroy 40 minions.",
+                    "quote": ""
+                },
+                {
+                    "name": "Fishy Strategy",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Hm, a bit of a challenge no doubt, but nothing old Murk-Eye can't handle.>"
+                },
+                {
+                    "name": "Exploring the Inland",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "<A break from all the conflict would be nice.>"
+                },
+                {
+                    "name": "Ichthyology",
+                    "description": "Summon 20 Murlocs.",
+                    "quote": "<We need more reinforcements to take this beach!>"
+                },
+                {
+                    "name": "Take the Shore",
+                    "description": "Deal 450 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<We try to teach the tinyfin to practice, but they barely try anymore.>"
+                },
+                {
+                    "name": "Prod and a Poke",
+                    "description": "Deal 450 damage.",
+                    "quote": "<A poke and a prod always solves my problems.>"
+                },
+                {
+                    "name": "Strength in Numbers",
+                    "description": "Deal 15 damage from Finvasion from other Murlocs.",
+                    "quote": ""
+                },
+                {
+                    "name": "A Foothold on Land",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<I've slain many more challenges foes than this.>"
+                },
+                {
+                    "name": "A Jolly Green Giantfin",
+                    "description": "Deal 240 damage using Giantfin.",
+                    "quote": "<The only one allowed to call me Middlefin anymore. The rest are gone.>"
+                },
+                {
+                    "name": "Maritime Riches",
+                    "description": "Complete 6 Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Murk-eye's Nemesis",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "<Hm, a bit of a challenge no doubt, but nothing old Murk-Eye can't handle.>"
+                },
+                {
+                    "name": "Aquatic Strength",
+                    "description": "Deal 900 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<Aid me my good friends!>"
+                },
+                {
+                    "name": "Friends of the Fish",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<We need more reinforcements to take this beach!>"
+                }
+            ]
         }
     }
 }
