@@ -671,6 +671,22 @@
                 "Soul Jar": 1,
                 "Death Volley": 2
             }
+        },
+        "Tamsin Roame": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Void Stone",
+            "abilities": {
+                "Shadow Bolt": 3,
+                "Void Consumer": 5,
+                "Veil of Shadows": 5
+            },
+            "equipment": {
+                "Last Rites": 2,
+                "Void Stone": 2,
+                "Shadow Rune": 1
+            }
         }
     }
 }

@@ -13782,6 +13782,335 @@
                     "quote": "And who said the sky is the limit? Impressive work, mercenary."
                 }
             ]
+        },
+        "Tamsin Roame": {
+            "race": "Undead",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 8,
+            "health": 79,
+            "abilities": {
+                "Shadow Bolt": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        }
+                    ]
+                },
+                "Void Consumer": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Void Consumer",
+                        "description": "Taunt. After you cast a Shadow ability, gain +{0}/+{0}.",
+                        "race": "Demon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": [
+                                    1,
+                                    1
+                                ],
+                                "attack": 4,
+                                "health": 7
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    2,
+                                    2
+                                ],
+                                "attack": 5,
+                                "health": 10
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    3,
+                                    3
+                                ],
+                                "attack": 6,
+                                "health": 13
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    3,
+                                    4
+                                ],
+                                "attack": 6,
+                                "health": 14
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    3,
+                                    5
+                                ],
+                                "attack": 6,
+                                "health": 15
+                            }
+                        }
+                    ]
+                },
+                "Veil of Shadows": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Gain +{0} Shadow Damage. Enemies can't heal this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "speed": -2
+                        },
+                        {
+                            "description": 4,
+                            "speed": -3
+                        },
+                        {
+                            "description": 5,
+                            "speed": -4
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Last Rites": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Deathrattle: Summon a {0}/{0} Void Guard with Taunt",
+                    "tiers": [
+                        {
+                            "description": [
+                                10,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                17,
+                                17
+                            ]
+                        },
+                        {
+                            "description": [
+                                25,
+                                25
+                            ]
+                        }
+                    ]
+                },
+                "Void Stone": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Void Consumer",
+                    "description": "Void Consumer has +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 1,
+                                    "health": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 2,
+                                    "health": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                6
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 3,
+                                    "health": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4,
+                                    "health": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Shadow Rune": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Shadow Bolt",
+                    "description": "Shadow Bolt deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Shadow Bolts for All",
+                    "description": "Deal 55 damage using Shadow Bolt.",
+                    "quote": "Me? I'm here to get revenge. Don't look so surprised. I hear it's all the rage these days."
+                },
+                {
+                    "name": "Friends from the Void",
+                    "description": "Summon a Void Consumer 10 times.",
+                    "quote": "I could kill all of them, raise them from the dead, and then kill them again."
+                },
+                {
+                    "name": "Shadow Empowerment",
+                    "description": "Deal 150 Shadow Damage with a team that includes this Mercenary.",
+                    "quote": "I'll teach them how weak they truly are."
+                },
+                {
+                    "name": "Silly Vermin",
+                    "description": "Deal 150 damage.",
+                    "quote": "These vermin definitely wronged me at some point."
+                },
+                {
+                    "name": "Vengeance Validates Me",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Craving vengeance is like craving funnel cakes, but stabbier."
+                },
+                {
+                    "name": "Caught in the Middle",
+                    "description": "Destroy 40 minions.",
+                    "quote": "These ones may not have wronged me, but let's pretend they did."
+                },
+                {
+                    "name": "A Satisfying Squish",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Do this, and I'll be one step closer to satisfaction."
+                },
+                {
+                    "name": "No Rest Until Revenge",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I'll make them suffer for what they did to me. The details don't matter."
+                },
+                {
+                    "name": "Shadowy Punishment",
+                    "description": "Deal 180 damage using Shadow Bolt.",
+                    "quote": "These fools especially need to be punished!"
+                },
+                {
+                    "name": "Proving my Worth",
+                    "description": "Deal 30 or more damage in one turn using Shadow Bolt 8 times.",
+                    "quote": "Now, pay attention. This part is very important…"
+                },
+                {
+                    "name": "Collateral Damage",
+                    "description": "Deal 450 damage.",
+                    "quote": "These vermin definitely wronged me at some point."
+                },
+                {
+                    "name": "Beyond the Grave",
+                    "description": "Deal 450 damage to Fighters.",
+                    "quote": "Me? I'm here to get revenge. Don't look so surprised. I hear it's all the rage these days."
+                },
+                {
+                    "name": "Dead Already",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I could kill all of them, raise them from the dead, and then kill them again."
+                },
+                {
+                    "name": "Voidlings Abound",
+                    "description": "Deal 240 damage using Void Consumer.",
+                    "quote": "I'll teach them how weak they truly are."
+                },
+                {
+                    "name": "The Search Continues",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "These ones may not have wronged me, but let's pretend they did."
+                },
+                {
+                    "name": "Dear Old Dad's Friends",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Do this, and I'll be one step closer to satisfaction."
+                },
+                {
+                    "name": "Empowering Shadows",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Craving vengeance is like craving funnel cakes, but stabbier."
+                },
+                {
+                    "name": "Fools In The Way",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "These fools especially need to be punished!"
+                }
+            ]
         }
     }
 }
