@@ -14514,6 +14514,327 @@
                     "quote": "The larger they are, the harder they fall."
                 }
             ]
+        },
+        "The Lich King": {
+            "race": "Human",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 12,
+            "health": 83,
+            "abilities": {
+                "Frostbite": {
+                    "unlock": 1,
+                    "speed": 9,
+                    "description": "Attack an enemy. The abilit{y it} cast this turn {is} permanently ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                null,
+                                null,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                null,
+                                2
+                            ],
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                null,
+                                null,
+                                3
+                            ],
+                            "speed": -2
+                        },
+                        {
+                            "description": [
+                                null,
+                                null,
+                                4
+                            ],
+                            "speed": -3
+                        },
+                        {
+                            "description": [
+                                null,
+                                null,
+                                5
+                            ],
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Death Coil": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to an enemy, or restore {0} Health to a friendly character.",
+                    "tiers": [
+                        {
+                            "description": [
+                                6,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                22
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                26
+                            ]
+                        },
+                        {
+                            "description": [
+                                18,
+                                30
+                            ]
+                        }
+                    ]
+                },
+                "Frostshield": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 2,
+                    "spell_school": "Frost",
+                    "description": "Gain Taunt this turn. After an enemy Attacks this Merc, Freeze it until the end of next turn.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -1,
+                            "cooldown": -1
+                        },
+                        {
+                            "speed": -2,
+                            "cooldown": -1
+                        },
+                        {
+                            "speed": -3,
+                            "cooldown": -1
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Void Treads": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Death Coil",
+                    "description": "Death Coil always restores {0} Health to this Merc.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Restore {0} Health to this Merc.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Restore {0} Health to this Merc.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        6
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Restore {0} Health to this Merc.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Restore {0} Health to this Merc.",
+                                    "value": [
+                                        0,
+                                        0,
+                                        10
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Helm of Domination": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: After an enemy casts an ability ({0}) Speed or higher, deal {0} damage to them.",
+                    "tiers": [
+                        {
+                            "description": [
+                                7,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Frostmourne": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Frostbite",
+                    "description": "Frostbite slows the target's neighbors as well.",
+                    "modifier": {
+                        "description": [
+                            "ies the enemy and its neighbors",
+                            "are",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "One With Frostmourne",
+                    "description": "Deal 55 damage using Frostbite.",
+                    "quote": "Follow my command or succumb to the chill of the grave. The choice is yours."
+                },
+                {
+                    "name": "Retribution",
+                    "description": "Deal 95 damage using Death Coil.",
+                    "quote": "Bow before your king."
+                },
+                {
+                    "name": "Your Doom Has Come",
+                    "description": "Use Frostshield 10 times.",
+                    "quote": "Frostmourne hungers."
+                },
+                {
+                    "name": "Frostmourne Yearns",
+                    "description": "Deal 150 damage.",
+                    "quote": "Show them the true meaning of fear."
+                },
+                {
+                    "name": "Death is My Domain",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "In the end, you will all serve me."
+                },
+                {
+                    "name": "Hail to the King",
+                    "description": "Destroy 40 minions.",
+                    "quote": "All shall suffer."
+                },
+                {
+                    "name": "My Wrath is Absolute",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Death comes for these foes."
+                },
+                {
+                    "name": "All Will Fall",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "I expect absolute obedience from my subjects."
+                },
+                {
+                    "name": "You Will All Serve Me",
+                    "description": "Restore 180 Health using Death Coil.",
+                    "quote": "Glory to the Scourge."
+                },
+                {
+                    "name": "The Lich King Returns",
+                    "description": "Deal 120 damage using Frostbite.",
+                    "quote": "Rise, servant of the Frozen Throne!"
+                },
+                {
+                    "name": "Frostmourne Hungers",
+                    "description": "Deal 450 damage.",
+                    "quote": "Frostmourne hungers."
+                },
+                {
+                    "name": "My Magic is Absolute",
+                    "description": "Deal 450 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "Show them the true meaning of fear."
+                },
+                {
+                    "name": "No Mistakes",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "In the end, you will all serve me."
+                },
+                {
+                    "name": "No Man Can Defeat Me",
+                    "description": "Deal 300 damage using Frostbite.",
+                    "quote": "Bow before your king."
+                },
+                {
+                    "name": "Wrath Flows Through Me",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "All shall suffer."
+                },
+                {
+                    "name": "All Will Serve",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Glory to the Scourge."
+                },
+                {
+                    "name": "Death Comes For You",
+                    "description": "Deal 900 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "I expect absolute obedience from my subjects."
+                },
+                {
+                    "name": "True Pain",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Death comes for these foes."
+                }
+            ]
         }
     }
 }

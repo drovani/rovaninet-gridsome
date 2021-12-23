@@ -703,6 +703,22 @@
                 "High Power Rounds": 2,
                 "Rigged Wiring": 3
             }
+        },
+        "The Lich King": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Void Treads",
+            "abilities": {
+                "Frostbite": 5,
+                "Death Coil": 2,
+                "Frostshield": 2
+            },
+            "equipment": {
+                "Void Treads": 1,
+                "Helm of Domination": 4,
+                "Frostmourne": 4
+            }
         }
     }
 }
