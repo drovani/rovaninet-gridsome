@@ -13487,6 +13487,301 @@
                     "quote": "I've not come this far to falter now."
                 }
             ]
+        },
+        "Sky Admiral Rogers": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 10,
+            "health": 71,
+            "abilities": {
+                "Sky Guard": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Gain +{0} Attack and Attack an enemy. If it's a Pirate, gain Immune while Attacking this turn.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Master Tactician": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy, or restore {0} Health to an ally. It goes {next}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                11
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                12
+                            ]
+                        }
+                    ]
+                },
+                "Firing Position": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to all enemies that have already acted.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 16
+                        },
+                        {
+                            "description": 18
+                        },
+                        {
+                            "description": 20
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Swash Buckling Sash": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Sky Guard",
+                    "description": "Sky Guard gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Scout's Spyglass": {
+                    "unlock": "Task 2",
+                    "position": "right",
+                    "description": "Passive: After this Merc Attacks, deal {0} damage to all enemies. (Deals Critical Damage to Pirates.)",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Ship's Bell": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Master Tactician",
+                    "description": "Master Tactician deals {0} more damage, and makes the target go last.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0,
+                                    "last"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "All Aboard!",
+                    "description": "Deal 55 damage using Sky Guard.",
+                    "quote": "Welcome aboard, Mercenary. Strap yourself in and get ready for lift off!"
+                },
+                {
+                    "name": "Formation Flying",
+                    "description": "Restore 60 Health using Master Tactician.",
+                    "quote": "Ready to rule the skies?"
+                },
+                {
+                    "name": "Ready, Aim, Fire!",
+                    "description": "Deal 120 damage using Firing Position.",
+                    "quote": "Show them what we're made of."
+                },
+                {
+                    "name": "Make Ready",
+                    "description": "Gain 70 Attack using Sky Guard.",
+                    "quote": "Time to get airborne again."
+                },
+                {
+                    "name": "Pride of the Fleet",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Clear the Decks",
+                    "description": "Destroy 40 minions.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Prime Targets",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Our mission is of the utmost importance."
+                },
+                {
+                    "name": "Shore Leave",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "We can't slow now. Push forward!"
+                },
+                {
+                    "name": "Reclaim the Skies",
+                    "description": "Defeat 12 Dragons.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Conscripts",
+                    "description": "Deal 180 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Let's fly. For the Alliance!"
+                },
+                {
+                    "name": "Grapeshot and Langrage",
+                    "description": "Deal 450 damage.",
+                    "quote": "We're approaching our target. Make ready!"
+                },
+                {
+                    "name": "Repel Boarders!",
+                    "description": "Destroy 15 enemies using Sky Guard.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Stormy Skies Ahead",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We're approaching our target. Make ready!"
+                },
+                {
+                    "name": "The Perfect Plan",
+                    "description": "Deal 300 damage using Firing Position.",
+                    "quote": "Time to get airborne again."
+                },
+                {
+                    "name": "Ocean Commotion",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "They stand no chance against the pride of the Alliance fleet!"
+                },
+                {
+                    "name": "Mark Your Targets",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Show them what we're made of."
+                },
+                {
+                    "name": "Cut Them Down!",
+                    "description": "Destroy 40 enemies using Firing Position.",
+                    "quote": "Ready to rule the skies?"
+                },
+                {
+                    "name": "Earn Your Commission",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "And who said the sky is the limit? Impressive work, Mercenary."
+                },
+                {
+                    "name": "Beauty of the Open Skies",
+                    "description": "Complete <specific> Legendary bounty.",
+                    "quote": "Victory in battle is the only path to peace."
+                },
+                {
+                    "name": "Sky Admiral Ascending",
+                    "description": "Deal 1350 damage.",
+                    "quote": "And who said the sky is the limit? Impressive work, mercenary."
+                }
+            ]
         }
     }
 }
