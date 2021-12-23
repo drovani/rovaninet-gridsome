@@ -11363,6 +11363,438 @@
                     "quote": "I will crush the mortals in my path."
                 }
             ]
+        },
+        "Rexxar": {
+            "race": "Half-Orc",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 67,
+            "abilities": {
+                "Kill Command": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Deal {0} damage. If you control a Beast, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Animal Companion": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Coose a Beast Companion. Summon it.",
+                    "choose": [
+                        {
+                            "summon": {
+                                "name": "Huffer",
+                                "race": "Beast",
+                                "description": "Rush"
+                            }
+                        },
+                        {
+                            "summon": {
+                                "name": "Leokk",
+                                "race": "Beast",
+                                "description": "Your other characters have +{0} Attack."
+                            }
+                        },
+                        {
+                            "summon": {
+                                "name": "Misha",
+                                "race": "Beast",
+                                "description": "Taunt"
+                            }
+                        }
+                    ],
+                    "tiers": [
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 5,
+                                        "health": 3
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 3,
+                                        "health": 5,
+                                        "description": 1
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 5,
+                                        "health": 5
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 6
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 6,
+                                        "health": 10,
+                                        "description": 2
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 10
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 15,
+                                        "health": 10
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 10,
+                                        "health": 15,
+                                        "description": 3
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 15,
+                                        "health": 15
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 16,
+                                        "health": 11
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 11,
+                                        "health": 16,
+                                        "description": 4
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 16,
+                                        "health": 16
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "choose": [
+                                {
+                                    "summon": {
+                                        "attack": 17,
+                                        "health": 12
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 12,
+                                        "health": 17,
+                                        "description": 5
+                                    }
+                                },
+                                {
+                                    "summon": {
+                                        "attack": 17,
+                                        "health": 17
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Explosive Shot": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage to an enemy and {0} to adjacent ones.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                8
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Huntsman's Rifle": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Explosive Shot",
+                    "description": "Explosive Shot deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Swiftfeather Bow": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Kill Command",
+                    "description": "Kill Command is ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "speed": -3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "speed": -4
+                            }
+                        }
+                    ]
+                },
+                "Mama Bear's Claws": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever you summon a Beast, give it +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Kill Command",
+                    "description": "Deal 70 damage using Kill Command.",
+                    "quote": "Always trust your instincts."
+                },
+                {
+                    "name": "Misha, Huffer, Leokk",
+                    "description": "Use Animal Companion 12 times.",
+                    "quote": "The animals are the only family I have. Help me protect them."
+                },
+                {
+                    "name": "Explosive Shot",
+                    "description": "Deal 110 damage using Explosive Shot.",
+                    "quote": "Nothing like a thrill of the hunt."
+                },
+                {
+                    "name": "The Hunt Begins",
+                    "description": "Deal 150 damage.",
+                    "quote": "The hunt begins now."
+                },
+                {
+                    "name": "A Walkabout",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Lok'tar ogar!"
+                },
+                {
+                    "name": "Remembering Haratha",
+                    "description": "Destroy 40 minions.",
+                    "quote": "By fang and claw."
+                },
+                {
+                    "name": "They Must be Put Down",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Nothing like a thrill of the hunt."
+                },
+                {
+                    "name": "Is the Horde Righteous",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Run with the pack."
+                },
+                {
+                    "name": "Go Misha!",
+                    "description": "Deal 210 damage using Kill Command.",
+                    "quote": "Hear the call of the wild."
+                },
+                {
+                    "name": "My Only Family",
+                    "description": "Deal 375 damage using Explosive Shot.",
+                    "quote": "The animals are the only family I have. Help me protect them."
+                },
+                {
+                    "name": "The Beasts Will Aid Us",
+                    "description": "Deal 450 damage.",
+                    "quote": "Always aim for the face."
+                },
+                {
+                    "name": "A Wide Blast Radius",
+                    "description": "Deal 90 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Always trust your instincts."
+                },
+                {
+                    "name": "The Wilds are Home",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "By fang and claw."
+                },
+                {
+                    "name": "Beastmaster",
+                    "description": "Deal 180 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Run with the pack."
+                },
+                {
+                    "name": "A Noble Wanderer",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "The hunt begins now."
+                },
+                {
+                    "name": "Trust Only Beast",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Always aim for the face."
+                },
+                {
+                    "name": "My One True Friend",
+                    "description": "Summon a Beast with 13 or more Health 30 times.",
+                    "quote": "Unleash the beast within."
+                },
+                {
+                    "name": "Champion of the Horde",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Lok'tar ogar!"
+                }
+            ]
         }
     }
 }
