@@ -11796,6 +11796,315 @@
                 }
             ]
         },
+        "Rokara": {
+            "race": "Orc",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 71,
+            "abilities": {
+                "Tribal Warfare": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "description": "Attack an enemy. If you control another Orc, gain +{0} Attack first.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "speed": -2
+                        },
+                        {
+                            "description": 4,
+                            "speed": -2
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                },
+                "Offensive Rally": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "Whenever a friendly character Attacks this turn, give it +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                8
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        }
+                    ]
+                },
+                "Orc Onslaught": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage. Repeat for each other Orc you control.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Ancestral Armor": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "health": 5
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "health": 10
+                            }
+                        },
+                        {
+                            "description": 15,
+                            "modifier": {
+                                "health": 15
+                            }
+                        },
+                        {
+                            "description": 20,
+                            "modifier": {
+                                "health": 20
+                            }
+                        }
+                    ]
+                },
+                "Frostwolf Talisman": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Tribal Warfare",
+                    "description": "Tribal Warfare gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Helm of Inspiration": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Offensive Rally",
+                    "description": "Offensive Rally gives an additional +{0}/+{0}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                1,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Servant of the Horde",
+                    "description": "Deal 40 damage using Tribal Warfare.",
+                    "quote": "Me? I am always ready to serve the Horde."
+                },
+                {
+                    "name": "Helping Good Friends",
+                    "description": "Gain 25 Attack using Offensive Rally.",
+                    "quote": "Yeah, anything can happen in these parts."
+                },
+                {
+                    "name": "Surprise!",
+                    "description": "Deal 170 damage using Orc Onslaught.",
+                    "quote": "I should make sure these ones settle down."
+                },
+                {
+                    "name": "Busy, busy, busy",
+                    "description": "Deal 150 damage.",
+                    "quote": "At least I can always count on being busy…"
+                },
+                {
+                    "name": "What an Adventure",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "I had some adventures before, but not like this."
+                },
+                {
+                    "name": "Strength and Honor",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I need to show them I've got strength and honor to spare."
+                },
+                {
+                    "name": "Whoa! They're Big!",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Yes! This one might get exciting…"
+                },
+                {
+                    "name": "Stories for the Fire",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Listen! If this goes well, I'll have some new stories to tell back home."
+                },
+                {
+                    "name": "A New Quest",
+                    "description": "Gain 45 Attack using Tribal Warfare.",
+                    "quote": "Whoo! Good thing I never get tired of questing!"
+                },
+                {
+                    "name": "Learn from the Tribes",
+                    "description": "Deal 195 damage using Tribal Warfare.",
+                    "quote": "This one might take a while…"
+                },
+                {
+                    "name": "Anything can Happen",
+                    "description": "Deal 450 damage.",
+                    "quote": "Yeah, anything can happen in these parts."
+                },
+                {
+                    "name": "Risky Strategy",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "At least I can always count on being busy…"
+                },
+                {
+                    "name": "More Big Ones!",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I should make sure these ones settle down."
+                },
+                {
+                    "name": "Rally for the Horde",
+                    "description": "Deal 600 damage using Orc Onslaught.",
+                    "quote": "I need to show them I've got strength and honor to spare."
+                },
+                {
+                    "name": "The Champion's Path",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I had some adventures before, but not like this."
+                },
+                {
+                    "name": "Magic vs. Axe",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Yes! This one might get exciting…"
+                },
+                {
+                    "name": "Tribal Fortitude",
+                    "description": "Gain 320 Health using Offensive Rally.",
+                    "quote": "Whoo! Good thing I never get tired of questing!"
+                },
+                {
+                    "name": "Am I the Champion?",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "This one might take a while…"
+                }
+            ]
+        },
         "Saurfang": {
             "race": "Orc",
             "rarity": "Epic",

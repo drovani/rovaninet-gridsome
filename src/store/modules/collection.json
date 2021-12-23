@@ -68,7 +68,7 @@
             "collected": true,
             "level": 30,
             "tasksCompleted": 10,
-            "itemEquipped": "Burning Blade",
+            "itemEquipped": null,
             "abilities": {
                 "Double Strike": 5,
                 "Mirror Image": 5,
@@ -163,8 +163,8 @@
         "Garrosh Hellscream": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 1,
-            "itemEquipped": "Dueling Gauntlets",
+            "tasksCompleted": 2,
+            "itemEquipped": "Tusks of Mannoroth",
             "abilities": {
                 "Mak'Gora": 2,
                 "Horde Strength": 2,
@@ -436,7 +436,7 @@
             "collected": true,
             "level": 30,
             "tasksCompleted": 9,
-            "itemEquipped": "Spiky Pufferfish",
+            "itemEquipped": "Morgl's Mitt",
             "abilities": {
                 "Murloc Missile": 5,
                 "Fishy Barrage": 5,
@@ -468,7 +468,7 @@
             "collected": true,
             "level": 30,
             "tasksCompleted": 10,
-            "itemEquipped": "Earthen Armor",
+            "itemEquipped": "Iridescent Necklace",
             "abilities": {
                 "Devouring Attack": 3,
                 "Scaly Taunt": 5,
@@ -478,6 +478,150 @@
                 "Iridescent Necklace": 3,
                 "Earthen Armor": 2,
                 "Pearlescent Scales": 1
+            }
+        },
+        "Natalie Seline": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Splinter of Nordrassil",
+            "abilities": {
+                "Shadow Beam": 3,
+                "Light Beam": 3,
+                "Anathema": 5
+            },
+            "equipment": {
+                "Eye of Divinity": 1,
+                "Eye of Shadow": 1,
+                "Splinter of Nordrassil": 4
+            }
+        },
+        "Old Murk-Eye": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Navigator's Amulet",
+            "abilities": {
+                "Finvasion": 5,
+                "Felfin Navigator": 5,
+                "Giantfin": 5
+            },
+            "equipment": {
+                "Primordial Fin": 1,
+                "Navigator's Amulet": 4,
+                "Bubble Wand": 1
+            }
+        },
+        "Prophet Velen": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 5,
+            "itemEquipped": "Blessed Shard",
+            "abilities": {
+                "Holy Blast": 4,
+                "Splitting Light": 3,
+                "Velen's Blessing": 3
+            },
+            "equipment": {
+                "Blessed Shard": 3,
+                "Tome of Inspiration": 2,
+                "Potion of Light": 1
+            }
+        },
+        "Diablo": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "",
+            "abilities": {
+                "Doom Charge": 1,
+                "Fire Stomp": 1,
+                "Apocalypse": 1
+            },
+            "equipment": {
+                "Black Soulstone": 1,
+                "item2": 1,
+                "Claws of Terror": 2
+            }
+        },
+        "Ragnaros": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Sulfuras",
+            "abilities": {
+                "Magma Blast": 1,
+                "DIE, INSECTS!": 1,
+                "Meteor": 1
+            },
+            "equipment": {
+                "Molten Core": 1,
+                "Sulfuras": 1,
+                "Blazing Rune": 2
+            }
+        },
+        "Rathorian": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 11,
+            "itemEquipped": "Soul Gem",
+            "abilities": {
+                "Blitzing Legion": 5,
+                "Hulking Overfiend": 5,
+                "Fel Command": 5
+            },
+            "equipment": {
+                "Demonic Ashes": 3,
+                "Soul Gem": 4,
+                "Demon's Mark": 2
+            }
+        },
+        "Rexxar": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "Swiftfeather Bow",
+            "abilities": {
+                "Kill Command": 2,
+                "Animal Companion": 2,
+                "Explosive Shot": 2
+            },
+            "equipment": {
+                "Huntsman's Rifle": 1,
+                "Swiftfeather Bow": 1,
+                "Mama Bear's Claws": 1
+            }
+        },
+        "Saurfang": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Serrated Shield",
+            "abilities": {
+                "Mobilizing Strike": 4,
+                "Whirlwind": 3,
+                "Bladehand Berserker": 3
+            },
+            "equipment": {
+                "Serrated Shield": 2,
+                "Berserker's Blade": 1,
+                "Saronite Stompers": 1
+            }
+        },
+        "Rokara": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": null,
+            "abilities": {
+                "Tribal Warfare": 5,
+                "Offensive Rally": 5,
+                "Orc Onslaught": 5
+            },
+            "equipment": {
+                "Ancestral Armor": 1,
+                "Frostwolf Talisman": 1,
+                "Helm of Inspiration": 1
             }
         }
     }
