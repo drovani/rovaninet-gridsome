@@ -671,6 +671,102 @@
                 "Soul Jar": 1,
                 "Death Volley": 2
             }
+        },
+        "Tamsin Roame": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Void Stone",
+            "abilities": {
+                "Shadow Bolt": 3,
+                "Void Consumer": 5,
+                "Veil of Shadows": 5
+            },
+            "equipment": {
+                "Last Rites": 2,
+                "Void Stone": 2,
+                "Shadow Rune": 1
+            }
+        },
+        "Tavish Stormpike": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Rigged Wiring",
+            "abilities": {
+                "Aimed Shot": 5,
+                "Explosive Trap": 5,
+                "Bear Trap": 5
+            },
+            "equipment": {
+                "Hunting Shroud": 2,
+                "High Power Rounds": 2,
+                "Rigged Wiring": 3
+            }
+        },
+        "The Lich King": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Void Treads",
+            "abilities": {
+                "Frostbite": 5,
+                "Death Coil": 2,
+                "Frostshield": 2
+            },
+            "equipment": {
+                "Void Treads": 1,
+                "Helm of Domination": 4,
+                "Frostmourne": 4
+            }
+        },
+        "Thrall": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": null,
+            "abilities": {
+                "For The Horde": 1,
+                "Lightning Storm": 2,
+                "Warchief's Command": 1
+            },
+            "equipment": {
+                "Ornate Warhorn": 1,
+                "Ring of Strength": 1,
+                "Doomhammer": 1
+            }
+        },
+        "Tirion Fordring": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "King's Helm",
+            "abilities": {
+                "Divine Assault": 3,
+                "Blessing of Kings": 3,
+                "Judgement of Humility": 4
+            },
+            "equipment": {
+                "Ashbringer": 1,
+                "King's Helm": 2,
+                "Tirion's Shield": 1
+            }
+        },
+        "Tyrande": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 11,
+            "itemEquipped": "Verdant Recurve",
+            "abilities": {
+                "Arcane Shot": 5,
+                "Arcane Salvo": 5,
+                "Elune's Grace": 5
+            },
+            "equipment": {
+                "Elune's Charm": 2,
+                "Verdant Recurve": 2,
+                "Band of the Wilds": 4
+            }
         }
     }
 }
