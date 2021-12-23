@@ -69,7 +69,9 @@ export default {
                     ? this.activeTierInfo.description
                     : [this.activeTierInfo.description];
 
-                const regex = new RegExp(/\{([\w ]+)\}/, "g");
+                console.debug(tierDesc);
+
+                const regex = new RegExp(/\{([\w \(\)]+)\}/, "g");
                 const matches = [...desc.matchAll(regex)];
                 for (let i = 0; i < matches.length; i++) {
                     if (isFinite(matches[i][1])) {
@@ -78,7 +80,7 @@ export default {
                         const tierValue = Number(tierDesc[i]) || 0;
 
                         desc = desc.replace(matches[i][0], baseValue + tierValue);
-                    } else if (tierDesc[i] != undefined && tierDesc != null) {
+                    } else if (tierDesc[i] != undefined && tierDesc[i] != null) {
                         // Found {string}
                         desc = desc.replace(matches[i][0], tierDesc[i]);
                     }

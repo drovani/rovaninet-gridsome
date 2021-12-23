@@ -16240,6 +16240,289 @@
                     "quote": "Yes, there are a lot, but we can take care of them!"
                 }
             ]
+        },
+        "Valeera Sanguinar": {
+            "race": "Blood Elf",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 68,
+            "abilities": {
+                "Sinister Strike": {
+                    "unlock": 1,
+                    "speed": 3,
+                    "description": "Gain +{0} Attack this turn and Attack the lowest Health enemy. Combo: Gain Stealth.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Ambush": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "description": "Deal {0} damage. If this Merc was Stealthed deal {0} instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                25
+                            ]
+                        }
+                    ]
+                },
+                "Fan of Knives": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "description": "Deal {0} damage to all enemies. Your other Mercs are ({0}) Speed faster next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Hidden Paths": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: Whenever a friendly character loses Stealth, give them +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                },
+                "Unnatural Smoke": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: While this Merc has Stealth, friendly characters are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Shadow Dagger": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Ambush",
+                    "description": "Ambush {is (1) Speed faster and} gains \"Deathblow: Gain Stealth.\"",
+                    "tiers": [
+                        {
+                            "description": "",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                }
+                            }
+                        },
+                        {
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": "is (2) Speed faster and",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": "is (3) Speed faster and",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Poisons are Powerful",
+                    "description": "Gain 100 Attack using Sinister Strike.",
+                    "quote": "They'll never see us coming."
+                },
+                {
+                    "name": "Slice and Dice",
+                    "description": "Deal 55 damage using Sinister Strike.",
+                    "quote": "Get your blades ready. There are a whole lot of enemies lurking around here."
+                },
+                {
+                    "name": "Down for the Count",
+                    "description": "Deal 70 damage using Ambush.",
+                    "quote": "Carve your own path."
+                },
+                {
+                    "name": "A Metal Meal",
+                    "description": "Deal 55 damage using Fan of Knives.",
+                    "quote": "My loyalties are my own."
+                },
+                {
+                    "name": "Out of Sight",
+                    "description": "Deal 150 damage.",
+                    "quote": "They'll never see us coming."
+                },
+                {
+                    "name": "Planning Ahead",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Always plan your next steps."
+                },
+                {
+                    "name": "Preparation",
+                    "description": "Destroy 40 enemies.",
+                    "quote": "Come prepared and nothing can surprise you."
+                },
+                {
+                    "name": "Gaps in the Armor",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "A moment of your attention."
+                },
+                {
+                    "name": "Training in the Pit",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Good luck, mercenary."
+                },
+                {
+                    "name": "Sharpen our Blades",
+                    "description": "Destroy 75 enemies.",
+                    "quote": "Keep your blades sharp."
+                },
+                {
+                    "name": "A Simple Evisceration",
+                    "description": "Deal 240 damage using Sinister Strike.",
+                    "quote": "This is your chance to impress me."
+                },
+                {
+                    "name": "Carve Them Up",
+                    "description": "Deal 450 damage.",
+                    "quote": "Carve your own path."
+                },
+                {
+                    "name": "Big or Small, We Win",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Always plan your next steps."
+                },
+                {
+                    "name": "Envenomed Blades",
+                    "description": "Gain 150 Attack using Sinister Strike.",
+                    "quote": "Keep your blades sharp."
+                },
+                {
+                    "name": "Coins for Kills",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "My loyalties are my own."
+                },
+                {
+                    "name": "No Armor? No Problem",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "A moment of your attention."
+                },
+                {
+                    "name": "Knives for All",
+                    "description": "Deal 600 damage using Fan of Knives.",
+                    "quote": "Come prepared and nothing can surprise you."
+                },
+                {
+                    "name": "Remembering the Arena",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Good luck, Mercenary."
+                }
+            ]
         }
     }
 }

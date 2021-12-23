@@ -799,6 +799,22 @@
                 "Potion of Ice": 2,
                 "Band of Frost": 2
             }
+        },
+        "Valeera Sanguinar": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 1,
+            "itemEquipped": null,
+            "abilities": {
+                "Sinister Strike": 1,
+                "Ambush": 1,
+                "Fan of Knives": 1
+            },
+            "equipment": {
+                "Hidden Paths": 1,
+                "Unnatural Smoke": 1,
+                "Shadow Dagger": 1
+            }
         }
     }
 }
