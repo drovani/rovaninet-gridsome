@@ -783,6 +783,22 @@
                 "Gleaming Pauldrons": 1,
                 "Libram of Sacrifice": 3
             }
+        },
+        "Varden Dawngrasp": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Potion of Ice",
+            "abilities": {
+                "Flurry": 5,
+                "Cold Snap": 5,
+                "Ice Lance": 4
+            },
+            "equipment": {
+                "Chilling Amulet": 1,
+                "Potion of Ice": 2,
+                "Band of Frost": 2
+            }
         }
     }
 }
