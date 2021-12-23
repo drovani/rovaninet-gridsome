@@ -196,9 +196,13 @@ export default {
                     const tiers = this.mercenary.equipment[this.activeMerc.itemEquipped].tiers ?? [
                         this.mercenary.equipment[this.activeMerc.itemEquipped],
                     ];
-                    return tiers[
-                        this.activeMerc.equipment[this.activeMerc.itemEquipped] + tiers.length - 5
-                    ];
+                    const equippedTier =
+                        tiers[
+                            this.activeMerc.equipment[this.activeMerc.itemEquipped] +
+                                tiers.length -
+                                5
+                        ];
+                    return equippedTier;
                 } else {
                     return null;
                 }
