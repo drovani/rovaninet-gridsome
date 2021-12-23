@@ -12893,6 +12893,327 @@
                     "quote": "It's time to slice and dice!"
                 }
             ]
+        },
+        "Sneed": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 6,
+            "health": 72,
+            "abilities": {
+                "Bzzz!!!": {
+                    "unlock": 1,
+                    "speed": 10,
+                    "description": "Deal damage equal to your Attack. If Activate Saw is active also damage the target's neighbors.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Activate Saw": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "cooldown": 1,
+                    "description": "Gain +{0} Attack for {0} turns. Attack a random enemy.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                2
+                            ]
+                        }
+                    ]
+                },
+                "Disarm": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Attack an enemy. Give it -{0} Attack permanently.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4,
+                            "speed": -1
+                        },
+                        {
+                            "description": 5,
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Titanium Blades": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Activate Saw",
+                    "description": "Activate Saw gives +{0} Attack and lasts {0} more turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    1
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Skull Dust": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Bzzz!!!",
+                    "description": "Bzzz!!! gains Bleed ({0}).",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Bleed ({0})",
+                                    "value": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Extra Blades": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Sneed starts with Activate Saw {0} active for {0} turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Fire the Engines!",
+                    "description": "Deal 55 damage using Bzzz!!!.",
+                    "quote": "No time to explain. Jump in my shredder and let’s gooooo!"
+                },
+                {
+                    "name": "Blades a'Spinning",
+                    "description": "Gain 30 Attack using Activate Saw.",
+                    "quote": "You ever get tired of shreddin's stuff? Me neither!"
+                },
+                {
+                    "name": "Workplace Hazards",
+                    "description": "Deal 90 damage using Disarm.",
+                    "quote": "Let's give 'em a nice welcome. And by welcome, I mean shred 'em!"
+                },
+                {
+                    "name": "Spin and Slash",
+                    "description": "Deal 240 damage.",
+                    "quote": "There's work to be done. Put your back into it!"
+                },
+                {
+                    "name": "All in a Day's Work",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Do I have to do everything myself? No! Because now I have you."
+                },
+                {
+                    "name": "Rats in the Workshop",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Oh, would you look at that. It's shreddin' time!"
+                },
+                {
+                    "name": "Dominion of Iron",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "If you want something done right, you gotta find yourself a reliable mercenary."
+                },
+                {
+                    "name": "Got a Jump?",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Leave this to an expert. That's you, by the way."
+                },
+                {
+                    "name": "Fingers and Toes",
+                    "description": "Reduce an Enemy's Attack to 0 10 times.",
+                    "quote": "Uh oh! I smell trouble."
+                },
+                {
+                    "name": "Cut, Cut, Cut!",
+                    "description": "Deal 240 damage using Bzzz!!!.",
+                    "quote": "Let's roll! But let's roll extra loud so they know who's boss."
+                },
+                {
+                    "name": "All Out of Lumber",
+                    "description": "Deal 180 damage.",
+                    "quote": "You ever get tired of shreddin's stuff? Me neither!"
+                },
+                {
+                    "name": "Clear The Rabble",
+                    "description": "Deal 180 damage to adjacent enemies using Bzzz!!!.",
+                    "quote": "Let's give 'em a nice welcome. And by welcome, I mean shred 'em!"
+                },
+                {
+                    "name": "Measure Once",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "There's work to be done. Put your back into it!"
+                },
+                {
+                    "name": "Cut Twice",
+                    "description": "Destroy two enemies in one turn using Bzzz!!! 6 times.",
+                    "quote": "Do I have to do everything myself? No! Because now I have you."
+                },
+                {
+                    "name": "Gotta Work!",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Oh, would you look at that. It's shreddin' time!"
+                },
+                {
+                    "name": "Beneath the Blade",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "If you want something done right, you gotta find yourself a reliable mercenary."
+                },
+                {
+                    "name": "Raging Engine",
+                    "description": "Gain 80 Attack using Activate Saw.",
+                    "quote": "Leave this to an expert. That's you, by the way."
+                },
+                {
+                    "name": "Paramount",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Uh oh! I smell trouble."
+                }
+            ]
         }
     }
 }
