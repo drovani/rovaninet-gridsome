@@ -15687,6 +15687,293 @@
                     "quote": "I heed the voice of Elune."
                 }
             ]
+        },
+        "Uther": {
+            "race": "Human",
+            "rarity": "Legendary",
+            "role": "Caster",
+            "attack": 10,
+            "health": 77,
+            "abilities": {
+                "Hammer of Justice": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to a character. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Blessing of Protection": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health to a friendly character and give them Taunt this turn.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Avenging Wrath": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to a random enemy. Repeat for each Holy ability you've cast this turn.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Lightbringer": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Hammer of Justice",
+                    "description": "Hammer of Justice deals {0} more damage and slows the target by ({0}) Speed more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Gleaming Pauldrons": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Avenging Wrath",
+                    "description": "Avenging Wrath deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Libram of Sacrifice": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Give {your characters} Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": "another friendly Merc"
+                        },
+                        {}
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Hammer of Justice",
+                    "description": "Deal 55 damage using Hammer of Justice.",
+                    "quote": "Well met, mercenary. Would you commit yourself to a higher cause to aid me?"
+                },
+                {
+                    "name": "Empowered by Light",
+                    "description": "Restore 50 Health using Blessing of Protection.",
+                    "quote": "Every decision bears consequences."
+                },
+                {
+                    "name": "Avenging Wrath",
+                    "description": "Deal 70 damage using Avenging Wrath.",
+                    "quote": "We shall do this for Lordaeron!"
+                },
+                {
+                    "name": "For Lordaeron",
+                    "description": "Deal 150 damage.",
+                    "quote": "The Light will guide us to victory."
+                },
+                {
+                    "name": "The Light is a Shield",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "No evil shall escape my sight."
+                },
+                {
+                    "name": "The Light Conquers All",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Faith is my shield."
+                },
+                {
+                    "name": "Soldier of the Alliance",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The time has come."
+                },
+                {
+                    "name": "Light Bless You",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Honor guides me."
+                },
+                {
+                    "name": "By My Honor",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Remain vigilant."
+                },
+                {
+                    "name": "Defender of Lordaeron",
+                    "description": "Decrease the speed of enemy abilities by 45.",
+                    "quote": "Be mindful of your thoughts."
+                },
+                {
+                    "name": "Justice has Come",
+                    "description": "Deal 450 damage.",
+                    "quote": "Every decision bears consequences."
+                },
+                {
+                    "name": "Lightbringer",
+                    "description": "Destroy three enemies in one turn using Avenging Wrath 8 times.",
+                    "quote": "We shall do this for Lordaeron!"
+                },
+                {
+                    "name": "For the Silver Hand",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "The Light will guide us to victory."
+                },
+                {
+                    "name": "Illuminating Charge",
+                    "description": "Deal 240 damage using Hammer of Justice.",
+                    "quote": "Be mindful of your thoughts."
+                },
+                {
+                    "name": "Defend the Realm",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "No evil shall escape my sight."
+                },
+                {
+                    "name": "Experience Guides Me",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "The time has come."
+                },
+                {
+                    "name": "Twice the Light",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Remain vigilant."
+                },
+                {
+                    "name": "Champion of Light",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Faith is my shield."
+                }
+            ]
         }
     }
 }
