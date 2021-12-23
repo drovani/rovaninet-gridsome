@@ -40,11 +40,11 @@ export default {
             let itemMod = this.itemEquippedTier?.modifier?.summon?.description;
             let abilityDesc = this.activeTierInfo?.summon?.description;
 
-            console.debug({
+            /* console.debug({
                 desc,
                 itemMod,
                 abilityDesc,
-            });
+            }); */
 
             if (itemMod?.type === "replace") {
                 desc = itemMod.text;
