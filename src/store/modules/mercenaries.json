@@ -1240,11 +1240,7 @@
                     "affects": "Mirror Image",
                     "description": "Mirror Image summons an extra copy of this Merc.",
                     "modifier": {
-                        "description": [
-                            "2 copies",
-                            "",
-                            ""
-                        ]
+                        "description": "2 copies"
                     }
                 }
             },
@@ -2022,36 +2018,31 @@
                         {
                             "description": [
                                 4,
-                                1,
-                                "y"
+                                1
                             ]
                         },
                         {
                             "description": [
                                 9,
-                                1,
-                                "y"
+                                1
                             ]
                         },
                         {
                             "description": [
                                 14,
-                                1,
-                                "y"
+                                1
                             ]
                         },
                         {
                             "description": [
                                 15,
-                                1,
-                                "y"
+                                1
                             ]
                         },
                         {
                             "description": [
                                 16,
-                                1,
-                                "y"
+                                1
                             ]
                         }
                     ]
@@ -2067,7 +2058,7 @@
                         {
                             "description": [
                                 1,
-                                "y",
+                                null,
                                 1
                             ],
                             "modifier": {
@@ -2316,41 +2307,36 @@
                         {
                             "description": [
                                 1,
-                                "turn",
-                                1,
-                                "."
+                                null,
+                                1
                             ]
                         },
                         {
                             "description": [
                                 1,
-                                "turn",
-                                2,
-                                "."
+                                null,
+                                2
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                2,
-                                "."
+                                2
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                3,
-                                "."
+                                3
                             ]
                         },
                         {
                             "description": [
                                 2,
                                 "turns",
-                                4,
-                                "."
+                                4
                             ]
                         }
                     ]
@@ -2631,15 +2617,13 @@
                         {
                             "description": [
                                 4,
-                                1,
-                                "turn"
+                                1
                             ]
                         },
                         {
                             "description": [
                                 7,
-                                1,
-                                "turn"
+                                1
                             ]
                         },
                         {
@@ -3766,34 +3750,19 @@
                     "description": "Gain +{0} Attack for each friendly Pirate and Attack a random enemy. {Combo: }Gain Immune while Attacking this turn.",
                     "tiers": [
                         {
-                            "description": [
-                                1,
-                                "Combo: "
-                            ]
+                            "description": 1
                         },
                         {
-                            "description": [
-                                2,
-                                null
-                            ]
+                            "description": 2
                         },
                         {
-                            "description": [
-                                3,
-                                null
-                            ]
+                            "description": 3
                         },
                         {
-                            "description": [
-                                4,
-                                null
-                            ]
+                            "description": 4
                         },
                         {
-                            "description": [
-                                5,
-                                null
-                            ]
+                            "description": 5
                         }
                     ]
                 },
@@ -4411,21 +4380,21 @@
                         {
                             "description": [
                                 2,
-                                "s",
+                                null,
                                 8
                             ]
                         },
                         {
                             "description": [
                                 2,
-                                "s",
+                                null,
                                 9
                             ]
                         },
                         {
                             "description": [
                                 2,
-                                "s",
+                                null,
                                 10
                             ]
                         }
@@ -4482,7 +4451,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "If this Merc has 20 or less Health, BATTLE TO THE DEATH!"
+                                    "text": "If this Merc has {0} or less Health, BATTLE TO THE DEATH!",
+                                    "value": 20
                                 }
                             }
                         },
@@ -4491,7 +4461,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "If this Merc has 30 or less Health, BATTLE TO THE DEATH!"
+                                    "text": "If this Merc has {0} or less Health, BATTLE TO THE DEATH!",
+                                    "value": 30
                                 }
                             }
                         },
@@ -4500,7 +4471,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "If this Merc has 40 or less Health, BATTLE TO THE DEATH!"
+                                    "text": "If this Merc has {0} or less Health, BATTLE TO THE DEATH!",
+                                    "value": 40
                                 }
                             }
                         },
@@ -4509,7 +4481,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "If this Merc has 50 or less Health, BATTLE TO THE DEATH!"
+                                    "text": "If this Merc has {0} or less Health, BATTLE TO THE DEATH!",
+                                    "value": 50
                                 }
                             }
                         }
@@ -6797,28 +6770,16 @@
                             ]
                         },
                         {
-                            "description": [
-                                2,
-                                "s"
-                            ]
+                            "description": 2
                         },
                         {
-                            "description": [
-                                3,
-                                "s"
-                            ]
+                            "description": 3
                         },
                         {
-                            "description": [
-                                4,
-                                "s"
-                            ]
+                            "description": 4
                         },
                         {
-                            "description": [
-                                5,
-                                "s"
-                            ]
+                            "description": 5
                         }
                     ]
                 },
@@ -6836,29 +6797,17 @@
                             ]
                         },
                         {
-                            "description": [
-                                2,
-                                "s"
-                            ]
+                            "description": 2
                         },
                         {
-                            "description": [
-                                3,
-                                "s"
-                            ]
+                            "description": 3
                         },
                         {
-                            "description": [
-                                3,
-                                "s"
-                            ],
+                            "description": 3,
                             "speed": -1
                         },
                         {
-                            "description": [
-                                3,
-                                "s"
-                            ],
+                            "description": 3,
                             "speed": -2
                         }
                     ]
@@ -7154,7 +7103,11 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Gain +1 Fel Damage."
+                                    "text": "Gain +{0} Fel Damage.",
+                                    "value": [
+                                        0,
+                                        1
+                                    ]
                                 }
                             }
                         },
@@ -7163,7 +7116,11 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": " Gain +2 Fel Damage."
+                                    "text": "Gain +{0} Fel Damage.",
+                                    "value": [
+                                        0,
+                                        2
+                                    ]
                                 }
                             }
                         }
@@ -7666,34 +7623,19 @@
                     "description": "Deal {0} damage to {a random} enemy. Repeat for each of your other Demons.",
                     "tiers": [
                         {
-                            "description": [
-                                5,
-                                "a random"
-                            ]
+                            "description": 5
                         },
                         {
-                            "description": [
-                                9,
-                                "a random"
-                            ]
+                            "description": 9
                         },
                         {
-                            "description": [
-                                13,
-                                "a random"
-                            ]
+                            "description": 13
                         },
                         {
-                            "description": [
-                                14,
-                                "a random"
-                            ]
+                            "description": 14
                         },
                         {
-                            "description": [
-                                15,
-                                "a random"
-                            ]
+                            "description": 15
                         }
                     ]
                 },
@@ -7755,37 +7697,25 @@
                         {
                             "description": 2,
                             "modifier": {
-                                "description": [
-                                    2,
-                                    null
-                                ]
+                                "description": 2
                             }
                         },
                         {
                             "description": 3,
                             "modifier": {
-                                "description": [
-                                    3,
-                                    null
-                                ]
+                                "description": 3
                             }
                         },
                         {
                             "description": 4,
                             "modifier": {
-                                "description": [
-                                    4,
-                                    null
-                                ]
+                                "description": 4
                             }
                         },
                         {
                             "description": 5,
                             "modifier": {
-                                "description": [
-                                    5,
-                                    null
-                                ]
+                                "description": 5
                             }
                         }
                     ]
@@ -7828,7 +7758,10 @@
                     "affects": "Fist of Jaraxxus",
                     "description": "Fist of Jaraxxus always targets the lowest Health enemy.",
                     "modifier": {
-                        "description": "the lowest-Health"
+                        "description": [
+                            0,
+                            "the lowest-Health"
+                        ]
                     }
                 }
             },
@@ -8046,7 +7979,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "Its next ability is (1) Speed slower."
+                                    "text": "Its next ability is ({0}) Speed slower.",
+                                    "value": 1
                                 }
                             }
                         },
@@ -8055,7 +7989,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "Its next ability is (2) Speed slower."
+                                    "text": "Its next ability is ({0}) Speed slower.",
+                                    "value": 2
                                 }
                             }
                         },
@@ -8064,7 +7999,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "Its next ability is (3) Speed slower."
+                                    "text": "Its next ability is ({0}) Speed slower.",
+                                    "value": 3
                                 }
                             }
                         },
@@ -8073,7 +8009,8 @@
                             "modifier": {
                                 "description": {
                                     "type": "append",
-                                    "text": "Its next ability is (4) Speed slower."
+                                    "text": "Its next ability is ({0}) Speed slower.",
+                                    "value": 4
                                 }
                             }
                         }
@@ -8592,31 +8529,31 @@
                     "tiers": [
                         {
                             "description": [
-                                "random enemies",
+                                null,
                                 5
                             ]
                         },
                         {
                             "description": [
-                                "random enemies",
+                                null,
                                 9
                             ]
                         },
                         {
                             "description": [
-                                "random enemies",
+                                null,
                                 13
                             ]
                         },
                         {
                             "description": [
-                                "random enemies",
+                                null,
                                 14
                             ]
                         },
                         {
                             "description": [
-                                "random enemies",
+                                null,
                                 15
                             ]
                         }
@@ -8838,35 +8775,35 @@
                         {
                             "description": [
                                 2,
-                                "Murlocs",
+                                null,
                                 1
                             ]
                         },
                         {
                             "description": [
                                 5,
-                                "Murlocs",
+                                null,
                                 3
                             ]
                         },
                         {
                             "description": [
                                 8,
-                                "Murlocs",
+                                null,
                                 5
                             ]
                         },
                         {
                             "description": [
                                 9,
-                                "Murlocs",
+                                null,
                                 5
                             ]
                         },
                         {
                             "description": [
                                 10,
-                                "Murlocs",
+                                null,
                                 5
                             ]
                         }
@@ -9451,15 +9388,11 @@
                         {
                             "description": "+10/+10"
                         },
+                        {},
                         {
-                            "description": "its stats"
-                        },
-                        {
-                            "description": "its stats",
                             "speed": -1
                         },
                         {
-                            "description": "its stats",
                             "speed": -2
                         }
                     ]
@@ -9475,25 +9408,31 @@
                         {
                             "description": 1,
                             "modifier": {
-                                "type": "replace",
-                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
-                                "description": 1
+                                "description": {
+                                    "type": "replace",
+                                    "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                    "value": 1
+                                }
                             }
                         },
                         {
                             "description": 2,
                             "modifier": {
-                                "type": "replace",
-                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
-                                "description": 2
+                                "description": {
+                                    "type": "replace",
+                                    "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                    "value": 2
+                                }
                             }
                         },
                         {
                             "description": 3,
                             "modifier": {
-                                "type": "replace",
-                                "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
-                                "description": 3
+                                "description": {
+                                    "type": "replace",
+                                    "text": "This Merc takes {0} less damage, gains Taunt, and cannot be Critically Damaged this turn.",
+                                    "value": 3
+                                }
                             }
                         }
                     ]
@@ -9667,6 +9606,1017 @@
                     "name": "Unstable Corruption",
                     "description": "Deal 450 damage to Heroic bosses.",
                     "quote": "<Bigger. Stronger. Still no match for Mutanus.>"
+                }
+            ]
+        },
+        "Natalie Seline": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 4,
+            "health": 70,
+            "abilities": {
+                "Shadow Beam": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage. If you have Anathema, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                9
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Light Beam": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health. If you have Benediction, restore {0} Health instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                18
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                20
+                            ]
+                        }
+                    ]
+                },
+                "Anathema": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to all enemies. (Transform into Benediction)",
+                    "transform": {
+                        "Benediction": {
+                            "speed": 6,
+                            "cooldown": 1,
+                            "spell_school": "Holy",
+                            "description": "Restore {0} Health to all your characters. (Transform into Anathema)",
+                            "tiers": [
+                                {
+                                    "description": 8
+                                },
+                                {
+                                    "description": 16
+                                },
+                                {
+                                    "description": 24
+                                },
+                                {
+                                    "description": 27
+                                },
+                                {
+                                    "description": 30
+                                }
+                            ]
+                        }
+                    },
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Eye of Divinity": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": [
+                        "Light Beam",
+                        "Benediction"
+                    ],
+                    "description": "Benediction and Light Beam restore {0} more Health.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "description": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": 8
+                            }
+                        }
+                    ]
+                },
+                "Eye of Shadow": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": [
+                        "Anathema",
+                        "Shadow Beam"
+                    ],
+                    "description": "Anathema and Shadow Beam deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Splinter of Nordrassil": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": [
+                        "Anathema",
+                        "Benediction"
+                    ],
+                    "description": "Anathema and Benediction have no Cooldown.",
+                    "modifier": {
+                        "cooldown": -1
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Blessing of the Light",
+                    "description": "Deal 70 damage using Shadow Beam.",
+                    "quote": "I walk between shadow and light."
+                },
+                {
+                    "name": "Suffering in the Dark",
+                    "description": "Restore 84 Health using Light Beam.",
+                    "quote": "Cold is the Void, but I do not fear it. Perhaps you will help me wield its power?"
+                },
+                {
+                    "name": "Tendrils of Agony",
+                    "description": "Deal 180 damage using Anathema.",
+                    "quote": "Knowledge is the only power I seek."
+                },
+                {
+                    "name": "Light Heals All Wounds",
+                    "description": "Restore 190 Health using Benediction.",
+                    "quote": "My mind’s chained down by the voices."
+                },
+                {
+                    "name": "Can Balance be Found",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "There must be both dark and light."
+                },
+                {
+                    "name": "Listen to the Voices",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Never surrender to madness."
+                },
+                {
+                    "name": "May the Light Shine",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Feed the hungering Void."
+                },
+                {
+                    "name": "Peace and Thought",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Don’t mind the apparitions. They’re mostly friendly."
+                },
+                {
+                    "name": "Destroy the Madness",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I will not be consumed."
+                },
+                {
+                    "name": "Trust in the Void",
+                    "description": "Deal 210 damage using Shadow Beam.",
+                    "quote": "My studies must continue."
+                },
+                {
+                    "name": "Embrace the Shadows",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Cold is the Void, but I do not fear it. Perhaps you will help me wield its power?"
+                },
+                {
+                    "name": "Power in Shadows",
+                    "description": "Deal 450 damage.",
+                    "quote": "Knowledge is the only power I seek."
+                },
+                {
+                    "name": "Xal'atath Knows All",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My mind’s chained down by the voices."
+                },
+                {
+                    "name": "Shadows Rise Again",
+                    "description": "Use Shadow Beam while you have Anathema 30 times",
+                    "quote": "I walk between shadow and light."
+                },
+                {
+                    "name": "More Study is Needed",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I will not be consumed."
+                },
+                {
+                    "name": "Listen to the Shadows",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Never surrender to madness."
+                },
+                {
+                    "name": "Let the Balance Tilt",
+                    "description": "Heal 900 damage.",
+                    "quote": "Feed the hungering Void."
+                },
+                {
+                    "name": "Void Swallow your Soul",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Don’t mind the apparitions. They’re mostly friendly."
+                }
+            ]
+        },
+        "Old Murk-Eye": {
+            "race": "Murloc",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 10,
+            "health": 74,
+            "abilities": {
+                "Finvasion": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "description": "Attack an enemy. {0 other friendly} Murloc{s} Attack{s} it.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "1 other friendly",
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "2 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "3 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "4 other friendly",
+                                null,
+                                ""
+                            ]
+                        },
+                        {
+                            "description": [
+                                "Your other",
+                                null,
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "Felfin Navigator": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Felfin Navigator",
+                        "description": "Battlecry: Give your other Murlocs +{0}/+{0}.",
+                        "race": "Murloc"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "description": [
+                                    1,
+                                    1
+                                ],
+                                "attack": 4,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    2,
+                                    2
+                                ],
+                                "attack": 6,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    3,
+                                    3
+                                ],
+                                "attack": 8,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    4,
+                                    4
+                                ],
+                                "attack": 9,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "description": [
+                                    5,
+                                    5
+                                ],
+                                "attack": 10,
+                                "health": 10
+                            }
+                        }
+                    ]
+                },
+                "Giantfin": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Giantfin",
+                        "description": "Rush",
+                        "race": "Murloc"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 8,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 12,
+                                "health": 12
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 16,
+                                "health": 16
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 18,
+                                "health": 18
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 20,
+                                "health": 20
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Primordial Fin": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Giantfin",
+                    "description": "Giantfin gains +{0} Attack and Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 6
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "summon": {
+                                    "description": {
+                                        "type": "append",
+                                        "text": "Divine Shield"
+                                    },
+                                    "attack": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Navigator's Amulet": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Felfin Navigator",
+                    "description": "Felfin Navigator gives +{0}/+{0} more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        3,
+                                        3
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                5,
+                                5
+                            ],
+                            "modifier": {
+                                "summon": {
+                                    "description": [
+                                        5,
+                                        5
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Bubble Wand": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Finvasion",
+                    "description": "Finvasion also gives this Merc +{0} Attack and Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +2 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +3 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +4 Attack and Divine Shield."
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Gain +5 Attack and Divine Shield."
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Finvasion by Sea",
+                    "description": "Deal 80 damage using Finvasion.",
+                    "quote": ""
+                },
+                {
+                    "name": "Confidence in Numbers",
+                    "description": "Summon a Felfin Navigator 12 times.",
+                    "quote": "<Aid me my good friends!>"
+                },
+                {
+                    "name": "Middlefin Was My Name",
+                    "description": "Summon a Giantfin 12 times.",
+                    "quote": "<The only one allowed to call me Middlefin anymore. The rest are gone.>"
+                },
+                {
+                    "name": "We'll Take Westfall",
+                    "description": "Deal 150 damage.",
+                    "quote": "<A poke and a prod always solves my problems.>"
+                },
+                {
+                    "name": "Continue the Campaign",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<I've slain many more challenging foes than this.>"
+                },
+                {
+                    "name": "Damp Drudgery",
+                    "description": "Destroy 40 minions.",
+                    "quote": ""
+                },
+                {
+                    "name": "Fishy Strategy",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<Hm, a bit of a challenge no doubt, but nothing old Murk-Eye can't handle.>"
+                },
+                {
+                    "name": "Exploring the Inland",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "<A break from all the conflict would be nice.>"
+                },
+                {
+                    "name": "Ichthyology",
+                    "description": "Summon 20 Murlocs.",
+                    "quote": "<We need more reinforcements to take this beach!>"
+                },
+                {
+                    "name": "Take the Shore",
+                    "description": "Deal 450 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<We try to teach the tinyfin to practice, but they barely try anymore.>"
+                },
+                {
+                    "name": "Prod and a Poke",
+                    "description": "Deal 450 damage.",
+                    "quote": "<A poke and a prod always solves my problems.>"
+                },
+                {
+                    "name": "Strength in Numbers",
+                    "description": "Deal 15 damage from Finvasion from other Murlocs.",
+                    "quote": ""
+                },
+                {
+                    "name": "A Foothold on Land",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "<I've slain many more challenges foes than this.>"
+                },
+                {
+                    "name": "A Jolly Green Giantfin",
+                    "description": "Deal 240 damage using Giantfin.",
+                    "quote": "<The only one allowed to call me Middlefin anymore. The rest are gone.>"
+                },
+                {
+                    "name": "Maritime Riches",
+                    "description": "Complete 6 Bounties.",
+                    "quote": ""
+                },
+                {
+                    "name": "Murk-eye's Nemesis",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "<Hm, a bit of a challenge no doubt, but nothing old Murk-Eye can't handle.>"
+                },
+                {
+                    "name": "Aquatic Strength",
+                    "description": "Deal 900 damage with Murlocs with a team that includes this Mercenary.",
+                    "quote": "<Aid me my good friends!>"
+                },
+                {
+                    "name": "Friends of the Fish",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<We need more reinforcements to take this beach!>"
+                }
+            ]
+        },
+        "Prophet Velen": {
+            "race": "Draenei",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 6,
+            "health": 74,
+            "abilities": {
+                "Holy Blast": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage. Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                6
+                            ]
+                        }
+                    ]
+                },
+                "Splitting Light": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to an enemy. Holy Combo: Also damages its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                },
+                "Velen's Blessing": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 2,
+                    "spell_school": "Holy",
+                    "description": "Gain +{0} Holy Damage. Your next Holy ability casts twice.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "cooldown": -1,
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Blessed Shard": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Splitting Light",
+                    "description": "Splitting Light deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Tome of Inspiration": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Holy Blast",
+                    "description": "Holy Blast restores {0} more Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Potion of Light": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Restore {0} Health to your characters.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 40
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Holy Blast",
+                    "description": "Restore 80 Health using Holy Blast.",
+                    "quote": "The path ahead lies full of challenge, but the Light will shine on those who walk it."
+                },
+                {
+                    "name": "Life is the Light",
+                    "description": "Deal 70 damage using Splitting Light.",
+                    "quote": "Alas, I have no lack of enemies."
+                },
+                {
+                    "name": "My Blessings to All",
+                    "description": "Deal 225 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I shall go forth in the name of the Light."
+                },
+                {
+                    "name": "They are Unwise",
+                    "description": "Deal 150 damage.",
+                    "quote": "I must address this."
+                },
+                {
+                    "name": "Light Protect Us",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Light, lend me aid in these battles."
+                },
+                {
+                    "name": "Follow the Light",
+                    "description": "Destroy 40 minions.",
+                    "quote": "May the Light protect me."
+                },
+                {
+                    "name": "You Must have Faith",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "An even greater trial lies ahead."
+                },
+                {
+                    "name": "I Go Into the Light",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "This will help immeasurably."
+                },
+                {
+                    "name": "Savior of my People",
+                    "description": "Heal 225 damage.",
+                    "quote": "I will take care on this journey."
+                },
+                {
+                    "name": "Purge the Foul",
+                    "description": "Defeat 40 Demons.",
+                    "quote": "This shall be quite an undertaking, but I am well-prepared."
+                },
+                {
+                    "name": "Lay them to Rest",
+                    "description": "Deal 450 damage.",
+                    "quote": "I must address this."
+                },
+                {
+                    "name": "The Light Purges All",
+                    "description": "Deal 85 damage in one turn.",
+                    "quote": "I shall go forth in the name of the Light."
+                },
+                {
+                    "name": "Turn from the Dark Path",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Alas, I have no lack of enemies."
+                },
+                {
+                    "name": "The Pure Light",
+                    "description": "Heal 450 damage.",
+                    "quote": "Light, lend me aid in these battles."
+                },
+                {
+                    "name": "One Problem at a Time",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This will help immeasurably."
+                },
+                {
+                    "name": "We Must Stop Them",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "May the Light protect me."
+                },
+                {
+                    "name": "Perfect Light",
+                    "description": "Deal 50 or more damage in one turn using Splitting Light 20 times.",
+                    "quote": "I will take care on this journey."
+                },
+                {
+                    "name": "Save my People",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "An even greater trial lies ahead."
                 }
             ]
         }

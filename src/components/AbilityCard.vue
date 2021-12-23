@@ -43,8 +43,8 @@
             </SummonDescription>
         </template>
         <div
-            class="grid grid-cols-3 lg:grid-cols-2 text-center"
-            :class="{ 'text-base': !showDetails, 'text-xl': showDetails }"
+            class="grid grid-cols-2 text-center"
+            :class="{ 'text-base': !showDetails, 'text-xl sm:text-base lg:text-xl': showDetails }"
         >
             <div :class="{ invisible: speed <= 0 }">
                 {{ speed }}
@@ -54,7 +54,7 @@
                 {{ cooldown }}
                 <img src="/images/mercs/cooldown.png" alt="Cooldown" class="h-4 w-4 inline" />
             </div>
-            <div class="text-center lg:col-span-2 rounded">{{ ability.spell_school }}</div>
+            <div class="text-center col-span-2 rounded">{{ ability.spell_school }}</div>
         </div>
     </div>
 </template>
