@@ -14111,6 +14111,409 @@
                     "quote": "These fools especially need to be punished!"
                 }
             ]
+        },
+        "Tavish Stormpike": {
+            "race": "Dwarf",
+            "rarity": "Rare",
+            "role": "Fighter",
+            "attack": 6,
+            "health": 78,
+            "abilities": {
+                "Aimed Shot": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Deal {0} damage. If this Merc has not been damaged this turn, deal {0} instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                16
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                18
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                20
+                            ]
+                        }
+                    ]
+                },
+                "Explosive Trap": {
+                    "unlock": 5,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "The first time this Merc is damaged this turn, deal {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 16
+                        }
+                    ]
+                },
+                "Bear Trap": {
+                    "unlock": 15,
+                    "speed": 2,
+                    "cooldown": 1,
+                    "description": "The first time this Merc is damaged this turn, summon a {0}/{0} Beast with {Rush and }Taunt.",
+                    "info": {
+                        "summon": {
+                            "name": "Bear",
+                            "race": "Beast",
+                            "description": "Taunt"
+                        }
+                    },
+                    "tiers": [
+                        {
+                            "description": [
+                                3,
+                                5,
+                                ""
+                            ],
+                            "info": {
+                                "summon": {
+                                    "attack": 3,
+                                    "health": 5
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                7,
+                                10,
+                                ""
+                            ],
+                            "info": {
+                                "summon": {
+                                    "attack": 7,
+                                    "health": 10
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                11,
+                                15,
+                                ""
+                            ],
+                            "info": {
+                                "summon": {
+                                    "attack": 11,
+                                    "health": 15
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                13,
+                                17,
+                                ""
+                            ],
+                            "info": {
+                                "summon": {
+                                    "attack": 13,
+                                    "health": 17
+                                }
+                            }
+                        },
+                        {
+                            "description": [
+                                15,
+                                20,
+                                ""
+                            ],
+                            "info": {
+                                "summon": {
+                                    "attack": 15,
+                                    "health": 20
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Hunting Shroud": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Bear Trap",
+                    "description": "The Bear Trap Bear has +{0} Attack and Rush.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    0,
+                                    "Rush and "
+                                ],
+                                "info": {
+                                    "summon": {
+                                        "attack": 2,
+                                        "description": {
+                                            "type": "prepend",
+                                            "text": "Rush"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    0,
+                                    "Rush and "
+                                ],
+                                "info": {
+                                    "summon": {
+                                        "attack": 3,
+                                        "description": {
+                                            "type": "prepend",
+                                            "text": "Rush"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    0,
+                                    "Rush and "
+                                ],
+                                "info": {
+                                    "summon": {
+                                        "attack": 4,
+                                        "description": {
+                                            "type": "prepend",
+                                            "text": "Rush"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    0,
+                                    "Rush and "
+                                ],
+                                "info": {
+                                    "summon": {
+                                        "attack": 5,
+                                        "description": {
+                                            "type": "prepend",
+                                            "text": "Rush"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "High Power Rounds": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Aimed Shot",
+                    "description": "Aimed Shot deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    5,
+                                    5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Rigged Wiring": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Health. Your Traps last until they're triggered.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "health": 4
+                            }
+                        },
+                        {
+                            "description": 6,
+                            "modifier": {
+                                "health": 6
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "health": 8
+                            }
+                        },
+                        {
+                            "description": 10,
+                            "modifier": {
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Ready, Aim, Fire!",
+                    "description": "Deal 70 damage using Aimed Shot.",
+                    "quote": "There's a whole fortune waitin' for me out there, but I've gotta fight for it!"
+                },
+                {
+                    "name": "Kaboom!",
+                    "description": "Deal 25 damage using Explosive Trap.",
+                    "quote": "I almost feel bad for these wee rascals."
+                },
+                {
+                    "name": "Ready, Aim, BEAR!",
+                    "description": "Use Bear Trap 12 times.",
+                    "quote": "My beard has fleas scarier than these pipsqueaks!"
+                },
+                {
+                    "name": "Aim Carefully",
+                    "description": "Deal 150 damage.",
+                    "quote": "These troublemakers won't be so bold after a few blasts from me rifle."
+                },
+                {
+                    "name": "Calibrate The Sights",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Next target's in me sights."
+                },
+                {
+                    "name": "Fish in a Barrel",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Help me tackle these ones and I might even share the loot with ya."
+                },
+                {
+                    "name": "Need a Bigger Gun",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The larger they are, the harder they fall."
+                },
+                {
+                    "name": "Tweaking my Sights",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "There's a frosty pint in it fer ya after we finish this one!"
+                },
+                {
+                    "name": "Aim True",
+                    "description": "Deal 225 damage using Aimed Shot.",
+                    "quote": "Aye, it ain't easy, but it pays well."
+                },
+                {
+                    "name": "Big Game",
+                    "description": "Deal 30 or more damage in one turn using Aimed Shot 15 times.",
+                    "quote": "Sometimes I like to hunt BIG game!"
+                },
+                {
+                    "name": "Need more Powder",
+                    "description": "Deal 450 damage.",
+                    "quote": "I almost feel bad for these wee rascals."
+                },
+                {
+                    "name": "Big Ol' Bear",
+                    "description": "Deal 450 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "There's a whole fortune waitin' for me out there, but I've gotta fight for it!"
+                },
+                {
+                    "name": "Where's my Bear?",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Aye, it ain't easy, but it pays well."
+                },
+                {
+                    "name": "Watch Where You Step",
+                    "description": "Destroy three enemies in one turn using Explosive Trap 3 times.",
+                    "quote": "There's a frosty pint in it fer ya after we finish this one!"
+                },
+                {
+                    "name": "Coin for Tavish",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "My beard has fleas scarier than these pipsqueaks!"
+                },
+                {
+                    "name": "Hiding in the Back",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "These troublemakers won't be so bold after a few blasts from me rifle."
+                },
+                {
+                    "name": "Relentless Barrage",
+                    "description": "Deal 900 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "Next target's in me sights."
+                },
+                {
+                    "name": "A Fair Hunt",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "The larger they are, the harder they fall."
+                }
+            ]
         }
     }
 }

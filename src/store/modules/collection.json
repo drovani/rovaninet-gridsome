@@ -687,6 +687,22 @@
                 "Void Stone": 2,
                 "Shadow Rune": 1
             }
+        },
+        "Tavish Stormpike": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Rigged Wiring",
+            "abilities": {
+                "Aimed Shot": 5,
+                "Explosive Trap": 5,
+                "Bear Trap": 5
+            },
+            "equipment": {
+                "Hunting Shroud": 2,
+                "High Power Rounds": 2,
+                "Rigged Wiring": 3
+            }
         }
     }
 }
