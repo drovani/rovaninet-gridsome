@@ -751,6 +751,22 @@
                 "King's Helm": 2,
                 "Tirion's Shield": 1
             }
+        },
+        "Tyrande": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 11,
+            "itemEquipped": "Verdant Recurve",
+            "abilities": {
+                "Arcane Shot": 5,
+                "Arcane Salvo": 5,
+                "Elune's Grace": 5
+            },
+            "equipment": {
+                "Elune's Charm": 2,
+                "Verdant Recurve": 2,
+                "Band of the Wilds": 4
+            }
         }
     }
 }

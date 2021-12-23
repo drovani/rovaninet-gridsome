@@ -15421,6 +15421,272 @@
                     "quote": "If I believe in my cause, the rest will follow."
                 }
             ]
+        },
+        "Tyrande": {
+            "race": "Night Elf",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 7,
+            "health": 76,
+            "abilities": {
+                "Arcane Shot": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage to an enemy.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                },
+                "Arcane Salvo": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "spell_school": "Arcane",
+                    "description": "Deal {0} damage to two random enemies.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Elune's Grace": {
+                    "unlock": 15,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Arcane",
+                    "description": "Your next {Arcane} ability casts twice and is permanently ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": [
+                                null,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                3
+                            ],
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                null,
+                                3
+                            ],
+                            "speed": -2
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Elune's Charm": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Arcane Shot",
+                    "description": "Arcane Shot deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Verdant Recurve": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Arcane Salvo",
+                    "description": "Arcane Salvo deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Band of the Wilds": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Elune's Grace",
+                    "description": "Elune's Grace also affects Nature abilities.",
+                    "modifier": {
+                        "description": [
+                            "Arcane or Nature",
+                            0
+                        ]
+                    }
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Elune's Blessed Arrow",
+                    "description": "Deal 70 damage using Arcane Shot.",
+                    "quote": "It falls to me to set things right here. Would you be willing to help?"
+                },
+                {
+                    "name": "Let My Aim be True",
+                    "description": "Deal 95 damage using Arcane Salvo.",
+                    "quote": "Ishnu-alah."
+                },
+                {
+                    "name": "Elune Give me Strength",
+                    "description": "Deal 190 damage.",
+                    "quote": "The goddess calls."
+                },
+                {
+                    "name": "A Swift Death",
+                    "description": "Deal 150 damage.",
+                    "quote": "It gladdens my heart to see you."
+                },
+                {
+                    "name": "Make Haste",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Let us make haste."
+                },
+                {
+                    "name": "Show our True Strength",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Raw power is no substitute for true strength."
+                },
+                {
+                    "name": "A Foul Enemy",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Your aid is needed."
+                },
+                {
+                    "name": "Elune Calls",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "I heed the voice of Elune."
+                },
+                {
+                    "name": "Protect our Brethren",
+                    "description": "Increase the speed of friendly abilities by a total of 55.",
+                    "quote": "We must protect Kalimdor."
+                },
+                {
+                    "name": "Arcane Powers",
+                    "description": "Deal 180 damage using Arcane Shot.",
+                    "quote": "May Elune light your path."
+                },
+                {
+                    "name": "Remember the Sentinels",
+                    "description": "Deal 450 damage.",
+                    "quote": "Ishnu-alah."
+                },
+                {
+                    "name": "For Elune",
+                    "description": "Destroy two enemies in one turn using Arcane Salvo 15 times.",
+                    "quote": "The goddess calls."
+                },
+                {
+                    "name": "Empty your Quiver",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "It gladdens my heart to see you."
+                },
+                {
+                    "name": "Trust my Aim",
+                    "description": "Deal 980 damage using Arcane Shot.",
+                    "quote": "Raw power is no substitute for true strength."
+                },
+                {
+                    "name": "Ash'alah's Might",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Let us make haste."
+                },
+                {
+                    "name": "A Hail of Arrows",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Your aid is needed."
+                },
+                {
+                    "name": "A Simple Trick Shot",
+                    "description": "Destroy two enemies in one turn using Arcane Salvo 20 times.",
+                    "quote": "We must protect Kalimdor."
+                },
+                {
+                    "name": "Foes of Elune",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I heed the voice of Elune."
+                }
+            ]
         }
     }
 }
