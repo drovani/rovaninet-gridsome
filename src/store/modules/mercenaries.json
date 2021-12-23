@@ -13214,6 +13214,279 @@
                     "quote": "Uh oh! I smell trouble."
                 }
             ]
+        },
+        "Sylvanas Windrunner": {
+            "race": "Undead",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 9,
+            "health": 66,
+            "abilities": {
+                "Banshee Bolt": {
+                    "unlock": 1,
+                    "speed": 8,
+                    "spell_school": "Shadow",
+                    "description": "Deal damage equal to this Merc's Attack.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -3
+                        },
+                        {
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Reclaimed Souls": {
+                    "unlock": 5,
+                    "speed": 10,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Gain +{0} Attack for each friendly character that died this game.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "For the Queen": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 2,
+                    "spell_school": "Shadow",
+                    "description": "Choose an enemy. A{n a}djacent enem{y} Attack{s} it.",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -1
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -2
+                        },
+                        {
+                            "description": [
+                                "",
+                                "ies",
+                                ""
+                            ],
+                            "speed": -3
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Mourneblade": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "description": "Passive: +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "attack": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "attack": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "attack": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "attack": 5
+                            }
+                        }
+                    ]
+                },
+                "Soul Jar": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Reclaimed Souls",
+                    "description": "Reclaimed Souls gives +{0} more Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Death Volley": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Deal damage equal to this Merc's Attack to {all} enem{ies}.",
+                    "tiers": [
+                        {
+                            "description": [
+                                "1",
+                                "y"
+                            ]
+                        },
+                        {
+                            "description": [
+                                "2",
+                                "ies"
+                            ]
+                        },
+                        {
+                            "description": [
+                                "all",
+                                "ies"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Banshee Bolt",
+                    "description": "Deal 55 damage using Banshee Bolt.",
+                    "quote": "My work here is critical to the future of the Horde. Do not fail me, mercenary."
+                },
+                {
+                    "name": "Claim the Souls",
+                    "description": "Gain 10 Attack using Reclaimed Souls.",
+                    "quote": "What joy is there in this curse?"
+                },
+                {
+                    "name": "Mark them Traitors",
+                    "description": "Deal 70 damage using For the Queen.",
+                    "quote": "Victory for the Forsaken."
+                },
+                {
+                    "name": "My Arrows Strike True",
+                    "description": "Deal 150 damage.",
+                    "quote": "My will is my own. Yours may vary."
+                },
+                {
+                    "name": "No Joy in this Curse",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "In the end, death claims us all."
+                },
+                {
+                    "name": "Death Beckons",
+                    "description": "Destroy 40 minions.",
+                    "quote": "If only you could see yourself as I see you…"
+                },
+                {
+                    "name": "Victory Draws Near",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Show no mercy."
+                },
+                {
+                    "name": "Serve me in Death",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "This world… is a prison."
+                },
+                {
+                    "name": "How Cunning",
+                    "description": "Destroy 30 enemies using For the Queen.",
+                    "quote": "I've not come this far to falter now."
+                },
+                {
+                    "name": "Banshee Queen",
+                    "description": "Deal 180 damage using Banshee Bolt.",
+                    "quote": "The Dark Lady watches you."
+                },
+                {
+                    "name": "Feel My Suffering",
+                    "description": "Deal 450 damage.",
+                    "quote": "What joy is there in this curse?"
+                },
+                {
+                    "name": "Even in Death",
+                    "description": "Destroy an enemy using Death Volley 15 times.",
+                    "quote": "Victory for the Forsaken."
+                },
+                {
+                    "name": "Queen of the Damned",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "My will is my own. Yours may vary."
+                },
+                {
+                    "name": "Fall Before Me",
+                    "description": "Deal 490 damage using Banshee Bolt.",
+                    "quote": "In the end, death claims us all."
+                },
+                {
+                    "name": "My Hunt has No End",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "If only you could see yourself as I see you…"
+                },
+                {
+                    "name": "The Dark Lady Watches",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "Show no mercy."
+                },
+                {
+                    "name": "Wrath of the Banshee",
+                    "description": "Gain 90 Attack using Reclaimed Souls.",
+                    "quote": "This world… is a prison."
+                },
+                {
+                    "name": "We are the Forsaken",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I've not come this far to falter now."
+                }
+            ]
         }
     }
 }

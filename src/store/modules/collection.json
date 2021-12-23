@@ -627,17 +627,49 @@
         "Scabbs Cutterbutter": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
-            "itemEquipped": "Honing Rod",
+            "tasksCompleted": 6,
+            "itemEquipped": "SI:7 Contract",
             "abilities": {
-                "Tactical Strike": 5,
-                "Wicked Stab": 1,
-                "Shadow Blade": 1
+                "Tactical Strike": 3,
+                "Wicked Stab": 3,
+                "Shadow Blade": 5
             },
             "equipment": {
-                "SI:7 Contract": 4,
-                "Paring Knife": 4,
+                "SI:7 Contract": 2,
+                "Paring Knife": 1,
                 "Honing Rod": 1
+            }
+        },
+        "Sneed": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "Titanium Blades",
+            "abilities": {
+                "Bzzz!!!": 4,
+                "Activate Saw": 3,
+                "Disarm": 3
+            },
+            "equipment": {
+                "Titanium Blades": 1,
+                "Skull Dust": 1,
+                "Extra Blades": 1
+            }
+        },
+        "Sylvanas Windrunner": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 4,
+            "itemEquipped": "Mourneblade",
+            "abilities": {
+                "Banshee Bolt": 4,
+                "Reclaimed Souls": 2,
+                "For the Queen": 4
+            },
+            "equipment": {
+                "Mourneblade": 1,
+                "Soul Jar": 1,
+                "Death Volley": 2
             }
         }
     }
