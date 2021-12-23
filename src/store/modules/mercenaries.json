@@ -14835,6 +14835,260 @@
                     "quote": "Death comes for these foes."
                 }
             ]
+        },
+        "Thrall": {
+            "race": "Orc",
+            "rarity": "Legendary",
+            "role": "Protector",
+            "attack": 10,
+            "health": 74,
+            "abilities": {
+                "For The Horde": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Give your Orcs +{0} Attack. Attack an enemy.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                },
+                "Lightning Storm": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Warchief's Command": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Nature",
+                    "description": "Deal {0} damage to an enemy. Your left-most character Attacks it.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Ornate Warhorn": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Warchief's Command",
+                    "description": "Warchief's Command deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Ring of Strength": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: Whenever a friendly Orc is Attacked, give them +{0} Health.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Doomhammer": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Attack and Windfury.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "attack": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "attack": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "attack": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "attack": 4
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "The Horde Never Dies",
+                    "description": "Deal 55 damage using For The Horde.",
+                    "quote": "I must bring peace to these war-torn lands. Will you stand with me, friend?"
+                },
+                {
+                    "name": "Power of the Horde",
+                    "description": "Deal 70 damage using Lightning Storm.",
+                    "quote": "Lok'tar."
+                },
+                {
+                    "name": "I Command It",
+                    "description": "Deal 95 damage using Warchief's Command.",
+                    "quote": "Elements guide you."
+                },
+                {
+                    "name": "Spirits Are Restless",
+                    "description": "Deal 150 damage.",
+                    "quote": "How much can we accomplish if we work together?"
+                },
+                {
+                    "name": "Quake With Fear",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "This place.. is fascinating."
+                },
+                {
+                    "name": "Doomhammer's Fury",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Simple does not mean easy."
+                },
+                {
+                    "name": "Elements Rise!",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "For Doomhammer!"
+                },
+                {
+                    "name": "Elements Guide Me",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "None will stand in our way."
+                },
+                {
+                    "name": "For the Horde",
+                    "description": "Gain 135 Attack using For The Horde.",
+                    "quote": "Our coming will be like thunder from the sky."
+                },
+                {
+                    "name": "Power of the Elements",
+                    "description": "Deal 450 Nature Damage with a team that includes this Mercenary.",
+                    "quote": "Ancestors watch over you."
+                },
+                {
+                    "name": "Earth, Wind, and Fire!",
+                    "description": "Deal 450 damage.",
+                    "quote": "Lok'tar."
+                },
+                {
+                    "name": "All According to Plan",
+                    "description": "Deal 450 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "Elements guide you."
+                },
+                {
+                    "name": "Watch Your Back",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "How much can we accomplish if we work together?"
+                },
+                {
+                    "name": "Glory to the Horde",
+                    "description": "Gain 15 Attack using For The Horde.",
+                    "quote": "Simple does not mean easy."
+                },
+                {
+                    "name": "Now Its My Turn",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "This place.. is fascinating."
+                },
+                {
+                    "name": "Elements Guide You",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Ancestors watch over you."
+                },
+                {
+                    "name": "I Feel Stronger",
+                    "description": "Deal 900 damage with Orcs with a team that includes this Mercenary.",
+                    "quote": "None will stand in our way."
+                },
+                {
+                    "name": "I Am the Storm",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Our coming will be like thunder from the sky."
+                }
+            ]
         }
     }
 }

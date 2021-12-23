@@ -707,7 +707,7 @@
         "The Lich King": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 0,
             "itemEquipped": "Void Treads",
             "abilities": {
                 "Frostbite": 5,
@@ -718,6 +718,22 @@
                 "Void Treads": 1,
                 "Helm of Domination": 4,
                 "Frostmourne": 4
+            }
+        },
+        "Thrall": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 1,
+            "itemEquipped": null,
+            "abilities": {
+                "For The Horde": 1,
+                "Lightning Storm": 2,
+                "Warchief's Command": 1
+            },
+            "equipment": {
+                "Ornate Warhorn": 1,
+                "Ring of Strength": 1,
+                "Doomhammer": 1
             }
         }
     }
