@@ -815,6 +815,22 @@
                 "Unnatural Smoke": 1,
                 "Shadow Dagger": 1
             }
+        },
+        "Varian Wrynn": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 5,
+            "itemEquipped": "War Banner",
+            "abilities": {
+                "Splitting Strike": 2,
+                "Heroic Leap": 4,
+                "Retaliation": 4
+            },
+            "equipment": {
+                "Bounding Boots": 1,
+                "War Banner": 2,
+                "Shalamayne": 1
+            }
         }
     }
 }

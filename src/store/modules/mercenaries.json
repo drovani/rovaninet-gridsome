@@ -16836,6 +16836,286 @@
                     "quote": "At last we can rest. Who knows, perhaps one day our paths will cross again?"
                 }
             ]
+        },
+        "Varian Wrynn": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 12,
+            "health": 78,
+            "abilities": {
+                "Splitting Strike": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Deathblow: Give your Humans +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Heroic Leap": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy. Your other Humans are permanently ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                "Retaliation": {
+                    "unlock": 15,
+                    "speed": 2,
+                    "description": "After an enemy Attacks this turn, Gain +{0} Attack and Attack it.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Bounding Boots": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Heroic Leap",
+                    "description": "Heroic Leap deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "War Banner": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Retaliation",
+                    "description": "Retaliation gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Shalamayne": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Attack",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "attack": 1
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "attack": 3
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "attack": 5
+                            }
+                        },
+                        {
+                            "description": 7,
+                            "modifier": {
+                                "attack": 7
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Strike Ahead",
+                    "description": "Deal 55 damage using Splitting Strike.",
+                    "quote": "All of us are tested in this life… some rise to the challenge and others fall before it."
+                },
+                {
+                    "name": "Heroic Leap",
+                    "description": "Deal 90 damage using Heroic Leap.",
+                    "quote": "These fools will not be so bold after a taste of my blade."
+                },
+                {
+                    "name": "For Stormwind",
+                    "description": "Attack 10 times with Retaliation.",
+                    "quote": "Fight righteously and earn respect."
+                },
+                {
+                    "name": "Fueled by the Arena",
+                    "description": "Deal 150 damage.",
+                    "quote": "We have a saying in Stormwind… \"serve with honor.\""
+                },
+                {
+                    "name": "Two Parts of One Soul",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Fate will prove what I am made of."
+                },
+                {
+                    "name": "Lo'Gosh",
+                    "description": "Destroy 40 minions.",
+                    "quote": "There's still more work ahead…"
+                },
+                {
+                    "name": "I have Defeated Worse",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I know I can achieve this."
+                },
+                {
+                    "name": "Protect the Alliance",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "Let valor be the answer to this."
+                },
+                {
+                    "name": "Bolster their Resolve",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I can bear this burden."
+                },
+                {
+                    "name": "Rally the Troops",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "I have witnessed great warriors in my day… but this is a task for the greatest among them."
+                },
+                {
+                    "name": "I Am Shalamayne",
+                    "description": "Deal 450 damage.",
+                    "quote": "These fools will not be so bold after a taste of my blade."
+                },
+                {
+                    "name": "Stormwind Needs Me",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Fight righteously and earn respect."
+                },
+                {
+                    "name": "Coin for our Coffers",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We have a saying in Stormwind… \"serve with honor.\""
+                },
+                {
+                    "name": "Break their Lines",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Fate will prove what I am made of."
+                },
+                {
+                    "name": "For the Lion",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "There's still more work ahead…"
+                },
+                {
+                    "name": "Quell Our Rage",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "I know I can achieve this."
+                },
+                {
+                    "name": "Stand Firm",
+                    "description": "Attack 30 times with Retaliation.",
+                    "quote": "Let valor be the answer to this."
+                },
+                {
+                    "name": "Return to the Fight",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I can bear this burden."
+                }
+            ]
         }
     }
 }
