@@ -767,6 +767,118 @@
                 "Verdant Recurve": 2,
                 "Band of the Wilds": 4
             }
+        },
+        "Uther": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 1,
+            "itemEquipped": "Lightbringer",
+            "abilities": {
+                "Hammer of Justice": 1,
+                "Blessing of Protection": 1,
+                "Avenging Wrath": 1
+            },
+            "equipment": {
+                "Lightbringer": 1,
+                "Gleaming Pauldrons": 1,
+                "Libram of Sacrifice": 3
+            }
+        },
+        "Varden Dawngrasp": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 7,
+            "itemEquipped": "Potion of Ice",
+            "abilities": {
+                "Flurry": 5,
+                "Cold Snap": 5,
+                "Ice Lance": 4
+            },
+            "equipment": {
+                "Chilling Amulet": 1,
+                "Potion of Ice": 2,
+                "Band of Frost": 2
+            }
+        },
+        "Valeera Sanguinar": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 1,
+            "itemEquipped": null,
+            "abilities": {
+                "Sinister Strike": 1,
+                "Ambush": 1,
+                "Fan of Knives": 1
+            },
+            "equipment": {
+                "Hidden Paths": 1,
+                "Unnatural Smoke": 1,
+                "Shadow Dagger": 1
+            }
+        },
+        "Varian Wrynn": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 5,
+            "itemEquipped": "War Banner",
+            "abilities": {
+                "Splitting Strike": 2,
+                "Heroic Leap": 4,
+                "Retaliation": 4
+            },
+            "equipment": {
+                "Bounding Boots": 1,
+                "War Banner": 2,
+                "Shalamayne": 1
+            }
+        },
+        "Vol'jin": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Static Seahorse",
+            "abilities": {
+                "Shadow Shock": 3,
+                "Shadow Surge": 5,
+                "Curse of Weakness": 3
+            },
+            "equipment": {
+                "Static Seahorse": 2,
+                "Glaive of Vol'jin": 2,
+                "Ring of Haste": 2
+            }
+        },
+        "War Master Voone": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "Dragon Rune Axe",
+            "abilities": {
+                "Axe Throw": 4,
+                "Fire Breath": 4,
+                "Evasive Wyrm": 4
+            },
+            "equipment": {
+                "Dragon Rune Axe": 2,
+                "Dragon's Mark": 2,
+                "Wyrm Claws": 1
+            }
+        },
+        "Xyrella": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 18,
+            "itemEquipped": "Radiant Wand",
+            "abilities": {
+                "Blinding Luminance": 5,
+                "Flash Heal": 5,
+                "Atonement": 5
+            },
+            "equipment": {
+                "Robes of Purity": 4,
+                "Radiant Wand": 4,
+                "Shard of the Naaru": 4
+            }
         }
     }
 }

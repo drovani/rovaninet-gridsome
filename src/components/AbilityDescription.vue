@@ -30,17 +30,18 @@ export default {
             let itemMod = this.itemEquippedTier?.modifier?.description;
             let abilityDesc = this.activeTierInfo?.description;
 
-            console.debug({
+            /* console.debug({
                 desc,
                 itemMod,
                 abilityDesc,
-            });
+            }); */
 
             if (itemMod?.type === "replace") {
                 desc = itemMod.text;
                 itemMod = itemMod.value;
             } else if (itemMod?.type === "append") {
-                desc = `${desc} ${itemMod.text}`;
+                const space = itemMod.text[0] === "," ? "" : " ";
+                desc = `${desc}${space}${itemMod.text}`;
                 itemMod = itemMod.value;
             } else if (itemMod?.type === "prepend") {
                 desc = `${itemMod.text} ${desc}`;

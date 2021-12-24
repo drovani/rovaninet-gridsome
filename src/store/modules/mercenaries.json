@@ -15687,6 +15687,2427 @@
                     "quote": "I heed the voice of Elune."
                 }
             ]
+        },
+        "Uther": {
+            "race": "Human",
+            "rarity": "Legendary",
+            "role": "Caster",
+            "attack": 10,
+            "health": 77,
+            "abilities": {
+                "Hammer of Justice": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to a character. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                "Blessing of Protection": {
+                    "unlock": 5,
+                    "speed": 3,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health to a friendly character and give them Taunt this turn.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Avenging Wrath": {
+                    "unlock": 15,
+                    "speed": 8,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to a random enemy. Repeat for each Holy ability you've cast this turn.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 12
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Lightbringer": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Hammer of Justice",
+                    "description": "Hammer of Justice deals {0} more damage and slows the target by ({0}) Speed more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Gleaming Pauldrons": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Avenging Wrath",
+                    "description": "Avenging Wrath deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Libram of Sacrifice": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Deathrattle: Give {your characters} Divine Shield.",
+                    "tiers": [
+                        {
+                            "description": "another friendly Merc"
+                        },
+                        {}
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Hammer of Justice",
+                    "description": "Deal 55 damage using Hammer of Justice.",
+                    "quote": "Well met, mercenary. Would you commit yourself to a higher cause to aid me?"
+                },
+                {
+                    "name": "Empowered by Light",
+                    "description": "Restore 50 Health using Blessing of Protection.",
+                    "quote": "Every decision bears consequences."
+                },
+                {
+                    "name": "Avenging Wrath",
+                    "description": "Deal 70 damage using Avenging Wrath.",
+                    "quote": "We shall do this for Lordaeron!"
+                },
+                {
+                    "name": "For Lordaeron",
+                    "description": "Deal 150 damage.",
+                    "quote": "The Light will guide us to victory."
+                },
+                {
+                    "name": "The Light is a Shield",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "No evil shall escape my sight."
+                },
+                {
+                    "name": "The Light Conquers All",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Faith is my shield."
+                },
+                {
+                    "name": "Soldier of the Alliance",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "The time has come."
+                },
+                {
+                    "name": "Light Bless You",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Honor guides me."
+                },
+                {
+                    "name": "By My Honor",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Remain vigilant."
+                },
+                {
+                    "name": "Defender of Lordaeron",
+                    "description": "Decrease the speed of enemy abilities by 45.",
+                    "quote": "Be mindful of your thoughts."
+                },
+                {
+                    "name": "Justice has Come",
+                    "description": "Deal 450 damage.",
+                    "quote": "Every decision bears consequences."
+                },
+                {
+                    "name": "Lightbringer",
+                    "description": "Destroy three enemies in one turn using Avenging Wrath 8 times.",
+                    "quote": "We shall do this for Lordaeron!"
+                },
+                {
+                    "name": "For the Silver Hand",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "The Light will guide us to victory."
+                },
+                {
+                    "name": "Illuminating Charge",
+                    "description": "Deal 240 damage using Hammer of Justice.",
+                    "quote": "Be mindful of your thoughts."
+                },
+                {
+                    "name": "Defend the Realm",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "No evil shall escape my sight."
+                },
+                {
+                    "name": "Experience Guides Me",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "The time has come."
+                },
+                {
+                    "name": "Twice the Light",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Remain vigilant."
+                },
+                {
+                    "name": "Champion of Light",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Faith is my shield."
+                }
+            ]
+        },
+        "Varden Dawngrasp": {
+            "race": "Blood Elf",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 6,
+            "health": 75,
+            "abilities": {
+                "Flurry": {
+                    "unlock": 1,
+                    "speed": 5,
+                    "spell_school": "Frost",
+                    "description": "Deal {0} damage to {a} random enemy Merc{s}. They are ({0}) Speed slower next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                null,
+                                "",
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                "2",
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                "3",
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                "3",
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                "3",
+                                null,
+                                2
+                            ]
+                        }
+                    ]
+                },
+                "Cold Snap": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Frost",
+                    "description": "Deal {0} damage to all enemies. Deathblow: Freeze all enemies.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Ice Lance": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 2,
+                    "spell_school": "Frost",
+                    "description": "Freeze a character this turn. If it was already Frozen, deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 15
+                        },
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 23
+                        },
+                        {
+                            "description": 25
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Chilling Amulet": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Deathrattle: Deal {0} damage to all enemies. Freeze a random enemy until the end of next turn.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Potion of Ice": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Flurry",
+                    "description": "Flurry deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Band of Frost": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "description": "Passive: After you Freeze an enemy, gain +{0} Frost Damage.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Flurry of Ice",
+                    "description": "Deal 40 damage using Flurry.",
+                    "quote": "I cannot say that things have gone according to plan for me…"
+                },
+                {
+                    "name": "Cold Snap",
+                    "description": "Deal 70 damage using Cold Snap.",
+                    "quote": "Let's perform some field studies."
+                },
+                {
+                    "name": "Frosty Wrath",
+                    "description": "Deal 70 damage.",
+                    "quote": "Let's see how well they freeze. For, uh, academic purposes."
+                },
+                {
+                    "name": "A Minor in Ecology",
+                    "description": "Deal 150 damage.",
+                    "quote": "I need to know more about these ones. Like how flammable they are."
+                },
+                {
+                    "name": "Graduate Studies",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "No need to be shy. Go start a fight--they like that!"
+                },
+                {
+                    "name": "The Study of Magic",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I'm afraid these ones have gone completely out of control. Help me rein them in."
+                },
+                {
+                    "name": "Advanced Studies",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "As I improve, I'll need to explore more… advanced opportunities."
+                },
+                {
+                    "name": "Field Studies",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I think you can handle this. As long as I'm with you, that is."
+                },
+                {
+                    "name": "Academic Integrity",
+                    "description": "Deal 200 damage using Ice Lance.",
+                    "quote": "Let's see how well they freeze. For, uh, academic purposes."
+                },
+                {
+                    "name": "Modulating Temperature",
+                    "description": "Freeze 30 enemies.",
+                    "quote": "I never thought I'd find myself here facing something like this."
+                },
+                {
+                    "name": "Frostbite",
+                    "description": "Deal 450 damage.",
+                    "quote": "Let's perform some field studies."
+                },
+                {
+                    "name": "Adjacent Impact",
+                    "description": "Destroy two enemies in one turn using Flurry 15 times.",
+                    "quote": "I think you can handle this. As long as I'm with you, that is."
+                },
+                {
+                    "name": "Larger Tests Necessary",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I need to know more about these ones. Like how flammable they are."
+                },
+                {
+                    "name": "More Ice Please",
+                    "description": "Deal 900 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "I'm afraid these ones have gone completely out of control. Help me rein them in."
+                },
+                {
+                    "name": "Paying for Tuition",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "No need to be shy. Go start a fight--they like that!"
+                },
+                {
+                    "name": "Researching Weaknesses",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "As I improve, I'll need to explore more… advanced opportunities."
+                },
+                {
+                    "name": "Subzero",
+                    "description": "Deal 900 Frost Damage with a team that includes this Mercenary.",
+                    "quote": "Let's see how well they freeze. For, uh, academic purposes."
+                },
+                {
+                    "name": "Frost Mage Varden",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Yes, there are a lot, but we can take care of them!"
+                }
+            ]
+        },
+        "Valeera Sanguinar": {
+            "race": "Blood Elf",
+            "rarity": "Legendary",
+            "role": "Fighter",
+            "attack": 12,
+            "health": 68,
+            "abilities": {
+                "Sinister Strike": {
+                    "unlock": 1,
+                    "speed": 3,
+                    "description": "Gain +{0} Attack this turn and Attack the lowest Health enemy. Combo: Gain Stealth.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Ambush": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "description": "Deal {0} damage. If this Merc was Stealthed deal {0} instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                5
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                25
+                            ]
+                        }
+                    ]
+                },
+                "Fan of Knives": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "description": "Deal {0} damage to all enemies. Your other Mercs are ({0}) Speed faster next turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Hidden Paths": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: Whenever a friendly character loses Stealth, give them +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        }
+                    ]
+                },
+                "Unnatural Smoke": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "description": "Passive: While this Merc has Stealth, friendly characters are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                },
+                "Shadow Dagger": {
+                    "unlock": "Task 7",
+                    "position": "left",
+                    "affects": "Ambush",
+                    "description": "Ambush {is (1) Speed faster and} gains \"Deathblow: Gain Stealth.\"",
+                    "tiers": [
+                        {
+                            "description": "",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                }
+                            }
+                        },
+                        {
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": "is (2) Speed faster and",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": "is (3) Speed faster and",
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "Deathblow: Gain Stealth."
+                                },
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Poisons are Powerful",
+                    "description": "Gain 100 Attack using Sinister Strike.",
+                    "quote": "They'll never see us coming."
+                },
+                {
+                    "name": "Slice and Dice",
+                    "description": "Deal 55 damage using Sinister Strike.",
+                    "quote": "Get your blades ready. There are a whole lot of enemies lurking around here."
+                },
+                {
+                    "name": "Down for the Count",
+                    "description": "Deal 70 damage using Ambush.",
+                    "quote": "Carve your own path."
+                },
+                {
+                    "name": "A Metal Meal",
+                    "description": "Deal 55 damage using Fan of Knives.",
+                    "quote": "My loyalties are my own."
+                },
+                {
+                    "name": "Out of Sight",
+                    "description": "Deal 150 damage.",
+                    "quote": "They'll never see us coming."
+                },
+                {
+                    "name": "Planning Ahead",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Always plan your next steps."
+                },
+                {
+                    "name": "Preparation",
+                    "description": "Destroy 40 enemies.",
+                    "quote": "Come prepared and nothing can surprise you."
+                },
+                {
+                    "name": "Gaps in the Armor",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "A moment of your attention."
+                },
+                {
+                    "name": "Training in the Pit",
+                    "description": "Use the Boon: Fighter coin 2 times.",
+                    "quote": "Good luck, mercenary."
+                },
+                {
+                    "name": "Sharpen our Blades",
+                    "description": "Destroy 75 enemies.",
+                    "quote": "Keep your blades sharp."
+                },
+                {
+                    "name": "A Simple Evisceration",
+                    "description": "Deal 240 damage using Sinister Strike.",
+                    "quote": "This is your chance to impress me."
+                },
+                {
+                    "name": "Carve Them Up",
+                    "description": "Deal 450 damage.",
+                    "quote": "Carve your own path."
+                },
+                {
+                    "name": "Big or Small, We Win",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Always plan your next steps."
+                },
+                {
+                    "name": "Envenomed Blades",
+                    "description": "Gain 150 Attack using Sinister Strike.",
+                    "quote": "Keep your blades sharp."
+                },
+                {
+                    "name": "Coins for Kills",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "My loyalties are my own."
+                },
+                {
+                    "name": "No Armor? No Problem",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "A moment of your attention."
+                },
+                {
+                    "name": "Knives for All",
+                    "description": "Deal 600 damage using Fan of Knives.",
+                    "quote": "Come prepared and nothing can surprise you."
+                },
+                {
+                    "name": "Remembering the Arena",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Good luck, Mercenary."
+                }
+            ]
+        },
+        "Vanessa VanCleef": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 9,
+            "health": 70,
+            "abilities": {
+                "Burgle Barrage": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Attack an enemy. {Combo: }Steal {0} Attack from them.",
+                    "tiers": [
+                        {
+                            "description": [
+                                null,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Makeshift Weaponry": {
+                    "unlock": 5,
+                    "speed": 9,
+                    "description": "Spend all stolen Attack to deal that much damage to all enemies. (0 currently.)",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -4
+                        },
+                        {
+                            "speed": -6
+                        }
+                    ]
+                },
+                "Shifting Satchel": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy. Give +{0} Cooldown to an ability they didn't use this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                6,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Extra Pockets": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Makeshift Weaponry",
+                    "description": "After using Makeshift Weaponry, this Merc keeps up to {0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Dreadblades": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Burgle Barrage",
+                    "description": "Burgle Barrage is ({0}) Speed faster and always Combos.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -4
+                            }
+                        }
+                    ]
+                },
+                "Blade Catcher": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever this Merc is Attacked steal {0} Attack from the Attacker.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Prelude to a Robbery",
+                    "description": "Deal 55 damage using Burgle Barrage.",
+                    "quote": "Well met, stranger. You think you got what it takes to survive in my world?"
+                },
+                {
+                    "name": "Cruel Man's Callous Daughter",
+                    "description": "Deal 120 damage using Makeshift Weaponry.",
+                    "quote": "Less talk, more action."
+                },
+                {
+                    "name": "Leave Them Guessing",
+                    "description": "Deal 45 damage using Shifting Satchel.",
+                    "quote": "Nothing will stand in our way."
+                },
+                {
+                    "name": "Line of Succession",
+                    "description": "Deal 150 damage.",
+                    "quote": "Send my regards."
+                },
+                {
+                    "name": "Slay the Competition",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Ready for trouble?"
+                },
+                {
+                    "name": "Cleaning House",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Make them... disappear."
+                },
+                {
+                    "name": "None Can Stand",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Let’s dance."
+                },
+                {
+                    "name": "Rogue's Respite",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Defy the odds."
+                },
+                {
+                    "name": "Disarm and Decapitate",
+                    "description": "Reduce an Enemy's Attack to 0 10 times.",
+                    "quote": "So many enemies, so little time."
+                },
+                {
+                    "name": "Blade in the Belly",
+                    "description": "Deal 180 damage using Burgle Barrage.",
+                    "quote": "I have a way of making my enemies disappear."
+                },
+                {
+                    "name": "Callous Cruelty",
+                    "description": "Deal 450 damage.",
+                    "quote": "Less talk, more action."
+                },
+                {
+                    "name": "Stolen Arsenal",
+                    "description": "Gain 50 Attack using Burgle Barrage.",
+                    "quote": "Nothing will stand in our way."
+                },
+                {
+                    "name": "On Defias Business",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Send my regards."
+                },
+                {
+                    "name": "Two Birds, One Blade",
+                    "description": "Destroy two enemies in one turn using Makeshift Weaponry 6 times.",
+                    "quote": "Ready for trouble?"
+                },
+                {
+                    "name": "Blade Boss",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Make them... disappear."
+                },
+                {
+                    "name": "Not Like Other Rogues",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Let’s dance."
+                },
+                {
+                    "name": "No One Was Using It",
+                    "description": "Gain 70 Attack using Burgle Barrage.",
+                    "quote": "Defy the odds."
+                },
+                {
+                    "name": "Father's Pride",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "At last we can rest. Who knows, perhaps one day our paths will cross again?"
+                }
+            ]
+        },
+        "Varian Wrynn": {
+            "race": "Human",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 12,
+            "health": 78,
+            "abilities": {
+                "Splitting Strike": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "description": "Attack an enemy. Deathblow: Give your Humans +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Heroic Leap": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy. Your other Humans are permanently ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                "Retaliation": {
+                    "unlock": 15,
+                    "speed": 2,
+                    "description": "After an enemy Attacks this turn, Gain +{0} Attack and Attack it.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Bounding Boots": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Heroic Leap",
+                    "description": "Heroic Leap deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "War Banner": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Retaliation",
+                    "description": "Retaliation gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Shalamayne": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: +{0} Attack",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "attack": 1
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "attack": 3
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "attack": 5
+                            }
+                        },
+                        {
+                            "description": 7,
+                            "modifier": {
+                                "attack": 7
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Strike Ahead",
+                    "description": "Deal 55 damage using Splitting Strike.",
+                    "quote": "All of us are tested in this life… some rise to the challenge and others fall before it."
+                },
+                {
+                    "name": "Heroic Leap",
+                    "description": "Deal 90 damage using Heroic Leap.",
+                    "quote": "These fools will not be so bold after a taste of my blade."
+                },
+                {
+                    "name": "For Stormwind",
+                    "description": "Attack 10 times with Retaliation.",
+                    "quote": "Fight righteously and earn respect."
+                },
+                {
+                    "name": "Fueled by the Arena",
+                    "description": "Deal 150 damage.",
+                    "quote": "We have a saying in Stormwind… \"serve with honor.\""
+                },
+                {
+                    "name": "Two Parts of One Soul",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Fate will prove what I am made of."
+                },
+                {
+                    "name": "Lo'Gosh",
+                    "description": "Destroy 40 minions.",
+                    "quote": "There's still more work ahead…"
+                },
+                {
+                    "name": "I have Defeated Worse",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I know I can achieve this."
+                },
+                {
+                    "name": "Protect the Alliance",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "Let valor be the answer to this."
+                },
+                {
+                    "name": "Bolster their Resolve",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I can bear this burden."
+                },
+                {
+                    "name": "Rally the Troops",
+                    "description": "Deal 450 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "I have witnessed great warriors in my day… but this is a task for the greatest among them."
+                },
+                {
+                    "name": "I Am Shalamayne",
+                    "description": "Deal 450 damage.",
+                    "quote": "These fools will not be so bold after a taste of my blade."
+                },
+                {
+                    "name": "Stormwind Needs Me",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "Fight righteously and earn respect."
+                },
+                {
+                    "name": "Coin for our Coffers",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We have a saying in Stormwind… \"serve with honor.\""
+                },
+                {
+                    "name": "Break their Lines",
+                    "description": "Deal 900 damage with Humans with a team that includes this Mercenary.",
+                    "quote": "Fate will prove what I am made of."
+                },
+                {
+                    "name": "For the Lion",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "There's still more work ahead…"
+                },
+                {
+                    "name": "Quell Our Rage",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "I know I can achieve this."
+                },
+                {
+                    "name": "Stand Firm",
+                    "description": "Attack 30 times with Retaliation.",
+                    "quote": "Let valor be the answer to this."
+                },
+                {
+                    "name": "Return to the Fight",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I can bear this burden."
+                }
+            ]
+        },
+        "Vol'jin": {
+            "race": "Troll",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 5,
+            "health": 65,
+            "abilities": {
+                "Shadow Shock": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to an enemy. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Shadow Surge": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to all enemies. Shadow Combo: Deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Curse of Weakness": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Give all enemies +{0} Shadow Weakness this turn. Deal {0} damage to them.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                8
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Static Seahorse": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Shadow Shock",
+                    "description": "Shadow Shock deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Glaive of Vol'jin": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Shadow Surge",
+                    "description": "Shadow Surge deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Ring of Haste": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": [
+                        "Shadow Shock",
+                        "Shadow Surge",
+                        "Curse of Weakness"
+                    ],
+                    "description": "Passive: Your Shadow abilities are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Shadow Shock",
+                    "description": "Deal 55 damage using Shadow Shock.",
+                    "quote": "Da Darkspear be needin' da help of ol' Vol'jin, and I can't be lettin' dem down."
+                },
+                {
+                    "name": "Shadow Surge",
+                    "description": "Deal 145 damage using Shadow Surge.",
+                    "quote": "I must put dese ones to rest."
+                },
+                {
+                    "name": "Curse of Weakness",
+                    "description": "Deal 30 damage using Curse of Weakness.",
+                    "quote": "Nobody said shadow hunter training was easy."
+                },
+                {
+                    "name": "For the Darkspear",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will show da strength of my will."
+                },
+                {
+                    "name": "Too Much Mischief",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Dese ones be causin' too much mischief."
+                },
+                {
+                    "name": "Prove to be a Hero",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I be provin' myself a worthy hero. But I still wanna do more."
+                },
+                {
+                    "name": "Challenge of Shadows",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Da spirits will be praisin' me if I can handle dis one."
+                },
+                {
+                    "name": "The Dark Spirits",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I know dis can be tough, but I'm not de type to give up."
+                },
+                {
+                    "name": "Strengthen the Shock",
+                    "description": "Deal 225 damage using Shadow Shock.",
+                    "quote": "Ol' Vol'jin be feelin' like he can be relied on now."
+                },
+                {
+                    "name": "Destroy their Spirit",
+                    "description": "Deal 450 damage.",
+                    "quote": "Better watch my back on dis one."
+                },
+                {
+                    "name": "Practice my Shadows",
+                    "description": "Deal 450 Shadow Damage with a team that includes this Mercenary.",
+                    "quote": "Da Darkspear be needin' da help of ol' Vol'jin, and I can't be lettin' dem down."
+                },
+                {
+                    "name": "Subdue the Spirits",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I must put dese ones to rest."
+                },
+                {
+                    "name": "Will of Vol'jin",
+                    "description": "Trigger Shadow Combo with Shadow Surge 30 times",
+                    "quote": "Nobody said shadow hunter training was easy."
+                },
+                {
+                    "name": "Shadow Hunter Training",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I will show da strength of my will."
+                },
+                {
+                    "name": "More Mischief",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Dese ones be causin' too much mischief."
+                },
+                {
+                    "name": "Curse their Spirit",
+                    "description": "Deal 900 Shadow Damage with a team that includes this Mercenary.",
+                    "quote": "I be provin' myself a worthy hero. But I still wanna do more."
+                },
+                {
+                    "name": "I am the Shadow Hunter",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Da spirits will be praisin' me if I can handle dis one."
+                },
+                {
+                    "name": "Strong Shadow Magic",
+                    "description": "Deal 30 or more damage in one turn using Shadow Surge 15 times.",
+                    "quote": "Better watch my back on dis one."
+                }
+            ]
+        },
+        "War Master Voone": {
+            "race": "Troll",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 8,
+            "health": 77,
+            "abilities": {
+                "Axe Throw": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Deal {0} to an enemy and one of its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Fire Breath": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage. Repeat for each Dragon you control.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Evasive Wyrm": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Evasive Wyrm",
+                        "description": "Divine Shield, Rush",
+                        "race": "Dragon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 14,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 18,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 19,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 20,
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dragon Rune Axe": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: After a friendly Dragon Attacks an enemy, deal {0} damage to the enemy.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Dragon's Mark": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Fire Breath",
+                    "description": "Fire Breath deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Wyrm Claws": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Evasive Wyrm",
+                    "description": "Evansive Wyrm has +{0} Attack and Windfury",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 2,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 3,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 5,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "You Want Axe?",
+                    "description": "Deal 110 damage using Axe Throw.",
+                    "quote": "Many ask how you become a war master, but that be somethin' you cannot tell."
+                },
+                {
+                    "name": "Fire Breather",
+                    "description": "Deal 90 damage using Fire Breath.",
+                    "quote": "The petty enemies will come first. Let's show dem what we got."
+                },
+                {
+                    "name": "Warmaster's Wyrms",
+                    "description": "Summon a Evasive Wyrm 12 times.",
+                    "quote": "If they give us any trouble, beat them like a drum!"
+                },
+                {
+                    "name": "Fear the Warmaster",
+                    "description": "Deal 150 damage.",
+                    "quote": "Of course, dis would be a lot easier if I had a giant rhino with me."
+                },
+                {
+                    "name": "Working the Bounties",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "If I do da work, I get the reward!"
+                },
+                {
+                    "name": "Memories of the Arena",
+                    "description": "Destroy 40 minions.",
+                    "quote": "When my enemies scream, it's almost like when a crowd screams in a arena…"
+                },
+                {
+                    "name": "Minor Bump in the Road",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I will make them pay for their trespasses!"
+                },
+                {
+                    "name": "My Loa Protects Me",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "A few more like this, and I'll be ready for the the arena."
+                },
+                {
+                    "name": "Smolderthorn Will Win",
+                    "description": "Repeat Fire Breath 10 times.",
+                    "quote": "I be ready for somethin' tricky now…"
+                },
+                {
+                    "name": "Mosh'aru's Prophecy",
+                    "description": "Deal 180 damage using Axe Throw.",
+                    "quote": "One more thing..."
+                },
+                {
+                    "name": "Always an Underdog",
+                    "description": "Deal 450 damage.",
+                    "quote": "The petty enemies will come first. Let's show dem what we got."
+                },
+                {
+                    "name": "They Want Axe",
+                    "description": "Destroy two enemies in one turn using Axe Throw 15 times.",
+                    "quote": "Of course, dis would be a lot easier if I had a giant rhino with me."
+                },
+                {
+                    "name": "Beating the Odds",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "If they give us any trouble, beat them like a drum!"
+                },
+                {
+                    "name": "Working the Wyrms",
+                    "description": "Deal 490 damage using Evasive Wyrm.",
+                    "quote": "When my enemies scream, it's almost like when a crowd screams in a arena…"
+                },
+                {
+                    "name": "Coin for Akali",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "A few more like this, and I'll be ready for the the arena."
+                },
+                {
+                    "name": "Warmaster's Strength",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "I will make them pay for their trespasses!"
+                },
+                {
+                    "name": "Axes and Allies",
+                    "description": "Deal 980 damage to adjacent enemies using Axe Throw.",
+                    "quote": "I be ready for somethin' tricky now…"
+                },
+                {
+                    "name": "Sacrifices for Akali",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "If I do da work, I get the reward!"
+                }
+            ]
+        },
+        "Xyrella": {
+            "race": "Draenei",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 68,
+            "abilities": {
+                "Blinding Luminance": {
+                    "unlock": 1,
+                    "speed": 3,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to an enemy and give it -{0} Attack this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                "Flash Heal": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                },
+                "Atonement": {
+                    "unlock": 15,
+                    "speed": 9,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage. +{0} damage each time you restore {0} Health. ({0} remaining.)",
+                    "tiers": [
+                        {
+                            "description": [
+                                9,
+                                1,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                1,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                2,
+                                30,
+                                30
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                2,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                3,
+                                20,
+                                20
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Robes of Purity": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Atonement",
+                    "description": "Atonement requires {0} less healing to upgrade.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -2,
+                                    -2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -3,
+                                    -3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -4,
+                                    -4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -5,
+                                    -5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Radiant Wand": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Blinding Luminance",
+                    "description": "Blinding Luminance deals {0} more damage and gives -{0} Attack more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Shard of the Naaru": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Flash Heal",
+                    "description": "Flash Heal restores {0} more Health, but has ({0}) Cooldown.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 5,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                10,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 10,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                15,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 15,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                20,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 20,
+                                "cooldown": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Blinded by Light",
+                    "description": "Deal 35 damage using Blinding Luminance.",
+                    "quote": "So long as my precious daughter is ill, I cannot rest. I must search these lands for the means to cure her."
+                },
+                {
+                    "name": "Healing Light",
+                    "description": "Restore 90 Health using Flash Heal.",
+                    "quote": "These fiends must fall."
+                },
+                {
+                    "name": "Atone for your Errors",
+                    "description": "Deal 120 damage using Atonement.",
+                    "quote": "If we work together, it will go by quickly."
+                },
+                {
+                    "name": "Clear the Path",
+                    "description": "Deal 150 damage.",
+                    "quote": "We must clear out more foes to continue the search."
+                },
+                {
+                    "name": "Wicked Ways",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "If only there were not so many wicked things in these lands…"
+                },
+                {
+                    "name": "Foresee the Path",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I feel like I am getting closer to what I have foreseen, but first I must face this."
+                },
+                {
+                    "name": "The Next Step",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Everything is coming to pass just as I thought. This is the next step."
+                },
+                {
+                    "name": "Augment our Power",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "With our combined might, we can do it."
+                },
+                {
+                    "name": "Enfeeblement",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I must request your aid once more."
+                },
+                {
+                    "name": "The Light Burns",
+                    "description": "Deal 150 damage using Blinding Luminance.",
+                    "quote": "I have seen the way forward. It will take all of our strength."
+                },
+                {
+                    "name": "Another Step",
+                    "description": "Deal 450 damage.",
+                    "quote": "Everything is coming to pass just as I thought. This is the next step."
+                },
+                {
+                    "name": "Coordination of Light",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "If we work together, it will go by quickly."
+                },
+                {
+                    "name": "The Light Guides Us",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We must clear out more foes to continue the search."
+                },
+                {
+                    "name": "Blessings of Light",
+                    "description": "Restore 450 Health using Flash Heal.",
+                    "quote": "With our combined might, we can do it."
+                },
+                {
+                    "name": "Prove my Conviction",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I feel like I am getting closer to what I have foreseen, but first I must face this."
+                },
+                {
+                    "name": "Weak to the Light",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "These fiends must fall."
+                },
+                {
+                    "name": "They Must Atone!",
+                    "description": "Deal 900 damage using Atonement.",
+                    "quote": "If only there were not so many wicked things in these lands…"
+                },
+                {
+                    "name": "The Arduous Journey",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I must request your aid once more."
+                }
+            ]
         }
     }
 }

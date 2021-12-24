@@ -63,27 +63,26 @@ export default {
         },
         description() {
             let desc = this.item.description;
+
             if (this.item.tiers instanceof Array) {
-                const regex = new RegExp(/\{(\w+)\}/, "g");
-                const matches = [...this.item.description.matchAll(regex)];
+                let tierDesc = Array.isArray(this.activeTierInfo.description)
+                    ? this.activeTierInfo.description
+                    : [this.activeTierInfo.description];
+
+                console.debug(tierDesc);
+
+                const regex = new RegExp(/\{([\w \(\)]+)\}/, "g");
+                const matches = [...desc.matchAll(regex)];
                 for (let i = 0; i < matches.length; i++) {
                     if (isFinite(matches[i][1])) {
                         // Found {0}
                         const baseValue = Number(matches[i][1]);
-                        const tierValue = Number(
-                            this.activeTierInfo.description instanceof Array
-                                ? this.activeTierInfo.description[i]
-                                : this.activeTierInfo.description
-                        );
+                        const tierValue = Number(tierDesc[i]) || 0;
+
                         desc = desc.replace(matches[i][0], baseValue + tierValue);
-                    } else {
+                    } else if (tierDesc[i] != undefined && tierDesc[i] != null) {
                         // Found {string}
-                        desc = desc.replace(
-                            matches[i][0],
-                            this.activeTierInfo.description instanceof Array
-                                ? this.activeTierInfo.description[i]
-                                : this.activeTierInfo.description
-                        );
+                        desc = desc.replace(matches[i][0], tierDesc[i]);
                     }
                 }
             }
