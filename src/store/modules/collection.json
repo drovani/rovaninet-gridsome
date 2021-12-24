@@ -863,6 +863,22 @@
                 "Dragon's Mark": 2,
                 "Wyrm Claws": 1
             }
+        },
+        "Xyrella": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 18,
+            "itemEquipped": "Radiant Wand",
+            "abilities": {
+                "Blinding Luminance": 5,
+                "Flash Heal": 5,
+                "Atonement": 5
+            },
+            "equipment": {
+                "Robes of Purity": 4,
+                "Radiant Wand": 4,
+                "Shard of the Naaru": 4
+            }
         }
     }
 }

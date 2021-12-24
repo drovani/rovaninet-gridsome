@@ -17739,6 +17739,375 @@
                     "quote": "If I do da work, I get the reward!"
                 }
             ]
+        },
+        "Xyrella": {
+            "race": "Draenei",
+            "rarity": "Rare",
+            "role": "Caster",
+            "attack": 5,
+            "health": 68,
+            "abilities": {
+                "Blinding Luminance": {
+                    "unlock": 1,
+                    "speed": 3,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage to an enemy and give it -{0} Attack this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                "Flash Heal": {
+                    "unlock": 5,
+                    "speed": 4,
+                    "spell_school": "Holy",
+                    "description": "Restore {0} Health.",
+                    "tiers": [
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 13
+                        },
+                        {
+                            "description": 14
+                        },
+                        {
+                            "description": 15
+                        }
+                    ]
+                },
+                "Atonement": {
+                    "unlock": 15,
+                    "speed": 9,
+                    "cooldown": 1,
+                    "spell_school": "Holy",
+                    "description": "Deal {0} damage. +{0} damage each time you restore {0} Health. ({0} remaining.)",
+                    "tiers": [
+                        {
+                            "description": [
+                                9,
+                                1,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                1,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                13,
+                                2,
+                                30,
+                                30
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                2,
+                                20,
+                                20
+                            ]
+                        },
+                        {
+                            "description": [
+                                15,
+                                3,
+                                20,
+                                20
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Robes of Purity": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "affects": "Atonement",
+                    "description": "Atonement requires {0} less healing to upgrade.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -2,
+                                    -2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -3,
+                                    -3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -4,
+                                    -4
+                                ]
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": [
+                                    0,
+                                    0,
+                                    -5,
+                                    -5
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Radiant Wand": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Blinding Luminance",
+                    "description": "Blinding Luminance deals {0} more damage and gives -{0} Attack more.",
+                    "tiers": [
+                        {
+                            "description": [
+                                1,
+                                1
+                            ],
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                2,
+                                2
+                            ],
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                3,
+                                3
+                            ],
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": [
+                                4,
+                                4
+                            ],
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Shard of the Naaru": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Flash Heal",
+                    "description": "Flash Heal restores {0} more Health, but has ({0}) Cooldown.",
+                    "tiers": [
+                        {
+                            "description": [
+                                5,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 5,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                10,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 10,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                15,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 15,
+                                "cooldown": 1
+                            }
+                        },
+                        {
+                            "description": [
+                                20,
+                                1
+                            ],
+                            "modifier": {
+                                "description": 20,
+                                "cooldown": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Blinded by Light",
+                    "description": "Deal 35 damage using Blinding Luminance.",
+                    "quote": "So long as my precious daughter is ill, I cannot rest. I must search these lands for the means to cure her."
+                },
+                {
+                    "name": "Healing Light",
+                    "description": "Restore 90 Health using Flash Heal.",
+                    "quote": "These fiends must fall."
+                },
+                {
+                    "name": "Atone for your Errors",
+                    "description": "Deal 120 damage using Atonement.",
+                    "quote": "If we work together, it will go by quickly."
+                },
+                {
+                    "name": "Clear the Path",
+                    "description": "Deal 150 damage.",
+                    "quote": "We must clear out more foes to continue the search."
+                },
+                {
+                    "name": "Wicked Ways",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "If only there were not so many wicked things in these lands…"
+                },
+                {
+                    "name": "Foresee the Path",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I feel like I am getting closer to what I have foreseen, but first I must face this."
+                },
+                {
+                    "name": "The Next Step",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Everything is coming to pass just as I thought. This is the next step."
+                },
+                {
+                    "name": "Augment our Power",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "With our combined might, we can do it."
+                },
+                {
+                    "name": "Enfeeblement",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "I must request your aid once more."
+                },
+                {
+                    "name": "The Light Burns",
+                    "description": "Deal 150 damage using Blinding Luminance.",
+                    "quote": "I have seen the way forward. It will take all of our strength."
+                },
+                {
+                    "name": "Another Step",
+                    "description": "Deal 450 damage.",
+                    "quote": "Everything is coming to pass just as I thought. This is the next step."
+                },
+                {
+                    "name": "Coordination of Light",
+                    "description": "Deal 450 Holy Damage with a team that includes this Mercenary.",
+                    "quote": "If we work together, it will go by quickly."
+                },
+                {
+                    "name": "The Light Guides Us",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "We must clear out more foes to continue the search."
+                },
+                {
+                    "name": "Blessings of Light",
+                    "description": "Restore 450 Health using Flash Heal.",
+                    "quote": "With our combined might, we can do it."
+                },
+                {
+                    "name": "Prove my Conviction",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I feel like I am getting closer to what I have foreseen, but first I must face this."
+                },
+                {
+                    "name": "Weak to the Light",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "These fiends must fall."
+                },
+                {
+                    "name": "They Must Atone!",
+                    "description": "Deal 900 damage using Atonement.",
+                    "quote": "If only there were not so many wicked things in these lands…"
+                },
+                {
+                    "name": "The Arduous Journey",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "I must request your aid once more."
+                }
+            ]
         }
     }
 }
