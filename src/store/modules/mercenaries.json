@@ -17441,6 +17441,304 @@
                     "quote": "Better watch my back on dis one."
                 }
             ]
+        },
+        "War Master Voone": {
+            "race": "Troll",
+            "rarity": "Epic",
+            "role": "Fighter",
+            "attack": 8,
+            "health": 77,
+            "abilities": {
+                "Axe Throw": {
+                    "unlock": 1,
+                    "speed": 4,
+                    "description": "Deal {0} to an enemy and one of its neighbors.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 8
+                        }
+                    ]
+                },
+                "Fire Breath": {
+                    "unlock": 5,
+                    "speed": 6,
+                    "cooldown": 1,
+                    "spell_school": "Fire",
+                    "description": "Deal {0} damage. Repeat for each Dragon you control.",
+                    "tiers": [
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 5
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 9
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Evasive Wyrm": {
+                    "unlock": 15,
+                    "speed": 7,
+                    "cooldown": 1,
+                    "summon": {
+                        "name": "Evasive Wyrm",
+                        "description": "Divine Shield, Rush",
+                        "race": "Dragon"
+                    },
+                    "tiers": [
+                        {
+                            "summon": {
+                                "attack": 10,
+                                "health": 4
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 14,
+                                "health": 6
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 18,
+                                "health": 8
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 19,
+                                "health": 9
+                            }
+                        },
+                        {
+                            "summon": {
+                                "attack": 20,
+                                "health": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Dragon Rune Axe": {
+                    "unlock": "Level 30",
+                    "position": "right",
+                    "description": "Passive: After a friendly Dragon Attacks an enemy, deal {0} damage to the enemy.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 6
+                        },
+                        {
+                            "description": 8
+                        },
+                        {
+                            "description": 10
+                        }
+                    ]
+                },
+                "Dragon's Mark": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Fire Breath",
+                    "description": "Fire Breath deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Wyrm Claws": {
+                    "unlock": "Task 7",
+                    "position": "middle",
+                    "affects": "Evasive Wyrm",
+                    "description": "Evansive Wyrm has +{0} Attack and Windfury",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 2,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 3,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 4,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "summon": {
+                                    "attack": 5,
+                                    "description": {
+                                        "type": "append",
+                                        "text": ", Windfury"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "You Want Axe?",
+                    "description": "Deal 110 damage using Axe Throw.",
+                    "quote": "Many ask how you become a war master, but that be somethin' you cannot tell."
+                },
+                {
+                    "name": "Fire Breather",
+                    "description": "Deal 90 damage using Fire Breath.",
+                    "quote": "The petty enemies will come first. Let's show dem what we got."
+                },
+                {
+                    "name": "Warmaster's Wyrms",
+                    "description": "Summon a Evasive Wyrm 12 times.",
+                    "quote": "If they give us any trouble, beat them like a drum!"
+                },
+                {
+                    "name": "Fear the Warmaster",
+                    "description": "Deal 150 damage.",
+                    "quote": "Of course, dis would be a lot easier if I had a giant rhino with me."
+                },
+                {
+                    "name": "Working the Bounties",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "If I do da work, I get the reward!"
+                },
+                {
+                    "name": "Memories of the Arena",
+                    "description": "Destroy 40 minions.",
+                    "quote": "When my enemies scream, it's almost like when a crowd screams in a arena…"
+                },
+                {
+                    "name": "Minor Bump in the Road",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "I will make them pay for their trespasses!"
+                },
+                {
+                    "name": "My Loa Protects Me",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "A few more like this, and I'll be ready for the the arena."
+                },
+                {
+                    "name": "Smolderthorn Will Win",
+                    "description": "Repeat Fire Breath 10 times.",
+                    "quote": "I be ready for somethin' tricky now…"
+                },
+                {
+                    "name": "Mosh'aru's Prophecy",
+                    "description": "Deal 180 damage using Axe Throw.",
+                    "quote": "One more thing..."
+                },
+                {
+                    "name": "Always an Underdog",
+                    "description": "Deal 450 damage.",
+                    "quote": "The petty enemies will come first. Let's show dem what we got."
+                },
+                {
+                    "name": "They Want Axe",
+                    "description": "Destroy two enemies in one turn using Axe Throw 15 times.",
+                    "quote": "Of course, dis would be a lot easier if I had a giant rhino with me."
+                },
+                {
+                    "name": "Beating the Odds",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "If they give us any trouble, beat them like a drum!"
+                },
+                {
+                    "name": "Working the Wyrms",
+                    "description": "Deal 490 damage using Evasive Wyrm.",
+                    "quote": "When my enemies scream, it's almost like when a crowd screams in a arena…"
+                },
+                {
+                    "name": "Coin for Akali",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "A few more like this, and I'll be ready for the the arena."
+                },
+                {
+                    "name": "Warmaster's Strength",
+                    "description": "Deal 900 damage to Casters.",
+                    "quote": "I will make them pay for their trespasses!"
+                },
+                {
+                    "name": "Axes and Allies",
+                    "description": "Deal 980 damage to adjacent enemies using Axe Throw.",
+                    "quote": "I be ready for somethin' tricky now…"
+                },
+                {
+                    "name": "Sacrifices for Akali",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "If I do da work, I get the reward!"
+                }
+            ]
         }
     }
 }

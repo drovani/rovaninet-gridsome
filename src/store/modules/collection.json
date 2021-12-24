@@ -847,6 +847,22 @@
                 "Glaive of Vol'jin": 2,
                 "Ring of Haste": 2
             }
+        },
+        "War Master Voone": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "Dragon Rune Axe",
+            "abilities": {
+                "Axe Throw": 4,
+                "Fire Breath": 4,
+                "Evasive Wyrm": 4
+            },
+            "equipment": {
+                "Dragon Rune Axe": 2,
+                "Dragon's Mark": 2,
+                "Wyrm Claws": 1
+            }
         }
     }
 }
