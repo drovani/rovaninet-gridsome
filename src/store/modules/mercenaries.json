@@ -16523,6 +16523,319 @@
                     "quote": "Good luck, Mercenary."
                 }
             ]
+        },
+        "Vanessa VanCleef": {
+            "race": "Pirate",
+            "rarity": "Epic",
+            "role": "Protector",
+            "attack": 9,
+            "health": 70,
+            "abilities": {
+                "Burgle Barrage": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Attack an enemy. {Combo: }Steal {0} Attack from them.",
+                    "tiers": [
+                        {
+                            "description": [
+                                null,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                null,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Makeshift Weaponry": {
+                    "unlock": 5,
+                    "speed": 9,
+                    "description": "Spend all stolen Attack to deal that much damage to all enemies. (0 currently.)",
+                    "tiers": [
+                        {},
+                        {
+                            "speed": -1
+                        },
+                        {
+                            "speed": -2
+                        },
+                        {
+                            "speed": -4
+                        },
+                        {
+                            "speed": -6
+                        }
+                    ]
+                },
+                "Shifting Satchel": {
+                    "unlock": 15,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "description": "Deal {0} damage to an enemy. Give +{0} Cooldown to an ability they didn't use this turn.",
+                    "tiers": [
+                        {
+                            "description": [
+                                6,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                14,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                16,
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Extra Pockets": {
+                    "unlock": "Level 30",
+                    "position": "middle",
+                    "affects": "Makeshift Weaponry",
+                    "description": "After using Makeshift Weaponry, this Merc keeps up to {0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 2
+                                }
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 4
+                                }
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": {
+                                    "type": "append",
+                                    "text": "This Merc keeps up to {0} Attack.",
+                                    "value": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Dreadblades": {
+                    "unlock": "Task 2",
+                    "position": "left",
+                    "affects": "Burgle Barrage",
+                    "description": "Burgle Barrage is ({0}) Speed faster and always Combos.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    "",
+                                    0
+                                ],
+                                "speed": -4
+                            }
+                        }
+                    ]
+                },
+                "Blade Catcher": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "description": "Passive: Whenever this Merc is Attacked steal {0} Attack from the Attacker.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2
+                        },
+                        {
+                            "description": 3
+                        },
+                        {
+                            "description": 4
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Prelude to a Robbery",
+                    "description": "Deal 55 damage using Burgle Barrage.",
+                    "quote": "Well met, stranger. You think you got what it takes to survive in my world?"
+                },
+                {
+                    "name": "Cruel Man's Callous Daughter",
+                    "description": "Deal 120 damage using Makeshift Weaponry.",
+                    "quote": "Less talk, more action."
+                },
+                {
+                    "name": "Leave Them Guessing",
+                    "description": "Deal 45 damage using Shifting Satchel.",
+                    "quote": "Nothing will stand in our way."
+                },
+                {
+                    "name": "Line of Succession",
+                    "description": "Deal 150 damage.",
+                    "quote": "Send my regards."
+                },
+                {
+                    "name": "Slay the Competition",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Ready for trouble?"
+                },
+                {
+                    "name": "Cleaning House",
+                    "description": "Destroy 40 minions.",
+                    "quote": "Make them... disappear."
+                },
+                {
+                    "name": "None Can Stand",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Let’s dance."
+                },
+                {
+                    "name": "Rogue's Respite",
+                    "description": "Use the Spirit Healer coin 4 times.",
+                    "quote": "Defy the odds."
+                },
+                {
+                    "name": "Disarm and Decapitate",
+                    "description": "Reduce an Enemy's Attack to 0 10 times.",
+                    "quote": "So many enemies, so little time."
+                },
+                {
+                    "name": "Blade in the Belly",
+                    "description": "Deal 180 damage using Burgle Barrage.",
+                    "quote": "I have a way of making my enemies disappear."
+                },
+                {
+                    "name": "Callous Cruelty",
+                    "description": "Deal 450 damage.",
+                    "quote": "Less talk, more action."
+                },
+                {
+                    "name": "Stolen Arsenal",
+                    "description": "Gain 50 Attack using Burgle Barrage.",
+                    "quote": "Nothing will stand in our way."
+                },
+                {
+                    "name": "On Defias Business",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "Send my regards."
+                },
+                {
+                    "name": "Two Birds, One Blade",
+                    "description": "Destroy two enemies in one turn using Makeshift Weaponry 6 times.",
+                    "quote": "Ready for trouble?"
+                },
+                {
+                    "name": "Blade Boss",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "Make them... disappear."
+                },
+                {
+                    "name": "Not Like Other Rogues",
+                    "description": "Deal 900 damage to Fighters.",
+                    "quote": "Let’s dance."
+                },
+                {
+                    "name": "No One Was Using It",
+                    "description": "Gain 70 Attack using Burgle Barrage.",
+                    "quote": "Defy the odds."
+                },
+                {
+                    "name": "Father's Pride",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "At last we can rest. Who knows, perhaps one day our paths will cross again?"
+                }
+            ]
         }
     }
 }
