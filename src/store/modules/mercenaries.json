@@ -17116,6 +17116,331 @@
                     "quote": "I can bear this burden."
                 }
             ]
+        },
+        "Vol'jin": {
+            "race": "Troll",
+            "rarity": "Epic",
+            "role": "Caster",
+            "attack": 5,
+            "health": 65,
+            "abilities": {
+                "Shadow Shock": {
+                    "unlock": 1,
+                    "speed": 6,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to an enemy. Its next ability is ({0}) Speed slower.",
+                    "tiers": [
+                        {
+                            "description": [
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "description": [
+                                7,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                3
+                            ]
+                        },
+                        {
+                            "description": [
+                                11,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                12,
+                                5
+                            ]
+                        }
+                    ]
+                },
+                "Shadow Surge": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Deal {0} damage to all enemies. Shadow Combo: Deal {0} damage instead.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                10
+                            ]
+                        },
+                        {
+                            "description": [
+                                8,
+                                14
+                            ]
+                        },
+                        {
+                            "description": [
+                                9,
+                                15
+                            ]
+                        },
+                        {
+                            "description": [
+                                10,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                "Curse of Weakness": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "spell_school": "Shadow",
+                    "description": "Give all enemies +{0} Shadow Weakness this turn. Deal {0} damage to them.",
+                    "tiers": [
+                        {
+                            "description": [
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "description": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "description": [
+                                4,
+                                6
+                            ]
+                        },
+                        {
+                            "description": [
+                                5,
+                                7
+                            ]
+                        },
+                        {
+                            "description": [
+                                6,
+                                8
+                            ]
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Static Seahorse": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Shadow Shock",
+                    "description": "Shadow Shock deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        },
+                        {
+                            "description": 5,
+                            "modifier": {
+                                "description": 5
+                            }
+                        }
+                    ]
+                },
+                "Glaive of Vol'jin": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Shadow Surge",
+                    "description": "Shadow Surge deal {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": [
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": [
+                                    4,
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Ring of Haste": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": [
+                        "Shadow Shock",
+                        "Shadow Surge",
+                        "Curse of Weakness"
+                    ],
+                    "description": "Passive: Your Shadow abilities are ({0}) Speed faster.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "speed": -1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "speed": -2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "speed": -3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Shadow Shock",
+                    "description": "Deal 55 damage using Shadow Shock.",
+                    "quote": "Da Darkspear be needin' da help of ol' Vol'jin, and I can't be lettin' dem down."
+                },
+                {
+                    "name": "Shadow Surge",
+                    "description": "Deal 145 damage using Shadow Surge.",
+                    "quote": "I must put dese ones to rest."
+                },
+                {
+                    "name": "Curse of Weakness",
+                    "description": "Deal 30 damage using Curse of Weakness.",
+                    "quote": "Nobody said shadow hunter training was easy."
+                },
+                {
+                    "name": "For the Darkspear",
+                    "description": "Deal 150 damage.",
+                    "quote": "I will show da strength of my will."
+                },
+                {
+                    "name": "Too Much Mischief",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "Dese ones be causin' too much mischief."
+                },
+                {
+                    "name": "Prove to be a Hero",
+                    "description": "Destroy 40 minions.",
+                    "quote": "I be provin' myself a worthy hero. But I still wanna do more."
+                },
+                {
+                    "name": "Challenge of Shadows",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "Da spirits will be praisin' me if I can handle dis one."
+                },
+                {
+                    "name": "The Dark Spirits",
+                    "description": "Use the Boon: Caster coin 2 times.",
+                    "quote": "I know dis can be tough, but I'm not de type to give up."
+                },
+                {
+                    "name": "Strengthen the Shock",
+                    "description": "Deal 225 damage using Shadow Shock.",
+                    "quote": "Ol' Vol'jin be feelin' like he can be relied on now."
+                },
+                {
+                    "name": "Destroy their Spirit",
+                    "description": "Deal 450 damage.",
+                    "quote": "Better watch my back on dis one."
+                },
+                {
+                    "name": "Practice my Shadows",
+                    "description": "Deal 450 Shadow Damage with a team that includes this Mercenary.",
+                    "quote": "Da Darkspear be needin' da help of ol' Vol'jin, and I can't be lettin' dem down."
+                },
+                {
+                    "name": "Subdue the Spirits",
+                    "description": "Complete 4 Heroic Bounties.",
+                    "quote": "I must put dese ones to rest."
+                },
+                {
+                    "name": "Will of Vol'jin",
+                    "description": "Trigger Shadow Combo with Shadow Surge 30 times",
+                    "quote": "Nobody said shadow hunter training was easy."
+                },
+                {
+                    "name": "Shadow Hunter Training",
+                    "description": "Complete 6 Bounties.",
+                    "quote": "I will show da strength of my will."
+                },
+                {
+                    "name": "More Mischief",
+                    "description": "Deal 900 damage to Protectors.",
+                    "quote": "Dese ones be causin' too much mischief."
+                },
+                {
+                    "name": "Curse their Spirit",
+                    "description": "Deal 900 Shadow Damage with a team that includes this Mercenary.",
+                    "quote": "I be provin' myself a worthy hero. But I still wanna do more."
+                },
+                {
+                    "name": "I am the Shadow Hunter",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "Da spirits will be praisin' me if I can handle dis one."
+                },
+                {
+                    "name": "Strong Shadow Magic",
+                    "description": "Deal 30 or more damage in one turn using Shadow Surge 15 times.",
+                    "quote": "Better watch my back on dis one."
+                }
+            ]
         }
     }
 }

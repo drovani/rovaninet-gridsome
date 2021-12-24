@@ -831,6 +831,22 @@
                 "War Banner": 2,
                 "Shalamayne": 1
             }
+        },
+        "Vol'jin": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 10,
+            "itemEquipped": "Static Seahorse",
+            "abilities": {
+                "Shadow Shock": 3,
+                "Shadow Surge": 5,
+                "Curse of Weakness": 3
+            },
+            "equipment": {
+                "Static Seahorse": 2,
+                "Glaive of Vol'jin": 2,
+                "Ring of Haste": 2
+            }
         }
     }
 }
