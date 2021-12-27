@@ -18108,6 +18108,291 @@
                     "quote": "I must request your aid once more."
                 }
             ]
+        },
+        "Trigore the Lasher": {
+            "race": "Beast",
+            "rarity": "Rare",
+            "role": "Protector",
+            "attack": 9,
+            "health": 75,
+            "abilities": {
+                "Frenzied Attack": {
+                    "unlock": 1,
+                    "speed": 7,
+                    "description": "Attack an enemy. If this took damage this turn, deal {0} damage to a random adjacent enemy.",
+                    "tiers": [
+                        {
+                            "description": 4
+                        },
+                        {
+                            "description": 7
+                        },
+                        {
+                            "description": 10
+                        },
+                        {
+                            "description": 11
+                        },
+                        {
+                            "description": 12
+                        }
+                    ]
+                },
+                "Backlash": {
+                    "unlock": 5,
+                    "speed": 5,
+                    "description": "Then next time an enemy damages an adjacent ally this turn, Gain +{0} Attack and deal this Merc's Attack damage to them.",
+                    "tiers": [
+                        {
+                            "description": 1
+                        },
+                        {
+                            "description": 2,
+                            "speed": -1
+                        },
+                        {
+                            "description": 3,
+                            "speed": -2
+                        },
+                        {
+                            "description": 4,
+                            "speed": -3
+                        },
+                        {
+                            "description": 5,
+                            "speed": -4
+                        }
+                    ]
+                },
+                "Regrow Heads": {
+                    "unlock": 15,
+                    "speed": 4,
+                    "cooldown": 1,
+                    "description": "This Merc takes Critical Damage this turn. At the end of next turn, restore {0} Health to this Merc.",
+                    "tiers": [
+                        {
+                            "description": 20
+                        },
+                        {
+                            "description": 30
+                        },
+                        {
+                            "description": 40
+                        },
+                        {
+                            "description": 50
+                        },
+                        {
+                            "description": {
+                                "type": "replace",
+                                "text": "This Merc takes Critical Damage this turn. At the end of next turn, restore this Merc to full Health."
+                            }
+                        }
+                    ]
+                }
+            },
+            "equipment": {
+                "Infused Amber": {
+                    "unlock": "Level 30",
+                    "position": "left",
+                    "affects": "Frenzied Attack",
+                    "description": "Frenzied Attack deals {0} more damage.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Razor Claw": {
+                    "unlock": "Task 2",
+                    "position": "middle",
+                    "affects": "Backlash",
+                    "description": "Backlash gives an additional +{0} Attack.",
+                    "tiers": [
+                        {
+                            "description": 1,
+                            "modifier": {
+                                "description": 1
+                            }
+                        },
+                        {
+                            "description": 2,
+                            "modifier": {
+                                "description": 2
+                            }
+                        },
+                        {
+                            "description": 3,
+                            "modifier": {
+                                "description": 3
+                            }
+                        },
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": 4
+                            }
+                        }
+                    ]
+                },
+                "Regenerative Scales": {
+                    "unlock": "Task 7",
+                    "position": "right",
+                    "affects": "Regrow Heads",
+                    "description": "Regrow Heads restores {0} Health the turn it is cast.",
+                    "tiers": [
+                        {
+                            "description": 4,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Restore 4 Health to this Merc."
+                                }
+                            }
+                        },
+                        {
+                            "description": 8,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Restore 8 Health to this Merc."
+                                }
+                            }
+                        },
+                        {
+                            "description": 12,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Restore 12 Health to this Merc."
+                                }
+                            }
+                        },
+                        {
+                            "description": 16,
+                            "modifier": {
+                                "description": {
+                                    "type": "prepend",
+                                    "text": "Restore 16 Health to this Merc."
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "tasks": [
+                {
+                    "name": "Terror of the Barrens",
+                    "description": "Deal 60 damage using Frenzied Attack.",
+                    "quote": "<Who tresspasses in our lair?>"
+                },
+                {
+                    "name": "Lashing Out",
+                    "description": "Deal 40 damage using Backlash.",
+                    "quote": "<Many have challenged the Barrens, only to fall to us!>"
+                },
+                {
+                    "name": "Regrowth",
+                    "description": "Restore 70 Health using Regrow Heads.",
+                    "quote": "<The secret to growing new heads? Staying hydrated.>"
+                },
+                {
+                    "name": "Gore and More",
+                    "description": "Deal 150 damage.",
+                    "quote": "<Even the kings of the Beast world fear us!>"
+                },
+                {
+                    "name": "A Step A Head",
+                    "description": "Complete a bounty while at level 30.",
+                    "quote": "<They think they can defeat us, but we always come back stronger.>"
+                },
+                {
+                    "name": "Triple Trouble",
+                    "description": "Use the Boon: Protector coin 2 times.",
+                    "quote": "<Quillboar make a nice, crunchy snack.>"
+                },
+                {
+                    "name": "Cavern Protector",
+                    "description": "Defeat 2 Heroic bosses.",
+                    "quote": "<These caverns are our home to protect!>"
+                },
+                {
+                    "name": "Heading Up the Charge",
+                    "description": "Complete 4 Bounties.",
+                    "quote": "<The corruption of the caverns is no match for us.>"
+                },
+                {
+                    "name": "Proper Hydration",
+                    "description": "Gain 50 Attack using Backlash.",
+                    "quote": "<The secret to growing new heads? Staying hydrated.>"
+                },
+                {
+                    "name": "Hungry Hungry Hydra",
+                    "description": "Deal 200 damage.",
+                    "quote": "<3 mouths is a lot to feed.>"
+                },
+                {
+                    "name": "Side Swipe",
+                    "description": "Deal 75 damage to adjacent enemies using Frenzied Attack.",
+                    "quote": "<They think they can defeat us, but we always come back stronger.>"
+                },
+                {
+                    "name": "Terror of the Barrens",
+                    "description": "Deal 150 damage to Fighters.",
+                    "quote": "<Many have challenged the Barrens, only to fall to us!>"
+                },
+                {
+                    "name": "A Beast Above",
+                    "description": "Defeat 4 Heroic bosses.",
+                    "quote": "<Even the kings of the Beast world fear us!>"
+                },
+                {
+                    "name": "Strike From All Sides",
+                    "description": "Deal 180 damage to Heroic bosses.",
+                    "quote": "<These caverns are our home to protect!>"
+                },
+                {
+                    "name": "3 Heads Are Better Than 1",
+                    "description": "Restore 140 Health using Regrow Heads.",
+                    "quote": "<3 mouths is a lot to feed.>"
+                },
+                {
+                    "name": "Beast Blowout",
+                    "description": "Deal 500 damage with Beasts with a team that includes this Mercenary.",
+                    "quote": "<The corruption of the caverns is no match for us.>"
+                },
+                {
+                    "name": "Oasis Offense",
+                    "description": "Destroy 50 minions.",
+                    "quote": "<Quillboar make a nice, crunchy snack.>"
+                },
+                {
+                    "name": "A Heady Achievement",
+                    "description": "Deal 450 damage to Heroic bosses.",
+                    "quote": "<Well done mercenary, you've impressed all 3 of us!>"
+                }
+            ]
         }
     }
 }
