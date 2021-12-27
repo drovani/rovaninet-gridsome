@@ -115,7 +115,7 @@
         "Gruul": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
+            "tasksCompleted": 7,
             "itemEquipped": "Dragonclaw Fists",
             "abilities": {
                 "Crazed Flurry": 3,
@@ -168,7 +168,7 @@
             "abilities": {
                 "Mak'Gora": 2,
                 "Horde Strength": 2,
-                "Battle Shout": 2
+                "Battle Shout": 3
             },
             "equipment": {
                 "Dueling Gauntlets": 1,
@@ -195,7 +195,7 @@
         "Bru'kan": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
+            "tasksCompleted": 8,
             "itemEquipped": "Lightning Rod",
             "abilities": {
                 "Lightning Bolt": 5,
@@ -323,7 +323,7 @@
         "King Krush": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 10,
+            "tasksCompleted": 11,
             "itemEquipped": "Flaming Claws",
             "abilities": {
                 "Apex Predator": 4,
@@ -371,7 +371,7 @@
         "Lady Anacondra": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 9,
+            "tasksCompleted": 10,
             "itemEquipped": "Signet of the Wilds",
             "abilities": {
                 "Serpent's Bite": 5,
@@ -380,7 +380,7 @@
             },
             "equipment": {
                 "Toxic Venom": 2,
-                "Snake Snacks": 2,
+                "Snake Snacks": 4,
                 "Signet of the Wilds": 4
             }
         },
@@ -403,7 +403,7 @@
         "Mannoroth": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
+            "tasksCompleted": 7,
             "itemEquipped": "Fel-Enhanced Lungs",
             "abilities": {
                 "Terror Charge": 3,
@@ -507,9 +507,9 @@
                 "Giantfin": 5
             },
             "equipment": {
-                "Primordial Fin": 1,
+                "Primordial Fin": 3,
                 "Navigator's Amulet": 4,
-                "Bubble Wand": 1
+                "Bubble Wand": 2
             }
         },
         "Prophet Velen": {
@@ -531,7 +531,7 @@
         "Diablo": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 1,
             "itemEquipped": "",
             "abilities": {
                 "Doom Charge": 1,
@@ -540,7 +540,7 @@
             },
             "equipment": {
                 "Black Soulstone": 1,
-                "item2": 1,
+                "Magma Horns": 1,
                 "Claws of Terror": 2
             }
         },
@@ -563,7 +563,7 @@
         "Rathorian": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 11,
+            "tasksCompleted": 12,
             "itemEquipped": "Soul Gem",
             "abilities": {
                 "Blitzing Legion": 5,
@@ -571,9 +571,9 @@
                 "Fel Command": 5
             },
             "equipment": {
-                "Demonic Ashes": 3,
+                "Demonic Ashes": 4,
                 "Soul Gem": 4,
-                "Demon's Mark": 2
+                "Demon's Mark": 3
             }
         },
         "Rexxar": {
@@ -627,10 +627,10 @@
         "Scabbs Cutterbutter": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
+            "tasksCompleted": 7,
             "itemEquipped": "SI:7 Contract",
             "abilities": {
-                "Tactical Strike": 3,
+                "Tactical Strike": 4,
                 "Wicked Stab": 3,
                 "Shadow Blade": 5
             },
@@ -701,7 +701,7 @@
             "equipment": {
                 "Hunting Shroud": 2,
                 "High Power Rounds": 2,
-                "Rigged Wiring": 3
+                "Rigged Wiring": 4
             }
         },
         "The Lich King": {
@@ -723,8 +723,8 @@
         "Thrall": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
-            "itemEquipped": null,
+            "tasksCompleted": 3,
+            "itemEquipped": "Ornate Warhorn",
             "abilities": {
                 "For The Horde": 1,
                 "Lightning Storm": 2,
@@ -739,12 +739,12 @@
         "Tirion Fordring": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 4,
+            "tasksCompleted": 5,
             "itemEquipped": "King's Helm",
             "abilities": {
                 "Divine Assault": 3,
                 "Blessing of Kings": 3,
-                "Judgement of Humility": 4
+                "Judgement of Humility": 5
             },
             "equipment": {
                 "Ashbringer": 1,
@@ -787,7 +787,7 @@
         "Varden Dawngrasp": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 8,
             "itemEquipped": "Potion of Ice",
             "abilities": {
                 "Flurry": 5,
@@ -819,7 +819,7 @@
         "Varian Wrynn": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
+            "tasksCompleted": 7,
             "itemEquipped": "War Banner",
             "abilities": {
                 "Splitting Strike": 2,
@@ -878,6 +878,22 @@
                 "Robes of Purity": 4,
                 "Radiant Wand": 4,
                 "Shard of the Naaru": 4
+            }
+        },
+        "Vanessa VanCleef": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 3,
+            "itemEquipped": "",
+            "abilities": {
+                "Burgle Barrage": 2,
+                "Makeshift Weaponry": 2,
+                "Shifting Satchel": 2
+            },
+            "equipment": {
+                "Extra Pockets": 1,
+                "Dreadblades": 1,
+                "Blade Catcher": 1
             }
         }
     }
