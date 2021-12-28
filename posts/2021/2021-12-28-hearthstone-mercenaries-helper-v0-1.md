@@ -7,9 +7,10 @@ tags:
   - vuejs
   - tailwind
 ---
+
 In an effort to get some in-depth experience with Vuejs and as a project to replace my Hearthstone Mercenaries Helper [spreadsheet](https://docs.google.com/spreadsheets/d/19FBZWszfu286zdRNZ43JvUD2bUvxLfrYTLmO1qSJmEM/edit?usp=sharing), I took the time to create an initial version of a suite of tools to aid in tracking mercenary progression in Hearthstone. Because my styling (this is applicable to most of my life, btw) is terribly basic, I pulled in Tailwind CSS for a bit of color and uniformity. I also later found that I needed to bring in a state tracker, so I learned a bit about Vuex.
 
-![Rathorian's details card in HSMercs Helper v0.1](hsmercs-v01.png)
+![Rathorian's details card in HSMercs Helper v0.1](/images/hsmercs-v01.png)
 
 I built the site out a little backwards. First, I tried to think of how I could duplicate my spreadsheet, but that got quickly bypassed as I tried to make the layout closer to what the in-game details page looks like. Since I was doing it haphazardly, one feature at a time, I stumbled into a look. It's not a great look; it's serviceable.
 

@@ -16,7 +16,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     path: "{{year}}/{{slug}}"
-    preview_path: "{{year}}/{{slug}}"
+    preview_path: "posts/{{year}}/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: "Category"
