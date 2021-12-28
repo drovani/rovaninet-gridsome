@@ -18,21 +18,27 @@ collections:
     path: "{{year}}/{{slug}}"
     preview_path: "{{year}}/{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - { label: "Title", name: "title", widget: "string" }
       - label: "Category"
         name: "category"
         widget: "select"
         options:
-        - { label: "Rovani in C♯", value: "rovani-in-c-sharp" }
-        - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
-        - { label: "Mise-en-Place", value: "mise-en-place" }
-        - { label: "Vigil Journey", value: "vigil-journey" }
-      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Rovani in C♯", value: "rovani-in-c-sharp" }
+          - { label: "Rovani's Vue", value: "rovanis-vue" }
+          - { label: "Rovani Reacts", value: "rovani-reacts" }
+          - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
+          - { label: "Mise-en-Place", value: "mise-en-place" }
+          - { label: "Vigil Journey", value: "vigil-journey" }
+      - { label: "Excerpt", name: "excerpt", widget: "string", required: false }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - label: "Tags (comma delimited)"
         name: "tags"
         widget: "list"
+    view_filters:
+      - label: Drafts
+        field: draft
+        pattern: true
     view_groups:
       - label: Year
         field: date
