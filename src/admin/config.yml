@@ -23,12 +23,12 @@ collections:
         name: "category"
         widget: "select"
         options:
-          - { label: "Rovani in C♯", value: "rovani-in-c-sharp" }
-          - { label: "Rovani's Vue", value: "rovanis-vue" }
-          - { label: "Rovani Reacts", value: "rovani-reacts" }
-          - { label: "Exactly One Hobby", value: "exactly-one-hobby" }
-          - { label: "Mise-en-Place", value: "mise-en-place" }
-          - { label: "Vigil Journey", value: "vigil-journey" }
+          - { label: "Rovani in C♯", value: "Rovani in C♯" }
+          - { label: "Rovani's Vue", value: "Rovani's Vue" }
+          - { label: "Rovani Reacts", value: "Rovani Reacts" }
+          - { label: "Exactly One Hobby", value: "Exactly One Hobyy" }
+          - { label: "Mise-en-Place", value: "Mise-en-Place" }
+          - { label: "Vigil Journey", value: "Vigil Journey" }
       - { label: "Excerpt", name: "excerpt", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
