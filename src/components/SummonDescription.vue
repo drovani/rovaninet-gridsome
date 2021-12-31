@@ -46,7 +46,7 @@ export default {
                 abilityDesc,
             }); */
 
-            if (abilityDesc.type === "replace") {
+            if (abilityDesc?.type === "replace") {
                 desc = abilityDesc.text;
             }
 
@@ -66,7 +66,7 @@ export default {
                 itemMod = [itemMod === undefined ? null : itemMod];
             }
             if (!Array.isArray(abilityDesc)) {
-                abilityDesc = [abilityDesc.value === undefined ? abilityDesc ?? null : abilityDesc.value];
+                abilityDesc = [abilityDesc?.value === undefined ? abilityDesc ?? null : abilityDesc.value];
             }
 
             const regex = new RegExp(/\{([\w\d\s:\.]+)\}/, "g");

@@ -69,8 +69,6 @@ export default {
                     ? this.activeTierInfo.description
                     : [this.activeTierInfo.description];
 
-                console.debug(tierDesc);
-
                 const regex = new RegExp(/\{([\w \(\)]+)\}/, "g");
                 const matches = [...desc.matchAll(regex)];
                 for (let i = 0; i < matches.length; i++) {
