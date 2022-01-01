@@ -3,6 +3,7 @@ title: Importing Real Data
 category: Rovani's Vue
 date: 2022-02-11
 series: HSMercs From Scratch
+step: 2
 tags:
   - vuejs
   - vuex

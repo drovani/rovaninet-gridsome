@@ -18,7 +18,7 @@
 
 <page-query>
 query Posts {
-    posts: allPost(sortBy: "date", order: ASC, filter: {series: {eq: "HSMercs From Scratch"}}){
+    posts: allPost(sortBy: "step", order: ASC, filter: {series: {eq: "HSMercs From Scratch"}}){
         totalCount
         pageInfo{
             totalPages
@@ -29,6 +29,7 @@ query Posts {
                 id
                 title
                 date
+                step
                 formattedDate: date (format: "D MMMM Y")
                 excerpt
                 timeToRead

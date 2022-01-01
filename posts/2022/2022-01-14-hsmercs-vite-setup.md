@@ -1,15 +1,16 @@
 ---
 title: HSMercs From The Beginning
 category: Rovani's Vue
-date: 2022-01-28
+date: 2022-01-14
 series: HSMercs From Scratch
+step: 1
 tags:
   - vuejs
   - vite
   - vuex
 ---
 
-As the name of this tutorial states, we are going to start this project from nothing but an empty folder and a few globally installed packages. Each file will be artisanally crafted and explained in detail.
+As the name of this tutorial states, we are going to start this project from nothing but an empty folder and a few globally installed packages. Each file will be artisanally crafted and explained in detail. Additionally, I am striving to make all examples additive in nature. Instead of just putting "placeholder" text and hard-coding sample data, we will mostly just be creating files and adding code.
 
 > The first in a series of posts on ['HSMercs Helper From Scratch'](/hs-mercs-from-scratch), a tutorial for recreating _[HSMercs Helper](https://hsmercs.rovani.net)_.
 
@@ -86,7 +87,10 @@ Without the `.gitignore` file, git will tell you there are 2,000+ files that nee
     <title>HSMercs Helper</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div>
+      <nav>HSMercs Helper</nav>
+      <main id="app"></main>
+    </div>
   </body>
 </html>
 ```
