@@ -16433,11 +16433,6 @@
             },
             "tasks": [
                 {
-                    "name": "Poisons are Powerful",
-                    "description": "Gain 100 Attack using Sinister Strike.",
-                    "quote": "They'll never see us coming."
-                },
-                {
                     "name": "Slice and Dice",
                     "description": "Deal 55 damage using Sinister Strike.",
                     "quote": "Get your blades ready. There are a whole lot of enemies lurking around here."
