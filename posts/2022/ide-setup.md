@@ -1,7 +1,7 @@
 ---
 title: "Introduction: Setting Up the Environment"
 category: Rovani's Vue
-date: 2022-01-28
+date: 9999-01-28
 series: HSMercs From Scratch
 step: 0
 excerpt: The intro to a series of posts on 'HSMercs Helper From Scratch', a tutorial for recreating HSMercs Helper.
