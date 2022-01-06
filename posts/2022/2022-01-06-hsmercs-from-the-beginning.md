@@ -139,11 +139,19 @@ This first imports the `createApp` function from the `vue` library and the `App`
 
 #### index.html
 
-```html
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
-</body>
+```diff
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HSMercs Helper</title>
+    </head>
+    <body>
++     <div id="app"></div>
++     <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>
 ```
 
 Adding in the div where the `App` component should be mounted and running the `main.ts` file. By specifying the type as "module", we are telling the browser that this script should be executed in "strict" mode. The browser will also wait to execute the code until the DOM is ready.
@@ -156,13 +164,26 @@ If you try to run `yarn dev` right now, you'll receive an internal server error.
 
 #### package.json
 
-```json
-{
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.0.1",
-    "vite": "^2.7.10"
+```diff
+  {
+    "name": "hsmercs-helper",
+    "version": "0.2.0",
+    "private": true,
+    "engineStrict": true,
+    "engines": {
+      "node": "^16"
+    },
+    "scripts": {
+      "dev": "vite"
+    },
+    "dependencies": {
+      "vue": "^3.2.25"
+    },
+    "devDependencies": {
++     "@vitejs/plugin-vue": "^2.0.1",
+      "vite": "^2.7.10"
+    }
   }
-}
 ```
 
 Update the `yarn.lock` file (and the node_modules folder) by telling yarn to double-check the packages
@@ -207,20 +228,35 @@ yarn dev # run vite to start the server!
 In order to have this code hosted somewhere, you'll want to run the build command. It does all kinds of magic to take the various bits and pieces we've written, combine it with the Vue library, and make it as small as possible, and dump it into a `dist` folder. By convention, the script call is `build`.
 
 #### package.json
-```json
-{
+```diff
+  {
+    "name": "hsmercs-helper",
+    "version": "0.2.0",
+    "private": true,
+    "engineStrict": true,
+    "engines": {
+      "node": "^16"
+    },
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+      "dev": "vite",
++     "build": "vite build"
+    },
+    "dependencies": {
+      "vue": "^3.2.25"
+    },
+    "devDependencies": {
+     "@vitejs/plugin-vue": "^2.0.1",
+      "vite": "^2.7.10"
     }
+  }
 ```
 
 If you run the command `yarn build` (which is an alias for `yarn vite build`), git will think it needs to include the `dist` folder in the repository. We want to ignore this folder.
 
 #### .gitignore
-```text
-node_modules
-dist
+```diff
+  node_modules
++ dist
 ```
 
 ## Step 2: [Importing Real Data](/posts/2022/importing-real-data)
