@@ -20,7 +20,7 @@ As the name of this tutorial states, we are going to start this project from not
 This (and the rest of the posts) assume that the development environment matches the following requirements:
 
 - Windows 10 with WSL2: Ubuntu installed.
-- Visual Studio Code with Vetur and Prettier plugins installed.
+- Visual Studio Code with Volar, Prettier, ESLint plugins installed.
 - Using Node v16 with yarn and vite installed.
 
 Other environments may work, but I have no way to test it, so this is what is supported!
