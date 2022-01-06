@@ -23,7 +23,7 @@
             <div class="mt-8 mb-4" v-html="$page.post.content" />
             <footer
                 v-if="$page.post.github_discussion"
-                class="border-t border-b rounded mx-2 px-2 py-2 text-center sm:mx-4 sm:px-4"
+                class="border-t border-b rounded-full mx-2 px-2 py-2 text-center sm:mx-4 sm:px-4 bg-gray-300"
             >
                 Continue the conversation at the GitHub Discussion:
                 <br class="hidden sm:inline-block lg:hidden" />
