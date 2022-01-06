@@ -12,6 +12,7 @@
         <article v-for="post in posts" class="my-5 text-lg list-none" :key="post.node.id">
             <header class="sm:flex sm:items-baseline">
                 <h3 class="underline sm:flex-1">
+                    <span v-if="Number.isInteger(post.node.step)">Step {{ post.node.step }}: </span>
                     <g-link :to="post.node.path">{{ post.node.title }}</g-link>
                 </h3>
                 <div class="text-right">
