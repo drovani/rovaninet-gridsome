@@ -259,6 +259,6 @@ If you run the command `yarn build` (which is an alias for `yarn vite build`), g
 + dist
 ```
 
-## Step 2: [Importing Real Data](/posts/2022/importing-real-data)
+## Step 2: [Storing State & Unit Testing](/posts/2022/storing-state-and-unit-testing)
 
-In the interest of keeping hardcoded sample data out of the project, the next step will be to import a JSON file of real data, loading it in a `Vuex` store.
+In the interest of keeping hardcoded sample data out of the project, the next step will be to create a couple TypeScript interfaces, scaffold a `Vuex` store, and write the first unit tests.
