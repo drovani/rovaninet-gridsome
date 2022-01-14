@@ -329,7 +329,3 @@ yarn test
 ```
 
 ![sets mercenaries collection passing](/images/mocha-test-2.png)
-
-## Step 3: [Importing & Validating JSON Data Files](/posts/2022/importing-and-validating-json-data-files/)
-
-Now that we have a way to store the state and retrieve it, we will be importing the full HSMercs collection from a JSON file.
