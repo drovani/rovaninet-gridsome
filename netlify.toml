@@ -5,6 +5,10 @@
   package = "netlify-plugin-gridsome-cache"
 
 [[redirects]]
+  from = "/assets/david-rovani-resume.pdf"
+  to = "/about"
+
+[[redirects]]
   from = "/category/rovani-in-c-sharp"
   to = "/category/rovani-in-c"
 
