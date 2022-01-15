@@ -161,9 +161,9 @@ Now that the `Mercenaries` component has been built, the `App` component needs t
 ```vue
 <template>
   <div>
-    <header>
+    <div>
       <h2><slot /></h2>
-    </header>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -199,7 +199,7 @@ Now is a good time to validate that everything works. We should now have a list 
 
 In the design language for this website, a `[component]Card` is used for any compact display of information, with a design intended for repetition across the page. `[component]Details` is used for a larger viewport with lots of detailed information. `[component]` will be used whenever it is the atomic piece of data.
 
-#### src/components/role.vue
+#### src/components/Role.vue
 ```vue
 <template>
   <div>{{ role }}</div>
@@ -221,7 +221,7 @@ export default defineComponent({
 
 There are going to be a lot of components that all look extremely similar. There is a single `div` that holds the one `prop` being passed to the component. We specify the `type` of the `prop` and whether it is required. By having all of these as individual components now, we will be able to add styling, computation, and features in the future without having to refactor the parent component by extracting this information later.
 
-#### src/components/tribe.vue
+#### src/components/Tribe.vue
 ```vue
 <template>
   <div>{{ tribe }}</div>
@@ -237,7 +237,7 @@ defineProps({
 </script>
 ```
 
-#### src/components/rarity.vue
+#### src/components/Rarity.vue
 ```vue
 <template>
   <div>{{ rarity }}</div>
@@ -253,7 +253,7 @@ defineProps({
 </script>
 ```
 
-#### src/components/attack.vue
+#### src/components/Attack.vue
 ```vue
 <template>
   <div>{{ attack }}</div>
@@ -279,7 +279,7 @@ export default defineComponent({
 
 The `attack` and `health` components will also accept a `role` string `prop` because we know there will be different styling based on that value. In order to accomodate non-mercenaries (i.e. summoned minions), the `prop` comes with a default value. It is better to specify the default value in the component than expect all consumers of the component to remember to set and spell a default correctly.
 
-#### src/components/health.vue
+#### src/components/Health.vue
 ```vue
 <template>
   <div>{{ health }}</div>
@@ -307,7 +307,7 @@ export default defineComponent({
 
 The `ability` and `item` components will be the most complicated components. They have descriptions, tiers of affects, different ways equipped items affect abilities, and other features that will get added piecemeal. However, in order to get to our Minimum Renderable Mercenary, the first pass is just going to display the name of the ability and item.
 
-#### src/components/ability.vue
+#### src/components/Ability.vue
 ```vue
 <template>
   <div>
@@ -329,7 +329,7 @@ export default defineComponent({
 </script>
 ```
 
-#### src/components/item.vue
+#### src/components/Item.vue
 ```vue
 <template>
   <div>
@@ -353,7 +353,70 @@ export default defineComponent({
 
 ### Displaying Mercenary Data
 
-At this point, everything should be in place for the first pass at displaying mercenary information.
+All of the initial components have now been built. Heading back to the mercenary card component, we import each of these components and give them a place.
+
+#### src/components/MercenaryCard.vue
+```vue
+<template>
+  <div class="grid grid-cols-2">
+    <div class="row-span-2">
+      <h2 class="font-bold"><slot /></h2>
+      <Rarity :rarity="rarity" />
+      <Tribe v-if="tribe" :tribe="tribe" />
+      <Role :role="role" />
+      <Attack :role="role" :attack="attack" />
+      <Health :role="role" :health="health" />
+    </div>
+    <div class="grid grid-cols-3">
+      <Ability
+        v-for="(ability, abilityName) in abilities"
+        :key="abilityName"
+        :ability="ability"
+        >{{ abilityName }}
+      </Ability>
+    </div>
+    <div class="grid grid-cols-3">
+      <Item v-for="(item, itemName) in equipment" :key="itemName" :item="item"
+        >{{ itemName }}
+      </Item>
+    </div>
+  </div>
+</template>
+<script lang="ts">
+import { defineComponent } from "vue";
+import Ability from "./Ability.vue";
+import Attack from "./Attack.vue";
+import Health from "./Health.vue";
+import Item from "./Item.vue";
+import Rarity from "./Rarity.vue";
+import Role from "./Role.vue";
+import Tribe from "./Tribe.vue";
+
+export default defineComponent({
+  props: {
+    role: String,
+    tribe: String,
+    rarity: String,
+    attack: Number,
+    health: Number,
+    abilities: Object,
+    equipment: Object,
+    tasks: Array,
+  },
+  components: {
+    Ability,
+    Attack,
+    Health,
+    Item,
+    Rarity,
+    Role,
+    Tribe,
+  },
+});
+</script>
+```
+
+Everything is in place. Save the files and start the dev server back up!
 
 ```bash
 yarn dev
