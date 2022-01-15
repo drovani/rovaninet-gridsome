@@ -11,7 +11,7 @@ tags:
 
 In the previous post, we built a Minimum Renderable Vue application - which is to say that it outputs text in the browser using Vue, Vite, and TypeScript. Most tutorials would now build on that by creating components and output content using temporary hard-coded data. Instead, this tutorial is going to go in the direction of loading real data, which we will then build components around. I think this is more in line with real-world applications, where you know what the general shape of the data looks like (or at least what the domain is) and getting it loaded into the app is a good first lift.
 
-![Gruul is a jerk](/images/gruul-is-a-jerk.png)
+![Gruul is a jerk](/images/hsmercs-banner-gruul.png)
 
 > The second in a series of posts on ['HSMercs Helper From Scratch'](/hs-mercs-from-scratch), a tutorial for recreating _[HSMercs Helper](https://hsmercs.rovani.net)_.
 
@@ -330,6 +330,6 @@ yarn test
 
 ![sets mercenaries collection passing](/images/mocha-test-2.png)
 
-## Step 3: [Importing & Validating JSON Data Files](/posts/2022/importing-and-validating-json-data-files/)
+## Step 3: [First Rudimentary Mercenary Components](/posts/2022/first-rudimentary-mercenary-components/)
 
-Now that we have a way to store the state and retrieve it, we will be importing the full HSMercs collection from a JSON file.
+With a central state store in place, we will now import the JSON data; and since we will have real data, we will then build the initial round of components to render it.
