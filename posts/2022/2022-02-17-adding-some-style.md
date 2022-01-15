@@ -99,12 +99,12 @@ These two classes are fairly standard for a website. `max-w-screen-lg` can be re
   <section>
     <h1>Mercenaries</h1>
 -   <div>
-+   <div class="flex flex-wrap">
++   <div class="flex flex-wrap gap-4 px-2">
       <MercenaryCard
         v-for="(merc, mercName) in mercenaries"
         :key="mercName"
         v-bind="merc"
-+       class="w-72 rounded-md border m-2"
++       class="w-72 rounded-md border"
         >{{ mercName }}
       </MercenaryCard>
     </div>
@@ -112,7 +112,7 @@ These two classes are fairly standard for a website. `max-w-screen-lg` can be re
 </template>
 ```
 
-When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing it to wrap entries that won't fit in one line. `w-72` translates to 18rem or 288px, which is a nice width for a summary card, and will neatly fit three cards across. We are also adding a simple rounded corner and giving the cards a little spacing.
+When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing it to wrap entries that won't fit in one line. `px-2` means to put a small padding on the left and right side of the container and `gap-4` instructs flex to keep a small space between elements. `w-72` translates to 18rem or 288px, which is a nice width for a summary card, and will neatly fit three cards across. We are also adding a simple rounded corner and giving the cards a little spacing.
 
 ```bash
 yarn dev
