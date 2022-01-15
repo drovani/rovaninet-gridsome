@@ -358,16 +358,16 @@ All of the initial components have now been built. Heading back to the mercenary
 #### src/components/MercenaryCard.vue
 ```vue
 <template>
-  <div class="grid grid-cols-2">
-    <div class="row-span-2">
-      <h2 class="font-bold"><slot /></h2>
+  <div>
+    <div>
+      <h2><slot /></h2>
       <Rarity :rarity="rarity" />
       <Tribe v-if="tribe" :tribe="tribe" />
       <Role :role="role" />
       <Attack :role="role" :attack="attack" />
       <Health :role="role" :health="health" />
     </div>
-    <div class="grid grid-cols-3">
+    <div>
       <Ability
         v-for="(ability, abilityName) in abilities"
         :key="abilityName"
@@ -375,7 +375,7 @@ All of the initial components have now been built. Heading back to the mercenary
         >{{ abilityName }}
       </Ability>
     </div>
-    <div class="grid grid-cols-3">
+    <div>
       <Item v-for="(item, itemName) in equipment" :key="itemName" :item="item"
         >{{ itemName }}
       </Item>
