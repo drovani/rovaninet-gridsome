@@ -197,7 +197,12 @@ Now is a good time to validate that everything works. We should now have a list 
 
 ### Lots of New Components!
 
-In the design language for this website, a `[component]Card` is used for any compact display of information, with a design intended for repetition across the page. `[component]Details` is used for a larger viewport with lots of detailed information. `[component]` will be used whenever it is the atomic piece of data.
+It can be important to develop a common language when creating sets of components so that future developers (including yourself) know the purpose of everything that is developed. Otherwise, components may get remade as teams forget what is out there and end up recreating existing functionality.
+
+- `[Component].vue` is for an atomic piece of data or presentation element.
+- `[Component]Stamp.vue` is a small version of a data object. It doesn't have an much information as a full details view would, but it isn't useful to stand alone.
+- `[Component]Card.vue` displays a compact set of information, made up of multiple `Component` or `ComponentStamp` components.
+- `[Component]Details.vue` contains an indepth display of the object, consiting of `Component`, `ComponentStamp`, and perhaps some `ComponentCard` components.
 
 #### src/components/Role.vue
 ```vue
