@@ -125,3 +125,76 @@ One of this first things I panicked on when I first installed Tailwind was that 
 Well, fear not; this is intentional. The directive `@tailwind base` contains reset rules (called [Preflight](https://tailwindcss.com/docs/preflight))that clear all of the browser defaults. Since each browser has slightly different default stylying, the first thing Tailwind does is strip it all out.
 
 ## Style Some More Components
+
+Most of the styling is going to be inside the Mercenary Card or one of its children. We can start by throwing around a couple classes and seeing what happens. How about this?
+
+#### src/components/MercenaryCard.vue
+```diff
+<template>
++ <div class="grid grid-cols-2">
++   <div class="row-span-2">
++     <h2 class="font-bold"><slot /></h2>
+      <Rarity :rarity="rarity" />
+      <Tribe v-if="tribe" :tribe="tribe" />
+      <Role :role="role" />
+      <Attack :role="role" :attack="attack" />
+      <Health :role="role" :health="health" />
+    </div>
++   <div class="grid grid-cols-3">
+      <Ability
+        v-for="(ability, abilityName) in abilities"
+        :key="abilityName"
+        :ability="ability"
+        >{{ abilityName }}
+      </Ability>
+    </div>
++   <div class="grid grid-cols-3">
+      <Item v-for="(item, itemName) in equipment" :key="itemName" :item="item"
+        >{{ itemName }}
+      </Item>
+    </div>
+  </div>
+</template>
+```
+
+![HS Mercs - 3 column card looks terrible](/image/hsmercs-mcard-3col.png)
+
+Well that looks absolutely terrible, but if you squint, you can see all of the elements in their place.
+
+Let's have a second go at it. Instead of doing half the card with the Mercenary stats and the other half split between the abilities and items, let's do them as three rows inside the card.
+
+#### src/components/MercenaryCard.vue
+```diff
+<template>
+- <div class="grid grid-cols-2">
++ <div class="grid grid-row-3">
+-   <div class="row-span-2">
++   <div>
+      <h2 class="font-bold"><slot /></h2>
+      <Role :role="role" />
+      <Tribe v-if="tribe" :tribe="tribe" />
+      <Rarity :rarity="rarity" />
+      <Attack :role="role" :attack="attack" />
+      <Health :role="role" :health="health" />
+    </div>
+    <div class="grid grid-cols-3">
+      <Ability
+        v-for="(ability, abilityName) in abilities"
+        :key="abilityName"
+        :ability="ability"
+        >{{ abilityName }}
+      </Ability>
+    </div>
+    <div class="grid grid-cols-3">
+      <Item v-for="(item, itemName) in equipment" :key="itemName" :item="item"
+        >{{ itemName }}
+      </Item>
+    </div>
+  </div>
+</template>
+```
+
+**This right here** is why I think CSS is so frickin' cool. We made a small adjustment to the CSS and BOOM, it's an entirely new layout.
+
+![HS Mercs - 3 row card looks useable](/image/hsmercs-mcard-3row.png)
+
