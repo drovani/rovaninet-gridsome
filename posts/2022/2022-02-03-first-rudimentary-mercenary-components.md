@@ -312,7 +312,7 @@ export default defineComponent({
 
 The `ability` and `item` components will be the most complicated components. They have descriptions, tiers of affects, different ways equipped items affect abilities, and other features that will get added piecemeal. However, in order to get to our Minimum Renderable Mercenary, the first pass is just going to display the name of the ability and item.
 
-#### src/components/Ability.vue
+#### src/components/AbilityStamp.vue
 ```vue
 <template>
   <div>
@@ -334,7 +334,7 @@ export default defineComponent({
 </script>
 ```
 
-#### src/components/Item.vue
+#### src/components/ItemStamp.vue
 ```vue
 <template>
   <div>
@@ -373,26 +373,29 @@ All of the initial components have now been built. Heading back to the mercenary
       <Health :role="role" :health="health" />
     </div>
     <div>
-      <Ability
+      <AbilityStamp
         v-for="(ability, abilityName) in abilities"
         :key="abilityName"
         :ability="ability"
         >{{ abilityName }}
-      </Ability>
+      </AbilityStamp>
     </div>
     <div>
-      <Item v-for="(item, itemName) in equipment" :key="itemName" :item="item"
+      <ItemStamp
+        v-for="(item, itemName) in equipment"
+        :key="itemName"
+        :item="item"
         >{{ itemName }}
-      </Item>
+      </ItemStamp>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import Ability from "./Ability.vue";
+import AbilityStamp from "./Ability.vue";
 import Attack from "./Attack.vue";
 import Health from "./Health.vue";
-import Item from "./Item.vue";
+import ItemStamp from "./Item.vue";
 import Rarity from "./Rarity.vue";
 import Role from "./Role.vue";
 import Tribe from "./Tribe.vue";
@@ -409,10 +412,10 @@ export default defineComponent({
     tasks: Array,
   },
   components: {
-    Ability,
+    AbilityStamp,
     Attack,
     Health,
-    Item,
+    ItemStamp,
     Rarity,
     Role,
     Tribe,
