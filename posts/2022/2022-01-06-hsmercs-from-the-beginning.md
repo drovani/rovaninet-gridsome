@@ -122,7 +122,10 @@ We'll start by creating our first Vue component. By convention, we name the entr
 <script setup lang="ts"></script>
 
 <template>
-  <div>HSMercs Helper</div>
+  <header>
+    <div>HSMercs Helper</div>
+    <div>A set of tools for Hearthstone Mercenaries players.
+  </header>
 </template>
 ```
 
