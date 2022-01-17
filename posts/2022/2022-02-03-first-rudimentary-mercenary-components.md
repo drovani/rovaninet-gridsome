@@ -54,7 +54,7 @@ This JSON sample is a minimal view of what the entire file looks like. The compl
 <template>
   <section>
     <h1>Mercenaries</h1>
-      <div>
+    <div>
       <MercenaryCard
         v-for="(merc, mercName) in mercenaries"
         :key="mercName"
@@ -365,12 +365,16 @@ All of the initial components have now been built. Heading back to the mercenary
 <template>
   <div>
     <div>
-      <h2><slot /></h2>
-      <Rarity :rarity="rarity" />
-      <Tribe v-if="tribe" :tribe="tribe" />
-      <Role :role="role" />
-      <Attack :role="role" :attack="attack" />
-      <Health :role="role" :health="health" />
+      <div>
+        <h2><slot /></h2>
+        <Role :role="role" />
+      </div>
+      <div>
+        <Attack :role="role" :attack="attack" />
+        <Tribe v-if="tribe" :tribe="tribe" />
+        <Health :role="role" :health="health" />
+        <Rarity :rarity="rarity" />
+      </div>
     </div>
     <div>
       <AbilityStamp
