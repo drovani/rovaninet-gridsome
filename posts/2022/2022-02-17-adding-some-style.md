@@ -74,37 +74,17 @@ These three layers are where PostCSS and Autoprefixer inject the styles that Tai
 
 This pulls the newly-created CSS file into the Vue app.
 
-#### index.html
-```diff
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HSMercs Helper</title>
-  </head>
-  <body>
--   <div id="app"></div>
-+   <div id="app" class="max-w-screen-lg mx-auto"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
-```
-
-These two classes are fairly standard for a website. `max-w-screen-lg` can be read as "the max width of this element should be equivalent to the screen-large setting." The class `mx-auto` sets the left and right margin to auto, which has the effect of centering the content.
-
 #### src/components/Mercenaries.vue
 ```diff
 <template>
   <section>
     <h1>Mercenaries</h1>
 -   <div>
-+   <div class="flex flex-wrap gap-4 px-2">
++   <div class="flex flex-wrap gap-2 px-2">
       <MercenaryCard
         v-for="(merc, mercName) in mercenaries"
         :key="mercName"
         v-bind="merc"
-+       class="w-72 rounded-md border"
         >{{ mercName }}
       </MercenaryCard>
     </div>
@@ -112,8 +92,7 @@ These two classes are fairly standard for a website. `max-w-screen-lg` can be re
 </template>
 ```
 
-When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing it to wrap entries that won't fit in one line. `px-2` means to put a small padding on the left and right side of the container and `gap-4` instructs flex to keep a small space between elements. `w-72` translates to 18rem or 288px, which is a nice width for a summary card, and will neatly fit three cards across. We are also adding a simple rounded corner and giving the cards a little spacing.
-
+When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing it to wrap entries that won't fit in one line. `px-2` means to put a small padding on the left and right side of the container and `gap-2` instructs flex to keep a small space between elements. 
 ```bash
 yarn dev
 ```
@@ -131,7 +110,7 @@ Most of the styling is going to be inside the Mercenary Card or one of its child
 #### src/components/MercenaryCard.vue
 ```diff
 <template>
-+ <div class="grid grid-cols-2">
++ <div class="grid grid-cols-3 w-96 rounded-md border-2 gap-y-1 pb-1">
 +   <div class="row-span-2">
 +     <h2 class="font-bold"><slot /></h2>
       <Rarity :rarity="rarity" />
