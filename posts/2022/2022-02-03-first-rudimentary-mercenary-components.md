@@ -53,7 +53,7 @@ This JSON sample is a minimal view of what the entire file looks like. The compl
 ```vue
 <template>
   <section>
-    <h1>Mercenaries</h1>
+    <h1>Collectable Mercenaries</h1>
     <div>
       <MercenaryCard
         v-for="(merc, mercName) in mercenaries"
@@ -162,7 +162,9 @@ Now that the `Mercenaries` component has been built, the `App` component needs t
 <template>
   <div>
     <div>
-      <h2><slot /></h2>
+      <h2>
+        <slot />
+      </h2>
     </div>
   </div>
 </template>
@@ -207,7 +209,9 @@ It can be important to develop a common language when creating sets of component
 #### src/components/Role.vue
 ```vue
 <template>
-  <div>{{ role }}</div>
+  <div>
+    {{ role }}
+  </div>
 </template>
 
 <script lang="ts">
@@ -229,7 +233,9 @@ There are going to be a lot of components that all look extremely similar. There
 #### src/components/Tribe.vue
 ```vue
 <template>
-  <div>{{ tribe }}</div>
+  <div>
+    {{ tribe }}
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -245,7 +251,9 @@ defineProps({
 #### src/components/Rarity.vue
 ```vue
 <template>
-  <div>{{ rarity }}</div>
+  <div>
+    {{ rarity }}
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -261,7 +269,9 @@ defineProps({
 #### src/components/Attack.vue
 ```vue
 <template>
-  <div>{{ attack }}</div>
+  <div>
+    {{ attack }}
+  </div>
 </template>
 
 <script lang="ts">
@@ -287,7 +297,9 @@ The `attack` and `health` components will also accept a `role` string `prop` bec
 #### src/components/Health.vue
 ```vue
 <template>
-  <div>{{ health }}</div>
+  <div>
+    {{ health }}
+  </div>
 </template>
 
 <script lang="ts">
@@ -366,7 +378,9 @@ All of the initial components have now been built. Heading back to the mercenary
   <div>
     <div>
       <div>
-        <h2><slot /></h2>
+        <h2>
+          <slot />
+        </h2>
         <Role :role="role" />
       </div>
       <div>
