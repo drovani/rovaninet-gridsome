@@ -72,14 +72,26 @@ These three layers are where PostCSS and Autoprefixer inject the styles that Tai
       .mount('#app')
 ```
 
-This pulls the newly-created CSS file into the Vue app.
+The main script file loads the Tailwind generates CSS file into the full app. All of the magic happens behind the scenes, so we won't go into the details on how or why this happens. We're just happy it works.
+
+#### src/App.vue
+```diff
+  <template>
++   <header class="ml-4 p-4 rounded-bl-md border-l-2 border-b-2">
++     <div class="text-2xl font-extrabold">HSMercs Helper</div>
++     <div class="font-light">A set of tools for Hearthstone Mercenaries players.</div>
+    </header>
+    <Mercenaries></Mercenaries>
+  </template>
+```
+
+This applies a little styling to the header section of the app. Eventually, we will be putting navigation to different tools up there, so it is nice to give it some visual separation.
 
 #### src/components/Mercenaries.vue
 ```diff
 <template>
   <section>
-    <h1>Mercenaries</h1>
--   <div>
++   <h1 class="text-xl mx-8">Collectable Mercenaries</h1>
 +   <div class="flex flex-wrap gap-2 px-2">
       <MercenaryCard
         v-for="(merc, mercName) in mercenaries"
@@ -92,7 +104,8 @@ This pulls the newly-created CSS file into the Vue app.
 </template>
 ```
 
-When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing it to wrap entries that won't fit in one line. `px-2` means to put a small padding on the left and right side of the container and `gap-2` instructs flex to keep a small space between elements. 
+When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing the browser to place entries next to each other, and wrap (`flex-wrap`) onto the next line when the block element won't fit in the viewport. `px-2` means to put a small padding on the left and right side of the container and `gap-2` instructs flex to keep a small space between elements.
+
 ```bash
 yarn dev
 ```
