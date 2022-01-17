@@ -150,7 +150,10 @@ This is another one of those Tooling Updates that occassionally needs to be adde
   </script>
   
   <template>
-    <div>HSMercs Helper</div>
+    <header>
+      <div>HSMercs Helper</div>
+      <div>A set of tools for Hearthstone Mercenaries players.</div>
+    </header>
 +   <Mercenaries></Mercenaries>
   </template>
 ```
@@ -160,13 +163,9 @@ Now that the `Mercenaries` component has been built, the `App` component needs t
 #### src/components/MercenaryCard.vue
 ```vue
 <template>
-  <div>
-    <div>
-      <h2>
-        <slot />
-      </h2>
-    </div>
-  </div>
+  <h2>
+    <slot />
+  </h2>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
