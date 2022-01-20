@@ -46,3 +46,29 @@ At first, I thought this episode was going to be tolerable; the longer it went o
 - How come he doesn't get a funky mask and other acoutrimonts?
 
 It's a nice little touch to add some culture and sense of depth into the dessert raiders. This whole backstory part of the episode feels very _A Man Called Horse_ or _Dances with Wolves_.
+
+## Episode 3: I Tried So Hard To Not Hate This
+
+I sat down to watch the episode without my notepad open, to see if I could enjoy the show more without task switching back and forth. Maybe if I saved all my thoughts for the end, I would have less of them in general, but they would be more meaningful because only the parts I could remember would be worth ranting about. I lasted almost 23 minutes, but it got too terrible for me to not go back and write this shit down. I don't have the full words for how bad it is.
+
+- Why is Boba _just now_ getting a debriefing on the current state of claimed control of the city? Shouldn't that be the first thing you do before you go out (not once, but at least twice!) and start collecting tribute?
+- Cyberpunk without goggles? Posers.
+- I still don't care about the Tuskan people. The writers haven't given me reason to care about _anyone_ in this show so far.
+- The little cameo of the repair lady with her droids was a nice touch. I still don't care about anyone on Tatooine.
+- That fight scene with the kids should have never happened. The wookie had the element of surprise, so why couldn't he just open the water tank and fucking stab Boba Fett right then and there. Or shoot him with a blaster. Or lock the tank shut and cut off his air supply. Lots of options that are better than "open the tank, punch Boba, then yank him out the tank." Then the fight itself was so amatuer that I wonder if the director just told the actors "ok, fight", called in his lunch order, then came back to the scene and said "move into the room with the trap door and capture the wookie that way. The audience will love it." **So fucking bad**
+- The Huts travel by litter. They travel really fucking slowly. How does someone not alert Boba earlier about the Huts approaching. Like "hey boss, there are two slugs approaching from town, looks like it'll take them about a week for their slaves to walk them here. Just letting you know." Nope, it's "hey boss, the Huts are here. Dunno how they just suddenly appeared at our remote fortress."
+- Danny Trejo is always a win.
+- Droid: "Excuse me, sir." 
+  Boba: "Not now."
+  Droid: blahblahblah unimportant, nonurgent matters
+- Are you kidding me?! The kids have Power Ranger bikes! Just need a black and pink bike to round out the full team.
+- You know what would be great to have in a desert while chasing another vehicle? Goggles.
+- I think the most tragic part of this chase scene is the poor intern who had to go get that Jabba print made, only to see it then get broken in half. I'm sure it'll still sell for a stupid amount on ebay to some fanboi.
+ - Was answering the question really so hard? What would have been bad about saying "hey, it wasn't my choice, so don't kill me - the mayor isn't here because he's talking to the Pikes right now. See - his office is empty."
+
+## Episode 4: Boba Fett and the Chamber of Flashbacks
+
+I was so bored through this episode that I didn't even both writing anything down until the bar scene.
+
+- Oh Disney+, where you can rip an alien's arm off, but you can show any blood splatter.
+- So that tune that sounds awfully like _The Mandalorian_'s theme, is supposed to tip off fans that she's talking about pulling in some more armored suits?
