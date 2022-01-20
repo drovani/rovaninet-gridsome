@@ -397,3 +397,7 @@ There is a concept in Mercenaries PVE where some tribes are a part of the "Allia
 The two arrays tell us which tribes are in which factions and the `faction` computed property does a quick look-up. We then utilize that value to drive the `background-image` style for the `div`.
 
 ![HSMercs - Round 1 Styling Complete](/images/hsmercs-mercs-level1dynamic.png)
+
+## Step 5: [Filtering Mercs by Role & Tribe](/posts/2022/filtering-mercs-by-role-and-tribe/)
+
+The cards are starting to look nice, so let's get back into the substance of things by adding some filtering to the Mercenaries.
