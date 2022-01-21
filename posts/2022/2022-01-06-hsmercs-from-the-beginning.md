@@ -13,6 +13,8 @@ tags:
 
 As the name of this tutorial states, we are going to start this project from nothing but an empty folder and a few globally installed packages. Each file will be artisanally crafted and explained in detail. Additionally, I am striving to make all examples additive in nature. Instead of just putting "placeholder" text and hard-coding sample data, we will mostly just be creating files and adding code.
 
+![HSMercs Helper for Hearthstone Mercenaries](/images/hsmercs-banner-logo.png)
+
 > The first in a series of posts on ['HSMercs Helper From Scratch'](/hs-mercs-from-scratch), a tutorial for recreating _[HSMercs Helper](https://hsmercs.rovani.net)_.
 
 ## Starting from Complete Scratch
@@ -120,10 +122,14 @@ We'll start by creating our first Vue component. By convention, we name the entr
 <script setup lang="ts"></script>
 
 <template>
+<<<<<<< HEAD
+  <div>HSMercs Helper</div>
+=======
   <header>
     <div>HSMercs Helper</div>
     <div>A set of tools for Hearthstone Mercenaries players.
   </header>
+>>>>>>> main
 </template>
 ```
 
