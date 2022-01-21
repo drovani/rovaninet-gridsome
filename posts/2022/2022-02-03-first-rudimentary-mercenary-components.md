@@ -448,3 +448,7 @@ yarn dev
 ```
 
 ![HSMercs - Mercenaries and more data](/images/hsmercs-mercprops.png)
+
+## Step 4: [Adding Some Style](/posts/2022/adding-some-style/)
+
+The output is boring to look at and requires a very long scroll. Let's add some styling to this project using [Tailwind CSS](https://tailwindcss.com/).
