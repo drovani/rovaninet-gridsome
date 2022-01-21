@@ -11,7 +11,7 @@ tags:
 
 In the previous post, we built a Minimum Renderable Vue application - which is to say that it outputs text in the browser using Vue, Vite, and TypeScript. Most tutorials would now build on that by creating components and output content using temporary hard-coded data. Instead, this tutorial is going to go in the direction of loading real data, which we will then build components around. I think this is more in line with real-world applications, where you know what the general shape of the data looks like (or at least what the domain is) and getting it loaded into the app is a good first lift.
 
-![Gruul is a jerk](/images/hsmercs-banner-gruul.png)
+![Gruul is a jerk](/images/gruul-is-a-jerk.png)
 
 > The second in a series of posts on ['HSMercs Helper From Scratch'](/hs-mercs-from-scratch), a tutorial for recreating _[HSMercs Helper](https://hsmercs.rovani.net)_.
 
@@ -75,7 +75,7 @@ TypeScript uses interfaces to describe the shape of data. We'll utilize two of t
 export interface Mercenary {
   role: "Protector" | "Fighter" | "Caster";
   rarity: "Rare" | "Epic" | "Legendary";
-  race?: "Beast" | "Blood Elf" | "Demon" | "Draenei" | "Dragon" | "Dwarf" | "Elemental" | "Gnome" | "Half-Orc" | "High Elf" | "Human" | "Murloc" | "Night Elf" | "Orc" | "Pirate" | "Tauren" | "Troll" | "Undead";
+  tribe?: "Beast" | "Blood Elf" | "Demon" | "Draenei" | "Dragon" | "Dwarf" | "Elemental" | "Gnome" | "Half-Orc" | "High Elf" | "Human" | "Murloc" | "Night Elf" | "Orc" | "Pirate" | "Tauren" | "Troll" | "Undead";
   attack: number;
   health: number;
   abilities: { [name: string]: any };
@@ -84,7 +84,7 @@ export interface Mercenary {
 }
 ```
 
-The initial data model is a very simplistic view of what goes into a Mercenary in Hearthstone. All of the fields are required except for Race (Gruul _is the only merc without a race_). If/when HS adds more races/tribes, we'll need to add them here. The same goes for role and rarity, though it is very doubtful these will ever change.
+The initial data model is a very simplistic view of what goes into a Mercenary in Hearthstone. All of the fields are required except for Tribe (Gruul _is the only merc without a tribe_). If/when HS adds more tribes, we'll need to add them here. The same goes for role and rarity, though it is very doubtful these will ever change.
 
 In future steps, we will expand out the abilities, equipment, and tasks properties of the mercenary.
 
@@ -216,7 +216,7 @@ describe('Mercenary Data Getters', () => {
                 "Alexstrasza": {
                     role: "Protector",
                     rarity: "Rare",
-                    race: "Dragon",
+                    tribe: "Dragon",
                     attack: 10,
                     health: 80,
                     abilities: {},
@@ -234,7 +234,7 @@ describe('Mercenary Data Getters', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
@@ -296,7 +296,7 @@ describe('Mercenary Data Mutations', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
@@ -310,7 +310,7 @@ describe('Mercenary Data Mutations', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
@@ -329,7 +329,3 @@ yarn test
 ```
 
 ![sets mercenaries collection passing](/images/mocha-test-2.png)
-
-## Step 3: [First Rudimentary Mercenary Components](/posts/2022/first-rudimentary-mercenary-components/)
-
-With a central state store in place, we will now import the JSON data; and since we will have real data, we will then build the initial round of components to render it.
