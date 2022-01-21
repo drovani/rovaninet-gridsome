@@ -75,7 +75,7 @@ TypeScript uses interfaces to describe the shape of data. We'll utilize two of t
 export interface Mercenary {
   role: "Protector" | "Fighter" | "Caster";
   rarity: "Rare" | "Epic" | "Legendary";
-  race?: "Beast" | "Blood Elf" | "Demon" | "Draenei" | "Dragon" | "Dwarf" | "Elemental" | "Gnome" | "Half-Orc" | "High Elf" | "Human" | "Murloc" | "Night Elf" | "Orc" | "Pirate" | "Tauren" | "Troll" | "Undead";
+  tribe?: "Beast" | "Blood Elf" | "Demon" | "Draenei" | "Dragon" | "Dwarf" | "Elemental" | "Gnome" | "Half-Orc" | "High Elf" | "Human" | "Murloc" | "Night Elf" | "Orc" | "Pirate" | "Tauren" | "Troll" | "Undead";
   attack: number;
   health: number;
   abilities: { [name: string]: any };
@@ -84,7 +84,7 @@ export interface Mercenary {
 }
 ```
 
-The initial data model is a very simplistic view of what goes into a Mercenary in Hearthstone. All of the fields are required except for Race (Gruul _is the only merc without a race_). If/when HS adds more races/tribes, we'll need to add them here. The same goes for role and rarity, though it is very doubtful these will ever change.
+The initial data model is a very simplistic view of what goes into a Mercenary in Hearthstone. All of the fields are required except for Tribe (Gruul _is the only merc without a tribe_). If/when HS adds more tribes, we'll need to add them here. The same goes for role and rarity, though it is very doubtful these will ever change.
 
 In future steps, we will expand out the abilities, equipment, and tasks properties of the mercenary.
 
@@ -216,7 +216,7 @@ describe('Mercenary Data Getters', () => {
                 "Alexstrasza": {
                     role: "Protector",
                     rarity: "Rare",
-                    race: "Dragon",
+                    tribe: "Dragon",
                     attack: 10,
                     health: 80,
                     abilities: {},
@@ -234,7 +234,7 @@ describe('Mercenary Data Getters', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
@@ -296,7 +296,7 @@ describe('Mercenary Data Mutations', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
@@ -310,7 +310,7 @@ describe('Mercenary Data Mutations', () => {
             "Alexstrasza": {
                 role: "Protector",
                 rarity: "Rare",
-                race: "Dragon",
+                tribe: "Dragon",
                 attack: 10,
                 health: 80,
                 abilities: {},
