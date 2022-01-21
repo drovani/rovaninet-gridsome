@@ -3,12 +3,12 @@
         "Alexstrasza": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
+            "tasksCompleted": 7,
             "itemEquipped": "Alexstrasza's Brooch",
             "abilities": {
                 "Dragon Breath": 3,
                 "Flame Buffet": 3,
-                "Dragonqueen's Gambit": 4
+                "Dragonqueen's Gambit": 5
             },
             "equipment": {
                 "Alexstrasza's Brooch": 2,
@@ -24,21 +24,21 @@
             "abilities": {
                 "Penance": 3,
                 "Holy Nova": 4,
-                "Holy Word: Salvation": 2
+                "Holy Word: Salvation": 3
             },
             "equipment": {
                 "Harmonic Mallet": 1,
                 "Robes of Rejuvenation": 4,
-                "Ring of Purity": 1
+                "Ring of Purity": 2
             }
         },
         "Antonidas": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
+            "tasksCompleted": 7,
             "itemEquipped": "Cindercore Staff",
             "abilities": {
-                "Fireball": 3,
+                "Fireball": 4,
                 "Flamestrike": 3,
                 "Fireball Storm": 3
             },
@@ -54,9 +54,9 @@
             "tasksCompleted": 4,
             "itemEquipped": "Molten Blade",
             "abilities": {
-                "Heating Up": 4,
+                "Heating Up": 5,
                 "Inferno": 5,
-                "Living Bomb": 3
+                "Living Bomb": 5
             },
             "equipment": {
                 "Molten Blade": 2,
@@ -67,7 +67,7 @@
         "Blademaster Samuro": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 10,
+            "tasksCompleted": 11,
             "itemEquipped": null,
             "abilities": {
                 "Double Strike": 5,
@@ -75,7 +75,7 @@
                 "Whirling Blade": 5
             },
             "equipment": {
-                "Honed Blade": 3,
+                "Honed Blade": 4,
                 "Burning Blade": 4,
                 "Sash of Illusion": 4
             }
@@ -99,15 +99,15 @@
         "Grommash Hellscream": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 8,
+            "tasksCompleted": 13,
             "itemEquipped": "Halting Sash",
             "abilities": {
                 "Blood Fervor": 5,
                 "Staggering Slam": 5,
-                "Battlefury": 3
+                "Battlefury": 5
             },
             "equipment": {
-                "Halting Sash": 2,
+                "Halting Sash": 4,
                 "Bloodthirst Amulet": 1,
                 "Gorehowl": 1
             }
@@ -115,23 +115,23 @@
         "Gruul": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
-            "itemEquipped": "Dragonclaw Fists",
+            "tasksCompleted": 8,
+            "itemEquipped": "Dragon's Skull",
             "abilities": {
-                "Crazed Flurry": 3,
+                "Crazed Flurry": 4,
                 "Dragonslayer Shot": 3,
                 "Dragonmaw Poacher": 3
             },
             "equipment": {
-                "Dragon's Skull": 4,
-                "Burning Shot": 4,
+                "Dragon's Skull": 3,
+                "Burning Shot": 1,
                 "Dragonclaw Fists": 3
             }
         },
         "Cornelius Roame": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 14,
+            "tasksCompleted": 17,
             "itemEquipped": "Shield of Dawn",
             "abilities": {
                 "Martial Mastery": 5,
@@ -147,27 +147,27 @@
         "Cookie, the Cook": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 6,
-            "itemEquipped": "Iron Ladel",
+            "tasksCompleted": 7,
+            "itemEquipped": "Appetizers",
             "abilities": {
                 "Fish Feast": 3,
-                "Cookie's Cooking": 3,
+                "Cookie's Cooking": 4,
                 "Go Fish!": 4
             },
             "equipment": {
-                "Iron Ladel": 1,
-                "Appetizers": 1,
+                "Iron Ladel": 2,
+                "Appetizers": 2,
                 "Seasoned Pan": 1
             }
         },
         "Garrosh Hellscream": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 2,
+            "tasksCompleted": 6,
             "itemEquipped": "Tusks of Mannoroth",
             "abilities": {
                 "Mak'Gora": 2,
-                "Horde Strength": 2,
+                "Horde Strength": 4,
                 "Battle Shout": 3
             },
             "equipment": {
@@ -182,8 +182,8 @@
             "tasksCompleted": 5,
             "itemEquipped": "Pixie's Pouch",
             "abilities": {
-                "Faerie Breath": 3,
-                "Pixie Dust": 3,
+                "Faerie Breath": 4,
+                "Pixie Dust": 4,
                 "Phase Shift": 3
             },
             "equipment": {
@@ -195,7 +195,7 @@
         "Bru'kan": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 8,
+            "tasksCompleted": 9,
             "itemEquipped": "Lightning Rod",
             "abilities": {
                 "Lightning Bolt": 5,
@@ -204,8 +204,8 @@
             },
             "equipment": {
                 "Lightning Rod": 4,
-                "Crackling Band": 2,
-                "Timberfrost Totem": 3
+                "Crackling Band": 4,
+                "Timberfrost Totem": 4
             }
         },
         "Cairne Bloodhoof": {
@@ -221,13 +221,13 @@
             "equipment": {
                 "Thunderous Sash": 1,
                 "Swift Totem": 2,
-                "Reincarnation": 1
+                "Reincarnation": 3
             }
         },
         "Cariel Roame": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 12,
+            "tasksCompleted": 13,
             "itemEquipped": "Hammer of Dawn",
             "abilities": {
                 "Crusader's Blow": 5,
@@ -243,12 +243,12 @@
         "Eudora": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 13,
             "itemEquipped": "Primed Armaments",
             "abilities": {
-                "Coup d'Etat": 3,
+                "Coup d'Etat": 5,
                 "Prepare the Cannons": 5,
-                "Covering Fire": 2
+                "Covering Fire": 3
             },
             "equipment": {
                 "Shrapnel Shot": 1,
@@ -259,7 +259,7 @@
         "Guff Runetotem": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 11,
             "itemEquipped": "Bramblethorn Totem",
             "abilities": {
                 "Runic Slam": 5,
@@ -267,8 +267,8 @@
                 "Ironbark": 5
             },
             "equipment": {
-                "Bramblethorn Totem": 2,
-                "Earthen Bracers": 2,
+                "Bramblethorn Totem": 4,
+                "Earthen Bracers": 4,
                 "Bloomin' Shroom": 2
             }
         },
@@ -291,11 +291,11 @@
         "Illidan Stormrage": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 4,
+            "tasksCompleted": 6,
             "itemEquipped": "Demon Shroud",
             "abilities": {
-                "Winged Assault": 3,
-                "Outcast Attack": 4,
+                "Winged Assault": 5,
+                "Outcast Attack": 5,
                 "Blade Dance": 3
             },
             "equipment": {
@@ -307,12 +307,12 @@
         "Jaina Proudmoore": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 8,
-            "itemEquipped": "Frost Shards",
+            "tasksCompleted": 10,
+            "itemEquipped": "Ice Block Talisman",
             "abilities": {
                 "Icicle": 3,
-                "Ice Floes": 3,
-                "Water Elemental": 3
+                "Ice Floes": 5,
+                "Water Elemental": 4
             },
             "equipment": {
                 "Frost Shards": 1,
@@ -323,12 +323,12 @@
         "King Krush": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 11,
+            "tasksCompleted": 13,
             "itemEquipped": "Flaming Claws",
             "abilities": {
-                "Apex Predator": 4,
+                "Apex Predator": 5,
                 "Terrify": 3,
-                "Devilsaur": 4
+                "Devilsaur": 5
             },
             "equipment": {
                 "Flaming Claws": 3,
@@ -339,23 +339,23 @@
         "Kurtus Ashfallen": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
-            "itemEquipped": "Chaos Amulet",
+            "tasksCompleted": 6,
+            "itemEquipped": "Fel Blade",
             "abilities": {
-                "Demon Slayer": 3,
+                "Demon Slayer": 5,
                 "Aimless Assault": 5,
-                "Eye Beam": 4
+                "Eye Beam": 5
             },
             "equipment": {
                 "Demon Guard": 1,
-                "Fel Blade": 3,
-                "Chaos Amulet": 2
+                "Fel Blade": 4,
+                "Chaos Amulet": 4
             }
         },
         "King Mukla": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 8,
             "itemEquipped": "Mukla's Big Brother",
             "abilities": {
                 "Banana Frenzy": 5,
@@ -365,7 +365,7 @@
             "equipment": {
                 "Refreshing Bananas": 2,
                 "Radioactive Bananas": 3,
-                "Mukla's Big Brother": 2
+                "Mukla's Big Brother": 4
             }
         },
         "Lady Anacondra": {
@@ -379,7 +379,7 @@
                 "Nightmare Viper": 5
             },
             "equipment": {
-                "Toxic Venom": 2,
+                "Toxic Venom": 4,
                 "Snake Snacks": 4,
                 "Signet of the Wilds": 4
             }
@@ -387,17 +387,17 @@
         "Malfurion Stormrage": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 4,
-            "itemEquipped": "Forest Medallion",
+            "tasksCompleted": 7,
+            "itemEquipped": "Liferoot Staff",
             "abilities": {
-                "Cenarion Surge": 3,
+                "Cenarion Surge": 4,
                 "Entangling Roots": 3,
-                "Archdruid's Call": 2
+                "Archdruid's Call": 3
             },
             "equipment": {
                 "Forest Medallion": 2,
                 "Briarthorn": 1,
-                "Liferoot Staff": 1
+                "Liferoot Staff": 2
             }
         },
         "Mannoroth": {
@@ -407,7 +407,7 @@
             "itemEquipped": "Fel-Enhanced Lungs",
             "abilities": {
                 "Terror Charge": 3,
-                "Fel Lash": 3,
+                "Fel Lash": 4,
                 "Howl of Terror": 5
             },
             "equipment": {
@@ -422,39 +422,39 @@
             "tasksCompleted": 8,
             "itemEquipped": "Ley Line Wand",
             "abilities": {
-                "Arcane Explosion": 3,
+                "Arcane Explosion": 5,
                 "Arcane Bolt": 5,
                 "Greater Arcane Missiles": 5
             },
             "equipment": {
                 "Arcane Powder": 2,
                 "Ley Line Wand": 4,
-                "Mana Rod": 1
+                "Mana Rod": 3
             }
         },
         "Morgl the Oracle": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 9,
-            "itemEquipped": "Morgl's Mitt",
+            "tasksCompleted": 11,
+            "itemEquipped": "Spiky Pufferfish",
             "abilities": {
                 "Murloc Missile": 5,
                 "Fishy Barrage": 5,
                 "Healing Wave": 5
             },
             "equipment": {
-                "Dousing Rod": 3,
-                "Spiky Pufferfish": 3,
+                "Dousing Rod": 4,
+                "Spiky Pufferfish": 4,
                 "Morgl's Mitt": 4
             }
         },
         "Mr. Smite": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 3,
+            "tasksCompleted": 8,
             "itemEquipped": "Sailor's Cap",
             "abilities": {
-                "Smite Slam": 3,
+                "Smite Slam": 5,
                 "Avast ye Matey": 2,
                 "Overboard": 3
             },
@@ -467,15 +467,15 @@
         "Mutanus": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 10,
+            "tasksCompleted": 15,
             "itemEquipped": "Iridescent Necklace",
             "abilities": {
-                "Devouring Attack": 3,
+                "Devouring Attack": 5,
                 "Scaly Taunt": 5,
-                "Devour": 2
+                "Devour": 4
             },
             "equipment": {
-                "Iridescent Necklace": 3,
+                "Iridescent Necklace": 4,
                 "Earthen Armor": 2,
                 "Pearlescent Scales": 1
             }
@@ -483,11 +483,11 @@
         "Natalie Seline": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 12,
             "itemEquipped": "Splinter of Nordrassil",
             "abilities": {
-                "Shadow Beam": 3,
-                "Light Beam": 3,
+                "Shadow Beam": 5,
+                "Light Beam": 5,
                 "Anathema": 5
             },
             "equipment": {
@@ -499,8 +499,8 @@
         "Old Murk-Eye": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
-            "itemEquipped": "Navigator's Amulet",
+            "tasksCompleted": 12,
+            "itemEquipped": "Bubble Wand",
             "abilities": {
                 "Finvasion": 5,
                 "Felfin Navigator": 5,
@@ -509,16 +509,16 @@
             "equipment": {
                 "Primordial Fin": 3,
                 "Navigator's Amulet": 4,
-                "Bubble Wand": 2
+                "Bubble Wand": 4
             }
         },
         "Prophet Velen": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
-            "itemEquipped": "Blessed Shard",
+            "tasksCompleted": 7,
+            "itemEquipped": "Tome of Inspiration",
             "abilities": {
-                "Holy Blast": 4,
+                "Holy Blast": 5,
                 "Splitting Light": 3,
                 "Velen's Blessing": 3
             },
@@ -531,12 +531,12 @@
         "Diablo": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 1,
-            "itemEquipped": "",
+            "tasksCompleted": 3,
+            "itemEquipped": "Magma Horns",
             "abilities": {
-                "Doom Charge": 1,
-                "Fire Stomp": 1,
-                "Apocalypse": 1
+                "Doom Charge": 2,
+                "Fire Stomp": 2,
+                "Apocalypse": 2
             },
             "equipment": {
                 "Black Soulstone": 1,
@@ -547,12 +547,12 @@
         "Ragnaros": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 3,
             "itemEquipped": "Sulfuras",
             "abilities": {
-                "Magma Blast": 1,
-                "DIE, INSECTS!": 1,
-                "Meteor": 1
+                "Magma Blast": 3,
+                "DIE, INSECTS!": 3,
+                "Meteor": 2
             },
             "equipment": {
                 "Molten Core": 1,
@@ -563,7 +563,7 @@
         "Rathorian": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 12,
+            "tasksCompleted": 13,
             "itemEquipped": "Soul Gem",
             "abilities": {
                 "Blitzing Legion": 5,
@@ -573,18 +573,18 @@
             "equipment": {
                 "Demonic Ashes": 4,
                 "Soul Gem": 4,
-                "Demon's Mark": 3
+                "Demon's Mark": 4
             }
         },
         "Rexxar": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 3,
+            "tasksCompleted": 5,
             "itemEquipped": "Swiftfeather Bow",
             "abilities": {
-                "Kill Command": 2,
-                "Animal Companion": 2,
-                "Explosive Shot": 2
+                "Kill Command": 3,
+                "Animal Companion": 3,
+                "Explosive Shot": 3
             },
             "equipment": {
                 "Huntsman's Rifle": 1,
@@ -611,7 +611,7 @@
         "Rokara": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 10,
+            "tasksCompleted": 11,
             "itemEquipped": "Frostwolf Talisman",
             "abilities": {
                 "Tribal Warfare": 5,
@@ -627,10 +627,10 @@
         "Scabbs Cutterbutter": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 8,
             "itemEquipped": "SI:7 Contract",
             "abilities": {
-                "Tactical Strike": 4,
+                "Tactical Strike": 5,
                 "Wicked Stab": 3,
                 "Shadow Blade": 5
             },
@@ -643,11 +643,11 @@
         "Sneed": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 4,
+            "tasksCompleted": 5,
             "itemEquipped": "Titanium Blades",
             "abilities": {
-                "Bzzz!!!": 4,
-                "Activate Saw": 3,
+                "Bzzz!!!": 5,
+                "Activate Saw": 4,
                 "Disarm": 3
             },
             "equipment": {
@@ -663,11 +663,11 @@
             "itemEquipped": "Mourneblade",
             "abilities": {
                 "Banshee Bolt": 4,
-                "Reclaimed Souls": 2,
+                "Reclaimed Souls": 3,
                 "For the Queen": 4
             },
             "equipment": {
-                "Mourneblade": 1,
+                "Mourneblade": 2,
                 "Soul Jar": 1,
                 "Death Volley": 2
             }
@@ -675,16 +675,16 @@
         "Tamsin Roame": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 12,
             "itemEquipped": "Void Stone",
             "abilities": {
-                "Shadow Bolt": 3,
+                "Shadow Bolt": 5,
                 "Void Consumer": 5,
                 "Veil of Shadows": 5
             },
             "equipment": {
-                "Last Rites": 2,
-                "Void Stone": 2,
+                "Last Rites": 3,
+                "Void Stone": 4,
                 "Shadow Rune": 1
             }
         },
@@ -700,19 +700,19 @@
             },
             "equipment": {
                 "Hunting Shroud": 2,
-                "High Power Rounds": 2,
+                "High Power Rounds": 3,
                 "Rigged Wiring": 4
             }
         },
         "The Lich King": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 0,
+            "tasksCompleted": 7,
             "itemEquipped": "Void Treads",
             "abilities": {
                 "Frostbite": 5,
-                "Death Coil": 2,
-                "Frostshield": 2
+                "Death Coil": 3,
+                "Frostshield": 3
             },
             "equipment": {
                 "Void Treads": 1,
@@ -726,9 +726,9 @@
             "tasksCompleted": 3,
             "itemEquipped": "Ornate Warhorn",
             "abilities": {
-                "For The Horde": 1,
+                "For The Horde": 3,
                 "Lightning Storm": 2,
-                "Warchief's Command": 1
+                "Warchief's Command": 2
             },
             "equipment": {
                 "Ornate Warhorn": 1,
@@ -739,15 +739,15 @@
         "Tirion Fordring": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 5,
-            "itemEquipped": "King's Helm",
+            "tasksCompleted": 6,
+            "itemEquipped": "Ashbringer",
             "abilities": {
                 "Divine Assault": 3,
                 "Blessing of Kings": 3,
                 "Judgement of Humility": 5
             },
             "equipment": {
-                "Ashbringer": 1,
+                "Ashbringer": 3,
                 "King's Helm": 2,
                 "Tirion's Shield": 1
             }
@@ -755,7 +755,7 @@
         "Tyrande": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 11,
+            "tasksCompleted": 13,
             "itemEquipped": "Verdant Recurve",
             "abilities": {
                 "Arcane Shot": 5,
@@ -763,15 +763,15 @@
                 "Elune's Grace": 5
             },
             "equipment": {
-                "Elune's Charm": 2,
-                "Verdant Recurve": 2,
+                "Elune's Charm": 3,
+                "Verdant Recurve": 4,
                 "Band of the Wilds": 4
             }
         },
         "Uther": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 1,
+            "tasksCompleted": 2,
             "itemEquipped": "Lightbringer",
             "abilities": {
                 "Hammer of Justice": 1,
@@ -787,15 +787,15 @@
         "Varden Dawngrasp": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 8,
-            "itemEquipped": "Potion of Ice",
+            "tasksCompleted": 12,
+            "itemEquipped": "Chilling Amulet",
             "abilities": {
                 "Flurry": 5,
                 "Cold Snap": 5,
-                "Ice Lance": 4
+                "Ice Lance": 5
             },
             "equipment": {
-                "Chilling Amulet": 1,
+                "Chilling Amulet": 4,
                 "Potion of Ice": 2,
                 "Band of Frost": 2
             }
@@ -803,31 +803,31 @@
         "Valeera Sanguinar": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 1,
-            "itemEquipped": null,
+            "tasksCompleted": 3,
+            "itemEquipped": "Unnatural Smoke",
             "abilities": {
-                "Sinister Strike": 1,
-                "Ambush": 1,
-                "Fan of Knives": 1
+                "Sinister Strike": 3,
+                "Ambush": 2,
+                "Fan of Knives": 4
             },
             "equipment": {
                 "Hidden Paths": 1,
-                "Unnatural Smoke": 1,
+                "Unnatural Smoke": 2,
                 "Shadow Dagger": 1
             }
         },
         "Varian Wrynn": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 7,
+            "tasksCompleted": 10,
             "itemEquipped": "War Banner",
             "abilities": {
-                "Splitting Strike": 2,
+                "Splitting Strike": 3,
                 "Heroic Leap": 4,
-                "Retaliation": 4
+                "Retaliation": 5
             },
             "equipment": {
-                "Bounding Boots": 1,
+                "Bounding Boots": 2,
                 "War Banner": 2,
                 "Shalamayne": 1
             }
@@ -836,11 +836,11 @@
             "collected": true,
             "level": 30,
             "tasksCompleted": 10,
-            "itemEquipped": "Static Seahorse",
+            "itemEquipped": "Ring of Haste",
             "abilities": {
-                "Shadow Shock": 3,
-                "Shadow Surge": 5,
-                "Curse of Weakness": 3
+                "Shadow Shock": 5,
+                "Shadow Surge": 4,
+                "Curse of Weakness": 4
             },
             "equipment": {
                 "Static Seahorse": 2,
@@ -851,11 +851,11 @@
         "War Master Voone": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 3,
+            "tasksCompleted": 5,
             "itemEquipped": "Dragon Rune Axe",
             "abilities": {
-                "Axe Throw": 4,
-                "Fire Breath": 4,
+                "Axe Throw": 5,
+                "Fire Breath": 5,
                 "Evasive Wyrm": 4
             },
             "equipment": {
@@ -883,10 +883,10 @@
         "Vanessa VanCleef": {
             "collected": true,
             "level": 30,
-            "tasksCompleted": 3,
+            "tasksCompleted": 4,
             "itemEquipped": "",
             "abilities": {
-                "Burgle Barrage": 2,
+                "Burgle Barrage": 3,
                 "Makeshift Weaponry": 2,
                 "Shifting Satchel": 2
             },
@@ -894,6 +894,54 @@
                 "Extra Pockets": 1,
                 "Dreadblades": 1,
                 "Blade Catcher": 1
+            }
+        },
+        "Trigore the Lasher": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 6,
+            "itemEquipped": "",
+            "abilities": {
+                "Frenzied Attack": 3,
+                "Backlash": 3,
+                "Regrow Heads": 3
+            },
+            "equipment": {
+                "Infused Amber": 1,
+                "Razor Claw": 1,
+                "Regenerative Scales": 1
+            }
+        },
+        "Lord Jaraxxus": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "Amulet of Outrage",
+            "abilities": {
+                "Legion Burst": 2,
+                "Fist of Jaraxxus": 2,
+                "Fel Infernal": 2
+            },
+            "equipment": {
+                "Amulet of Outrage": 1,
+                "Fel Core": 2,
+                "Truestrike Gauntlets": 4
+            }
+        },
+        "Sky Admiral Rogers": {
+            "collected": true,
+            "level": 30,
+            "tasksCompleted": 0,
+            "itemEquipped": "",
+            "abilities": {
+                "Sky Guard": 1,
+                "Master Tactician": 1,
+                "Firing Position": 1
+            },
+            "equipment": {
+                "Swash Buckling Sash": 1,
+                "Scout's Spyglass": 1,
+                "Ship's Bell": 1
             }
         }
     }
