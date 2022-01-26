@@ -6,7 +6,7 @@ series: HSMercs From Scratch
 step: 2
 tags:
   - vuex
-  - mochachai
+  - vitest
 ---
 
 In the previous post, we built a Minimum Renderable Vue application - which is to say that it outputs text in the browser using Vue, Vite, and TypeScript. Most tutorials would now build on that by creating components and output content using temporary hard-coded data. Instead, this tutorial is going to go in the direction of loading real data, which we will then build components around. I think this is more in line with real-world applications, where you know what the general shape of the data looks like (or at least what the domain is) and getting it loaded into the app is a good first lift.
@@ -29,7 +29,7 @@ Add Vuex v4 and TypeScript v4 as dependencies and install them. Prior `.ts` file
 ```json
 {
     "compilerOptions": {
-        "module": "CommonJS",
+        "module": "esnext",
         "moduleResolution": "Node",
         "esModuleInterop": true
     },
@@ -196,14 +196,14 @@ export function getStore() {
 Test driven development has plenty of criticisms and I'm not going to get into the pros/cons of strict TDD. I find having unit tests to be extremely useful to validating code without having to build the front-end components to see if something works. Typically, I will take a first pass at the code, then write some tests, which inevitably reveal some bugs, and then fix my code. Now that we have built a simple create and read, so let's validate it works.
 
 ```bash
-yarn add -D mocha chai @types/chai @types/mocha ts-node
+yarn add -D vitest happy-dom
 ```
 
-[Mocha](https://mochajs.org/) is a popular JavaScript testing framework for Node.js. [Chai](https://www.chaijs.com/) is a BDD/TDD assertion library. Basically, you write tests in Chai and run them with Mocha.
+This project uses a bleeding edge, "this is in development, don't use this in production" testing library called "[vitest](https://vitest.dev/)". Vitest is built on top of Vite, thus minimizing the differences between development, production, and testing environments. It is a wonderful approach to testing and has been a delight to work with. Vitest uses Jest's/Chai's grammer for writing tests, so if you are familiar with either of those, this will seem identical.
 
 #### tests/vuex/getters.test.ts
 ```typescript
-import { expect } from 'chai';
+import { describe, expect, it } from "vitest";
 import getters from "../../src/store/getters";
 import { State } from '../../src/store/state';
 
@@ -252,9 +252,9 @@ There's a lot going on here, so let's take it from the top. First come the impor
 - `getters` is the object that has all of the ways to retrieve data from the `state`
 - We will be creating a mock `State` state to validate data retrieval
 
-The `describe` function creates a "suite" (in Mocha parlance) of tests which all have the same context. A test is created with a call to `it` and a callback function with the actual testing logic.
+The `describe` function creates a "suite" (in Vitest parlance) of tests which all have the same context. A test is created with a call to `it` and a callback function with the actual testing logic.
 
-Following the [Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/) testing pattern, we first create the objects required to run the function under test. Next we execute the method and capture the result. Finally, we check that the result matches our expectations. The Chai library's `expect` takes the result of the act portion and begins the function chain to assert the values. We call `deep` to say we want to scan all nested properties of the result and then `equal` states that the result needs to match the comparing object.
+Following the [Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/) testing pattern, we first create the objects required to run the function under test. Next we execute the method and capture the result. Finally, we check that the result matches our expectations. The Vitest library's `expect` takes the result of the act portion and begins the function chain to assert the values. We call `deep` to say we want to scan all nested properties of the result and then `equal` states that the result needs to match the comparing object.
 
 ### Minimum Passing Test
 
@@ -265,11 +265,11 @@ We're almost there! Just need to set-up the tooling and we'll see our test passi
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-+       "test": "mocha -r ts-node/register 'tests/**/*.ts'"
++       "test": "vitest"
     }
 ```
 
-This adds a new command for `yarn` to execute, which kicks off a `mocha` task, requiring the `ts-node/register` module, and scanning for all files in the `tests` folder.
+This adds a new command for `yarn` to execute, which kicks off a `vitest` process. When the command launches, it scans the test files, runs the tests, and watches the test files and source files for changes. When changes are made to these watched files, `vitest` will rerun the appropriate tests. It's like [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) for tests!
 
 ```bash
 yarn test
@@ -277,11 +277,11 @@ yarn test
 
 The one test we created should now be passing.
 
-![gets mercenaries collection passing](/images/mocha-test-1.png)
+![gets mercenaries collection passing](/images/vitest-getters.png)
 
 #### tests/vuex/mutations.test.ts
 ```typescript
-import { expect } from 'chai';
+import { describe, expect, it } from "vitest";
 import mutations from "../../src/store/mutations";
 import { State } from '../../src/store/state';
 import { SET_MERCENARIES } from '../../src/store/types';
@@ -328,7 +328,7 @@ After the explaination of the `getters` test, the mutation is just as straightfo
 yarn test
 ```
 
-![sets mercenaries collection passing](/images/mocha-test-2.png)
+![sets mercenaries collection passing](/images/vitest-mutations.png)
 
 ## Step 3: [First Rudimentary Mercenary Components](/posts/2022/first-rudimentary-mercenary-components/)
 
