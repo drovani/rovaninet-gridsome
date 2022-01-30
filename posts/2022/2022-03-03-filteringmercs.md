@@ -1,5 +1,5 @@
 ---
-title: Filtering Mercs by Role & Tribe
+title: Filtering Mercs by Role
 category: Rovani's Vue
 date: 2022-03-03
 series: HSMercs From Scratch
@@ -10,7 +10,7 @@ tags:
   - vitest
 ---
 
-The `MercenaryCard` is starting to look like a production-ready display, so in this step, we'll begin adding reactivity to the site by implementing filtering of the cards by role and by rarity.
+The `MercenaryCard` is starting to look like a production-ready display, so in this step, we'll begin adding reactivity to the site by implementing filtering of the cards by role.
 
 ![Mukla, Samuro, Jaina](/images/hsmercs-banner-roles.png)
 
@@ -163,7 +163,7 @@ yarn test
 
 We have to make one more change in order to get the app back to a working state.
 
-#### src/components/mercenaries.vue
+#### src/components/Mercenaries.vue
 ```diff
 <script lang="ts">
   import { defineComponent } from "vue";
@@ -348,7 +348,7 @@ We'll want a fixed set of Mercenaries that we can unit test upon. These three we
   });
 ```
 
-Since we are going to write a whole bunch of tests that need a new `State` object utilizing a few mercenaries, we add a `beforeEach` call. As implied by the name, this set of code runs before each of the tests (the 'it' statements). This consolidates the "Assemble" part of the unit tests so each test only has to create the filter we are testing against. We then create one test to validate that a single `role` is filterable and another test to validate that multiple `roles` can be in the filter.
+Since we are going to write a whole bunch of tests that need a new `State` object utilizing a few mercenaries, we add a `beforeEach` call. As implied by the name, this set of code runs before each of the tests (the '`it`' statements). This consolidates the "Assemble" part of the unit tests so each test only has to create the filter we are testing against. We then create one test to validate that a single `role` is filterable and another test to validate that multiple `roles` can be in the filter.
 
 An important bit of code to note is the use of the spread operator when initializing the `state`. This is so the original object are never modified. We could call `Object.freeze` in the `tests/constants.ts` file, but writes would just silently fail. This way, if the code modifies the mercenary unexpectedly, it will be noticed during assertion. Ideally, `Object.freeze` would throw a runtime error in code and the tests would detect that, but as of today, this doesn't occur.
 
@@ -390,7 +390,7 @@ export default defineComponent({
     },
   },
 + methods: {
-    ...mapMutations([SET_MERCENARIES])
++   ...mapMutations([SET_MERCENARIES])
 +   showAllMercenaries(): boolean {
 +     this.filter.roles = [...Roles];
 +   },
@@ -400,7 +400,8 @@ export default defineComponent({
 + },
   mounted(): void {
     if (Object.keys(this.mercenaries ?? {}).length === 0) {
-      this[SET_MERCENARIES](mercjson.mercenaries);
+-     this.$store.commit(SET_MERCENARIES, mercjson.mercenaries);
++     this[SET_MERCENARIES](mercjson.mercenaries);
     }
   },
   components: { MercenaryCard },
@@ -410,6 +411,8 @@ export default defineComponent({
 
 We have added two more sections to the component. The `data` properties hold data that is only going to be utilized by this component or passed down to children components. The `methods` section allows for functions that perform actions beyond just returning data. This is our first entry into getting some reactivity into the component.
 
+Oh, and while we're here, let's utilize the `mapMutations` helper and refractor the initial collection loading mutations.
+
 #### tests/components/mercenaries.tests.ts
 ```typescript
 import { shallowMount } from "@vue/test-utils";
@@ -417,11 +420,17 @@ import { beforeEach, describe, expect, it } from "vitest";
 import Mercenaries from "../../src/components/Mercenaries.vue";
 import { store } from "../../src/store";
 import { GET_MERCENARIES } from "../../src/store/types";
+import { BlademasterSamuro, JainaProudmoore, KingMukla } from "../constants";
 
 describe("Mercenaries.vue component", () => {
     let mercvue: typeof Mercenaries;
 
     beforeEach(() => {
+        store.state.mercenaries = {
+            "King Mukla": { ...KingMukla },
+            "Blademaster Samuro": { ...BlademasterSamuro },
+            "Jaina Proudmoore": { ...JainaProudmoore },
+        };
         mercvue = shallowMount(Mercenaries, {
             global: {
                 plugins: [store]
@@ -432,38 +441,294 @@ describe("Mercenaries.vue component", () => {
     it('gets mercenaries collection', () => {
         const result = mercvue.vm[GET_MERCENARIES]();
 
-        expect(result["Alexstrasza"]).to.exist;
-        expect(result.Xyrella).to.exist;
+        expect(result).to.eql({
+            "King Mukla": KingMukla,
+            "Blademaster Samuro": BlademasterSamuro,
+            "Jaina Proudmoore": JainaProudmoore
+        })
     });
     it('updates filters by role', () => {
-        expect(mercvue.vm.filter.roles).to.have.members(["Protector","Fighter", "Caster"]);
+        expect(mercvue.vm.filter.roles).to.have.members(["Protector", "Fighter", "Caster"]);
 
         mercvue.vm.filterRole('Protector');
 
         expect(mercvue.vm.filter.roles).to.eql(["Protector"]);
     });
-    it('showAllMercenaries resets filter to view all',() => {
-        mercvue.vm.filter = {};
-        expect(mercvue.vm.filter.roles).to.be.undefined;
+    it('toggleRole enables/disables a role', () => {
+        expect(mercvue.vm.filter.roles).to.have.members(["Fighter", "Protector", "Caster"]);
 
-        mercvue.vm.showAllMercenaries();
-
-        expect(mercvue.vm.filter.roles).to.have.members(["Fighter", "Protector","Caster"]);
-    });
-    it('toggleRole enables/disables a role',() => {
-        expect(mercvue.vm.filter.roles).to.have.members(["Fighter", "Protector","Caster"]);
-
+        // turn off Fighter
         mercvue.vm.toggleRole("Fighter");
 
-        expect(mercvue.vm.filter.roles).to.have.members(["Protector","Caster"]);
+        expect(mercvue.vm.filter.roles).to.have.members(["Protector", "Caster"]);
 
+        // turn off Caster
         mercvue.vm.toggleRole("Caster");
 
         expect(mercvue.vm.filter.roles).to.have.members(["Protector"]);
-
+        
+        // turn on Fighter
         mercvue.vm.toggleRole("Fighter");
 
-        expect(mercvue.vm.filter.roles).to.have.members(["Protector","Fighter"]);
+        expect(mercvue.vm.filter.roles).to.have.members(["Protector", "Fighter"]);
     })
 })
 ```
+
+That should be all we need to have the appropriate methods on the component and test that they work as expected.
+
+```bash
+yarn test
+```
+
+![Filtering mercs and unit testing](/images/vitest-filter-roles.png)
+
+ ## Building the User Interface
+
+ With all of the un-sexy functionality out of the way, it's time to add some user-interactable widgets.
+
+ #### src/components/RoleFilter.vue
+ ```vue
+ <template>
+  <div class="flex gap-2">
+    <div
+      v-for="role in Roles"
+      :key="role"
+      class="rounded-t-md pl-6 pr-2 cursor-pointer flex"
+      :class="[
+        'bg-' + role.toLowerCase(),
+      ]"
+      @click="$emit('filterRole', role)"
+    >
+      <div>{{ role }}s</div>
+    </div>
+  </div>
+</template>
+<script setup lang="ts">
+import { Role, Roles } from "../models/roles";
+
+defineEmits<{
+  (event: "filterRole", role: Role): void;
+}>();
+</script>
+```
+
+This component iterates over the `Roles` array, renders a div for each role, which emits a `filterRole` event and includes the clicked `Role`. Pretty straightforward.
+
+#### src/components/Mercenaries.vue
+```diff
+  <template>
+    <section class="px-2">
+      <h1 class="text-2xl font-bold m-8">Collectable Mercenaries</h1>
++     <div
++       class="flex text-white font-bold text-xl gap-2 mb-1 pl-4 border-b-8"
++     >
++       <RoleFilter
++         @filter-role="filterRole"
++       />
++     </div>
+      <div class="flex flex-wrap gap-2">
+        <MercenaryCard
+          v-for="(merc, mercName) in mercenaries"
+          :key="mercName"
+          v-bind="merc"
+          >{{ mercName }}
+        </MercenaryCard>
+      </div>
+    </section>
+  </template>
+
+  <script lang="ts">
+  // include with the existing imports
++ import RarityFilter from "./RarityFilter.vue";
+
+  // ...snip...
+
+  // add to existing components
+-   components: { MercenaryCard },
++   components: { MercenaryCard, RoleFilter },
+  });
+  </script>
+```
+
+We're listening to the `filterRole` event to be emitted by the `RoleFilter` then telling Vue to pass the arguments to this parent control's `filterRole` method. Since the functionality of the `Mercenaries.vue`'s `filterRole` method have been tested, it should... just work!
+
+```bash
+yarn dev
+```
+
+Fire up the server, click on "Fighter". Then click on "Caster". And then "Protector". Pretty neat!
+
+![Role filter component filters](/images/hsmercs-rolefilter.png)
+
+## Show All and Toggle Role
+
+The quick demo shows two early limitations. First, once you click a filter, you can't get back to all of the Mercenaries. Second, you can only show one role at a time. There's no ability to display both "Fighters" and "Protectors".
+
+#### src/components/RoleFilter.vue
+```diff
+  <template>
+    <div class="flex gap-2">
+      <div
+        v-for="role in Roles"
+        :key="role"
+-       class="rounded-t-md pl-6 pr-2 cursor-pointer flex"
++       class="rounded-t-md pl-6 pr-2 cursor-pointer opacity-50 flex"
+        :class="[
+          'bg-' + role.toLowerCase(),
++         { 'opacity-100': enabledRoles.includes(role) },
+        ]"
+        @click="$emit('filterRole', role)"
+      >
+        <div>{{ role }}s</div>
++       <div class="ml-6 font-mono" @click.stop="$emit('toggleRole', role)">
++         <template v-if="enabledRoles.includes(role)">-</template>
++         <template v-if="!enabledRoles.includes(role)">+</template>
++       </div>
+      </div>
+    </div>
+  </template>
+  <script setup lang="ts">
+  import { Role, Roles } from "../models/roles";
+  
++ defineProps({
++   enabledRoles: {
++     type: Array as () => Role[],
++     default: [],
++   },
++ });
+ 
+  defineEmits<{
+    (event: "filterRole", role: Role): void;
++   (event: "toggleRole", role: Role): void;
+  }>();
+  </script>
+```
+
+We add some controls to emit a `toggleRole` event when they are clicked. The `@click.stop` calls means to fire when the element is clicked and stop propagation of the event to parents. In order to know whether this is going to be an "include" or an "exclude" click, we need to know which roles are currently enabled. To get that information, we specify that the parent can pass that information in the `enabledRoles` prop.
+
+#### src/components/Mercenaries.vue
+```diff
+  <template>
+    <section class="px-2">
+      <h1 class="text-2xl font-bold m-8">Collectable Mercenaries</h1>
+      <div
+        class="flex text-white font-bold text-xl gap-2 mb-1 pl-4 border-b-8"
++       :class="[filterBorderColor]"
+      >
++       <div
++         class="bg-gray-800 rounded-t-md px-2 cursor-pointer opacity-50"
++         :class="{
++           'opacity-100': showingAllMercenaries,
++         }"
++         @click="showAllMercenaries"
++       >
++         All Mercenaries
++       </div>
+       <RoleFilter
++         :enabled-roles="filter.roles"
+          @filter-role="filterRole"
++         @toggle-role="toggleRole"
+        />
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <MercenaryCard
+          v-for="(merc, mercName) in mercenaries"
+          :key="mercName"
+          v-bind="merc"
+          >{{ mercName }}
+        </MercenaryCard>
+      </div>
+    </section>
+  </template>
+  <script lang="ts">
+  import { defineComponent } from "vue";
+  import { mapGetters, mapMutations } from "vuex";
+  import { MercCollection } from "../models/mercCollection";
+  import MercFilter from "../models/mercFilter";
+  import { Roles } from "../models/roles";
+  import mercjson from "../static/mercenaries.json";
+  import { GET_MERCENARIES, SET_MERCENARIES } from "../store/types";
+  import MercenaryCard from "./MercenaryCard.vue";
+  import RoleFilter from "./RoleFilter.vue";
+  
+  export default defineComponent({
+    data: () => {
+      return {
+        Roles,
+        filter: {
+          roles: [...Roles],
+        } as MercFilter,
+      };
+    },
+    computed: {
+      ...mapGetters([GET_MERCENARIES]),
+      mercenaries(): MercCollection {
+        return this[GET_MERCENARIES](this.filter);
+      },
++     showingAllMercenaries(): boolean {
++       return (
++         this.filter.roles.length === Roles.length &&
++         this.filter.rarities.length === Rarities.length
++       );
++     },
++     filterBorderColor(): string {
++       if (this.filter.roles.length === 1) {
++         return "border-" + this.filter.roles[0].toLowerCase();
++       } else {
++         return "border-gray-800";
++       }
++     },
+    },
+    methods: {
+      ...mapMutations([SET_MERCENARIES]),
++     showAllMercenaries(): void {
++       this.filter.roles = [...Roles];
++     },
+      filterRole(role: string): void {
+        this.filter.roles = [role];
+      },
+      toggleRole(role: string): void {
+        const idx = this.filter.roles.indexOf(role);
+        if (idx < 0) {
+          this.filter.roles.push(role);
+        } else {
+          this.filter.roles.splice(idx, 1);
+        }
+      },
+    },
+    mounted(): void {
+      if (Object.keys(this.mercenaries ?? {}).length === 0) {
+        this[SET_MERCENARIES](mercjson.mercenaries);
+      }
+    },
+    components: { MercenaryCard, RoleFilter },
+  });
+  </script>
+```
+
+#### tests/components/mercenaries.test.ts
+```diff
+  describe("Mercenaries.vue component", () => {
+      let mercvue: typeof Mercenaries;
+  
+      // ...snip...
+
++     it('showAllMercenaries resets filter to view all', () => {
++         mercvue.vm.filter = {};
++         expect(mercvue.vm.filter.roles).to.be.undefined;
++ 
++         mercvue.vm.showAllMercenaries();
++ 
++         expect(mercvue.vm.filter.roles).to.have.members(["Fighter", "Protector", "Caster"]);
++     });
+  })
+```
+
+This `Mercenaries.vue` component is growing quite quickly, isn't it! We added a new method to show all of the mercenaries, created a new test for that method, added an element that will call that method when it is clicked, and we updated the interaction with the `RolesFilter` to pass in the currently enabled roles and to listen for the `toggleRole` event to be emitted. While we were in there, we added a bit of fun styling to the filtering tabs.
+
+![Show all and toggle roles](/images/hsmercs-rolefilters.png)
+
+## Step 6: [Filtering Mercs by Rarity and Sorting](/posts/2022/filtering-mercs-by-rarity-and-sorting)
+
+The first filter took a lot of explaining to piece together. The `RoleFilter` is going to come together very quickly and then we'll add alphabetical sorting.

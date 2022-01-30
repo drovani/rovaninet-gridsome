@@ -89,19 +89,19 @@ This applies a little styling to the header section of the app. Eventually, we w
 
 #### src/components/Mercenaries.vue
 ```diff
-<template>
-  <section>
-+   <h1 class="text-xl mx-8">Collectable Mercenaries</h1>
-+   <div class="flex flex-wrap gap-2 px-2">
-      <MercenaryCard
-        v-for="(merc, mercName) in mercenaries"
-        :key="mercName"
-        v-bind="merc"
-        >{{ mercName }}
-      </MercenaryCard>
-    </div>
-  </section>
-</template>
+  <template>
++   <section class="px-2">
++     <h1 class="text-2xl font-bold m-8">Collectable Mercenaries</h1>
++     <div class="flex flex-wrap gap-2">
+        <MercenaryCard
+          v-for="(merc, mercName) in mercenaries"
+          :key="mercName"
+          v-bind="merc"
+          >{{ mercName }}
+        </MercenaryCard>
+      </div>
+    </section>
+  </template>
 ```
 
 When there is a set of cards, and we don't particularly care how many are in a row, the best case is to use `flex` on the container, instructing the browser to place entries next to each other, and wrap (`flex-wrap`) onto the next line when the block element won't fit in the viewport. `px-2` means to put a small padding on the left and right side of the container and `gap-2` instructs flex to keep a small space between elements.
@@ -398,6 +398,6 @@ The two arrays tell us which tribes are in which factions and the `faction` comp
 
 ![HSMercs - Round 1 Styling Complete](/images/hsmercs-mercs-level1dynamic.png)
 
-## Step 5: [Filtering Mercs by Role & Tribe](/posts/2022/filtering-mercs-by-role-and-tribe/)
+## Step 5: [Filtering Mercs by Role](/posts/2022/filtering-mercs-by-role/)
 
 The cards are starting to look nice, so let's get back into the substance of things by adding some filtering to the Mercenaries.
