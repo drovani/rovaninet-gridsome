@@ -81,3 +81,6 @@ When I first watched the scene with the Sarlacc, I kept thinking "did I miss som
 - A Dyson ring! Fantastic sci-fi reference.
 - Can he not catch a taxi?
 - Well that shot has Judgement Day written all over it.
+- "Okay, this Boba Fett centered show just isn't working, is it. How about we do an episode of _The Mandalorian_?"
+- Deposit all your weapons, but the jetpack is fine?
+- Was this a 'lost episode' of _The Mandalorian_ that the-powers-that-be decided would be great for fans to get a break from Boba? Because it worked. I'll tune in next week.
