@@ -15,7 +15,7 @@ As I watched the first two seasons of _The Mandalorian_, I had **_a lot_** of th
 
 > The first in a series of posts on ['My Thoughts on _TBoBF_'](/star-wars-commentary) and other _Star Wars_ series. A new thread after each season!
 
-## Episode 1: Stranger in a Strange Series
+## Chapter 1: Stranger in a Strange Series
 
 - Talk about a bad case of heartburn.
 - Wow... such original cinematogray, a hand shooting out of the ground! First off, the impracticality of being able to shove your arm past the elbow into the air without having disturbed any other part of the ground, especially with a big-ass helmet covering your dumb noggin'.
@@ -30,7 +30,7 @@ As I watched the first two seasons of _The Mandalorian_, I had **_a lot_** of th
 
 At first, I thought this episode was going to be tolerable; the longer it went on, it dipped into terrible. By the time the episode was over... well, [Drew Magary](https://www.sfgate.com/culture-columns/article/The-Book-Of-Boba-Fett-Premiere-Was-The-Worst-16738851.php) was much more eloquent about what an abysmal failure this episode was.
 
-## Episode 2: The Trying Times of Carry About Tattooine
+## Chapter 2: The Trying Times of Carry About Tattooine
 
 - Something that consistently bothers me about these wide shots is that shows the broad expanse of land around the characters; how small these travelers are compared to the openness around this enormous building. And yet, on the close-up shot, it looks like they just got off their speeder/wagon/horse and these last two miles of footsteps in-frame have been a leisurely stroll.
 - Already really frikkin' predictable with the threaten-the-big-monster-haha-it's-not-really-there trope.
@@ -47,7 +47,7 @@ At first, I thought this episode was going to be tolerable; the longer it went o
 
 It's a nice little touch to add some culture and sense of depth into the dessert raiders. This whole backstory part of the episode feels very _A Man Called Horse_ or _Dances with Wolves_.
 
-## Episode 3: I Tried So Hard To Not Hate This
+## Chapter 3: I Tried So Hard To Not Hate This
 
 I sat down to watch the episode without my notepad open, to see if I could enjoy the show more without task switching back and forth. Maybe if I saved all my thoughts for the end, I would have less of them in general, but they would be more meaningful because only the parts I could remember would be worth ranting about. I lasted almost 23 minutes, but it got too terrible for me to not go back and write this shit down. I don't have the full words for how bad it is.
 
@@ -66,9 +66,18 @@ I sat down to watch the episode without my notepad open, to see if I could enjoy
 - I think the most tragic part of this chase scene is the poor intern who had to go get that Jabba print made, only to see it then get broken in half. I'm sure it'll still sell for a stupid amount on ebay to some fanboi.
  - Was answering the question really so hard? What would have been bad about saying "hey, it wasn't my choice, so don't kill me - the mayor isn't here because he's talking to the Pikes right now. See - his office is empty."
 
-## Episode 4: Boba Fett and the Chamber of Flashbacks
+## Chapter 4: Boba Fett and the Chamber of Flashbacks
 
 I was so bored through this episode that I didn't even both writing anything down until the bar scene.
 
 - Oh Disney+, where you can rip an alien's arm off, but you can show any blood splatter.
 - So that tune that sounds awfully like _The Mandalorian_'s theme, is supposed to tip off fans that she's talking about pulling in some more armored suits?
+
+When I first watched the scene with the Sarlacc, I kept thinking "did I miss something? I know I was bored and probably checked out, but they must have mentioned so reason why Boba thought his armor would be inside the pit, even though he used its weapons to get out and crawled out of the pit with it still on, and then had it stripped off of him in broad daylight. huh." Turns out that no, I didn't miss anything, there was just a giant, sloppy plot hole. _This show is so awful._
+
+## Chapter 5: Return of the Mandalorian
+
+- I was sour on _The Mandalorian_ for a while and over time it grew on me. This opening scene was easily the best scene this show has seen so far. The cool, calm, cliche swagger; the sigh of resignation that these henchmen are going to die protecting the bounty target like so many others; the self-injury caused by using a weapon he doesn't have a lot of experience with; and the reasonable statements to get through another crowd ("if you'll do me the honor of letting me pass"). Just fantastic writing, directing, and acting (by BoBF standards).
+- A Dyson ring! Fantastic sci-fi reference.
+- Can he not catch a taxi?
+- Well that shot has Judgement Day written all over it.
