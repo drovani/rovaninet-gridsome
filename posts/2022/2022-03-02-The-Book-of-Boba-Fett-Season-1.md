@@ -75,7 +75,7 @@ I was so bored through this episode that I didn't even both writing anything dow
 
 When I first watched the scene with the Sarlacc, I kept thinking "did I miss something? I know I was bored and probably checked out, but they must have mentioned so reason why Boba thought his armor would be inside the pit, even though he used its weapons to get out and crawled out of the pit with it still on, and then had it stripped off of him in broad daylight. huh." Turns out that no, I didn't miss anything, there was just a giant, sloppy plot hole. _This show is so awful._
 
-## Chapter 5: Return of the Mandalorian
+## Chapter 5: Thank God the Mandalorian Returns
 
 - I was sour on _The Mandalorian_ for a while and over time it grew on me. This opening scene was easily the best scene this show has seen so far. The cool, calm, cliche swagger; the sigh of resignation that these henchmen are going to die protecting the bounty target like so many others; the self-injury caused by using a weapon he doesn't have a lot of experience with; and the reasonable statements to get through another crowd ("if you'll do me the honor of letting me pass"). Just fantastic writing, directing, and acting (by BoBF standards).
 - A Dyson ring! Fantastic sci-fi reference.
@@ -84,3 +84,21 @@ When I first watched the scene with the Sarlacc, I kept thinking "did I miss som
 - "Okay, this Boba Fett centered show just isn't working, is it. How about we do an episode of _The Mandalorian_?"
 - Deposit all your weapons, but the jetpack is fine?
 - Was this a 'lost episode' of _The Mandalorian_ that the-powers-that-be decided would be great for fans to get a break from Boba? Because it worked. I'll tune in next week.
+
+## Chapter 6: From the Desert Comes Timothy Olyphant
+
+- Timothy Olyphant is always a win. Gunslinger Timothy Olyphant is a double win.
+- This seems like a very inefficient way to build a building; it also seems like cheating to build a building that looks handmade while utilizing a colony of robotic ants.
+- The kid has PTSD induced amnesia, and you're just gonna retraumatize him?
+- "Don't try; do" baaaaaaarf fanservice.
+- Apparently Cylon-cam is going to be a regular thing, now.
+- Is anyone allowed to just fly their ship into the garage and casually get out before challenged by an orge with an axe? Nobody told the doorman they were expecting friendly visitors?
+- They are building an army; we've got a wookie and a Mandalorian.
+- Timothy Olyphant (you have the say the whole name every time) could pierce beskar armor with that look.
+- Every time they repeat "The Syndicate" I get confused about which show we're in. So many shows have used this [trope](https://tvtropes.org/pmwiki/pmwiki.php/Main/TheSyndicate) that it is tiresome.
+- Does this fancy new/old building get destroyed in an upcoming movie? I clearly wasn't paying enough attention to those movies.
+- Armor or Weapon - seems like a pretty asshole choice to force the kid to make.
+- Is Groku going to get his own series, too?
+
+Ok, so _The Mandalorian_ Season 2.5 seems to be going well enough. It's a little weird that the producers decided to pad BoBF Season 1 by splicing Mando into it, but I'm okay with getting off of Boba for a few episodes.
+
