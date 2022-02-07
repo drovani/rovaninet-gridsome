@@ -16,10 +16,8 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "@tailwindcss/typography": "^0.4.1",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "moment": "^2.29.1",
-    "netlify-cms": "^2.10.182",
     "slug": "^5.1.0",
     "vuex": "^3.6.2",
     "vuex-persist": "^3.1.3"

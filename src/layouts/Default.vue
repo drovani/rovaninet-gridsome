@@ -26,10 +26,10 @@
             class="block mt-0 sm:inline-block text-black hover:text-red-900 mr-4"
             to="/about/"
           >About Me</g-link>
-          <g-link
+          <a
             class="block mt-4 sm:inline-block sm:mt-0 text-black hover:text-red-900 mr-4"
-            to="/mercenaries-helper"
-          >HS Mercs</g-link>
+            href="https://hsmercs.rovani.net/"
+          >HS Mercs</a>
           <a
             class="block mt-4 sm:inline-block sm:mt-0 text-black hover:text-red-900 mr-4"
             href="/admin"
