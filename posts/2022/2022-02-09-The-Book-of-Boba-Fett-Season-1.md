@@ -6,7 +6,7 @@ tags:
 - starwars
 - commentary
 - disneyplus
-date: 2022-03-02
+date: 2022-02-09
 ---
 
 As I watched the first two seasons of _The Mandalorian_, I had **_a lot_** of thoughts on the matter. Mostly that the show was derivative, loaded with tropes and cliches, monotonous in pacing, but with a stellar score. As _The Book of Boba Fett_ was being pitched, I had a feeling that I would also have Thoughts on the Matter. In the immortal words of Rick O'Connell, "here we go again."
@@ -99,6 +99,27 @@ When I first watched the scene with the Sarlacc, I kept thinking "did I miss som
 - Does this fancy new/old building get destroyed in an upcoming movie? I clearly wasn't paying enough attention to those movies.
 - Armor or Weapon - seems like a pretty asshole choice to force the kid to make.
 - Is Groku going to get his own series, too?
+- If Timothy Olyphant is for real dead, this show is officially the worst timeline.
+- If Jennifer Beals is for real dead, this show is most definitely officially the worst timeline.
 
 Ok, so _The Mandalorian_ Season 2.5 seems to be going well enough. It's a little weird that the producers decided to pad BoBF Season 1 by splicing Mando into it, but I'm okay with getting off of Boba for a few episodes.
 
+## Chapter 7: Season Finale Already?! That's Fantastic
+
+- Nothing like being a puppet who thinks he has no strings.
+- Oooh... heist-style montage explaining how the operations are progressing.
+- Boba Fett is in beskar armor, which can supposedly take the hits from those "backshooters". Why not just pop off the asshole and be done with it?
+- Why would you use hand-to-hand weapons on the wookie when you can just shoot him from multiple angles?
+- Same question with the body guards.
+- How do you write "fuck all the way off" in Star Wars-eeze?
+- Knee-cap gun?! That's something unique.
+- Oh look, the two Mandalorians are at the lowest, almost being defeated by the horde of villians. Who ever will save the day?
+- Are you surprised that Freetown came to the rescue? I'm just shocked.
+- You mean the battle just escalated with the big-evil Syndicate bringing in heavy firepower? How could we have seen that coming?
+- I will never understand how advanced machines can miss their shots. Weapon firings are all calculations which it is doing in real-time. These aren't terribly complication for the computer - so how in the hell can they have terrible aim?
+- Case in point - it _missed a Rancor_!!!
+- Strafing maneuver; well played. Something every FPS gamer knows is key to beating a slow turning turret.
+- After all the josseling and _that's_ what knocks Boba off his ride.
+- There was a moment where I was really hoping that _The Book of Boba Fett_ was a one-and-done novella. Kill off the dude, then let someone else take the Boba Fett mantle. But then again, they can't do that to the fans.
+- Between the Rancor and _Gigantosaurus_, there's this theme of big, loud, angries just being misunderstood.
+- Is _The Story of Groku_ finally done with Tatooine? Because this is a really boring planet that the Star Wars cinematic universe keeps coming back to.
