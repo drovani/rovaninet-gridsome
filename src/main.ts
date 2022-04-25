@@ -31,8 +31,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import './css/main.css'
 
-import store from "~/store/index";
-
 const client: ClientApiConstructor = (Vue, { appOptions, head }) => {
   library.add(
     faGithub, faLinkedin, faTwitter,
@@ -51,8 +49,6 @@ const client: ClientApiConstructor = (Vue, { appOptions, head }) => {
     faCheckCircle,
     faUndo
   );
-
-  (appOptions as any).store = store;
 
   Vue.component('Layout', DefaultLayout);
   Vue.component('AppIcon', FontAwesomeIcon);
