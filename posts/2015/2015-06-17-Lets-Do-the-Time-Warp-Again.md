@@ -25,7 +25,7 @@ Due to changes in my scheduling compared to last year, I will be changing my run
 - Sunday: Recovery run as planned in Advanced (9:00/mile)
 - Monday: Moderate run as planned in Advanced (8:30/mile)
 - Tuesday: Speed Training (whatever Coach tells us) or Day Off (depends on social obligations)
-- Wednesday: Short Morning Run or Day Off – if I take Tuesday off, I'll do some speed work in the morning (6:45/mile) before I leave for work.
+- Wednesday: Short Morning Run or Day Off - if I take Tuesday off, I'll do some speed work in the morning (6:45/mile) before I leave for work.
 - Thursday: Tempo runs, mileage from Intermediate plan (7:20/mile)
 - Friday: Day Off
 - Saturday: Long Run as planned in Advanced + 2 miles (8:30/mile)

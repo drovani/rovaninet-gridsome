@@ -28,7 +28,7 @@ I was so excited about being able to add and edit users that I jumped ahead and 
 
 Like missing a payment on a credit card, I need to get this debit under control right away. I cannot just make the minimum payment and figure out later how to pay off the balance and exploding interest. I am going to target just the unit testing surrounding the Identity Model project. Much of this will come from looking at the source code for the Identity Framework, and learning a lot from that.
 
-That is my update – not much to say except for reminding myself to post more often, and make a meaningful, complete contribution to the project before spinning out of control.
+That is my update - not much to say except for reminding myself to post more often, and make a meaningful, complete contribution to the project before spinning out of control.
 
 > Moved files around to better keep a uniform folder structure. Reduced the solutions down to one, though this will probably go back up once executables need creating.
 >
